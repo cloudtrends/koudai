@@ -13491,3 +13491,107 @@ post:array (
     in /opt/lampp/htdocs/common/services/PayService.php:480
     in /opt/lampp/htdocs/common/services/PayService.php:208
     in /opt/lampp/htdocs/common/services/PayService.php:56
+2015-01-05 17:34:24 [192.168.1.118][37][-][info][koudai.pay.*] map original=HashMap::__set_state(array(
+   'H_table' => 
+  array (
+    'service' => 'user_reg',
+    'sign_type' => 'RSA',
+    'mer_id' => '25116',
+    'version' => '4.0',
+    'charset' => 'UTF-8',
+    'pub_pri_flag' => '2',
+    'identity_type' => 'IDENTITY_CARD',
+    'identity_code' => '412702199001186573',
+    'card_id' => '6212261001026708914',
+    'card_holder' => '徐浩然',
+    'media_id' => '13127907856',
+    'card_type' => '0',
+    'busi_no' => '1',
+  ),
+))
+    in /opt/lampp/htdocs/common/services/PayService.php:465
+    in /opt/lampp/htdocs/common/services/PayService.php:276
+    in /opt/lampp/htdocs/common/services/PayService.php:75
+2015-01-05 17:34:24 [192.168.1.118][37][-][info][koudai.pay.*] map encoded=HashMap::__set_state(array(
+   'H_table' => 
+  array (
+    'service' => 'user_reg',
+    'sign_type' => 'RSA',
+    'mer_id' => '25116',
+    'version' => '4.0',
+    'charset' => 'UTF-8',
+    'pub_pri_flag' => '2',
+    'identity_type' => 'IDENTITY_CARD',
+    'identity_code' => 'YIOiW+QCQjW6i2HLbHPxKvbtl8pwkdsmWEGw1LFhB8JGk9TJDW94hQeS9CkdhNdEd+MhJTRuf0iFA0bEJyy8z1PJ0r7mAGFhcssXbHojDWQUd13kH54/3dQZ4fDeb9NN8aaXeIGdG3dEUYB5OT80erS/ovtD2SUhrr7ZnmoWBjM=',
+    'card_id' => 'eA3zZvzIy9L59kOgYIn+oCmxKr7ylbB029DcWJIMQ31DsRi2cpK0OKNuxrL81r0FdPzzMig12NZkeS55ULCRKHwyEfm8qOiTAlCrT5fEPrX3kmICBatpjg+xCqBpfuruYMGPfuoSGpEDJIVudLf+JIPfjpf6lC+lHKOPGji39AI=',
+    'card_holder' => 'iVxfVbRUy2Wp1HcBTSXm9giUZL0dCl9tI3q12SquA6XWdYypMBamzoLZWuR160dkPSBXl7pifvtrWOb0L02dwb39CxGr7Iob52AEgXKju5BdAyOjf4md4vggeaeNJwONO2cbIXUbrDXB67NIRw8BcP9w5XWXmi2oeDCBFf4KFUg=',
+    'media_id' => '13127907856',
+    'card_type' => '0',
+    'busi_no' => '1',
+  ),
+))
+    in /opt/lampp/htdocs/common/services/PayService.php:467
+    in /opt/lampp/htdocs/common/services/PayService.php:276
+    in /opt/lampp/htdocs/common/services/PayService.php:75
+2015-01-05 17:34:24 [192.168.1.118][37][-][info][koudai.pay.*] httpReq=common\api\HttpRequest::__set_state(array(
+   'ERROR_DESC' => 
+  array (
+    1 => 'URL格式错误',
+  ),
+   'getFields' => NULL,
+   'postFields' => NULL,
+   'method' => 'GET',
+   'url' => 'http://pay.soopay.net/spay/pay/payservice.do?busi_no=1&card_holder=iVxfVbRUy2Wp1HcBTSXm9giUZL0dCl9tI3q12SquA6XWdYypMBamzoLZWuR160dkPSBXl7pifvtrWOb0L02dwb39CxGr7Iob52AEgXKju5BdAyOjf4md4vggeaeNJwONO2cbIXUbrDXB67NIRw8BcP9w5XWXmi2oeDCBFf4KFUg%3D&card_id=eA3zZvzIy9L59kOgYIn%2BoCmxKr7ylbB029DcWJIMQ31DsRi2cpK0OKNuxrL81r0FdPzzMig12NZkeS55ULCRKHwyEfm8qOiTAlCrT5fEPrX3kmICBatpjg%2BxCqBpfuruYMGPfuoSGpEDJIVudLf%2BJIPfjpf6lC%2BlHKOPGji39AI%3D&card_type=0&charset=UTF-8&identity_code=YIOiW%2BQCQjW6i2HLbHPxKvbtl8pwkdsmWEGw1LFhB8JGk9TJDW94hQeS9CkdhNdEd%2BMhJTRuf0iFA0bEJyy8z1PJ0r7mAGFhcssXbHojDWQUd13kH54%2F3dQZ4fDeb9NN8aaXeIGdG3dEUYB5OT80erS%2FovtD2SUhrr7ZnmoWBjM%3D&identity_type=IDENTITY_CARD&media_id=13127907856&mer_id=25116&pub_pri_flag=2&service=user_reg&sign_type=RSA&version=4.0&sign=EomB6KtFzwVuUDe2EDks0VPXJrNBNI1M254xGzJpeH9foFKnpQlAgyTWfSAiOTnoaWh4cgwq2jEVAGEKjgTb%2FFkROXW7KgUVICPcq2rUCtrtg5SajpulL8E54mxYJm6zeyDx38tPX91JSMA9KOXmUMZeagsDbBqTRn0OU49ZoDc%3D',
+   'postDataFormat' => 1,
+   'code' => '',
+))
+    in /opt/lampp/htdocs/common/services/PayService.php:476
+    in /opt/lampp/htdocs/common/services/PayService.php:276
+    in /opt/lampp/htdocs/common/services/PayService.php:75
+2015-01-05 17:34:25 [192.168.1.118][37][-][info][koudai.pay.*] httpResp=array (
+  'code' => 200,
+  'resp' => '
+ 
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head>
+	<META NAME="MobilePayPlatform" CONTENT="busi_no=1&card_holder=iVxfVbRUy2Wp1HcBTSXm9giUZL0dCl9tI3q12SquA6XWdYypMBamzoLZWuR160dkPSBXl7pifvtrWOb0L02dwb39CxGr7Iob52AEgXKju5BdAyOjf4md4vggeaeNJwONO2cbIXUbrDXB67NIRw8BcP9w5XWXmi2oeDCBFf4KFUg=&card_id=eA3zZvzIy9L59kOgYIn+oCmxKr7ylbB029DcWJIMQ31DsRi2cpK0OKNuxrL81r0FdPzzMig12NZkeS55ULCRKHwyEfm8qOiTAlCrT5fEPrX3kmICBatpjg+xCqBpfuruYMGPfuoSGpEDJIVudLf+JIPfjpf6lC+lHKOPGji39AI=&card_type=0&charset=UTF-8&identity_code=YIOiW+QCQjW6i2HLbHPxKvbtl8pwkdsmWEGw1LFhB8JGk9TJDW94hQeS9CkdhNdEd+MhJTRuf0iFA0bEJyy8z1PJ0r7mAGFhcssXbHojDWQUd13kH54/3dQZ4fDeb9NN8aaXeIGdG3dEUYB5OT80erS/ovtD2SUhrr7ZnmoWBjM=&identity_type=IDENTITY_CARD&media_id=13127907856&mer_id=25116&pub_pri_flag=2&ret_code=00160083&ret_msg=亲,您已经是注册用户,无需重复注册&service=user_reg&sign_type=RSA&version=4.0&sign=QbbZLD2IY4AX7Vok/WKsypoCALzzUbLKaiK9mL9u9Bm8f0wzznDi+QwKvFkI5oQ8FxR5OOh5KrRTEXqe09msO+WWEEc3GcfFsSAjW2eOIAwHkDirAU5u5K9LQgRBzWgs7/w6EahEQmXuI40V/Yqa4+nDk6UH82l1DUVbUF3LLFs=">
+  </head>
+  <body>
+  </body>
+</html>',
+  'curl_getinfo' => 
+  array (
+    'url' => 'http://pay.soopay.net/spay/pay/payservice.do?busi_no=1&card_holder=iVxfVbRUy2Wp1HcBTSXm9giUZL0dCl9tI3q12SquA6XWdYypMBamzoLZWuR160dkPSBXl7pifvtrWOb0L02dwb39CxGr7Iob52AEgXKju5BdAyOjf4md4vggeaeNJwONO2cbIXUbrDXB67NIRw8BcP9w5XWXmi2oeDCBFf4KFUg%3D&card_id=eA3zZvzIy9L59kOgYIn%2BoCmxKr7ylbB029DcWJIMQ31DsRi2cpK0OKNuxrL81r0FdPzzMig12NZkeS55ULCRKHwyEfm8qOiTAlCrT5fEPrX3kmICBatpjg%2BxCqBpfuruYMGPfuoSGpEDJIVudLf%2BJIPfjpf6lC%2BlHKOPGji39AI%3D&card_type=0&charset=UTF-8&identity_code=YIOiW%2BQCQjW6i2HLbHPxKvbtl8pwkdsmWEGw1LFhB8JGk9TJDW94hQeS9CkdhNdEd%2BMhJTRuf0iFA0bEJyy8z1PJ0r7mAGFhcssXbHojDWQUd13kH54%2F3dQZ4fDeb9NN8aaXeIGdG3dEUYB5OT80erS%2FovtD2SUhrr7ZnmoWBjM%3D&identity_type=IDENTITY_CARD&media_id=13127907856&mer_id=25116&pub_pri_flag=2&service=user_reg&sign_type=RSA&version=4.0&sign=EomB6KtFzwVuUDe2EDks0VPXJrNBNI1M254xGzJpeH9foFKnpQlAgyTWfSAiOTnoaWh4cgwq2jEVAGEKjgTb%2FFkROXW7KgUVICPcq2rUCtrtg5SajpulL8E54mxYJm6zeyDx38tPX91JSMA9KOXmUMZeagsDbBqTRn0OU49ZoDc%3D',
+    'content_type' => 'text/html; charset=UTF-8',
+    'http_code' => 200,
+    'header_size' => 336,
+    'request_size' => 1052,
+    'filetime' => -1,
+    'ssl_verify_result' => 0,
+    'redirect_count' => 0,
+    'total_time' => 0.390506999999999993011812193799414671957492828369140625,
+    'namelookup_time' => 0.06146200000000000274180678161428659223020076751708984375,
+    'connect_time' => 0.09107300000000000117506004926326568238437175750732421875,
+    'pretransfer_time' => 0.09109699999999999742161804761053645052015781402587890625,
+    'size_upload' => 0,
+    'size_download' => 1123,
+    'speed_download' => 2875,
+    'speed_upload' => 0,
+    'download_content_length' => -1,
+    'upload_content_length' => 0,
+    'starttransfer_time' => 0.390434000000000003272049298175261355936527252197265625,
+    'redirect_time' => 0,
+    'redirect_url' => '',
+    'primary_ip' => '115.182.85.75',
+    'certinfo' => 
+    array (
+    ),
+    'primary_port' => 80,
+    'local_ip' => '192.168.1.214',
+    'local_port' => 52533,
+  ),
+)
+    in /opt/lampp/htdocs/common/services/PayService.php:480
+    in /opt/lampp/htdocs/common/services/PayService.php:276
+    in /opt/lampp/htdocs/common/services/PayService.php:75
