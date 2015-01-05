@@ -1,0 +1,890 @@
+[2014-12-16 14:14:14]-[]-[data] :Request Para=array (
+  'service' => 'user_reg',
+  'sign_type' => 'RSA',
+  'mer_id' => '25116',
+  'version' => '4.0',
+  'charset' => 'UTF-8',
+  'pub_pri_flag' => '2',
+  'identity_type' => 'IDENTITY_CARD',
+  'identity_code' => '420626198609292527',
+  'card_id' => '6228480038445547276',
+  'card_holder' => 'Â±àÈáëÂ®•',
+  'media_id' => '13818483971',
+  'card_type' => '0',
+  'busi_no' => '1',
+)
+[2014-12-16 14:14:14]-[]-[data] :The parameters of the request card_id RSA encryption
+[2014-12-16 14:14:14]-[]-[data] :ÊïèÊÑü‰ø°ÊÅØÂä†ÂØÜÂØÜÊñá:[xkztQTsXHnPe7H3qzbPrrxt+knBdwCDgVcuNBptPx/08SSV2KiWA7MAcVWC44UHyYF36jmVYQ84yOM/5VSfxlEx1wn3Pl6KyMCfcX16Lv8DX2PSvUhLfyzOngssSqD2UVAhmxOaGrm75SG+uo5F4mXu61DhDlrKVb25ZT7fxQxE=]
+[2014-12-16 14:14:14]-[]-[data] :The parameters of the request identity_code RSA encryption
+[2014-12-16 14:14:14]-[]-[data] :ÊïèÊÑü‰ø°ÊÅØÂä†ÂØÜÂØÜÊñá:[gAr1TQHZmirn8oTQuHt5JuQhvv5EznmD1Q1h/2qsa55eXK4vV5go3QeMjUA/v36FIthBqI2H/b1PJXV9YciZEuUwTTckvdbxUksMcKGQa0TUJZ7MX0PXb+bml9E5o32eFfMVyQCGZyjQkuMnbk0aD+t/fHklk6fqUbDhTdDU9f0=]
+[2014-12-16 14:14:14]-[]-[data] :The parameters of the request card_holder RSA encryption
+[2014-12-16 14:14:14]-[]-[data] :ÊïèÊÑü‰ø°ÊÅØÂä†ÂØÜÂØÜÊñá:[uIwsKmfo8HmEmYPxO+3G6cOdtFWH42CGt6z5RYNLdm+D2f2TESh4S9qr3JnnOyZV6bNfvVgmLWnswM4wC7aJBnWOWGiDpOqNHrjP52u4D7rzBqz6Q9t8LDaMVkmLQJ5fL73oHgGLNnALH+k4ON2rt4DUesluB4pPqaOvuAETe58=]
+[2014-12-16 14:14:14]-[]-[data] :Participate in the signature parametersÔºö[busi_no=1&card_holder=uIwsKmfo8HmEmYPxO+3G6cOdtFWH42CGt6z5RYNLdm+D2f2TESh4S9qr3JnnOyZV6bNfvVgmLWnswM4wC7aJBnWOWGiDpOqNHrjP52u4D7rzBqz6Q9t8LDaMVkmLQJ5fL73oHgGLNnALH+k4ON2rt4DUesluB4pPqaOvuAETe58=&card_id=xkztQTsXHnPe7H3qzbPrrxt+knBdwCDgVcuNBptPx/08SSV2KiWA7MAcVWC44UHyYF36jmVYQ84yOM/5VSfxlEx1wn3Pl6KyMCfcX16Lv8DX2PSvUhLfyzOngssSqD2UVAhmxOaGrm75SG+uo5F4mXu61DhDlrKVb25ZT7fxQxE=&card_type=0&charset=UTF-8&identity_code=gAr1TQHZmirn8oTQuHt5JuQhvv5EznmD1Q1h/2qsa55eXK4vV5go3QeMjUA/v36FIthBqI2H/b1PJXV9YciZEuUwTTckvdbxUksMcKGQa0TUJZ7MX0PXb+bml9E5o32eFfMVyQCGZyjQkuMnbk0aD+t/fHklk6fqUbDhTdDU9f0=&identity_type=IDENTITY_CARD&media_id=13818483971&mer_id=25116&pub_pri_flag=2&service=user_reg&version=4.0],Merchant number isÔºö[25116]
+[2014-12-16 14:14:14]-[]-[data] :The private key path forÔºö/opt/lampp/htdocs/common/config/cert/25116_wenzhoudai.key.pem
+[2014-12-16 14:14:14]-[]-[data] :Signature string forÔºöºöÎÜÉõ b’&:‘é5>bÈË[çcl~É¬‚≠åß≥≤πpC˝)dÃ@}Aq⁄„&Òy{öz–j1É?H∂É&Ωjˆx+ıÕædYdÆ*‹$üÿ≤Ñ∆},¿òﬁ›œÿ=ù€Oö∏ƒΩ†\=å~5~∞7I?9wÉ
+[2014-12-16 14:14:14]-[]-[data] :Request platform way=get
+[2014-12-16 14:14:14]-[]-[data] :Request platform signature string=vA6aG+uGg5vKYtUmOtQBjjU+YukY6FuNY2x+g8LirfCMp7OyuRtwQ/0pG2TMQH1BcdrjJvF5e5p60BpqMYM/f0i2gwgmFb1q9ngr9c2+ZFlkrircJJ/YshOExn0swJje3c/YPZ3bT5q4xL2gHQZcBD0WjH41FH4csBk3ST85d4M=
+[2014-12-16 14:14:14]-[]-[data] :Clear information request platform=busi_no=1&card_holder=uIwsKmfo8HmEmYPxO+3G6cOdtFWH42CGt6z5RYNLdm+D2f2TESh4S9qr3JnnOyZV6bNfvVgmLWnswM4wC7aJBnWOWGiDpOqNHrjP52u4D7rzBqz6Q9t8LDaMVkmLQJ5fL73oHgGLNnALH+k4ON2rt4DUesluB4pPqaOvuAETe58=&card_id=xkztQTsXHnPe7H3qzbPrrxt+knBdwCDgVcuNBptPx/08SSV2KiWA7MAcVWC44UHyYF36jmVYQ84yOM/5VSfxlEx1wn3Pl6KyMCfcX16Lv8DX2PSvUhLfyzOngssSqD2UVAhmxOaGrm75SG+uo5F4mXu61DhDlrKVb25ZT7fxQxE=&card_type=0&charset=UTF-8&identity_code=gAr1TQHZmirn8oTQuHt5JuQhvv5EznmD1Q1h/2qsa55eXK4vV5go3QeMjUA/v36FIthBqI2H/b1PJXV9YciZEuUwTTckvdbxUksMcKGQa0TUJZ7MX0PXb+bml9E5o32eFfMVyQCGZyjQkuMnbk0aD+t/fHklk6fqUbDhTdDU9f0=&identity_type=IDENTITY_CARD&media_id=13818483971&mer_id=25116&pub_pri_flag=2&service=user_reg&version=4.0
+[2014-12-16 14:14:14]-[]-[data] :The service user_reg request platform to get the address url=http://pay.soopay.net/spay/pay/payservice.do?busi_no=1&card_holder=uIwsKmfo8HmEmYPxO%2B3G6cOdtFWH42CGt6z5RYNLdm%2BD2f2TESh4S9qr3JnnOyZV6bNfvVgmLWnswM4wC7aJBnWOWGiDpOqNHrjP52u4D7rzBqz6Q9t8LDaMVkmLQJ5fL73oHgGLNnALH%2Bk4ON2rt4DUesluB4pPqaOvuAETe58%3D&card_id=xkztQTsXHnPe7H3qzbPrrxt%2BknBdwCDgVcuNBptPx%2F08SSV2KiWA7MAcVWC44UHyYF36jmVYQ84yOM%2F5VSfxlEx1wn3Pl6KyMCfcX16Lv8DX2PSvUhLfyzOngssSqD2UVAhmxOaGrm75SG%2Buo5F4mXu61DhDlrKVb25ZT7fxQxE%3D&card_type=0&charset=UTF-8&identity_code=gAr1TQHZmirn8oTQuHt5JuQhvv5EznmD1Q1h%2F2qsa55eXK4vV5go3QeMjUA%2Fv36FIthBqI2H%2Fb1PJXV9YciZEuUwTTckvdbxUksMcKGQa0TUJZ7MX0PXb%2Bbml9E5o32eFfMVyQCGZyjQkuMnbk0aD%2Bt%2FfHklk6fqUbDhTdDU9f0%3D&identity_type=IDENTITY_CARD&media_id=13818483971&mer_id=25116&pub_pri_flag=2&service=user_reg&sign_type=RSA&version=4.0&sign=vA6aG+uGg5vKYtUmOtQBjjU+YukY6FuNY2x+g8LirfCMp7OyuRtwQ/0pG2TMQH1BcdrjJvF5e5p60BpqMYM/f0i2gwgmFb1q9ngr9c2+ZFlkrircJJ/YshOExn0swJje3c/YPZ3bT5q4xL2gHQZcBD0WjH41FH4csBk3ST85d4M=
+[2014-12-16 14:14:29]-[]-[data] :Request Para=array (
+  'service' => 'user_reg',
+  'sign_type' => 'RSA',
+  'mer_id' => '25116',
+  'version' => '4.0',
+  'charset' => 'UTF-8',
+  'pub_pri_flag' => '2',
+  'identity_type' => 'IDENTITY_CARD',
+  'identity_code' => '420626198609292527',
+  'card_id' => '6228480038445547276',
+  'card_holder' => 'Â±àÈáëÂ®•',
+  'media_id' => '13818483971',
+  'card_type' => '0',
+  'busi_no' => '1',
+)
+[2014-12-16 14:14:29]-[]-[data] :The parameters of the request card_id RSA encryption
+[2014-12-16 14:14:29]-[]-[data] :ÊïèÊÑü‰ø°ÊÅØÂä†ÂØÜÂØÜÊñá:[q+lZ2ROpJhJVUynTecLbJuL5xz10v+KI/SDBwP2/l9yompmiThAV6YWpU0E6zvxZwZkS18lIUrwV8NyT1Po3+XuSFM1rAbVYlhP8DDhdbNDKgc79rXSt1dv7CUgYPjEMwZxpx3qJ8SxjRgrnMwx57n8UGYIIqpcQrUUGTD6d55M=]
+[2014-12-16 14:14:29]-[]-[data] :The parameters of the request identity_code RSA encryption
+[2014-12-16 14:14:29]-[]-[data] :ÊïèÊÑü‰ø°ÊÅØÂä†ÂØÜÂØÜÊñá:[kUT2caO5LS2s0LCbZUN1HSlESbwOcbvSpFSH3lzBafv3avpNP/uTVeBSevRLyFQ5VV6uIa2uR/kYnYYCdJ2eHCzDx7i1FdoR4zQzAWHjoiN8b5RBWLQuPmQfqrAG310PCy9m2aEHmII05/rm8Md12QBFzC+x4gRklDH+FwOnmFU=]
+[2014-12-16 14:14:29]-[]-[data] :The parameters of the request card_holder RSA encryption
+[2014-12-16 14:14:29]-[]-[data] :ÊïèÊÑü‰ø°ÊÅØÂä†ÂØÜÂØÜÊñá:[LlEr0p6ehpMPr+v4S3aCB5YJPuM0pz87NShhw4znxQLkS9OfslwyytvNIc/lDX/wNAIAGFAkeb1o8KgWsE21JpJ5JDHPe9oJIeLjvS5A2d8ES56cMk3UZ49tGCM0QabqAAYO+WC1H1PrxM19fR+HxHhGRavIO14T2igsOv690k0=]
+[2014-12-16 14:14:29]-[]-[data] :Participate in the signature parametersÔºö[busi_no=1&card_holder=LlEr0p6ehpMPr+v4S3aCB5YJPuM0pz87NShhw4znxQLkS9OfslwyytvNIc/lDX/wNAIAGFAkeb1o8KgWsE21JpJ5JDHPe9oJIeLjvS5A2d8ES56cMk3UZ49tGCM0QabqAAYO+WC1H1PrxM19fR+HxHhGRavIO14T2igsOv690k0=&card_id=q+lZ2ROpJhJVUynTecLbJuL5xz10v+KI/SDBwP2/l9yompmiThAV6YWpU0E6zvxZwZkS18lIUrwV8NyT1Po3+XuSFM1rAbVYlhP8DDhdbNDKgc79rXSt1dv7CUgYPjEMwZxpx3qJ8SxjRgrnMwx57n8UGYIIqpcQrUUGTD6d55M=&card_type=0&charset=UTF-8&identity_code=kUT2caO5LS2s0LCbZUN1HSlESbwOcbvSpFSH3lzBafv3avpNP/uTVeBSevRLyFQ5VV6uIa2uR/kYnYYCdJ2eHCzDx7i1FdoR4zQzAWHjoiN8b5RBWLQuPmQfqrAG310PCy9m2aEHmII05/rm8Md12QBFzC+x4gRklDH+FwOnmFU=&identity_type=IDENTITY_CARD&media_id=13818483971&mer_id=25116&pub_pri_flag=2&service=user_reg&version=4.0],Merchant number isÔºö[25116]
+[2014-12-16 14:14:29]-[]-[data] :The private key path forÔºö/opt/lampp/htdocs/common/config/cert/25116_wenzhoudai.key.pem
+[2014-12-16 14:14:29]-[]-[data] :Signature string forÔºöâq˚6D∞Ç¬J∫Ç\x±'B˛91PDÒFÏØ27ﬂÍï¸TËv•9¶¯çAaãÖæ`¿ŸîıΩäÓ√Jπ+Ësw?ç‘è;Ogº?©8—ÍVó≈
+MıçƒzØ7>#ÍI¢_Î;@Ωá	M!ΩßÈó1¬u±(At%Ê¡Ë·Ûh4
+[2014-12-16 14:14:29]-[]-[data] :Request platform way=get
+[2014-12-16 14:14:29]-[]-[data] :Request platform signature string=iXH7NkSwgsJKuoJceLETJ0L+OTFQRPFGBeyvMjff6pX8ElTodh2lOab4AY1BYYuFvmAOwNmU9R69iu7DSrkr6HN3P43UjztPZ7w/qTjR6laXxQpNCPWNxHqvNz4j6kmiXxjrO0C9hx8JTSG9p+mXMRXCdbEoQXQBJebB6OHzaDQ=
+[2014-12-16 14:14:29]-[]-[data] :Clear information request platform=busi_no=1&card_holder=LlEr0p6ehpMPr+v4S3aCB5YJPuM0pz87NShhw4znxQLkS9OfslwyytvNIc/lDX/wNAIAGFAkeb1o8KgWsE21JpJ5JDHPe9oJIeLjvS5A2d8ES56cMk3UZ49tGCM0QabqAAYO+WC1H1PrxM19fR+HxHhGRavIO14T2igsOv690k0=&card_id=q+lZ2ROpJhJVUynTecLbJuL5xz10v+KI/SDBwP2/l9yompmiThAV6YWpU0E6zvxZwZkS18lIUrwV8NyT1Po3+XuSFM1rAbVYlhP8DDhdbNDKgc79rXSt1dv7CUgYPjEMwZxpx3qJ8SxjRgrnMwx57n8UGYIIqpcQrUUGTD6d55M=&card_type=0&charset=UTF-8&identity_code=kUT2caO5LS2s0LCbZUN1HSlESbwOcbvSpFSH3lzBafv3avpNP/uTVeBSevRLyFQ5VV6uIa2uR/kYnYYCdJ2eHCzDx7i1FdoR4zQzAWHjoiN8b5RBWLQuPmQfqrAG310PCy9m2aEHmII05/rm8Md12QBFzC+x4gRklDH+FwOnmFU=&identity_type=IDENTITY_CARD&media_id=13818483971&mer_id=25116&pub_pri_flag=2&service=user_reg&version=4.0
+[2014-12-16 14:14:29]-[]-[data] :The service user_reg request platform to get the address url=http://pay.soopay.net/spay/pay/payservice.do?busi_no=1&card_holder=LlEr0p6ehpMPr%2Bv4S3aCB5YJPuM0pz87NShhw4znxQLkS9OfslwyytvNIc%2FlDX%2FwNAIAGFAkeb1o8KgWsE21JpJ5JDHPe9oJIeLjvS5A2d8ES56cMk3UZ49tGCM0QabqAAYO%2BWC1H1PrxM19fR%2BHxHhGRavIO14T2igsOv690k0%3D&card_id=q%2BlZ2ROpJhJVUynTecLbJuL5xz10v%2BKI%2FSDBwP2%2Fl9yompmiThAV6YWpU0E6zvxZwZkS18lIUrwV8NyT1Po3%2BXuSFM1rAbVYlhP8DDhdbNDKgc79rXSt1dv7CUgYPjEMwZxpx3qJ8SxjRgrnMwx57n8UGYIIqpcQrUUGTD6d55M%3D&card_type=0&charset=UTF-8&identity_code=kUT2caO5LS2s0LCbZUN1HSlESbwOcbvSpFSH3lzBafv3avpNP%2FuTVeBSevRLyFQ5VV6uIa2uR%2FkYnYYCdJ2eHCzDx7i1FdoR4zQzAWHjoiN8b5RBWLQuPmQfqrAG310PCy9m2aEHmII05%2Frm8Md12QBFzC%2Bx4gRklDH%2BFwOnmFU%3D&identity_type=IDENTITY_CARD&media_id=13818483971&mer_id=25116&pub_pri_flag=2&service=user_reg&sign_type=RSA&version=4.0&sign=iXH7NkSwgsJKuoJceLETJ0L+OTFQRPFGBeyvMjff6pX8ElTodh2lOab4AY1BYYuFvmAOwNmU9R69iu7DSrkr6HN3P43UjztPZ7w/qTjR6laXxQpNCPWNxHqvNz4j6kmiXxjrO0C9hx8JTSG9p+mXMRXCdbEoQXQBJebB6OHzaDQ=
+[2014-12-16 14:15:27]-[]-[data] :Request Para=array (
+  'service' => 'user_reg',
+  'sign_type' => 'RSA',
+  'mer_id' => '25116',
+  'version' => '4.0',
+  'charset' => 'UTF-8',
+  'pub_pri_flag' => '2',
+  'identity_type' => 'IDENTITY_CARD',
+  'identity_code' => '420626198609292527',
+  'card_id' => '6228480038445547276',
+  'card_holder' => 'Â±àÈáëÂ®•',
+  'media_id' => '13818483971',
+  'card_type' => '0',
+  'busi_no' => '1',
+)
+[2014-12-16 14:15:27]-[]-[data] :The parameters of the request card_id RSA encryption
+[2014-12-16 14:15:27]-[]-[data] :ÊïèÊÑü‰ø°ÊÅØÂä†ÂØÜÂØÜÊñá:[owodbAj7ZrpsuQRsO+6CL218/vpb6XWhcKivTAc+DHEuQu61o1ko3aspLbuKaYKPWRiSMY6LbrKe/tUrbDDJUylz25GGDbqOFlznzncAt3mQ8Z0i8LjacC93WO8r4tMWy0J8sK0Igzu2uXGYxbmx/j92mBZ+faDL7pI0N38jr8s=]
+[2014-12-16 14:15:27]-[]-[data] :The parameters of the request identity_code RSA encryption
+[2014-12-16 14:15:27]-[]-[data] :ÊïèÊÑü‰ø°ÊÅØÂä†ÂØÜÂØÜÊñá:[hmswQS+bA+Mi/SVg0B+zgJyKUmY2CFYVaznDERYWSUAro9ijtt7Iy/AfLvamPuXuLhydC4fcn3V/OiZp/fQWRAA0nUTJn7N0X4Kmy+27B+J0aCBVi+ZApxaSvTPBveSiuJoN8t7aweBqerhmWsnMhVsy/JnVYFPCaIXkjTD+Ioc=]
+[2014-12-16 14:15:27]-[]-[data] :The parameters of the request card_holder RSA encryption
+[2014-12-16 14:15:27]-[]-[data] :ÊïèÊÑü‰ø°ÊÅØÂä†ÂØÜÂØÜÊñá:[wYG1hJ9F/nM089WYczCBSDTWxDtZAyhVFdXrcIx2IBE7NmyKSXcA7H1uuASeoyy36UzRb7hs+WAE64WT2LY2s/6Qlu/lUWEXjzrfjCVlt70CROR7vob6GhOzBxPyXeGQDmTyfULVk8mIFYjFo59eEfo3JtBiq2iWBzkRiE+y0r8=]
+[2014-12-16 14:15:27]-[]-[data] :Participate in the signature parametersÔºö[busi_no=1&card_holder=wYG1hJ9F/nM089WYczCBSDTWxDtZAyhVFdXrcIx2IBE7NmyKSXcA7H1uuASeoyy36UzRb7hs+WAE64WT2LY2s/6Qlu/lUWEXjzrfjCVlt70CROR7vob6GhOzBxPyXeGQDmTyfULVk8mIFYjFo59eEfo3JtBiq2iWBzkRiE+y0r8=&card_id=owodbAj7ZrpsuQRsO+6CL218/vpb6XWhcKivTAc+DHEuQu61o1ko3aspLbuKaYKPWRiSMY6LbrKe/tUrbDDJUylz25GGDbqOFlznzncAt3mQ8Z0i8LjacC93WO8r4tMWy0J8sK0Igzu2uXGYxbmx/j92mBZ+faDL7pI0N38jr8s=&card_type=0&charset=UTF-8&identity_code=hmswQS+bA+Mi/SVg0B+zgJyKUmY2CFYVaznDERYWSUAro9ijtt7Iy/AfLvamPuXuLhydC4fcn3V/OiZp/fQWRAA0nUTJn7N0X4Kmy+27B+J0aCBVi+ZApxaSvTPBveSiuJoN8t7aweBqerhmWsnMhVsy/JnVYFPCaIXkjTD+Ioc=&identity_type=IDENTITY_CARD&media_id=13818483971&mer_id=25116&pub_pri_flag=2&service=user_reg&version=4.0],Merchant number isÔºö[25116]
+[2014-12-16 14:15:27]-[]-[data] :The private key path forÔºö/opt/lampp/htdocs/common/config/cert/25116_wenzhoudai.key.pem
+[2014-12-16 14:15:27]-[]-[data] :Signature string forÔºöÆóZº–d®1◊òÏ%≈FãaŸœ(&bö.πGØM3*ÊÑ@p ˚è‡79˛]fKé~[o8_'îÌZ»e9#S‚bÕ{°‹ñÎA ◊'Æ(GÃÚ tÖ®0T.˙E9:y§XﬂYı∂Äú∑ú«SbˆóPUTû™
+[2014-12-16 14:15:27]-[]-[data] :Request platform way=get
+[2014-12-16 14:15:27]-[]-[data] :Request platform signature string=rpdavNAHZKgx15jsJcVGGIth2c8oHyZimi65Rw+vTTMBKgvmhEBwAPuP4BwONzn+HhhdZkuOflsTBW84XyeU7VrIf2U5IxlT4mLNe6HclutBytcnrigIRwHM8sp0hagwG1Qu+kU5GTp5pFjfWfUOtgiAnLecx1Ni9pdQVVSeCKo=
+[2014-12-16 14:15:27]-[]-[data] :Clear information request platform=busi_no=1&card_holder=wYG1hJ9F/nM089WYczCBSDTWxDtZAyhVFdXrcIx2IBE7NmyKSXcA7H1uuASeoyy36UzRb7hs+WAE64WT2LY2s/6Qlu/lUWEXjzrfjCVlt70CROR7vob6GhOzBxPyXeGQDmTyfULVk8mIFYjFo59eEfo3JtBiq2iWBzkRiE+y0r8=&card_id=owodbAj7ZrpsuQRsO+6CL218/vpb6XWhcKivTAc+DHEuQu61o1ko3aspLbuKaYKPWRiSMY6LbrKe/tUrbDDJUylz25GGDbqOFlznzncAt3mQ8Z0i8LjacC93WO8r4tMWy0J8sK0Igzu2uXGYxbmx/j92mBZ+faDL7pI0N38jr8s=&card_type=0&charset=UTF-8&identity_code=hmswQS+bA+Mi/SVg0B+zgJyKUmY2CFYVaznDERYWSUAro9ijtt7Iy/AfLvamPuXuLhydC4fcn3V/OiZp/fQWRAA0nUTJn7N0X4Kmy+27B+J0aCBVi+ZApxaSvTPBveSiuJoN8t7aweBqerhmWsnMhVsy/JnVYFPCaIXkjTD+Ioc=&identity_type=IDENTITY_CARD&media_id=13818483971&mer_id=25116&pub_pri_flag=2&service=user_reg&version=4.0
+[2014-12-16 14:15:27]-[]-[data] :The service user_reg request platform to get the address url=http://pay.soopay.net/spay/pay/payservice.do?busi_no=1&card_holder=wYG1hJ9F%2FnM089WYczCBSDTWxDtZAyhVFdXrcIx2IBE7NmyKSXcA7H1uuASeoyy36UzRb7hs%2BWAE64WT2LY2s%2F6Qlu%2FlUWEXjzrfjCVlt70CROR7vob6GhOzBxPyXeGQDmTyfULVk8mIFYjFo59eEfo3JtBiq2iWBzkRiE%2By0r8%3D&card_id=owodbAj7ZrpsuQRsO%2B6CL218%2Fvpb6XWhcKivTAc%2BDHEuQu61o1ko3aspLbuKaYKPWRiSMY6LbrKe%2FtUrbDDJUylz25GGDbqOFlznzncAt3mQ8Z0i8LjacC93WO8r4tMWy0J8sK0Igzu2uXGYxbmx%2Fj92mBZ%2BfaDL7pI0N38jr8s%3D&card_type=0&charset=UTF-8&identity_code=hmswQS%2BbA%2BMi%2FSVg0B%2BzgJyKUmY2CFYVaznDERYWSUAro9ijtt7Iy%2FAfLvamPuXuLhydC4fcn3V%2FOiZp%2FfQWRAA0nUTJn7N0X4Kmy%2B27B%2BJ0aCBVi%2BZApxaSvTPBveSiuJoN8t7aweBqerhmWsnMhVsy%2FJnVYFPCaIXkjTD%2BIoc%3D&identity_type=IDENTITY_CARD&media_id=13818483971&mer_id=25116&pub_pri_flag=2&service=user_reg&sign_type=RSA&version=4.0&sign=rpdavNAHZKgx15jsJcVGGIth2c8oHyZimi65Rw+vTTMBKgvmhEBwAPuP4BwONzn+HhhdZkuOflsTBW84XyeU7VrIf2U5IxlT4mLNe6HclutBytcnrigIRwHM8sp0hagwG1Qu+kU5GTp5pFjfWfUOtgiAnLecx1Ni9pdQVVSeCKo=
+[2014-12-16 14:15:44]-[]-[data] :Request Para=array (
+  'service' => 'user_reg',
+  'sign_type' => 'RSA',
+  'mer_id' => '25116',
+  'version' => '4.0',
+  'charset' => 'UTF-8',
+  'pub_pri_flag' => '2',
+  'identity_type' => 'IDENTITY_CARD',
+  'identity_code' => '420626198609292527',
+  'card_id' => '6228480038445547276',
+  'card_holder' => 'Â±àÈáëÂ®•',
+  'media_id' => '13818483971',
+  'card_type' => '0',
+  'busi_no' => '1',
+)
+[2014-12-16 14:15:44]-[]-[data] :The parameters of the request card_id RSA encryption
+[2014-12-16 14:15:44]-[]-[data] :ÊïèÊÑü‰ø°ÊÅØÂä†ÂØÜÂØÜÊñá:[webTSTYJIf3yC+V1n4rblBslRzbYn3/DsESACjsvyRg4VZGI8jxTXFdJCGe5vaFmtYjLW7afcFykfz/TPp8/UFPWDvBLEo09ibdbey5GYl6sw9d0HHekFm7g1Z8ZoGPZ2fDTyOEJbIU5Lv2U5qGvfnF/LcKkP/NFLRbAaXMC8ig=]
+[2014-12-16 14:15:44]-[]-[data] :The parameters of the request identity_code RSA encryption
+[2014-12-16 14:15:44]-[]-[data] :ÊïèÊÑü‰ø°ÊÅØÂä†ÂØÜÂØÜÊñá:[UWKLIE/RI+asrhikTF/0FQ8tjd72h7eWTA7RrjHhmbi1qd0OY8yqqGH/J7GlHpW2n4EyC2ws+qYpbeXRYFAd5pHlMM2n4IpbYKapYqjLNY2TFzunqBdq/ALyBNpZUdkHgFbjjbL3Bmz7C86zBN5l8f1cVfHpnkiveyP2yKymMVY=]
+[2014-12-16 14:15:44]-[]-[data] :The parameters of the request card_holder RSA encryption
+[2014-12-16 14:15:44]-[]-[data] :ÊïèÊÑü‰ø°ÊÅØÂä†ÂØÜÂØÜÊñá:[KdAq4/mwmhnb/LNdJ4SczQpgG9y9/oEvPnLNB/QLkezF+x9492ZIYxSgX30/If0q4yzAqKwJt+FrvHYynEL110oerSmbyPd/8l6XnuzPg4Rnjzr50/MmWX9ee+ZMj8Yej4ulIhEmMarm65bYDIL1Kb3qSJnfZWp3wm9hW9grt/M=]
+[2014-12-16 14:15:44]-[]-[data] :Participate in the signature parametersÔºö[busi_no=1&card_holder=KdAq4/mwmhnb/LNdJ4SczQpgG9y9/oEvPnLNB/QLkezF+x9492ZIYxSgX30/If0q4yzAqKwJt+FrvHYynEL110oerSmbyPd/8l6XnuzPg4Rnjzr50/MmWX9ee+ZMj8Yej4ulIhEmMarm65bYDIL1Kb3qSJnfZWp3wm9hW9grt/M=&card_id=webTSTYJIf3yC+V1n4rblBslRzbYn3/DsESACjsvyRg4VZGI8jxTXFdJCGe5vaFmtYjLW7afcFykfz/TPp8/UFPWDvBLEo09ibdbey5GYl6sw9d0HHekFm7g1Z8ZoGPZ2fDTyOEJbIU5Lv2U5qGvfnF/LcKkP/NFLRbAaXMC8ig=&card_type=0&charset=UTF-8&identity_code=UWKLIE/RI+asrhikTF/0FQ8tjd72h7eWTA7RrjHhmbi1qd0OY8yqqGH/J7GlHpW2n4EyC2ws+qYpbeXRYFAd5pHlMM2n4IpbYKapYqjLNY2TFzunqBdq/ALyBNpZUdkHgFbjjbL3Bmz7C86zBN5l8f1cVfHpnkiveyP2yKymMVY=&identity_type=IDENTITY_CARD&media_id=13818483971&mer_id=25116&pub_pri_flag=2&service=user_reg&version=4.0],Merchant number isÔºö[25116]
+[2014-12-16 14:15:44]-[]-[data] :The private key path forÔºö/opt/lampp/htdocs/common/config/cert/25116_wenzhoudai.key.pem
+[2014-12-16 14:15:44]-[]-[data] :Signature string forÔºöw_Ä ÓSÆ¬yQ:πÕÿç Á∆Ù‰c1øÉîﬂ´ıÜ	ÅhVK˝ÎcŸtAÃ≠¿tief€õ7∞ñªC&Ï⁄˘’Î¯5q -S1ñlÉ]}8ıHL	W˛V]Œ’ºıˆ’n∞ùﬂ24Ìm)¡
+]πZõ¿∑¶ùT¢
+[2014-12-16 14:15:44]-[]-[data] :Request platform way=get
+[2014-12-16 14:15:44]-[]-[data] :Request platform signature string=d18WgADuUwiuwnlROrnN2I0g5w3G9ORjETEZv4OU3wurCPWGCYEaaBRWS/3rY9l0QcwVrcB0FGllZtubN7AelrtDJuza+dUTDOv4NQZxGwAtUzGWbINdfTj1SPBMCVf+Vl3O1bz19hDVbrCd3zI07W0pwQpduVqbwLemnVQGohM=
+[2014-12-16 14:15:44]-[]-[data] :Clear information request platform=busi_no=1&card_holder=KdAq4/mwmhnb/LNdJ4SczQpgG9y9/oEvPnLNB/QLkezF+x9492ZIYxSgX30/If0q4yzAqKwJt+FrvHYynEL110oerSmbyPd/8l6XnuzPg4Rnjzr50/MmWX9ee+ZMj8Yej4ulIhEmMarm65bYDIL1Kb3qSJnfZWp3wm9hW9grt/M=&card_id=webTSTYJIf3yC+V1n4rblBslRzbYn3/DsESACjsvyRg4VZGI8jxTXFdJCGe5vaFmtYjLW7afcFykfz/TPp8/UFPWDvBLEo09ibdbey5GYl6sw9d0HHekFm7g1Z8ZoGPZ2fDTyOEJbIU5Lv2U5qGvfnF/LcKkP/NFLRbAaXMC8ig=&card_type=0&charset=UTF-8&identity_code=UWKLIE/RI+asrhikTF/0FQ8tjd72h7eWTA7RrjHhmbi1qd0OY8yqqGH/J7GlHpW2n4EyC2ws+qYpbeXRYFAd5pHlMM2n4IpbYKapYqjLNY2TFzunqBdq/ALyBNpZUdkHgFbjjbL3Bmz7C86zBN5l8f1cVfHpnkiveyP2yKymMVY=&identity_type=IDENTITY_CARD&media_id=13818483971&mer_id=25116&pub_pri_flag=2&service=user_reg&version=4.0
+[2014-12-16 14:15:44]-[]-[data] :The service user_reg request platform to get the address url=http://pay.soopay.net/spay/pay/payservice.do?busi_no=1&card_holder=KdAq4%2Fmwmhnb%2FLNdJ4SczQpgG9y9%2FoEvPnLNB%2FQLkezF%2Bx9492ZIYxSgX30%2FIf0q4yzAqKwJt%2BFrvHYynEL110oerSmbyPd%2F8l6XnuzPg4Rnjzr50%2FMmWX9ee%2BZMj8Yej4ulIhEmMarm65bYDIL1Kb3qSJnfZWp3wm9hW9grt%2FM%3D&card_id=webTSTYJIf3yC%2BV1n4rblBslRzbYn3%2FDsESACjsvyRg4VZGI8jxTXFdJCGe5vaFmtYjLW7afcFykfz%2FTPp8%2FUFPWDvBLEo09ibdbey5GYl6sw9d0HHekFm7g1Z8ZoGPZ2fDTyOEJbIU5Lv2U5qGvfnF%2FLcKkP%2FNFLRbAaXMC8ig%3D&card_type=0&charset=UTF-8&identity_code=UWKLIE%2FRI%2BasrhikTF%2F0FQ8tjd72h7eWTA7RrjHhmbi1qd0OY8yqqGH%2FJ7GlHpW2n4EyC2ws%2BqYpbeXRYFAd5pHlMM2n4IpbYKapYqjLNY2TFzunqBdq%2FALyBNpZUdkHgFbjjbL3Bmz7C86zBN5l8f1cVfHpnkiveyP2yKymMVY%3D&identity_type=IDENTITY_CARD&media_id=13818483971&mer_id=25116&pub_pri_flag=2&service=user_reg&sign_type=RSA&version=4.0&sign=d18WgADuUwiuwnlROrnN2I0g5w3G9ORjETEZv4OU3wurCPWGCYEaaBRWS/3rY9l0QcwVrcB0FGllZtubN7AelrtDJuza+dUTDOv4NQZxGwAtUzGWbINdfTj1SPBMCVf+Vl3O1bz19hDVbrCd3zI07W0pwQpduVqbwLemnVQGohM=
+[2014-12-16 14:17:04]-[]-[data] :Request Para=array (
+  'service' => 'user_reg',
+  'sign_type' => 'RSA',
+  'mer_id' => '25116',
+  'version' => '4.0',
+  'charset' => 'UTF-8',
+  'pub_pri_flag' => '2',
+  'identity_type' => 'IDENTITY_CARD',
+  'identity_code' => '420626198609292527',
+  'card_id' => '6228480038445547276',
+  'card_holder' => 'Â±àÈáëÂ®•',
+  'media_id' => '13818483971',
+  'card_type' => '0',
+  'busi_no' => '1',
+)
+[2014-12-16 14:17:04]-[]-[data] :The parameters of the request card_id RSA encryption
+[2014-12-16 14:17:04]-[]-[data] :ÊïèÊÑü‰ø°ÊÅØÂä†ÂØÜÂØÜÊñá:[EvoV9QXHraMe1Uq2BVW+LySMylTgXXCG503CHmcsADr7J97/PcLvs0GEvNTRVOolskzoA2LodDX7K33JPSNZbUrJuhqwuXy29plW2yw0OSTZEftu9K7eP5S+UQUx/872I+Kc0LJ4e6IbfjGMCXj2znmglJME4naQ+vrBsGtyIi0=]
+[2014-12-16 14:17:04]-[]-[data] :The parameters of the request identity_code RSA encryption
+[2014-12-16 14:17:04]-[]-[data] :ÊïèÊÑü‰ø°ÊÅØÂä†ÂØÜÂØÜÊñá:[Qpz1Vf1EATIpR1+T8SVqSw0QDw1YGJ8Q1Auekhh6cpHpNYSvke0OOFWV8IL6rQ+vFIgq3gQflF6zWbHBx+0KtRfzxnp53PNtFDZwqPOLSAJrOWg7RG38UnKrJbIqjt7m5iDp/kY1lQFkkGbrcCNDVnfc96ypt6H9bJ3c7raqR9g=]
+[2014-12-16 14:17:04]-[]-[data] :The parameters of the request card_holder RSA encryption
+[2014-12-16 14:17:04]-[]-[data] :ÊïèÊÑü‰ø°ÊÅØÂä†ÂØÜÂØÜÊñá:[o4i2uU290hxlt6yYNb9es8iGL/mGyCZHY4f+nhEna19X7Aj2KFjgtOCmZqkoUPXldcaeL0zg0xIk8hYAbBW5Vps5UOygtyJ7An84AQgxXDp98kmaKp5jL31LsMBeD8rvpSfIAgCtiNuXqQRB7m9DKc2dWDKkC+EfpYPIkC+hRo4=]
+[2014-12-16 14:17:04]-[]-[data] :Participate in the signature parametersÔºö[busi_no=1&card_holder=o4i2uU290hxlt6yYNb9es8iGL/mGyCZHY4f+nhEna19X7Aj2KFjgtOCmZqkoUPXldcaeL0zg0xIk8hYAbBW5Vps5UOygtyJ7An84AQgxXDp98kmaKp5jL31LsMBeD8rvpSfIAgCtiNuXqQRB7m9DKc2dWDKkC+EfpYPIkC+hRo4=&card_id=EvoV9QXHraMe1Uq2BVW+LySMylTgXXCG503CHmcsADr7J97/PcLvs0GEvNTRVOolskzoA2LodDX7K33JPSNZbUrJuhqwuXy29plW2yw0OSTZEftu9K7eP5S+UQUx/872I+Kc0LJ4e6IbfjGMCXj2znmglJME4naQ+vrBsGtyIi0=&card_type=0&charset=UTF-8&identity_code=Qpz1Vf1EATIpR1+T8SVqSw0QDw1YGJ8Q1Auekhh6cpHpNYSvke0OOFWV8IL6rQ+vFIgq3gQflF6zWbHBx+0KtRfzxnp53PNtFDZwqPOLSAJrOWg7RG38UnKrJbIqjt7m5iDp/kY1lQFkkGbrcCNDVnfc96ypt6H9bJ3c7raqR9g=&identity_type=IDENTITY_CARD&media_id=13818483971&mer_id=25116&pub_pri_flag=2&service=user_reg&version=4.0],Merchant number isÔºö[25116]
+[2014-12-16 14:17:04]-[]-[data] :The private key path forÔºö/opt/lampp/htdocs/common/config/cert/25116_wenzhoudai.key.pem
+[2014-12-16 14:17:04]-[]-[data] :Signature string forÔºövî1ÑZÿ[·Y„AGø®äDKoQz
+Êî‡Å`ª◊∂õLª˙nê"˜îíÏ·Ï içãg B°B'»=•èÕK≈÷«L87…˚Ë†˘Ø=8uWs¸∆À±|´Ωù÷€tXrB¿Jl“B2™∂9°Íÿ‰TI˙+≠c2^Wâ=¢Ô}ÌÖ-y
+[2014-12-16 14:17:04]-[]-[data] :Request platform way=get
+[2014-12-16 14:17:04]-[]-[data] :Request platform signature string=f3aUAzGEWthb4VnjE0FHv6iKREscb1F6CuaU4IFgu9e2m0y7+m6QIveUkuzh7ABpjYtnAEKhQifIPaWPzUvF1sdMODfJEfvooPmvPTh1V3ME/MbLsXyrvZ3W23RYckLASmzSQjKqtjmh6tjkVEn6K61jMl5XiT2i7xB97YUtFnk=
+[2014-12-16 14:17:04]-[]-[data] :Clear information request platform=busi_no=1&card_holder=o4i2uU290hxlt6yYNb9es8iGL/mGyCZHY4f+nhEna19X7Aj2KFjgtOCmZqkoUPXldcaeL0zg0xIk8hYAbBW5Vps5UOygtyJ7An84AQgxXDp98kmaKp5jL31LsMBeD8rvpSfIAgCtiNuXqQRB7m9DKc2dWDKkC+EfpYPIkC+hRo4=&card_id=EvoV9QXHraMe1Uq2BVW+LySMylTgXXCG503CHmcsADr7J97/PcLvs0GEvNTRVOolskzoA2LodDX7K33JPSNZbUrJuhqwuXy29plW2yw0OSTZEftu9K7eP5S+UQUx/872I+Kc0LJ4e6IbfjGMCXj2znmglJME4naQ+vrBsGtyIi0=&card_type=0&charset=UTF-8&identity_code=Qpz1Vf1EATIpR1+T8SVqSw0QDw1YGJ8Q1Auekhh6cpHpNYSvke0OOFWV8IL6rQ+vFIgq3gQflF6zWbHBx+0KtRfzxnp53PNtFDZwqPOLSAJrOWg7RG38UnKrJbIqjt7m5iDp/kY1lQFkkGbrcCNDVnfc96ypt6H9bJ3c7raqR9g=&identity_type=IDENTITY_CARD&media_id=13818483971&mer_id=25116&pub_pri_flag=2&service=user_reg&version=4.0
+[2014-12-16 14:17:04]-[]-[data] :The service user_reg request platform to get the address url=http://pay.soopay.net/spay/pay/payservice.do?busi_no=1&card_holder=o4i2uU290hxlt6yYNb9es8iGL%2FmGyCZHY4f%2BnhEna19X7Aj2KFjgtOCmZqkoUPXldcaeL0zg0xIk8hYAbBW5Vps5UOygtyJ7An84AQgxXDp98kmaKp5jL31LsMBeD8rvpSfIAgCtiNuXqQRB7m9DKc2dWDKkC%2BEfpYPIkC%2BhRo4%3D&card_id=EvoV9QXHraMe1Uq2BVW%2BLySMylTgXXCG503CHmcsADr7J97%2FPcLvs0GEvNTRVOolskzoA2LodDX7K33JPSNZbUrJuhqwuXy29plW2yw0OSTZEftu9K7eP5S%2BUQUx%2F872I%2BKc0LJ4e6IbfjGMCXj2znmglJME4naQ%2BvrBsGtyIi0%3D&card_type=0&charset=UTF-8&identity_code=Qpz1Vf1EATIpR1%2BT8SVqSw0QDw1YGJ8Q1Auekhh6cpHpNYSvke0OOFWV8IL6rQ%2BvFIgq3gQflF6zWbHBx%2B0KtRfzxnp53PNtFDZwqPOLSAJrOWg7RG38UnKrJbIqjt7m5iDp%2FkY1lQFkkGbrcCNDVnfc96ypt6H9bJ3c7raqR9g%3D&identity_type=IDENTITY_CARD&media_id=13818483971&mer_id=25116&pub_pri_flag=2&service=user_reg&sign_type=RSA&version=4.0&sign=f3aUAzGEWthb4VnjE0FHv6iKREscb1F6CuaU4IFgu9e2m0y7+m6QIveUkuzh7ABpjYtnAEKhQifIPaWPzUvF1sdMODfJEfvooPmvPTh1V3ME/MbLsXyrvZ3W23RYckLASmzSQjKqtjmh6tjkVEn6K61jMl5XiT2i7xB97YUtFnk=
+[2014-12-16 14:17:10]-[]-[data] :Request Para=array (
+  'service' => 'user_reg',
+  'sign_type' => 'RSA',
+  'mer_id' => '25116',
+  'version' => '4.0',
+  'charset' => 'UTF-8',
+  'pub_pri_flag' => '2',
+  'identity_type' => 'IDENTITY_CARD',
+  'identity_code' => '420626198609292527',
+  'card_id' => '6228480038445547276',
+  'card_holder' => 'Â±àÈáëÂ®•',
+  'media_id' => '13818483971',
+  'card_type' => '0',
+  'busi_no' => '1',
+)
+[2014-12-16 14:17:10]-[]-[data] :The parameters of the request card_id RSA encryption
+[2014-12-16 14:17:10]-[]-[data] :ÊïèÊÑü‰ø°ÊÅØÂä†ÂØÜÂØÜÊñá:[xkwAEJMA8Li0lHNlnKbhE96ewbHO62hUDUlBzdx1bYw/Wh98MWTSndYICyv7MCnKUe1QdDn+G+wa4z3tNVmKMCnERjBODjgiLB8sPtDc8QVJN4ShJeW+D/7v/J2x2t7+VDUu0PC6CsOW6XIkXUdEywVGpO3cGtctZP4G/yPigJU=]
+[2014-12-16 14:17:10]-[]-[data] :The parameters of the request identity_code RSA encryption
+[2014-12-16 14:17:10]-[]-[data] :ÊïèÊÑü‰ø°ÊÅØÂä†ÂØÜÂØÜÊñá:[uxMOeg7GDFzHE/xodbZeNaDm00heas1mHwnJt3vqgv/xLQ7JYOOEzhiG5pI+Mwb7AFCkzyRFlRUSY3c5JtMtUkrScEHJxjtVk9G1n7ywCTFmWsDFpyJWuF2YnrVA/HUTdBpmUX4jPUdDicpy2SDTC7zLZieol4ze5UbQo4p6Oc4=]
+[2014-12-16 14:17:10]-[]-[data] :The parameters of the request card_holder RSA encryption
+[2014-12-16 14:17:10]-[]-[data] :ÊïèÊÑü‰ø°ÊÅØÂä†ÂØÜÂØÜÊñá:[dmFJtLq2gaikjxVs/SdNwt0es9jJ5Z7rKnOVO61yJG+mZRPtbeAsGULRYSXXZ0eMAGeWqlqzYQOxPYXACPzRI7Fvp2QGMGtOWqch/F+DfmN/kmJ6/42jT/g28KoZ0JtC/Ic3FVor3Aa0dglBCKK/c2JPIjr5HcvcJsVsW0WI6aE=]
+[2014-12-16 14:17:10]-[]-[data] :Participate in the signature parametersÔºö[busi_no=1&card_holder=dmFJtLq2gaikjxVs/SdNwt0es9jJ5Z7rKnOVO61yJG+mZRPtbeAsGULRYSXXZ0eMAGeWqlqzYQOxPYXACPzRI7Fvp2QGMGtOWqch/F+DfmN/kmJ6/42jT/g28KoZ0JtC/Ic3FVor3Aa0dglBCKK/c2JPIjr5HcvcJsVsW0WI6aE=&card_id=xkwAEJMA8Li0lHNlnKbhE96ewbHO62hUDUlBzdx1bYw/Wh98MWTSndYICyv7MCnKUe1QdDn+G+wa4z3tNVmKMCnERjBODjgiLB8sPtDc8QVJN4ShJeW+D/7v/J2x2t7+VDUu0PC6CsOW6XIkXUdEywVGpO3cGtctZP4G/yPigJU=&card_type=0&charset=UTF-8&identity_code=uxMOeg7GDFzHE/xodbZeNaDm00heas1mHwnJt3vqgv/xLQ7JYOOEzhiG5pI+Mwb7AFCkzyRFlRUSY3c5JtMtUkrScEHJxjtVk9G1n7ywCTFmWsDFpyJWuF2YnrVA/HUTdBpmUX4jPUdDicpy2SDTC7zLZieol4ze5UbQo4p6Oc4=&identity_type=IDENTITY_CARD&media_id=13818483971&mer_id=25116&pub_pri_flag=2&service=user_reg&version=4.0],Merchant number isÔºö[25116]
+[2014-12-16 14:17:10]-[]-[data] :The private key path forÔºö/opt/lampp/htdocs/common/config/cert/25116_wenzhoudai.key.pem
+[2014-12-16 14:17:10]-[]-[data] :Signature string forÔºöf’°Áa™jU⁄ñ8áÕùˇÇ7b•áeª*UöDÏæ‚ó‰@0“Èºhß^iLc∏kÜà÷\f]ÉdV/ÕËNHtØ”¥%nÙ∂ΩXÛ`)ä˜ ÿéâr≥/‡3¯íË™Ú⁄4∏òZ/∂$AQç2÷>Hå™çˇL√FD…ƒHÔ≠¸
+[2014-12-16 14:17:10]-[]-[data] :Request platform way=get
+[2014-12-16 14:17:10]-[]-[data] :Request platform signature string=ZtWh52GqagQcVdqWOIfNnRH/gjdipYcBZbsqVZpE7L7il+QQQDDS6bxop15pTGO4a4aI1lxmXYNkVi/N6E5IdK/TGbQlbvS2vVjzYCmK98rYjh+JcrMv4DP4F5LoqvLaNLiYWi+2JEFRjRsy1gw+SIwZqo3/TMMVRkTJxEjvrfw=
+[2014-12-16 14:17:10]-[]-[data] :Clear information request platform=busi_no=1&card_holder=dmFJtLq2gaikjxVs/SdNwt0es9jJ5Z7rKnOVO61yJG+mZRPtbeAsGULRYSXXZ0eMAGeWqlqzYQOxPYXACPzRI7Fvp2QGMGtOWqch/F+DfmN/kmJ6/42jT/g28KoZ0JtC/Ic3FVor3Aa0dglBCKK/c2JPIjr5HcvcJsVsW0WI6aE=&card_id=xkwAEJMA8Li0lHNlnKbhE96ewbHO62hUDUlBzdx1bYw/Wh98MWTSndYICyv7MCnKUe1QdDn+G+wa4z3tNVmKMCnERjBODjgiLB8sPtDc8QVJN4ShJeW+D/7v/J2x2t7+VDUu0PC6CsOW6XIkXUdEywVGpO3cGtctZP4G/yPigJU=&card_type=0&charset=UTF-8&identity_code=uxMOeg7GDFzHE/xodbZeNaDm00heas1mHwnJt3vqgv/xLQ7JYOOEzhiG5pI+Mwb7AFCkzyRFlRUSY3c5JtMtUkrScEHJxjtVk9G1n7ywCTFmWsDFpyJWuF2YnrVA/HUTdBpmUX4jPUdDicpy2SDTC7zLZieol4ze5UbQo4p6Oc4=&identity_type=IDENTITY_CARD&media_id=13818483971&mer_id=25116&pub_pri_flag=2&service=user_reg&version=4.0
+[2014-12-16 14:17:10]-[]-[data] :The service user_reg request platform to get the address url=http://pay.soopay.net/spay/pay/payservice.do?busi_no=1&card_holder=dmFJtLq2gaikjxVs%2FSdNwt0es9jJ5Z7rKnOVO61yJG%2BmZRPtbeAsGULRYSXXZ0eMAGeWqlqzYQOxPYXACPzRI7Fvp2QGMGtOWqch%2FF%2BDfmN%2FkmJ6%2F42jT%2Fg28KoZ0JtC%2FIc3FVor3Aa0dglBCKK%2Fc2JPIjr5HcvcJsVsW0WI6aE%3D&card_id=xkwAEJMA8Li0lHNlnKbhE96ewbHO62hUDUlBzdx1bYw%2FWh98MWTSndYICyv7MCnKUe1QdDn%2BG%2Bwa4z3tNVmKMCnERjBODjgiLB8sPtDc8QVJN4ShJeW%2BD%2F7v%2FJ2x2t7%2BVDUu0PC6CsOW6XIkXUdEywVGpO3cGtctZP4G%2FyPigJU%3D&card_type=0&charset=UTF-8&identity_code=uxMOeg7GDFzHE%2FxodbZeNaDm00heas1mHwnJt3vqgv%2FxLQ7JYOOEzhiG5pI%2BMwb7AFCkzyRFlRUSY3c5JtMtUkrScEHJxjtVk9G1n7ywCTFmWsDFpyJWuF2YnrVA%2FHUTdBpmUX4jPUdDicpy2SDTC7zLZieol4ze5UbQo4p6Oc4%3D&identity_type=IDENTITY_CARD&media_id=13818483971&mer_id=25116&pub_pri_flag=2&service=user_reg&sign_type=RSA&version=4.0&sign=ZtWh52GqagQcVdqWOIfNnRH/gjdipYcBZbsqVZpE7L7il+QQQDDS6bxop15pTGO4a4aI1lxmXYNkVi/N6E5IdK/TGbQlbvS2vVjzYCmK98rYjh+JcrMv4DP4F5LoqvLaNLiYWi+2JEFRjRsy1gw+SIwZqo3/TMMVRkTJxEjvrfw=
+[2014-12-16 14:17:12]-[]-[data] :Request Para=array (
+  'service' => 'user_reg',
+  'sign_type' => 'RSA',
+  'mer_id' => '25116',
+  'version' => '4.0',
+  'charset' => 'UTF-8',
+  'pub_pri_flag' => '2',
+  'identity_type' => 'IDENTITY_CARD',
+  'identity_code' => '420626198609292527',
+  'card_id' => '6228480038445547276',
+  'card_holder' => 'Â±àÈáëÂ®•',
+  'media_id' => '13818483971',
+  'card_type' => '0',
+  'busi_no' => '1',
+)
+[2014-12-16 14:17:12]-[]-[data] :The parameters of the request card_id RSA encryption
+[2014-12-16 14:17:12]-[]-[data] :ÊïèÊÑü‰ø°ÊÅØÂä†ÂØÜÂØÜÊñá:[Ms40vnIkQ1SBYEM5NGZDyNL5N2wLHfcMSXZ+n1EQbL79fTC1aiqprROtkVh2MFdNbSlKxA7wgxa4SI2NDWwaO/HWQWxWYNWLdHx9/clpkhSAryPMIKzC+aH35IBRAO33FoH2ratm1qJt25ctd2nTVYLIG4cSXu5LgIq6LgCTeDw=]
+[2014-12-16 14:17:12]-[]-[data] :The parameters of the request identity_code RSA encryption
+[2014-12-16 14:17:12]-[]-[data] :ÊïèÊÑü‰ø°ÊÅØÂä†ÂØÜÂØÜÊñá:[AdN+QofzBKkeInih+z0THqRnHf1A+DBllJj09kJH5HgHsVNtcgYHUM593v1G7nM1G2bqWl8+fyxb83PZNpTpplosJ7L9rThoeaQ+L803alnaNn3VUqKwQnEoIFlwEfmYs5WvITpsXhKdPy509S8R3wVrSNZpyjaF8jtdeF1izJY=]
+[2014-12-16 14:17:12]-[]-[data] :The parameters of the request card_holder RSA encryption
+[2014-12-16 14:17:12]-[]-[data] :ÊïèÊÑü‰ø°ÊÅØÂä†ÂØÜÂØÜÊñá:[jP3b962M2qa+G0XOgUAdN2jWgttOAiEV2WG97R6istTQPP6XaFFouxsMPsihbAst31A+Qtn6WWpsuO4yCLF6+aYknlvHe9giQD17mjT5a0lMjYt6Z1X64SCapraC+1MZ5pMFZju2M20Va7dvSXLDdOUCsmUpO9ik7NUspG71eWo=]
+[2014-12-16 14:17:12]-[]-[data] :Participate in the signature parametersÔºö[busi_no=1&card_holder=jP3b962M2qa+G0XOgUAdN2jWgttOAiEV2WG97R6istTQPP6XaFFouxsMPsihbAst31A+Qtn6WWpsuO4yCLF6+aYknlvHe9giQD17mjT5a0lMjYt6Z1X64SCapraC+1MZ5pMFZju2M20Va7dvSXLDdOUCsmUpO9ik7NUspG71eWo=&card_id=Ms40vnIkQ1SBYEM5NGZDyNL5N2wLHfcMSXZ+n1EQbL79fTC1aiqprROtkVh2MFdNbSlKxA7wgxa4SI2NDWwaO/HWQWxWYNWLdHx9/clpkhSAryPMIKzC+aH35IBRAO33FoH2ratm1qJt25ctd2nTVYLIG4cSXu5LgIq6LgCTeDw=&card_type=0&charset=UTF-8&identity_code=AdN+QofzBKkeInih+z0THqRnHf1A+DBllJj09kJH5HgHsVNtcgYHUM593v1G7nM1G2bqWl8+fyxb83PZNpTpplosJ7L9rThoeaQ+L803alnaNn3VUqKwQnEoIFlwEfmYs5WvITpsXhKdPy509S8R3wVrSNZpyjaF8jtdeF1izJY=&identity_type=IDENTITY_CARD&media_id=13818483971&mer_id=25116&pub_pri_flag=2&service=user_reg&version=4.0],Merchant number isÔºö[25116]
+[2014-12-16 14:17:12]-[]-[data] :The private key path forÔºö/opt/lampp/htdocs/common/config/cert/25116_wenzhoudai.key.pem
+[2014-12-16 14:17:12]-[]-[data] :Signature string forÔºö&~ù'€™°HﬁZ"v•vŸ&jñ!Œ∂	äj‘¨“•5	¬⁄’z9LTÿä7.r
+{UL˚ C93Yœı2gb?ÜÏ=EA∞I¿˝û|=‚ßÓ~â)&Ú,ÃX'l1kAwÊÏô_Çüπ˝>ÂWç¸ëM?ÁB∂'\od·^˛ü–u˘˚‚ÿ
+[2014-12-16 14:17:12]-[]-[data] :Request platform way=get
+[2014-12-16 14:17:12]-[]-[data] :Request platform signature string=Jn6dJ9uqoUjeWgYidqV22SZqliHOtgmKatSs0qU1CcLa1Xo5TFTYijcucgp7VRpMf/sAQzkzWc/1MmcdYj+G7D1FQbBJwP2efD3ip+5+iSkm8izMWCdsMRJrQXfm7Jlfgp+5/T7lV3+N/JFNP+dCtidcb2ThXv6f0HX5C/viFNg=
+[2014-12-16 14:17:12]-[]-[data] :Clear information request platform=busi_no=1&card_holder=jP3b962M2qa+G0XOgUAdN2jWgttOAiEV2WG97R6istTQPP6XaFFouxsMPsihbAst31A+Qtn6WWpsuO4yCLF6+aYknlvHe9giQD17mjT5a0lMjYt6Z1X64SCapraC+1MZ5pMFZju2M20Va7dvSXLDdOUCsmUpO9ik7NUspG71eWo=&card_id=Ms40vnIkQ1SBYEM5NGZDyNL5N2wLHfcMSXZ+n1EQbL79fTC1aiqprROtkVh2MFdNbSlKxA7wgxa4SI2NDWwaO/HWQWxWYNWLdHx9/clpkhSAryPMIKzC+aH35IBRAO33FoH2ratm1qJt25ctd2nTVYLIG4cSXu5LgIq6LgCTeDw=&card_type=0&charset=UTF-8&identity_code=AdN+QofzBKkeInih+z0THqRnHf1A+DBllJj09kJH5HgHsVNtcgYHUM593v1G7nM1G2bqWl8+fyxb83PZNpTpplosJ7L9rThoeaQ+L803alnaNn3VUqKwQnEoIFlwEfmYs5WvITpsXhKdPy509S8R3wVrSNZpyjaF8jtdeF1izJY=&identity_type=IDENTITY_CARD&media_id=13818483971&mer_id=25116&pub_pri_flag=2&service=user_reg&version=4.0
+[2014-12-16 14:17:12]-[]-[data] :The service user_reg request platform to get the address url=http://pay.soopay.net/spay/pay/payservice.do?busi_no=1&card_holder=jP3b962M2qa%2BG0XOgUAdN2jWgttOAiEV2WG97R6istTQPP6XaFFouxsMPsihbAst31A%2BQtn6WWpsuO4yCLF6%2BaYknlvHe9giQD17mjT5a0lMjYt6Z1X64SCapraC%2B1MZ5pMFZju2M20Va7dvSXLDdOUCsmUpO9ik7NUspG71eWo%3D&card_id=Ms40vnIkQ1SBYEM5NGZDyNL5N2wLHfcMSXZ%2Bn1EQbL79fTC1aiqprROtkVh2MFdNbSlKxA7wgxa4SI2NDWwaO%2FHWQWxWYNWLdHx9%2FclpkhSAryPMIKzC%2BaH35IBRAO33FoH2ratm1qJt25ctd2nTVYLIG4cSXu5LgIq6LgCTeDw%3D&card_type=0&charset=UTF-8&identity_code=AdN%2BQofzBKkeInih%2Bz0THqRnHf1A%2BDBllJj09kJH5HgHsVNtcgYHUM593v1G7nM1G2bqWl8%2Bfyxb83PZNpTpplosJ7L9rThoeaQ%2BL803alnaNn3VUqKwQnEoIFlwEfmYs5WvITpsXhKdPy509S8R3wVrSNZpyjaF8jtdeF1izJY%3D&identity_type=IDENTITY_CARD&media_id=13818483971&mer_id=25116&pub_pri_flag=2&service=user_reg&sign_type=RSA&version=4.0&sign=Jn6dJ9uqoUjeWgYidqV22SZqliHOtgmKatSs0qU1CcLa1Xo5TFTYijcucgp7VRpMf/sAQzkzWc/1MmcdYj+G7D1FQbBJwP2efD3ip+5+iSkm8izMWCdsMRJrQXfm7Jlfgp+5/T7lV3+N/JFNP+dCtidcb2ThXv6f0HX5C/viFNg=
+[2014-12-16 14:17:18]-[]-[data] :Request Para=array (
+  'service' => 'user_reg',
+  'sign_type' => 'RSA',
+  'mer_id' => '25116',
+  'version' => '4.0',
+  'charset' => 'UTF-8',
+  'pub_pri_flag' => '2',
+  'identity_type' => 'IDENTITY_CARD',
+  'identity_code' => '420626198609292527',
+  'card_id' => '6228480038445547276',
+  'card_holder' => 'Â±àÈáëÂ®•',
+  'media_id' => '13818483971',
+  'card_type' => '0',
+  'busi_no' => '1',
+)
+[2014-12-16 14:17:18]-[]-[data] :The parameters of the request card_id RSA encryption
+[2014-12-16 14:17:18]-[]-[data] :ÊïèÊÑü‰ø°ÊÅØÂä†ÂØÜÂØÜÊñá:[uNrzP6mv9q/VJzPH6bq3tyeZXc0I63NoiS1GOVCaj+Jecl4xbSw69UwtGtWDjh0HdiPEC3YO+0y2YbW82B7bM1al3i1UVu8okAR3fR7XHVX2IVfpxMRsHoceaR0FUpOtHbyJcEQ8EZVRu+YE2KJXFzjztsP4vb5hBDt947VA+Rs=]
+[2014-12-16 14:17:18]-[]-[data] :The parameters of the request identity_code RSA encryption
+[2014-12-16 14:17:18]-[]-[data] :ÊïèÊÑü‰ø°ÊÅØÂä†ÂØÜÂØÜÊñá:[Uw2/vmsCqT7SLjeO9TQlqLucG8dp9tYjZjvz0AZuu0CNw4oI01or9pjHVFOoKwJWc2mxkaf0eQcP7tWpz5x9UTyCd6wscbxctB/D81MAE+wCVQxuJU4L6nB5D4NW2RJw6IuHhR9zuEG17zsBdbjcC4QHY0XWHSpIKYm4Nl6cpfo=]
+[2014-12-16 14:17:18]-[]-[data] :The parameters of the request card_holder RSA encryption
+[2014-12-16 14:17:18]-[]-[data] :ÊïèÊÑü‰ø°ÊÅØÂä†ÂØÜÂØÜÊñá:[lR4GoMKooR2qgiBFhOWhwXJDY4dUOoISiMyAy6ySu8Viy72QE3w75vbesMx0MHUZQ3vXUE1TV2z0hGIfCQHIs1DpbEruLEI0O1pb7m4egw8A83KsZyxQfFASK599vNkKVpisLIpzY9DC5hPZhE2PvGsPzPpo7Gt9sdaVBsyYaTI=]
+[2014-12-16 14:17:18]-[]-[data] :Participate in the signature parametersÔºö[busi_no=1&card_holder=lR4GoMKooR2qgiBFhOWhwXJDY4dUOoISiMyAy6ySu8Viy72QE3w75vbesMx0MHUZQ3vXUE1TV2z0hGIfCQHIs1DpbEruLEI0O1pb7m4egw8A83KsZyxQfFASK599vNkKVpisLIpzY9DC5hPZhE2PvGsPzPpo7Gt9sdaVBsyYaTI=&card_id=uNrzP6mv9q/VJzPH6bq3tyeZXc0I63NoiS1GOVCaj+Jecl4xbSw69UwtGtWDjh0HdiPEC3YO+0y2YbW82B7bM1al3i1UVu8okAR3fR7XHVX2IVfpxMRsHoceaR0FUpOtHbyJcEQ8EZVRu+YE2KJXFzjztsP4vb5hBDt947VA+Rs=&card_type=0&charset=UTF-8&identity_code=Uw2/vmsCqT7SLjeO9TQlqLucG8dp9tYjZjvz0AZuu0CNw4oI01or9pjHVFOoKwJWc2mxkaf0eQcP7tWpz5x9UTyCd6wscbxctB/D81MAE+wCVQxuJU4L6nB5D4NW2RJw6IuHhR9zuEG17zsBdbjcC4QHY0XWHSpIKYm4Nl6cpfo=&identity_type=IDENTITY_CARD&media_id=13818483971&mer_id=25116&pub_pri_flag=2&service=user_reg&version=4.0],Merchant number isÔºö[25116]
+[2014-12-16 14:17:18]-[]-[data] :The private key path forÔºö/opt/lampp/htdocs/common/config/cert/25116_wenzhoudai.key.pem
+[2014-12-16 14:17:18]-[]-[data] :Signature string forÔºö¥YJ‰QØú~‘⁄vÈJ°’C?-≠îMZ›\õ–î{J∂‰Å§®VÑ‡q£ÆÏn@I˜õ&D0úí˛£ëëç∫f˘˘˛©àYº◊Î§kù∑¢Nvû¶ƒâ»u—ƒjÔïJÀN6§—Â@ë3∑Èvü…îÒM¢˘ÇeÔ‰
+[2014-12-16 14:17:18]-[]-[data] :Request platform way=get
+[2014-12-16 14:17:18]-[]-[data] :Request platform signature string=tFlKDeRRr5x+1Np26Uqh1RZDP38trZRNWt1cm9CUe0q25IGkqFaEB+Bxow0EruxuQEkZ9wWbJkQwnJL+CKORkY26D2b5+f6piFm81+ukawidAX+3ok4Xdp6mxB6JyHXREsRq75VKyxdONqTR5UCRM7fpdp/JlPEPA02i+YJl7+Q=
+[2014-12-16 14:17:18]-[]-[data] :Clear information request platform=busi_no=1&card_holder=lR4GoMKooR2qgiBFhOWhwXJDY4dUOoISiMyAy6ySu8Viy72QE3w75vbesMx0MHUZQ3vXUE1TV2z0hGIfCQHIs1DpbEruLEI0O1pb7m4egw8A83KsZyxQfFASK599vNkKVpisLIpzY9DC5hPZhE2PvGsPzPpo7Gt9sdaVBsyYaTI=&card_id=uNrzP6mv9q/VJzPH6bq3tyeZXc0I63NoiS1GOVCaj+Jecl4xbSw69UwtGtWDjh0HdiPEC3YO+0y2YbW82B7bM1al3i1UVu8okAR3fR7XHVX2IVfpxMRsHoceaR0FUpOtHbyJcEQ8EZVRu+YE2KJXFzjztsP4vb5hBDt947VA+Rs=&card_type=0&charset=UTF-8&identity_code=Uw2/vmsCqT7SLjeO9TQlqLucG8dp9tYjZjvz0AZuu0CNw4oI01or9pjHVFOoKwJWc2mxkaf0eQcP7tWpz5x9UTyCd6wscbxctB/D81MAE+wCVQxuJU4L6nB5D4NW2RJw6IuHhR9zuEG17zsBdbjcC4QHY0XWHSpIKYm4Nl6cpfo=&identity_type=IDENTITY_CARD&media_id=13818483971&mer_id=25116&pub_pri_flag=2&service=user_reg&version=4.0
+[2014-12-16 14:17:18]-[]-[data] :The service user_reg request platform to get the address url=http://pay.soopay.net/spay/pay/payservice.do?busi_no=1&card_holder=lR4GoMKooR2qgiBFhOWhwXJDY4dUOoISiMyAy6ySu8Viy72QE3w75vbesMx0MHUZQ3vXUE1TV2z0hGIfCQHIs1DpbEruLEI0O1pb7m4egw8A83KsZyxQfFASK599vNkKVpisLIpzY9DC5hPZhE2PvGsPzPpo7Gt9sdaVBsyYaTI%3D&card_id=uNrzP6mv9q%2FVJzPH6bq3tyeZXc0I63NoiS1GOVCaj%2BJecl4xbSw69UwtGtWDjh0HdiPEC3YO%2B0y2YbW82B7bM1al3i1UVu8okAR3fR7XHVX2IVfpxMRsHoceaR0FUpOtHbyJcEQ8EZVRu%2BYE2KJXFzjztsP4vb5hBDt947VA%2BRs%3D&card_type=0&charset=UTF-8&identity_code=Uw2%2FvmsCqT7SLjeO9TQlqLucG8dp9tYjZjvz0AZuu0CNw4oI01or9pjHVFOoKwJWc2mxkaf0eQcP7tWpz5x9UTyCd6wscbxctB%2FD81MAE%2BwCVQxuJU4L6nB5D4NW2RJw6IuHhR9zuEG17zsBdbjcC4QHY0XWHSpIKYm4Nl6cpfo%3D&identity_type=IDENTITY_CARD&media_id=13818483971&mer_id=25116&pub_pri_flag=2&service=user_reg&sign_type=RSA&version=4.0&sign=tFlKDeRRr5x+1Np26Uqh1RZDP38trZRNWt1cm9CUe0q25IGkqFaEB+Bxow0EruxuQEkZ9wWbJkQwnJL+CKORkY26D2b5+f6piFm81+ukawidAX+3ok4Xdp6mxB6JyHXREsRq75VKyxdONqTR5UCRM7fpdp/JlPEPA02i+YJl7+Q=
+[2014-12-16 14:19:15]-[]-[data] :Request Para=array (
+  'service' => 'user_reg',
+  'sign_type' => 'RSA',
+  'mer_id' => '25116',
+  'version' => '4.0',
+  'charset' => 'UTF-8',
+  'pub_pri_flag' => '2',
+  'identity_type' => 'IDENTITY_CARD',
+  'identity_code' => '420626198609292527',
+  'card_id' => '6228480038445547576',
+  'card_holder' => 'Â±àÈáëÂ®•',
+  'media_id' => '13818483971',
+  'card_type' => '0',
+  'busi_no' => '1',
+)
+[2014-12-16 14:19:15]-[]-[data] :The parameters of the request card_id RSA encryption
+[2014-12-16 14:19:15]-[]-[data] :ÊïèÊÑü‰ø°ÊÅØÂä†ÂØÜÂØÜÊñá:[q49XSwIL2ESLi6kzUb2/vi3Om5Iq1EP+EMibN8IHSp5JtBMnGnPErVaYX6E45FVxC9Zg4ERt/OCqZJm3JphVJqaGdAASiyYkyfEfn2VDYSyelOJx2+YaAT1+/B/OVGqfvCDv8TkPSLu1eqrwXb8iz3PnmyFp6Qm3n+JoYKAykxI=]
+[2014-12-16 14:19:15]-[]-[data] :The parameters of the request identity_code RSA encryption
+[2014-12-16 14:19:15]-[]-[data] :ÊïèÊÑü‰ø°ÊÅØÂä†ÂØÜÂØÜÊñá:[r+pa94182GdLFW1HqxU2Qt++xuD2uydhCW8X3/oPQPe4i+0hurFsKPGsmP3+s3tbEQ7xnfiLwKVbA/b3HhQl81M/a5TIxq1tRifpyE4xdGNZxVLoR8rM4N7WugocGgeipFpJ2OPxQjPn6tt/lUYkG3TemWSNHtUi1yAWtB5arNI=]
+[2014-12-16 14:19:15]-[]-[data] :The parameters of the request card_holder RSA encryption
+[2014-12-16 14:19:15]-[]-[data] :ÊïèÊÑü‰ø°ÊÅØÂä†ÂØÜÂØÜÊñá:[Z/U3VrfchcQpJ1/hL1NbakHn3VIUxI3dh6I1hC1uu62K3HLNyw4FHb9I5jWkibmfpSfst9ZWTpvrOqFC455McTEbLTvwJ+tXYEZ6mgzjmzYV0NbeJ/ZsBSDC2eQ7FiI5m2/S+/Hcby2qtX4TNwvRgl6tkAhpKt2qlN5wPRDiy8I=]
+[2014-12-16 14:19:15]-[]-[data] :Participate in the signature parametersÔºö[busi_no=1&card_holder=Z/U3VrfchcQpJ1/hL1NbakHn3VIUxI3dh6I1hC1uu62K3HLNyw4FHb9I5jWkibmfpSfst9ZWTpvrOqFC455McTEbLTvwJ+tXYEZ6mgzjmzYV0NbeJ/ZsBSDC2eQ7FiI5m2/S+/Hcby2qtX4TNwvRgl6tkAhpKt2qlN5wPRDiy8I=&card_id=q49XSwIL2ESLi6kzUb2/vi3Om5Iq1EP+EMibN8IHSp5JtBMnGnPErVaYX6E45FVxC9Zg4ERt/OCqZJm3JphVJqaGdAASiyYkyfEfn2VDYSyelOJx2+YaAT1+/B/OVGqfvCDv8TkPSLu1eqrwXb8iz3PnmyFp6Qm3n+JoYKAykxI=&card_type=0&charset=UTF-8&identity_code=r+pa94182GdLFW1HqxU2Qt++xuD2uydhCW8X3/oPQPe4i+0hurFsKPGsmP3+s3tbEQ7xnfiLwKVbA/b3HhQl81M/a5TIxq1tRifpyE4xdGNZxVLoR8rM4N7WugocGgeipFpJ2OPxQjPn6tt/lUYkG3TemWSNHtUi1yAWtB5arNI=&identity_type=IDENTITY_CARD&media_id=13818483971&mer_id=25116&pub_pri_flag=2&service=user_reg&version=4.0],Merchant number isÔºö[25116]
+[2014-12-16 14:19:15]-[]-[data] :The private key path forÔºö/opt/lampp/htdocs/common/config/cert/25116_wenzhoudai.key.pem
+[2014-12-16 14:19:15]-[]-[data] :Signature string forÔºöYä¢E°À'cs3Ì≤‘€Á’≥SXÃ5‘≤Ë≈ì≥î^T¬±ä±Kﬁk}Twm∫4lÚ”¸@¡ı4xÁçÜ),.”‹”Ω/_8ﬁMä˜˜`£èäÙ√è¯sõ∫!Z\ˆ§ñoI!ïº¸b˝Y¢L¿øTì(;
+è[G•Ÿ\+gn
+[2014-12-16 14:19:15]-[]-[data] :Request platform way=get
+[2014-12-16 14:19:15]-[]-[data] :Request platform signature string=WYqiRaEWyydjczPtstTb59WzU1jMNdSy6BLFk7OUXlTCsYqxS95rFH1UdwNtujRs8tP8QMH1NHjnjYYpLC4M0xUI3NO9L1843k2K9/dgo4+K9MOP+HObugshWlz2HKSWbwFJIZW8/GIC/VmiTMB/v1STKDsWCo9bR6XZXCtnbhs=
+[2014-12-16 14:19:15]-[]-[data] :Clear information request platform=busi_no=1&card_holder=Z/U3VrfchcQpJ1/hL1NbakHn3VIUxI3dh6I1hC1uu62K3HLNyw4FHb9I5jWkibmfpSfst9ZWTpvrOqFC455McTEbLTvwJ+tXYEZ6mgzjmzYV0NbeJ/ZsBSDC2eQ7FiI5m2/S+/Hcby2qtX4TNwvRgl6tkAhpKt2qlN5wPRDiy8I=&card_id=q49XSwIL2ESLi6kzUb2/vi3Om5Iq1EP+EMibN8IHSp5JtBMnGnPErVaYX6E45FVxC9Zg4ERt/OCqZJm3JphVJqaGdAASiyYkyfEfn2VDYSyelOJx2+YaAT1+/B/OVGqfvCDv8TkPSLu1eqrwXb8iz3PnmyFp6Qm3n+JoYKAykxI=&card_type=0&charset=UTF-8&identity_code=r+pa94182GdLFW1HqxU2Qt++xuD2uydhCW8X3/oPQPe4i+0hurFsKPGsmP3+s3tbEQ7xnfiLwKVbA/b3HhQl81M/a5TIxq1tRifpyE4xdGNZxVLoR8rM4N7WugocGgeipFpJ2OPxQjPn6tt/lUYkG3TemWSNHtUi1yAWtB5arNI=&identity_type=IDENTITY_CARD&media_id=13818483971&mer_id=25116&pub_pri_flag=2&service=user_reg&version=4.0
+[2014-12-16 14:19:15]-[]-[data] :The service user_reg request platform to get the address url=http://pay.soopay.net/spay/pay/payservice.do?busi_no=1&card_holder=Z%2FU3VrfchcQpJ1%2FhL1NbakHn3VIUxI3dh6I1hC1uu62K3HLNyw4FHb9I5jWkibmfpSfst9ZWTpvrOqFC455McTEbLTvwJ%2BtXYEZ6mgzjmzYV0NbeJ%2FZsBSDC2eQ7FiI5m2%2FS%2B%2FHcby2qtX4TNwvRgl6tkAhpKt2qlN5wPRDiy8I%3D&card_id=q49XSwIL2ESLi6kzUb2%2Fvi3Om5Iq1EP%2BEMibN8IHSp5JtBMnGnPErVaYX6E45FVxC9Zg4ERt%2FOCqZJm3JphVJqaGdAASiyYkyfEfn2VDYSyelOJx2%2BYaAT1%2B%2FB%2FOVGqfvCDv8TkPSLu1eqrwXb8iz3PnmyFp6Qm3n%2BJoYKAykxI%3D&card_type=0&charset=UTF-8&identity_code=r%2Bpa94182GdLFW1HqxU2Qt%2B%2BxuD2uydhCW8X3%2FoPQPe4i%2B0hurFsKPGsmP3%2Bs3tbEQ7xnfiLwKVbA%2Fb3HhQl81M%2Fa5TIxq1tRifpyE4xdGNZxVLoR8rM4N7WugocGgeipFpJ2OPxQjPn6tt%2FlUYkG3TemWSNHtUi1yAWtB5arNI%3D&identity_type=IDENTITY_CARD&media_id=13818483971&mer_id=25116&pub_pri_flag=2&service=user_reg&sign_type=RSA&version=4.0&sign=WYqiRaEWyydjczPtstTb59WzU1jMNdSy6BLFk7OUXlTCsYqxS95rFH1UdwNtujRs8tP8QMH1NHjnjYYpLC4M0xUI3NO9L1843k2K9/dgo4+K9MOP+HObugshWlz2HKSWbwFJIZW8/GIC/VmiTMB/v1STKDsWCo9bR6XZXCtnbhs=
+[2014-12-16 14:55:46]-[]-[data] :Request Para=array (
+  'service' => 'user_reg',
+  'sign_type' => 'RSA',
+  'mer_id' => '25116',
+  'version' => '4.0',
+  'charset' => 'UTF-8',
+  'pub_pri_flag' => '2',
+  'identity_type' => 'IDENTITY_CARD',
+  'identity_code' => '420626198609292527',
+  'card_id' => '4654757125746575685556665566666555445565555',
+  'card_holder' => 'Â±àÈáëÂ®•',
+  'media_id' => '13818483971',
+  'card_type' => '0',
+  'busi_no' => '1',
+)
+[2014-12-16 14:55:46]-[]-[data] :The parameters of the request card_id RSA encryption
+[2014-12-16 14:55:46]-[]-[data] :ÊïèÊÑü‰ø°ÊÅØÂä†ÂØÜÂØÜÊñá:[ANQbh7AzcpfzauA2mllHYmj82mtSUZad+nGaOk781TxJpX3p8QTEXNINVDaYFbczeF0SSahLY0Z2pYVcStYJ1iQHRszQ49FnDW8FBwbqsdxQ3uUW6clDlrEj1qPSfj3zG2myiVqwnB7wnNhkIKZPdIfWVffXeHbZ8qhnZaV6WS4=]
+[2014-12-16 14:55:46]-[]-[data] :The parameters of the request identity_code RSA encryption
+[2014-12-16 14:55:46]-[]-[data] :ÊïèÊÑü‰ø°ÊÅØÂä†ÂØÜÂØÜÊñá:[om5ZFrPhyfLFi1VXM4lf3BkIAuDkeyg5Ry3NwhinkhyK1AYPhMPYKAy2r36SjWQWpQnz9vQ/rT5Wk9q6PoIxPBbp/KdMu45uS63qzV6y59Csi2WuIz9nxnLa+iQTpaGtZIZXud5+sP4GG36zQgb7v+A5jlWBW5roq1UE3atDJ78=]
+[2014-12-16 14:55:46]-[]-[data] :The parameters of the request card_holder RSA encryption
+[2014-12-16 14:55:46]-[]-[data] :ÊïèÊÑü‰ø°ÊÅØÂä†ÂØÜÂØÜÊñá:[GRYqc3l+p9JidEss7X+6QDrSoSG9yK2/q2YjvxA7/7hfPzQZUjV3aQmglTFYGHsc+ncu3OhwWDAfNXTNm8kK1Dfm5LFyA4uFhQ+nscHrWXut3owNRdOYvFkD+EKZO5MfEzJT5S/5/pDrJupWOgiMSQSln2kOCQsZDyl3H9b1bw0=]
+[2014-12-16 14:55:46]-[]-[data] :Participate in the signature parametersÔºö[busi_no=1&card_holder=GRYqc3l+p9JidEss7X+6QDrSoSG9yK2/q2YjvxA7/7hfPzQZUjV3aQmglTFYGHsc+ncu3OhwWDAfNXTNm8kK1Dfm5LFyA4uFhQ+nscHrWXut3owNRdOYvFkD+EKZO5MfEzJT5S/5/pDrJupWOgiMSQSln2kOCQsZDyl3H9b1bw0=&card_id=ANQbh7AzcpfzauA2mllHYmj82mtSUZad+nGaOk781TxJpX3p8QTEXNINVDaYFbczeF0SSahLY0Z2pYVcStYJ1iQHRszQ49FnDW8FBwbqsdxQ3uUW6clDlrEj1qPSfj3zG2myiVqwnB7wnNhkIKZPdIfWVffXeHbZ8qhnZaV6WS4=&card_type=0&charset=UTF-8&identity_code=om5ZFrPhyfLFi1VXM4lf3BkIAuDkeyg5Ry3NwhinkhyK1AYPhMPYKAy2r36SjWQWpQnz9vQ/rT5Wk9q6PoIxPBbp/KdMu45uS63qzV6y59Csi2WuIz9nxnLa+iQTpaGtZIZXud5+sP4GG36zQgb7v+A5jlWBW5roq1UE3atDJ78=&identity_type=IDENTITY_CARD&media_id=13818483971&mer_id=25116&pub_pri_flag=2&service=user_reg&version=4.0],Merchant number isÔºö[25116]
+[2014-12-16 14:55:46]-[]-[data] :The private key path forÔºö/opt/lampp/htdocs/common/config/cert/25116_wenzhoudai.key.pem
+[2014-12-16 14:55:46]-[]-[data] :Signature string forÔºözπùµT≈/†£${
+&ydv⁄ø| >⁄vXñ°UâÂcVAGÀ2dW•¬f£˛àuØ5G +A+.bíD$Ë|™?ãa ¥HûrMÃ≥€]"˜˚3¯¬#˝∞˜˙‹h≈‡Y‘í¥z»k>Îì%v0(¯y1QL–ù|å
+[2014-12-16 14:55:46]-[]-[data] :Request platform way=get
+[2014-12-16 14:55:46]-[]-[data] :Request platform signature string=ermdtVTFL6CjJHsKJnkPH2R22h6/GnwFyj7adlgFlqFVieVjVkFHyzJkV6XCZqP+iHUCrzVHGcorQSsuEwVikhlEJOgFfKo/i2EAA7RInnJNzLPbXSL3+zP4FMITI/2w9/rcaMXgWdSStHrIaz4T65MldjAo+Ah5MVFMCNCdfIw=
+[2014-12-16 14:55:46]-[]-[data] :Clear information request platform=busi_no=1&card_holder=GRYqc3l+p9JidEss7X+6QDrSoSG9yK2/q2YjvxA7/7hfPzQZUjV3aQmglTFYGHsc+ncu3OhwWDAfNXTNm8kK1Dfm5LFyA4uFhQ+nscHrWXut3owNRdOYvFkD+EKZO5MfEzJT5S/5/pDrJupWOgiMSQSln2kOCQsZDyl3H9b1bw0=&card_id=ANQbh7AzcpfzauA2mllHYmj82mtSUZad+nGaOk781TxJpX3p8QTEXNINVDaYFbczeF0SSahLY0Z2pYVcStYJ1iQHRszQ49FnDW8FBwbqsdxQ3uUW6clDlrEj1qPSfj3zG2myiVqwnB7wnNhkIKZPdIfWVffXeHbZ8qhnZaV6WS4=&card_type=0&charset=UTF-8&identity_code=om5ZFrPhyfLFi1VXM4lf3BkIAuDkeyg5Ry3NwhinkhyK1AYPhMPYKAy2r36SjWQWpQnz9vQ/rT5Wk9q6PoIxPBbp/KdMu45uS63qzV6y59Csi2WuIz9nxnLa+iQTpaGtZIZXud5+sP4GG36zQgb7v+A5jlWBW5roq1UE3atDJ78=&identity_type=IDENTITY_CARD&media_id=13818483971&mer_id=25116&pub_pri_flag=2&service=user_reg&version=4.0
+[2014-12-16 14:55:46]-[]-[data] :The service user_reg request platform to get the address url=http://pay.soopay.net/spay/pay/payservice.do?busi_no=1&card_holder=GRYqc3l%2Bp9JidEss7X%2B6QDrSoSG9yK2%2Fq2YjvxA7%2F7hfPzQZUjV3aQmglTFYGHsc%2Bncu3OhwWDAfNXTNm8kK1Dfm5LFyA4uFhQ%2BnscHrWXut3owNRdOYvFkD%2BEKZO5MfEzJT5S%2F5%2FpDrJupWOgiMSQSln2kOCQsZDyl3H9b1bw0%3D&card_id=ANQbh7AzcpfzauA2mllHYmj82mtSUZad%2BnGaOk781TxJpX3p8QTEXNINVDaYFbczeF0SSahLY0Z2pYVcStYJ1iQHRszQ49FnDW8FBwbqsdxQ3uUW6clDlrEj1qPSfj3zG2myiVqwnB7wnNhkIKZPdIfWVffXeHbZ8qhnZaV6WS4%3D&card_type=0&charset=UTF-8&identity_code=om5ZFrPhyfLFi1VXM4lf3BkIAuDkeyg5Ry3NwhinkhyK1AYPhMPYKAy2r36SjWQWpQnz9vQ%2FrT5Wk9q6PoIxPBbp%2FKdMu45uS63qzV6y59Csi2WuIz9nxnLa%2BiQTpaGtZIZXud5%2BsP4GG36zQgb7v%2BA5jlWBW5roq1UE3atDJ78%3D&identity_type=IDENTITY_CARD&media_id=13818483971&mer_id=25116&pub_pri_flag=2&service=user_reg&sign_type=RSA&version=4.0&sign=ermdtVTFL6CjJHsKJnkPH2R22h6/GnwFyj7adlgFlqFVieVjVkFHyzJkV6XCZqP+iHUCrzVHGcorQSsuEwVikhlEJOgFfKo/i2EAA7RInnJNzLPbXSL3+zP4FMITI/2w9/rcaMXgWdSStHrIaz4T65MldjAo+Ah5MVFMCNCdfIw=
+[2014-12-16 14:56:21]-[]-[data] :Request Para=array (
+  'service' => 'user_reg',
+  'sign_type' => 'RSA',
+  'mer_id' => '25116',
+  'version' => '4.0',
+  'charset' => 'UTF-8',
+  'pub_pri_flag' => '2',
+  'identity_type' => 'IDENTITY_CARD',
+  'identity_code' => '420626198609292527',
+  'card_id' => '6228480038445547276',
+  'card_holder' => 'Â±àÈáëÂ®•',
+  'media_id' => '13818483971',
+  'card_type' => '0',
+  'busi_no' => '1',
+)
+[2014-12-16 14:56:21]-[]-[data] :The parameters of the request card_id RSA encryption
+[2014-12-16 14:56:21]-[]-[data] :ÊïèÊÑü‰ø°ÊÅØÂä†ÂØÜÂØÜÊñá:[dgDWN18lqIdxvkiRhDkGNLnDq3tPL3GMMBo13dzhd01exsLBiAQsPNdN9IW7UpFFZUFoP9jSR1o+uCMI9QJ9MDT6flpH995gTYRFtflVPwasH2hz1uW0I08fj2cReUuAxMdKzDb0s4PEM5q5M3in4QcyRVX6m/AgQ6HuEsGDJHE=]
+[2014-12-16 14:56:21]-[]-[data] :The parameters of the request identity_code RSA encryption
+[2014-12-16 14:56:21]-[]-[data] :ÊïèÊÑü‰ø°ÊÅØÂä†ÂØÜÂØÜÊñá:[xhgQJrHsCaZ/b2Cncr+93ogW7lr+6HM20H1N53vAwC8ha8ljMM/MzKfcT3yS1S/+lyvtC6pVpJqErhal0GZGp+6mNWkruUvr819v3LlKESCgn9ZSe+ZFFhbOXp8xvruuvXtcKkXlLMj3i3ctMjQnlALeEjkrkO8S0pFdJQ1wAKI=]
+[2014-12-16 14:56:21]-[]-[data] :The parameters of the request card_holder RSA encryption
+[2014-12-16 14:56:21]-[]-[data] :ÊïèÊÑü‰ø°ÊÅØÂä†ÂØÜÂØÜÊñá:[Lg5VrYS90X37O9tqPNBaRNGKhSOlEdoVEgBZrhgKOfuDQ/XMMPItSzmggUZRRrMsCv6aHIoYy72le859g6gglceFWJNfMDjWqY14BwWrV8ASWYFM1Lu0Fhmcp9nqUtgJzXvsTzkosekLgGXFeFNOXjKSue876LE5yQtq3Nag8pY=]
+[2014-12-16 14:56:21]-[]-[data] :Participate in the signature parametersÔºö[busi_no=1&card_holder=Lg5VrYS90X37O9tqPNBaRNGKhSOlEdoVEgBZrhgKOfuDQ/XMMPItSzmggUZRRrMsCv6aHIoYy72le859g6gglceFWJNfMDjWqY14BwWrV8ASWYFM1Lu0Fhmcp9nqUtgJzXvsTzkosekLgGXFeFNOXjKSue876LE5yQtq3Nag8pY=&card_id=dgDWN18lqIdxvkiRhDkGNLnDq3tPL3GMMBo13dzhd01exsLBiAQsPNdN9IW7UpFFZUFoP9jSR1o+uCMI9QJ9MDT6flpH995gTYRFtflVPwasH2hz1uW0I08fj2cReUuAxMdKzDb0s4PEM5q5M3in4QcyRVX6m/AgQ6HuEsGDJHE=&card_type=0&charset=UTF-8&identity_code=xhgQJrHsCaZ/b2Cncr+93ogW7lr+6HM20H1N53vAwC8ha8ljMM/MzKfcT3yS1S/+lyvtC6pVpJqErhal0GZGp+6mNWkruUvr819v3LlKESCgn9ZSe+ZFFhbOXp8xvruuvXtcKkXlLMj3i3ctMjQnlALeEjkrkO8S0pFdJQ1wAKI=&identity_type=IDENTITY_CARD&media_id=13818483971&mer_id=25116&pub_pri_flag=2&service=user_reg&version=4.0],Merchant number isÔºö[25116]
+[2014-12-16 14:56:21]-[]-[data] :The private key path forÔºö/opt/lampp/htdocs/common/config/cert/25116_wenzhoudai.key.pem
+[2014-12-16 14:56:21]-[]-[data] :Signature string forÔºö#T¨°ó˙Q]3‡˜|Ü%cëÿÂ∏£sõ÷E<o"iÌbR\GËïhøœŒÁÔÏ*nZ7é‹Gëå*w|ëäÎä«®yÛkZè9¿ã∫äX”1ﬁÇ#+«1ûhxœêÎªã1—ïÖAñ„ï[u‰9Ó’¶9ﬁ·≤D∞˚Üts]WÀ¸
+[2014-12-16 14:56:21]-[]-[data] :Request platform way=get
+[2014-12-16 14:56:21]-[]-[data] :Request platform signature string=I1SsoQyX+lFdBzPg93yGGyVjkdgZ5bijEnOb1kU8byJpD+1iUlxH6JVov8/O5+/sKm5aN47cR5GMKnd8kYrriseoefNrWo85wIu6iljTMd4EgiMrxzGeaHjPkOu7izHRlYVBlh7jEpVbGHXkOe7VpjneC+EfskSw+4Z0c11Xy/w=
+[2014-12-16 14:56:21]-[]-[data] :Clear information request platform=busi_no=1&card_holder=Lg5VrYS90X37O9tqPNBaRNGKhSOlEdoVEgBZrhgKOfuDQ/XMMPItSzmggUZRRrMsCv6aHIoYy72le859g6gglceFWJNfMDjWqY14BwWrV8ASWYFM1Lu0Fhmcp9nqUtgJzXvsTzkosekLgGXFeFNOXjKSue876LE5yQtq3Nag8pY=&card_id=dgDWN18lqIdxvkiRhDkGNLnDq3tPL3GMMBo13dzhd01exsLBiAQsPNdN9IW7UpFFZUFoP9jSR1o+uCMI9QJ9MDT6flpH995gTYRFtflVPwasH2hz1uW0I08fj2cReUuAxMdKzDb0s4PEM5q5M3in4QcyRVX6m/AgQ6HuEsGDJHE=&card_type=0&charset=UTF-8&identity_code=xhgQJrHsCaZ/b2Cncr+93ogW7lr+6HM20H1N53vAwC8ha8ljMM/MzKfcT3yS1S/+lyvtC6pVpJqErhal0GZGp+6mNWkruUvr819v3LlKESCgn9ZSe+ZFFhbOXp8xvruuvXtcKkXlLMj3i3ctMjQnlALeEjkrkO8S0pFdJQ1wAKI=&identity_type=IDENTITY_CARD&media_id=13818483971&mer_id=25116&pub_pri_flag=2&service=user_reg&version=4.0
+[2014-12-16 14:56:21]-[]-[data] :The service user_reg request platform to get the address url=http://pay.soopay.net/spay/pay/payservice.do?busi_no=1&card_holder=Lg5VrYS90X37O9tqPNBaRNGKhSOlEdoVEgBZrhgKOfuDQ%2FXMMPItSzmggUZRRrMsCv6aHIoYy72le859g6gglceFWJNfMDjWqY14BwWrV8ASWYFM1Lu0Fhmcp9nqUtgJzXvsTzkosekLgGXFeFNOXjKSue876LE5yQtq3Nag8pY%3D&card_id=dgDWN18lqIdxvkiRhDkGNLnDq3tPL3GMMBo13dzhd01exsLBiAQsPNdN9IW7UpFFZUFoP9jSR1o%2BuCMI9QJ9MDT6flpH995gTYRFtflVPwasH2hz1uW0I08fj2cReUuAxMdKzDb0s4PEM5q5M3in4QcyRVX6m%2FAgQ6HuEsGDJHE%3D&card_type=0&charset=UTF-8&identity_code=xhgQJrHsCaZ%2Fb2Cncr%2B93ogW7lr%2B6HM20H1N53vAwC8ha8ljMM%2FMzKfcT3yS1S%2F%2BlyvtC6pVpJqErhal0GZGp%2B6mNWkruUvr819v3LlKESCgn9ZSe%2BZFFhbOXp8xvruuvXtcKkXlLMj3i3ctMjQnlALeEjkrkO8S0pFdJQ1wAKI%3D&identity_type=IDENTITY_CARD&media_id=13818483971&mer_id=25116&pub_pri_flag=2&service=user_reg&sign_type=RSA&version=4.0&sign=I1SsoQyX+lFdBzPg93yGGyVjkdgZ5bijEnOb1kU8byJpD+1iUlxH6JVov8/O5+/sKm5aN47cR5GMKnd8kYrriseoefNrWo85wIu6iljTMd4EgiMrxzGeaHjPkOu7izHRlYVBlh7jEpVbGHXkOe7VpjneC+EfskSw+4Z0c11Xy/w=
+[2014-12-16 14:58:13]-[]-[data] :Request Para=array (
+  'service' => 'user_reg',
+  'sign_type' => 'RSA',
+  'mer_id' => '25116',
+  'version' => '4.0',
+  'charset' => 'UTF-8',
+  'pub_pri_flag' => '2',
+  'identity_type' => 'IDENTITY_CARD',
+  'identity_code' => '420626198609292527',
+  'card_id' => '6228480038445547276',
+  'card_holder' => 'Â±àÈáëÂ®•',
+  'media_id' => '13818483971',
+  'card_type' => '0',
+  'busi_no' => '1',
+)
+[2014-12-16 14:58:13]-[]-[data] :The parameters of the request card_id RSA encryption
+[2014-12-16 14:58:13]-[]-[data] :ÊïèÊÑü‰ø°ÊÅØÂä†ÂØÜÂØÜÊñá:[Co+XeEcbMH3OHmzfOAH7LP4k/8Kr4219OKh/Octc1BggR03XSUcrAlmheoi7TB1XZWganEAYA/7La1Bjck8Gx0J5wqrG++6ts+Wsn+M1LpjomL2wH38NUQaGElcODdkuRGZ5kc2yRy2DVP9gbUsTjLHH1QrRKXPx0U+KUmDhVHY=]
+[2014-12-16 14:58:13]-[]-[data] :The parameters of the request identity_code RSA encryption
+[2014-12-16 14:58:13]-[]-[data] :ÊïèÊÑü‰ø°ÊÅØÂä†ÂØÜÂØÜÊñá:[VMKIIJh0+6Ie0qSAFgyYTNUdlOK1Dah7ZLbyl+54rQ49OpNL05bsNMDbjX2jsgmZkSbCrzZ/zNGf5y2h7Tw2d7G7OHEUf0QECA9kBwhpaNFmxvUE0CvBY2UC27zBVDIMGKGhgAaEUxEdhFcv2yoSQFnVr94A9RPazFxR0SVNHVg=]
+[2014-12-16 14:58:13]-[]-[data] :The parameters of the request card_holder RSA encryption
+[2014-12-16 14:58:13]-[]-[data] :ÊïèÊÑü‰ø°ÊÅØÂä†ÂØÜÂØÜÊñá:[MOwnbDiOYAXPT4xSD82+PccXpln9has+i8cB4R/3d4wkemZ4BzUhGiOMFvnHAZgGgGCdWbQ2d4Ao2TXqyfdJkUQVhkJQO4rpXhw+D2qZzcQoKFVpG3BGh1G+MdcHeGKhaN8Zbp+5x3gW/SsPQhbVvMBVBMp7V+IaekayHtm3XoU=]
+[2014-12-16 14:58:13]-[]-[data] :Participate in the signature parametersÔºö[busi_no=1&card_holder=MOwnbDiOYAXPT4xSD82+PccXpln9has+i8cB4R/3d4wkemZ4BzUhGiOMFvnHAZgGgGCdWbQ2d4Ao2TXqyfdJkUQVhkJQO4rpXhw+D2qZzcQoKFVpG3BGh1G+MdcHeGKhaN8Zbp+5x3gW/SsPQhbVvMBVBMp7V+IaekayHtm3XoU=&card_id=Co+XeEcbMH3OHmzfOAH7LP4k/8Kr4219OKh/Octc1BggR03XSUcrAlmheoi7TB1XZWganEAYA/7La1Bjck8Gx0J5wqrG++6ts+Wsn+M1LpjomL2wH38NUQaGElcODdkuRGZ5kc2yRy2DVP9gbUsTjLHH1QrRKXPx0U+KUmDhVHY=&card_type=0&charset=UTF-8&identity_code=VMKIIJh0+6Ie0qSAFgyYTNUdlOK1Dah7ZLbyl+54rQ49OpNL05bsNMDbjX2jsgmZkSbCrzZ/zNGf5y2h7Tw2d7G7OHEUf0QECA9kBwhpaNFmxvUE0CvBY2UC27zBVDIMGKGhgAaEUxEdhFcv2yoSQFnVr94A9RPazFxR0SVNHVg=&identity_type=IDENTITY_CARD&media_id=13818483971&mer_id=25116&pub_pri_flag=2&service=user_reg&version=4.0],Merchant number isÔºö[25116]
+[2014-12-16 14:58:13]-[]-[data] :The private key path forÔºö/opt/lampp/htdocs/common/config/cert/25116_wenzhoudai.key.pem
+[2014-12-16 14:58:13]-[]-[data] :Signature string forÔºöÜ-ºo=¯≥ã|=ã˛˙X≤üéùÓ Nº'o@JñD£Õﬂå¨“ìÖÓÊ°§îvåﬂT≥C(™Âüv∑´8IØ—√Í+Y∑:√§b ™†> ¨´R«QÔZ≥√Dæno7áÅÎ·¢ZMÖ+Êc-ëæX∫ªrÉ·ÑÕô$ıU≠
+[2014-12-16 14:58:13]-[]-[data] :Request platform way=get
+[2014-12-16 14:58:13]-[]-[data] :Request platform signature string=hi0PvG89+LOLD3w9i/76WLKfGxwRjp3uIE68J29ASpZEo83fjKzSk4Xu5gWhpJR2GIzfVLNDKKrlHp92t6s4Sa/Rww7qBitZtzrD8KRiAKqgED7KrBWrUsdR71qzw0S+bm83h4Hr4aJaTYUr5mMtkb4UWLq7EHKD4YTNmST1Va0=
+[2014-12-16 14:58:13]-[]-[data] :Clear information request platform=busi_no=1&card_holder=MOwnbDiOYAXPT4xSD82+PccXpln9has+i8cB4R/3d4wkemZ4BzUhGiOMFvnHAZgGgGCdWbQ2d4Ao2TXqyfdJkUQVhkJQO4rpXhw+D2qZzcQoKFVpG3BGh1G+MdcHeGKhaN8Zbp+5x3gW/SsPQhbVvMBVBMp7V+IaekayHtm3XoU=&card_id=Co+XeEcbMH3OHmzfOAH7LP4k/8Kr4219OKh/Octc1BggR03XSUcrAlmheoi7TB1XZWganEAYA/7La1Bjck8Gx0J5wqrG++6ts+Wsn+M1LpjomL2wH38NUQaGElcODdkuRGZ5kc2yRy2DVP9gbUsTjLHH1QrRKXPx0U+KUmDhVHY=&card_type=0&charset=UTF-8&identity_code=VMKIIJh0+6Ie0qSAFgyYTNUdlOK1Dah7ZLbyl+54rQ49OpNL05bsNMDbjX2jsgmZkSbCrzZ/zNGf5y2h7Tw2d7G7OHEUf0QECA9kBwhpaNFmxvUE0CvBY2UC27zBVDIMGKGhgAaEUxEdhFcv2yoSQFnVr94A9RPazFxR0SVNHVg=&identity_type=IDENTITY_CARD&media_id=13818483971&mer_id=25116&pub_pri_flag=2&service=user_reg&version=4.0
+[2014-12-16 14:58:13]-[]-[data] :The service user_reg request platform to get the address url=http://pay.soopay.net/spay/pay/payservice.do?busi_no=1&card_holder=MOwnbDiOYAXPT4xSD82%2BPccXpln9has%2Bi8cB4R%2F3d4wkemZ4BzUhGiOMFvnHAZgGgGCdWbQ2d4Ao2TXqyfdJkUQVhkJQO4rpXhw%2BD2qZzcQoKFVpG3BGh1G%2BMdcHeGKhaN8Zbp%2B5x3gW%2FSsPQhbVvMBVBMp7V%2BIaekayHtm3XoU%3D&card_id=Co%2BXeEcbMH3OHmzfOAH7LP4k%2F8Kr4219OKh%2FOctc1BggR03XSUcrAlmheoi7TB1XZWganEAYA%2F7La1Bjck8Gx0J5wqrG%2B%2B6ts%2BWsn%2BM1LpjomL2wH38NUQaGElcODdkuRGZ5kc2yRy2DVP9gbUsTjLHH1QrRKXPx0U%2BKUmDhVHY%3D&card_type=0&charset=UTF-8&identity_code=VMKIIJh0%2B6Ie0qSAFgyYTNUdlOK1Dah7ZLbyl%2B54rQ49OpNL05bsNMDbjX2jsgmZkSbCrzZ%2FzNGf5y2h7Tw2d7G7OHEUf0QECA9kBwhpaNFmxvUE0CvBY2UC27zBVDIMGKGhgAaEUxEdhFcv2yoSQFnVr94A9RPazFxR0SVNHVg%3D&identity_type=IDENTITY_CARD&media_id=13818483971&mer_id=25116&pub_pri_flag=2&service=user_reg&sign_type=RSA&version=4.0&sign=hi0PvG89+LOLD3w9i/76WLKfGxwRjp3uIE68J29ASpZEo83fjKzSk4Xu5gWhpJR2GIzfVLNDKKrlHp92t6s4Sa/Rww7qBitZtzrD8KRiAKqgED7KrBWrUsdR71qzw0S+bm83h4Hr4aJaTYUr5mMtkb4UWLq7EHKD4YTNmST1Va0=
+[2014-12-16 14:59:47]-[]-[data] :Request Para=array (
+  'service' => 'user_reg',
+  'sign_type' => 'RSA',
+  'mer_id' => '25116',
+  'version' => '4.0',
+  'charset' => 'UTF-8',
+  'pub_pri_flag' => '2',
+  'identity_type' => 'IDENTITY_CARD',
+  'identity_code' => '420626198609292527',
+  'card_id' => '6228480038445547276',
+  'card_holder' => 'Â±àÈáëÂ®•',
+  'media_id' => '13818483971',
+  'card_type' => '0',
+  'busi_no' => '1',
+)
+[2014-12-16 14:59:47]-[]-[data] :The parameters of the request card_id RSA encryption
+[2014-12-16 14:59:47]-[]-[data] :ÊïèÊÑü‰ø°ÊÅØÂä†ÂØÜÂØÜÊñá:[LU6vGMYV2XnvMKK+ogiOXKrI9HAJqMRj17quzY/79Qvs5lG0bnI47oRdTe+rosnmBSBGo2eumWLh/r1zU3EJGk01zDVAKrTmGl5D0RoViOTTDx7KtijGT1zQq2cK2LiZa7SqLPonDZE1TI2HKRy9cKQMuCrKwSRUmvdCko9YwU0=]
+[2014-12-16 14:59:47]-[]-[data] :The parameters of the request identity_code RSA encryption
+[2014-12-16 14:59:47]-[]-[data] :ÊïèÊÑü‰ø°ÊÅØÂä†ÂØÜÂØÜÊñá:[ZfJhwnuzhqnOXEUOpUbKnalTWAbRAMQMtlZk4lUB5ZfUB7RwntYgzfKrSl7jPq+Ab3g+e9nO1MSGmh6oF3jO81IKPg9MdKTokZwdam1a/ncpK6Ha0GKHTzcRumtnZYzUfoRaBZtsw1tAWpygqLS2obkMPQRPareJOSeh7ca9GzI=]
+[2014-12-16 14:59:47]-[]-[data] :The parameters of the request card_holder RSA encryption
+[2014-12-16 14:59:47]-[]-[data] :ÊïèÊÑü‰ø°ÊÅØÂä†ÂØÜÂØÜÊñá:[ABtx2ZhZYV21tmI8OanqAqYdY+uRao9LwZwI+jYCE4YtCh6RTp2J2Fumo9j53pRbPqgF9iLY+wuSKxqCQpLiWDTkWxrPA7Eu2dZC/iQKce6Dey4dm/eQa/LUX8NZHO6jgQBOX2VY0n+cKfOBoINJjUNd7DVi6+v/DgpFXbBBuOo=]
+[2014-12-16 14:59:47]-[]-[data] :Participate in the signature parametersÔºö[busi_no=1&card_holder=ABtx2ZhZYV21tmI8OanqAqYdY+uRao9LwZwI+jYCE4YtCh6RTp2J2Fumo9j53pRbPqgF9iLY+wuSKxqCQpLiWDTkWxrPA7Eu2dZC/iQKce6Dey4dm/eQa/LUX8NZHO6jgQBOX2VY0n+cKfOBoINJjUNd7DVi6+v/DgpFXbBBuOo=&card_id=LU6vGMYV2XnvMKK+ogiOXKrI9HAJqMRj17quzY/79Qvs5lG0bnI47oRdTe+rosnmBSBGo2eumWLh/r1zU3EJGk01zDVAKrTmGl5D0RoViOTTDx7KtijGT1zQq2cK2LiZa7SqLPonDZE1TI2HKRy9cKQMuCrKwSRUmvdCko9YwU0=&card_type=0&charset=UTF-8&identity_code=ZfJhwnuzhqnOXEUOpUbKnalTWAbRAMQMtlZk4lUB5ZfUB7RwntYgzfKrSl7jPq+Ab3g+e9nO1MSGmh6oF3jO81IKPg9MdKTokZwdam1a/ncpK6Ha0GKHTzcRumtnZYzUfoRaBZtsw1tAWpygqLS2obkMPQRPareJOSeh7ca9GzI=&identity_type=IDENTITY_CARD&media_id=13818483971&mer_id=25116&pub_pri_flag=2&service=user_reg&version=4.0],Merchant number isÔºö[25116]
+[2014-12-16 14:59:47]-[]-[data] :The private key path forÔºö/opt/lampp/htdocs/common/config/cert/25116_wenzhoudai.key.pem
+[2014-12-16 14:59:47]-[]-[data] :Signature string forÔºö∏ù,òØqü:W¯à¡ÿ÷¨eìô{4ı≠Ú
+)/ü“ÖA®éc¸ÚyDCﬂßÈhÏπ:»wòC’\l£÷w%ı‚ÛB…#ÿFÿ,´`’;Ã¢õˆX¶ÜXŸÀFÇó4v
+Ú }%‘m Ï]MÆ§48s¥`º∞¥Äw„	Q%
+[2014-12-16 14:59:47]-[]-[data] :Request platform way=get
+[2014-12-16 14:59:47]-[]-[data] :Request platform signature string=uJ0MHCyYrxpxnzpX+IjB2NasEGWTmRx7NPWt8gopL5/ShUGojmP88nlEH0Pfpw0Z6WjsuTrIG3eYQ9VcbKPWHHcl9eLz8ELJIwzYRtgsq2DVO8yim/ZYpoZY2RPLBw9Ggpc0dgryyn0l1G3K7F1NrhSkNDhztGC8sLSAd+MJUSU=
+[2014-12-16 14:59:47]-[]-[data] :Clear information request platform=busi_no=1&card_holder=ABtx2ZhZYV21tmI8OanqAqYdY+uRao9LwZwI+jYCE4YtCh6RTp2J2Fumo9j53pRbPqgF9iLY+wuSKxqCQpLiWDTkWxrPA7Eu2dZC/iQKce6Dey4dm/eQa/LUX8NZHO6jgQBOX2VY0n+cKfOBoINJjUNd7DVi6+v/DgpFXbBBuOo=&card_id=LU6vGMYV2XnvMKK+ogiOXKrI9HAJqMRj17quzY/79Qvs5lG0bnI47oRdTe+rosnmBSBGo2eumWLh/r1zU3EJGk01zDVAKrTmGl5D0RoViOTTDx7KtijGT1zQq2cK2LiZa7SqLPonDZE1TI2HKRy9cKQMuCrKwSRUmvdCko9YwU0=&card_type=0&charset=UTF-8&identity_code=ZfJhwnuzhqnOXEUOpUbKnalTWAbRAMQMtlZk4lUB5ZfUB7RwntYgzfKrSl7jPq+Ab3g+e9nO1MSGmh6oF3jO81IKPg9MdKTokZwdam1a/ncpK6Ha0GKHTzcRumtnZYzUfoRaBZtsw1tAWpygqLS2obkMPQRPareJOSeh7ca9GzI=&identity_type=IDENTITY_CARD&media_id=13818483971&mer_id=25116&pub_pri_flag=2&service=user_reg&version=4.0
+[2014-12-16 14:59:47]-[]-[data] :The service user_reg request platform to get the address url=http://pay.soopay.net/spay/pay/payservice.do?busi_no=1&card_holder=ABtx2ZhZYV21tmI8OanqAqYdY%2BuRao9LwZwI%2BjYCE4YtCh6RTp2J2Fumo9j53pRbPqgF9iLY%2BwuSKxqCQpLiWDTkWxrPA7Eu2dZC%2FiQKce6Dey4dm%2FeQa%2FLUX8NZHO6jgQBOX2VY0n%2BcKfOBoINJjUNd7DVi6%2Bv%2FDgpFXbBBuOo%3D&card_id=LU6vGMYV2XnvMKK%2BogiOXKrI9HAJqMRj17quzY%2F79Qvs5lG0bnI47oRdTe%2BrosnmBSBGo2eumWLh%2Fr1zU3EJGk01zDVAKrTmGl5D0RoViOTTDx7KtijGT1zQq2cK2LiZa7SqLPonDZE1TI2HKRy9cKQMuCrKwSRUmvdCko9YwU0%3D&card_type=0&charset=UTF-8&identity_code=ZfJhwnuzhqnOXEUOpUbKnalTWAbRAMQMtlZk4lUB5ZfUB7RwntYgzfKrSl7jPq%2BAb3g%2Be9nO1MSGmh6oF3jO81IKPg9MdKTokZwdam1a%2FncpK6Ha0GKHTzcRumtnZYzUfoRaBZtsw1tAWpygqLS2obkMPQRPareJOSeh7ca9GzI%3D&identity_type=IDENTITY_CARD&media_id=13818483971&mer_id=25116&pub_pri_flag=2&service=user_reg&sign_type=RSA&version=4.0&sign=uJ0MHCyYrxpxnzpX+IjB2NasEGWTmRx7NPWt8gopL5/ShUGojmP88nlEH0Pfpw0Z6WjsuTrIG3eYQ9VcbKPWHHcl9eLz8ELJIwzYRtgsq2DVO8yim/ZYpoZY2RPLBw9Ggpc0dgryyn0l1G3K7F1NrhSkNDhztGC8sLSAd+MJUSU=
+[2014-12-16 15:03:40]-[]-[data] :Request Para=array (
+  'service' => 'user_reg',
+  'sign_type' => 'RSA',
+  'mer_id' => '25116',
+  'version' => '4.0',
+  'charset' => 'UTF-8',
+  'pub_pri_flag' => '2',
+  'identity_type' => 'IDENTITY_CARD',
+  'identity_code' => '420626198609292527',
+  'card_id' => '6228480038445547276',
+  'card_holder' => 'Â±àÈáëÂ®•',
+  'media_id' => '13818483971',
+  'card_type' => '0',
+  'busi_no' => '1',
+)
+[2014-12-16 15:03:40]-[]-[data] :The parameters of the request card_id RSA encryption
+[2014-12-16 15:03:40]-[]-[data] :ÊïèÊÑü‰ø°ÊÅØÂä†ÂØÜÂØÜÊñá:[aQcNsPliDU4lzZiGtyht7aG1s+7HsxK56oXHiwGs6tj17PEj1Mnjxy/uGsldXAJgvBnVuoFwk/atfuEl+WqYp9rd+xsOzxFPWmcHj+4+qykOzLkkAqVat1D7rv16snNP8mv89rUCTRZuxRrQWgRiMwlTRXlh470bqZ5lvb4u/LM=]
+[2014-12-16 15:03:40]-[]-[data] :The parameters of the request identity_code RSA encryption
+[2014-12-16 15:03:40]-[]-[data] :ÊïèÊÑü‰ø°ÊÅØÂä†ÂØÜÂØÜÊñá:[FppjdHPk14SF2ylBEZ43Q0dgRIihgeMSC4AdofTW5U0zxas5I36VWPkMipIoVMWZB9jaNbd4tQjwKyjviBLSw4RnxnMK1fLgiMOj8VIK+fQwvY09Igy2LVnQ771JXHHchEucuNlCQ5HF2Duxup3W7CiWfrORidkOYp4tdqO8yMQ=]
+[2014-12-16 15:03:40]-[]-[data] :The parameters of the request card_holder RSA encryption
+[2014-12-16 15:03:40]-[]-[data] :ÊïèÊÑü‰ø°ÊÅØÂä†ÂØÜÂØÜÊñá:[xeMURK+wHomcmNdYbDc0P6iN1m1i5k0HBeX9FsqrUd5HAG88Uokf8aqBpmaXwszvLpR1m78PBSsPltj2//IebE8KKSacdQaegiCJ9+DWKaWAZDyDGVv8lvEbk/f5YTca2oU7rpmTvw30xzg74yNWwDBpBbdfgkm288vhu5x7Qx4=]
+[2014-12-16 15:03:40]-[]-[data] :Participate in the signature parametersÔºö[busi_no=1&card_holder=xeMURK+wHomcmNdYbDc0P6iN1m1i5k0HBeX9FsqrUd5HAG88Uokf8aqBpmaXwszvLpR1m78PBSsPltj2//IebE8KKSacdQaegiCJ9+DWKaWAZDyDGVv8lvEbk/f5YTca2oU7rpmTvw30xzg74yNWwDBpBbdfgkm288vhu5x7Qx4=&card_id=aQcNsPliDU4lzZiGtyht7aG1s+7HsxK56oXHiwGs6tj17PEj1Mnjxy/uGsldXAJgvBnVuoFwk/atfuEl+WqYp9rd+xsOzxFPWmcHj+4+qykOzLkkAqVat1D7rv16snNP8mv89rUCTRZuxRrQWgRiMwlTRXlh470bqZ5lvb4u/LM=&card_type=0&charset=UTF-8&identity_code=FppjdHPk14SF2ylBEZ43Q0dgRIihgeMSC4AdofTW5U0zxas5I36VWPkMipIoVMWZB9jaNbd4tQjwKyjviBLSw4RnxnMK1fLgiMOj8VIK+fQwvY09Igy2LVnQ771JXHHchEucuNlCQ5HF2Duxup3W7CiWfrORidkOYp4tdqO8yMQ=&identity_type=IDENTITY_CARD&media_id=13818483971&mer_id=25116&pub_pri_flag=2&service=user_reg&version=4.0],Merchant number isÔºö[25116]
+[2014-12-16 15:03:40]-[]-[data] :The private key path forÔºö/opt/lampp/htdocs/common/config/cert/25116_wenzhoudai.key.pem
+[2014-12-16 15:03:40]-[]-[data] :Signature string forÔºö¢≥Bˆ-g@[d&¯÷ ≤b⁄è*•˘¿0}À÷;sÒÁ[A´SØy@*Y§'®§Ñ|aø}yYFY√Ç}O@ó÷i#å©t≠úà§€ˇI
+b£∆yD¯ueî‹÷o{]©u˚ºˇà≥‹~.\éÇùÕÄÿ=‡⁄¢´3ÜÓN
+[2014-12-16 15:03:40]-[]-[data] :Request platform way=get
+[2014-12-16 15:03:40]-[]-[data] :Request platform signature string=orNC9i1nQFtkJvjWAAWyYtqPKqX5wDB9y9Y7c/HnW0EQq1OveUAqWaQnqKSEE3xhv315WQxGWcOCfU9AHAeXGdZpI4ypdB2tnAeIpALb/wVJCmKjxnlE+HVlE5TcA9Zve12pdfu8/4iz3H4uXBCOE4KdFs2A2D3g2qKrMxmG7k4=
+[2014-12-16 15:03:40]-[]-[data] :Clear information request platform=busi_no=1&card_holder=xeMURK+wHomcmNdYbDc0P6iN1m1i5k0HBeX9FsqrUd5HAG88Uokf8aqBpmaXwszvLpR1m78PBSsPltj2//IebE8KKSacdQaegiCJ9+DWKaWAZDyDGVv8lvEbk/f5YTca2oU7rpmTvw30xzg74yNWwDBpBbdfgkm288vhu5x7Qx4=&card_id=aQcNsPliDU4lzZiGtyht7aG1s+7HsxK56oXHiwGs6tj17PEj1Mnjxy/uGsldXAJgvBnVuoFwk/atfuEl+WqYp9rd+xsOzxFPWmcHj+4+qykOzLkkAqVat1D7rv16snNP8mv89rUCTRZuxRrQWgRiMwlTRXlh470bqZ5lvb4u/LM=&card_type=0&charset=UTF-8&identity_code=FppjdHPk14SF2ylBEZ43Q0dgRIihgeMSC4AdofTW5U0zxas5I36VWPkMipIoVMWZB9jaNbd4tQjwKyjviBLSw4RnxnMK1fLgiMOj8VIK+fQwvY09Igy2LVnQ771JXHHchEucuNlCQ5HF2Duxup3W7CiWfrORidkOYp4tdqO8yMQ=&identity_type=IDENTITY_CARD&media_id=13818483971&mer_id=25116&pub_pri_flag=2&service=user_reg&version=4.0
+[2014-12-16 15:03:40]-[]-[data] :The service user_reg request platform to get the address url=http://pay.soopay.net/spay/pay/payservice.do?busi_no=1&card_holder=xeMURK%2BwHomcmNdYbDc0P6iN1m1i5k0HBeX9FsqrUd5HAG88Uokf8aqBpmaXwszvLpR1m78PBSsPltj2%2F%2FIebE8KKSacdQaegiCJ9%2BDWKaWAZDyDGVv8lvEbk%2Ff5YTca2oU7rpmTvw30xzg74yNWwDBpBbdfgkm288vhu5x7Qx4%3D&card_id=aQcNsPliDU4lzZiGtyht7aG1s%2B7HsxK56oXHiwGs6tj17PEj1Mnjxy%2FuGsldXAJgvBnVuoFwk%2FatfuEl%2BWqYp9rd%2BxsOzxFPWmcHj%2B4%2BqykOzLkkAqVat1D7rv16snNP8mv89rUCTRZuxRrQWgRiMwlTRXlh470bqZ5lvb4u%2FLM%3D&card_type=0&charset=UTF-8&identity_code=FppjdHPk14SF2ylBEZ43Q0dgRIihgeMSC4AdofTW5U0zxas5I36VWPkMipIoVMWZB9jaNbd4tQjwKyjviBLSw4RnxnMK1fLgiMOj8VIK%2BfQwvY09Igy2LVnQ771JXHHchEucuNlCQ5HF2Duxup3W7CiWfrORidkOYp4tdqO8yMQ%3D&identity_type=IDENTITY_CARD&media_id=13818483971&mer_id=25116&pub_pri_flag=2&service=user_reg&sign_type=RSA&version=4.0&sign=orNC9i1nQFtkJvjWAAWyYtqPKqX5wDB9y9Y7c/HnW0EQq1OveUAqWaQnqKSEE3xhv315WQxGWcOCfU9AHAeXGdZpI4ypdB2tnAeIpALb/wVJCmKjxnlE+HVlE5TcA9Zve12pdfu8/4iz3H4uXBCOE4KdFs2A2D3g2qKrMxmG7k4=
+[2014-12-16 15:03:41]-[]-[data] :Request Para=array (
+  'service' => 'user_reg',
+  'sign_type' => 'RSA',
+  'mer_id' => '25116',
+  'version' => '4.0',
+  'charset' => 'UTF-8',
+  'pub_pri_flag' => '2',
+  'identity_type' => 'IDENTITY_CARD',
+  'identity_code' => '420626198609292527',
+  'card_id' => '6228480038445547276',
+  'card_holder' => 'Â±àÈáëÂ®•',
+  'media_id' => '13818483971',
+  'card_type' => '0',
+  'busi_no' => '1',
+)
+[2014-12-16 15:03:41]-[]-[data] :The parameters of the request card_id RSA encryption
+[2014-12-16 15:03:41]-[]-[data] :ÊïèÊÑü‰ø°ÊÅØÂä†ÂØÜÂØÜÊñá:[gkxCwQYMpbHVPlu1A552g/8wMA+WUrJCxfiaqhtYaj07tNgJmbdc4kypWsmu2EkmlG4QATkFPpD9bJm0ireBqQUKvJiJptz3eA6+Lijt23GhG9UMa7B0YA1Vc9USkUtbrvV4apLc2VUd+5pgs1qyeZaVRg6YAjAYbje7KqZVnL4=]
+[2014-12-16 15:03:41]-[]-[data] :The parameters of the request identity_code RSA encryption
+[2014-12-16 15:03:41]-[]-[data] :ÊïèÊÑü‰ø°ÊÅØÂä†ÂØÜÂØÜÊñá:[wqZsr/eUg8QShwvmweqrjN5xSLTgpAFc5zEmUfFXuvgb8eQLyHPmu3gGFMGwt7bRIKVCZnx703CcAeolwtMTuCuJAPr9hE1e4LSLzJJa8XEmnEBMeQ86svohSsM47mZc4qOiSyftQvJWi7R04zBB1Hh8PzToI51NC2zsz3CBMtI=]
+[2014-12-16 15:03:41]-[]-[data] :The parameters of the request card_holder RSA encryption
+[2014-12-16 15:03:41]-[]-[data] :ÊïèÊÑü‰ø°ÊÅØÂä†ÂØÜÂØÜÊñá:[CPTiaGQmj8XSHWTa8eRYtSrndGXVqASKOWbhySJ5E7kvD0QnIu9GJ5aIn4yqFOgKON9LUl5caHS5tBLGOvSkTEpFi/D4M/UT8ebk/KecfjDq9HbA6XHKXOt5R6QZ28yHjijsQmXx7cA5JkgVXE7lU/os8HvJ2O5DqVvmG+pihLM=]
+[2014-12-16 15:03:41]-[]-[data] :Participate in the signature parametersÔºö[busi_no=1&card_holder=CPTiaGQmj8XSHWTa8eRYtSrndGXVqASKOWbhySJ5E7kvD0QnIu9GJ5aIn4yqFOgKON9LUl5caHS5tBLGOvSkTEpFi/D4M/UT8ebk/KecfjDq9HbA6XHKXOt5R6QZ28yHjijsQmXx7cA5JkgVXE7lU/os8HvJ2O5DqVvmG+pihLM=&card_id=gkxCwQYMpbHVPlu1A552g/8wMA+WUrJCxfiaqhtYaj07tNgJmbdc4kypWsmu2EkmlG4QATkFPpD9bJm0ireBqQUKvJiJptz3eA6+Lijt23GhG9UMa7B0YA1Vc9USkUtbrvV4apLc2VUd+5pgs1qyeZaVRg6YAjAYbje7KqZVnL4=&card_type=0&charset=UTF-8&identity_code=wqZsr/eUg8QShwvmweqrjN5xSLTgpAFc5zEmUfFXuvgb8eQLyHPmu3gGFMGwt7bRIKVCZnx703CcAeolwtMTuCuJAPr9hE1e4LSLzJJa8XEmnEBMeQ86svohSsM47mZc4qOiSyftQvJWi7R04zBB1Hh8PzToI51NC2zsz3CBMtI=&identity_type=IDENTITY_CARD&media_id=13818483971&mer_id=25116&pub_pri_flag=2&service=user_reg&version=4.0],Merchant number isÔºö[25116]
+[2014-12-16 15:03:41]-[]-[data] :The private key path forÔºö/opt/lampp/htdocs/common/config/cert/25116_wenzhoudai.key.pem
+[2014-12-16 15:03:41]-[]-[data] :Signature string forÔºöàñ2Ø †;.öQéºŸÏë}ëæ ∂ÀjﬁÁ◊„Ù‹˙ßÂ>µjQï¸Jæ”êdÚBCCÜyî!<µä6‚U≥óÍ1€.f5M¯‡öüÈÛÂ˜◊0¢˜ƒ≠zu{ËÌïË3E2c Ú´ætl<"0Ì¸;â&ë(ªS·ˆö:Â
+[2014-12-16 15:03:41]-[]-[data] :Request platform way=get
+[2014-12-16 15:03:41]-[]-[data] :Request platform signature string=iJYyr8qgGTsumlGOvNkW7JF9kb4gtstq3ufX4/Tc+qflPrVqUR+V/EocvtOQZPJCQ0MchnmUITy1ijbiVbOX6jEZ2y5mNU344JoXn+nz5ffXGzCi98StDH96dRF76O2V6DMCBUUyYwDyq74FdGw8IjDt/DuJJpEou1PhDPaaOuU=
+[2014-12-16 15:03:41]-[]-[data] :Clear information request platform=busi_no=1&card_holder=CPTiaGQmj8XSHWTa8eRYtSrndGXVqASKOWbhySJ5E7kvD0QnIu9GJ5aIn4yqFOgKON9LUl5caHS5tBLGOvSkTEpFi/D4M/UT8ebk/KecfjDq9HbA6XHKXOt5R6QZ28yHjijsQmXx7cA5JkgVXE7lU/os8HvJ2O5DqVvmG+pihLM=&card_id=gkxCwQYMpbHVPlu1A552g/8wMA+WUrJCxfiaqhtYaj07tNgJmbdc4kypWsmu2EkmlG4QATkFPpD9bJm0ireBqQUKvJiJptz3eA6+Lijt23GhG9UMa7B0YA1Vc9USkUtbrvV4apLc2VUd+5pgs1qyeZaVRg6YAjAYbje7KqZVnL4=&card_type=0&charset=UTF-8&identity_code=wqZsr/eUg8QShwvmweqrjN5xSLTgpAFc5zEmUfFXuvgb8eQLyHPmu3gGFMGwt7bRIKVCZnx703CcAeolwtMTuCuJAPr9hE1e4LSLzJJa8XEmnEBMeQ86svohSsM47mZc4qOiSyftQvJWi7R04zBB1Hh8PzToI51NC2zsz3CBMtI=&identity_type=IDENTITY_CARD&media_id=13818483971&mer_id=25116&pub_pri_flag=2&service=user_reg&version=4.0
+[2014-12-16 15:03:41]-[]-[data] :The service user_reg request platform to get the address url=http://pay.soopay.net/spay/pay/payservice.do?busi_no=1&card_holder=CPTiaGQmj8XSHWTa8eRYtSrndGXVqASKOWbhySJ5E7kvD0QnIu9GJ5aIn4yqFOgKON9LUl5caHS5tBLGOvSkTEpFi%2FD4M%2FUT8ebk%2FKecfjDq9HbA6XHKXOt5R6QZ28yHjijsQmXx7cA5JkgVXE7lU%2Fos8HvJ2O5DqVvmG%2BpihLM%3D&card_id=gkxCwQYMpbHVPlu1A552g%2F8wMA%2BWUrJCxfiaqhtYaj07tNgJmbdc4kypWsmu2EkmlG4QATkFPpD9bJm0ireBqQUKvJiJptz3eA6%2BLijt23GhG9UMa7B0YA1Vc9USkUtbrvV4apLc2VUd%2B5pgs1qyeZaVRg6YAjAYbje7KqZVnL4%3D&card_type=0&charset=UTF-8&identity_code=wqZsr%2FeUg8QShwvmweqrjN5xSLTgpAFc5zEmUfFXuvgb8eQLyHPmu3gGFMGwt7bRIKVCZnx703CcAeolwtMTuCuJAPr9hE1e4LSLzJJa8XEmnEBMeQ86svohSsM47mZc4qOiSyftQvJWi7R04zBB1Hh8PzToI51NC2zsz3CBMtI%3D&identity_type=IDENTITY_CARD&media_id=13818483971&mer_id=25116&pub_pri_flag=2&service=user_reg&sign_type=RSA&version=4.0&sign=iJYyr8qgGTsumlGOvNkW7JF9kb4gtstq3ufX4/Tc+qflPrVqUR+V/EocvtOQZPJCQ0MchnmUITy1ijbiVbOX6jEZ2y5mNU344JoXn+nz5ffXGzCi98StDH96dRF76O2V6DMCBUUyYwDyq74FdGw8IjDt/DuJJpEou1PhDPaaOuU=
+[2014-12-16 15:03:42]-[]-[data] :Request Para=array (
+  'service' => 'user_reg',
+  'sign_type' => 'RSA',
+  'mer_id' => '25116',
+  'version' => '4.0',
+  'charset' => 'UTF-8',
+  'pub_pri_flag' => '2',
+  'identity_type' => 'IDENTITY_CARD',
+  'identity_code' => '420626198609292527',
+  'card_id' => '6228480038445547276',
+  'card_holder' => 'Â±àÈáëÂ®•',
+  'media_id' => '13818483971',
+  'card_type' => '0',
+  'busi_no' => '1',
+)
+[2014-12-16 15:03:42]-[]-[data] :The parameters of the request card_id RSA encryption
+[2014-12-16 15:03:42]-[]-[data] :ÊïèÊÑü‰ø°ÊÅØÂä†ÂØÜÂØÜÊñá:[fKcPWpA6E1uGMP0GrJ1vRawqs/CChbzB9o5vTVXoTeoEM9EkYZo4YRpZdFq3S5iycMvSiLlqTqRIcXq9BZdtN2yBi/eQ2hs+r00pN29InXMzch8ZaMKccxPsa435jSAfCz8jUmYNmwOzznyvnmPBSk8GxgkW7c1YCmsLMAqAU04=]
+[2014-12-16 15:03:42]-[]-[data] :The parameters of the request identity_code RSA encryption
+[2014-12-16 15:03:42]-[]-[data] :ÊïèÊÑü‰ø°ÊÅØÂä†ÂØÜÂØÜÊñá:[o4OlNUr4EhkQ8aZPajH7ut6InleDx2/43hH5a3kkKufj1chhNf9Qo8gxWRrLHdk5BKO6EphCz8SeBIrBz62LLlpnQlGI2WUo7VMBHAqqhYGql/5+kqsKHHiNvaMOv1W6/Db33+Y/+NiBJWjw8L7tud1jq/aF3smLZP3f0ISWEto=]
+[2014-12-16 15:03:42]-[]-[data] :The parameters of the request card_holder RSA encryption
+[2014-12-16 15:03:42]-[]-[data] :ÊïèÊÑü‰ø°ÊÅØÂä†ÂØÜÂØÜÊñá:[RBdYofenTs3UYAxr1yeU97NDEuHAE+JuSHs9Y1tZQl06fKGQ0oyQs26m0SMc6Rzf9r2xm8MPboS8h2L2XBZN1dVxnVtu4O8NK1oZMKulJAYL4v6fTlX7/INDhdVl9YSerRFqrFEq5uOs4L9pjUzl+cuJ/TQQL/Pwgi/LUHkJYXs=]
+[2014-12-16 15:03:42]-[]-[data] :Participate in the signature parametersÔºö[busi_no=1&card_holder=RBdYofenTs3UYAxr1yeU97NDEuHAE+JuSHs9Y1tZQl06fKGQ0oyQs26m0SMc6Rzf9r2xm8MPboS8h2L2XBZN1dVxnVtu4O8NK1oZMKulJAYL4v6fTlX7/INDhdVl9YSerRFqrFEq5uOs4L9pjUzl+cuJ/TQQL/Pwgi/LUHkJYXs=&card_id=fKcPWpA6E1uGMP0GrJ1vRawqs/CChbzB9o5vTVXoTeoEM9EkYZo4YRpZdFq3S5iycMvSiLlqTqRIcXq9BZdtN2yBi/eQ2hs+r00pN29InXMzch8ZaMKccxPsa435jSAfCz8jUmYNmwOzznyvnmPBSk8GxgkW7c1YCmsLMAqAU04=&card_type=0&charset=UTF-8&identity_code=o4OlNUr4EhkQ8aZPajH7ut6InleDx2/43hH5a3kkKufj1chhNf9Qo8gxWRrLHdk5BKO6EphCz8SeBIrBz62LLlpnQlGI2WUo7VMBHAqqhYGql/5+kqsKHHiNvaMOv1W6/Db33+Y/+NiBJWjw8L7tud1jq/aF3smLZP3f0ISWEto=&identity_type=IDENTITY_CARD&media_id=13818483971&mer_id=25116&pub_pri_flag=2&service=user_reg&version=4.0],Merchant number isÔºö[25116]
+[2014-12-16 15:03:42]-[]-[data] :The private key path forÔºö/opt/lampp/htdocs/common/config/cert/25116_wenzhoudai.key.pem
+[2014-12-16 15:03:42]-[]-[data] :Signature string forÔºöR°\ç@˛;∏8·aûpÖ(ïœ¨‰v˝˘Nı$ÊΩ
+w)ÿ)î‘ºùÇ»V+<™˜Õ¿øèXïÇ`w…{|ÿÕÊGÙyU˝“á-Ce¡è≠’O\(z%”uù5ôHsS[ÁiöXEtoÌëH…Rp75#á[ 1t^å€˘sGfØR
+[2014-12-16 15:03:42]-[]-[data] :Request platform way=get
+[2014-12-16 15:03:42]-[]-[data] :Request platform signature string=UqFcjUD+O3+4BDjhHGGecIUolc+s5Hb9+U71JOa9Cncp2AwplNS8nYLIVis8qvfNGcC/j1iVB4IFYHfJe3zYzeZH9HkCGPBV/dKHLUNlwY+t1RZPXCh6JdN1nTWZSHNTW+dpmlhFdG/tkUjJUnA3NQsjh1sgMXRejNv5c0dmr1I=
+[2014-12-16 15:03:42]-[]-[data] :Clear information request platform=busi_no=1&card_holder=RBdYofenTs3UYAxr1yeU97NDEuHAE+JuSHs9Y1tZQl06fKGQ0oyQs26m0SMc6Rzf9r2xm8MPboS8h2L2XBZN1dVxnVtu4O8NK1oZMKulJAYL4v6fTlX7/INDhdVl9YSerRFqrFEq5uOs4L9pjUzl+cuJ/TQQL/Pwgi/LUHkJYXs=&card_id=fKcPWpA6E1uGMP0GrJ1vRawqs/CChbzB9o5vTVXoTeoEM9EkYZo4YRpZdFq3S5iycMvSiLlqTqRIcXq9BZdtN2yBi/eQ2hs+r00pN29InXMzch8ZaMKccxPsa435jSAfCz8jUmYNmwOzznyvnmPBSk8GxgkW7c1YCmsLMAqAU04=&card_type=0&charset=UTF-8&identity_code=o4OlNUr4EhkQ8aZPajH7ut6InleDx2/43hH5a3kkKufj1chhNf9Qo8gxWRrLHdk5BKO6EphCz8SeBIrBz62LLlpnQlGI2WUo7VMBHAqqhYGql/5+kqsKHHiNvaMOv1W6/Db33+Y/+NiBJWjw8L7tud1jq/aF3smLZP3f0ISWEto=&identity_type=IDENTITY_CARD&media_id=13818483971&mer_id=25116&pub_pri_flag=2&service=user_reg&version=4.0
+[2014-12-16 15:03:42]-[]-[data] :The service user_reg request platform to get the address url=http://pay.soopay.net/spay/pay/payservice.do?busi_no=1&card_holder=RBdYofenTs3UYAxr1yeU97NDEuHAE%2BJuSHs9Y1tZQl06fKGQ0oyQs26m0SMc6Rzf9r2xm8MPboS8h2L2XBZN1dVxnVtu4O8NK1oZMKulJAYL4v6fTlX7%2FINDhdVl9YSerRFqrFEq5uOs4L9pjUzl%2BcuJ%2FTQQL%2FPwgi%2FLUHkJYXs%3D&card_id=fKcPWpA6E1uGMP0GrJ1vRawqs%2FCChbzB9o5vTVXoTeoEM9EkYZo4YRpZdFq3S5iycMvSiLlqTqRIcXq9BZdtN2yBi%2FeQ2hs%2Br00pN29InXMzch8ZaMKccxPsa435jSAfCz8jUmYNmwOzznyvnmPBSk8GxgkW7c1YCmsLMAqAU04%3D&card_type=0&charset=UTF-8&identity_code=o4OlNUr4EhkQ8aZPajH7ut6InleDx2%2F43hH5a3kkKufj1chhNf9Qo8gxWRrLHdk5BKO6EphCz8SeBIrBz62LLlpnQlGI2WUo7VMBHAqqhYGql%2F5%2BkqsKHHiNvaMOv1W6%2FDb33%2BY%2F%2BNiBJWjw8L7tud1jq%2FaF3smLZP3f0ISWEto%3D&identity_type=IDENTITY_CARD&media_id=13818483971&mer_id=25116&pub_pri_flag=2&service=user_reg&sign_type=RSA&version=4.0&sign=UqFcjUD+O3+4BDjhHGGecIUolc+s5Hb9+U71JOa9Cncp2AwplNS8nYLIVis8qvfNGcC/j1iVB4IFYHfJe3zYzeZH9HkCGPBV/dKHLUNlwY+t1RZPXCh6JdN1nTWZSHNTW+dpmlhFdG/tkUjJUnA3NQsjh1sgMXRejNv5c0dmr1I=
+[2014-12-16 15:03:42]-[]-[data] :Request Para=array (
+  'service' => 'user_reg',
+  'sign_type' => 'RSA',
+  'mer_id' => '25116',
+  'version' => '4.0',
+  'charset' => 'UTF-8',
+  'pub_pri_flag' => '2',
+  'identity_type' => 'IDENTITY_CARD',
+  'identity_code' => '420626198609292527',
+  'card_id' => '6228480038445547276',
+  'card_holder' => 'Â±àÈáëÂ®•',
+  'media_id' => '13818483971',
+  'card_type' => '0',
+  'busi_no' => '1',
+)
+[2014-12-16 15:03:42]-[]-[data] :The parameters of the request card_id RSA encryption
+[2014-12-16 15:03:42]-[]-[data] :ÊïèÊÑü‰ø°ÊÅØÂä†ÂØÜÂØÜÊñá:[ta6PIU+LdH1wymYXk+AMHgDjwGf82iEsZ1T+X/1AwXgJMXjTzSDCO4iB5vBPAs+IUlREJBPBliVAY7xLV/DNWHEYvhA1haqok5Dtg4HWLeWtj3/aVK2ME4wPdttCEBzJCakm9+upsQueopkIQS713b5EgVbTwItOMf9G2oAzCg0=]
+[2014-12-16 15:03:42]-[]-[data] :The parameters of the request identity_code RSA encryption
+[2014-12-16 15:03:42]-[]-[data] :ÊïèÊÑü‰ø°ÊÅØÂä†ÂØÜÂØÜÊñá:[kuhMd9bOX0ZX9XkHNjykNNbY7b0GHpCDk5PsN86kLZ3q0XYLQLgTf0gkh1q/l8+AQB+AjTzS90Z1jT9yFB7NhgDbaxP/1LlUHeLvwFvbEZFZ5ZOKRfecKLsdpPLN7/Oe9CiRQk0sWp7bz+/oWjB12UNC0ZME06ouOjijM6qlUZs=]
+[2014-12-16 15:03:42]-[]-[data] :The parameters of the request card_holder RSA encryption
+[2014-12-16 15:03:42]-[]-[data] :ÊïèÊÑü‰ø°ÊÅØÂä†ÂØÜÂØÜÊñá:[PszuYnxxhSCxXKtfxh23PJrjmAtcvQvWbvYXxApZzMZe2+DbHrTh3CWBijaC+gRlCN3o9R6lFvw+z/S41A2riIo3DbP8yJck5mBoVQULy9PXalyL1IF1BEz+FMRVVN0+hh04UAJglzeCxbfB5zECfPW4TiJqNQDATpZk2beVkDw=]
+[2014-12-16 15:03:42]-[]-[data] :Participate in the signature parametersÔºö[busi_no=1&card_holder=PszuYnxxhSCxXKtfxh23PJrjmAtcvQvWbvYXxApZzMZe2+DbHrTh3CWBijaC+gRlCN3o9R6lFvw+z/S41A2riIo3DbP8yJck5mBoVQULy9PXalyL1IF1BEz+FMRVVN0+hh04UAJglzeCxbfB5zECfPW4TiJqNQDATpZk2beVkDw=&card_id=ta6PIU+LdH1wymYXk+AMHgDjwGf82iEsZ1T+X/1AwXgJMXjTzSDCO4iB5vBPAs+IUlREJBPBliVAY7xLV/DNWHEYvhA1haqok5Dtg4HWLeWtj3/aVK2ME4wPdttCEBzJCakm9+upsQueopkIQS713b5EgVbTwItOMf9G2oAzCg0=&card_type=0&charset=UTF-8&identity_code=kuhMd9bOX0ZX9XkHNjykNNbY7b0GHpCDk5PsN86kLZ3q0XYLQLgTf0gkh1q/l8+AQB+AjTzS90Z1jT9yFB7NhgDbaxP/1LlUHeLvwFvbEZFZ5ZOKRfecKLsdpPLN7/Oe9CiRQk0sWp7bz+/oWjB12UNC0ZME06ouOjijM6qlUZs=&identity_type=IDENTITY_CARD&media_id=13818483971&mer_id=25116&pub_pri_flag=2&service=user_reg&version=4.0],Merchant number isÔºö[25116]
+[2014-12-16 15:03:42]-[]-[data] :The private key path forÔºö/opt/lampp/htdocs/common/config/cert/25116_wenzhoudai.key.pem
+[2014-12-16 15:03:42]-[]-[data] :Signature string forÔºöß6àÚ¥d—∫Ñ|tü§8˚ïf¶õF7u?≤˝≠Û˙jê`∫í≥È=gx˚Âw¸√„‡Wõh?ˆ\R~ΩNú‘QàúÊ¡OyL™ÖFw’˘2/f∫âŒ∏ÕRâÅRΩ ªj$^ﬁ€,ıﬂÀ\_$5zB=Áô"üîÒX	˜.¨˘Ì:
+[2014-12-16 15:03:42]-[]-[data] :Request platform way=get
+[2014-12-16 15:03:42]-[]-[data] :Request platform signature string=pzaI8rRkHdETuoTwDHx0n6Q4+5VmpptGNwN1P7L9rfP6apBgupKz6T1nePvld/zD4+BXm2g/9lxSfr1OnNRRiJzmwU95TKqFRnfV+TLwL2a6ic4UuB3NUomBUr0gu2oBJF7e2yz138tcHl8kNXpCPeeZIp+U8VgJ9y4arAT57To=
+[2014-12-16 15:03:42]-[]-[data] :Clear information request platform=busi_no=1&card_holder=PszuYnxxhSCxXKtfxh23PJrjmAtcvQvWbvYXxApZzMZe2+DbHrTh3CWBijaC+gRlCN3o9R6lFvw+z/S41A2riIo3DbP8yJck5mBoVQULy9PXalyL1IF1BEz+FMRVVN0+hh04UAJglzeCxbfB5zECfPW4TiJqNQDATpZk2beVkDw=&card_id=ta6PIU+LdH1wymYXk+AMHgDjwGf82iEsZ1T+X/1AwXgJMXjTzSDCO4iB5vBPAs+IUlREJBPBliVAY7xLV/DNWHEYvhA1haqok5Dtg4HWLeWtj3/aVK2ME4wPdttCEBzJCakm9+upsQueopkIQS713b5EgVbTwItOMf9G2oAzCg0=&card_type=0&charset=UTF-8&identity_code=kuhMd9bOX0ZX9XkHNjykNNbY7b0GHpCDk5PsN86kLZ3q0XYLQLgTf0gkh1q/l8+AQB+AjTzS90Z1jT9yFB7NhgDbaxP/1LlUHeLvwFvbEZFZ5ZOKRfecKLsdpPLN7/Oe9CiRQk0sWp7bz+/oWjB12UNC0ZME06ouOjijM6qlUZs=&identity_type=IDENTITY_CARD&media_id=13818483971&mer_id=25116&pub_pri_flag=2&service=user_reg&version=4.0
+[2014-12-16 15:03:42]-[]-[data] :The service user_reg request platform to get the address url=http://pay.soopay.net/spay/pay/payservice.do?busi_no=1&card_holder=PszuYnxxhSCxXKtfxh23PJrjmAtcvQvWbvYXxApZzMZe2%2BDbHrTh3CWBijaC%2BgRlCN3o9R6lFvw%2Bz%2FS41A2riIo3DbP8yJck5mBoVQULy9PXalyL1IF1BEz%2BFMRVVN0%2Bhh04UAJglzeCxbfB5zECfPW4TiJqNQDATpZk2beVkDw%3D&card_id=ta6PIU%2BLdH1wymYXk%2BAMHgDjwGf82iEsZ1T%2BX%2F1AwXgJMXjTzSDCO4iB5vBPAs%2BIUlREJBPBliVAY7xLV%2FDNWHEYvhA1haqok5Dtg4HWLeWtj3%2FaVK2ME4wPdttCEBzJCakm9%2BupsQueopkIQS713b5EgVbTwItOMf9G2oAzCg0%3D&card_type=0&charset=UTF-8&identity_code=kuhMd9bOX0ZX9XkHNjykNNbY7b0GHpCDk5PsN86kLZ3q0XYLQLgTf0gkh1q%2Fl8%2BAQB%2BAjTzS90Z1jT9yFB7NhgDbaxP%2F1LlUHeLvwFvbEZFZ5ZOKRfecKLsdpPLN7%2FOe9CiRQk0sWp7bz%2B%2FoWjB12UNC0ZME06ouOjijM6qlUZs%3D&identity_type=IDENTITY_CARD&media_id=13818483971&mer_id=25116&pub_pri_flag=2&service=user_reg&sign_type=RSA&version=4.0&sign=pzaI8rRkHdETuoTwDHx0n6Q4+5VmpptGNwN1P7L9rfP6apBgupKz6T1nePvld/zD4+BXm2g/9lxSfr1OnNRRiJzmwU95TKqFRnfV+TLwL2a6ic4UuB3NUomBUr0gu2oBJF7e2yz138tcHl8kNXpCPeeZIp+U8VgJ9y4arAT57To=
+[2014-12-16 15:03:43]-[]-[data] :Request Para=array (
+  'service' => 'user_reg',
+  'sign_type' => 'RSA',
+  'mer_id' => '25116',
+  'version' => '4.0',
+  'charset' => 'UTF-8',
+  'pub_pri_flag' => '2',
+  'identity_type' => 'IDENTITY_CARD',
+  'identity_code' => '420626198609292527',
+  'card_id' => '6228480038445547276',
+  'card_holder' => 'Â±àÈáëÂ®•',
+  'media_id' => '13818483971',
+  'card_type' => '0',
+  'busi_no' => '1',
+)
+[2014-12-16 15:03:43]-[]-[data] :The parameters of the request card_id RSA encryption
+[2014-12-16 15:03:43]-[]-[data] :ÊïèÊÑü‰ø°ÊÅØÂä†ÂØÜÂØÜÊñá:[YrRnscoHBYxznKI0xySrLYLd6qScdKqn7z5KadVhhIqBgBab+g7TRVWn6H0nE7BxE6aUncq4vA9NENX3JQFNnqWJnDN0ZfxHCHyzJVb6GCl9rxXNbN3TGRQjmZoogtgqudjiWWA+C6PgdZO1v78n7WEbn85EEdxtNfgzoXtG+hk=]
+[2014-12-16 15:03:43]-[]-[data] :The parameters of the request identity_code RSA encryption
+[2014-12-16 15:03:43]-[]-[data] :ÊïèÊÑü‰ø°ÊÅØÂä†ÂØÜÂØÜÊñá:[DvvV2G37L7wwbQlaAqgQ12LbkPcIYLKGxgBOmlreIP1Oz3OcEMG/Wk2uh+AimaxtYGfqmbvHtPavN9vTxZUpNj3WAGxJvmXojIpvG9eiNgieVuR8dBnQ2F0mGXKuHi4ndBsyJHldTc1dtzzl1rsukB4RH2+bUa/4cOBSyEBaik8=]
+[2014-12-16 15:03:43]-[]-[data] :The parameters of the request card_holder RSA encryption
+[2014-12-16 15:03:43]-[]-[data] :ÊïèÊÑü‰ø°ÊÅØÂä†ÂØÜÂØÜÊñá:[TZ1i31RB++hZfoCy73j/Y0bAOqFF9HqBkECg2qnu34OrxJirRkR06sBPRRDHlBtuFF/afbVXIxpgbxD2KX+7dpOb6eQzZraUnwLGp74QUDoCDg9X2a4pTKPxB2BXMoUWS/hscN7LeAX6m1YUVm4Gd+2ljYE2TEczMYWqvRrj/sQ=]
+[2014-12-16 15:03:43]-[]-[data] :Participate in the signature parametersÔºö[busi_no=1&card_holder=TZ1i31RB++hZfoCy73j/Y0bAOqFF9HqBkECg2qnu34OrxJirRkR06sBPRRDHlBtuFF/afbVXIxpgbxD2KX+7dpOb6eQzZraUnwLGp74QUDoCDg9X2a4pTKPxB2BXMoUWS/hscN7LeAX6m1YUVm4Gd+2ljYE2TEczMYWqvRrj/sQ=&card_id=YrRnscoHBYxznKI0xySrLYLd6qScdKqn7z5KadVhhIqBgBab+g7TRVWn6H0nE7BxE6aUncq4vA9NENX3JQFNnqWJnDN0ZfxHCHyzJVb6GCl9rxXNbN3TGRQjmZoogtgqudjiWWA+C6PgdZO1v78n7WEbn85EEdxtNfgzoXtG+hk=&card_type=0&charset=UTF-8&identity_code=DvvV2G37L7wwbQlaAqgQ12LbkPcIYLKGxgBOmlreIP1Oz3OcEMG/Wk2uh+AimaxtYGfqmbvHtPavN9vTxZUpNj3WAGxJvmXojIpvG9eiNgieVuR8dBnQ2F0mGXKuHi4ndBsyJHldTc1dtzzl1rsukB4RH2+bUa/4cOBSyEBaik8=&identity_type=IDENTITY_CARD&media_id=13818483971&mer_id=25116&pub_pri_flag=2&service=user_reg&version=4.0],Merchant number isÔºö[25116]
+[2014-12-16 15:03:43]-[]-[data] :The private key path forÔºö/opt/lampp/htdocs/common/config/cert/25116_wenzhoudai.key.pem
+[2014-12-16 15:03:43]-[]-[data] :Signature string forÔºö$À&q‹:|Ê>	ö˚niÓøì√ªå"≈”_‡ ‰au√Û“±ÌRß£‘ÉG˘7D4£íó´ÇR_¥¨Pú·‚ç!xØIsÙÛínı4‰KÍ4y	ÅN¬ıvù≈îwíÚA®Ú™iR5·+{Ræ‰BÅlºµÕtd¸›ÏsÀé¨¿ú
+[2014-12-16 15:03:43]-[]-[data] :Request platform way=get
+[2014-12-16 15:03:43]-[]-[data] :Request platform signature string=JMsBJnHcOnzmBD4Jmvtuae6/k8O7jCLF01/gAORhdcPz0rHtUqej1INH+TdENBujkperglJftKxQnOHijR8heAOvDklz9POSDG71NORL6jR5CYFOwvV2ncWUdxyS8kGo8qppUjXhKxkcewhSvuRCgWy8tc0HdGT83exzy46swJw=
+[2014-12-16 15:03:43]-[]-[data] :Clear information request platform=busi_no=1&card_holder=TZ1i31RB++hZfoCy73j/Y0bAOqFF9HqBkECg2qnu34OrxJirRkR06sBPRRDHlBtuFF/afbVXIxpgbxD2KX+7dpOb6eQzZraUnwLGp74QUDoCDg9X2a4pTKPxB2BXMoUWS/hscN7LeAX6m1YUVm4Gd+2ljYE2TEczMYWqvRrj/sQ=&card_id=YrRnscoHBYxznKI0xySrLYLd6qScdKqn7z5KadVhhIqBgBab+g7TRVWn6H0nE7BxE6aUncq4vA9NENX3JQFNnqWJnDN0ZfxHCHyzJVb6GCl9rxXNbN3TGRQjmZoogtgqudjiWWA+C6PgdZO1v78n7WEbn85EEdxtNfgzoXtG+hk=&card_type=0&charset=UTF-8&identity_code=DvvV2G37L7wwbQlaAqgQ12LbkPcIYLKGxgBOmlreIP1Oz3OcEMG/Wk2uh+AimaxtYGfqmbvHtPavN9vTxZUpNj3WAGxJvmXojIpvG9eiNgieVuR8dBnQ2F0mGXKuHi4ndBsyJHldTc1dtzzl1rsukB4RH2+bUa/4cOBSyEBaik8=&identity_type=IDENTITY_CARD&media_id=13818483971&mer_id=25116&pub_pri_flag=2&service=user_reg&version=4.0
+[2014-12-16 15:03:43]-[]-[data] :The service user_reg request platform to get the address url=http://pay.soopay.net/spay/pay/payservice.do?busi_no=1&card_holder=TZ1i31RB%2B%2BhZfoCy73j%2FY0bAOqFF9HqBkECg2qnu34OrxJirRkR06sBPRRDHlBtuFF%2FafbVXIxpgbxD2KX%2B7dpOb6eQzZraUnwLGp74QUDoCDg9X2a4pTKPxB2BXMoUWS%2FhscN7LeAX6m1YUVm4Gd%2B2ljYE2TEczMYWqvRrj%2FsQ%3D&card_id=YrRnscoHBYxznKI0xySrLYLd6qScdKqn7z5KadVhhIqBgBab%2Bg7TRVWn6H0nE7BxE6aUncq4vA9NENX3JQFNnqWJnDN0ZfxHCHyzJVb6GCl9rxXNbN3TGRQjmZoogtgqudjiWWA%2BC6PgdZO1v78n7WEbn85EEdxtNfgzoXtG%2Bhk%3D&card_type=0&charset=UTF-8&identity_code=DvvV2G37L7wwbQlaAqgQ12LbkPcIYLKGxgBOmlreIP1Oz3OcEMG%2FWk2uh%2BAimaxtYGfqmbvHtPavN9vTxZUpNj3WAGxJvmXojIpvG9eiNgieVuR8dBnQ2F0mGXKuHi4ndBsyJHldTc1dtzzl1rsukB4RH2%2BbUa%2F4cOBSyEBaik8%3D&identity_type=IDENTITY_CARD&media_id=13818483971&mer_id=25116&pub_pri_flag=2&service=user_reg&sign_type=RSA&version=4.0&sign=JMsBJnHcOnzmBD4Jmvtuae6/k8O7jCLF01/gAORhdcPz0rHtUqej1INH+TdENBujkperglJftKxQnOHijR8heAOvDklz9POSDG71NORL6jR5CYFOwvV2ncWUdxyS8kGo8qppUjXhKxkcewhSvuRCgWy8tc0HdGT83exzy46swJw=
+[2014-12-16 15:03:43]-[]-[data] :Request Para=array (
+  'service' => 'user_reg',
+  'sign_type' => 'RSA',
+  'mer_id' => '25116',
+  'version' => '4.0',
+  'charset' => 'UTF-8',
+  'pub_pri_flag' => '2',
+  'identity_type' => 'IDENTITY_CARD',
+  'identity_code' => '420626198609292527',
+  'card_id' => '6228480038445547276',
+  'card_holder' => 'Â±àÈáëÂ®•',
+  'media_id' => '13818483971',
+  'card_type' => '0',
+  'busi_no' => '1',
+)
+[2014-12-16 15:03:43]-[]-[data] :The parameters of the request card_id RSA encryption
+[2014-12-16 15:03:43]-[]-[data] :ÊïèÊÑü‰ø°ÊÅØÂä†ÂØÜÂØÜÊñá:[eUiQN8sUtIS0L1zy05tpb2byeGDFpWO6+t4a/fTzQfYFCbu+5TyCJ+e9PzKoAlDEcIyAvzVXUr9C6vkkxoncLFb5uU7UjqRsGVom2yqXKMl1XQu6tlXYgRP+dcCQflOuM7zah+MSA44rIyaM0BsYtsEQ8UuyFByXdt4T0SZqx2c=]
+[2014-12-16 15:03:43]-[]-[data] :The parameters of the request identity_code RSA encryption
+[2014-12-16 15:03:43]-[]-[data] :ÊïèÊÑü‰ø°ÊÅØÂä†ÂØÜÂØÜÊñá:[jW6t6IkmzAlyjS9QaPScj6AI513igOOYkeesW77KO+BWWj3xNblgdWxstYuhjY3F+dZnI1WROX3efpdRslkdG+C+8KCZSZkOgDGqV/ytBn0ABp1+cEXcudQrhyMYh2Ueew5lAvWRX9OKAiQIH5OiiDX5AVsAjPZbefWAKp4ebPA=]
+[2014-12-16 15:03:43]-[]-[data] :The parameters of the request card_holder RSA encryption
+[2014-12-16 15:03:43]-[]-[data] :ÊïèÊÑü‰ø°ÊÅØÂä†ÂØÜÂØÜÊñá:[TBcz6m4p6lnC3pgi9ctzWkoD/GpVHkub4EHs8mfKnDp6azjBTxLv98HJLs8zez7vTq9LpQXkWYFUUCv+c75Ni/M7KDwWdTZuNHruBkRxCeTKFhZTfvwFjnPuUz2dhglSO6oq6KYNG2owdHfgIaHmPBniTCDVQ3m642ev8QphCKw=]
+[2014-12-16 15:03:43]-[]-[data] :Participate in the signature parametersÔºö[busi_no=1&card_holder=TBcz6m4p6lnC3pgi9ctzWkoD/GpVHkub4EHs8mfKnDp6azjBTxLv98HJLs8zez7vTq9LpQXkWYFUUCv+c75Ni/M7KDwWdTZuNHruBkRxCeTKFhZTfvwFjnPuUz2dhglSO6oq6KYNG2owdHfgIaHmPBniTCDVQ3m642ev8QphCKw=&card_id=eUiQN8sUtIS0L1zy05tpb2byeGDFpWO6+t4a/fTzQfYFCbu+5TyCJ+e9PzKoAlDEcIyAvzVXUr9C6vkkxoncLFb5uU7UjqRsGVom2yqXKMl1XQu6tlXYgRP+dcCQflOuM7zah+MSA44rIyaM0BsYtsEQ8UuyFByXdt4T0SZqx2c=&card_type=0&charset=UTF-8&identity_code=jW6t6IkmzAlyjS9QaPScj6AI513igOOYkeesW77KO+BWWj3xNblgdWxstYuhjY3F+dZnI1WROX3efpdRslkdG+C+8KCZSZkOgDGqV/ytBn0ABp1+cEXcudQrhyMYh2Ueew5lAvWRX9OKAiQIH5OiiDX5AVsAjPZbefWAKp4ebPA=&identity_type=IDENTITY_CARD&media_id=13818483971&mer_id=25116&pub_pri_flag=2&service=user_reg&version=4.0],Merchant number isÔºö[25116]
+[2014-12-16 15:03:43]-[]-[data] :The private key path forÔºö/opt/lampp/htdocs/common/config/cert/25116_wenzhoudai.key.pem
+[2014-12-16 15:03:43]-[]-[data] :Signature string forÔºö…¬öQ§}ÙTÑ˝ß∂|ëMr™Z-É∫èÓÒ`}£jW3_•#BòNl‚—ÿ¢‹é
+Åq
+’¿i≥Í˜ê,‚äB!wø£π9,¥◊ P˘E) ø1m´êÕZ±’EØ≥dÃ∂GsµŸÌuà_Dà&BµΩmπW;MeòY˙9≥z3^ó
+[2014-12-16 15:03:43]-[]-[data] :Request platform way=get
+[2014-12-16 15:03:43]-[]-[data] :Request platform signature string=ycKaUaR99FSE/ae2fJFNcqofWi2Duo/u8WAbfaNqVzMVD1+lI0KYFk5s4tHYohvcjgqBcQrVwGmzFer3kCziihBCIXe/o7k5LLTXAFD5RSkgvzFtq5DNWhyx1UWvs2TMtgdHc7XZDu11iF9EiCZCtb1tuVc7TWWYWfo5s3ozXpc=
+[2014-12-16 15:03:43]-[]-[data] :Clear information request platform=busi_no=1&card_holder=TBcz6m4p6lnC3pgi9ctzWkoD/GpVHkub4EHs8mfKnDp6azjBTxLv98HJLs8zez7vTq9LpQXkWYFUUCv+c75Ni/M7KDwWdTZuNHruBkRxCeTKFhZTfvwFjnPuUz2dhglSO6oq6KYNG2owdHfgIaHmPBniTCDVQ3m642ev8QphCKw=&card_id=eUiQN8sUtIS0L1zy05tpb2byeGDFpWO6+t4a/fTzQfYFCbu+5TyCJ+e9PzKoAlDEcIyAvzVXUr9C6vkkxoncLFb5uU7UjqRsGVom2yqXKMl1XQu6tlXYgRP+dcCQflOuM7zah+MSA44rIyaM0BsYtsEQ8UuyFByXdt4T0SZqx2c=&card_type=0&charset=UTF-8&identity_code=jW6t6IkmzAlyjS9QaPScj6AI513igOOYkeesW77KO+BWWj3xNblgdWxstYuhjY3F+dZnI1WROX3efpdRslkdG+C+8KCZSZkOgDGqV/ytBn0ABp1+cEXcudQrhyMYh2Ueew5lAvWRX9OKAiQIH5OiiDX5AVsAjPZbefWAKp4ebPA=&identity_type=IDENTITY_CARD&media_id=13818483971&mer_id=25116&pub_pri_flag=2&service=user_reg&version=4.0
+[2014-12-16 15:03:43]-[]-[data] :The service user_reg request platform to get the address url=http://pay.soopay.net/spay/pay/payservice.do?busi_no=1&card_holder=TBcz6m4p6lnC3pgi9ctzWkoD%2FGpVHkub4EHs8mfKnDp6azjBTxLv98HJLs8zez7vTq9LpQXkWYFUUCv%2Bc75Ni%2FM7KDwWdTZuNHruBkRxCeTKFhZTfvwFjnPuUz2dhglSO6oq6KYNG2owdHfgIaHmPBniTCDVQ3m642ev8QphCKw%3D&card_id=eUiQN8sUtIS0L1zy05tpb2byeGDFpWO6%2Bt4a%2FfTzQfYFCbu%2B5TyCJ%2Be9PzKoAlDEcIyAvzVXUr9C6vkkxoncLFb5uU7UjqRsGVom2yqXKMl1XQu6tlXYgRP%2BdcCQflOuM7zah%2BMSA44rIyaM0BsYtsEQ8UuyFByXdt4T0SZqx2c%3D&card_type=0&charset=UTF-8&identity_code=jW6t6IkmzAlyjS9QaPScj6AI513igOOYkeesW77KO%2BBWWj3xNblgdWxstYuhjY3F%2BdZnI1WROX3efpdRslkdG%2BC%2B8KCZSZkOgDGqV%2FytBn0ABp1%2BcEXcudQrhyMYh2Ueew5lAvWRX9OKAiQIH5OiiDX5AVsAjPZbefWAKp4ebPA%3D&identity_type=IDENTITY_CARD&media_id=13818483971&mer_id=25116&pub_pri_flag=2&service=user_reg&sign_type=RSA&version=4.0&sign=ycKaUaR99FSE/ae2fJFNcqofWi2Duo/u8WAbfaNqVzMVD1+lI0KYFk5s4tHYohvcjgqBcQrVwGmzFer3kCziihBCIXe/o7k5LLTXAFD5RSkgvzFtq5DNWhyx1UWvs2TMtgdHc7XZDu11iF9EiCZCtb1tuVc7TWWYWfo5s3ozXpc=
+[2014-12-16 15:03:43]-[]-[data] :Request Para=array (
+  'service' => 'user_reg',
+  'sign_type' => 'RSA',
+  'mer_id' => '25116',
+  'version' => '4.0',
+  'charset' => 'UTF-8',
+  'pub_pri_flag' => '2',
+  'identity_type' => 'IDENTITY_CARD',
+  'identity_code' => '420626198609292527',
+  'card_id' => '6228480038445547276',
+  'card_holder' => 'Â±àÈáëÂ®•',
+  'media_id' => '13818483971',
+  'card_type' => '0',
+  'busi_no' => '1',
+)
+[2014-12-16 15:03:43]-[]-[data] :The parameters of the request card_id RSA encryption
+[2014-12-16 15:03:43]-[]-[data] :ÊïèÊÑü‰ø°ÊÅØÂä†ÂØÜÂØÜÊñá:[I5kauVcsWv/3F1EapAzBt209rcg02dz1SK3GZ+rmOtu1XEBkCGQKH2lFbGXFa1O+Apl0MIHMnf4a4+GS7z4Lc50rWQwgtUuEyM4UYenMXek6dxpQ5UcezgKLs42ysr0P9jNThjo6Tn895JJn3OoFIORu88dxYHMcuZaFkRfvATQ=]
+[2014-12-16 15:03:43]-[]-[data] :The parameters of the request identity_code RSA encryption
+[2014-12-16 15:03:43]-[]-[data] :ÊïèÊÑü‰ø°ÊÅØÂä†ÂØÜÂØÜÊñá:[p6Sda7ryhkDiFAtZ4hE3QroQR4jf03oSmfiGzFh50aUPH63yrBGvxgkRAv+HmJsGgONE9saFpwOizac570yM2LxKrb7sT5ysq5QMk2tM+6BChZLHT4d1EkzqIXAgB27yEGc2I1+s3AwFb41RJS3gngA4UwUh/q/ZG8q4kQzJxas=]
+[2014-12-16 15:03:43]-[]-[data] :The parameters of the request card_holder RSA encryption
+[2014-12-16 15:03:43]-[]-[data] :ÊïèÊÑü‰ø°ÊÅØÂä†ÂØÜÂØÜÊñá:[dsZZTcVWLZdD7bcYZiHDt1yx9cojQuYSh5XM4BgcQ2pLkkDnUrNS++HcxnurJHDhpsVnmb3A/biScfSXvn+z37Jn1VUGxCEBl8RDkkPR79WccgE+fGqO+PUEaZ4q8kn4K0X63gX9r8NpKnZZOGGODbOtg0fVaFY+9/b3/vTqyrs=]
+[2014-12-16 15:03:43]-[]-[data] :Participate in the signature parametersÔºö[busi_no=1&card_holder=dsZZTcVWLZdD7bcYZiHDt1yx9cojQuYSh5XM4BgcQ2pLkkDnUrNS++HcxnurJHDhpsVnmb3A/biScfSXvn+z37Jn1VUGxCEBl8RDkkPR79WccgE+fGqO+PUEaZ4q8kn4K0X63gX9r8NpKnZZOGGODbOtg0fVaFY+9/b3/vTqyrs=&card_id=I5kauVcsWv/3F1EapAzBt209rcg02dz1SK3GZ+rmOtu1XEBkCGQKH2lFbGXFa1O+Apl0MIHMnf4a4+GS7z4Lc50rWQwgtUuEyM4UYenMXek6dxpQ5UcezgKLs42ysr0P9jNThjo6Tn895JJn3OoFIORu88dxYHMcuZaFkRfvATQ=&card_type=0&charset=UTF-8&identity_code=p6Sda7ryhkDiFAtZ4hE3QroQR4jf03oSmfiGzFh50aUPH63yrBGvxgkRAv+HmJsGgONE9saFpwOizac570yM2LxKrb7sT5ysq5QMk2tM+6BChZLHT4d1EkzqIXAgB27yEGc2I1+s3AwFb41RJS3gngA4UwUh/q/ZG8q4kQzJxas=&identity_type=IDENTITY_CARD&media_id=13818483971&mer_id=25116&pub_pri_flag=2&service=user_reg&version=4.0],Merchant number isÔºö[25116]
+[2014-12-16 15:03:43]-[]-[data] :The private key path forÔºö/opt/lampp/htdocs/common/config/cert/25116_wenzhoudai.key.pem
+[2014-12-16 15:03:43]-[]-[data] :Signature string forÔºö!gô>ë‘ù"=—ÖkO5Î∂:ñ0≥ƒ-≤E†ï*8Ó"((0‘ŒA*j‚,ﬁ◊àà1ÑÖlîŒ$ä⁄`◊Æˆ„y3"”k¡="ªs3ÔK2ïŸ1ƒ÷öÀ¿õ•ö®D	Ô=K•”–Zû∞ò]Á‘]qû±8z9Á +
+[2014-12-16 15:03:43]-[]-[data] :Request platform way=get
+[2014-12-16 15:03:43]-[]-[data] :Request platform signature string=IWcYmRo+kdQWnSI90YVrTzXrtgw6DZYws8QtskWgGZUqOO4fBCIFKA8oMNTOQSpq4ize14gDiDGEhWyUGM4kitpg167243kzItNrwT0iCLtzFzPvSzKV2THE1prL8MCbpfCaqEQJ7z1LpdPQWp6wmF3nEtRdcZ6xFDh6OecAK38=
+[2014-12-16 15:03:43]-[]-[data] :Clear information request platform=busi_no=1&card_holder=dsZZTcVWLZdD7bcYZiHDt1yx9cojQuYSh5XM4BgcQ2pLkkDnUrNS++HcxnurJHDhpsVnmb3A/biScfSXvn+z37Jn1VUGxCEBl8RDkkPR79WccgE+fGqO+PUEaZ4q8kn4K0X63gX9r8NpKnZZOGGODbOtg0fVaFY+9/b3/vTqyrs=&card_id=I5kauVcsWv/3F1EapAzBt209rcg02dz1SK3GZ+rmOtu1XEBkCGQKH2lFbGXFa1O+Apl0MIHMnf4a4+GS7z4Lc50rWQwgtUuEyM4UYenMXek6dxpQ5UcezgKLs42ysr0P9jNThjo6Tn895JJn3OoFIORu88dxYHMcuZaFkRfvATQ=&card_type=0&charset=UTF-8&identity_code=p6Sda7ryhkDiFAtZ4hE3QroQR4jf03oSmfiGzFh50aUPH63yrBGvxgkRAv+HmJsGgONE9saFpwOizac570yM2LxKrb7sT5ysq5QMk2tM+6BChZLHT4d1EkzqIXAgB27yEGc2I1+s3AwFb41RJS3gngA4UwUh/q/ZG8q4kQzJxas=&identity_type=IDENTITY_CARD&media_id=13818483971&mer_id=25116&pub_pri_flag=2&service=user_reg&version=4.0
+[2014-12-16 15:03:43]-[]-[data] :The service user_reg request platform to get the address url=http://pay.soopay.net/spay/pay/payservice.do?busi_no=1&card_holder=dsZZTcVWLZdD7bcYZiHDt1yx9cojQuYSh5XM4BgcQ2pLkkDnUrNS%2B%2BHcxnurJHDhpsVnmb3A%2FbiScfSXvn%2Bz37Jn1VUGxCEBl8RDkkPR79WccgE%2BfGqO%2BPUEaZ4q8kn4K0X63gX9r8NpKnZZOGGODbOtg0fVaFY%2B9%2Fb3%2FvTqyrs%3D&card_id=I5kauVcsWv%2F3F1EapAzBt209rcg02dz1SK3GZ%2BrmOtu1XEBkCGQKH2lFbGXFa1O%2BApl0MIHMnf4a4%2BGS7z4Lc50rWQwgtUuEyM4UYenMXek6dxpQ5UcezgKLs42ysr0P9jNThjo6Tn895JJn3OoFIORu88dxYHMcuZaFkRfvATQ%3D&card_type=0&charset=UTF-8&identity_code=p6Sda7ryhkDiFAtZ4hE3QroQR4jf03oSmfiGzFh50aUPH63yrBGvxgkRAv%2BHmJsGgONE9saFpwOizac570yM2LxKrb7sT5ysq5QMk2tM%2B6BChZLHT4d1EkzqIXAgB27yEGc2I1%2Bs3AwFb41RJS3gngA4UwUh%2Fq%2FZG8q4kQzJxas%3D&identity_type=IDENTITY_CARD&media_id=13818483971&mer_id=25116&pub_pri_flag=2&service=user_reg&sign_type=RSA&version=4.0&sign=IWcYmRo+kdQWnSI90YVrTzXrtgw6DZYws8QtskWgGZUqOO4fBCIFKA8oMNTOQSpq4ize14gDiDGEhWyUGM4kitpg167243kzItNrwT0iCLtzFzPvSzKV2THE1prL8MCbpfCaqEQJ7z1LpdPQWp6wmF3nEtRdcZ6xFDh6OecAK38=
+[2014-12-16 15:03:43]-[]-[data] :Request Para=array (
+  'service' => 'user_reg',
+  'sign_type' => 'RSA',
+  'mer_id' => '25116',
+  'version' => '4.0',
+  'charset' => 'UTF-8',
+  'pub_pri_flag' => '2',
+  'identity_type' => 'IDENTITY_CARD',
+  'identity_code' => '420626198609292527',
+  'card_id' => '6228480038445547276',
+  'card_holder' => 'Â±àÈáëÂ®•',
+  'media_id' => '13818483971',
+  'card_type' => '0',
+  'busi_no' => '1',
+)
+[2014-12-16 15:03:43]-[]-[data] :The parameters of the request card_id RSA encryption
+[2014-12-16 15:03:43]-[]-[data] :ÊïèÊÑü‰ø°ÊÅØÂä†ÂØÜÂØÜÊñá:[erWTQHByvgLATT0ObUxBHHE+pj40mg8pM5FaNIqq0HNusuOQNbaRwj7+ZOsUuucaMVLbN0r2vSIEBL2khwtu0UPvQ8zCnQEGApDUwv7dGjnrQ2pEmyzizQe/r4Y7dHIyAXE1YP5GHqNfB0pJQF//20I6YoZ6Vt1ZN6n+IYmgjhQ=]
+[2014-12-16 15:03:43]-[]-[data] :The parameters of the request identity_code RSA encryption
+[2014-12-16 15:03:43]-[]-[data] :ÊïèÊÑü‰ø°ÊÅØÂä†ÂØÜÂØÜÊñá:[QuV0tyLtQUKsQ3QuacykEEbcVe8aCagYc9ku4ZHKJ5A5S3hY+t0eySmOYq20QnWR1e+TlYpiS9XWSRNaK9SCd/aeMqSDlDlXGDvhLjfYKD2595tKFeRIQRI7yeP3eD63bzhowrw4UrQ2E6EfHYuk3egrRiIvKOUtgE3FjluIXZ8=]
+[2014-12-16 15:03:43]-[]-[data] :The parameters of the request card_holder RSA encryption
+[2014-12-16 15:03:43]-[]-[data] :ÊïèÊÑü‰ø°ÊÅØÂä†ÂØÜÂØÜÊñá:[dyU/dfgBcL3FQ6DKKGm4co8wpUI4+lRp6TTULn8QmnTfdbwy9gpKKhn2JbgFUBH26BIBAKD5EmPCtvKSBQKUQZES9E3XO96w4EMU/ScbKlcuewfyQZjvV4KpS1W4duffPzzReGzXPSon6KsUAJdnle2hKT6w8uDRWW9WnuCWrI8=]
+[2014-12-16 15:03:43]-[]-[data] :Participate in the signature parametersÔºö[busi_no=1&card_holder=dyU/dfgBcL3FQ6DKKGm4co8wpUI4+lRp6TTULn8QmnTfdbwy9gpKKhn2JbgFUBH26BIBAKD5EmPCtvKSBQKUQZES9E3XO96w4EMU/ScbKlcuewfyQZjvV4KpS1W4duffPzzReGzXPSon6KsUAJdnle2hKT6w8uDRWW9WnuCWrI8=&card_id=erWTQHByvgLATT0ObUxBHHE+pj40mg8pM5FaNIqq0HNusuOQNbaRwj7+ZOsUuucaMVLbN0r2vSIEBL2khwtu0UPvQ8zCnQEGApDUwv7dGjnrQ2pEmyzizQe/r4Y7dHIyAXE1YP5GHqNfB0pJQF//20I6YoZ6Vt1ZN6n+IYmgjhQ=&card_type=0&charset=UTF-8&identity_code=QuV0tyLtQUKsQ3QuacykEEbcVe8aCagYc9ku4ZHKJ5A5S3hY+t0eySmOYq20QnWR1e+TlYpiS9XWSRNaK9SCd/aeMqSDlDlXGDvhLjfYKD2595tKFeRIQRI7yeP3eD63bzhowrw4UrQ2E6EfHYuk3egrRiIvKOUtgE3FjluIXZ8=&identity_type=IDENTITY_CARD&media_id=13818483971&mer_id=25116&pub_pri_flag=2&service=user_reg&version=4.0],Merchant number isÔºö[25116]
+[2014-12-16 15:03:43]-[]-[data] :The private key path forÔºö/opt/lampp/htdocs/common/config/cert/25116_wenzhoudai.key.pem
+[2014-12-16 15:03:43]-[]-[data] :Signature string forÔºöyª&≤Êôáû˚>Îé√è9â}(](?â¬£±ø·ÕÏÌ¬å[Ã˘∂Y$ﬁLﬁ 5Ÿ*œR\3ÚºL"oOƒÉoz‚
+”Kß≤˚πfä—f∏∞!€k`v!o'ÒO…©π|vËQ≠≥wø¿2Ê§T«E÷Èì*t(O∏Pÿû#a‰fõû≈
+[2014-12-16 15:03:43]-[]-[data] :Request platform way=get
+[2014-12-16 15:03:43]-[]-[data] :Request platform signature string=ebsmsuaZh577PuuOw485iX0oXSgFP4nCo7G/4c3sDu3CjFvM+bZZFCTeTN7KNdkqz1JcM/K8TCJvT8SDb3riCtNLpway+7lmitEaZriwIdtrYHYhbyfxT8mpC7l8dugdUa2zd7/AMuakVMdF1umTKnQoT7hQ2J4jFWHkZpueG8U=
+[2014-12-16 15:03:43]-[]-[data] :Clear information request platform=busi_no=1&card_holder=dyU/dfgBcL3FQ6DKKGm4co8wpUI4+lRp6TTULn8QmnTfdbwy9gpKKhn2JbgFUBH26BIBAKD5EmPCtvKSBQKUQZES9E3XO96w4EMU/ScbKlcuewfyQZjvV4KpS1W4duffPzzReGzXPSon6KsUAJdnle2hKT6w8uDRWW9WnuCWrI8=&card_id=erWTQHByvgLATT0ObUxBHHE+pj40mg8pM5FaNIqq0HNusuOQNbaRwj7+ZOsUuucaMVLbN0r2vSIEBL2khwtu0UPvQ8zCnQEGApDUwv7dGjnrQ2pEmyzizQe/r4Y7dHIyAXE1YP5GHqNfB0pJQF//20I6YoZ6Vt1ZN6n+IYmgjhQ=&card_type=0&charset=UTF-8&identity_code=QuV0tyLtQUKsQ3QuacykEEbcVe8aCagYc9ku4ZHKJ5A5S3hY+t0eySmOYq20QnWR1e+TlYpiS9XWSRNaK9SCd/aeMqSDlDlXGDvhLjfYKD2595tKFeRIQRI7yeP3eD63bzhowrw4UrQ2E6EfHYuk3egrRiIvKOUtgE3FjluIXZ8=&identity_type=IDENTITY_CARD&media_id=13818483971&mer_id=25116&pub_pri_flag=2&service=user_reg&version=4.0
+[2014-12-16 15:03:43]-[]-[data] :The service user_reg request platform to get the address url=http://pay.soopay.net/spay/pay/payservice.do?busi_no=1&card_holder=dyU%2FdfgBcL3FQ6DKKGm4co8wpUI4%2BlRp6TTULn8QmnTfdbwy9gpKKhn2JbgFUBH26BIBAKD5EmPCtvKSBQKUQZES9E3XO96w4EMU%2FScbKlcuewfyQZjvV4KpS1W4duffPzzReGzXPSon6KsUAJdnle2hKT6w8uDRWW9WnuCWrI8%3D&card_id=erWTQHByvgLATT0ObUxBHHE%2Bpj40mg8pM5FaNIqq0HNusuOQNbaRwj7%2BZOsUuucaMVLbN0r2vSIEBL2khwtu0UPvQ8zCnQEGApDUwv7dGjnrQ2pEmyzizQe%2Fr4Y7dHIyAXE1YP5GHqNfB0pJQF%2F%2F20I6YoZ6Vt1ZN6n%2BIYmgjhQ%3D&card_type=0&charset=UTF-8&identity_code=QuV0tyLtQUKsQ3QuacykEEbcVe8aCagYc9ku4ZHKJ5A5S3hY%2Bt0eySmOYq20QnWR1e%2BTlYpiS9XWSRNaK9SCd%2FaeMqSDlDlXGDvhLjfYKD2595tKFeRIQRI7yeP3eD63bzhowrw4UrQ2E6EfHYuk3egrRiIvKOUtgE3FjluIXZ8%3D&identity_type=IDENTITY_CARD&media_id=13818483971&mer_id=25116&pub_pri_flag=2&service=user_reg&sign_type=RSA&version=4.0&sign=ebsmsuaZh577PuuOw485iX0oXSgFP4nCo7G/4c3sDu3CjFvM+bZZFCTeTN7KNdkqz1JcM/K8TCJvT8SDb3riCtNLpway+7lmitEaZriwIdtrYHYhbyfxT8mpC7l8dugdUa2zd7/AMuakVMdF1umTKnQoT7hQ2J4jFWHkZpueG8U=
+[2014-12-16 15:08:09]-[http://192.168.1.214/backend/web/index.php?r=document%2Fapi&action=frontend%5Ccontrollers%5CUserController%3A%3AactionBindCard]-[data] :Request Para=array (
+  'service' => 'user_reg',
+  'sign_type' => 'RSA',
+  'mer_id' => '25116',
+  'version' => '4.0',
+  'charset' => 'UTF-8',
+  'pub_pri_flag' => '2',
+  'identity_type' => 'IDENTITY_CARD',
+  'identity_code' => '420626198609292527',
+  'card_id' => '6228480038445547276',
+  'card_holder' => 'Â±àÈáëÂ®•',
+  'media_id' => '13818483971',
+  'card_type' => '0',
+  'busi_no' => '1',
+)
+[2014-12-16 15:08:09]-[http://192.168.1.214/backend/web/index.php?r=document%2Fapi&action=frontend%5Ccontrollers%5CUserController%3A%3AactionBindCard]-[data] :The parameters of the request card_id RSA encryption
+[2014-12-16 15:08:09]-[http://192.168.1.214/backend/web/index.php?r=document%2Fapi&action=frontend%5Ccontrollers%5CUserController%3A%3AactionBindCard]-[data] :ÊïèÊÑü‰ø°ÊÅØÂä†ÂØÜÂØÜÊñá:[RwJLHM1q+I0c55P5b8f/BIieaT+bL4wOzxua8r8m/MkLgRHjsyLOsIx3owZe4bPFRhErnHOK4p/aOSIlSrWGp7ZhY6mFihbmCDljY53ei3jx8jsGs7vruhBsOJTqHrnWxgtqy9DbboWsCzh/Mk0KoZePsznKxn9FrRrm/AiXVYI=]
+[2014-12-16 15:08:09]-[http://192.168.1.214/backend/web/index.php?r=document%2Fapi&action=frontend%5Ccontrollers%5CUserController%3A%3AactionBindCard]-[data] :The parameters of the request identity_code RSA encryption
+[2014-12-16 15:08:09]-[http://192.168.1.214/backend/web/index.php?r=document%2Fapi&action=frontend%5Ccontrollers%5CUserController%3A%3AactionBindCard]-[data] :ÊïèÊÑü‰ø°ÊÅØÂä†ÂØÜÂØÜÊñá:[o3H8wA3rrJl45QiRMMpGVkeBK+FHFqWbTXfLe5jPi9QO8hg9PWq0M/AunezlOYQ9nh5T/fY/hg3lyRlw6nfEvNz9rHdScBI6Ltvh7igFs41dsunTN1KluXql3qg9hJPCG27YGJVZNVr3LNXW/FgqLh4On7olIZ7vA2yxz6F4wiE=]
+[2014-12-16 15:08:09]-[http://192.168.1.214/backend/web/index.php?r=document%2Fapi&action=frontend%5Ccontrollers%5CUserController%3A%3AactionBindCard]-[data] :The parameters of the request card_holder RSA encryption
+[2014-12-16 15:08:09]-[http://192.168.1.214/backend/web/index.php?r=document%2Fapi&action=frontend%5Ccontrollers%5CUserController%3A%3AactionBindCard]-[data] :ÊïèÊÑü‰ø°ÊÅØÂä†ÂØÜÂØÜÊñá:[DPvUKCDV1ppUM57qMPk1VwAOhkoMzqzFjvtwHlwH6GSZDu7q6/SwQFHf6/RIxN9OI3My45IbvBb/Ux7sFlimK0ZQaZp+dUYKic3iX/WIkkA4qor5RA5KN/AbgpEagwIpfRJFBLFvmyLrFgje7XP3COumNOGBlDbqdSDt+pbUudQ=]
+[2014-12-16 15:08:09]-[http://192.168.1.214/backend/web/index.php?r=document%2Fapi&action=frontend%5Ccontrollers%5CUserController%3A%3AactionBindCard]-[data] :Participate in the signature parametersÔºö[busi_no=1&card_holder=DPvUKCDV1ppUM57qMPk1VwAOhkoMzqzFjvtwHlwH6GSZDu7q6/SwQFHf6/RIxN9OI3My45IbvBb/Ux7sFlimK0ZQaZp+dUYKic3iX/WIkkA4qor5RA5KN/AbgpEagwIpfRJFBLFvmyLrFgje7XP3COumNOGBlDbqdSDt+pbUudQ=&card_id=RwJLHM1q+I0c55P5b8f/BIieaT+bL4wOzxua8r8m/MkLgRHjsyLOsIx3owZe4bPFRhErnHOK4p/aOSIlSrWGp7ZhY6mFihbmCDljY53ei3jx8jsGs7vruhBsOJTqHrnWxgtqy9DbboWsCzh/Mk0KoZePsznKxn9FrRrm/AiXVYI=&card_type=0&charset=UTF-8&identity_code=o3H8wA3rrJl45QiRMMpGVkeBK+FHFqWbTXfLe5jPi9QO8hg9PWq0M/AunezlOYQ9nh5T/fY/hg3lyRlw6nfEvNz9rHdScBI6Ltvh7igFs41dsunTN1KluXql3qg9hJPCG27YGJVZNVr3LNXW/FgqLh4On7olIZ7vA2yxz6F4wiE=&identity_type=IDENTITY_CARD&media_id=13818483971&mer_id=25116&pub_pri_flag=2&service=user_reg&version=4.0],Merchant number isÔºö[25116]
+[2014-12-16 15:08:09]-[http://192.168.1.214/backend/web/index.php?r=document%2Fapi&action=frontend%5Ccontrollers%5CUserController%3A%3AactionBindCard]-[data] :The private key path forÔºö/opt/lampp/htdocs/common/config/cert/25116_wenzhoudai.key.pem
+[2014-12-16 15:08:09]-[http://192.168.1.214/backend/web/index.php?r=document%2Fapi&action=frontend%5Ccontrollers%5CUserController%3A%3AactionBindCard]-[data] :Signature string forÔºöï,Ω±IN≤új!∑÷ê©≠’w‘
+¿ÎF/hió9ÄæÛ"”bÑ{2Ÿ9Ÿq`Õ_ßqLU√fY˝ ˆ˘!Ã÷{ßH	∑À™«ßæá—y5Æ0πL‡®í‰I;◊@~iÑâŒΩ5(É&ûñ,~m,¿wLP]ı7ÓùÏˇ†x¿
+[2014-12-16 15:08:09]-[http://192.168.1.214/backend/web/index.php?r=document%2Fapi&action=frontend%5Ccontrollers%5CUserController%3A%3AactionBindCard]-[data] :Request platform way=get
+[2014-12-16 15:08:09]-[http://192.168.1.214/backend/web/index.php?r=document%2Fapi&action=frontend%5Ccontrollers%5CUserController%3A%3AactionBindCard]-[data] :Request platform signature string=lSy9sRoXHElOspwDaiG31pCprdV31ArA60YvaGmXOYC+8yJ/02KEEHsTMtk52XFgzV+ncUxVGMMTZln9APb5IczWexynSAm3y6rHDKfwvofReRE1rjC5TOCokuRJO9dAfmmEic69HDUogyaelix+bSzAd0xQXfU37p3s/wKgeMA=
+[2014-12-16 15:08:09]-[http://192.168.1.214/backend/web/index.php?r=document%2Fapi&action=frontend%5Ccontrollers%5CUserController%3A%3AactionBindCard]-[data] :Clear information request platform=busi_no=1&card_holder=DPvUKCDV1ppUM57qMPk1VwAOhkoMzqzFjvtwHlwH6GSZDu7q6/SwQFHf6/RIxN9OI3My45IbvBb/Ux7sFlimK0ZQaZp+dUYKic3iX/WIkkA4qor5RA5KN/AbgpEagwIpfRJFBLFvmyLrFgje7XP3COumNOGBlDbqdSDt+pbUudQ=&card_id=RwJLHM1q+I0c55P5b8f/BIieaT+bL4wOzxua8r8m/MkLgRHjsyLOsIx3owZe4bPFRhErnHOK4p/aOSIlSrWGp7ZhY6mFihbmCDljY53ei3jx8jsGs7vruhBsOJTqHrnWxgtqy9DbboWsCzh/Mk0KoZePsznKxn9FrRrm/AiXVYI=&card_type=0&charset=UTF-8&identity_code=o3H8wA3rrJl45QiRMMpGVkeBK+FHFqWbTXfLe5jPi9QO8hg9PWq0M/AunezlOYQ9nh5T/fY/hg3lyRlw6nfEvNz9rHdScBI6Ltvh7igFs41dsunTN1KluXql3qg9hJPCG27YGJVZNVr3LNXW/FgqLh4On7olIZ7vA2yxz6F4wiE=&identity_type=IDENTITY_CARD&media_id=13818483971&mer_id=25116&pub_pri_flag=2&service=user_reg&version=4.0
+[2014-12-16 15:08:09]-[http://192.168.1.214/backend/web/index.php?r=document%2Fapi&action=frontend%5Ccontrollers%5CUserController%3A%3AactionBindCard]-[data] :The service user_reg request platform to get the address url=http://pay.soopay.net/spay/pay/payservice.do?busi_no=1&card_holder=DPvUKCDV1ppUM57qMPk1VwAOhkoMzqzFjvtwHlwH6GSZDu7q6%2FSwQFHf6%2FRIxN9OI3My45IbvBb%2FUx7sFlimK0ZQaZp%2BdUYKic3iX%2FWIkkA4qor5RA5KN%2FAbgpEagwIpfRJFBLFvmyLrFgje7XP3COumNOGBlDbqdSDt%2BpbUudQ%3D&card_id=RwJLHM1q%2BI0c55P5b8f%2FBIieaT%2BbL4wOzxua8r8m%2FMkLgRHjsyLOsIx3owZe4bPFRhErnHOK4p%2FaOSIlSrWGp7ZhY6mFihbmCDljY53ei3jx8jsGs7vruhBsOJTqHrnWxgtqy9DbboWsCzh%2FMk0KoZePsznKxn9FrRrm%2FAiXVYI%3D&card_type=0&charset=UTF-8&identity_code=o3H8wA3rrJl45QiRMMpGVkeBK%2BFHFqWbTXfLe5jPi9QO8hg9PWq0M%2FAunezlOYQ9nh5T%2FfY%2Fhg3lyRlw6nfEvNz9rHdScBI6Ltvh7igFs41dsunTN1KluXql3qg9hJPCG27YGJVZNVr3LNXW%2FFgqLh4On7olIZ7vA2yxz6F4wiE%3D&identity_type=IDENTITY_CARD&media_id=13818483971&mer_id=25116&pub_pri_flag=2&service=user_reg&sign_type=RSA&version=4.0&sign=lSy9sRoXHElOspwDaiG31pCprdV31ArA60YvaGmXOYC+8yJ/02KEEHsTMtk52XFgzV+ncUxVGMMTZln9APb5IczWexynSAm3y6rHDKfwvofReRE1rjC5TOCokuRJO9dAfmmEic69HDUogyaelix+bSzAd0xQXfU37p3s/wKgeMA=
+[2014-12-16 15:21:04]-[http://192.168.1.214/backend/web/index.php?r=document%2Fapi&action=frontend%5Ccontrollers%5CUserController%3A%3AactionBindCard]-[data] :Request Para=array (
+  'service' => 'user_reg',
+  'sign_type' => 'RSA',
+  'mer_id' => '25116',
+  'version' => '4.0',
+  'charset' => 'UTF-8',
+  'pub_pri_flag' => '2',
+  'identity_type' => 'IDENTITY_CARD',
+  'identity_code' => '420626198609292527',
+  'card_id' => '6228480038445547276',
+  'card_holder' => 'Â±àÈáëÂ®•',
+  'media_id' => '13818483971',
+  'card_type' => '0',
+  'busi_no' => '1',
+)
+[2014-12-16 15:21:04]-[http://192.168.1.214/backend/web/index.php?r=document%2Fapi&action=frontend%5Ccontrollers%5CUserController%3A%3AactionBindCard]-[data] :The parameters of the request card_id RSA encryption
+[2014-12-16 15:21:04]-[http://192.168.1.214/backend/web/index.php?r=document%2Fapi&action=frontend%5Ccontrollers%5CUserController%3A%3AactionBindCard]-[data] :ÊïèÊÑü‰ø°ÊÅØÂä†ÂØÜÂØÜÊñá:[B0Tot0aij315RiYwzSIOMExurcno3tQBJHDFTz3b5SKwqIB+zDlJpk3lNmtZkaV13fFGQMHtDoQdLzUJHRdyIXfewDdL37Y1+zDNDw/JxGsRj+g6bgsAG7XMT2972DraLrjbs3KFZXyew92PMxlvbypnRUzvJ7pxADzvfYMNwV4=]
+[2014-12-16 15:21:04]-[http://192.168.1.214/backend/web/index.php?r=document%2Fapi&action=frontend%5Ccontrollers%5CUserController%3A%3AactionBindCard]-[data] :The parameters of the request identity_code RSA encryption
+[2014-12-16 15:21:04]-[http://192.168.1.214/backend/web/index.php?r=document%2Fapi&action=frontend%5Ccontrollers%5CUserController%3A%3AactionBindCard]-[data] :ÊïèÊÑü‰ø°ÊÅØÂä†ÂØÜÂØÜÊñá:[W0K/LtCN58gZPpyTvmdKIXukkaEaNmYTaCvPCK5SQTAhKsbv1eekON6pMbEv4hIkjr18FDX7M2sh4UBRrC+f0u1QEmRj0XKvnqBttIGnEtqOZeYxHmytydX5Wa6X7fFO2Jr15+n8/rJNA6xXSOqaGY7dxADh7IoJrP1j3NkuSGo=]
+[2014-12-16 15:21:04]-[http://192.168.1.214/backend/web/index.php?r=document%2Fapi&action=frontend%5Ccontrollers%5CUserController%3A%3AactionBindCard]-[data] :The parameters of the request card_holder RSA encryption
+[2014-12-16 15:21:04]-[http://192.168.1.214/backend/web/index.php?r=document%2Fapi&action=frontend%5Ccontrollers%5CUserController%3A%3AactionBindCard]-[data] :ÊïèÊÑü‰ø°ÊÅØÂä†ÂØÜÂØÜÊñá:[uiA53FYW/4nc07uFlAzESLTa5pwM4cduRh9T7qXfeA91moH8DisMwvCIn2QflEEhBW94w3SHqfKzKkv3YmN5nN4zYhlMwzmNihB2hkj8xiM0wIQI7RRa7j8n0V729CvjqILGLqh4CH6xcUjfxn8hpJi0hH/kbqIqdrgundb+O00=]
+[2014-12-16 15:21:04]-[http://192.168.1.214/backend/web/index.php?r=document%2Fapi&action=frontend%5Ccontrollers%5CUserController%3A%3AactionBindCard]-[data] :Participate in the signature parametersÔºö[busi_no=1&card_holder=uiA53FYW/4nc07uFlAzESLTa5pwM4cduRh9T7qXfeA91moH8DisMwvCIn2QflEEhBW94w3SHqfKzKkv3YmN5nN4zYhlMwzmNihB2hkj8xiM0wIQI7RRa7j8n0V729CvjqILGLqh4CH6xcUjfxn8hpJi0hH/kbqIqdrgundb+O00=&card_id=B0Tot0aij315RiYwzSIOMExurcno3tQBJHDFTz3b5SKwqIB+zDlJpk3lNmtZkaV13fFGQMHtDoQdLzUJHRdyIXfewDdL37Y1+zDNDw/JxGsRj+g6bgsAG7XMT2972DraLrjbs3KFZXyew92PMxlvbypnRUzvJ7pxADzvfYMNwV4=&card_type=0&charset=UTF-8&identity_code=W0K/LtCN58gZPpyTvmdKIXukkaEaNmYTaCvPCK5SQTAhKsbv1eekON6pMbEv4hIkjr18FDX7M2sh4UBRrC+f0u1QEmRj0XKvnqBttIGnEtqOZeYxHmytydX5Wa6X7fFO2Jr15+n8/rJNA6xXSOqaGY7dxADh7IoJrP1j3NkuSGo=&identity_type=IDENTITY_CARD&media_id=13818483971&mer_id=25116&pub_pri_flag=2&service=user_reg&version=4.0],Merchant number isÔºö[25116]
+[2014-12-16 15:21:04]-[http://192.168.1.214/backend/web/index.php?r=document%2Fapi&action=frontend%5Ccontrollers%5CUserController%3A%3AactionBindCard]-[data] :The private key path forÔºö/opt/lampp/htdocs/common/config/cert/25116_wenzhoudai.key.pem
+[2014-12-16 15:21:04]-[http://192.168.1.214/backend/web/index.php?r=document%2Fapi&action=frontend%5Ccontrollers%5CUserController%3A%3AactionBindCard]-[data] :Signature string forÔºöCqp}°ÂŸøe¢‚…Ô"gìÛ€cf_`©øÛ±?ü¶Ü#T∆ƒdíZéz'}(í ö∫äıÇ„√‡í_3ÑwÃDœßXÌ∞ÌA;˘§Wc1%PrÀñä‘õ˚Â±ÙÛÛ¬πºMÎµ7 dEÍÕâ€©1BÛòœ
+è¥Ès(
+[2014-12-16 15:21:04]-[http://192.168.1.214/backend/web/index.php?r=document%2Fapi&action=frontend%5Ccontrollers%5CUserController%3A%3AactionBindCard]-[data] :Request platform way=get
+[2014-12-16 15:21:04]-[http://192.168.1.214/backend/web/index.php?r=document%2Fapi&action=frontend%5Ccontrollers%5CUserController%3A%3AactionBindCard]-[data] :Request platform signature string=GkNxcH2h5dm/ZaLiye8iZ5Pz22NmXw1gqb/zsT+fpoYjf1TGxGQSklqOeid9KJIAmrqK9QWC48Pgkl8zhHfMRBPPp1jtsO1BOwb5HQekV2MxJVByywiWitQUm/vlsRD08/PCubxN67U3AGRF6s2J26kxQvMREJjPBxYKj7Tpcyg=
+[2014-12-16 15:21:04]-[http://192.168.1.214/backend/web/index.php?r=document%2Fapi&action=frontend%5Ccontrollers%5CUserController%3A%3AactionBindCard]-[data] :Clear information request platform=busi_no=1&card_holder=uiA53FYW/4nc07uFlAzESLTa5pwM4cduRh9T7qXfeA91moH8DisMwvCIn2QflEEhBW94w3SHqfKzKkv3YmN5nN4zYhlMwzmNihB2hkj8xiM0wIQI7RRa7j8n0V729CvjqILGLqh4CH6xcUjfxn8hpJi0hH/kbqIqdrgundb+O00=&card_id=B0Tot0aij315RiYwzSIOMExurcno3tQBJHDFTz3b5SKwqIB+zDlJpk3lNmtZkaV13fFGQMHtDoQdLzUJHRdyIXfewDdL37Y1+zDNDw/JxGsRj+g6bgsAG7XMT2972DraLrjbs3KFZXyew92PMxlvbypnRUzvJ7pxADzvfYMNwV4=&card_type=0&charset=UTF-8&identity_code=W0K/LtCN58gZPpyTvmdKIXukkaEaNmYTaCvPCK5SQTAhKsbv1eekON6pMbEv4hIkjr18FDX7M2sh4UBRrC+f0u1QEmRj0XKvnqBttIGnEtqOZeYxHmytydX5Wa6X7fFO2Jr15+n8/rJNA6xXSOqaGY7dxADh7IoJrP1j3NkuSGo=&identity_type=IDENTITY_CARD&media_id=13818483971&mer_id=25116&pub_pri_flag=2&service=user_reg&version=4.0
+[2014-12-16 15:21:04]-[http://192.168.1.214/backend/web/index.php?r=document%2Fapi&action=frontend%5Ccontrollers%5CUserController%3A%3AactionBindCard]-[data] :The service user_reg request platform to get the address url=http://pay.soopay.net/spay/pay/payservice.do?busi_no=1&card_holder=uiA53FYW%2F4nc07uFlAzESLTa5pwM4cduRh9T7qXfeA91moH8DisMwvCIn2QflEEhBW94w3SHqfKzKkv3YmN5nN4zYhlMwzmNihB2hkj8xiM0wIQI7RRa7j8n0V729CvjqILGLqh4CH6xcUjfxn8hpJi0hH%2FkbqIqdrgundb%2BO00%3D&card_id=B0Tot0aij315RiYwzSIOMExurcno3tQBJHDFTz3b5SKwqIB%2BzDlJpk3lNmtZkaV13fFGQMHtDoQdLzUJHRdyIXfewDdL37Y1%2BzDNDw%2FJxGsRj%2Bg6bgsAG7XMT2972DraLrjbs3KFZXyew92PMxlvbypnRUzvJ7pxADzvfYMNwV4%3D&card_type=0&charset=UTF-8&identity_code=W0K%2FLtCN58gZPpyTvmdKIXukkaEaNmYTaCvPCK5SQTAhKsbv1eekON6pMbEv4hIkjr18FDX7M2sh4UBRrC%2Bf0u1QEmRj0XKvnqBttIGnEtqOZeYxHmytydX5Wa6X7fFO2Jr15%2Bn8%2FrJNA6xXSOqaGY7dxADh7IoJrP1j3NkuSGo%3D&identity_type=IDENTITY_CARD&media_id=13818483971&mer_id=25116&pub_pri_flag=2&service=user_reg&sign_type=RSA&version=4.0&sign=GkNxcH2h5dm/ZaLiye8iZ5Pz22NmXw1gqb/zsT+fpoYjf1TGxGQSklqOeid9KJIAmrqK9QWC48Pgkl8zhHfMRBPPp1jtsO1BOwb5HQekV2MxJVByywiWitQUm/vlsRD08/PCubxN67U3AGRF6s2J26kxQvMREJjPBxYKj7Tpcyg=
+[2014-12-16 15:26:53]-[http://192.168.1.214/backend/web/index.php?r=document%2Fapi&action=frontend%5Ccontrollers%5CUserController%3A%3AactionBindCard]-[data] :Request Para=array (
+  'service' => 'user_reg',
+  'sign_type' => 'RSA',
+  'mer_id' => '25116',
+  'version' => '4.0',
+  'charset' => 'UTF-8',
+  'pub_pri_flag' => '2',
+  'identity_type' => 'IDENTITY_CARD',
+  'identity_code' => '420626198609292527',
+  'card_id' => '6228480038445547276',
+  'card_holder' => 'Â±àÈáëÂ®•',
+  'media_id' => '13818483971',
+  'card_type' => '0',
+  'busi_no' => '1',
+)
+[2014-12-16 15:26:53]-[http://192.168.1.214/backend/web/index.php?r=document%2Fapi&action=frontend%5Ccontrollers%5CUserController%3A%3AactionBindCard]-[data] :The parameters of the request card_id RSA encryption
+[2014-12-16 15:26:53]-[http://192.168.1.214/backend/web/index.php?r=document%2Fapi&action=frontend%5Ccontrollers%5CUserController%3A%3AactionBindCard]-[data] :ÊïèÊÑü‰ø°ÊÅØÂä†ÂØÜÂØÜÊñá:[OBYJWoZxJEkR2rxvAcjF5vm11Dz6hsYT/g3OzrQciOnEE3lMWyRkQT/ED34ddVCzIuPFYrwKZ+XImjADXZshMb8TFWDirkSoz1IfPKIdBLuGNzq15ZB9FxMKCpg8yBtzTIZMfJsYMlku+VIo/x6oH6wPSaokz+iv0l6BH+nLkxM=]
+[2014-12-16 15:26:53]-[http://192.168.1.214/backend/web/index.php?r=document%2Fapi&action=frontend%5Ccontrollers%5CUserController%3A%3AactionBindCard]-[data] :The parameters of the request identity_code RSA encryption
+[2014-12-16 15:26:53]-[http://192.168.1.214/backend/web/index.php?r=document%2Fapi&action=frontend%5Ccontrollers%5CUserController%3A%3AactionBindCard]-[data] :ÊïèÊÑü‰ø°ÊÅØÂä†ÂØÜÂØÜÊñá:[Qm0Ulj2f9xiZ1gG/+eFrH86uIR8R6fAbMQsx/IW7jpv+SjdQBNQ5P1GKc2cAa5eaK3GJhY1wF3Z3v01/o+nPNt2bVj9hVdtmu3mh3XxS0Ys9GZIvEN24EVWSJ2oG4xteHMmvr8CzSvHXOxyqKp0awXtVwihwpaArFmRxgEpWUJM=]
+[2014-12-16 15:26:53]-[http://192.168.1.214/backend/web/index.php?r=document%2Fapi&action=frontend%5Ccontrollers%5CUserController%3A%3AactionBindCard]-[data] :The parameters of the request card_holder RSA encryption
+[2014-12-16 15:26:53]-[http://192.168.1.214/backend/web/index.php?r=document%2Fapi&action=frontend%5Ccontrollers%5CUserController%3A%3AactionBindCard]-[data] :ÊïèÊÑü‰ø°ÊÅØÂä†ÂØÜÂØÜÊñá:[ihBsMTV/n/4/y8mMwRvhE2/OPXIM3t6GRnGxXbZ9EqdM+hfMx3SHC85zffkcOe3YkRUI7I6MXu6AOrwosLnGoIxQfvICgpckF8MYZqz/IN6d+ZsFDk4FPYgZa3PYmfvS/qOzrtxCq1K5JFidhTx9cdAOQp3eeGNLygqDGxgE2SA=]
+[2014-12-16 15:26:53]-[http://192.168.1.214/backend/web/index.php?r=document%2Fapi&action=frontend%5Ccontrollers%5CUserController%3A%3AactionBindCard]-[data] :Participate in the signature parametersÔºö[busi_no=1&card_holder=ihBsMTV/n/4/y8mMwRvhE2/OPXIM3t6GRnGxXbZ9EqdM+hfMx3SHC85zffkcOe3YkRUI7I6MXu6AOrwosLnGoIxQfvICgpckF8MYZqz/IN6d+ZsFDk4FPYgZa3PYmfvS/qOzrtxCq1K5JFidhTx9cdAOQp3eeGNLygqDGxgE2SA=&card_id=OBYJWoZxJEkR2rxvAcjF5vm11Dz6hsYT/g3OzrQciOnEE3lMWyRkQT/ED34ddVCzIuPFYrwKZ+XImjADXZshMb8TFWDirkSoz1IfPKIdBLuGNzq15ZB9FxMKCpg8yBtzTIZMfJsYMlku+VIo/x6oH6wPSaokz+iv0l6BH+nLkxM=&card_type=0&charset=UTF-8&identity_code=Qm0Ulj2f9xiZ1gG/+eFrH86uIR8R6fAbMQsx/IW7jpv+SjdQBNQ5P1GKc2cAa5eaK3GJhY1wF3Z3v01/o+nPNt2bVj9hVdtmu3mh3XxS0Ys9GZIvEN24EVWSJ2oG4xteHMmvr8CzSvHXOxyqKp0awXtVwihwpaArFmRxgEpWUJM=&identity_type=IDENTITY_CARD&media_id=13818483971&mer_id=25116&pub_pri_flag=2&service=user_reg&version=4.0],Merchant number isÔºö[25116]
+[2014-12-16 15:26:53]-[http://192.168.1.214/backend/web/index.php?r=document%2Fapi&action=frontend%5Ccontrollers%5CUserController%3A%3AactionBindCard]-[data] :The private key path forÔºö/opt/lampp/htdocs/common/config/cert/25116_wenzhoudai.key.pem
+[2014-12-16 15:26:53]-[http://192.168.1.214/backend/web/index.php?r=document%2Fapi&action=frontend%5Ccontrollers%5CUserController%3A%3AactionBindCard]-[data] :Signature string forÔºöM∞wÉ–sùòÌ
+ﬁí;˘wY+∏—≠¢D 0ºrˆ∫9"8Å{æú›ÍªA¥ Û‡·*FèL∞ƒª\/-Yã†∫@Ô±0·=_ `qËìZ¬Tv,é&ÂVΩ	£ÂÔd§ﬂˇ=
+54p‡ZvÊ~^[Zfp<˝eÖÿcM›ùŸ
+[2014-12-16 15:26:53]-[http://192.168.1.214/backend/web/index.php?r=document%2Fapi&action=frontend%5Ccontrollers%5CUserController%3A%3AactionBindCard]-[data] :Request platform way=get
+[2014-12-16 15:26:53]-[http://192.168.1.214/backend/web/index.php?r=document%2Fapi&action=frontend%5Ccontrollers%5CUserController%3A%3AactionBindCard]-[data] :Request platform signature string=TbB3g9BznZjtCt6SO/l3WSscuA/RraJEHgAwvHL2ujkiOAOBe76cBd3qu0G0APMZ4OEqRgWPTLDEu1wvLVmLoLpA77Ew4T1fAGBx6BOTWsIIVHYsjiblVr0Jo+XvZKQU3/89CjU0BnDgWnbmHn5eWw4cWmZwPP1lhdhjTd0Pndk=
+[2014-12-16 15:26:53]-[http://192.168.1.214/backend/web/index.php?r=document%2Fapi&action=frontend%5Ccontrollers%5CUserController%3A%3AactionBindCard]-[data] :Clear information request platform=busi_no=1&card_holder=ihBsMTV/n/4/y8mMwRvhE2/OPXIM3t6GRnGxXbZ9EqdM+hfMx3SHC85zffkcOe3YkRUI7I6MXu6AOrwosLnGoIxQfvICgpckF8MYZqz/IN6d+ZsFDk4FPYgZa3PYmfvS/qOzrtxCq1K5JFidhTx9cdAOQp3eeGNLygqDGxgE2SA=&card_id=OBYJWoZxJEkR2rxvAcjF5vm11Dz6hsYT/g3OzrQciOnEE3lMWyRkQT/ED34ddVCzIuPFYrwKZ+XImjADXZshMb8TFWDirkSoz1IfPKIdBLuGNzq15ZB9FxMKCpg8yBtzTIZMfJsYMlku+VIo/x6oH6wPSaokz+iv0l6BH+nLkxM=&card_type=0&charset=UTF-8&identity_code=Qm0Ulj2f9xiZ1gG/+eFrH86uIR8R6fAbMQsx/IW7jpv+SjdQBNQ5P1GKc2cAa5eaK3GJhY1wF3Z3v01/o+nPNt2bVj9hVdtmu3mh3XxS0Ys9GZIvEN24EVWSJ2oG4xteHMmvr8CzSvHXOxyqKp0awXtVwihwpaArFmRxgEpWUJM=&identity_type=IDENTITY_CARD&media_id=13818483971&mer_id=25116&pub_pri_flag=2&service=user_reg&version=4.0
+[2014-12-16 15:26:53]-[http://192.168.1.214/backend/web/index.php?r=document%2Fapi&action=frontend%5Ccontrollers%5CUserController%3A%3AactionBindCard]-[data] :The service user_reg request platform to get the address url=http://pay.soopay.net/spay/pay/payservice.do?busi_no=1&card_holder=ihBsMTV%2Fn%2F4%2Fy8mMwRvhE2%2FOPXIM3t6GRnGxXbZ9EqdM%2BhfMx3SHC85zffkcOe3YkRUI7I6MXu6AOrwosLnGoIxQfvICgpckF8MYZqz%2FIN6d%2BZsFDk4FPYgZa3PYmfvS%2FqOzrtxCq1K5JFidhTx9cdAOQp3eeGNLygqDGxgE2SA%3D&card_id=OBYJWoZxJEkR2rxvAcjF5vm11Dz6hsYT%2Fg3OzrQciOnEE3lMWyRkQT%2FED34ddVCzIuPFYrwKZ%2BXImjADXZshMb8TFWDirkSoz1IfPKIdBLuGNzq15ZB9FxMKCpg8yBtzTIZMfJsYMlku%2BVIo%2Fx6oH6wPSaokz%2Biv0l6BH%2BnLkxM%3D&card_type=0&charset=UTF-8&identity_code=Qm0Ulj2f9xiZ1gG%2F%2BeFrH86uIR8R6fAbMQsx%2FIW7jpv%2BSjdQBNQ5P1GKc2cAa5eaK3GJhY1wF3Z3v01%2Fo%2BnPNt2bVj9hVdtmu3mh3XxS0Ys9GZIvEN24EVWSJ2oG4xteHMmvr8CzSvHXOxyqKp0awXtVwihwpaArFmRxgEpWUJM%3D&identity_type=IDENTITY_CARD&media_id=13818483971&mer_id=25116&pub_pri_flag=2&service=user_reg&sign_type=RSA&version=4.0&sign=TbB3g9BznZjtCt6SO/l3WSscuA/RraJEHgAwvHL2ujkiOAOBe76cBd3qu0G0APMZ4OEqRgWPTLDEu1wvLVmLoLpA77Ew4T1fAGBx6BOTWsIIVHYsjiblVr0Jo+XvZKQU3/89CjU0BnDgWnbmHn5eWw4cWmZwPP1lhdhjTd0Pndk=
+[2014-12-16 15:26:53]-[http://192.168.1.214/backend/web/index.php?r=document%2Fapi&action=frontend%5Ccontrollers%5CUserController%3A%3AactionBindCard]-[data] :plat response mer data:busi_no=1&card_holder=ihBsMTV/n/4/y8mMwRvhE2/OPXIM3t6GRnGxXbZ9EqdM+hfMx3SHC85zffkcOe3YkRUI7I6MXu6AOrwosLnGoIxQfvICgpckF8MYZqz/IN6d+ZsFDk4FPYgZa3PYmfvS/qOzrtxCq1K5JFidhTx9cdAOQp3eeGNLygqDGxgE2SA=&card_id=OBYJWoZxJEkR2rxvAcjF5vm11Dz6hsYT/g3OzrQciOnEE3lMWyRkQT/ED34ddVCzIuPFYrwKZ+XImjADXZshMb8TFWDirkSoz1IfPKIdBLuGNzq15ZB9FxMKCpg8yBtzTIZMfJsYMlku+VIo/x6oH6wPSaokz+iv0l6BH+nLkxM=&card_type=0&charset=UTF-8&identity_code=Qm0Ulj2f9xiZ1gG/+eFrH86uIR8R6fAbMQsx/IW7jpv+SjdQBNQ5P1GKc2cAa5eaK3GJhY1wF3Z3v01/o+nPNt2bVj9hVdtmu3mh3XxS0Ys9GZIvEN24EVWSJ2oG4xteHMmvr8CzSvHXOxyqKp0awXtVwihwpaArFmRxgEpWUJM=&identity_type=IDENTITY_CARD&media_id=13818483971&mer_id=25116&pub_pri_flag=2&ret_code=00160083&ret_msg=‰∫≤,ÊÇ®Â∑≤ÁªèÊòØÊ≥®ÂÜåÁî®Êà∑,Êó†ÈúÄÈáçÂ§çÊ≥®ÂÜå&service=user_reg&sign_type=RSA&version=4.0&sign=IODPJY9x8PTCQly/qf+6ZqE+5QUtMcxsQ4L2W7Lg4qN8KErwlZdUvW9C5UdXaY7tpqyk4uva1XxgO9grGoMxUXPjtt8Any0EvuyFWEsDUHyxqB3we3h6aNz6HWvnG4c1rssJEreoOm3y0uNJfFzQxXkm1QTxynutFQknxdosaXY=
+[2014-12-16 15:26:53]-[http://192.168.1.214/backend/web/index.php?r=document%2Fapi&action=frontend%5Ccontrollers%5CUserController%3A%3AactionBindCard]-[data] :interface fields:merId,goodsId,orderId,merDate,retCode,retMsg,version,sign
+[2014-12-16 15:26:53]-[http://192.168.1.214/backend/web/index.php?r=document%2Fapi&action=frontend%5Ccontrollers%5CUserController%3A%3AactionBindCard]-[data] :response sign=busi_no=1&card_holder=ihBsMTV/n/4/y8mMwRvhE2/OPXIM3t6GRnGxXbZ9EqdM+hfMx3SHC85zffkcOe3YkRUI7I6MXu6AOrwosLnGoIxQfvICgpckF8MYZqz/IN6d+ZsFDk4FPYgZa3PYmfvS/qOzrtxCq1K5JFidhTx9cdAOQp3eeGNLygqDGxgE2SA=&card_id=OBYJWoZxJEkR2rxvAcjF5vm11Dz6hsYT/g3OzrQciOnEE3lMWyRkQT/ED34ddVCzIuPFYrwKZ+XImjADXZshMb8TFWDirkSoz1IfPKIdBLuGNzq15ZB9FxMKCpg8yBtzTIZMfJsYMlku+VIo/x6oH6wPSaokz+iv0l6BH+nLkxM=&card_type=0&charset=UTF-8&identity_code=Qm0Ulj2f9xiZ1gG/+eFrH86uIR8R6fAbMQsx/IW7jpv+SjdQBNQ5P1GKc2cAa5eaK3GJhY1wF3Z3v01/o+nPNt2bVj9hVdtmu3mh3XxS0Ys9GZIvEN24EVWSJ2oG4xteHMmvr8CzSvHXOxyqKp0awXtVwihwpaArFmRxgEpWUJM=&identity_type=IDENTITY_CARD&media_id=13818483971&mer_id=25116&pub_pri_flag=2&ret_code=00160083&ret_msg=‰∫≤,ÊÇ®Â∑≤ÁªèÊòØÊ≥®ÂÜåÁî®Êà∑,Êó†ÈúÄÈáçÂ§çÊ≥®ÂÜå&service=user_reg&sign_type=RSA&version=4.0
+[2014-12-16 15:26:53]-[http://192.168.1.214/backend/web/index.php?r=document%2Fapi&action=frontend%5Ccontrollers%5CUserController%3A%3AactionBindCard]-[data] :response sign=IODPJY9x8PTCQly/qf+6ZqE+5QUtMcxsQ4L2W7Lg4qN8KErwlZdUvW9C5UdXaY7tpqyk4uva1XxgO9grGoMxUXPjtt8Any0EvuyFWEsDUHyxqB3we3h6aNz6HWvnG4c1rssJEreoOm3y0uNJfFzQxXkm1QTxynutFQknxdosaXY=
+[2014-12-16 15:26:53]-[http://192.168.1.214/backend/web/index.php?r=document%2Fapi&action=frontend%5Ccontrollers%5CUserController%3A%3AactionBindCard]-[data] :response plain=busi_no=1&card_holder=ihBsMTV/n/4/y8mMwRvhE2/OPXIM3t6GRnGxXbZ9EqdM+hfMx3SHC85zffkcOe3YkRUI7I6MXu6AOrwosLnGoIxQfvICgpckF8MYZqz/IN6d+ZsFDk4FPYgZa3PYmfvS/qOzrtxCq1K5JFidhTx9cdAOQp3eeGNLygqDGxgE2SA=&card_id=OBYJWoZxJEkR2rxvAcjF5vm11Dz6hsYT/g3OzrQciOnEE3lMWyRkQT/ED34ddVCzIuPFYrwKZ+XImjADXZshMb8TFWDirkSoz1IfPKIdBLuGNzq15ZB9FxMKCpg8yBtzTIZMfJsYMlku+VIo/x6oH6wPSaokz+iv0l6BH+nLkxM=&card_type=0&charset=UTF-8&identity_code=Qm0Ulj2f9xiZ1gG/+eFrH86uIR8R6fAbMQsx/IW7jpv+SjdQBNQ5P1GKc2cAa5eaK3GJhY1wF3Z3v01/o+nPNt2bVj9hVdtmu3mh3XxS0Ys9GZIvEN24EVWSJ2oG4xteHMmvr8CzSvHXOxyqKp0awXtVwihwpaArFmRxgEpWUJM=&identity_type=IDENTITY_CARD&media_id=13818483971&mer_id=25116&pub_pri_flag=2&ret_code=00160083&ret_msg=‰∫≤,ÊÇ®Â∑≤ÁªèÊòØÊ≥®ÂÜåÁî®Êà∑,Êó†ÈúÄÈáçÂ§çÊ≥®ÂÜå&service=user_reg&version=4.0
+[2014-12-16 15:26:53]-[http://192.168.1.214/backend/web/index.php?r=document%2Fapi&action=frontend%5Ccontrollers%5CUserController%3A%3AactionBindCard]-[data] :verify:1
+[2014-12-16 18:25:54]-[]-[data] :Request Para=array (
+  'service' => 'user_reg',
+  'sign_type' => 'RSA',
+  'mer_id' => '25116',
+  'version' => '4.0',
+  'charset' => 'UTF-8',
+  'pub_pri_flag' => '2',
+  'identity_type' => 'IDENTITY_CARD',
+  'identity_code' => '420626198609292527',
+  'card_id' => '6228480038445547276',
+  'card_holder' => 'Â±àÈáëÂ®•',
+  'media_id' => '13818483971',
+  'card_type' => '0',
+  'busi_no' => '1',
+)
+[2014-12-16 18:25:54]-[]-[data] :The parameters of the request card_id RSA encryption
+[2014-12-16 18:25:54]-[]-[data] :ÊïèÊÑü‰ø°ÊÅØÂä†ÂØÜÂØÜÊñá:[vpX+2U5QrSVioKIAw91Ss6ngKksd8cRRKuNRTgvFE6iQrdypdXW1RmycQP4w34nSpA6zKxwzVn/GnQs5ACvna0Uo8edRVh+uMKHYwKA3Cr/foNUCZnI0X8cM4htma+5JaCnDTbPa6Evs2LBbTfpAxFiBoMOFLEcxkcXMO29YM/s=]
+[2014-12-16 18:25:54]-[]-[data] :The parameters of the request identity_code RSA encryption
+[2014-12-16 18:25:54]-[]-[data] :ÊïèÊÑü‰ø°ÊÅØÂä†ÂØÜÂØÜÊñá:[DvLvznpCe/roIL4exjcol1TeugX/i57UQJ290FmoG/ZOlb7J86eYQ/5WZbaDbX+lJ8LQLhDxsPk4PU1fYXgf3QO5kb/jiTyZ6k1Lk6DuJM28i+1eJG4xGgC4rLeBl4RwnK1Tk64U5SwJxvPVl0EdDND4h5GLg+53j/Bgur7zBgo=]
+[2014-12-16 18:25:54]-[]-[data] :The parameters of the request card_holder RSA encryption
+[2014-12-16 18:25:54]-[]-[data] :ÊïèÊÑü‰ø°ÊÅØÂä†ÂØÜÂØÜÊñá:[vOnKix5kdrBzg8rDY6MWzLD6m/g3taccUwheO8DCShdwFoqn5KY1egqi13dhNZF4GezKKIEpJd3orqk5HdYC1T2HmBKWKSxBkS6i0uj7dkMpI29qjJTTiyb7Lb6FrW6dTfUY7Bm2ARf7QRbuwc6f433/kHR7YRNWBd+APPHUwnE=]
+[2014-12-16 18:25:54]-[]-[data] :Participate in the signature parametersÔºö[busi_no=1&card_holder=vOnKix5kdrBzg8rDY6MWzLD6m/g3taccUwheO8DCShdwFoqn5KY1egqi13dhNZF4GezKKIEpJd3orqk5HdYC1T2HmBKWKSxBkS6i0uj7dkMpI29qjJTTiyb7Lb6FrW6dTfUY7Bm2ARf7QRbuwc6f433/kHR7YRNWBd+APPHUwnE=&card_id=vpX+2U5QrSVioKIAw91Ss6ngKksd8cRRKuNRTgvFE6iQrdypdXW1RmycQP4w34nSpA6zKxwzVn/GnQs5ACvna0Uo8edRVh+uMKHYwKA3Cr/foNUCZnI0X8cM4htma+5JaCnDTbPa6Evs2LBbTfpAxFiBoMOFLEcxkcXMO29YM/s=&card_type=0&charset=UTF-8&identity_code=DvLvznpCe/roIL4exjcol1TeugX/i57UQJ290FmoG/ZOlb7J86eYQ/5WZbaDbX+lJ8LQLhDxsPk4PU1fYXgf3QO5kb/jiTyZ6k1Lk6DuJM28i+1eJG4xGgC4rLeBl4RwnK1Tk64U5SwJxvPVl0EdDND4h5GLg+53j/Bgur7zBgo=&identity_type=IDENTITY_CARD&media_id=13818483971&mer_id=25116&pub_pri_flag=2&service=user_reg&version=4.0],Merchant number isÔºö[25116]
+[2014-12-16 18:25:54]-[]-[data] :The private key path forÔºö/opt/lampp/htdocs/common/config/cert/25116_wenzhoudai.key.pem
+[2014-12-16 18:25:54]-[]-[data] :Signature string forÔºöç?W[˛¸Õ—¬Á?ıKûQT‡y-≠˙4I„Fµ{ƒ?a:Îåº6´c8ï¶`Qíºü´‚Oí∆‰_¡M}ÁhRµ§…ïàEub¯ïƒ≈Æ1ÓÅ¯∆@”Ÿp7≤OUÖ?M!,ùñ©R5Ñ†ÆX }ÎMf‘Tß„™Ï?¢1á
+[2014-12-16 18:25:54]-[]-[data] :Request platform way=get
+[2014-12-16 18:25:54]-[]-[data] :Request platform signature string=jQEXP1db/gv8zdHC5z/1S55RBlTgeS2t+jRJ40a1e8Q/YTrrjLw2q2M4laYHYFEbkryfqwfiT5LGHuRfwU1952hStaQbyZWIRXVi+JXExa4x7oH4xkDT2XA3shtPVRyFP00hLJ2WqVIUNYSgrgJYDQB9D+tNZtRUp+Oq7D+iMYc=
+[2014-12-16 18:25:54]-[]-[data] :Clear information request platform=busi_no=1&card_holder=vOnKix5kdrBzg8rDY6MWzLD6m/g3taccUwheO8DCShdwFoqn5KY1egqi13dhNZF4GezKKIEpJd3orqk5HdYC1T2HmBKWKSxBkS6i0uj7dkMpI29qjJTTiyb7Lb6FrW6dTfUY7Bm2ARf7QRbuwc6f433/kHR7YRNWBd+APPHUwnE=&card_id=vpX+2U5QrSVioKIAw91Ss6ngKksd8cRRKuNRTgvFE6iQrdypdXW1RmycQP4w34nSpA6zKxwzVn/GnQs5ACvna0Uo8edRVh+uMKHYwKA3Cr/foNUCZnI0X8cM4htma+5JaCnDTbPa6Evs2LBbTfpAxFiBoMOFLEcxkcXMO29YM/s=&card_type=0&charset=UTF-8&identity_code=DvLvznpCe/roIL4exjcol1TeugX/i57UQJ290FmoG/ZOlb7J86eYQ/5WZbaDbX+lJ8LQLhDxsPk4PU1fYXgf3QO5kb/jiTyZ6k1Lk6DuJM28i+1eJG4xGgC4rLeBl4RwnK1Tk64U5SwJxvPVl0EdDND4h5GLg+53j/Bgur7zBgo=&identity_type=IDENTITY_CARD&media_id=13818483971&mer_id=25116&pub_pri_flag=2&service=user_reg&version=4.0
+[2014-12-16 18:25:54]-[]-[data] :The service user_reg request platform to get the address url=http://pay.soopay.net/spay/pay/payservice.do?busi_no=1&card_holder=vOnKix5kdrBzg8rDY6MWzLD6m%2Fg3taccUwheO8DCShdwFoqn5KY1egqi13dhNZF4GezKKIEpJd3orqk5HdYC1T2HmBKWKSxBkS6i0uj7dkMpI29qjJTTiyb7Lb6FrW6dTfUY7Bm2ARf7QRbuwc6f433%2FkHR7YRNWBd%2BAPPHUwnE%3D&card_id=vpX%2B2U5QrSVioKIAw91Ss6ngKksd8cRRKuNRTgvFE6iQrdypdXW1RmycQP4w34nSpA6zKxwzVn%2FGnQs5ACvna0Uo8edRVh%2BuMKHYwKA3Cr%2FfoNUCZnI0X8cM4htma%2B5JaCnDTbPa6Evs2LBbTfpAxFiBoMOFLEcxkcXMO29YM%2Fs%3D&card_type=0&charset=UTF-8&identity_code=DvLvznpCe%2FroIL4exjcol1TeugX%2Fi57UQJ290FmoG%2FZOlb7J86eYQ%2F5WZbaDbX%2BlJ8LQLhDxsPk4PU1fYXgf3QO5kb%2FjiTyZ6k1Lk6DuJM28i%2B1eJG4xGgC4rLeBl4RwnK1Tk64U5SwJxvPVl0EdDND4h5GLg%2B53j%2FBgur7zBgo%3D&identity_type=IDENTITY_CARD&media_id=13818483971&mer_id=25116&pub_pri_flag=2&service=user_reg&sign_type=RSA&version=4.0&sign=jQEXP1db/gv8zdHC5z/1S55RBlTgeS2t+jRJ40a1e8Q/YTrrjLw2q2M4laYHYFEbkryfqwfiT5LGHuRfwU1952hStaQbyZWIRXVi+JXExa4x7oH4xkDT2XA3shtPVRyFP00hLJ2WqVIUNYSgrgJYDQB9D+tNZtRUp+Oq7D+iMYc=
+[2014-12-16 18:25:54]-[]-[data] :plat response mer data:busi_no=1&card_holder=vOnKix5kdrBzg8rDY6MWzLD6m/g3taccUwheO8DCShdwFoqn5KY1egqi13dhNZF4GezKKIEpJd3orqk5HdYC1T2HmBKWKSxBkS6i0uj7dkMpI29qjJTTiyb7Lb6FrW6dTfUY7Bm2ARf7QRbuwc6f433/kHR7YRNWBd+APPHUwnE=&card_id=vpX+2U5QrSVioKIAw91Ss6ngKksd8cRRKuNRTgvFE6iQrdypdXW1RmycQP4w34nSpA6zKxwzVn/GnQs5ACvna0Uo8edRVh+uMKHYwKA3Cr/foNUCZnI0X8cM4htma+5JaCnDTbPa6Evs2LBbTfpAxFiBoMOFLEcxkcXMO29YM/s=&card_type=0&charset=UTF-8&identity_code=DvLvznpCe/roIL4exjcol1TeugX/i57UQJ290FmoG/ZOlb7J86eYQ/5WZbaDbX+lJ8LQLhDxsPk4PU1fYXgf3QO5kb/jiTyZ6k1Lk6DuJM28i+1eJG4xGgC4rLeBl4RwnK1Tk64U5SwJxvPVl0EdDND4h5GLg+53j/Bgur7zBgo=&identity_type=IDENTITY_CARD&media_id=13818483971&mer_id=25116&pub_pri_flag=2&ret_code=00160083&ret_msg=‰∫≤,ÊÇ®Â∑≤ÁªèÊòØÊ≥®ÂÜåÁî®Êà∑,Êó†ÈúÄÈáçÂ§çÊ≥®ÂÜå&service=user_reg&sign_type=RSA&version=4.0&sign=rZBXfH38bKeRRF1UzVvcLUzcTVy1fJ/kXCBoSBgM9xOGTOX19xU+ZkuYOBzz5pI5lECfj1tI97n16YiqJsHWxIxiM3MkJfRZFFHVnc3t17qk0rXQmmr+sasOFDrxDzXB1YxWAgOxpqlnq4siDb+KRnPzJdKdy+pPThNYIJT74Dw=
+[2014-12-16 18:25:54]-[]-[data] :interface fields:merId,goodsId,orderId,merDate,retCode,retMsg,version,sign
+[2014-12-16 18:25:54]-[]-[data] :response sign=busi_no=1&card_holder=vOnKix5kdrBzg8rDY6MWzLD6m/g3taccUwheO8DCShdwFoqn5KY1egqi13dhNZF4GezKKIEpJd3orqk5HdYC1T2HmBKWKSxBkS6i0uj7dkMpI29qjJTTiyb7Lb6FrW6dTfUY7Bm2ARf7QRbuwc6f433/kHR7YRNWBd+APPHUwnE=&card_id=vpX+2U5QrSVioKIAw91Ss6ngKksd8cRRKuNRTgvFE6iQrdypdXW1RmycQP4w34nSpA6zKxwzVn/GnQs5ACvna0Uo8edRVh+uMKHYwKA3Cr/foNUCZnI0X8cM4htma+5JaCnDTbPa6Evs2LBbTfpAxFiBoMOFLEcxkcXMO29YM/s=&card_type=0&charset=UTF-8&identity_code=DvLvznpCe/roIL4exjcol1TeugX/i57UQJ290FmoG/ZOlb7J86eYQ/5WZbaDbX+lJ8LQLhDxsPk4PU1fYXgf3QO5kb/jiTyZ6k1Lk6DuJM28i+1eJG4xGgC4rLeBl4RwnK1Tk64U5SwJxvPVl0EdDND4h5GLg+53j/Bgur7zBgo=&identity_type=IDENTITY_CARD&media_id=13818483971&mer_id=25116&pub_pri_flag=2&ret_code=00160083&ret_msg=‰∫≤,ÊÇ®Â∑≤ÁªèÊòØÊ≥®ÂÜåÁî®Êà∑,Êó†ÈúÄÈáçÂ§çÊ≥®ÂÜå&service=user_reg&sign_type=RSA&version=4.0
+[2014-12-16 18:25:54]-[]-[data] :response sign=rZBXfH38bKeRRF1UzVvcLUzcTVy1fJ/kXCBoSBgM9xOGTOX19xU+ZkuYOBzz5pI5lECfj1tI97n16YiqJsHWxIxiM3MkJfRZFFHVnc3t17qk0rXQmmr+sasOFDrxDzXB1YxWAgOxpqlnq4siDb+KRnPzJdKdy+pPThNYIJT74Dw=
+[2014-12-16 18:25:54]-[]-[data] :response plain=busi_no=1&card_holder=vOnKix5kdrBzg8rDY6MWzLD6m/g3taccUwheO8DCShdwFoqn5KY1egqi13dhNZF4GezKKIEpJd3orqk5HdYC1T2HmBKWKSxBkS6i0uj7dkMpI29qjJTTiyb7Lb6FrW6dTfUY7Bm2ARf7QRbuwc6f433/kHR7YRNWBd+APPHUwnE=&card_id=vpX+2U5QrSVioKIAw91Ss6ngKksd8cRRKuNRTgvFE6iQrdypdXW1RmycQP4w34nSpA6zKxwzVn/GnQs5ACvna0Uo8edRVh+uMKHYwKA3Cr/foNUCZnI0X8cM4htma+5JaCnDTbPa6Evs2LBbTfpAxFiBoMOFLEcxkcXMO29YM/s=&card_type=0&charset=UTF-8&identity_code=DvLvznpCe/roIL4exjcol1TeugX/i57UQJ290FmoG/ZOlb7J86eYQ/5WZbaDbX+lJ8LQLhDxsPk4PU1fYXgf3QO5kb/jiTyZ6k1Lk6DuJM28i+1eJG4xGgC4rLeBl4RwnK1Tk64U5SwJxvPVl0EdDND4h5GLg+53j/Bgur7zBgo=&identity_type=IDENTITY_CARD&media_id=13818483971&mer_id=25116&pub_pri_flag=2&ret_code=00160083&ret_msg=‰∫≤,ÊÇ®Â∑≤ÁªèÊòØÊ≥®ÂÜåÁî®Êà∑,Êó†ÈúÄÈáçÂ§çÊ≥®ÂÜå&service=user_reg&version=4.0
+[2014-12-16 18:25:54]-[]-[data] :verify:1
+[2014-12-16 18:31:44]-[http://192.168.1.214/backend/web/index.php?r=document%2Fapi&action=frontend%5Ccontrollers%5CUserController%3A%3AactionUnBindCard]-[data] :Request Para=array (
+  'service' => 'user_cancel',
+  'sign_type' => 'RSA',
+  'mer_id' => '25116',
+  'version' => '4.0',
+  'charset' => 'UTF-8',
+  'media_id' => '13818483971',
+  'media_type' => 'MOBILE',
+  'busi_no' => '1',
+)
+[2014-12-16 18:31:44]-[http://192.168.1.214/backend/web/index.php?r=document%2Fapi&action=frontend%5Ccontrollers%5CUserController%3A%3AactionUnBindCard]-[data] :Participate in the signature parametersÔºö[busi_no=1&charset=UTF-8&media_id=13818483971&media_type=MOBILE&mer_id=25116&service=user_cancel&version=4.0],Merchant number isÔºö[25116]
+[2014-12-16 18:31:44]-[http://192.168.1.214/backend/web/index.php?r=document%2Fapi&action=frontend%5Ccontrollers%5CUserController%3A%3AactionUnBindCard]-[data] :The private key path forÔºö/opt/lampp/htdocs/common/config/cert/25116_wenzhoudai.key.pem
+[2014-12-16 18:31:44]-[http://192.168.1.214/backend/web/index.php?r=document%2Fapi&action=frontend%5Ccontrollers%5CUserController%3A%3AactionUnBindCard]-[data] :Signature string forÔºöõh3ñh˜…ùê>˜˜◊"«;H∆S3L®\ã÷ñQÎ†ÏB√H©®:ﬁ2‘d¡ ∑Ôaíí3{cÃç§ÖŸN—ñK„â:¿—–-Ô∂ªﬂ:6ÑÊ[H¶7.ë¨ÒÔ°>»ûl(Áÿ∆Líp^ˆÛCµ}PÔ|Ÿ¿•k˘
+[2014-12-16 18:31:44]-[http://192.168.1.214/backend/web/index.php?r=document%2Fapi&action=frontend%5Ccontrollers%5CUserController%3A%3AactionUnBindCard]-[data] :Request platform way=get
+[2014-12-16 18:31:44]-[http://192.168.1.214/backend/web/index.php?r=document%2Fapi&action=frontend%5Ccontrollers%5CUserController%3A%3AactionUnBindCard]-[data] :Request platform signature string=m2gzGJZo9w3JnZA+9/cX1xoixxQ7DkgZDwXGUzNMqFyL1pYTUR7roOxCBcNIqag6Fd4y1GTByrfvYZKSM3tjzI0EpIXZTtGWS+OJOsDR0C3vtrvfOjYHAYTmW0imNy6RGawH8e+hPsiebCjn2MZMknBe9vNDtX1Q73wV2cCla/k=
+[2014-12-16 18:31:44]-[http://192.168.1.214/backend/web/index.php?r=document%2Fapi&action=frontend%5Ccontrollers%5CUserController%3A%3AactionUnBindCard]-[data] :Clear information request platform=busi_no=1&charset=UTF-8&media_id=13818483971&media_type=MOBILE&mer_id=25116&service=user_cancel&version=4.0
+[2014-12-16 18:31:44]-[http://192.168.1.214/backend/web/index.php?r=document%2Fapi&action=frontend%5Ccontrollers%5CUserController%3A%3AactionUnBindCard]-[data] :The service user_cancel request platform to get the address url=http://pay.soopay.net/spay/pay/payservice.do?busi_no=1&charset=UTF-8&media_id=13818483971&media_type=MOBILE&mer_id=25116&service=user_cancel&sign_type=RSA&version=4.0&sign=m2gzGJZo9w3JnZA+9/cX1xoixxQ7DkgZDwXGUzNMqFyL1pYTUR7roOxCBcNIqag6Fd4y1GTByrfvYZKSM3tjzI0EpIXZTtGWS+OJOsDR0C3vtrvfOjYHAYTmW0imNy6RGawH8e+hPsiebCjn2MZMknBe9vNDtX1Q73wV2cCla/k=
+[2014-12-16 18:31:44]-[http://192.168.1.214/backend/web/index.php?r=document%2Fapi&action=frontend%5Ccontrollers%5CUserController%3A%3AactionUnBindCard]-[data] :plat response mer data:busi_no=1&charset=UTF-8&media_id=13818483971&media_type=MOBILE&mer_id=25116&ret_code=0000&ret_msg=Ê≥®ÈîÄÊàêÂäü!&service=user_cancel&sign_type=RSA&version=4.0&sign=CK/FxWFpb44ZXhe5UtWIzJH7MKh7CIwS0Y7g8GVIXuoDeLcaU0NRn+AHJz2tpUoZMHOOBCDjoWqDU+xajQ5rMZOXdJXTnhUP9O1yprpeZhbYe4QeZArJKKc5oHAp+QQ/+CuED9xBi794NsSYMP8VoQZbvgaD685ka/OQpnJ7FEg=
+[2014-12-16 18:31:44]-[http://192.168.1.214/backend/web/index.php?r=document%2Fapi&action=frontend%5Ccontrollers%5CUserController%3A%3AactionUnBindCard]-[data] :interface fields:merId,goodsId,orderId,merDate,retCode,retMsg,version,sign
+[2014-12-16 18:31:44]-[http://192.168.1.214/backend/web/index.php?r=document%2Fapi&action=frontend%5Ccontrollers%5CUserController%3A%3AactionUnBindCard]-[data] :response sign=busi_no=1&charset=UTF-8&media_id=13818483971&media_type=MOBILE&mer_id=25116&ret_code=0000&ret_msg=Ê≥®ÈîÄÊàêÂäü!&service=user_cancel&sign_type=RSA&version=4.0
+[2014-12-16 18:31:44]-[http://192.168.1.214/backend/web/index.php?r=document%2Fapi&action=frontend%5Ccontrollers%5CUserController%3A%3AactionUnBindCard]-[data] :response sign=CK/FxWFpb44ZXhe5UtWIzJH7MKh7CIwS0Y7g8GVIXuoDeLcaU0NRn+AHJz2tpUoZMHOOBCDjoWqDU+xajQ5rMZOXdJXTnhUP9O1yprpeZhbYe4QeZArJKKc5oHAp+QQ/+CuED9xBi794NsSYMP8VoQZbvgaD685ka/OQpnJ7FEg=
+[2014-12-16 18:31:44]-[http://192.168.1.214/backend/web/index.php?r=document%2Fapi&action=frontend%5Ccontrollers%5CUserController%3A%3AactionUnBindCard]-[data] :response plain=busi_no=1&charset=UTF-8&media_id=13818483971&media_type=MOBILE&mer_id=25116&ret_code=0000&ret_msg=Ê≥®ÈîÄÊàêÂäü!&service=user_cancel&version=4.0
+[2014-12-16 18:31:44]-[http://192.168.1.214/backend/web/index.php?r=document%2Fapi&action=frontend%5Ccontrollers%5CUserController%3A%3AactionUnBindCard]-[data] :verify:1
+[2014-12-16 19:43:30]-[]-[data] :Request Para=array (
+  'service' => 'user_reg',
+  'sign_type' => 'RSA',
+  'mer_id' => '25116',
+  'version' => '4.0',
+  'charset' => 'UTF-8',
+  'pub_pri_flag' => '2',
+  'identity_type' => 'IDENTITY_CARD',
+  'identity_code' => '230406197906130229',
+  'card_id' => '555',
+  'card_holder' => 'ÈôàÈë´ÂΩ±',
+  'media_id' => '15140359509',
+  'card_type' => '0',
+  'busi_no' => '1',
+)
+[2014-12-16 19:43:30]-[]-[data] :The parameters of the request card_id RSA encryption
+[2014-12-16 19:43:30]-[]-[data] :ÊïèÊÑü‰ø°ÊÅØÂä†ÂØÜÂØÜÊñá:[pEptYOjh9gdzd3oucXA1CiGZWUVeVQHm3XpAL7L+BqaVRONObk53FJ7s9H1Hlt9LEUtpIu7ZtLoRCEs7/76mrBT1XLnsluf1IBruO4jn2nSo2LDe/tZe+0Jm8qASO+WKLI9b18AQjH2o4Le6f4qKTgcMr/JjnYIuWTKD8QXADJk=]
+[2014-12-16 19:43:30]-[]-[data] :The parameters of the request identity_code RSA encryption
+[2014-12-16 19:43:30]-[]-[data] :ÊïèÊÑü‰ø°ÊÅØÂä†ÂØÜÂØÜÊñá:[jMk11AiGv7lk106rWvTQGhjB3C1JINk0fdp2b5+V+ZyhmDyZUilpVZZDwqmXZCfLOjnlkJhJqSv5RjltIDf85is4FmzogAU9+qKGLz9a/zyrnOUd/q+UOopa2S0cgR8AIbTEQMJYyrsgRWdMbY8MDPZYc41fhQBdaGWYEtO/HFc=]
+[2014-12-16 19:43:30]-[]-[data] :The parameters of the request card_holder RSA encryption
+[2014-12-16 19:43:30]-[]-[data] :ÊïèÊÑü‰ø°ÊÅØÂä†ÂØÜÂØÜÊñá:[ADRaSwQ14CiZon7MLX/dMHjQAfDtq8uXIn0CTZphoCdtnp9HB1hPWE2b00vIpqFTPS2WX/uspnEd1jF+FLbrVyPJPT/06g1SSlH3pHkmNO04Kn1m7Ty13LY9dAHxUwKfzJ2yMDFR74laVP1h1MjV9/NM/+Z1IjxH9gC318gFLSo=]
+[2014-12-16 19:43:30]-[]-[data] :Participate in the signature parametersÔºö[busi_no=1&card_holder=ADRaSwQ14CiZon7MLX/dMHjQAfDtq8uXIn0CTZphoCdtnp9HB1hPWE2b00vIpqFTPS2WX/uspnEd1jF+FLbrVyPJPT/06g1SSlH3pHkmNO04Kn1m7Ty13LY9dAHxUwKfzJ2yMDFR74laVP1h1MjV9/NM/+Z1IjxH9gC318gFLSo=&card_id=pEptYOjh9gdzd3oucXA1CiGZWUVeVQHm3XpAL7L+BqaVRONObk53FJ7s9H1Hlt9LEUtpIu7ZtLoRCEs7/76mrBT1XLnsluf1IBruO4jn2nSo2LDe/tZe+0Jm8qASO+WKLI9b18AQjH2o4Le6f4qKTgcMr/JjnYIuWTKD8QXADJk=&card_type=0&charset=UTF-8&identity_code=jMk11AiGv7lk106rWvTQGhjB3C1JINk0fdp2b5+V+ZyhmDyZUilpVZZDwqmXZCfLOjnlkJhJqSv5RjltIDf85is4FmzogAU9+qKGLz9a/zyrnOUd/q+UOopa2S0cgR8AIbTEQMJYyrsgRWdMbY8MDPZYc41fhQBdaGWYEtO/HFc=&identity_type=IDENTITY_CARD&media_id=15140359509&mer_id=25116&pub_pri_flag=2&service=user_reg&version=4.0],Merchant number isÔºö[25116]
+[2014-12-16 19:43:30]-[]-[data] :The private key path forÔºö/opt/lampp/htdocs/common/config/cert/25116_wenzhoudai.key.pem
+[2014-12-16 19:43:30]-[]-[data] :Signature string forÔºö…ﬂÉãŒ¬TûÎñ}tœ]Ìê-rG}E±°†¬xûëR‚qÔêìù{’û°ñÉ⁄·'pˆˆ¸ˇ÷=f≤_ºQ∂çP*Ò0Ì¸–ï^c∏d÷x€∑_*“KSﬁµ{˚Ÿ◊xF:jjë-Ö	ã„î¥2]´±Ÿ§≥Óé g	ˇ!¬
+[2014-12-16 19:43:30]-[]-[data] :Request platform way=get
+[2014-12-16 19:43:30]-[]-[data] :Request platform signature string=yQPfg4vOwlSe65Z9dM9dFu2QLQMSckd9RbGhoMJ4npFS4nHvkJMVnXvVnqGWg9rhJwtw9vb8/9Y9ZrJfArxRto1QHyrxHjDt/BbQA5VeYwG4ZNZ42x63XyrSSwNT3rV7+9nXeEYbOmpqkS2FCYvjlLQyXaux2aSz7o4AZwn/IcI=
+[2014-12-16 19:43:30]-[]-[data] :Clear information request platform=busi_no=1&card_holder=ADRaSwQ14CiZon7MLX/dMHjQAfDtq8uXIn0CTZphoCdtnp9HB1hPWE2b00vIpqFTPS2WX/uspnEd1jF+FLbrVyPJPT/06g1SSlH3pHkmNO04Kn1m7Ty13LY9dAHxUwKfzJ2yMDFR74laVP1h1MjV9/NM/+Z1IjxH9gC318gFLSo=&card_id=pEptYOjh9gdzd3oucXA1CiGZWUVeVQHm3XpAL7L+BqaVRONObk53FJ7s9H1Hlt9LEUtpIu7ZtLoRCEs7/76mrBT1XLnsluf1IBruO4jn2nSo2LDe/tZe+0Jm8qASO+WKLI9b18AQjH2o4Le6f4qKTgcMr/JjnYIuWTKD8QXADJk=&card_type=0&charset=UTF-8&identity_code=jMk11AiGv7lk106rWvTQGhjB3C1JINk0fdp2b5+V+ZyhmDyZUilpVZZDwqmXZCfLOjnlkJhJqSv5RjltIDf85is4FmzogAU9+qKGLz9a/zyrnOUd/q+UOopa2S0cgR8AIbTEQMJYyrsgRWdMbY8MDPZYc41fhQBdaGWYEtO/HFc=&identity_type=IDENTITY_CARD&media_id=15140359509&mer_id=25116&pub_pri_flag=2&service=user_reg&version=4.0
+[2014-12-16 19:43:30]-[]-[data] :The service user_reg request platform to get the address url=http://pay.soopay.net/spay/pay/payservice.do?busi_no=1&card_holder=ADRaSwQ14CiZon7MLX%2FdMHjQAfDtq8uXIn0CTZphoCdtnp9HB1hPWE2b00vIpqFTPS2WX%2FuspnEd1jF%2BFLbrVyPJPT%2F06g1SSlH3pHkmNO04Kn1m7Ty13LY9dAHxUwKfzJ2yMDFR74laVP1h1MjV9%2FNM%2F%2BZ1IjxH9gC318gFLSo%3D&card_id=pEptYOjh9gdzd3oucXA1CiGZWUVeVQHm3XpAL7L%2BBqaVRONObk53FJ7s9H1Hlt9LEUtpIu7ZtLoRCEs7%2F76mrBT1XLnsluf1IBruO4jn2nSo2LDe%2FtZe%2B0Jm8qASO%2BWKLI9b18AQjH2o4Le6f4qKTgcMr%2FJjnYIuWTKD8QXADJk%3D&card_type=0&charset=UTF-8&identity_code=jMk11AiGv7lk106rWvTQGhjB3C1JINk0fdp2b5%2BV%2BZyhmDyZUilpVZZDwqmXZCfLOjnlkJhJqSv5RjltIDf85is4FmzogAU9%2BqKGLz9a%2FzyrnOUd%2Fq%2BUOopa2S0cgR8AIbTEQMJYyrsgRWdMbY8MDPZYc41fhQBdaGWYEtO%2FHFc%3D&identity_type=IDENTITY_CARD&media_id=15140359509&mer_id=25116&pub_pri_flag=2&service=user_reg&sign_type=RSA&version=4.0&sign=yQPfg4vOwlSe65Z9dM9dFu2QLQMSckd9RbGhoMJ4npFS4nHvkJMVnXvVnqGWg9rhJwtw9vb8/9Y9ZrJfArxRto1QHyrxHjDt/BbQA5VeYwG4ZNZ42x63XyrSSwNT3rV7+9nXeEYbOmpqkS2FCYvjlLQyXaux2aSz7o4AZwn/IcI=
+[2014-12-16 19:43:30]-[]-[data] :plat response mer data:busi_no=1&card_holder=ADRaSwQ14CiZon7MLX/dMHjQAfDtq8uXIn0CTZphoCdtnp9HB1hPWE2b00vIpqFTPS2WX/uspnEd1jF+FLbrVyPJPT/06g1SSlH3pHkmNO04Kn1m7Ty13LY9dAHxUwKfzJ2yMDFR74laVP1h1MjV9/NM/+Z1IjxH9gC318gFLSo=&card_id=pEptYOjh9gdzd3oucXA1CiGZWUVeVQHm3XpAL7L+BqaVRONObk53FJ7s9H1Hlt9LEUtpIu7ZtLoRCEs7/76mrBT1XLnsluf1IBruO4jn2nSo2LDe/tZe+0Jm8qASO+WKLI9b18AQjH2o4Le6f4qKTgcMr/JjnYIuWTKD8QXADJk=&card_type=0&charset=UTF-8&identity_code=jMk11AiGv7lk106rWvTQGhjB3C1JINk0fdp2b5+V+ZyhmDyZUilpVZZDwqmXZCfLOjnlkJhJqSv5RjltIDf85is4FmzogAU9+qKGLz9a/zyrnOUd/q+UOopa2S0cgR8AIbTEQMJYyrsgRWdMbY8MDPZYc41fhQBdaGWYEtO/HFc=&identity_type=IDENTITY_CARD&media_id=15140359509&mer_id=25116&pub_pri_flag=2&ret_code=00060116&ret_msg=‰∏çÊîØÊåÅÁöÑÈì∂Ë°åÂç°&service=user_reg&sign_type=RSA&version=4.0&sign=kTM24jvmfuyE7GUXPoCgc39CtJxEsfoYdHfw0g63P70HV5vkcI+E+Q1HByB4lTlGPqB7sNoSSWv61OEx4HpHvVdeKdLpKGB75gJYOZH758qXtgdPUg9mdib1FSsxBsbiIFTJ4561XLZnhaQ0In62e4mmS1g0G2r8/7xJSSV2SEM=
+[2014-12-16 19:43:30]-[]-[data] :interface fields:merId,goodsId,orderId,merDate,retCode,retMsg,version,sign
+[2014-12-16 19:43:30]-[]-[data] :response sign=busi_no=1&card_holder=ADRaSwQ14CiZon7MLX/dMHjQAfDtq8uXIn0CTZphoCdtnp9HB1hPWE2b00vIpqFTPS2WX/uspnEd1jF+FLbrVyPJPT/06g1SSlH3pHkmNO04Kn1m7Ty13LY9dAHxUwKfzJ2yMDFR74laVP1h1MjV9/NM/+Z1IjxH9gC318gFLSo=&card_id=pEptYOjh9gdzd3oucXA1CiGZWUVeVQHm3XpAL7L+BqaVRONObk53FJ7s9H1Hlt9LEUtpIu7ZtLoRCEs7/76mrBT1XLnsluf1IBruO4jn2nSo2LDe/tZe+0Jm8qASO+WKLI9b18AQjH2o4Le6f4qKTgcMr/JjnYIuWTKD8QXADJk=&card_type=0&charset=UTF-8&identity_code=jMk11AiGv7lk106rWvTQGhjB3C1JINk0fdp2b5+V+ZyhmDyZUilpVZZDwqmXZCfLOjnlkJhJqSv5RjltIDf85is4FmzogAU9+qKGLz9a/zyrnOUd/q+UOopa2S0cgR8AIbTEQMJYyrsgRWdMbY8MDPZYc41fhQBdaGWYEtO/HFc=&identity_type=IDENTITY_CARD&media_id=15140359509&mer_id=25116&pub_pri_flag=2&ret_code=00060116&ret_msg=‰∏çÊîØÊåÅÁöÑÈì∂Ë°åÂç°&service=user_reg&sign_type=RSA&version=4.0
+[2014-12-16 19:43:30]-[]-[data] :response sign=kTM24jvmfuyE7GUXPoCgc39CtJxEsfoYdHfw0g63P70HV5vkcI+E+Q1HByB4lTlGPqB7sNoSSWv61OEx4HpHvVdeKdLpKGB75gJYOZH758qXtgdPUg9mdib1FSsxBsbiIFTJ4561XLZnhaQ0In62e4mmS1g0G2r8/7xJSSV2SEM=
+[2014-12-16 19:43:30]-[]-[data] :response plain=busi_no=1&card_holder=ADRaSwQ14CiZon7MLX/dMHjQAfDtq8uXIn0CTZphoCdtnp9HB1hPWE2b00vIpqFTPS2WX/uspnEd1jF+FLbrVyPJPT/06g1SSlH3pHkmNO04Kn1m7Ty13LY9dAHxUwKfzJ2yMDFR74laVP1h1MjV9/NM/+Z1IjxH9gC318gFLSo=&card_id=pEptYOjh9gdzd3oucXA1CiGZWUVeVQHm3XpAL7L+BqaVRONObk53FJ7s9H1Hlt9LEUtpIu7ZtLoRCEs7/76mrBT1XLnsluf1IBruO4jn2nSo2LDe/tZe+0Jm8qASO+WKLI9b18AQjH2o4Le6f4qKTgcMr/JjnYIuWTKD8QXADJk=&card_type=0&charset=UTF-8&identity_code=jMk11AiGv7lk106rWvTQGhjB3C1JINk0fdp2b5+V+ZyhmDyZUilpVZZDwqmXZCfLOjnlkJhJqSv5RjltIDf85is4FmzogAU9+qKGLz9a/zyrnOUd/q+UOopa2S0cgR8AIbTEQMJYyrsgRWdMbY8MDPZYc41fhQBdaGWYEtO/HFc=&identity_type=IDENTITY_CARD&media_id=15140359509&mer_id=25116&pub_pri_flag=2&ret_code=00060116&ret_msg=‰∏çÊîØÊåÅÁöÑÈì∂Ë°åÂç°&service=user_reg&version=4.0
+[2014-12-16 19:43:30]-[]-[data] :verify:1
+[2014-12-16 19:43:47]-[]-[data] :Request Para=array (
+  'service' => 'user_reg',
+  'sign_type' => 'RSA',
+  'mer_id' => '25116',
+  'version' => '4.0',
+  'charset' => 'UTF-8',
+  'pub_pri_flag' => '2',
+  'identity_type' => 'IDENTITY_CARD',
+  'identity_code' => '230406197906130229',
+  'card_id' => '6221585556258557565887',
+  'card_holder' => 'ÈôàÈë´ÂΩ±',
+  'media_id' => '15140359509',
+  'card_type' => '0',
+  'busi_no' => '1',
+)
+[2014-12-16 19:43:47]-[]-[data] :The parameters of the request card_id RSA encryption
+[2014-12-16 19:43:47]-[]-[data] :ÊïèÊÑü‰ø°ÊÅØÂä†ÂØÜÂØÜÊñá:[RlYX2nKJAzlqIBBp6mi67MdcJxXqWZ4jjgYxh5icVZIZ99GqiCP8ek7i10pB4H6VdhOW7mx33kAY9TY6zvOjvUoqf3pE2yLFs8x/7danzxpV3lRnRIN00/gHI4bBoMElQTSsKUbLTcuD8AUm8IlTXMI5SWrdXNWqJOSmhuLsp/k=]
+[2014-12-16 19:43:47]-[]-[data] :The parameters of the request identity_code RSA encryption
+[2014-12-16 19:43:47]-[]-[data] :ÊïèÊÑü‰ø°ÊÅØÂä†ÂØÜÂØÜÊñá:[Ob0EKPHGCu3NWcySlFIWJZ/M9cu/L8/9y5agHtSZJTFBg4+7m/BBE8fdnw87E3NWVMpxhpStw7MJF3jF49lFVJgB5MXbgmDYmcTTUMVBPyLJNKI/xJHDct6lLjlucGagJVXO6jYew+KK77yZw6EAG8s9rbioABQ1TkZ+TP6Q3vA=]
+[2014-12-16 19:43:47]-[]-[data] :The parameters of the request card_holder RSA encryption
+[2014-12-16 19:43:47]-[]-[data] :ÊïèÊÑü‰ø°ÊÅØÂä†ÂØÜÂØÜÊñá:[HOkfK/BiWfFSAagZAnQirvAUWGDUaX2G3DnLn6CS8A48nptBPCQAS+9pie3iMC/kT2l16n24Sq5iEtVTXW8hTB332JABTM7CNqd7hE1lbUrhJWHoURG5gdH6MHRmveOR7YUI/EoWRN5xw3JTO0mW5AqhDVl9ITNJyRoHWDP9EUM=]
+[2014-12-16 19:43:47]-[]-[data] :Participate in the signature parametersÔºö[busi_no=1&card_holder=HOkfK/BiWfFSAagZAnQirvAUWGDUaX2G3DnLn6CS8A48nptBPCQAS+9pie3iMC/kT2l16n24Sq5iEtVTXW8hTB332JABTM7CNqd7hE1lbUrhJWHoURG5gdH6MHRmveOR7YUI/EoWRN5xw3JTO0mW5AqhDVl9ITNJyRoHWDP9EUM=&card_id=RlYX2nKJAzlqIBBp6mi67MdcJxXqWZ4jjgYxh5icVZIZ99GqiCP8ek7i10pB4H6VdhOW7mx33kAY9TY6zvOjvUoqf3pE2yLFs8x/7danzxpV3lRnRIN00/gHI4bBoMElQTSsKUbLTcuD8AUm8IlTXMI5SWrdXNWqJOSmhuLsp/k=&card_type=0&charset=UTF-8&identity_code=Ob0EKPHGCu3NWcySlFIWJZ/M9cu/L8/9y5agHtSZJTFBg4+7m/BBE8fdnw87E3NWVMpxhpStw7MJF3jF49lFVJgB5MXbgmDYmcTTUMVBPyLJNKI/xJHDct6lLjlucGagJVXO6jYew+KK77yZw6EAG8s9rbioABQ1TkZ+TP6Q3vA=&identity_type=IDENTITY_CARD&media_id=15140359509&mer_id=25116&pub_pri_flag=2&service=user_reg&version=4.0],Merchant number isÔºö[25116]
+[2014-12-16 19:43:47]-[]-[data] :The private key path forÔºö/opt/lampp/htdocs/common/config/cert/25116_wenzhoudai.key.pem
+[2014-12-16 19:43:47]-[]-[data] :Signature string forÔºöY¢
+¬$Nø~àµ}û˜öRÑ_€BΩäZQ`Ä6ûû &Òi#ê<˙ëÁñïÑ]π']˚ıNÕfkœt¶ﬁOruß‹∫˛9åîn~ïê0œ~°ı∑wkçUØönc$ùç∞• ÛÕ¥§ã÷Ÿ+T™ì™ .ΩÒé˙{ö®ó
+[2014-12-16 19:43:47]-[]-[data] :Request platform way=get
+[2014-12-16 19:43:47]-[]-[data] :Request platform signature string=WaIKAsIkTr9+iLV9nveaUg8FhF/bQr2KWlFggDaensoHJvFpI5A8+pHnlpWEXbknXfv1Ts1ma890pt5PcnUQpxLcuv45jJRufpWQFjDPfqEQHQL1t3drjVUar5puYxUknY2wpcrzzbSki9bZK1QfqpOqIA0uDL0I8Y4B+nuaqJc=
+[2014-12-16 19:43:47]-[]-[data] :Clear information request platform=busi_no=1&card_holder=HOkfK/BiWfFSAagZAnQirvAUWGDUaX2G3DnLn6CS8A48nptBPCQAS+9pie3iMC/kT2l16n24Sq5iEtVTXW8hTB332JABTM7CNqd7hE1lbUrhJWHoURG5gdH6MHRmveOR7YUI/EoWRN5xw3JTO0mW5AqhDVl9ITNJyRoHWDP9EUM=&card_id=RlYX2nKJAzlqIBBp6mi67MdcJxXqWZ4jjgYxh5icVZIZ99GqiCP8ek7i10pB4H6VdhOW7mx33kAY9TY6zvOjvUoqf3pE2yLFs8x/7danzxpV3lRnRIN00/gHI4bBoMElQTSsKUbLTcuD8AUm8IlTXMI5SWrdXNWqJOSmhuLsp/k=&card_type=0&charset=UTF-8&identity_code=Ob0EKPHGCu3NWcySlFIWJZ/M9cu/L8/9y5agHtSZJTFBg4+7m/BBE8fdnw87E3NWVMpxhpStw7MJF3jF49lFVJgB5MXbgmDYmcTTUMVBPyLJNKI/xJHDct6lLjlucGagJVXO6jYew+KK77yZw6EAG8s9rbioABQ1TkZ+TP6Q3vA=&identity_type=IDENTITY_CARD&media_id=15140359509&mer_id=25116&pub_pri_flag=2&service=user_reg&version=4.0
+[2014-12-16 19:43:47]-[]-[data] :The service user_reg request platform to get the address url=http://pay.soopay.net/spay/pay/payservice.do?busi_no=1&card_holder=HOkfK%2FBiWfFSAagZAnQirvAUWGDUaX2G3DnLn6CS8A48nptBPCQAS%2B9pie3iMC%2FkT2l16n24Sq5iEtVTXW8hTB332JABTM7CNqd7hE1lbUrhJWHoURG5gdH6MHRmveOR7YUI%2FEoWRN5xw3JTO0mW5AqhDVl9ITNJyRoHWDP9EUM%3D&card_id=RlYX2nKJAzlqIBBp6mi67MdcJxXqWZ4jjgYxh5icVZIZ99GqiCP8ek7i10pB4H6VdhOW7mx33kAY9TY6zvOjvUoqf3pE2yLFs8x%2F7danzxpV3lRnRIN00%2FgHI4bBoMElQTSsKUbLTcuD8AUm8IlTXMI5SWrdXNWqJOSmhuLsp%2Fk%3D&card_type=0&charset=UTF-8&identity_code=Ob0EKPHGCu3NWcySlFIWJZ%2FM9cu%2FL8%2F9y5agHtSZJTFBg4%2B7m%2FBBE8fdnw87E3NWVMpxhpStw7MJF3jF49lFVJgB5MXbgmDYmcTTUMVBPyLJNKI%2FxJHDct6lLjlucGagJVXO6jYew%2BKK77yZw6EAG8s9rbioABQ1TkZ%2BTP6Q3vA%3D&identity_type=IDENTITY_CARD&media_id=15140359509&mer_id=25116&pub_pri_flag=2&service=user_reg&sign_type=RSA&version=4.0&sign=WaIKAsIkTr9+iLV9nveaUg8FhF/bQr2KWlFggDaensoHJvFpI5A8+pHnlpWEXbknXfv1Ts1ma890pt5PcnUQpxLcuv45jJRufpWQFjDPfqEQHQL1t3drjVUar5puYxUknY2wpcrzzbSki9bZK1QfqpOqIA0uDL0I8Y4B+nuaqJc=
+[2014-12-16 19:43:47]-[]-[data] :plat response mer data:busi_no=1&card_holder=HOkfK/BiWfFSAagZAnQirvAUWGDUaX2G3DnLn6CS8A48nptBPCQAS+9pie3iMC/kT2l16n24Sq5iEtVTXW8hTB332JABTM7CNqd7hE1lbUrhJWHoURG5gdH6MHRmveOR7YUI/EoWRN5xw3JTO0mW5AqhDVl9ITNJyRoHWDP9EUM=&card_id=RlYX2nKJAzlqIBBp6mi67MdcJxXqWZ4jjgYxh5icVZIZ99GqiCP8ek7i10pB4H6VdhOW7mx33kAY9TY6zvOjvUoqf3pE2yLFs8x/7danzxpV3lRnRIN00/gHI4bBoMElQTSsKUbLTcuD8AUm8IlTXMI5SWrdXNWqJOSmhuLsp/k=&card_type=0&charset=UTF-8&identity_code=Ob0EKPHGCu3NWcySlFIWJZ/M9cu/L8/9y5agHtSZJTFBg4+7m/BBE8fdnw87E3NWVMpxhpStw7MJF3jF49lFVJgB5MXbgmDYmcTTUMVBPyLJNKI/xJHDct6lLjlucGagJVXO6jYew+KK77yZw6EAG8s9rbioABQ1TkZ+TP6Q3vA=&identity_type=IDENTITY_CARD&media_id=15140359509&mer_id=25116&pub_pri_flag=2&ret_code=00060116&ret_msg=‰∏çÊîØÊåÅÁöÑÈì∂Ë°åÂç°&service=user_reg&sign_type=RSA&version=4.0&sign=jy8dxL8eWZUty+lS9hCCDnVXQxzx0lovKT1Wa2He/GfRrctC0DCe71p9HUDjOmtuQ4AER+YXiqyrWj2A30kXCNJhELpG6fzvMAmyVEKvocz+MUhyBgl7frqVw/YoVo02fP1UlAak+MFBTbrLvGcMeU48sxMOlSOzKrysWKQ8wgk=
+[2014-12-16 19:43:47]-[]-[data] :interface fields:merId,goodsId,orderId,merDate,retCode,retMsg,version,sign
+[2014-12-16 19:43:47]-[]-[data] :response sign=busi_no=1&card_holder=HOkfK/BiWfFSAagZAnQirvAUWGDUaX2G3DnLn6CS8A48nptBPCQAS+9pie3iMC/kT2l16n24Sq5iEtVTXW8hTB332JABTM7CNqd7hE1lbUrhJWHoURG5gdH6MHRmveOR7YUI/EoWRN5xw3JTO0mW5AqhDVl9ITNJyRoHWDP9EUM=&card_id=RlYX2nKJAzlqIBBp6mi67MdcJxXqWZ4jjgYxh5icVZIZ99GqiCP8ek7i10pB4H6VdhOW7mx33kAY9TY6zvOjvUoqf3pE2yLFs8x/7danzxpV3lRnRIN00/gHI4bBoMElQTSsKUbLTcuD8AUm8IlTXMI5SWrdXNWqJOSmhuLsp/k=&card_type=0&charset=UTF-8&identity_code=Ob0EKPHGCu3NWcySlFIWJZ/M9cu/L8/9y5agHtSZJTFBg4+7m/BBE8fdnw87E3NWVMpxhpStw7MJF3jF49lFVJgB5MXbgmDYmcTTUMVBPyLJNKI/xJHDct6lLjlucGagJVXO6jYew+KK77yZw6EAG8s9rbioABQ1TkZ+TP6Q3vA=&identity_type=IDENTITY_CARD&media_id=15140359509&mer_id=25116&pub_pri_flag=2&ret_code=00060116&ret_msg=‰∏çÊîØÊåÅÁöÑÈì∂Ë°åÂç°&service=user_reg&sign_type=RSA&version=4.0
+[2014-12-16 19:43:47]-[]-[data] :response sign=jy8dxL8eWZUty+lS9hCCDnVXQxzx0lovKT1Wa2He/GfRrctC0DCe71p9HUDjOmtuQ4AER+YXiqyrWj2A30kXCNJhELpG6fzvMAmyVEKvocz+MUhyBgl7frqVw/YoVo02fP1UlAak+MFBTbrLvGcMeU48sxMOlSOzKrysWKQ8wgk=
+[2014-12-16 19:43:47]-[]-[data] :response plain=busi_no=1&card_holder=HOkfK/BiWfFSAagZAnQirvAUWGDUaX2G3DnLn6CS8A48nptBPCQAS+9pie3iMC/kT2l16n24Sq5iEtVTXW8hTB332JABTM7CNqd7hE1lbUrhJWHoURG5gdH6MHRmveOR7YUI/EoWRN5xw3JTO0mW5AqhDVl9ITNJyRoHWDP9EUM=&card_id=RlYX2nKJAzlqIBBp6mi67MdcJxXqWZ4jjgYxh5icVZIZ99GqiCP8ek7i10pB4H6VdhOW7mx33kAY9TY6zvOjvUoqf3pE2yLFs8x/7danzxpV3lRnRIN00/gHI4bBoMElQTSsKUbLTcuD8AUm8IlTXMI5SWrdXNWqJOSmhuLsp/k=&card_type=0&charset=UTF-8&identity_code=Ob0EKPHGCu3NWcySlFIWJZ/M9cu/L8/9y5agHtSZJTFBg4+7m/BBE8fdnw87E3NWVMpxhpStw7MJF3jF49lFVJgB5MXbgmDYmcTTUMVBPyLJNKI/xJHDct6lLjlucGagJVXO6jYew+KK77yZw6EAG8s9rbioABQ1TkZ+TP6Q3vA=&identity_type=IDENTITY_CARD&media_id=15140359509&mer_id=25116&pub_pri_flag=2&ret_code=00060116&ret_msg=‰∏çÊîØÊåÅÁöÑÈì∂Ë°åÂç°&service=user_reg&version=4.0
+[2014-12-16 19:43:47]-[]-[data] :verify:1
+[2014-12-16 19:44:30]-[]-[data] :Request Para=array (
+  'service' => 'user_reg',
+  'sign_type' => 'RSA',
+  'mer_id' => '25116',
+  'version' => '4.0',
+  'charset' => 'UTF-8',
+  'pub_pri_flag' => '2',
+  'identity_type' => 'IDENTITY_CARD',
+  'identity_code' => '230406197906130229',
+  'card_id' => '62227002920730451804',
+  'card_holder' => 'ÈôàÈë´ÂΩ±',
+  'media_id' => '15140359509',
+  'card_type' => '0',
+  'busi_no' => '1',
+)
+[2014-12-16 19:44:30]-[]-[data] :The parameters of the request card_id RSA encryption
+[2014-12-16 19:44:30]-[]-[data] :ÊïèÊÑü‰ø°ÊÅØÂä†ÂØÜÂØÜÊñá:[keyyZbbp8AQQfjwVQpl1dPgzl7pIRb1FLc1oKPAaqVyqrAQdkjEaZ0+B+K5VWFMZMcYehz9Hcil9d7ycQ05Q7npDrzD03AfoPV8CIdjYw4R0EkWVWYBBvMS6Qnkv9EiAwmPzPLmhotqvTx4B0sP7osuLYwtP27VjFiRIlcvAvcI=]
+[2014-12-16 19:44:30]-[]-[data] :The parameters of the request identity_code RSA encryption
+[2014-12-16 19:44:30]-[]-[data] :ÊïèÊÑü‰ø°ÊÅØÂä†ÂØÜÂØÜÊñá:[HvG0d3/oLLsqv+Ogas9VI7qkLJmCOEhLEhxiKxsBagC+FliAPA1BpAOiG0xx0CSEs6U464mN+1yaEdzaXTt5wM6yThJHFq5N/kTte95DjrVJY6hxYgZx0s6k+MpkrcuYeDIt0fFU5jZjeVik2oQ5Y0hNLi4eyEYtpnQfNFjrn5M=]
+[2014-12-16 19:44:30]-[]-[data] :The parameters of the request card_holder RSA encryption
+[2014-12-16 19:44:30]-[]-[data] :ÊïèÊÑü‰ø°ÊÅØÂä†ÂØÜÂØÜÊñá:[a6E5jSLl3h0eqmL9M6WnQeY9L7jgqP88uG4Htmiabn/chUVIxl/W5XuNEq4gcupuP/IaG+Izv55VXfwy5zpvUYqWrS0daAJucZgyCeIuQu7z/FaGJlXTA16yWKRCjr8s/nNsbnVX4W2tZlW7XE4U37N4WN3ibBt3aHhd0vw+k0U=]
+[2014-12-16 19:44:30]-[]-[data] :Participate in the signature parametersÔºö[busi_no=1&card_holder=a6E5jSLl3h0eqmL9M6WnQeY9L7jgqP88uG4Htmiabn/chUVIxl/W5XuNEq4gcupuP/IaG+Izv55VXfwy5zpvUYqWrS0daAJucZgyCeIuQu7z/FaGJlXTA16yWKRCjr8s/nNsbnVX4W2tZlW7XE4U37N4WN3ibBt3aHhd0vw+k0U=&card_id=keyyZbbp8AQQfjwVQpl1dPgzl7pIRb1FLc1oKPAaqVyqrAQdkjEaZ0+B+K5VWFMZMcYehz9Hcil9d7ycQ05Q7npDrzD03AfoPV8CIdjYw4R0EkWVWYBBvMS6Qnkv9EiAwmPzPLmhotqvTx4B0sP7osuLYwtP27VjFiRIlcvAvcI=&card_type=0&charset=UTF-8&identity_code=HvG0d3/oLLsqv+Ogas9VI7qkLJmCOEhLEhxiKxsBagC+FliAPA1BpAOiG0xx0CSEs6U464mN+1yaEdzaXTt5wM6yThJHFq5N/kTte95DjrVJY6hxYgZx0s6k+MpkrcuYeDIt0fFU5jZjeVik2oQ5Y0hNLi4eyEYtpnQfNFjrn5M=&identity_type=IDENTITY_CARD&media_id=15140359509&mer_id=25116&pub_pri_flag=2&service=user_reg&version=4.0],Merchant number isÔºö[25116]
+[2014-12-16 19:44:30]-[]-[data] :The private key path forÔºö/opt/lampp/htdocs/common/config/cert/25116_wenzhoudai.key.pem
+[2014-12-16 19:44:30]-[]-[data] :Signature string forÔºöÒ˘&>u”n!44A∏œl:±7“˘ÖY,y´à.ﬂ2πeñuÔç¥D,û<Wx^
+i/9LEÇs˙r—1SêM¥ºlF∫pæjÿ· Øı∫˝™\*BVÂ~/+ ÓC1ÀÑ˜tZ°≈Æª”∆§µF;◊6°êNiÚÇ@/'Ê¢bö
+[2014-12-16 19:44:30]-[]-[data] :Request platform way=get
+[2014-12-16 19:44:30]-[]-[data] :Request platform signature string=CPH5Jj51024hNDRBuM9sOrEVN9L5hVkseauIGi4c3zK5GWWWde+NtEQYLJ48CFd4XgppLzlMRYJz+nLRMVOQTbS8bEa6cL5qBtgW4SAFBK/1uv2qXCpCVuV+Lysg7kMxy4T3dFqhxa6708aktUY71zYeGaGQTmnygkAvJ+aiYpo=
+[2014-12-16 19:44:30]-[]-[data] :Clear information request platform=busi_no=1&card_holder=a6E5jSLl3h0eqmL9M6WnQeY9L7jgqP88uG4Htmiabn/chUVIxl/W5XuNEq4gcupuP/IaG+Izv55VXfwy5zpvUYqWrS0daAJucZgyCeIuQu7z/FaGJlXTA16yWKRCjr8s/nNsbnVX4W2tZlW7XE4U37N4WN3ibBt3aHhd0vw+k0U=&card_id=keyyZbbp8AQQfjwVQpl1dPgzl7pIRb1FLc1oKPAaqVyqrAQdkjEaZ0+B+K5VWFMZMcYehz9Hcil9d7ycQ05Q7npDrzD03AfoPV8CIdjYw4R0EkWVWYBBvMS6Qnkv9EiAwmPzPLmhotqvTx4B0sP7osuLYwtP27VjFiRIlcvAvcI=&card_type=0&charset=UTF-8&identity_code=HvG0d3/oLLsqv+Ogas9VI7qkLJmCOEhLEhxiKxsBagC+FliAPA1BpAOiG0xx0CSEs6U464mN+1yaEdzaXTt5wM6yThJHFq5N/kTte95DjrVJY6hxYgZx0s6k+MpkrcuYeDIt0fFU5jZjeVik2oQ5Y0hNLi4eyEYtpnQfNFjrn5M=&identity_type=IDENTITY_CARD&media_id=15140359509&mer_id=25116&pub_pri_flag=2&service=user_reg&version=4.0
+[2014-12-16 19:44:30]-[]-[data] :The service user_reg request platform to get the address url=http://pay.soopay.net/spay/pay/payservice.do?busi_no=1&card_holder=a6E5jSLl3h0eqmL9M6WnQeY9L7jgqP88uG4Htmiabn%2FchUVIxl%2FW5XuNEq4gcupuP%2FIaG%2BIzv55VXfwy5zpvUYqWrS0daAJucZgyCeIuQu7z%2FFaGJlXTA16yWKRCjr8s%2FnNsbnVX4W2tZlW7XE4U37N4WN3ibBt3aHhd0vw%2Bk0U%3D&card_id=keyyZbbp8AQQfjwVQpl1dPgzl7pIRb1FLc1oKPAaqVyqrAQdkjEaZ0%2BB%2BK5VWFMZMcYehz9Hcil9d7ycQ05Q7npDrzD03AfoPV8CIdjYw4R0EkWVWYBBvMS6Qnkv9EiAwmPzPLmhotqvTx4B0sP7osuLYwtP27VjFiRIlcvAvcI%3D&card_type=0&charset=UTF-8&identity_code=HvG0d3%2FoLLsqv%2BOgas9VI7qkLJmCOEhLEhxiKxsBagC%2BFliAPA1BpAOiG0xx0CSEs6U464mN%2B1yaEdzaXTt5wM6yThJHFq5N%2FkTte95DjrVJY6hxYgZx0s6k%2BMpkrcuYeDIt0fFU5jZjeVik2oQ5Y0hNLi4eyEYtpnQfNFjrn5M%3D&identity_type=IDENTITY_CARD&media_id=15140359509&mer_id=25116&pub_pri_flag=2&service=user_reg&sign_type=RSA&version=4.0&sign=CPH5Jj51024hNDRBuM9sOrEVN9L5hVkseauIGi4c3zK5GWWWde+NtEQYLJ48CFd4XgppLzlMRYJz+nLRMVOQTbS8bEa6cL5qBtgW4SAFBK/1uv2qXCpCVuV+Lysg7kMxy4T3dFqhxa6708aktUY71zYeGaGQTmnygkAvJ+aiYpo=
+[2014-12-16 19:44:30]-[]-[data] :plat response mer data:busi_no=1&card_holder=a6E5jSLl3h0eqmL9M6WnQeY9L7jgqP88uG4Htmiabn/chUVIxl/W5XuNEq4gcupuP/IaG+Izv55VXfwy5zpvUYqWrS0daAJucZgyCeIuQu7z/FaGJlXTA16yWKRCjr8s/nNsbnVX4W2tZlW7XE4U37N4WN3ibBt3aHhd0vw+k0U=&card_id=keyyZbbp8AQQfjwVQpl1dPgzl7pIRb1FLc1oKPAaqVyqrAQdkjEaZ0+B+K5VWFMZMcYehz9Hcil9d7ycQ05Q7npDrzD03AfoPV8CIdjYw4R0EkWVWYBBvMS6Qnkv9EiAwmPzPLmhotqvTx4B0sP7osuLYwtP27VjFiRIlcvAvcI=&card_type=0&charset=UTF-8&identity_code=HvG0d3/oLLsqv+Ogas9VI7qkLJmCOEhLEhxiKxsBagC+FliAPA1BpAOiG0xx0CSEs6U464mN+1yaEdzaXTt5wM6yThJHFq5N/kTte95DjrVJY6hxYgZx0s6k+MpkrcuYeDIt0fFU5jZjeVik2oQ5Y0hNLi4eyEYtpnQfNFjrn5M=&identity_type=IDENTITY_CARD&media_id=15140359509&mer_id=25116&pub_pri_flag=2&ret_code=00060116&ret_msg=‰∏çÊîØÊåÅÁöÑÈì∂Ë°åÂç°&service=user_reg&sign_type=RSA&version=4.0&sign=VaF2Rye6VRdWjE5PbRpuAGd9sxTB35GugeN8lqDok61omFfdibTFY3o8ZsHqdvsklf98KVvtCOe5sOMhQW2i51g1NtScp++DSYgNrIUw01Kf1C7ALgYE25xtApOiAtaJ5cpu583v21UhMDe0NEmQNWj9KLK8bYLdrE+Ej5gwjj4=
+[2014-12-16 19:44:30]-[]-[data] :interface fields:merId,goodsId,orderId,merDate,retCode,retMsg,version,sign
+[2014-12-16 19:44:30]-[]-[data] :response sign=busi_no=1&card_holder=a6E5jSLl3h0eqmL9M6WnQeY9L7jgqP88uG4Htmiabn/chUVIxl/W5XuNEq4gcupuP/IaG+Izv55VXfwy5zpvUYqWrS0daAJucZgyCeIuQu7z/FaGJlXTA16yWKRCjr8s/nNsbnVX4W2tZlW7XE4U37N4WN3ibBt3aHhd0vw+k0U=&card_id=keyyZbbp8AQQfjwVQpl1dPgzl7pIRb1FLc1oKPAaqVyqrAQdkjEaZ0+B+K5VWFMZMcYehz9Hcil9d7ycQ05Q7npDrzD03AfoPV8CIdjYw4R0EkWVWYBBvMS6Qnkv9EiAwmPzPLmhotqvTx4B0sP7osuLYwtP27VjFiRIlcvAvcI=&card_type=0&charset=UTF-8&identity_code=HvG0d3/oLLsqv+Ogas9VI7qkLJmCOEhLEhxiKxsBagC+FliAPA1BpAOiG0xx0CSEs6U464mN+1yaEdzaXTt5wM6yThJHFq5N/kTte95DjrVJY6hxYgZx0s6k+MpkrcuYeDIt0fFU5jZjeVik2oQ5Y0hNLi4eyEYtpnQfNFjrn5M=&identity_type=IDENTITY_CARD&media_id=15140359509&mer_id=25116&pub_pri_flag=2&ret_code=00060116&ret_msg=‰∏çÊîØÊåÅÁöÑÈì∂Ë°åÂç°&service=user_reg&sign_type=RSA&version=4.0
+[2014-12-16 19:44:30]-[]-[data] :response sign=VaF2Rye6VRdWjE5PbRpuAGd9sxTB35GugeN8lqDok61omFfdibTFY3o8ZsHqdvsklf98KVvtCOe5sOMhQW2i51g1NtScp++DSYgNrIUw01Kf1C7ALgYE25xtApOiAtaJ5cpu583v21UhMDe0NEmQNWj9KLK8bYLdrE+Ej5gwjj4=
+[2014-12-16 19:44:30]-[]-[data] :response plain=busi_no=1&card_holder=a6E5jSLl3h0eqmL9M6WnQeY9L7jgqP88uG4Htmiabn/chUVIxl/W5XuNEq4gcupuP/IaG+Izv55VXfwy5zpvUYqWrS0daAJucZgyCeIuQu7z/FaGJlXTA16yWKRCjr8s/nNsbnVX4W2tZlW7XE4U37N4WN3ibBt3aHhd0vw+k0U=&card_id=keyyZbbp8AQQfjwVQpl1dPgzl7pIRb1FLc1oKPAaqVyqrAQdkjEaZ0+B+K5VWFMZMcYehz9Hcil9d7ycQ05Q7npDrzD03AfoPV8CIdjYw4R0EkWVWYBBvMS6Qnkv9EiAwmPzPLmhotqvTx4B0sP7osuLYwtP27VjFiRIlcvAvcI=&card_type=0&charset=UTF-8&identity_code=HvG0d3/oLLsqv+Ogas9VI7qkLJmCOEhLEhxiKxsBagC+FliAPA1BpAOiG0xx0CSEs6U464mN+1yaEdzaXTt5wM6yThJHFq5N/kTte95DjrVJY6hxYgZx0s6k+MpkrcuYeDIt0fFU5jZjeVik2oQ5Y0hNLi4eyEYtpnQfNFjrn5M=&identity_type=IDENTITY_CARD&media_id=15140359509&mer_id=25116&pub_pri_flag=2&ret_code=00060116&ret_msg=‰∏çÊîØÊåÅÁöÑÈì∂Ë°åÂç°&service=user_reg&version=4.0
+[2014-12-16 19:44:30]-[]-[data] :verify:1
+[2014-12-16 19:45:23]-[]-[data] :Request Para=array (
+  'service' => 'user_reg',
+  'sign_type' => 'RSA',
+  'mer_id' => '25116',
+  'version' => '4.0',
+  'charset' => 'UTF-8',
+  'pub_pri_flag' => '2',
+  'identity_type' => 'IDENTITY_CARD',
+  'identity_code' => '230406197906130229',
+  'card_id' => '6227002920730451804',
+  'card_holder' => 'ÈôàÈë´ÂΩ±',
+  'media_id' => '15140359509',
+  'card_type' => '0',
+  'busi_no' => '1',
+)
+[2014-12-16 19:45:23]-[]-[data] :The parameters of the request card_id RSA encryption
+[2014-12-16 19:45:23]-[]-[data] :ÊïèÊÑü‰ø°ÊÅØÂä†ÂØÜÂØÜÊñá:[tMIC6ynWDhnHxL8B/g28H4QOFIIrgPShd0tkBcseMZ+4FdPBKvTgqLdSW2OzSUNWgg+Euc7My53/S+D/kWg1xcz3YwtPq7amz2wg5rKJ0jdUBgSCtf7SNWEkL9IWEwLtfvhb5DALluv6QP8snTUMYvOoNcVHjifiwPMVetzAIdw=]
+[2014-12-16 19:45:23]-[]-[data] :The parameters of the request identity_code RSA encryption
+[2014-12-16 19:45:23]-[]-[data] :ÊïèÊÑü‰ø°ÊÅØÂä†ÂØÜÂØÜÊñá:[SlXDacm6GSbV3zVBrLoHxRULkfI3g8lYAvhFFAsee4U6D5xL4KRA9/uRjLl3jEJclr2rsmaYRhYYrZBuk46oqiUOItN0p57sPr2cWHUR0xgozf1EabxNmR1AUFLXuauOU8F41lOaau9hhDezyBXECk0tNLlxN1NG22y/Imfrs8c=]
+[2014-12-16 19:45:23]-[]-[data] :The parameters of the request card_holder RSA encryption
+[2014-12-16 19:45:23]-[]-[data] :ÊïèÊÑü‰ø°ÊÅØÂä†ÂØÜÂØÜÊñá:[cUF80zK2mCTX7/Wh8sA/vxPj3nc9G8UcEcniz3ycBiWPUYXO0CuWlINElQ6K9z+kO/GbsG4gC50ayGLePaMekDcXNSxKW4ujtdCtvjHRJo6UqrBhDYOpoaZW54NcoQDdNlX1kEt1Ao3r/yaSzclvitizZFmgdu3omK8601jMdxA=]
+[2014-12-16 19:45:23]-[]-[data] :Participate in the signature parametersÔºö[busi_no=1&card_holder=cUF80zK2mCTX7/Wh8sA/vxPj3nc9G8UcEcniz3ycBiWPUYXO0CuWlINElQ6K9z+kO/GbsG4gC50ayGLePaMekDcXNSxKW4ujtdCtvjHRJo6UqrBhDYOpoaZW54NcoQDdNlX1kEt1Ao3r/yaSzclvitizZFmgdu3omK8601jMdxA=&card_id=tMIC6ynWDhnHxL8B/g28H4QOFIIrgPShd0tkBcseMZ+4FdPBKvTgqLdSW2OzSUNWgg+Euc7My53/S+D/kWg1xcz3YwtPq7amz2wg5rKJ0jdUBgSCtf7SNWEkL9IWEwLtfvhb5DALluv6QP8snTUMYvOoNcVHjifiwPMVetzAIdw=&card_type=0&charset=UTF-8&identity_code=SlXDacm6GSbV3zVBrLoHxRULkfI3g8lYAvhFFAsee4U6D5xL4KRA9/uRjLl3jEJclr2rsmaYRhYYrZBuk46oqiUOItN0p57sPr2cWHUR0xgozf1EabxNmR1AUFLXuauOU8F41lOaau9hhDezyBXECk0tNLlxN1NG22y/Imfrs8c=&identity_type=IDENTITY_CARD&media_id=15140359509&mer_id=25116&pub_pri_flag=2&service=user_reg&version=4.0],Merchant number isÔºö[25116]
+[2014-12-16 19:45:23]-[]-[data] :The private key path forÔºö/opt/lampp/htdocs/common/config/cert/25116_wenzhoudai.key.pem
+[2014-12-16 19:45:23]-[]-[data] :Signature string forÔºö cN}*t∆™¬®»'uoV-“Â\:¸Õº˙<O–äa¶‘J·Ω;IÍ(¨†BŸ%ıÂï«dŒ!ÕDWÁıÅ“‡,˛u%/óü«˚g*Ÿ◊ûÍ‹ÄÄø{è?ÎCÔiCPaóÖÜx¶nRÒÜ˛ÇN¯`/q^ƒÕX∫K
+[2014-12-16 19:45:23]-[]-[data] :Request platform way=get
+[2014-12-16 19:45:23]-[]-[data] :Request platform signature string=IGNOfSp0DsYXGqoEFsKoyCd1b1Yt0uUPXAQ6/M28+jxP0IphptRKFOG9O0nqKBmsoBZC2SX15ZXHZM4hzURX5/WB0uAs/nUlL5cWn8f7Zx0dKhrZ157q3ICAAr97jz/rDEPvaUNQYZeFhngTpm5S8YYO/oJO+GAvcV4RxM1Yuks=
+[2014-12-16 19:45:23]-[]-[data] :Clear information request platform=busi_no=1&card_holder=cUF80zK2mCTX7/Wh8sA/vxPj3nc9G8UcEcniz3ycBiWPUYXO0CuWlINElQ6K9z+kO/GbsG4gC50ayGLePaMekDcXNSxKW4ujtdCtvjHRJo6UqrBhDYOpoaZW54NcoQDdNlX1kEt1Ao3r/yaSzclvitizZFmgdu3omK8601jMdxA=&card_id=tMIC6ynWDhnHxL8B/g28H4QOFIIrgPShd0tkBcseMZ+4FdPBKvTgqLdSW2OzSUNWgg+Euc7My53/S+D/kWg1xcz3YwtPq7amz2wg5rKJ0jdUBgSCtf7SNWEkL9IWEwLtfvhb5DALluv6QP8snTUMYvOoNcVHjifiwPMVetzAIdw=&card_type=0&charset=UTF-8&identity_code=SlXDacm6GSbV3zVBrLoHxRULkfI3g8lYAvhFFAsee4U6D5xL4KRA9/uRjLl3jEJclr2rsmaYRhYYrZBuk46oqiUOItN0p57sPr2cWHUR0xgozf1EabxNmR1AUFLXuauOU8F41lOaau9hhDezyBXECk0tNLlxN1NG22y/Imfrs8c=&identity_type=IDENTITY_CARD&media_id=15140359509&mer_id=25116&pub_pri_flag=2&service=user_reg&version=4.0
+[2014-12-16 19:45:23]-[]-[data] :The service user_reg request platform to get the address url=http://pay.soopay.net/spay/pay/payservice.do?busi_no=1&card_holder=cUF80zK2mCTX7%2FWh8sA%2FvxPj3nc9G8UcEcniz3ycBiWPUYXO0CuWlINElQ6K9z%2BkO%2FGbsG4gC50ayGLePaMekDcXNSxKW4ujtdCtvjHRJo6UqrBhDYOpoaZW54NcoQDdNlX1kEt1Ao3r%2FyaSzclvitizZFmgdu3omK8601jMdxA%3D&card_id=tMIC6ynWDhnHxL8B%2Fg28H4QOFIIrgPShd0tkBcseMZ%2B4FdPBKvTgqLdSW2OzSUNWgg%2BEuc7My53%2FS%2BD%2FkWg1xcz3YwtPq7amz2wg5rKJ0jdUBgSCtf7SNWEkL9IWEwLtfvhb5DALluv6QP8snTUMYvOoNcVHjifiwPMVetzAIdw%3D&card_type=0&charset=UTF-8&identity_code=SlXDacm6GSbV3zVBrLoHxRULkfI3g8lYAvhFFAsee4U6D5xL4KRA9%2FuRjLl3jEJclr2rsmaYRhYYrZBuk46oqiUOItN0p57sPr2cWHUR0xgozf1EabxNmR1AUFLXuauOU8F41lOaau9hhDezyBXECk0tNLlxN1NG22y%2FImfrs8c%3D&identity_type=IDENTITY_CARD&media_id=15140359509&mer_id=25116&pub_pri_flag=2&service=user_reg&sign_type=RSA&version=4.0&sign=IGNOfSp0DsYXGqoEFsKoyCd1b1Yt0uUPXAQ6/M28+jxP0IphptRKFOG9O0nqKBmsoBZC2SX15ZXHZM4hzURX5/WB0uAs/nUlL5cWn8f7Zx0dKhrZ157q3ICAAr97jz/rDEPvaUNQYZeFhngTpm5S8YYO/oJO+GAvcV4RxM1Yuks=
+[2014-12-16 19:45:24]-[]-[data] :plat response mer data:busi_no=1&card_holder=cUF80zK2mCTX7/Wh8sA/vxPj3nc9G8UcEcniz3ycBiWPUYXO0CuWlINElQ6K9z+kO/GbsG4gC50ayGLePaMekDcXNSxKW4ujtdCtvjHRJo6UqrBhDYOpoaZW54NcoQDdNlX1kEt1Ao3r/yaSzclvitizZFmgdu3omK8601jMdxA=&card_id=tMIC6ynWDhnHxL8B/g28H4QOFIIrgPShd0tkBcseMZ+4FdPBKvTgqLdSW2OzSUNWgg+Euc7My53/S+D/kWg1xcz3YwtPq7amz2wg5rKJ0jdUBgSCtf7SNWEkL9IWEwLtfvhb5DALluv6QP8snTUMYvOoNcVHjifiwPMVetzAIdw=&card_type=0&charset=UTF-8&identity_code=SlXDacm6GSbV3zVBrLoHxRULkfI3g8lYAvhFFAsee4U6D5xL4KRA9/uRjLl3jEJclr2rsmaYRhYYrZBuk46oqiUOItN0p57sPr2cWHUR0xgozf1EabxNmR1AUFLXuauOU8F41lOaau9hhDezyBXECk0tNLlxN1NG22y/Imfrs8c=&identity_type=IDENTITY_CARD&media_id=15140359509&mer_id=25116&pub_pri_flag=2&ret_code=00160079&ret_msg=ËØ•ÊâãÊú∫Âè∑Â∑≤Ê≥®ÂÜåÁî®Êà∑Âü∫Êú¨‰ø°ÊÅØ‰∏éÂΩìÂâç‰º†ÂÖ•Áî®Êà∑Âêç‰∏ç‰∏ÄËá¥&service=user_reg&sign_type=RSA&version=4.0&sign=Rm0vQM5paxQe7/agFRZM+JA6uPfhQER+jlZl7f3/YUBqD6oL5BR0woV14EeEZjLOUizxKfciNasxN4aEvDNMFeSxw015ZO07wqJ6e0gAGtpahClJC8prTy2tdnAJSYviM8xw2jWefV5ZTl2c3qXbhDYm/k5qan5UGo3ASM28ico=
+[2014-12-16 19:45:24]-[]-[data] :interface fields:merId,goodsId,orderId,merDate,retCode,retMsg,version,sign
+[2014-12-16 19:45:24]-[]-[data] :response sign=busi_no=1&card_holder=cUF80zK2mCTX7/Wh8sA/vxPj3nc9G8UcEcniz3ycBiWPUYXO0CuWlINElQ6K9z+kO/GbsG4gC50ayGLePaMekDcXNSxKW4ujtdCtvjHRJo6UqrBhDYOpoaZW54NcoQDdNlX1kEt1Ao3r/yaSzclvitizZFmgdu3omK8601jMdxA=&card_id=tMIC6ynWDhnHxL8B/g28H4QOFIIrgPShd0tkBcseMZ+4FdPBKvTgqLdSW2OzSUNWgg+Euc7My53/S+D/kWg1xcz3YwtPq7amz2wg5rKJ0jdUBgSCtf7SNWEkL9IWEwLtfvhb5DALluv6QP8snTUMYvOoNcVHjifiwPMVetzAIdw=&card_type=0&charset=UTF-8&identity_code=SlXDacm6GSbV3zVBrLoHxRULkfI3g8lYAvhFFAsee4U6D5xL4KRA9/uRjLl3jEJclr2rsmaYRhYYrZBuk46oqiUOItN0p57sPr2cWHUR0xgozf1EabxNmR1AUFLXuauOU8F41lOaau9hhDezyBXECk0tNLlxN1NG22y/Imfrs8c=&identity_type=IDENTITY_CARD&media_id=15140359509&mer_id=25116&pub_pri_flag=2&ret_code=00160079&ret_msg=ËØ•ÊâãÊú∫Âè∑Â∑≤Ê≥®ÂÜåÁî®Êà∑Âü∫Êú¨‰ø°ÊÅØ‰∏éÂΩìÂâç‰º†ÂÖ•Áî®Êà∑Âêç‰∏ç‰∏ÄËá¥&service=user_reg&sign_type=RSA&version=4.0
+[2014-12-16 19:45:24]-[]-[data] :response sign=Rm0vQM5paxQe7/agFRZM+JA6uPfhQER+jlZl7f3/YUBqD6oL5BR0woV14EeEZjLOUizxKfciNasxN4aEvDNMFeSxw015ZO07wqJ6e0gAGtpahClJC8prTy2tdnAJSYviM8xw2jWefV5ZTl2c3qXbhDYm/k5qan5UGo3ASM28ico=
+[2014-12-16 19:45:24]-[]-[data] :response plain=busi_no=1&card_holder=cUF80zK2mCTX7/Wh8sA/vxPj3nc9G8UcEcniz3ycBiWPUYXO0CuWlINElQ6K9z+kO/GbsG4gC50ayGLePaMekDcXNSxKW4ujtdCtvjHRJo6UqrBhDYOpoaZW54NcoQDdNlX1kEt1Ao3r/yaSzclvitizZFmgdu3omK8601jMdxA=&card_id=tMIC6ynWDhnHxL8B/g28H4QOFIIrgPShd0tkBcseMZ+4FdPBKvTgqLdSW2OzSUNWgg+Euc7My53/S+D/kWg1xcz3YwtPq7amz2wg5rKJ0jdUBgSCtf7SNWEkL9IWEwLtfvhb5DALluv6QP8snTUMYvOoNcVHjifiwPMVetzAIdw=&card_type=0&charset=UTF-8&identity_code=SlXDacm6GSbV3zVBrLoHxRULkfI3g8lYAvhFFAsee4U6D5xL4KRA9/uRjLl3jEJclr2rsmaYRhYYrZBuk46oqiUOItN0p57sPr2cWHUR0xgozf1EabxNmR1AUFLXuauOU8F41lOaau9hhDezyBXECk0tNLlxN1NG22y/Imfrs8c=&identity_type=IDENTITY_CARD&media_id=15140359509&mer_id=25116&pub_pri_flag=2&ret_code=00160079&ret_msg=ËØ•ÊâãÊú∫Âè∑Â∑≤Ê≥®ÂÜåÁî®Êà∑Âü∫Êú¨‰ø°ÊÅØ‰∏éÂΩìÂâç‰º†ÂÖ•Áî®Êà∑Âêç‰∏ç‰∏ÄËá¥&service=user_reg&version=4.0
+[2014-12-16 19:45:24]-[]-[data] :verify:1

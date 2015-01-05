@@ -1,0 +1,1702 @@
+2014-12-22 16:41:08 [192.168.1.126][1][-][info][koudai.pay.*] map original=HashMap::__set_state(array(
+   'H_table' => 
+  array (
+    'service' => 'transfer_direct_req',
+    'sign_type' => 'RSA',
+    'mer_id' => '25116',
+    'version' => '4.0',
+    'charset' => 'UTF-8',
+    'notify_url' => 'http://www.koudailc.com/app/pay-notify',
+    'order_id' => '52',
+    'mer_date' => '20141222',
+    'amount' => '12',
+    'recv_account_type' => '00',
+    'recv_bank_acc_pro' => '0',
+    'recv_account' => '6212261001026325347',
+    'recv_user_name' => '朱磊',
+    'identity_type' => '01',
+    'identity_code' => '320924198807211417',
+    'identity_holder' => '朱磊',
+    'media_type' => 'MOBILE',
+    'media_id' => '18516089086',
+    'recv_gate_id' => 'CEB',
+    'bank_brhname' => '上海市徐汇支行',
+    'purpose' => '提现',
+  ),
+))
+    in /opt/lampp/htdocs/common/services/PayService.php:344
+    in /opt/lampp/htdocs/common/services/PayService.php:86
+    in /opt/lampp/htdocs/common/services/AccountService.php:68
+2014-12-22 16:41:08 [192.168.1.126][1][-][info][koudai.pay.*] map original=HashMap::__set_state(array(
+   'H_table' => 
+  array (
+    'service' => 'transfer_direct_req',
+    'sign_type' => 'RSA',
+    'mer_id' => '25116',
+    'version' => '4.0',
+    'charset' => 'UTF-8',
+    'notify_url' => 'http://www.koudailc.com/app/pay-notify',
+    'order_id' => '52',
+    'mer_date' => '20141222',
+    'amount' => '12',
+    'recv_account_type' => '00',
+    'recv_bank_acc_pro' => '0',
+    'recv_account' => '6212261001026325347',
+    'recv_user_name' => '朱磊',
+    'identity_type' => '01',
+    'identity_code' => '320924198807211417',
+    'identity_holder' => '朱磊',
+    'media_type' => 'MOBILE',
+    'media_id' => '18516089086',
+    'recv_gate_id' => 'CEB',
+    'bank_brhname' => '上海市徐汇支行',
+    'purpose' => '提现',
+  ),
+))
+    in /opt/lampp/htdocs/common/services/PayService.php:407
+    in /opt/lampp/htdocs/common/services/PayService.php:346
+    in /opt/lampp/htdocs/common/services/PayService.php:86
+2014-12-22 16:41:08 [192.168.1.126][1][-][info][koudai.pay.*] map encoded=HashMap::__set_state(array(
+   'H_table' => 
+  array (
+    'service' => 'transfer_direct_req',
+    'sign_type' => 'RSA',
+    'mer_id' => '25116',
+    'version' => '4.0',
+    'charset' => 'UTF-8',
+    'notify_url' => 'http://www.koudailc.com/app/pay-notify',
+    'order_id' => '52',
+    'mer_date' => '20141222',
+    'amount' => '12',
+    'recv_account_type' => '00',
+    'recv_bank_acc_pro' => '0',
+    'recv_account' => 'SqCov6kZ+7MnhSovI7+RKZvdw4c23Ic0QdNCJXjVIVTcMRiGbJdg+SPSqhuslJDlirEP5AIuRujGH9CSZzJmM4IymAAFjzi9HIHkYasOqE8RzIM1RRyl3sGZ9fc815c5Hn+CzUgQ9V7/CE2R/7iAXobX47NaUPuTsvSBGrk2puI=',
+    'recv_user_name' => 'uEasItniZp5mc1SxNKqoNNVIpyx036tAH5Gh+hXPBgREWaCVJdgzqq/hjwgZfwuqem5QdZfEikwRx1BYo450r7oE7aARhZuiL8wKCtgML6W79NqfZ2NQH0Juh6znygwBfrEovjTQKLuNtZ5fmYsydRYiwNHciMh732ti0DSXGBo=',
+    'identity_type' => '01',
+    'identity_code' => 'Xea+ufbhxs4FJ2MyhPpYQG34/CrvhObeMxehl9q/ZFkB08rTVPUsTX40GX+ZKHpZbkfbxk4W7W9GreaJ1qvbTEGd9TxLhrLKd4iTAtNIsFjBBRmAPCTwvd2nhtaBFjHgmeblpcnTsRKosnl356XXJSQ7GjOTZ9SVQW/AbgKH4zA=',
+    'identity_holder' => 'qVrYsbjtVm9AvV43flKcNIqk0B428Y3WXAsU3unlTgojBMwh22ZciNxgrOxMsuoYVu4dWISAy41IioI+xvjmSAa/WdsGVHD77ATRXiAuSQiB7pSCC/bcqovO2MsvThwjh5mBfqLflNUMH+3+NAZfDSzBjNBEL6OhV1JgEGtKg7M=',
+    'media_type' => 'MOBILE',
+    'media_id' => '18516089086',
+    'recv_gate_id' => 'CEB',
+    'bank_brhname' => '上海市徐汇支行',
+    'purpose' => '提现',
+  ),
+))
+    in /opt/lampp/htdocs/common/services/PayService.php:409
+    in /opt/lampp/htdocs/common/services/PayService.php:346
+    in /opt/lampp/htdocs/common/services/PayService.php:86
+2014-12-22 16:41:08 [192.168.1.126][1][-][info][koudai.pay.*] httpReq=common\api\HttpRequest::__set_state(array(
+   'ERROR_DESC' => 
+  array (
+    1 => 'URL格式错误',
+  ),
+   'getFields' => NULL,
+   'postFields' => NULL,
+   'method' => 'GET',
+   'url' => 'http://pay.soopay.net/spay/pay/payservice.do?amount=12&bank_brhname=%E4%B8%8A%E6%B5%B7%E5%B8%82%E5%BE%90%E6%B1%87%E6%94%AF%E8%A1%8C&charset=UTF-8&identity_code=Xea%2Bufbhxs4FJ2MyhPpYQG34%2FCrvhObeMxehl9q%2FZFkB08rTVPUsTX40GX%2BZKHpZbkfbxk4W7W9GreaJ1qvbTEGd9TxLhrLKd4iTAtNIsFjBBRmAPCTwvd2nhtaBFjHgmeblpcnTsRKosnl356XXJSQ7GjOTZ9SVQW%2FAbgKH4zA%3D&identity_holder=qVrYsbjtVm9AvV43flKcNIqk0B428Y3WXAsU3unlTgojBMwh22ZciNxgrOxMsuoYVu4dWISAy41IioI%2BxvjmSAa%2FWdsGVHD77ATRXiAuSQiB7pSCC%2FbcqovO2MsvThwjh5mBfqLflNUMH%2B3%2BNAZfDSzBjNBEL6OhV1JgEGtKg7M%3D&identity_type=01&media_id=18516089086&media_type=MOBILE&mer_date=20141222&mer_id=25116&notify_url=http%3A%2F%2Fwww.koudailc.com%2Fapp%2Fpay-notify&order_id=52&purpose=%E6%8F%90%E7%8E%B0&recv_account=SqCov6kZ%2B7MnhSovI7%2BRKZvdw4c23Ic0QdNCJXjVIVTcMRiGbJdg%2BSPSqhuslJDlirEP5AIuRujGH9CSZzJmM4IymAAFjzi9HIHkYasOqE8RzIM1RRyl3sGZ9fc815c5Hn%2BCzUgQ9V7%2FCE2R%2F7iAXobX47NaUPuTsvSBGrk2puI%3D&recv_account_type=00&recv_bank_acc_pro=0&recv_gate_id=CEB&recv_user_name=uEasItniZp5mc1SxNKqoNNVIpyx036tAH5Gh%2BhXPBgREWaCVJdgzqq%2FhjwgZfwuqem5QdZfEikwRx1BYo450r7oE7aARhZuiL8wKCtgML6W79NqfZ2NQH0Juh6znygwBfrEovjTQKLuNtZ5fmYsydRYiwNHciMh732ti0DSXGBo%3D&service=transfer_direct_req&sign_type=RSA&version=4.0&sign=KCkprMT%2B2Hv9%2FGpUtesghd7%2BUwv8C32Ia26FmX7ML5B1ThhCgI4ChKbn6Jig%2Bkmxdee087A0TUfFm9GsB5qlGdepyzqbzBuPocKpFd15t%2BM4QoBWclSXxFMzdAcgQ5ZkDhCqYgJJX49HxW88SRkzNH90801wVJzx628udNieeD4%3D',
+   'postDataFormat' => 1,
+   'code' => '',
+))
+    in /opt/lampp/htdocs/common/services/PayService.php:418
+    in /opt/lampp/htdocs/common/services/PayService.php:346
+    in /opt/lampp/htdocs/common/services/PayService.php:86
+2014-12-22 16:41:08 [192.168.1.126][1][-][info][koudai.pay.*] httpResp=array (
+  'code' => 200,
+  'resp' => '
+ 
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head>
+	<META NAME="MobilePayPlatform" CONTENT="ret_code=00060700&ret_msg=数据校验未通过&sign=q61Ijm/wqpeAJcFjvzSNuM4uXvuVketcS5V0TtxrolA1EQ4y/758HiRO46FHTUUIgMfrslC/LN/iOCOxliDNpgvaYTVH0fAs2ffe9mVQXj9TbzwllS/XiBZb0yLEXsj+BE0FqOuvc1uuFYTVNDExhuFgsREycqCn9GyqGxsh+K4=">
+  </head>
+  <body>
+  </body>
+</html>',
+  'curl_getinfo' => 
+  array (
+    'url' => 'http://pay.soopay.net/spay/pay/payservice.do?amount=12&bank_brhname=%E4%B8%8A%E6%B5%B7%E5%B8%82%E5%BE%90%E6%B1%87%E6%94%AF%E8%A1%8C&charset=UTF-8&identity_code=Xea%2Bufbhxs4FJ2MyhPpYQG34%2FCrvhObeMxehl9q%2FZFkB08rTVPUsTX40GX%2BZKHpZbkfbxk4W7W9GreaJ1qvbTEGd9TxLhrLKd4iTAtNIsFjBBRmAPCTwvd2nhtaBFjHgmeblpcnTsRKosnl356XXJSQ7GjOTZ9SVQW%2FAbgKH4zA%3D&identity_holder=qVrYsbjtVm9AvV43flKcNIqk0B428Y3WXAsU3unlTgojBMwh22ZciNxgrOxMsuoYVu4dWISAy41IioI%2BxvjmSAa%2FWdsGVHD77ATRXiAuSQiB7pSCC%2FbcqovO2MsvThwjh5mBfqLflNUMH%2B3%2BNAZfDSzBjNBEL6OhV1JgEGtKg7M%3D&identity_type=01&media_id=18516089086&media_type=MOBILE&mer_date=20141222&mer_id=25116&notify_url=http%3A%2F%2Fwww.koudailc.com%2Fapp%2Fpay-notify&order_id=52&purpose=%E6%8F%90%E7%8E%B0&recv_account=SqCov6kZ%2B7MnhSovI7%2BRKZvdw4c23Ic0QdNCJXjVIVTcMRiGbJdg%2BSPSqhuslJDlirEP5AIuRujGH9CSZzJmM4IymAAFjzi9HIHkYasOqE8RzIM1RRyl3sGZ9fc815c5Hn%2BCzUgQ9V7%2FCE2R%2F7iAXobX47NaUPuTsvSBGrk2puI%3D&recv_account_type=00&recv_bank_acc_pro=0&recv_gate_id=CEB&recv_user_name=uEasItniZp5mc1SxNKqoNNVIpyx036tAH5Gh%2BhXPBgREWaCVJdgzqq%2FhjwgZfwuqem5QdZfEikwRx1BYo450r7oE7aARhZuiL8wKCtgML6W79NqfZ2NQH0Juh6znygwBfrEovjTQKLuNtZ5fmYsydRYiwNHciMh732ti0DSXGBo%3D&service=transfer_direct_req&sign_type=RSA&version=4.0&sign=KCkprMT%2B2Hv9%2FGpUtesghd7%2BUwv8C32Ia26FmX7ML5B1ThhCgI4ChKbn6Jig%2Bkmxdee087A0TUfFm9GsB5qlGdepyzqbzBuPocKpFd15t%2BM4QoBWclSXxFMzdAcgQ5ZkDhCqYgJJX49HxW88SRkzNH90801wVJzx628udNieeD4%3D',
+    'content_type' => 'text/html; charset=UTF-8',
+    'http_code' => 200,
+    'header_size' => 336,
+    'request_size' => 1522,
+    'filetime' => -1,
+    'ssl_verify_result' => 0,
+    'redirect_count' => 0,
+    'total_time' => 0.1451070000000000137507782937973388470709323883056640625,
+    'namelookup_time' => 0.06800299999999999400746020228325505740940570831298828125,
+    'connect_time' => 0.10313600000000000544986278327996842563152313232421875,
+    'pretransfer_time' => 0.10325700000000000156052948341312003321945667266845703125,
+    'size_upload' => 0,
+    'size_download' => 388,
+    'speed_download' => 2673,
+    'speed_upload' => 0,
+    'download_content_length' => -1,
+    'upload_content_length' => 0,
+    'starttransfer_time' => 0.145040000000000002255973186038318090140819549560546875,
+    'redirect_time' => 0,
+    'redirect_url' => '',
+    'primary_ip' => '115.182.85.76',
+    'certinfo' => 
+    array (
+    ),
+    'primary_port' => 80,
+    'local_ip' => '192.168.1.214',
+    'local_port' => 58327,
+  ),
+)
+    in /opt/lampp/htdocs/common/services/PayService.php:422
+    in /opt/lampp/htdocs/common/services/PayService.php:346
+    in /opt/lampp/htdocs/common/services/PayService.php:86
+2014-12-22 16:41:15 [192.168.1.126][1][-][info][koudai.pay.*] map original=HashMap::__set_state(array(
+   'H_table' => 
+  array (
+    'service' => 'transfer_direct_req',
+    'sign_type' => 'RSA',
+    'mer_id' => '25116',
+    'version' => '4.0',
+    'charset' => 'UTF-8',
+    'notify_url' => 'http://www.koudailc.com/app/pay-notify',
+    'order_id' => '52',
+    'mer_date' => '20141222',
+    'amount' => '12',
+    'recv_account_type' => '00',
+    'recv_bank_acc_pro' => '0',
+    'recv_account' => '6212261001026325347',
+    'recv_user_name' => '朱磊',
+    'identity_type' => '01',
+    'identity_code' => '320924198807211417',
+    'identity_holder' => '朱磊',
+    'media_type' => 'MOBILE',
+    'media_id' => '18516089086',
+    'recv_gate_id' => 'CEB',
+    'bank_brhname' => '上海市徐汇支行',
+    'purpose' => '提现',
+  ),
+))
+    in /opt/lampp/htdocs/common/services/PayService.php:344
+    in /opt/lampp/htdocs/common/services/PayService.php:86
+    in /opt/lampp/htdocs/common/services/AccountService.php:68
+2014-12-22 16:41:15 [192.168.1.126][1][-][info][koudai.pay.*] map original=HashMap::__set_state(array(
+   'H_table' => 
+  array (
+    'service' => 'transfer_direct_req',
+    'sign_type' => 'RSA',
+    'mer_id' => '25116',
+    'version' => '4.0',
+    'charset' => 'UTF-8',
+    'notify_url' => 'http://www.koudailc.com/app/pay-notify',
+    'order_id' => '52',
+    'mer_date' => '20141222',
+    'amount' => '12',
+    'recv_account_type' => '00',
+    'recv_bank_acc_pro' => '0',
+    'recv_account' => '6212261001026325347',
+    'recv_user_name' => '朱磊',
+    'identity_type' => '01',
+    'identity_code' => '320924198807211417',
+    'identity_holder' => '朱磊',
+    'media_type' => 'MOBILE',
+    'media_id' => '18516089086',
+    'recv_gate_id' => 'CEB',
+    'bank_brhname' => '上海市徐汇支行',
+    'purpose' => '提现',
+  ),
+))
+    in /opt/lampp/htdocs/common/services/PayService.php:407
+    in /opt/lampp/htdocs/common/services/PayService.php:346
+    in /opt/lampp/htdocs/common/services/PayService.php:86
+2014-12-22 16:41:15 [192.168.1.126][1][-][info][koudai.pay.*] map encoded=HashMap::__set_state(array(
+   'H_table' => 
+  array (
+    'service' => 'transfer_direct_req',
+    'sign_type' => 'RSA',
+    'mer_id' => '25116',
+    'version' => '4.0',
+    'charset' => 'UTF-8',
+    'notify_url' => 'http://www.koudailc.com/app/pay-notify',
+    'order_id' => '52',
+    'mer_date' => '20141222',
+    'amount' => '12',
+    'recv_account_type' => '00',
+    'recv_bank_acc_pro' => '0',
+    'recv_account' => 'hyleH7OVbquG0e2XvSGkuitLP8vhdRNG38kiEQHf6Zo8vdnw52Fo+5s+FZh3f8C4Gc0hS/fu8K7H+C/MXpxlDXc53nfb2CEWzCf/z/d64RHHSNwhHlgp+SAetMxz8/K4UYts/Fv/s9niPiFjjS6NxF3kAuI5UqCfEmAvgfseVYg=',
+    'recv_user_name' => 'phv1tWWV3N5NFo6XvWs3UddEDByYs7mGamIRMPEOvrqTrp8msCOVCR0xnQgkR8GcbkBufihlEpEOAFcRkx+V9wIKAzEQwu8Wsty7vkxWKU6OpJ/BVGYHpnO1SShQdP6okF6JYR6lKrxwwPKqT97pcP3a9QJDz0Zg1U5oqwDIyJc=',
+    'identity_type' => '01',
+    'identity_code' => 'Kh6tIINZuVLGU2Weaavc/29Y2mKVFDBrpv75JsLgK5Ht/U+x1sdJDRaxYZQPNy59pDInyZLlssSXqS79f2ITSGij9bWxrL59nppp0RzYIXQmC2dBSVYY/HMYMoYCgriXc+rOOvU8SjsMDAlUmCTGBnBdawMt0uosgI3iE2Hbgec=',
+    'identity_holder' => 'TvlfVaFFnTBc7hd+b+IucpZzh/loNB7OZENjz3nJdtR4m7p09H0QIb8ZEw0LdwDWJt2MIrhGZcOU7CNzq+SgRc0QfYsgfklIIu6jRZ+6n+/gJR69h+IPCXso2fheAybWWe718ZWBuzxSoD8lVljZqQ3SwpFy6l/xhY9+SEUVzvg=',
+    'media_type' => 'MOBILE',
+    'media_id' => '18516089086',
+    'recv_gate_id' => 'CEB',
+    'bank_brhname' => '上海市徐汇支行',
+    'purpose' => '提现',
+  ),
+))
+    in /opt/lampp/htdocs/common/services/PayService.php:409
+    in /opt/lampp/htdocs/common/services/PayService.php:346
+    in /opt/lampp/htdocs/common/services/PayService.php:86
+2014-12-22 16:41:15 [192.168.1.126][1][-][info][koudai.pay.*] httpReq=common\api\HttpRequest::__set_state(array(
+   'ERROR_DESC' => 
+  array (
+    1 => 'URL格式错误',
+  ),
+   'getFields' => NULL,
+   'postFields' => NULL,
+   'method' => 'GET',
+   'url' => 'http://pay.soopay.net/spay/pay/payservice.do?amount=12&bank_brhname=%E4%B8%8A%E6%B5%B7%E5%B8%82%E5%BE%90%E6%B1%87%E6%94%AF%E8%A1%8C&charset=UTF-8&identity_code=Kh6tIINZuVLGU2Weaavc%2F29Y2mKVFDBrpv75JsLgK5Ht%2FU%2Bx1sdJDRaxYZQPNy59pDInyZLlssSXqS79f2ITSGij9bWxrL59nppp0RzYIXQmC2dBSVYY%2FHMYMoYCgriXc%2BrOOvU8SjsMDAlUmCTGBnBdawMt0uosgI3iE2Hbgec%3D&identity_holder=TvlfVaFFnTBc7hd%2Bb%2BIucpZzh%2FloNB7OZENjz3nJdtR4m7p09H0QIb8ZEw0LdwDWJt2MIrhGZcOU7CNzq%2BSgRc0QfYsgfklIIu6jRZ%2B6n%2B%2FgJR69h%2BIPCXso2fheAybWWe718ZWBuzxSoD8lVljZqQ3SwpFy6l%2FxhY9%2BSEUVzvg%3D&identity_type=01&media_id=18516089086&media_type=MOBILE&mer_date=20141222&mer_id=25116&notify_url=http%3A%2F%2Fwww.koudailc.com%2Fapp%2Fpay-notify&order_id=52&purpose=%E6%8F%90%E7%8E%B0&recv_account=hyleH7OVbquG0e2XvSGkuitLP8vhdRNG38kiEQHf6Zo8vdnw52Fo%2B5s%2BFZh3f8C4Gc0hS%2Ffu8K7H%2BC%2FMXpxlDXc53nfb2CEWzCf%2Fz%2Fd64RHHSNwhHlgp%2BSAetMxz8%2FK4UYts%2FFv%2Fs9niPiFjjS6NxF3kAuI5UqCfEmAvgfseVYg%3D&recv_account_type=00&recv_bank_acc_pro=0&recv_gate_id=CEB&recv_user_name=phv1tWWV3N5NFo6XvWs3UddEDByYs7mGamIRMPEOvrqTrp8msCOVCR0xnQgkR8GcbkBufihlEpEOAFcRkx%2BV9wIKAzEQwu8Wsty7vkxWKU6OpJ%2FBVGYHpnO1SShQdP6okF6JYR6lKrxwwPKqT97pcP3a9QJDz0Zg1U5oqwDIyJc%3D&service=transfer_direct_req&sign_type=RSA&version=4.0&sign=zuVYQZelBg%2Fvrg0EhHKZD%2B6c6KChTPZMUQbDWhh2vxsE67xu3DCdd5qcTLzxaPssrquAt0Fv7jgJ6fkUDCxx%2Bvw3M%2Fz%2BJsc%2BB4m%2FIZiseE3PkUvAzwmeyn0X7i26qQQTIeh6mUmIehRDDh6U85p4J1a423NDuW5XEQjMMod3p2U%3D',
+   'postDataFormat' => 1,
+   'code' => '',
+))
+    in /opt/lampp/htdocs/common/services/PayService.php:418
+    in /opt/lampp/htdocs/common/services/PayService.php:346
+    in /opt/lampp/htdocs/common/services/PayService.php:86
+2014-12-22 16:41:15 [192.168.1.126][1][-][info][koudai.pay.*] httpResp=array (
+  'code' => 200,
+  'resp' => '
+ 
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head>
+	<META NAME="MobilePayPlatform" CONTENT="ret_code=00060700&ret_msg=数据校验未通过&sign=q61Ijm/wqpeAJcFjvzSNuM4uXvuVketcS5V0TtxrolA1EQ4y/758HiRO46FHTUUIgMfrslC/LN/iOCOxliDNpgvaYTVH0fAs2ffe9mVQXj9TbzwllS/XiBZb0yLEXsj+BE0FqOuvc1uuFYTVNDExhuFgsREycqCn9GyqGxsh+K4=">
+  </head>
+  <body>
+  </body>
+</html>',
+  'curl_getinfo' => 
+  array (
+    'url' => 'http://pay.soopay.net/spay/pay/payservice.do?amount=12&bank_brhname=%E4%B8%8A%E6%B5%B7%E5%B8%82%E5%BE%90%E6%B1%87%E6%94%AF%E8%A1%8C&charset=UTF-8&identity_code=Kh6tIINZuVLGU2Weaavc%2F29Y2mKVFDBrpv75JsLgK5Ht%2FU%2Bx1sdJDRaxYZQPNy59pDInyZLlssSXqS79f2ITSGij9bWxrL59nppp0RzYIXQmC2dBSVYY%2FHMYMoYCgriXc%2BrOOvU8SjsMDAlUmCTGBnBdawMt0uosgI3iE2Hbgec%3D&identity_holder=TvlfVaFFnTBc7hd%2Bb%2BIucpZzh%2FloNB7OZENjz3nJdtR4m7p09H0QIb8ZEw0LdwDWJt2MIrhGZcOU7CNzq%2BSgRc0QfYsgfklIIu6jRZ%2B6n%2B%2FgJR69h%2BIPCXso2fheAybWWe718ZWBuzxSoD8lVljZqQ3SwpFy6l%2FxhY9%2BSEUVzvg%3D&identity_type=01&media_id=18516089086&media_type=MOBILE&mer_date=20141222&mer_id=25116&notify_url=http%3A%2F%2Fwww.koudailc.com%2Fapp%2Fpay-notify&order_id=52&purpose=%E6%8F%90%E7%8E%B0&recv_account=hyleH7OVbquG0e2XvSGkuitLP8vhdRNG38kiEQHf6Zo8vdnw52Fo%2B5s%2BFZh3f8C4Gc0hS%2Ffu8K7H%2BC%2FMXpxlDXc53nfb2CEWzCf%2Fz%2Fd64RHHSNwhHlgp%2BSAetMxz8%2FK4UYts%2FFv%2Fs9niPiFjjS6NxF3kAuI5UqCfEmAvgfseVYg%3D&recv_account_type=00&recv_bank_acc_pro=0&recv_gate_id=CEB&recv_user_name=phv1tWWV3N5NFo6XvWs3UddEDByYs7mGamIRMPEOvrqTrp8msCOVCR0xnQgkR8GcbkBufihlEpEOAFcRkx%2BV9wIKAzEQwu8Wsty7vkxWKU6OpJ%2FBVGYHpnO1SShQdP6okF6JYR6lKrxwwPKqT97pcP3a9QJDz0Zg1U5oqwDIyJc%3D&service=transfer_direct_req&sign_type=RSA&version=4.0&sign=zuVYQZelBg%2Fvrg0EhHKZD%2B6c6KChTPZMUQbDWhh2vxsE67xu3DCdd5qcTLzxaPssrquAt0Fv7jgJ6fkUDCxx%2Bvw3M%2Fz%2BJsc%2BB4m%2FIZiseE3PkUvAzwmeyn0X7i26qQQTIeh6mUmIehRDDh6U85p4J1a423NDuW5XEQjMMod3p2U%3D',
+    'content_type' => 'text/html; charset=UTF-8',
+    'http_code' => 200,
+    'header_size' => 336,
+    'request_size' => 1546,
+    'filetime' => -1,
+    'ssl_verify_result' => 0,
+    'redirect_count' => 0,
+    'total_time' => 0.2360480000000000078141937365217017941176891326904296875,
+    'namelookup_time' => 0.1653090000000000114876996804014197550714015960693359375,
+    'connect_time' => 0.1946960000000000079456441426373203285038471221923828125,
+    'pretransfer_time' => 0.1947649999999999936850514359321095980703830718994140625,
+    'size_upload' => 0,
+    'size_download' => 388,
+    'speed_download' => 1643,
+    'speed_upload' => 0,
+    'download_content_length' => -1,
+    'upload_content_length' => 0,
+    'starttransfer_time' => 0.23599300000000000832045543575077317655086517333984375,
+    'redirect_time' => 0,
+    'redirect_url' => '',
+    'primary_ip' => '115.182.85.75',
+    'certinfo' => 
+    array (
+    ),
+    'primary_port' => 80,
+    'local_ip' => '192.168.1.214',
+    'local_port' => 52615,
+  ),
+)
+    in /opt/lampp/htdocs/common/services/PayService.php:422
+    in /opt/lampp/htdocs/common/services/PayService.php:346
+    in /opt/lampp/htdocs/common/services/PayService.php:86
+2014-12-22 16:41:27 [192.168.1.126][1][-][info][koudai.pay.*] map original=HashMap::__set_state(array(
+   'H_table' => 
+  array (
+    'service' => 'transfer_direct_req',
+    'sign_type' => 'RSA',
+    'mer_id' => '25116',
+    'version' => '4.0',
+    'charset' => 'UTF-8',
+    'notify_url' => 'http://www.koudailc.com/app/pay-notify',
+    'order_id' => '47',
+    'mer_date' => '20141222',
+    'amount' => '12',
+    'recv_account_type' => '00',
+    'recv_bank_acc_pro' => '0',
+    'recv_account' => '4554676764464631973494',
+    'recv_user_name' => '黄铭',
+    'identity_type' => '01',
+    'identity_code' => '360311198904034056',
+    'identity_holder' => '黄铭',
+    'media_type' => 'MOBILE',
+    'media_id' => '13917884931',
+    'recv_gate_id' => 'CEB',
+    'bank_brhname' => '上海市徐汇支行',
+    'purpose' => '提现',
+  ),
+))
+    in /opt/lampp/htdocs/common/services/PayService.php:344
+    in /opt/lampp/htdocs/common/services/PayService.php:86
+    in /opt/lampp/htdocs/common/services/AccountService.php:68
+2014-12-22 16:41:27 [192.168.1.126][1][-][info][koudai.pay.*] map original=HashMap::__set_state(array(
+   'H_table' => 
+  array (
+    'service' => 'transfer_direct_req',
+    'sign_type' => 'RSA',
+    'mer_id' => '25116',
+    'version' => '4.0',
+    'charset' => 'UTF-8',
+    'notify_url' => 'http://www.koudailc.com/app/pay-notify',
+    'order_id' => '47',
+    'mer_date' => '20141222',
+    'amount' => '12',
+    'recv_account_type' => '00',
+    'recv_bank_acc_pro' => '0',
+    'recv_account' => '4554676764464631973494',
+    'recv_user_name' => '黄铭',
+    'identity_type' => '01',
+    'identity_code' => '360311198904034056',
+    'identity_holder' => '黄铭',
+    'media_type' => 'MOBILE',
+    'media_id' => '13917884931',
+    'recv_gate_id' => 'CEB',
+    'bank_brhname' => '上海市徐汇支行',
+    'purpose' => '提现',
+  ),
+))
+    in /opt/lampp/htdocs/common/services/PayService.php:407
+    in /opt/lampp/htdocs/common/services/PayService.php:346
+    in /opt/lampp/htdocs/common/services/PayService.php:86
+2014-12-22 16:41:27 [192.168.1.126][1][-][info][koudai.pay.*] map encoded=HashMap::__set_state(array(
+   'H_table' => 
+  array (
+    'service' => 'transfer_direct_req',
+    'sign_type' => 'RSA',
+    'mer_id' => '25116',
+    'version' => '4.0',
+    'charset' => 'UTF-8',
+    'notify_url' => 'http://www.koudailc.com/app/pay-notify',
+    'order_id' => '47',
+    'mer_date' => '20141222',
+    'amount' => '12',
+    'recv_account_type' => '00',
+    'recv_bank_acc_pro' => '0',
+    'recv_account' => 'sds3M/F3x8KzupEZhd8/did7RYJAwAPMBTDEW25+4kNNAtmrJ9Vs7l+uDCDgsxtKVL7vpq5QEVJSSCNvYMb7hHDeRsmC9BinWuY+82ZkW794xeQDES7pHOrmU0UoCS6cnMc1I2aByU/0CnikS+XuT55Y4jJgY1+7zb9nAeAOaZU=',
+    'recv_user_name' => 'B91gklPSvX5/4T71q6+DfiduSTUdcF9fXDQZdkw2QAg2XsDxwxbxG33VWb3OTvMdu0ll2wJjvwQprngS2qrkfN76ja2MiqlXM88IIYIOy/M3p+ScK2G7U9wP27apY8DOZP+YnVk9akp2MOvp6ypj1Th7tJ3+w6kaebK+cvBD+So=',
+    'identity_type' => '01',
+    'identity_code' => 'g8dj4SMGGDGdPC1uArKKVvYOH6QxIzaI98e0NlGpwkRsaXRE4t/vxLMMrrHQg0HO4zFDxeC9dfQDjGOpJakNPEZRyw2zI6DY0phl+oylG1ly1teOpBmYj5xV4Zc5iY2DnmBNsgXoXPBaFzPYJrfKFMkG+zq2oSsHCCSsLwaTtUw=',
+    'identity_holder' => 'XdL9zb/1pKfvUww6bBH0IpGJuXfS+fnIH7fXS7i/MWeb32D5Gth957/DVIDctzsSwjvzKVsfoPDwEsWB3H9y+5gBmmjajQbbP2fSNpu0l0jFKV5mHRBHA6+LCECbtFpDdODREQZ+iBqHubBifyevfSBujafFh282INpmzVGCVSk=',
+    'media_type' => 'MOBILE',
+    'media_id' => '13917884931',
+    'recv_gate_id' => 'CEB',
+    'bank_brhname' => '上海市徐汇支行',
+    'purpose' => '提现',
+  ),
+))
+    in /opt/lampp/htdocs/common/services/PayService.php:409
+    in /opt/lampp/htdocs/common/services/PayService.php:346
+    in /opt/lampp/htdocs/common/services/PayService.php:86
+2014-12-22 16:41:27 [192.168.1.126][1][-][info][koudai.pay.*] httpReq=common\api\HttpRequest::__set_state(array(
+   'ERROR_DESC' => 
+  array (
+    1 => 'URL格式错误',
+  ),
+   'getFields' => NULL,
+   'postFields' => NULL,
+   'method' => 'GET',
+   'url' => 'http://pay.soopay.net/spay/pay/payservice.do?amount=12&bank_brhname=%E4%B8%8A%E6%B5%B7%E5%B8%82%E5%BE%90%E6%B1%87%E6%94%AF%E8%A1%8C&charset=UTF-8&identity_code=g8dj4SMGGDGdPC1uArKKVvYOH6QxIzaI98e0NlGpwkRsaXRE4t%2FvxLMMrrHQg0HO4zFDxeC9dfQDjGOpJakNPEZRyw2zI6DY0phl%2BoylG1ly1teOpBmYj5xV4Zc5iY2DnmBNsgXoXPBaFzPYJrfKFMkG%2Bzq2oSsHCCSsLwaTtUw%3D&identity_holder=XdL9zb%2F1pKfvUww6bBH0IpGJuXfS%2BfnIH7fXS7i%2FMWeb32D5Gth957%2FDVIDctzsSwjvzKVsfoPDwEsWB3H9y%2B5gBmmjajQbbP2fSNpu0l0jFKV5mHRBHA6%2BLCECbtFpDdODREQZ%2BiBqHubBifyevfSBujafFh282INpmzVGCVSk%3D&identity_type=01&media_id=13917884931&media_type=MOBILE&mer_date=20141222&mer_id=25116&notify_url=http%3A%2F%2Fwww.koudailc.com%2Fapp%2Fpay-notify&order_id=47&purpose=%E6%8F%90%E7%8E%B0&recv_account=sds3M%2FF3x8KzupEZhd8%2Fdid7RYJAwAPMBTDEW25%2B4kNNAtmrJ9Vs7l%2BuDCDgsxtKVL7vpq5QEVJSSCNvYMb7hHDeRsmC9BinWuY%2B82ZkW794xeQDES7pHOrmU0UoCS6cnMc1I2aByU%2F0CnikS%2BXuT55Y4jJgY1%2B7zb9nAeAOaZU%3D&recv_account_type=00&recv_bank_acc_pro=0&recv_gate_id=CEB&recv_user_name=B91gklPSvX5%2F4T71q6%2BDfiduSTUdcF9fXDQZdkw2QAg2XsDxwxbxG33VWb3OTvMdu0ll2wJjvwQprngS2qrkfN76ja2MiqlXM88IIYIOy%2FM3p%2BScK2G7U9wP27apY8DOZP%2BYnVk9akp2MOvp6ypj1Th7tJ3%2Bw6kaebK%2BcvBD%2BSo%3D&service=transfer_direct_req&sign_type=RSA&version=4.0&sign=TI9nY89M5W1i9yNBlamzG8tC0dxRVy%2BAvsDyO0VzXB3iqGltIp9YG6437CpkdDru090tLl46it1EaJLtK1gb7r8MeyYXjNDo%2FtUQn1pYnTc9T%2BHF7NdBgoIcMA5EDXQuvcwSO1lewYbFgSgVMxvg1E%2FnPtXhONPOEwIUP2a8A4E%3D',
+   'postDataFormat' => 1,
+   'code' => '',
+))
+    in /opt/lampp/htdocs/common/services/PayService.php:418
+    in /opt/lampp/htdocs/common/services/PayService.php:346
+    in /opt/lampp/htdocs/common/services/PayService.php:86
+2014-12-22 16:41:27 [192.168.1.126][1][-][info][koudai.pay.*] httpResp=array (
+  'code' => 200,
+  'resp' => '
+ 
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head>
+	<META NAME="MobilePayPlatform" CONTENT="ret_code=00060700&ret_msg=数据校验未通过&sign=q61Ijm/wqpeAJcFjvzSNuM4uXvuVketcS5V0TtxrolA1EQ4y/758HiRO46FHTUUIgMfrslC/LN/iOCOxliDNpgvaYTVH0fAs2ffe9mVQXj9TbzwllS/XiBZb0yLEXsj+BE0FqOuvc1uuFYTVNDExhuFgsREycqCn9GyqGxsh+K4=">
+  </head>
+  <body>
+  </body>
+</html>',
+  'curl_getinfo' => 
+  array (
+    'url' => 'http://pay.soopay.net/spay/pay/payservice.do?amount=12&bank_brhname=%E4%B8%8A%E6%B5%B7%E5%B8%82%E5%BE%90%E6%B1%87%E6%94%AF%E8%A1%8C&charset=UTF-8&identity_code=g8dj4SMGGDGdPC1uArKKVvYOH6QxIzaI98e0NlGpwkRsaXRE4t%2FvxLMMrrHQg0HO4zFDxeC9dfQDjGOpJakNPEZRyw2zI6DY0phl%2BoylG1ly1teOpBmYj5xV4Zc5iY2DnmBNsgXoXPBaFzPYJrfKFMkG%2Bzq2oSsHCCSsLwaTtUw%3D&identity_holder=XdL9zb%2F1pKfvUww6bBH0IpGJuXfS%2BfnIH7fXS7i%2FMWeb32D5Gth957%2FDVIDctzsSwjvzKVsfoPDwEsWB3H9y%2B5gBmmjajQbbP2fSNpu0l0jFKV5mHRBHA6%2BLCECbtFpDdODREQZ%2BiBqHubBifyevfSBujafFh282INpmzVGCVSk%3D&identity_type=01&media_id=13917884931&media_type=MOBILE&mer_date=20141222&mer_id=25116&notify_url=http%3A%2F%2Fwww.koudailc.com%2Fapp%2Fpay-notify&order_id=47&purpose=%E6%8F%90%E7%8E%B0&recv_account=sds3M%2FF3x8KzupEZhd8%2Fdid7RYJAwAPMBTDEW25%2B4kNNAtmrJ9Vs7l%2BuDCDgsxtKVL7vpq5QEVJSSCNvYMb7hHDeRsmC9BinWuY%2B82ZkW794xeQDES7pHOrmU0UoCS6cnMc1I2aByU%2F0CnikS%2BXuT55Y4jJgY1%2B7zb9nAeAOaZU%3D&recv_account_type=00&recv_bank_acc_pro=0&recv_gate_id=CEB&recv_user_name=B91gklPSvX5%2F4T71q6%2BDfiduSTUdcF9fXDQZdkw2QAg2XsDxwxbxG33VWb3OTvMdu0ll2wJjvwQprngS2qrkfN76ja2MiqlXM88IIYIOy%2FM3p%2BScK2G7U9wP27apY8DOZP%2BYnVk9akp2MOvp6ypj1Th7tJ3%2Bw6kaebK%2BcvBD%2BSo%3D&service=transfer_direct_req&sign_type=RSA&version=4.0&sign=TI9nY89M5W1i9yNBlamzG8tC0dxRVy%2BAvsDyO0VzXB3iqGltIp9YG6437CpkdDru090tLl46it1EaJLtK1gb7r8MeyYXjNDo%2FtUQn1pYnTc9T%2BHF7NdBgoIcMA5EDXQuvcwSO1lewYbFgSgVMxvg1E%2FnPtXhONPOEwIUP2a8A4E%3D',
+    'content_type' => 'text/html; charset=UTF-8',
+    'http_code' => 200,
+    'header_size' => 336,
+    'request_size' => 1536,
+    'filetime' => -1,
+    'ssl_verify_result' => 0,
+    'redirect_count' => 0,
+    'total_time' => 0.1275529999999999997140065488565596751868724822998046875,
+    'namelookup_time' => 0.0552580000000000015614176618328201584517955780029296875,
+    'connect_time' => 0.08444400000000000516831022423502872698009014129638671875,
+    'pretransfer_time' => 0.08452700000000000490896212568259215913712978363037109375,
+    'size_upload' => 0,
+    'size_download' => 388,
+    'speed_download' => 3041,
+    'speed_upload' => 0,
+    'download_content_length' => -1,
+    'upload_content_length' => 0,
+    'starttransfer_time' => 0.1274859999999999882192014410975389182567596435546875,
+    'redirect_time' => 0,
+    'redirect_url' => '',
+    'primary_ip' => '115.182.85.76',
+    'certinfo' => 
+    array (
+    ),
+    'primary_port' => 80,
+    'local_ip' => '192.168.1.214',
+    'local_port' => 58335,
+  ),
+)
+    in /opt/lampp/htdocs/common/services/PayService.php:422
+    in /opt/lampp/htdocs/common/services/PayService.php:346
+    in /opt/lampp/htdocs/common/services/PayService.php:86
+2014-12-22 17:29:08 [192.168.1.126][1][-][info][koudai.pay.*] map original=HashMap::__set_state(array(
+   'H_table' => 
+  array (
+    'service' => 'transfer_direct_req',
+    'sign_type' => 'RSA',
+    'mer_id' => '25116',
+    'version' => '4.0',
+    'charset' => 'UTF-8',
+    'notify_url' => 'http://www.koudailc.com/app/pay-notify',
+    'order_id' => '61',
+    'mer_date' => '20141222',
+    'amount' => '10000',
+    'recv_account_type' => '00',
+    'recv_bank_acc_pro' => '0',
+    'recv_account' => '4554676764464631973494',
+    'recv_user_name' => '黄铭',
+    'identity_type' => '01',
+    'identity_code' => '360311198904034056',
+    'identity_holder' => '黄铭',
+    'media_type' => 'MOBILE',
+    'media_id' => '13917884931',
+    'recv_gate_id' => 'CEB',
+    'bank_brhname' => '上海市徐汇支行',
+    'purpose' => '提现',
+  ),
+))
+    in /opt/lampp/htdocs/common/services/PayService.php:344
+    in /opt/lampp/htdocs/common/services/PayService.php:86
+    in /opt/lampp/htdocs/common/services/AccountService.php:68
+2014-12-22 17:29:08 [192.168.1.126][1][-][info][koudai.pay.*] map original=HashMap::__set_state(array(
+   'H_table' => 
+  array (
+    'service' => 'transfer_direct_req',
+    'sign_type' => 'RSA',
+    'mer_id' => '25116',
+    'version' => '4.0',
+    'charset' => 'UTF-8',
+    'notify_url' => 'http://www.koudailc.com/app/pay-notify',
+    'order_id' => '61',
+    'mer_date' => '20141222',
+    'amount' => '10000',
+    'recv_account_type' => '00',
+    'recv_bank_acc_pro' => '0',
+    'recv_account' => '4554676764464631973494',
+    'recv_user_name' => '黄铭',
+    'identity_type' => '01',
+    'identity_code' => '360311198904034056',
+    'identity_holder' => '黄铭',
+    'media_type' => 'MOBILE',
+    'media_id' => '13917884931',
+    'recv_gate_id' => 'CEB',
+    'bank_brhname' => '上海市徐汇支行',
+    'purpose' => '提现',
+  ),
+))
+    in /opt/lampp/htdocs/common/services/PayService.php:407
+    in /opt/lampp/htdocs/common/services/PayService.php:346
+    in /opt/lampp/htdocs/common/services/PayService.php:86
+2014-12-22 17:29:08 [192.168.1.126][1][-][info][koudai.pay.*] map encoded=HashMap::__set_state(array(
+   'H_table' => 
+  array (
+    'service' => 'transfer_direct_req',
+    'sign_type' => 'RSA',
+    'mer_id' => '25116',
+    'version' => '4.0',
+    'charset' => 'UTF-8',
+    'notify_url' => 'http://www.koudailc.com/app/pay-notify',
+    'order_id' => '61',
+    'mer_date' => '20141222',
+    'amount' => '10000',
+    'recv_account_type' => '00',
+    'recv_bank_acc_pro' => '0',
+    'recv_account' => 'BSx33Au61HCpTfZUMNiqHuNhV+/x5HlvetOdO5r1zQ+uPbU7PoG2ua4/H6iyKBoWGHegHYOIqjHD9sBJv+csobVhUJXaFKZTigHt4sqyperOpXyf/vKjf2GbiLDhAaZsOj+z2jRQ+Q6G+glVoDRtYb14+ahViBuU61VfqIKvAzw=',
+    'recv_user_name' => 'sK1uW93T0Hcmcr08Zr5c1xhtZSyWoqQxG01mZY69Q2HS7Y0jxIp77BrMHEXSpZr0L9AQM5tJKqFMQmcOdid810goeqkKHDqKp4vwy3Q9Rx06EkMWp8QbqFF75IdDbGJ26lb1odCiTFcl3gcGYD0MmBeHVzdxnHcirKaLvvJGvog=',
+    'identity_type' => '01',
+    'identity_code' => 'TCwAGVTQTBPnNo18p+TB9zjEqFlCUfHxdqFE1hxmWYcE2aHn9+XR+JcluRdRpOW0VTKxWq+z3nYXuOPoFa2Q3iUd/FZUY3B/dDGWJkY5yXh2zEiraofu5qs++crBBDFprnl/OErQn8gxUrTWmCKPTtKmq2Wa0bJI80cv8lrWkqQ=',
+    'identity_holder' => 'L7RQEVr/+DQZxGZlW29uQeZd5zYhr8BXR3Zu0IQlg5khIG93vLm2bNzZ5umS9yjf/qq2M+yZ4rqdiGUWokZ41nHK0Im3OwKt6yEspU9+phBmCeoZQefNfzxnUGJaR+4aO5ZyT3S7MQajN2jEzaXsDXE2UmBZIhTqb3IOdnkQa0c=',
+    'media_type' => 'MOBILE',
+    'media_id' => '13917884931',
+    'recv_gate_id' => 'CEB',
+    'bank_brhname' => '上海市徐汇支行',
+    'purpose' => '提现',
+  ),
+))
+    in /opt/lampp/htdocs/common/services/PayService.php:409
+    in /opt/lampp/htdocs/common/services/PayService.php:346
+    in /opt/lampp/htdocs/common/services/PayService.php:86
+2014-12-22 17:29:08 [192.168.1.126][1][-][info][koudai.pay.*] httpReq=common\api\HttpRequest::__set_state(array(
+   'ERROR_DESC' => 
+  array (
+    1 => 'URL格式错误',
+  ),
+   'getFields' => NULL,
+   'postFields' => NULL,
+   'method' => 'GET',
+   'url' => 'http://pay.soopay.net/spay/pay/payservice.do?amount=10000&bank_brhname=%E4%B8%8A%E6%B5%B7%E5%B8%82%E5%BE%90%E6%B1%87%E6%94%AF%E8%A1%8C&charset=UTF-8&identity_code=TCwAGVTQTBPnNo18p%2BTB9zjEqFlCUfHxdqFE1hxmWYcE2aHn9%2BXR%2BJcluRdRpOW0VTKxWq%2Bz3nYXuOPoFa2Q3iUd%2FFZUY3B%2FdDGWJkY5yXh2zEiraofu5qs%2B%2BcrBBDFprnl%2FOErQn8gxUrTWmCKPTtKmq2Wa0bJI80cv8lrWkqQ%3D&identity_holder=L7RQEVr%2F%2BDQZxGZlW29uQeZd5zYhr8BXR3Zu0IQlg5khIG93vLm2bNzZ5umS9yjf%2Fqq2M%2ByZ4rqdiGUWokZ41nHK0Im3OwKt6yEspU9%2BphBmCeoZQefNfzxnUGJaR%2B4aO5ZyT3S7MQajN2jEzaXsDXE2UmBZIhTqb3IOdnkQa0c%3D&identity_type=01&media_id=13917884931&media_type=MOBILE&mer_date=20141222&mer_id=25116&notify_url=http%3A%2F%2Fwww.koudailc.com%2Fapp%2Fpay-notify&order_id=61&purpose=%E6%8F%90%E7%8E%B0&recv_account=BSx33Au61HCpTfZUMNiqHuNhV%2B%2Fx5HlvetOdO5r1zQ%2BuPbU7PoG2ua4%2FH6iyKBoWGHegHYOIqjHD9sBJv%2BcsobVhUJXaFKZTigHt4sqyperOpXyf%2FvKjf2GbiLDhAaZsOj%2Bz2jRQ%2BQ6G%2BglVoDRtYb14%2BahViBuU61VfqIKvAzw%3D&recv_account_type=00&recv_bank_acc_pro=0&recv_gate_id=CEB&recv_user_name=sK1uW93T0Hcmcr08Zr5c1xhtZSyWoqQxG01mZY69Q2HS7Y0jxIp77BrMHEXSpZr0L9AQM5tJKqFMQmcOdid810goeqkKHDqKp4vwy3Q9Rx06EkMWp8QbqFF75IdDbGJ26lb1odCiTFcl3gcGYD0MmBeHVzdxnHcirKaLvvJGvog%3D&service=transfer_direct_req&sign_type=RSA&version=4.0&sign=yibqh5iowrsK3zqqfQ%2FNQfHFdK4fsvXplUGfGuMykZ1UswETw%2F%2B70XBlXc0Dol%2BhDQ7OmSPCEhEoewgoYJSsPJg8ABU70OiLPQKbAbNhv1uf5nz3mgDkegHVyq8siv3yUFhFMQK22MCrVQ%2FMZ4%2F3aJUWzkCXliMEMG0bLnKvoek%3D',
+   'postDataFormat' => 1,
+   'code' => '',
+))
+    in /opt/lampp/htdocs/common/services/PayService.php:418
+    in /opt/lampp/htdocs/common/services/PayService.php:346
+    in /opt/lampp/htdocs/common/services/PayService.php:86
+2014-12-22 17:29:08 [192.168.1.126][1][-][info][koudai.pay.*] httpResp=array (
+  'code' => 200,
+  'resp' => '
+ 
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head>
+	<META NAME="MobilePayPlatform" CONTENT="ret_code=00060700&ret_msg=数据校验未通过&sign=q61Ijm/wqpeAJcFjvzSNuM4uXvuVketcS5V0TtxrolA1EQ4y/758HiRO46FHTUUIgMfrslC/LN/iOCOxliDNpgvaYTVH0fAs2ffe9mVQXj9TbzwllS/XiBZb0yLEXsj+BE0FqOuvc1uuFYTVNDExhuFgsREycqCn9GyqGxsh+K4=">
+  </head>
+  <body>
+  </body>
+</html>',
+  'curl_getinfo' => 
+  array (
+    'url' => 'http://pay.soopay.net/spay/pay/payservice.do?amount=10000&bank_brhname=%E4%B8%8A%E6%B5%B7%E5%B8%82%E5%BE%90%E6%B1%87%E6%94%AF%E8%A1%8C&charset=UTF-8&identity_code=TCwAGVTQTBPnNo18p%2BTB9zjEqFlCUfHxdqFE1hxmWYcE2aHn9%2BXR%2BJcluRdRpOW0VTKxWq%2Bz3nYXuOPoFa2Q3iUd%2FFZUY3B%2FdDGWJkY5yXh2zEiraofu5qs%2B%2BcrBBDFprnl%2FOErQn8gxUrTWmCKPTtKmq2Wa0bJI80cv8lrWkqQ%3D&identity_holder=L7RQEVr%2F%2BDQZxGZlW29uQeZd5zYhr8BXR3Zu0IQlg5khIG93vLm2bNzZ5umS9yjf%2Fqq2M%2ByZ4rqdiGUWokZ41nHK0Im3OwKt6yEspU9%2BphBmCeoZQefNfzxnUGJaR%2B4aO5ZyT3S7MQajN2jEzaXsDXE2UmBZIhTqb3IOdnkQa0c%3D&identity_type=01&media_id=13917884931&media_type=MOBILE&mer_date=20141222&mer_id=25116&notify_url=http%3A%2F%2Fwww.koudailc.com%2Fapp%2Fpay-notify&order_id=61&purpose=%E6%8F%90%E7%8E%B0&recv_account=BSx33Au61HCpTfZUMNiqHuNhV%2B%2Fx5HlvetOdO5r1zQ%2BuPbU7PoG2ua4%2FH6iyKBoWGHegHYOIqjHD9sBJv%2BcsobVhUJXaFKZTigHt4sqyperOpXyf%2FvKjf2GbiLDhAaZsOj%2Bz2jRQ%2BQ6G%2BglVoDRtYb14%2BahViBuU61VfqIKvAzw%3D&recv_account_type=00&recv_bank_acc_pro=0&recv_gate_id=CEB&recv_user_name=sK1uW93T0Hcmcr08Zr5c1xhtZSyWoqQxG01mZY69Q2HS7Y0jxIp77BrMHEXSpZr0L9AQM5tJKqFMQmcOdid810goeqkKHDqKp4vwy3Q9Rx06EkMWp8QbqFF75IdDbGJ26lb1odCiTFcl3gcGYD0MmBeHVzdxnHcirKaLvvJGvog%3D&service=transfer_direct_req&sign_type=RSA&version=4.0&sign=yibqh5iowrsK3zqqfQ%2FNQfHFdK4fsvXplUGfGuMykZ1UswETw%2F%2B70XBlXc0Dol%2BhDQ7OmSPCEhEoewgoYJSsPJg8ABU70OiLPQKbAbNhv1uf5nz3mgDkegHVyq8siv3yUFhFMQK22MCrVQ%2FMZ4%2F3aJUWzkCXliMEMG0bLnKvoek%3D',
+    'content_type' => 'text/html; charset=UTF-8',
+    'http_code' => 200,
+    'header_size' => 336,
+    'request_size' => 1541,
+    'filetime' => -1,
+    'ssl_verify_result' => 0,
+    'redirect_count' => 0,
+    'total_time' => 0.1341590000000000004742872761198668740689754486083984375,
+    'namelookup_time' => 0.049545999999999999763300451149916625581681728363037109375,
+    'connect_time' => 0.08057699999999999584954224474131478928029537200927734375,
+    'pretransfer_time' => 0.08066500000000000059063864910058327950537204742431640625,
+    'size_upload' => 0,
+    'size_download' => 388,
+    'speed_download' => 2892,
+    'speed_upload' => 0,
+    'download_content_length' => -1,
+    'upload_content_length' => 0,
+    'starttransfer_time' => 0.134066999999999991732835269431234337389469146728515625,
+    'redirect_time' => 0,
+    'redirect_url' => '',
+    'primary_ip' => '115.182.85.76',
+    'certinfo' => 
+    array (
+    ),
+    'primary_port' => 80,
+    'local_ip' => '192.168.1.214',
+    'local_port' => 59291,
+  ),
+)
+    in /opt/lampp/htdocs/common/services/PayService.php:422
+    in /opt/lampp/htdocs/common/services/PayService.php:346
+    in /opt/lampp/htdocs/common/services/PayService.php:86
+2014-12-22 17:29:28 [192.168.1.126][1][-][info][koudai.pay.*] map original=HashMap::__set_state(array(
+   'H_table' => 
+  array (
+    'service' => 'transfer_direct_req',
+    'sign_type' => 'RSA',
+    'mer_id' => '25116',
+    'version' => '4.0',
+    'charset' => 'UTF-8',
+    'notify_url' => 'http://www.koudailc.com/app/pay-notify',
+    'order_id' => '61',
+    'mer_date' => '20141222',
+    'amount' => '10000',
+    'recv_account_type' => '00',
+    'recv_bank_acc_pro' => '0',
+    'recv_account' => '4554676764464631973494',
+    'recv_user_name' => '黄铭',
+    'identity_type' => '01',
+    'identity_code' => '360311198904034056',
+    'identity_holder' => '黄铭',
+    'media_type' => 'MOBILE',
+    'media_id' => '13917884931',
+    'recv_gate_id' => 'CEB',
+    'bank_brhname' => '上海市徐汇支行',
+    'purpose' => '提现',
+  ),
+))
+    in /opt/lampp/htdocs/common/services/PayService.php:344
+    in /opt/lampp/htdocs/common/services/PayService.php:86
+    in /opt/lampp/htdocs/common/services/AccountService.php:68
+2014-12-22 17:29:28 [192.168.1.126][1][-][info][koudai.pay.*] map original=HashMap::__set_state(array(
+   'H_table' => 
+  array (
+    'service' => 'transfer_direct_req',
+    'sign_type' => 'RSA',
+    'mer_id' => '25116',
+    'version' => '4.0',
+    'charset' => 'UTF-8',
+    'notify_url' => 'http://www.koudailc.com/app/pay-notify',
+    'order_id' => '61',
+    'mer_date' => '20141222',
+    'amount' => '10000',
+    'recv_account_type' => '00',
+    'recv_bank_acc_pro' => '0',
+    'recv_account' => '4554676764464631973494',
+    'recv_user_name' => '黄铭',
+    'identity_type' => '01',
+    'identity_code' => '360311198904034056',
+    'identity_holder' => '黄铭',
+    'media_type' => 'MOBILE',
+    'media_id' => '13917884931',
+    'recv_gate_id' => 'CEB',
+    'bank_brhname' => '上海市徐汇支行',
+    'purpose' => '提现',
+  ),
+))
+    in /opt/lampp/htdocs/common/services/PayService.php:407
+    in /opt/lampp/htdocs/common/services/PayService.php:346
+    in /opt/lampp/htdocs/common/services/PayService.php:86
+2014-12-22 17:29:28 [192.168.1.126][1][-][info][koudai.pay.*] map encoded=HashMap::__set_state(array(
+   'H_table' => 
+  array (
+    'service' => 'transfer_direct_req',
+    'sign_type' => 'RSA',
+    'mer_id' => '25116',
+    'version' => '4.0',
+    'charset' => 'UTF-8',
+    'notify_url' => 'http://www.koudailc.com/app/pay-notify',
+    'order_id' => '61',
+    'mer_date' => '20141222',
+    'amount' => '10000',
+    'recv_account_type' => '00',
+    'recv_bank_acc_pro' => '0',
+    'recv_account' => 'Aknl0WLOL3Ct52PUN3DDnXrnDx+Bppdn+pHYJ4cGYNC140KNYRXTQx8Ymn01RSyqDQNFdj2NcbtDganl7BTyDdJTddxFoMUm10hzcNiyrVpr1br/aW4hx3nvDG/SHG3eVXsu2uXg0BHtIm+LKDfHjuTlYlR77TFbNjjEvQ9X8uY=',
+    'recv_user_name' => 'Zkcc6MSo0DZq17nhVToH9k56GmY7yFMny9qIdoAy/D3iHcO6LP/c8Erqt+3iuG1P9WiZbISHxTK/LriQfyGQoKbh1AaCcxHgvsEvebaElOdfr19RWpST8QbvBI1IqZtSiyAv9WkPFoxIdmpNlmNzx0HAK1O1QeGWETDzEYnJnQU=',
+    'identity_type' => '01',
+    'identity_code' => 'gzH2ufBjRQjQju+YfeGTTEerZTeKer7TQ0cn7Ukiz9aa6Sk8HWtiaB1Ucdc9OaclFgT9i5QWMDSYhohRcKf6dFt6v2GYtmWMbO0DcgWu/F5w5uNX2V+pBIAOhjx+l7VoP7EhHtVhtvvZ16J60EkCrXw2vFZzPH4WBc8Ma02/zVM=',
+    'identity_holder' => 'AmA5XWsSek3sgXH05qyquizh5urEFc8RcQbt5cw2X6bfYIqkzAY4fMjQLgzSaUClSULNbYgLKj83Y2oOrFQutP2aA7K7DnSJ/+Fj4HLTiKeeFBSNpxPh2BDv1FHuBwC+1CJDesidMMzjiv4GI4AZcQiMPClkpT3ummkvV8xPah4=',
+    'media_type' => 'MOBILE',
+    'media_id' => '13917884931',
+    'recv_gate_id' => 'CEB',
+    'bank_brhname' => '上海市徐汇支行',
+    'purpose' => '提现',
+  ),
+))
+    in /opt/lampp/htdocs/common/services/PayService.php:409
+    in /opt/lampp/htdocs/common/services/PayService.php:346
+    in /opt/lampp/htdocs/common/services/PayService.php:86
+2014-12-22 17:29:28 [192.168.1.126][1][-][info][koudai.pay.*] httpReq=common\api\HttpRequest::__set_state(array(
+   'ERROR_DESC' => 
+  array (
+    1 => 'URL格式错误',
+  ),
+   'getFields' => NULL,
+   'postFields' => NULL,
+   'method' => 'GET',
+   'url' => 'http://pay.soopay.net/spay/pay/payservice.do?amount=10000&bank_brhname=%E4%B8%8A%E6%B5%B7%E5%B8%82%E5%BE%90%E6%B1%87%E6%94%AF%E8%A1%8C&charset=UTF-8&identity_code=gzH2ufBjRQjQju%2BYfeGTTEerZTeKer7TQ0cn7Ukiz9aa6Sk8HWtiaB1Ucdc9OaclFgT9i5QWMDSYhohRcKf6dFt6v2GYtmWMbO0DcgWu%2FF5w5uNX2V%2BpBIAOhjx%2Bl7VoP7EhHtVhtvvZ16J60EkCrXw2vFZzPH4WBc8Ma02%2FzVM%3D&identity_holder=AmA5XWsSek3sgXH05qyquizh5urEFc8RcQbt5cw2X6bfYIqkzAY4fMjQLgzSaUClSULNbYgLKj83Y2oOrFQutP2aA7K7DnSJ%2F%2BFj4HLTiKeeFBSNpxPh2BDv1FHuBwC%2B1CJDesidMMzjiv4GI4AZcQiMPClkpT3ummkvV8xPah4%3D&identity_type=01&media_id=13917884931&media_type=MOBILE&mer_date=20141222&mer_id=25116&notify_url=http%3A%2F%2Fwww.koudailc.com%2Fapp%2Fpay-notify&order_id=61&purpose=%E6%8F%90%E7%8E%B0&recv_account=Aknl0WLOL3Ct52PUN3DDnXrnDx%2BBppdn%2BpHYJ4cGYNC140KNYRXTQx8Ymn01RSyqDQNFdj2NcbtDganl7BTyDdJTddxFoMUm10hzcNiyrVpr1br%2FaW4hx3nvDG%2FSHG3eVXsu2uXg0BHtIm%2BLKDfHjuTlYlR77TFbNjjEvQ9X8uY%3D&recv_account_type=00&recv_bank_acc_pro=0&recv_gate_id=CEB&recv_user_name=Zkcc6MSo0DZq17nhVToH9k56GmY7yFMny9qIdoAy%2FD3iHcO6LP%2Fc8Erqt%2B3iuG1P9WiZbISHxTK%2FLriQfyGQoKbh1AaCcxHgvsEvebaElOdfr19RWpST8QbvBI1IqZtSiyAv9WkPFoxIdmpNlmNzx0HAK1O1QeGWETDzEYnJnQU%3D&service=transfer_direct_req&sign_type=RSA&version=4.0&sign=xOMBmyI%2FfxHO6aFqyYRv%2Fi8J%2FU2sBo1SaT2bTKBF22lT1Asx1QJaA4QcadCI9nG2rYlXBDjjw2td8XHRle4hAZwNVfD4gyXLANjv0Y7xLs8AsBuEejNYLh3U0wv%2BPwSpjb8X%2FHzhyfxceo2UVY69CBI9M3XYgHLCi%2Flfp8%2BqgKk%3D',
+   'postDataFormat' => 1,
+   'code' => '',
+))
+    in /opt/lampp/htdocs/common/services/PayService.php:418
+    in /opt/lampp/htdocs/common/services/PayService.php:346
+    in /opt/lampp/htdocs/common/services/PayService.php:86
+2014-12-22 17:29:28 [192.168.1.126][1][-][info][koudai.pay.*] httpResp=array (
+  'code' => 200,
+  'resp' => '
+ 
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head>
+	<META NAME="MobilePayPlatform" CONTENT="ret_code=00060700&ret_msg=数据校验未通过&sign=q61Ijm/wqpeAJcFjvzSNuM4uXvuVketcS5V0TtxrolA1EQ4y/758HiRO46FHTUUIgMfrslC/LN/iOCOxliDNpgvaYTVH0fAs2ffe9mVQXj9TbzwllS/XiBZb0yLEXsj+BE0FqOuvc1uuFYTVNDExhuFgsREycqCn9GyqGxsh+K4=">
+  </head>
+  <body>
+  </body>
+</html>',
+  'curl_getinfo' => 
+  array (
+    'url' => 'http://pay.soopay.net/spay/pay/payservice.do?amount=10000&bank_brhname=%E4%B8%8A%E6%B5%B7%E5%B8%82%E5%BE%90%E6%B1%87%E6%94%AF%E8%A1%8C&charset=UTF-8&identity_code=gzH2ufBjRQjQju%2BYfeGTTEerZTeKer7TQ0cn7Ukiz9aa6Sk8HWtiaB1Ucdc9OaclFgT9i5QWMDSYhohRcKf6dFt6v2GYtmWMbO0DcgWu%2FF5w5uNX2V%2BpBIAOhjx%2Bl7VoP7EhHtVhtvvZ16J60EkCrXw2vFZzPH4WBc8Ma02%2FzVM%3D&identity_holder=AmA5XWsSek3sgXH05qyquizh5urEFc8RcQbt5cw2X6bfYIqkzAY4fMjQLgzSaUClSULNbYgLKj83Y2oOrFQutP2aA7K7DnSJ%2F%2BFj4HLTiKeeFBSNpxPh2BDv1FHuBwC%2B1CJDesidMMzjiv4GI4AZcQiMPClkpT3ummkvV8xPah4%3D&identity_type=01&media_id=13917884931&media_type=MOBILE&mer_date=20141222&mer_id=25116&notify_url=http%3A%2F%2Fwww.koudailc.com%2Fapp%2Fpay-notify&order_id=61&purpose=%E6%8F%90%E7%8E%B0&recv_account=Aknl0WLOL3Ct52PUN3DDnXrnDx%2BBppdn%2BpHYJ4cGYNC140KNYRXTQx8Ymn01RSyqDQNFdj2NcbtDganl7BTyDdJTddxFoMUm10hzcNiyrVpr1br%2FaW4hx3nvDG%2FSHG3eVXsu2uXg0BHtIm%2BLKDfHjuTlYlR77TFbNjjEvQ9X8uY%3D&recv_account_type=00&recv_bank_acc_pro=0&recv_gate_id=CEB&recv_user_name=Zkcc6MSo0DZq17nhVToH9k56GmY7yFMny9qIdoAy%2FD3iHcO6LP%2Fc8Erqt%2B3iuG1P9WiZbISHxTK%2FLriQfyGQoKbh1AaCcxHgvsEvebaElOdfr19RWpST8QbvBI1IqZtSiyAv9WkPFoxIdmpNlmNzx0HAK1O1QeGWETDzEYnJnQU%3D&service=transfer_direct_req&sign_type=RSA&version=4.0&sign=xOMBmyI%2FfxHO6aFqyYRv%2Fi8J%2FU2sBo1SaT2bTKBF22lT1Asx1QJaA4QcadCI9nG2rYlXBDjjw2td8XHRle4hAZwNVfD4gyXLANjv0Y7xLs8AsBuEejNYLh3U0wv%2BPwSpjb8X%2FHzhyfxceo2UVY69CBI9M3XYgHLCi%2Flfp8%2BqgKk%3D',
+    'content_type' => 'text/html; charset=UTF-8',
+    'http_code' => 200,
+    'header_size' => 336,
+    'request_size' => 1527,
+    'filetime' => -1,
+    'ssl_verify_result' => 0,
+    'redirect_count' => 0,
+    'total_time' => 0.0770200000000000051247894816697225905954837799072265625,
+    'namelookup_time' => 0.006442999999999999942434936173185633379034698009490966796875,
+    'connect_time' => 0.0363590000000000024282797994601423852145671844482421875,
+    'pretransfer_time' => 0.0364130000000000009219291996487299911677837371826171875,
+    'size_upload' => 0,
+    'size_download' => 388,
+    'speed_download' => 5037,
+    'speed_upload' => 0,
+    'download_content_length' => -1,
+    'upload_content_length' => 0,
+    'starttransfer_time' => 0.0769539999999999946300732744930428452789783477783203125,
+    'redirect_time' => 0,
+    'redirect_url' => '',
+    'primary_ip' => '115.182.85.75',
+    'certinfo' => 
+    array (
+    ),
+    'primary_port' => 80,
+    'local_ip' => '192.168.1.214',
+    'local_port' => 53584,
+  ),
+)
+    in /opt/lampp/htdocs/common/services/PayService.php:422
+    in /opt/lampp/htdocs/common/services/PayService.php:346
+    in /opt/lampp/htdocs/common/services/PayService.php:86
+2014-12-22 17:30:28 [192.168.1.126][1][-][info][koudai.pay.*] map original=HashMap::__set_state(array(
+   'H_table' => 
+  array (
+    'service' => 'transfer_direct_req',
+    'sign_type' => 'RSA',
+    'mer_id' => '25116',
+    'version' => '4.0',
+    'charset' => 'UTF-8',
+    'notify_url' => 'http://www.koudailc.com/app/pay-notify',
+    'order_id' => '61',
+    'mer_date' => '20141222',
+    'amount' => '10000',
+    'recv_account_type' => '00',
+    'recv_bank_acc_pro' => '0',
+    'recv_account' => '4554676764464631973494',
+    'recv_user_name' => '黄铭',
+    'identity_type' => '01',
+    'identity_code' => '360311198904034056',
+    'identity_holder' => '黄铭',
+    'media_type' => 'MOBILE',
+    'media_id' => '13917884931',
+    'recv_gate_id' => 'CEB',
+    'bank_brhname' => '上海市徐汇支行',
+    'purpose' => '提现',
+  ),
+))
+    in /opt/lampp/htdocs/common/services/PayService.php:344
+    in /opt/lampp/htdocs/common/services/PayService.php:86
+    in /opt/lampp/htdocs/common/services/AccountService.php:68
+2014-12-22 17:30:28 [192.168.1.126][1][-][info][koudai.pay.*] map original=HashMap::__set_state(array(
+   'H_table' => 
+  array (
+    'service' => 'transfer_direct_req',
+    'sign_type' => 'RSA',
+    'mer_id' => '25116',
+    'version' => '4.0',
+    'charset' => 'UTF-8',
+    'notify_url' => 'http://www.koudailc.com/app/pay-notify',
+    'order_id' => '61',
+    'mer_date' => '20141222',
+    'amount' => '10000',
+    'recv_account_type' => '00',
+    'recv_bank_acc_pro' => '0',
+    'recv_account' => '4554676764464631973494',
+    'recv_user_name' => '黄铭',
+    'identity_type' => '01',
+    'identity_code' => '360311198904034056',
+    'identity_holder' => '黄铭',
+    'media_type' => 'MOBILE',
+    'media_id' => '13917884931',
+    'recv_gate_id' => 'CEB',
+    'bank_brhname' => '上海市徐汇支行',
+    'purpose' => '提现',
+  ),
+))
+    in /opt/lampp/htdocs/common/services/PayService.php:407
+    in /opt/lampp/htdocs/common/services/PayService.php:346
+    in /opt/lampp/htdocs/common/services/PayService.php:86
+2014-12-22 17:30:28 [192.168.1.126][1][-][info][koudai.pay.*] map encoded=HashMap::__set_state(array(
+   'H_table' => 
+  array (
+    'service' => 'transfer_direct_req',
+    'sign_type' => 'RSA',
+    'mer_id' => '25116',
+    'version' => '4.0',
+    'charset' => 'UTF-8',
+    'notify_url' => 'http://www.koudailc.com/app/pay-notify',
+    'order_id' => '61',
+    'mer_date' => '20141222',
+    'amount' => '10000',
+    'recv_account_type' => '00',
+    'recv_bank_acc_pro' => '0',
+    'recv_account' => 'uZYhEBPgd/rNBrbtYPG9pt7nCOumcRHrvBP8dT2NtyxQoBBJtDCYPbtHr2jFV/q+NpC9M1X6N+HN11aAlZKEUc8WbgE6MU0cs4qLuMQXTXZZ+yahxmd4vSIFlMPUNSfQjtLiJc80CPgcB4TK+hEWBzFUnhgI93j2OxtLY/XCDBA=',
+    'recv_user_name' => 'qmEG6Y0v29rXbd972CKGO0Ny0vIUHb9zwTBA5r2TwQNE4kOl3NBrE+Zrsp5mwDeIQMQGZut/IhSTPEVLfvzvGCeGkBhYhPPvSKomTbIxglmcBH7bxcRIWZh0VPRp4yYy4iO1FqEdyduZ5ZrD1xuRTICRuldIvkkmlPNunKiGGJ0=',
+    'identity_type' => '01',
+    'identity_code' => 'I8UdN/lv9m5LQyf87RKJmXqvM9ZWQktB1UfeXLYEAxCnRTBbC/ttOPCENbqKPSODe0HhocTQEAlJRkKtlxaNFhsdbuuRc36Sr1f5YY9tNnWfiF7qV4uQ2lRQWKTWkxaqolPP/73Vb88NforTGlKa5sSE/CJbju1MKlYFzHdq19I=',
+    'identity_holder' => 'EhhgtGNqpvLWVYqhToxtPj9A1pTvds9GbHafldUSLQXr1yJMj73w7SPrGjaa46u10MiOQb2TI9i2uiX5d4KJWxVSx5dN32yMf9LizFWukfpqMaJJuUgV8wzY2b4BhRfuW3i3w//mP3jaALgs22PdxQJn3BtnG9CWjARHmaVXWxQ=',
+    'media_type' => 'MOBILE',
+    'media_id' => '13917884931',
+    'recv_gate_id' => 'CEB',
+    'bank_brhname' => '上海市徐汇支行',
+    'purpose' => '提现',
+  ),
+))
+    in /opt/lampp/htdocs/common/services/PayService.php:409
+    in /opt/lampp/htdocs/common/services/PayService.php:346
+    in /opt/lampp/htdocs/common/services/PayService.php:86
+2014-12-22 17:30:28 [192.168.1.126][1][-][info][koudai.pay.*] httpReq=common\api\HttpRequest::__set_state(array(
+   'ERROR_DESC' => 
+  array (
+    1 => 'URL格式错误',
+  ),
+   'getFields' => NULL,
+   'postFields' => NULL,
+   'method' => 'GET',
+   'url' => 'http://pay.soopay.net/spay/pay/payservice.do?amount=10000&bank_brhname=%E4%B8%8A%E6%B5%B7%E5%B8%82%E5%BE%90%E6%B1%87%E6%94%AF%E8%A1%8C&charset=UTF-8&identity_code=I8UdN%2Flv9m5LQyf87RKJmXqvM9ZWQktB1UfeXLYEAxCnRTBbC%2FttOPCENbqKPSODe0HhocTQEAlJRkKtlxaNFhsdbuuRc36Sr1f5YY9tNnWfiF7qV4uQ2lRQWKTWkxaqolPP%2F73Vb88NforTGlKa5sSE%2FCJbju1MKlYFzHdq19I%3D&identity_holder=EhhgtGNqpvLWVYqhToxtPj9A1pTvds9GbHafldUSLQXr1yJMj73w7SPrGjaa46u10MiOQb2TI9i2uiX5d4KJWxVSx5dN32yMf9LizFWukfpqMaJJuUgV8wzY2b4BhRfuW3i3w%2F%2FmP3jaALgs22PdxQJn3BtnG9CWjARHmaVXWxQ%3D&identity_type=01&media_id=13917884931&media_type=MOBILE&mer_date=20141222&mer_id=25116&notify_url=http%3A%2F%2Fwww.koudailc.com%2Fapp%2Fpay-notify&order_id=61&purpose=%E6%8F%90%E7%8E%B0&recv_account=uZYhEBPgd%2FrNBrbtYPG9pt7nCOumcRHrvBP8dT2NtyxQoBBJtDCYPbtHr2jFV%2Fq%2BNpC9M1X6N%2BHN11aAlZKEUc8WbgE6MU0cs4qLuMQXTXZZ%2Byahxmd4vSIFlMPUNSfQjtLiJc80CPgcB4TK%2BhEWBzFUnhgI93j2OxtLY%2FXCDBA%3D&recv_account_type=00&recv_bank_acc_pro=0&recv_gate_id=CEB&recv_user_name=qmEG6Y0v29rXbd972CKGO0Ny0vIUHb9zwTBA5r2TwQNE4kOl3NBrE%2BZrsp5mwDeIQMQGZut%2FIhSTPEVLfvzvGCeGkBhYhPPvSKomTbIxglmcBH7bxcRIWZh0VPRp4yYy4iO1FqEdyduZ5ZrD1xuRTICRuldIvkkmlPNunKiGGJ0%3D&service=transfer_direct_req&sign_type=RSA&version=4.0&sign=sMbDDsMrGbjP9TyDiWrnRnSP8GAf2g3DacQk43p%2FfTmFPzXX3ybbI3S8fvyAjnbF0RmJEK4GwXmVw6b3IwjiDgHxfYW9Rl63zFajeWOk2YdNhUz1MGe%2FyOJceBQ917fCBfTHPI5SROn9QxP4KbT5fNJS1svRvzjLm%2BXkzQDkCUk%3D',
+   'postDataFormat' => 1,
+   'code' => '',
+))
+    in /opt/lampp/htdocs/common/services/PayService.php:418
+    in /opt/lampp/htdocs/common/services/PayService.php:346
+    in /opt/lampp/htdocs/common/services/PayService.php:86
+2014-12-22 17:30:28 [192.168.1.126][1][-][info][koudai.pay.*] httpResp=array (
+  'code' => 200,
+  'resp' => '
+ 
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head>
+	<META NAME="MobilePayPlatform" CONTENT="ret_code=00060700&ret_msg=数据校验未通过&sign=q61Ijm/wqpeAJcFjvzSNuM4uXvuVketcS5V0TtxrolA1EQ4y/758HiRO46FHTUUIgMfrslC/LN/iOCOxliDNpgvaYTVH0fAs2ffe9mVQXj9TbzwllS/XiBZb0yLEXsj+BE0FqOuvc1uuFYTVNDExhuFgsREycqCn9GyqGxsh+K4=">
+  </head>
+  <body>
+  </body>
+</html>',
+  'curl_getinfo' => 
+  array (
+    'url' => 'http://pay.soopay.net/spay/pay/payservice.do?amount=10000&bank_brhname=%E4%B8%8A%E6%B5%B7%E5%B8%82%E5%BE%90%E6%B1%87%E6%94%AF%E8%A1%8C&charset=UTF-8&identity_code=I8UdN%2Flv9m5LQyf87RKJmXqvM9ZWQktB1UfeXLYEAxCnRTBbC%2FttOPCENbqKPSODe0HhocTQEAlJRkKtlxaNFhsdbuuRc36Sr1f5YY9tNnWfiF7qV4uQ2lRQWKTWkxaqolPP%2F73Vb88NforTGlKa5sSE%2FCJbju1MKlYFzHdq19I%3D&identity_holder=EhhgtGNqpvLWVYqhToxtPj9A1pTvds9GbHafldUSLQXr1yJMj73w7SPrGjaa46u10MiOQb2TI9i2uiX5d4KJWxVSx5dN32yMf9LizFWukfpqMaJJuUgV8wzY2b4BhRfuW3i3w%2F%2FmP3jaALgs22PdxQJn3BtnG9CWjARHmaVXWxQ%3D&identity_type=01&media_id=13917884931&media_type=MOBILE&mer_date=20141222&mer_id=25116&notify_url=http%3A%2F%2Fwww.koudailc.com%2Fapp%2Fpay-notify&order_id=61&purpose=%E6%8F%90%E7%8E%B0&recv_account=uZYhEBPgd%2FrNBrbtYPG9pt7nCOumcRHrvBP8dT2NtyxQoBBJtDCYPbtHr2jFV%2Fq%2BNpC9M1X6N%2BHN11aAlZKEUc8WbgE6MU0cs4qLuMQXTXZZ%2Byahxmd4vSIFlMPUNSfQjtLiJc80CPgcB4TK%2BhEWBzFUnhgI93j2OxtLY%2FXCDBA%3D&recv_account_type=00&recv_bank_acc_pro=0&recv_gate_id=CEB&recv_user_name=qmEG6Y0v29rXbd972CKGO0Ny0vIUHb9zwTBA5r2TwQNE4kOl3NBrE%2BZrsp5mwDeIQMQGZut%2FIhSTPEVLfvzvGCeGkBhYhPPvSKomTbIxglmcBH7bxcRIWZh0VPRp4yYy4iO1FqEdyduZ5ZrD1xuRTICRuldIvkkmlPNunKiGGJ0%3D&service=transfer_direct_req&sign_type=RSA&version=4.0&sign=sMbDDsMrGbjP9TyDiWrnRnSP8GAf2g3DacQk43p%2FfTmFPzXX3ybbI3S8fvyAjnbF0RmJEK4GwXmVw6b3IwjiDgHxfYW9Rl63zFajeWOk2YdNhUz1MGe%2FyOJceBQ917fCBfTHPI5SROn9QxP4KbT5fNJS1svRvzjLm%2BXkzQDkCUk%3D',
+    'content_type' => 'text/html; charset=UTF-8',
+    'http_code' => 200,
+    'header_size' => 336,
+    'request_size' => 1515,
+    'filetime' => -1,
+    'ssl_verify_result' => 0,
+    'redirect_count' => 0,
+    'total_time' => 0.083405000000000006910028105266974307596683502197265625,
+    'namelookup_time' => 0.0128869999999999991502352969519051839597523212432861328125,
+    'connect_time' => 0.04228400000000000213962181305760168470442295074462890625,
+    'pretransfer_time' => 0.04236299999999999787991811217580107040703296661376953125,
+    'size_upload' => 0,
+    'size_download' => 388,
+    'speed_download' => 4651,
+    'speed_upload' => 0,
+    'download_content_length' => -1,
+    'upload_content_length' => 0,
+    'starttransfer_time' => 0.08334099999999999841548969925497658550739288330078125,
+    'redirect_time' => 0,
+    'redirect_url' => '',
+    'primary_ip' => '115.182.85.75',
+    'certinfo' => 
+    array (
+    ),
+    'primary_port' => 80,
+    'local_ip' => '192.168.1.214',
+    'local_port' => 53621,
+  ),
+)
+    in /opt/lampp/htdocs/common/services/PayService.php:422
+    in /opt/lampp/htdocs/common/services/PayService.php:346
+    in /opt/lampp/htdocs/common/services/PayService.php:86
+2014-12-26 10:38:37 [192.168.1.111][1][-][info][koudai.pay.*] map original=HashMap::__set_state(array(
+   'H_table' => 
+  array (
+    'service' => 'user_cancel',
+    'sign_type' => 'RSA',
+    'mer_id' => '25116',
+    'version' => '4.0',
+    'charset' => 'UTF-8',
+    'media_id' => '13995290755',
+    'media_type' => 'MOBILE',
+    'busi_no' => '1',
+  ),
+))
+    in /opt/lampp/htdocs/common/services/PayService.php:407
+    in /opt/lampp/htdocs/common/services/PayService.php:216
+    in /opt/lampp/htdocs/common/services/PayService.php:72
+2014-12-26 10:38:37 [192.168.1.111][1][-][info][koudai.pay.*] map encoded=HashMap::__set_state(array(
+   'H_table' => 
+  array (
+    'service' => 'user_cancel',
+    'sign_type' => 'RSA',
+    'mer_id' => '25116',
+    'version' => '4.0',
+    'charset' => 'UTF-8',
+    'media_id' => '13995290755',
+    'media_type' => 'MOBILE',
+    'busi_no' => '1',
+  ),
+))
+    in /opt/lampp/htdocs/common/services/PayService.php:409
+    in /opt/lampp/htdocs/common/services/PayService.php:216
+    in /opt/lampp/htdocs/common/services/PayService.php:72
+2014-12-26 10:38:37 [192.168.1.111][1][-][info][koudai.pay.*] httpReq=common\api\HttpRequest::__set_state(array(
+   'ERROR_DESC' => 
+  array (
+    1 => 'URL格式错误',
+  ),
+   'getFields' => NULL,
+   'postFields' => NULL,
+   'method' => 'GET',
+   'url' => 'http://pay.soopay.net/spay/pay/payservice.do?busi_no=1&charset=UTF-8&media_id=13995290755&media_type=MOBILE&mer_id=25116&service=user_cancel&sign_type=RSA&version=4.0&sign=U4EuIwJk3kbyiFhVwHw%2FZdfPhfxP7%2FkVcZG4FrwnxRXsuhQZQ%2B5M4yNDFfxk1dGnCk%2Fd9F2iorUGYompHL3Ix8eVMAyZFuEKSFqYTmDChUNTHoHWVpZxgeMsClajfXdvzp37SOaSaka7CibGlKcCFBH0v36aBdI%2B2zlO5K4vKmw%3D',
+   'postDataFormat' => 1,
+   'code' => '',
+))
+    in /opt/lampp/htdocs/common/services/PayService.php:418
+    in /opt/lampp/htdocs/common/services/PayService.php:216
+    in /opt/lampp/htdocs/common/services/PayService.php:72
+2014-12-26 10:38:37 [192.168.1.111][1][-][info][koudai.pay.*] httpResp=array (
+  'code' => 200,
+  'resp' => '
+ 
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head>
+	<META NAME="MobilePayPlatform" CONTENT="busi_no=1&charset=UTF-8&media_id=13995290755&media_type=MOBILE&mer_id=25116&ret_code=0000&ret_msg=注销成功!&service=user_cancel&sign_type=RSA&version=4.0&sign=D6EvWGq+mEOSIudeaOsL69+W0yTEnvBvWy9jBtb+dazelzzh2uN8t2EwyPom/Mu3vhOI+LwcTpDgx4qtiIltc6+bFDB+Mkp3nrRE0DKINL9Mo085BlyMCpo/u0b3GpmYPSCIJdjsOGUB/1P2lISR9/z8PwKbDbBMgecRGZgKbtU=">
+  </head>
+  <body>
+  </body>
+</html>',
+  'curl_getinfo' => 
+  array (
+    'url' => 'http://pay.soopay.net/spay/pay/payservice.do?busi_no=1&charset=UTF-8&media_id=13995290755&media_type=MOBILE&mer_id=25116&service=user_cancel&sign_type=RSA&version=4.0&sign=U4EuIwJk3kbyiFhVwHw%2FZdfPhfxP7%2FkVcZG4FrwnxRXsuhQZQ%2B5M4yNDFfxk1dGnCk%2Fd9F2iorUGYompHL3Ix8eVMAyZFuEKSFqYTmDChUNTHoHWVpZxgeMsClajfXdvzp37SOaSaka7CibGlKcCFBH0v36aBdI%2B2zlO5K4vKmw%3D',
+    'content_type' => 'text/html; charset=UTF-8',
+    'http_code' => 200,
+    'header_size' => 336,
+    'request_size' => 451,
+    'filetime' => -1,
+    'ssl_verify_result' => 0,
+    'redirect_count' => 0,
+    'total_time' => 0.2309049999999999991384669328908785246312618255615234375,
+    'namelookup_time' => 0.1046040000000000025348612098241574130952358245849609375,
+    'connect_time' => 0.1367750000000000076827433304060832597315311431884765625,
+    'pretransfer_time' => 0.13685300000000000242295072894194163382053375244140625,
+    'size_upload' => 0,
+    'size_download' => 498,
+    'speed_download' => 2156,
+    'speed_upload' => 0,
+    'download_content_length' => -1,
+    'upload_content_length' => 0,
+    'starttransfer_time' => 0.2308310000000000083986151366843841969966888427734375,
+    'redirect_time' => 0,
+    'redirect_url' => '',
+    'primary_ip' => '115.182.85.75',
+    'certinfo' => 
+    array (
+    ),
+    'primary_port' => 80,
+    'local_ip' => '192.168.1.214',
+    'local_port' => 36800,
+  ),
+)
+    in /opt/lampp/htdocs/common/services/PayService.php:422
+    in /opt/lampp/htdocs/common/services/PayService.php:216
+    in /opt/lampp/htdocs/common/services/PayService.php:72
+2014-12-26 14:09:22 [192.168.1.111][1][-][info][koudai.pay.*] map original=HashMap::__set_state(array(
+   'H_table' => 
+  array (
+    'service' => 'user_cancel',
+    'sign_type' => 'RSA',
+    'mer_id' => '25116',
+    'version' => '4.0',
+    'charset' => 'UTF-8',
+    'media_id' => '13995290755',
+    'media_type' => 'MOBILE',
+    'busi_no' => '1',
+  ),
+))
+    in /opt/lampp/htdocs/common/services/PayService.php:375
+    in /opt/lampp/htdocs/common/services/PayService.php:217
+    in /opt/lampp/htdocs/common/services/PayService.php:73
+2014-12-26 14:09:22 [192.168.1.111][1][-][info][koudai.pay.*] map encoded=HashMap::__set_state(array(
+   'H_table' => 
+  array (
+    'service' => 'user_cancel',
+    'sign_type' => 'RSA',
+    'mer_id' => '25116',
+    'version' => '4.0',
+    'charset' => 'UTF-8',
+    'media_id' => '13995290755',
+    'media_type' => 'MOBILE',
+    'busi_no' => '1',
+  ),
+))
+    in /opt/lampp/htdocs/common/services/PayService.php:377
+    in /opt/lampp/htdocs/common/services/PayService.php:217
+    in /opt/lampp/htdocs/common/services/PayService.php:73
+2014-12-26 14:09:22 [192.168.1.111][1][-][info][koudai.pay.*] httpReq=common\api\HttpRequest::__set_state(array(
+   'ERROR_DESC' => 
+  array (
+    1 => 'URL格式错误',
+  ),
+   'getFields' => NULL,
+   'postFields' => NULL,
+   'method' => 'GET',
+   'url' => 'http://pay.soopay.net/spay/pay/payservice.do?busi_no=1&charset=UTF-8&media_id=13995290755&media_type=MOBILE&mer_id=25116&service=user_cancel&sign_type=RSA&version=4.0&sign=U4EuIwJk3kbyiFhVwHw%2FZdfPhfxP7%2FkVcZG4FrwnxRXsuhQZQ%2B5M4yNDFfxk1dGnCk%2Fd9F2iorUGYompHL3Ix8eVMAyZFuEKSFqYTmDChUNTHoHWVpZxgeMsClajfXdvzp37SOaSaka7CibGlKcCFBH0v36aBdI%2B2zlO5K4vKmw%3D',
+   'postDataFormat' => 1,
+   'code' => '',
+))
+    in /opt/lampp/htdocs/common/services/PayService.php:386
+    in /opt/lampp/htdocs/common/services/PayService.php:217
+    in /opt/lampp/htdocs/common/services/PayService.php:73
+2014-12-26 14:09:22 [192.168.1.111][1][-][info][koudai.pay.*] httpResp=array (
+  'code' => 200,
+  'resp' => '
+ 
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head>
+	<META NAME="MobilePayPlatform" CONTENT="busi_no=1&charset=UTF-8&media_id=13995290755&media_type=MOBILE&mer_id=25116&ret_code=0000&ret_msg=注销成功!&service=user_cancel&sign_type=RSA&version=4.0&sign=D6EvWGq+mEOSIudeaOsL69+W0yTEnvBvWy9jBtb+dazelzzh2uN8t2EwyPom/Mu3vhOI+LwcTpDgx4qtiIltc6+bFDB+Mkp3nrRE0DKINL9Mo085BlyMCpo/u0b3GpmYPSCIJdjsOGUB/1P2lISR9/z8PwKbDbBMgecRGZgKbtU=">
+  </head>
+  <body>
+  </body>
+</html>',
+  'curl_getinfo' => 
+  array (
+    'url' => 'http://pay.soopay.net/spay/pay/payservice.do?busi_no=1&charset=UTF-8&media_id=13995290755&media_type=MOBILE&mer_id=25116&service=user_cancel&sign_type=RSA&version=4.0&sign=U4EuIwJk3kbyiFhVwHw%2FZdfPhfxP7%2FkVcZG4FrwnxRXsuhQZQ%2B5M4yNDFfxk1dGnCk%2Fd9F2iorUGYompHL3Ix8eVMAyZFuEKSFqYTmDChUNTHoHWVpZxgeMsClajfXdvzp37SOaSaka7CibGlKcCFBH0v36aBdI%2B2zlO5K4vKmw%3D',
+    'content_type' => 'text/html; charset=UTF-8',
+    'http_code' => 200,
+    'header_size' => 336,
+    'request_size' => 451,
+    'filetime' => -1,
+    'ssl_verify_result' => 0,
+    'redirect_count' => 0,
+    'total_time' => 0.2221070000000000543849409950780682265758514404296875,
+    'namelookup_time' => 0.05818700000000000260858001865926780737936496734619140625,
+    'connect_time' => 0.091377000000000041524117477820254862308502197265625,
+    'pretransfer_time' => 0.09145199999999997775290694335126318037509918212890625,
+    'size_upload' => 0,
+    'size_download' => 498,
+    'speed_download' => 2242,
+    'speed_upload' => 0,
+    'download_content_length' => -1,
+    'upload_content_length' => 0,
+    'starttransfer_time' => 0.22203300000000003588951358324266038835048675537109375,
+    'redirect_time' => 0,
+    'redirect_url' => '',
+    'primary_ip' => '115.182.85.74',
+    'certinfo' => 
+    array (
+    ),
+    'primary_port' => 80,
+    'local_ip' => '192.168.1.214',
+    'local_port' => 55081,
+  ),
+)
+    in /opt/lampp/htdocs/common/services/PayService.php:390
+    in /opt/lampp/htdocs/common/services/PayService.php:217
+    in /opt/lampp/htdocs/common/services/PayService.php:73
+2014-12-26 18:53:19 [192.168.1.129][1][-][info][koudai.pay.*] map original=HashMap::__set_state(array(
+   'H_table' => 
+  array (
+    'service' => 'query_account_balance',
+    'sign_type' => 'RSA',
+    'mer_id' => '25116',
+    'version' => '4.0',
+    'charset' => 'UTF-8',
+  ),
+))
+    in /opt/lampp/htdocs/common/services/PayService.php:375
+    in /opt/lampp/htdocs/common/services/PayService.php:343
+    in /opt/lampp/htdocs/common/services/PayService.php:95
+2014-12-26 18:53:19 [192.168.1.129][1][-][info][koudai.pay.*] map encoded=HashMap::__set_state(array(
+   'H_table' => 
+  array (
+    'service' => 'query_account_balance',
+    'sign_type' => 'RSA',
+    'mer_id' => '25116',
+    'version' => '4.0',
+    'charset' => 'UTF-8',
+  ),
+))
+    in /opt/lampp/htdocs/common/services/PayService.php:377
+    in /opt/lampp/htdocs/common/services/PayService.php:343
+    in /opt/lampp/htdocs/common/services/PayService.php:95
+2014-12-26 18:53:19 [192.168.1.129][1][-][info][koudai.pay.*] httpReq=common\api\HttpRequest::__set_state(array(
+   'ERROR_DESC' => 
+  array (
+    1 => 'URL格式错误',
+  ),
+   'getFields' => NULL,
+   'postFields' => NULL,
+   'method' => 'GET',
+   'url' => 'http://pay.soopay.net/spay/pay/payservice.do?charset=UTF-8&mer_id=25116&service=query_account_balance&sign_type=RSA&version=4.0&sign=oI0T%2Fj%2BoLEUOfacWWN1cTluXA%2FCIJUYXUxLKeWZfX5%2BMLCopTG72NMxekTNOsytaFILtYrLt1sLtQPGalY8PwVV8b7he0R7HhdysGBkF6869%2Bue86G0dfnKg6tbVf9kUOG4UKu8ibKOXityHwmF%2ByJzvQ9gtFwybwRS4G47JqvI%3D',
+   'postDataFormat' => 1,
+   'code' => '',
+))
+    in /opt/lampp/htdocs/common/services/PayService.php:386
+    in /opt/lampp/htdocs/common/services/PayService.php:343
+    in /opt/lampp/htdocs/common/services/PayService.php:95
+2014-12-26 18:53:19 [192.168.1.129][1][-][info][koudai.pay.*] httpResp=array (
+  'code' => 200,
+  'resp' => '
+ 
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head>
+	<META NAME="MobilePayPlatform" CONTENT="bal_sign=000000000025710936&mer_id=25116&ret_code=0000&ret_msg=查询成功&sign_type=RSA&version=4.0&sign=clG8e39FHmLs9ZNeCJfrqCFp56u2e2Y5KlVp97Ci5BAzhQBwF5c/KJi3RQIk32cHqZvlakUr9fBzXLu5mgPCvRN1S5RFlBUNhfvqNTNHKpAFB+U4wcyf6Te37xZfXU6+e4EHwIiY4irum7qsMixXvGf2MxXKsr6YxtqbNCCkPe8=">
+  </head>
+  <body>
+  </body>
+</html>',
+  'curl_getinfo' => 
+  array (
+    'url' => 'http://pay.soopay.net/spay/pay/payservice.do?charset=UTF-8&mer_id=25116&service=query_account_balance&sign_type=RSA&version=4.0&sign=oI0T%2Fj%2BoLEUOfacWWN1cTluXA%2FCIJUYXUxLKeWZfX5%2BMLCopTG72NMxekTNOsytaFILtYrLt1sLtQPGalY8PwVV8b7he0R7HhdysGBkF6869%2Bue86G0dfnKg6tbVf9kUOG4UKu8ibKOXityHwmF%2ByJzvQ9gtFwybwRS4G47JqvI%3D',
+    'content_type' => 'text/html; charset=UTF-8',
+    'http_code' => 200,
+    'header_size' => 336,
+    'request_size' => 414,
+    'filetime' => -1,
+    'ssl_verify_result' => 0,
+    'redirect_count' => 0,
+    'total_time' => 0.1478230000000000099458219438020023517310619354248046875,
+    'namelookup_time' => 0.01155400000000000003408384685599230579100549221038818359375,
+    'connect_time' => 0.0459589999999999998525623823297792114317417144775390625,
+    'pretransfer_time' => 0.046037000000000001531663684772865963168442249298095703125,
+    'size_upload' => 0,
+    'size_download' => 442,
+    'speed_download' => 2990,
+    'speed_upload' => 0,
+    'download_content_length' => -1,
+    'upload_content_length' => 0,
+    'starttransfer_time' => 0.1477489999999999914503945319665945135056972503662109375,
+    'redirect_time' => 0,
+    'redirect_url' => '',
+    'primary_ip' => '115.182.85.74',
+    'certinfo' => 
+    array (
+    ),
+    'primary_port' => 80,
+    'local_ip' => '192.168.1.214',
+    'local_port' => 58841,
+  ),
+)
+    in /opt/lampp/htdocs/common/services/PayService.php:390
+    in /opt/lampp/htdocs/common/services/PayService.php:343
+    in /opt/lampp/htdocs/common/services/PayService.php:95
+2014-12-26 19:02:20 [192.168.1.129][1][-][info][koudai.pay.*] map original=HashMap::__set_state(array(
+   'H_table' => 
+  array (
+    'service' => 'query_account_balance',
+    'sign_type' => 'RSA',
+    'mer_id' => '25116',
+    'version' => '4.0',
+    'charset' => 'UTF-8',
+  ),
+))
+    in /opt/lampp/htdocs/common/services/PayService.php:375
+    in /opt/lampp/htdocs/common/services/PayService.php:343
+    in /opt/lampp/htdocs/common/services/PayService.php:95
+2014-12-26 19:02:20 [192.168.1.129][1][-][info][koudai.pay.*] map encoded=HashMap::__set_state(array(
+   'H_table' => 
+  array (
+    'service' => 'query_account_balance',
+    'sign_type' => 'RSA',
+    'mer_id' => '25116',
+    'version' => '4.0',
+    'charset' => 'UTF-8',
+  ),
+))
+    in /opt/lampp/htdocs/common/services/PayService.php:377
+    in /opt/lampp/htdocs/common/services/PayService.php:343
+    in /opt/lampp/htdocs/common/services/PayService.php:95
+2014-12-26 19:02:20 [192.168.1.129][1][-][info][koudai.pay.*] httpReq=common\api\HttpRequest::__set_state(array(
+   'ERROR_DESC' => 
+  array (
+    1 => 'URL格式错误',
+  ),
+   'getFields' => NULL,
+   'postFields' => NULL,
+   'method' => 'GET',
+   'url' => 'http://pay.soopay.net/spay/pay/payservice.do?charset=UTF-8&mer_id=25116&service=query_account_balance&sign_type=RSA&version=4.0&sign=oI0T%2Fj%2BoLEUOfacWWN1cTluXA%2FCIJUYXUxLKeWZfX5%2BMLCopTG72NMxekTNOsytaFILtYrLt1sLtQPGalY8PwVV8b7he0R7HhdysGBkF6869%2Bue86G0dfnKg6tbVf9kUOG4UKu8ibKOXityHwmF%2ByJzvQ9gtFwybwRS4G47JqvI%3D',
+   'postDataFormat' => 1,
+   'code' => '',
+))
+    in /opt/lampp/htdocs/common/services/PayService.php:386
+    in /opt/lampp/htdocs/common/services/PayService.php:343
+    in /opt/lampp/htdocs/common/services/PayService.php:95
+2014-12-26 19:02:20 [192.168.1.129][1][-][info][koudai.pay.*] httpResp=array (
+  'code' => 200,
+  'resp' => '
+ 
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head>
+	<META NAME="MobilePayPlatform" CONTENT="bal_sign=000000000025710936&mer_id=25116&ret_code=0000&ret_msg=查询成功&sign_type=RSA&version=4.0&sign=clG8e39FHmLs9ZNeCJfrqCFp56u2e2Y5KlVp97Ci5BAzhQBwF5c/KJi3RQIk32cHqZvlakUr9fBzXLu5mgPCvRN1S5RFlBUNhfvqNTNHKpAFB+U4wcyf6Te37xZfXU6+e4EHwIiY4irum7qsMixXvGf2MxXKsr6YxtqbNCCkPe8=">
+  </head>
+  <body>
+  </body>
+</html>',
+  'curl_getinfo' => 
+  array (
+    'url' => 'http://pay.soopay.net/spay/pay/payservice.do?charset=UTF-8&mer_id=25116&service=query_account_balance&sign_type=RSA&version=4.0&sign=oI0T%2Fj%2BoLEUOfacWWN1cTluXA%2FCIJUYXUxLKeWZfX5%2BMLCopTG72NMxekTNOsytaFILtYrLt1sLtQPGalY8PwVV8b7he0R7HhdysGBkF6869%2Bue86G0dfnKg6tbVf9kUOG4UKu8ibKOXityHwmF%2ByJzvQ9gtFwybwRS4G47JqvI%3D',
+    'content_type' => 'text/html; charset=UTF-8',
+    'http_code' => 200,
+    'header_size' => 336,
+    'request_size' => 414,
+    'filetime' => -1,
+    'ssl_verify_result' => 0,
+    'redirect_count' => 0,
+    'total_time' => 0.1959079999999999988080645607624319382011890411376953125,
+    'namelookup_time' => 0.09309699999999999919797488701078691519796848297119140625,
+    'connect_time' => 0.12284299999999999386535165513123502023518085479736328125,
+    'pretransfer_time' => 0.122919000000000000483169060316868126392364501953125,
+    'size_upload' => 0,
+    'size_download' => 442,
+    'speed_download' => 2256,
+    'speed_upload' => 0,
+    'download_content_length' => -1,
+    'upload_content_length' => 0,
+    'starttransfer_time' => 0.1958040000000000058211213627146207727491855621337890625,
+    'redirect_time' => 0,
+    'redirect_url' => '',
+    'primary_ip' => '115.182.85.75',
+    'certinfo' => 
+    array (
+    ),
+    'primary_port' => 80,
+    'local_ip' => '192.168.1.214',
+    'local_port' => 42586,
+  ),
+)
+    in /opt/lampp/htdocs/common/services/PayService.php:390
+    in /opt/lampp/htdocs/common/services/PayService.php:343
+    in /opt/lampp/htdocs/common/services/PayService.php:95
+2014-12-26 19:02:56 [192.168.1.129][1][-][info][koudai.pay.*] map original=HashMap::__set_state(array(
+   'H_table' => 
+  array (
+    'service' => 'query_account_balance',
+    'sign_type' => 'RSA',
+    'mer_id' => '25116',
+    'version' => '4.0',
+    'charset' => 'UTF-8',
+  ),
+))
+    in /opt/lampp/htdocs/common/services/PayService.php:375
+    in /opt/lampp/htdocs/common/services/PayService.php:343
+    in /opt/lampp/htdocs/common/services/PayService.php:95
+2014-12-26 19:02:56 [192.168.1.129][1][-][info][koudai.pay.*] map encoded=HashMap::__set_state(array(
+   'H_table' => 
+  array (
+    'service' => 'query_account_balance',
+    'sign_type' => 'RSA',
+    'mer_id' => '25116',
+    'version' => '4.0',
+    'charset' => 'UTF-8',
+  ),
+))
+    in /opt/lampp/htdocs/common/services/PayService.php:377
+    in /opt/lampp/htdocs/common/services/PayService.php:343
+    in /opt/lampp/htdocs/common/services/PayService.php:95
+2014-12-26 19:02:56 [192.168.1.129][1][-][info][koudai.pay.*] httpReq=common\api\HttpRequest::__set_state(array(
+   'ERROR_DESC' => 
+  array (
+    1 => 'URL格式错误',
+  ),
+   'getFields' => NULL,
+   'postFields' => NULL,
+   'method' => 'GET',
+   'url' => 'http://pay.soopay.net/spay/pay/payservice.do?charset=UTF-8&mer_id=25116&service=query_account_balance&sign_type=RSA&version=4.0&sign=oI0T%2Fj%2BoLEUOfacWWN1cTluXA%2FCIJUYXUxLKeWZfX5%2BMLCopTG72NMxekTNOsytaFILtYrLt1sLtQPGalY8PwVV8b7he0R7HhdysGBkF6869%2Bue86G0dfnKg6tbVf9kUOG4UKu8ibKOXityHwmF%2ByJzvQ9gtFwybwRS4G47JqvI%3D',
+   'postDataFormat' => 1,
+   'code' => '',
+))
+    in /opt/lampp/htdocs/common/services/PayService.php:386
+    in /opt/lampp/htdocs/common/services/PayService.php:343
+    in /opt/lampp/htdocs/common/services/PayService.php:95
+2014-12-26 19:02:56 [192.168.1.129][1][-][info][koudai.pay.*] httpResp=array (
+  'code' => 200,
+  'resp' => '
+ 
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head>
+	<META NAME="MobilePayPlatform" CONTENT="bal_sign=000000000025710936&mer_id=25116&ret_code=0000&ret_msg=查询成功&sign_type=RSA&version=4.0&sign=clG8e39FHmLs9ZNeCJfrqCFp56u2e2Y5KlVp97Ci5BAzhQBwF5c/KJi3RQIk32cHqZvlakUr9fBzXLu5mgPCvRN1S5RFlBUNhfvqNTNHKpAFB+U4wcyf6Te37xZfXU6+e4EHwIiY4irum7qsMixXvGf2MxXKsr6YxtqbNCCkPe8=">
+  </head>
+  <body>
+  </body>
+</html>',
+  'curl_getinfo' => 
+  array (
+    'url' => 'http://pay.soopay.net/spay/pay/payservice.do?charset=UTF-8&mer_id=25116&service=query_account_balance&sign_type=RSA&version=4.0&sign=oI0T%2Fj%2BoLEUOfacWWN1cTluXA%2FCIJUYXUxLKeWZfX5%2BMLCopTG72NMxekTNOsytaFILtYrLt1sLtQPGalY8PwVV8b7he0R7HhdysGBkF6869%2Bue86G0dfnKg6tbVf9kUOG4UKu8ibKOXityHwmF%2ByJzvQ9gtFwybwRS4G47JqvI%3D',
+    'content_type' => 'text/html; charset=UTF-8',
+    'http_code' => 200,
+    'header_size' => 336,
+    'request_size' => 414,
+    'filetime' => -1,
+    'ssl_verify_result' => 0,
+    'redirect_count' => 0,
+    'total_time' => 0.14904200000000000780886466600350104272365570068359375,
+    'namelookup_time' => 0.06382300000000000472777372806376661173999309539794921875,
+    'connect_time' => 0.09317499999999999393818228554664528928697109222412109375,
+    'pretransfer_time' => 0.0932489999999999985558218895675963722169399261474609375,
+    'size_upload' => 0,
+    'size_download' => 442,
+    'speed_download' => 2965,
+    'speed_upload' => 0,
+    'download_content_length' => -1,
+    'upload_content_length' => 0,
+    'starttransfer_time' => 0.1489709999999999923137039559151162393391132354736328125,
+    'redirect_time' => 0,
+    'redirect_url' => '',
+    'primary_ip' => '115.182.85.75',
+    'certinfo' => 
+    array (
+    ),
+    'primary_port' => 80,
+    'local_ip' => '192.168.1.214',
+    'local_port' => 42589,
+  ),
+)
+    in /opt/lampp/htdocs/common/services/PayService.php:390
+    in /opt/lampp/htdocs/common/services/PayService.php:343
+    in /opt/lampp/htdocs/common/services/PayService.php:95
+2014-12-26 19:03:00 [192.168.1.129][1][-][info][koudai.pay.*] map original=HashMap::__set_state(array(
+   'H_table' => 
+  array (
+    'service' => 'query_account_balance',
+    'sign_type' => 'RSA',
+    'mer_id' => '25116',
+    'version' => '4.0',
+    'charset' => 'UTF-8',
+  ),
+))
+    in /opt/lampp/htdocs/common/services/PayService.php:375
+    in /opt/lampp/htdocs/common/services/PayService.php:343
+    in /opt/lampp/htdocs/common/services/PayService.php:95
+2014-12-26 19:03:00 [192.168.1.129][1][-][info][koudai.pay.*] map encoded=HashMap::__set_state(array(
+   'H_table' => 
+  array (
+    'service' => 'query_account_balance',
+    'sign_type' => 'RSA',
+    'mer_id' => '25116',
+    'version' => '4.0',
+    'charset' => 'UTF-8',
+  ),
+))
+    in /opt/lampp/htdocs/common/services/PayService.php:377
+    in /opt/lampp/htdocs/common/services/PayService.php:343
+    in /opt/lampp/htdocs/common/services/PayService.php:95
+2014-12-26 19:03:00 [192.168.1.129][1][-][info][koudai.pay.*] httpReq=common\api\HttpRequest::__set_state(array(
+   'ERROR_DESC' => 
+  array (
+    1 => 'URL格式错误',
+  ),
+   'getFields' => NULL,
+   'postFields' => NULL,
+   'method' => 'GET',
+   'url' => 'http://pay.soopay.net/spay/pay/payservice.do?charset=UTF-8&mer_id=25116&service=query_account_balance&sign_type=RSA&version=4.0&sign=oI0T%2Fj%2BoLEUOfacWWN1cTluXA%2FCIJUYXUxLKeWZfX5%2BMLCopTG72NMxekTNOsytaFILtYrLt1sLtQPGalY8PwVV8b7he0R7HhdysGBkF6869%2Bue86G0dfnKg6tbVf9kUOG4UKu8ibKOXityHwmF%2ByJzvQ9gtFwybwRS4G47JqvI%3D',
+   'postDataFormat' => 1,
+   'code' => '',
+))
+    in /opt/lampp/htdocs/common/services/PayService.php:386
+    in /opt/lampp/htdocs/common/services/PayService.php:343
+    in /opt/lampp/htdocs/common/services/PayService.php:95
+2014-12-26 19:03:00 [192.168.1.129][1][-][info][koudai.pay.*] httpResp=array (
+  'code' => 200,
+  'resp' => '
+ 
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head>
+	<META NAME="MobilePayPlatform" CONTENT="bal_sign=000000000025710936&mer_id=25116&ret_code=0000&ret_msg=查询成功&sign_type=RSA&version=4.0&sign=clG8e39FHmLs9ZNeCJfrqCFp56u2e2Y5KlVp97Ci5BAzhQBwF5c/KJi3RQIk32cHqZvlakUr9fBzXLu5mgPCvRN1S5RFlBUNhfvqNTNHKpAFB+U4wcyf6Te37xZfXU6+e4EHwIiY4irum7qsMixXvGf2MxXKsr6YxtqbNCCkPe8=">
+  </head>
+  <body>
+  </body>
+</html>',
+  'curl_getinfo' => 
+  array (
+    'url' => 'http://pay.soopay.net/spay/pay/payservice.do?charset=UTF-8&mer_id=25116&service=query_account_balance&sign_type=RSA&version=4.0&sign=oI0T%2Fj%2BoLEUOfacWWN1cTluXA%2FCIJUYXUxLKeWZfX5%2BMLCopTG72NMxekTNOsytaFILtYrLt1sLtQPGalY8PwVV8b7he0R7HhdysGBkF6869%2Bue86G0dfnKg6tbVf9kUOG4UKu8ibKOXityHwmF%2ByJzvQ9gtFwybwRS4G47JqvI%3D',
+    'content_type' => 'text/html; charset=UTF-8',
+    'http_code' => 200,
+    'header_size' => 336,
+    'request_size' => 414,
+    'filetime' => -1,
+    'ssl_verify_result' => 0,
+    'redirect_count' => 0,
+    'total_time' => 0.084621000000000001772804125721449963748455047607421875,
+    'namelookup_time' => 0.005640000000000000048017145815038020373322069644927978515625,
+    'connect_time' => 0.034616000000000000935695965154081932269036769866943359375,
+    'pretransfer_time' => 0.03467699999999999949107376551182824186980724334716796875,
+    'size_upload' => 0,
+    'size_download' => 442,
+    'speed_download' => 5223,
+    'speed_upload' => 0,
+    'download_content_length' => -1,
+    'upload_content_length' => 0,
+    'starttransfer_time' => 0.0845569999999999932782657197094522416591644287109375,
+    'redirect_time' => 0,
+    'redirect_url' => '',
+    'primary_ip' => '115.182.85.76',
+    'certinfo' => 
+    array (
+    ),
+    'primary_port' => 80,
+    'local_ip' => '192.168.1.214',
+    'local_port' => 48307,
+  ),
+)
+    in /opt/lampp/htdocs/common/services/PayService.php:390
+    in /opt/lampp/htdocs/common/services/PayService.php:343
+    in /opt/lampp/htdocs/common/services/PayService.php:95
+2014-12-26 19:03:37 [192.168.1.129][1][-][info][koudai.pay.*] map original=HashMap::__set_state(array(
+   'H_table' => 
+  array (
+    'service' => 'query_account_balance',
+    'sign_type' => 'RSA',
+    'mer_id' => '25116',
+    'version' => '4.0',
+    'charset' => 'UTF-8',
+  ),
+))
+    in /opt/lampp/htdocs/common/services/PayService.php:375
+    in /opt/lampp/htdocs/common/services/PayService.php:343
+    in /opt/lampp/htdocs/common/services/PayService.php:95
+2014-12-26 19:03:37 [192.168.1.129][1][-][info][koudai.pay.*] map encoded=HashMap::__set_state(array(
+   'H_table' => 
+  array (
+    'service' => 'query_account_balance',
+    'sign_type' => 'RSA',
+    'mer_id' => '25116',
+    'version' => '4.0',
+    'charset' => 'UTF-8',
+  ),
+))
+    in /opt/lampp/htdocs/common/services/PayService.php:377
+    in /opt/lampp/htdocs/common/services/PayService.php:343
+    in /opt/lampp/htdocs/common/services/PayService.php:95
+2014-12-26 19:03:37 [192.168.1.129][1][-][info][koudai.pay.*] httpReq=common\api\HttpRequest::__set_state(array(
+   'ERROR_DESC' => 
+  array (
+    1 => 'URL格式错误',
+  ),
+   'getFields' => NULL,
+   'postFields' => NULL,
+   'method' => 'GET',
+   'url' => 'http://pay.soopay.net/spay/pay/payservice.do?charset=UTF-8&mer_id=25116&service=query_account_balance&sign_type=RSA&version=4.0&sign=oI0T%2Fj%2BoLEUOfacWWN1cTluXA%2FCIJUYXUxLKeWZfX5%2BMLCopTG72NMxekTNOsytaFILtYrLt1sLtQPGalY8PwVV8b7he0R7HhdysGBkF6869%2Bue86G0dfnKg6tbVf9kUOG4UKu8ibKOXityHwmF%2ByJzvQ9gtFwybwRS4G47JqvI%3D',
+   'postDataFormat' => 1,
+   'code' => '',
+))
+    in /opt/lampp/htdocs/common/services/PayService.php:386
+    in /opt/lampp/htdocs/common/services/PayService.php:343
+    in /opt/lampp/htdocs/common/services/PayService.php:95
+2014-12-26 19:03:37 [192.168.1.129][1][-][info][koudai.pay.*] httpResp=array (
+  'code' => 200,
+  'resp' => '
+ 
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head>
+	<META NAME="MobilePayPlatform" CONTENT="bal_sign=000000000025710936&mer_id=25116&ret_code=0000&ret_msg=查询成功&sign_type=RSA&version=4.0&sign=clG8e39FHmLs9ZNeCJfrqCFp56u2e2Y5KlVp97Ci5BAzhQBwF5c/KJi3RQIk32cHqZvlakUr9fBzXLu5mgPCvRN1S5RFlBUNhfvqNTNHKpAFB+U4wcyf6Te37xZfXU6+e4EHwIiY4irum7qsMixXvGf2MxXKsr6YxtqbNCCkPe8=">
+  </head>
+  <body>
+  </body>
+</html>',
+  'curl_getinfo' => 
+  array (
+    'url' => 'http://pay.soopay.net/spay/pay/payservice.do?charset=UTF-8&mer_id=25116&service=query_account_balance&sign_type=RSA&version=4.0&sign=oI0T%2Fj%2BoLEUOfacWWN1cTluXA%2FCIJUYXUxLKeWZfX5%2BMLCopTG72NMxekTNOsytaFILtYrLt1sLtQPGalY8PwVV8b7he0R7HhdysGBkF6869%2Bue86G0dfnKg6tbVf9kUOG4UKu8ibKOXityHwmF%2ByJzvQ9gtFwybwRS4G47JqvI%3D',
+    'content_type' => 'text/html; charset=UTF-8',
+    'http_code' => 200,
+    'header_size' => 336,
+    'request_size' => 414,
+    'filetime' => -1,
+    'ssl_verify_result' => 0,
+    'redirect_count' => 0,
+    'total_time' => 0.08719200000000000561062307724569109268486499786376953125,
+    'namelookup_time' => 0.006079000000000000202005079330547232530079782009124755859375,
+    'connect_time' => 0.035028999999999997638777671227217069827020168304443359375,
+    'pretransfer_time' => 0.035102000000000001256328374665827141143381595611572265625,
+    'size_upload' => 0,
+    'size_download' => 442,
+    'speed_download' => 5069,
+    'speed_upload' => 0,
+    'download_content_length' => -1,
+    'upload_content_length' => 0,
+    'starttransfer_time' => 0.08712599999999999511590687006901134736835956573486328125,
+    'redirect_time' => 0,
+    'redirect_url' => '',
+    'primary_ip' => '115.182.85.76',
+    'certinfo' => 
+    array (
+    ),
+    'primary_port' => 80,
+    'local_ip' => '192.168.1.214',
+    'local_port' => 48314,
+  ),
+)
+    in /opt/lampp/htdocs/common/services/PayService.php:390
+    in /opt/lampp/htdocs/common/services/PayService.php:343
+    in /opt/lampp/htdocs/common/services/PayService.php:95
+2014-12-26 19:05:11 [192.168.1.129][1][-][info][koudai.pay.*] map original=HashMap::__set_state(array(
+   'H_table' => 
+  array (
+    'service' => 'query_account_balance',
+    'sign_type' => 'RSA',
+    'mer_id' => '25116',
+    'version' => '4.0',
+    'charset' => 'UTF-8',
+  ),
+))
+    in /opt/lampp/htdocs/common/services/PayService.php:375
+    in /opt/lampp/htdocs/common/services/PayService.php:343
+    in /opt/lampp/htdocs/common/services/PayService.php:95
+2014-12-26 19:05:11 [192.168.1.129][1][-][info][koudai.pay.*] map encoded=HashMap::__set_state(array(
+   'H_table' => 
+  array (
+    'service' => 'query_account_balance',
+    'sign_type' => 'RSA',
+    'mer_id' => '25116',
+    'version' => '4.0',
+    'charset' => 'UTF-8',
+  ),
+))
+    in /opt/lampp/htdocs/common/services/PayService.php:377
+    in /opt/lampp/htdocs/common/services/PayService.php:343
+    in /opt/lampp/htdocs/common/services/PayService.php:95
+2014-12-26 19:05:11 [192.168.1.129][1][-][info][koudai.pay.*] httpReq=common\api\HttpRequest::__set_state(array(
+   'ERROR_DESC' => 
+  array (
+    1 => 'URL格式错误',
+  ),
+   'getFields' => NULL,
+   'postFields' => NULL,
+   'method' => 'GET',
+   'url' => 'http://pay.soopay.net/spay/pay/payservice.do?charset=UTF-8&mer_id=25116&service=query_account_balance&sign_type=RSA&version=4.0&sign=oI0T%2Fj%2BoLEUOfacWWN1cTluXA%2FCIJUYXUxLKeWZfX5%2BMLCopTG72NMxekTNOsytaFILtYrLt1sLtQPGalY8PwVV8b7he0R7HhdysGBkF6869%2Bue86G0dfnKg6tbVf9kUOG4UKu8ibKOXityHwmF%2ByJzvQ9gtFwybwRS4G47JqvI%3D',
+   'postDataFormat' => 1,
+   'code' => '',
+))
+    in /opt/lampp/htdocs/common/services/PayService.php:386
+    in /opt/lampp/htdocs/common/services/PayService.php:343
+    in /opt/lampp/htdocs/common/services/PayService.php:95
+2014-12-26 19:05:11 [192.168.1.129][1][-][info][koudai.pay.*] httpResp=array (
+  'code' => 200,
+  'resp' => '
+ 
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head>
+	<META NAME="MobilePayPlatform" CONTENT="bal_sign=000000000025710936&mer_id=25116&ret_code=0000&ret_msg=查询成功&sign_type=RSA&version=4.0&sign=clG8e39FHmLs9ZNeCJfrqCFp56u2e2Y5KlVp97Ci5BAzhQBwF5c/KJi3RQIk32cHqZvlakUr9fBzXLu5mgPCvRN1S5RFlBUNhfvqNTNHKpAFB+U4wcyf6Te37xZfXU6+e4EHwIiY4irum7qsMixXvGf2MxXKsr6YxtqbNCCkPe8=">
+  </head>
+  <body>
+  </body>
+</html>',
+  'curl_getinfo' => 
+  array (
+    'url' => 'http://pay.soopay.net/spay/pay/payservice.do?charset=UTF-8&mer_id=25116&service=query_account_balance&sign_type=RSA&version=4.0&sign=oI0T%2Fj%2BoLEUOfacWWN1cTluXA%2FCIJUYXUxLKeWZfX5%2BMLCopTG72NMxekTNOsytaFILtYrLt1sLtQPGalY8PwVV8b7he0R7HhdysGBkF6869%2Bue86G0dfnKg6tbVf9kUOG4UKu8ibKOXityHwmF%2ByJzvQ9gtFwybwRS4G47JqvI%3D',
+    'content_type' => 'text/html; charset=UTF-8',
+    'http_code' => 200,
+    'header_size' => 336,
+    'request_size' => 414,
+    'filetime' => -1,
+    'ssl_verify_result' => 0,
+    'redirect_count' => 0,
+    'total_time' => 0.14197599999999999109689952092594467103481292724609375,
+    'namelookup_time' => 0.031822999999999997122746009381444309838116168975830078125,
+    'connect_time' => 0.06387900000000000522160092941703624092042446136474609375,
+    'pretransfer_time' => 0.06393000000000000071498362785860081203281879425048828125,
+    'size_upload' => 0,
+    'size_download' => 442,
+    'speed_download' => 3113,
+    'speed_upload' => 0,
+    'download_content_length' => -1,
+    'upload_content_length' => 0,
+    'starttransfer_time' => 0.141913000000000011358025631125201471149921417236328125,
+    'redirect_time' => 0,
+    'redirect_url' => '',
+    'primary_ip' => '115.182.85.76',
+    'certinfo' => 
+    array (
+    ),
+    'primary_port' => 80,
+    'local_ip' => '192.168.1.214',
+    'local_port' => 48326,
+  ),
+)
+    in /opt/lampp/htdocs/common/services/PayService.php:390
+    in /opt/lampp/htdocs/common/services/PayService.php:343
+    in /opt/lampp/htdocs/common/services/PayService.php:95
+2014-12-29 11:49:28 [192.168.1.129][1][-][info][koudai.pay.*] map original=HashMap::__set_state(array(
+   'H_table' => 
+  array (
+    'service' => 'transfer_query',
+    'sign_type' => 'RSA',
+    'mer_id' => '25116',
+    'version' => '4.0',
+    'charset' => 'UTF-8',
+    'order_id' => '70',
+    'mer_date' => '20141227',
+  ),
+))
+    in /opt/lampp/htdocs/common/services/PayService.php:465
+    in /opt/lampp/htdocs/common/services/PayService.php:382
+    in /opt/lampp/htdocs/common/services/PayService.php:105
+2014-12-29 11:49:28 [192.168.1.129][1][-][info][koudai.pay.*] map encoded=HashMap::__set_state(array(
+   'H_table' => 
+  array (
+    'service' => 'transfer_query',
+    'sign_type' => 'RSA',
+    'mer_id' => '25116',
+    'version' => '4.0',
+    'charset' => 'UTF-8',
+    'order_id' => '70',
+    'mer_date' => '20141227',
+  ),
+))
+    in /opt/lampp/htdocs/common/services/PayService.php:467
+    in /opt/lampp/htdocs/common/services/PayService.php:382
+    in /opt/lampp/htdocs/common/services/PayService.php:105
+2014-12-29 11:49:29 [192.168.1.129][1][-][info][koudai.pay.*] httpReq=common\api\HttpRequest::__set_state(array(
+   'ERROR_DESC' => 
+  array (
+    1 => 'URL格式错误',
+  ),
+   'getFields' => NULL,
+   'postFields' => NULL,
+   'method' => 'GET',
+   'url' => 'http://pay.soopay.net/spay/pay/payservice.do?charset=UTF-8&mer_date=20141227&mer_id=25116&order_id=70&service=transfer_query&sign_type=RSA&version=4.0&sign=j%2BPUtfAGvZ5ni4uivIgoBILCO%2FHS7x383WOLqUBFBARW94WC2rBtJNlPVJ%2Be9JpfrAbPw4DNLHPhW0NOLWhRFxXJePJKkMiSTwAYCQfkNWjAQO46ceSFcJ9LsxsYPixIpn6L6Isbn%2Bgrvk4P1fF%2FIRM6nUMc%2BqydlJc5XdYthdk%3D',
+   'postDataFormat' => 1,
+   'code' => '',
+))
+    in /opt/lampp/htdocs/common/services/PayService.php:476
+    in /opt/lampp/htdocs/common/services/PayService.php:382
+    in /opt/lampp/htdocs/common/services/PayService.php:105
+2014-12-29 11:49:29 [192.168.1.129][1][-][info][koudai.pay.*] httpResp=array (
+  'code' => 200,
+  'resp' => '
+ 
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head>
+	<META NAME="MobilePayPlatform" CONTENT="ret_code=00060700&ret_msg=请求字段order_id=70不满足验证规则&sign=ETlQl527CGnMlAw1YEz5KCUUWN6qRgDQoUdqkFo1bGHb7eWguHO28qSeraxEDRvqJQ60UtJUU0JZtOFhUnD1P+sYGzicDT2J/dwPSGpGQtVd5pJTdQ+ZZNgfvoVakqrfsh0pP1FO4PoXyaNXyl0815881BGd0HQJ7w6exOoaX48=">
+  </head>
+  <body>
+  </body>
+</html>',
+  'curl_getinfo' => 
+  array (
+    'url' => 'http://pay.soopay.net/spay/pay/payservice.do?charset=UTF-8&mer_date=20141227&mer_id=25116&order_id=70&service=transfer_query&sign_type=RSA&version=4.0&sign=j%2BPUtfAGvZ5ni4uivIgoBILCO%2FHS7x383WOLqUBFBARW94WC2rBtJNlPVJ%2Be9JpfrAbPw4DNLHPhW0NOLWhRFxXJePJKkMiSTwAYCQfkNWjAQO46ceSFcJ9LsxsYPixIpn6L6Isbn%2Bgrvk4P1fF%2FIRM6nUMc%2BqydlJc5XdYthdk%3D',
+    'content_type' => 'text/html; charset=UTF-8',
+    'http_code' => 200,
+    'header_size' => 336,
+    'request_size' => 437,
+    'filetime' => -1,
+    'ssl_verify_result' => 0,
+    'redirect_count' => 0,
+    'total_time' => 0.2107040000000000024016344468691386282444000244140625,
+    'namelookup_time' => 0.12106600000000000694200252837617881596088409423828125,
+    'connect_time' => 0.15449199999999996268940094523713923990726470947265625,
+    'pretransfer_time' => 0.15456700000000000994049287328380160033702850341796875,
+    'size_upload' => 0,
+    'size_download' => 411,
+    'speed_download' => 1950,
+    'speed_upload' => 0,
+    'download_content_length' => -1,
+    'upload_content_length' => 0,
+    'starttransfer_time' => 0.21063799999999999190691823969245888292789459228515625,
+    'redirect_time' => 0,
+    'redirect_url' => '',
+    'primary_ip' => '115.182.85.74',
+    'certinfo' => 
+    array (
+    ),
+    'primary_port' => 80,
+    'local_ip' => '192.168.1.214',
+    'local_port' => 37716,
+  ),
+)
+    in /opt/lampp/htdocs/common/services/PayService.php:480
+    in /opt/lampp/htdocs/common/services/PayService.php:382
+    in /opt/lampp/htdocs/common/services/PayService.php:105

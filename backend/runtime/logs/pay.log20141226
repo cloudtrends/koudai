@@ -1,0 +1,174 @@
+[2014-12-26 10:38:37]-[http://192.168.1.214/backend/web/index.php?r=user%2Fbanks]-[data] :Request Para=array (
+  'service' => 'user_cancel',
+  'sign_type' => 'RSA',
+  'mer_id' => '25116',
+  'version' => '4.0',
+  'charset' => 'UTF-8',
+  'media_id' => '13995290755',
+  'media_type' => 'MOBILE',
+  'busi_no' => '1',
+)
+[2014-12-26 10:38:37]-[http://192.168.1.214/backend/web/index.php?r=user%2Fbanks]-[data] :Participate in the signature parametersÔºö[busi_no=1&charset=UTF-8&media_id=13995290755&media_type=MOBILE&mer_id=25116&service=user_cancel&version=4.0],Merchant number isÔºö[25116]
+[2014-12-26 10:38:37]-[http://192.168.1.214/backend/web/index.php?r=user%2Fbanks]-[data] :The private key path forÔºö/opt/lampp/htdocs/common/config/cert/25116_wenzhoudai.key.pem
+[2014-12-26 10:38:37]-[http://192.168.1.214/backend/web/index.php?r=user%2Fbanks]-[data] :Signature string forÔºöSÅ.#dﬁFÚàXU¿|?e◊œÖ¸OÔ˘që∏º'≈Ï∫CÓL„#C¸d’—ß
+O›Ù]¢¢µbâ©Ω»««ï0ô·
+HZòN`¬ÖCSÅ÷VñqÅ„,
+V£}woŒù˚HÊíjFª
+&∆îßÙø~ö“>€9N‰Æ/*l
+[2014-12-26 10:38:37]-[http://192.168.1.214/backend/web/index.php?r=user%2Fbanks]-[data] :Request platform way=get
+[2014-12-26 10:38:37]-[http://192.168.1.214/backend/web/index.php?r=user%2Fbanks]-[data] :Request platform signature string=U4EuIwJk3kbyiFhVwHw/ZdfPhfxP7/kVcZG4FrwnxRXsuhQZQ+5M4yNDFfxk1dGnCk/d9F2iorUGYompHL3Ix8eVMAyZFuEKSFqYTmDChUNTHoHWVpZxgeMsClajfXdvzp37SOaSaka7CibGlKcCFBH0v36aBdI+2zlO5K4vKmw=
+[2014-12-26 10:38:37]-[http://192.168.1.214/backend/web/index.php?r=user%2Fbanks]-[data] :Clear information request platform=busi_no=1&charset=UTF-8&media_id=13995290755&media_type=MOBILE&mer_id=25116&service=user_cancel&version=4.0
+[2014-12-26 10:38:37]-[http://192.168.1.214/backend/web/index.php?r=user%2Fbanks]-[data] :The service user_cancel request platform to get the address url=http://pay.soopay.net/spay/pay/payservice.do?busi_no=1&charset=UTF-8&media_id=13995290755&media_type=MOBILE&mer_id=25116&service=user_cancel&sign_type=RSA&version=4.0&sign=U4EuIwJk3kbyiFhVwHw/ZdfPhfxP7/kVcZG4FrwnxRXsuhQZQ+5M4yNDFfxk1dGnCk/d9F2iorUGYompHL3Ix8eVMAyZFuEKSFqYTmDChUNTHoHWVpZxgeMsClajfXdvzp37SOaSaka7CibGlKcCFBH0v36aBdI+2zlO5K4vKmw=
+[2014-12-26 10:38:37]-[http://192.168.1.214/backend/web/index.php?r=user%2Fbanks]-[data] :plat response mer data:busi_no=1&charset=UTF-8&media_id=13995290755&media_type=MOBILE&mer_id=25116&ret_code=0000&ret_msg=Ê≥®ÈîÄÊàêÂäü!&service=user_cancel&sign_type=RSA&version=4.0&sign=D6EvWGq+mEOSIudeaOsL69+W0yTEnvBvWy9jBtb+dazelzzh2uN8t2EwyPom/Mu3vhOI+LwcTpDgx4qtiIltc6+bFDB+Mkp3nrRE0DKINL9Mo085BlyMCpo/u0b3GpmYPSCIJdjsOGUB/1P2lISR9/z8PwKbDbBMgecRGZgKbtU=
+[2014-12-26 10:38:37]-[http://192.168.1.214/backend/web/index.php?r=user%2Fbanks]-[data] :interface fields:merId,goodsId,orderId,merDate,retCode,retMsg,version,sign
+[2014-12-26 10:38:37]-[http://192.168.1.214/backend/web/index.php?r=user%2Fbanks]-[data] :response sign=busi_no=1&charset=UTF-8&media_id=13995290755&media_type=MOBILE&mer_id=25116&ret_code=0000&ret_msg=Ê≥®ÈîÄÊàêÂäü!&service=user_cancel&sign_type=RSA&version=4.0
+[2014-12-26 10:38:37]-[http://192.168.1.214/backend/web/index.php?r=user%2Fbanks]-[data] :response sign=D6EvWGq+mEOSIudeaOsL69+W0yTEnvBvWy9jBtb+dazelzzh2uN8t2EwyPom/Mu3vhOI+LwcTpDgx4qtiIltc6+bFDB+Mkp3nrRE0DKINL9Mo085BlyMCpo/u0b3GpmYPSCIJdjsOGUB/1P2lISR9/z8PwKbDbBMgecRGZgKbtU=
+[2014-12-26 10:38:37]-[http://192.168.1.214/backend/web/index.php?r=user%2Fbanks]-[data] :response plain=busi_no=1&charset=UTF-8&media_id=13995290755&media_type=MOBILE&mer_id=25116&ret_code=0000&ret_msg=Ê≥®ÈîÄÊàêÂäü!&service=user_cancel&version=4.0
+[2014-12-26 10:38:37]-[http://192.168.1.214/backend/web/index.php?r=user%2Fbanks]-[data] :verify:1
+[2014-12-26 14:09:22]-[http://192.168.1.214/backend/web/index.php?r=user%2Fbanks]-[data] :Request Para=array (
+  'service' => 'user_cancel',
+  'sign_type' => 'RSA',
+  'mer_id' => '25116',
+  'version' => '4.0',
+  'charset' => 'UTF-8',
+  'media_id' => '13995290755',
+  'media_type' => 'MOBILE',
+  'busi_no' => '1',
+)
+[2014-12-26 14:09:22]-[http://192.168.1.214/backend/web/index.php?r=user%2Fbanks]-[data] :Participate in the signature parametersÔºö[busi_no=1&charset=UTF-8&media_id=13995290755&media_type=MOBILE&mer_id=25116&service=user_cancel&version=4.0],Merchant number isÔºö[25116]
+[2014-12-26 14:09:22]-[http://192.168.1.214/backend/web/index.php?r=user%2Fbanks]-[data] :The private key path forÔºö/opt/lampp/htdocs/common/config/cert/25116_wenzhoudai.key.pem
+[2014-12-26 14:09:22]-[http://192.168.1.214/backend/web/index.php?r=user%2Fbanks]-[data] :Signature string forÔºöSÅ.#dﬁFÚàXU¿|?e◊œÖ¸OÔ˘që∏º'≈Ï∫CÓL„#C¸d’—ß
+O›Ù]¢¢µbâ©Ω»««ï0ô·
+HZòN`¬ÖCSÅ÷VñqÅ„,
+V£}woŒù˚HÊíjFª
+&∆îßÙø~ö“>€9N‰Æ/*l
+[2014-12-26 14:09:22]-[http://192.168.1.214/backend/web/index.php?r=user%2Fbanks]-[data] :Request platform way=get
+[2014-12-26 14:09:22]-[http://192.168.1.214/backend/web/index.php?r=user%2Fbanks]-[data] :Request platform signature string=U4EuIwJk3kbyiFhVwHw/ZdfPhfxP7/kVcZG4FrwnxRXsuhQZQ+5M4yNDFfxk1dGnCk/d9F2iorUGYompHL3Ix8eVMAyZFuEKSFqYTmDChUNTHoHWVpZxgeMsClajfXdvzp37SOaSaka7CibGlKcCFBH0v36aBdI+2zlO5K4vKmw=
+[2014-12-26 14:09:22]-[http://192.168.1.214/backend/web/index.php?r=user%2Fbanks]-[data] :Clear information request platform=busi_no=1&charset=UTF-8&media_id=13995290755&media_type=MOBILE&mer_id=25116&service=user_cancel&version=4.0
+[2014-12-26 14:09:22]-[http://192.168.1.214/backend/web/index.php?r=user%2Fbanks]-[data] :The service user_cancel request platform to get the address url=http://pay.soopay.net/spay/pay/payservice.do?busi_no=1&charset=UTF-8&media_id=13995290755&media_type=MOBILE&mer_id=25116&service=user_cancel&sign_type=RSA&version=4.0&sign=U4EuIwJk3kbyiFhVwHw/ZdfPhfxP7/kVcZG4FrwnxRXsuhQZQ+5M4yNDFfxk1dGnCk/d9F2iorUGYompHL3Ix8eVMAyZFuEKSFqYTmDChUNTHoHWVpZxgeMsClajfXdvzp37SOaSaka7CibGlKcCFBH0v36aBdI+2zlO5K4vKmw=
+[2014-12-26 14:09:22]-[http://192.168.1.214/backend/web/index.php?r=user%2Fbanks]-[data] :plat response mer data:busi_no=1&charset=UTF-8&media_id=13995290755&media_type=MOBILE&mer_id=25116&ret_code=0000&ret_msg=Ê≥®ÈîÄÊàêÂäü!&service=user_cancel&sign_type=RSA&version=4.0&sign=D6EvWGq+mEOSIudeaOsL69+W0yTEnvBvWy9jBtb+dazelzzh2uN8t2EwyPom/Mu3vhOI+LwcTpDgx4qtiIltc6+bFDB+Mkp3nrRE0DKINL9Mo085BlyMCpo/u0b3GpmYPSCIJdjsOGUB/1P2lISR9/z8PwKbDbBMgecRGZgKbtU=
+[2014-12-26 14:09:22]-[http://192.168.1.214/backend/web/index.php?r=user%2Fbanks]-[data] :interface fields:merId,goodsId,orderId,merDate,retCode,retMsg,version,sign
+[2014-12-26 14:09:22]-[http://192.168.1.214/backend/web/index.php?r=user%2Fbanks]-[data] :response sign=busi_no=1&charset=UTF-8&media_id=13995290755&media_type=MOBILE&mer_id=25116&ret_code=0000&ret_msg=Ê≥®ÈîÄÊàêÂäü!&service=user_cancel&sign_type=RSA&version=4.0
+[2014-12-26 14:09:22]-[http://192.168.1.214/backend/web/index.php?r=user%2Fbanks]-[data] :response sign=D6EvWGq+mEOSIudeaOsL69+W0yTEnvBvWy9jBtb+dazelzzh2uN8t2EwyPom/Mu3vhOI+LwcTpDgx4qtiIltc6+bFDB+Mkp3nrRE0DKINL9Mo085BlyMCpo/u0b3GpmYPSCIJdjsOGUB/1P2lISR9/z8PwKbDbBMgecRGZgKbtU=
+[2014-12-26 14:09:22]-[http://192.168.1.214/backend/web/index.php?r=user%2Fbanks]-[data] :response plain=busi_no=1&charset=UTF-8&media_id=13995290755&media_type=MOBILE&mer_id=25116&ret_code=0000&ret_msg=Ê≥®ÈîÄÊàêÂäü!&service=user_cancel&version=4.0
+[2014-12-26 14:09:22]-[http://192.168.1.214/backend/web/index.php?r=user%2Fbanks]-[data] :verify:1
+[2014-12-26 18:53:19]-[http://192.168.1.214/backend/web/index.php]-[data] :Request Para=array (
+  'service' => 'query_account_balance',
+  'sign_type' => 'RSA',
+  'mer_id' => '25116',
+  'version' => '4.0',
+  'charset' => 'UTF-8',
+)
+[2014-12-26 18:53:19]-[http://192.168.1.214/backend/web/index.php]-[data] :Participate in the signature parametersÔºö[charset=UTF-8&mer_id=25116&service=query_account_balance&version=4.0],Merchant number isÔºö[25116]
+[2014-12-26 18:53:19]-[http://192.168.1.214/backend/web/index.php]-[data] :The private key path forÔºö/opt/lampp/htdocs/common/config/cert/25116_wenzhoudai.key.pem
+[2014-12-26 18:53:19]-[http://192.168.1.214/backend/web/index.php]-[data] :Signature string forÔºö†ç˛?®,E}ßX›\N[óà%FS yf__üå,*)Lnˆ4Ã^ë3N≥+ZÇÌb≤Ì÷¬Ì@Òöïè¡U|o∏^—«Ö‹¨ÎŒΩ˙ÁºËm~r†Í÷’Ÿ8n*Ô"l£óä‹á¬a~»úÔCÿ-õ¡∏é…™Ú
+[2014-12-26 18:53:19]-[http://192.168.1.214/backend/web/index.php]-[data] :Request platform way=get
+[2014-12-26 18:53:19]-[http://192.168.1.214/backend/web/index.php]-[data] :Request platform signature string=oI0T/j+oLEUOfacWWN1cTluXA/CIJUYXUxLKeWZfX5+MLCopTG72NMxekTNOsytaFILtYrLt1sLtQPGalY8PwVV8b7he0R7HhdysGBkF6869+ue86G0dfnKg6tbVf9kUOG4UKu8ibKOXityHwmF+yJzvQ9gtFwybwRS4G47JqvI=
+[2014-12-26 18:53:19]-[http://192.168.1.214/backend/web/index.php]-[data] :Clear information request platform=charset=UTF-8&mer_id=25116&service=query_account_balance&version=4.0
+[2014-12-26 18:53:19]-[http://192.168.1.214/backend/web/index.php]-[data] :The service query_account_balance request platform to get the address url=http://pay.soopay.net/spay/pay/payservice.do?charset=UTF-8&mer_id=25116&service=query_account_balance&sign_type=RSA&version=4.0&sign=oI0T/j+oLEUOfacWWN1cTluXA/CIJUYXUxLKeWZfX5+MLCopTG72NMxekTNOsytaFILtYrLt1sLtQPGalY8PwVV8b7he0R7HhdysGBkF6869+ue86G0dfnKg6tbVf9kUOG4UKu8ibKOXityHwmF+yJzvQ9gtFwybwRS4G47JqvI=
+[2014-12-26 18:53:19]-[http://192.168.1.214/backend/web/index.php]-[data] :plat response mer data:bal_sign=000000000025710936&mer_id=25116&ret_code=0000&ret_msg=Êü•ËØ¢ÊàêÂäü&sign_type=RSA&version=4.0&sign=clG8e39FHmLs9ZNeCJfrqCFp56u2e2Y5KlVp97Ci5BAzhQBwF5c/KJi3RQIk32cHqZvlakUr9fBzXLu5mgPCvRN1S5RFlBUNhfvqNTNHKpAFB+U4wcyf6Te37xZfXU6+e4EHwIiY4irum7qsMixXvGf2MxXKsr6YxtqbNCCkPe8=
+[2014-12-26 18:53:19]-[http://192.168.1.214/backend/web/index.php]-[data] :interface fields:merId,goodsId,orderId,merDate,retCode,retMsg,version,sign
+[2014-12-26 18:53:19]-[http://192.168.1.214/backend/web/index.php]-[data] :response sign=bal_sign=000000000025710936&mer_id=25116&ret_code=0000&ret_msg=Êü•ËØ¢ÊàêÂäü&sign_type=RSA&version=4.0
+[2014-12-26 18:53:19]-[http://192.168.1.214/backend/web/index.php]-[data] :response sign=clG8e39FHmLs9ZNeCJfrqCFp56u2e2Y5KlVp97Ci5BAzhQBwF5c/KJi3RQIk32cHqZvlakUr9fBzXLu5mgPCvRN1S5RFlBUNhfvqNTNHKpAFB+U4wcyf6Te37xZfXU6+e4EHwIiY4irum7qsMixXvGf2MxXKsr6YxtqbNCCkPe8=
+[2014-12-26 18:53:19]-[http://192.168.1.214/backend/web/index.php]-[data] :response plain=bal_sign=000000000025710936&mer_id=25116&ret_code=0000&ret_msg=Êü•ËØ¢ÊàêÂäü&version=4.0
+[2014-12-26 18:53:19]-[http://192.168.1.214/backend/web/index.php]-[data] :verify:1
+[2014-12-26 19:02:20]-[http://192.168.1.214/backend/web/index.php]-[data] :Request Para=array (
+  'service' => 'query_account_balance',
+  'sign_type' => 'RSA',
+  'mer_id' => '25116',
+  'version' => '4.0',
+  'charset' => 'UTF-8',
+)
+[2014-12-26 19:02:20]-[http://192.168.1.214/backend/web/index.php]-[data] :Participate in the signature parametersÔºö[charset=UTF-8&mer_id=25116&service=query_account_balance&version=4.0],Merchant number isÔºö[25116]
+[2014-12-26 19:02:20]-[http://192.168.1.214/backend/web/index.php]-[data] :The private key path forÔºö/opt/lampp/htdocs/common/config/cert/25116_wenzhoudai.key.pem
+[2014-12-26 19:02:20]-[http://192.168.1.214/backend/web/index.php]-[data] :Signature string forÔºö†ç˛?®,E}ßX›\N[óà%FS yf__üå,*)Lnˆ4Ã^ë3N≥+ZÇÌb≤Ì÷¬Ì@Òöïè¡U|o∏^—«Ö‹¨ÎŒΩ˙ÁºËm~r†Í÷’Ÿ8n*Ô"l£óä‹á¬a~»úÔCÿ-õ¡∏é…™Ú
+[2014-12-26 19:02:20]-[http://192.168.1.214/backend/web/index.php]-[data] :Request platform way=get
+[2014-12-26 19:02:20]-[http://192.168.1.214/backend/web/index.php]-[data] :Request platform signature string=oI0T/j+oLEUOfacWWN1cTluXA/CIJUYXUxLKeWZfX5+MLCopTG72NMxekTNOsytaFILtYrLt1sLtQPGalY8PwVV8b7he0R7HhdysGBkF6869+ue86G0dfnKg6tbVf9kUOG4UKu8ibKOXityHwmF+yJzvQ9gtFwybwRS4G47JqvI=
+[2014-12-26 19:02:20]-[http://192.168.1.214/backend/web/index.php]-[data] :Clear information request platform=charset=UTF-8&mer_id=25116&service=query_account_balance&version=4.0
+[2014-12-26 19:02:20]-[http://192.168.1.214/backend/web/index.php]-[data] :The service query_account_balance request platform to get the address url=http://pay.soopay.net/spay/pay/payservice.do?charset=UTF-8&mer_id=25116&service=query_account_balance&sign_type=RSA&version=4.0&sign=oI0T/j+oLEUOfacWWN1cTluXA/CIJUYXUxLKeWZfX5+MLCopTG72NMxekTNOsytaFILtYrLt1sLtQPGalY8PwVV8b7he0R7HhdysGBkF6869+ue86G0dfnKg6tbVf9kUOG4UKu8ibKOXityHwmF+yJzvQ9gtFwybwRS4G47JqvI=
+[2014-12-26 19:02:20]-[http://192.168.1.214/backend/web/index.php]-[data] :plat response mer data:bal_sign=000000000025710936&mer_id=25116&ret_code=0000&ret_msg=Êü•ËØ¢ÊàêÂäü&sign_type=RSA&version=4.0&sign=clG8e39FHmLs9ZNeCJfrqCFp56u2e2Y5KlVp97Ci5BAzhQBwF5c/KJi3RQIk32cHqZvlakUr9fBzXLu5mgPCvRN1S5RFlBUNhfvqNTNHKpAFB+U4wcyf6Te37xZfXU6+e4EHwIiY4irum7qsMixXvGf2MxXKsr6YxtqbNCCkPe8=
+[2014-12-26 19:02:20]-[http://192.168.1.214/backend/web/index.php]-[data] :interface fields:merId,goodsId,orderId,merDate,retCode,retMsg,version,sign
+[2014-12-26 19:02:20]-[http://192.168.1.214/backend/web/index.php]-[data] :response sign=bal_sign=000000000025710936&mer_id=25116&ret_code=0000&ret_msg=Êü•ËØ¢ÊàêÂäü&sign_type=RSA&version=4.0
+[2014-12-26 19:02:20]-[http://192.168.1.214/backend/web/index.php]-[data] :response sign=clG8e39FHmLs9ZNeCJfrqCFp56u2e2Y5KlVp97Ci5BAzhQBwF5c/KJi3RQIk32cHqZvlakUr9fBzXLu5mgPCvRN1S5RFlBUNhfvqNTNHKpAFB+U4wcyf6Te37xZfXU6+e4EHwIiY4irum7qsMixXvGf2MxXKsr6YxtqbNCCkPe8=
+[2014-12-26 19:02:20]-[http://192.168.1.214/backend/web/index.php]-[data] :response plain=bal_sign=000000000025710936&mer_id=25116&ret_code=0000&ret_msg=Êü•ËØ¢ÊàêÂäü&version=4.0
+[2014-12-26 19:02:20]-[http://192.168.1.214/backend/web/index.php]-[data] :verify:1
+[2014-12-26 19:02:56]-[http://192.168.1.214/backend/web/index.php]-[data] :Request Para=array (
+  'service' => 'query_account_balance',
+  'sign_type' => 'RSA',
+  'mer_id' => '25116',
+  'version' => '4.0',
+  'charset' => 'UTF-8',
+)
+[2014-12-26 19:02:56]-[http://192.168.1.214/backend/web/index.php]-[data] :Participate in the signature parametersÔºö[charset=UTF-8&mer_id=25116&service=query_account_balance&version=4.0],Merchant number isÔºö[25116]
+[2014-12-26 19:02:56]-[http://192.168.1.214/backend/web/index.php]-[data] :The private key path forÔºö/opt/lampp/htdocs/common/config/cert/25116_wenzhoudai.key.pem
+[2014-12-26 19:02:56]-[http://192.168.1.214/backend/web/index.php]-[data] :Signature string forÔºö†ç˛?®,E}ßX›\N[óà%FS yf__üå,*)Lnˆ4Ã^ë3N≥+ZÇÌb≤Ì÷¬Ì@Òöïè¡U|o∏^—«Ö‹¨ÎŒΩ˙ÁºËm~r†Í÷’Ÿ8n*Ô"l£óä‹á¬a~»úÔCÿ-õ¡∏é…™Ú
+[2014-12-26 19:02:56]-[http://192.168.1.214/backend/web/index.php]-[data] :Request platform way=get
+[2014-12-26 19:02:56]-[http://192.168.1.214/backend/web/index.php]-[data] :Request platform signature string=oI0T/j+oLEUOfacWWN1cTluXA/CIJUYXUxLKeWZfX5+MLCopTG72NMxekTNOsytaFILtYrLt1sLtQPGalY8PwVV8b7he0R7HhdysGBkF6869+ue86G0dfnKg6tbVf9kUOG4UKu8ibKOXityHwmF+yJzvQ9gtFwybwRS4G47JqvI=
+[2014-12-26 19:02:56]-[http://192.168.1.214/backend/web/index.php]-[data] :Clear information request platform=charset=UTF-8&mer_id=25116&service=query_account_balance&version=4.0
+[2014-12-26 19:02:56]-[http://192.168.1.214/backend/web/index.php]-[data] :The service query_account_balance request platform to get the address url=http://pay.soopay.net/spay/pay/payservice.do?charset=UTF-8&mer_id=25116&service=query_account_balance&sign_type=RSA&version=4.0&sign=oI0T/j+oLEUOfacWWN1cTluXA/CIJUYXUxLKeWZfX5+MLCopTG72NMxekTNOsytaFILtYrLt1sLtQPGalY8PwVV8b7he0R7HhdysGBkF6869+ue86G0dfnKg6tbVf9kUOG4UKu8ibKOXityHwmF+yJzvQ9gtFwybwRS4G47JqvI=
+[2014-12-26 19:02:56]-[http://192.168.1.214/backend/web/index.php]-[data] :plat response mer data:bal_sign=000000000025710936&mer_id=25116&ret_code=0000&ret_msg=Êü•ËØ¢ÊàêÂäü&sign_type=RSA&version=4.0&sign=clG8e39FHmLs9ZNeCJfrqCFp56u2e2Y5KlVp97Ci5BAzhQBwF5c/KJi3RQIk32cHqZvlakUr9fBzXLu5mgPCvRN1S5RFlBUNhfvqNTNHKpAFB+U4wcyf6Te37xZfXU6+e4EHwIiY4irum7qsMixXvGf2MxXKsr6YxtqbNCCkPe8=
+[2014-12-26 19:02:56]-[http://192.168.1.214/backend/web/index.php]-[data] :interface fields:merId,goodsId,orderId,merDate,retCode,retMsg,version,sign
+[2014-12-26 19:02:56]-[http://192.168.1.214/backend/web/index.php]-[data] :response sign=bal_sign=000000000025710936&mer_id=25116&ret_code=0000&ret_msg=Êü•ËØ¢ÊàêÂäü&sign_type=RSA&version=4.0
+[2014-12-26 19:02:56]-[http://192.168.1.214/backend/web/index.php]-[data] :response sign=clG8e39FHmLs9ZNeCJfrqCFp56u2e2Y5KlVp97Ci5BAzhQBwF5c/KJi3RQIk32cHqZvlakUr9fBzXLu5mgPCvRN1S5RFlBUNhfvqNTNHKpAFB+U4wcyf6Te37xZfXU6+e4EHwIiY4irum7qsMixXvGf2MxXKsr6YxtqbNCCkPe8=
+[2014-12-26 19:02:56]-[http://192.168.1.214/backend/web/index.php]-[data] :response plain=bal_sign=000000000025710936&mer_id=25116&ret_code=0000&ret_msg=Êü•ËØ¢ÊàêÂäü&version=4.0
+[2014-12-26 19:02:56]-[http://192.168.1.214/backend/web/index.php]-[data] :verify:1
+[2014-12-26 19:03:00]-[http://192.168.1.214/backend/web/index.php]-[data] :Request Para=array (
+  'service' => 'query_account_balance',
+  'sign_type' => 'RSA',
+  'mer_id' => '25116',
+  'version' => '4.0',
+  'charset' => 'UTF-8',
+)
+[2014-12-26 19:03:00]-[http://192.168.1.214/backend/web/index.php]-[data] :Participate in the signature parametersÔºö[charset=UTF-8&mer_id=25116&service=query_account_balance&version=4.0],Merchant number isÔºö[25116]
+[2014-12-26 19:03:00]-[http://192.168.1.214/backend/web/index.php]-[data] :The private key path forÔºö/opt/lampp/htdocs/common/config/cert/25116_wenzhoudai.key.pem
+[2014-12-26 19:03:00]-[http://192.168.1.214/backend/web/index.php]-[data] :Signature string forÔºö†ç˛?®,E}ßX›\N[óà%FS yf__üå,*)Lnˆ4Ã^ë3N≥+ZÇÌb≤Ì÷¬Ì@Òöïè¡U|o∏^—«Ö‹¨ÎŒΩ˙ÁºËm~r†Í÷’Ÿ8n*Ô"l£óä‹á¬a~»úÔCÿ-õ¡∏é…™Ú
+[2014-12-26 19:03:00]-[http://192.168.1.214/backend/web/index.php]-[data] :Request platform way=get
+[2014-12-26 19:03:00]-[http://192.168.1.214/backend/web/index.php]-[data] :Request platform signature string=oI0T/j+oLEUOfacWWN1cTluXA/CIJUYXUxLKeWZfX5+MLCopTG72NMxekTNOsytaFILtYrLt1sLtQPGalY8PwVV8b7he0R7HhdysGBkF6869+ue86G0dfnKg6tbVf9kUOG4UKu8ibKOXityHwmF+yJzvQ9gtFwybwRS4G47JqvI=
+[2014-12-26 19:03:00]-[http://192.168.1.214/backend/web/index.php]-[data] :Clear information request platform=charset=UTF-8&mer_id=25116&service=query_account_balance&version=4.0
+[2014-12-26 19:03:00]-[http://192.168.1.214/backend/web/index.php]-[data] :The service query_account_balance request platform to get the address url=http://pay.soopay.net/spay/pay/payservice.do?charset=UTF-8&mer_id=25116&service=query_account_balance&sign_type=RSA&version=4.0&sign=oI0T/j+oLEUOfacWWN1cTluXA/CIJUYXUxLKeWZfX5+MLCopTG72NMxekTNOsytaFILtYrLt1sLtQPGalY8PwVV8b7he0R7HhdysGBkF6869+ue86G0dfnKg6tbVf9kUOG4UKu8ibKOXityHwmF+yJzvQ9gtFwybwRS4G47JqvI=
+[2014-12-26 19:03:00]-[http://192.168.1.214/backend/web/index.php]-[data] :plat response mer data:bal_sign=000000000025710936&mer_id=25116&ret_code=0000&ret_msg=Êü•ËØ¢ÊàêÂäü&sign_type=RSA&version=4.0&sign=clG8e39FHmLs9ZNeCJfrqCFp56u2e2Y5KlVp97Ci5BAzhQBwF5c/KJi3RQIk32cHqZvlakUr9fBzXLu5mgPCvRN1S5RFlBUNhfvqNTNHKpAFB+U4wcyf6Te37xZfXU6+e4EHwIiY4irum7qsMixXvGf2MxXKsr6YxtqbNCCkPe8=
+[2014-12-26 19:03:00]-[http://192.168.1.214/backend/web/index.php]-[data] :interface fields:merId,goodsId,orderId,merDate,retCode,retMsg,version,sign
+[2014-12-26 19:03:00]-[http://192.168.1.214/backend/web/index.php]-[data] :response sign=bal_sign=000000000025710936&mer_id=25116&ret_code=0000&ret_msg=Êü•ËØ¢ÊàêÂäü&sign_type=RSA&version=4.0
+[2014-12-26 19:03:00]-[http://192.168.1.214/backend/web/index.php]-[data] :response sign=clG8e39FHmLs9ZNeCJfrqCFp56u2e2Y5KlVp97Ci5BAzhQBwF5c/KJi3RQIk32cHqZvlakUr9fBzXLu5mgPCvRN1S5RFlBUNhfvqNTNHKpAFB+U4wcyf6Te37xZfXU6+e4EHwIiY4irum7qsMixXvGf2MxXKsr6YxtqbNCCkPe8=
+[2014-12-26 19:03:00]-[http://192.168.1.214/backend/web/index.php]-[data] :response plain=bal_sign=000000000025710936&mer_id=25116&ret_code=0000&ret_msg=Êü•ËØ¢ÊàêÂäü&version=4.0
+[2014-12-26 19:03:00]-[http://192.168.1.214/backend/web/index.php]-[data] :verify:1
+[2014-12-26 19:03:37]-[http://192.168.1.214/backend/web/index.php]-[data] :Request Para=array (
+  'service' => 'query_account_balance',
+  'sign_type' => 'RSA',
+  'mer_id' => '25116',
+  'version' => '4.0',
+  'charset' => 'UTF-8',
+)
+[2014-12-26 19:03:37]-[http://192.168.1.214/backend/web/index.php]-[data] :Participate in the signature parametersÔºö[charset=UTF-8&mer_id=25116&service=query_account_balance&version=4.0],Merchant number isÔºö[25116]
+[2014-12-26 19:03:37]-[http://192.168.1.214/backend/web/index.php]-[data] :The private key path forÔºö/opt/lampp/htdocs/common/config/cert/25116_wenzhoudai.key.pem
+[2014-12-26 19:03:37]-[http://192.168.1.214/backend/web/index.php]-[data] :Signature string forÔºö†ç˛?®,E}ßX›\N[óà%FS yf__üå,*)Lnˆ4Ã^ë3N≥+ZÇÌb≤Ì÷¬Ì@Òöïè¡U|o∏^—«Ö‹¨ÎŒΩ˙ÁºËm~r†Í÷’Ÿ8n*Ô"l£óä‹á¬a~»úÔCÿ-õ¡∏é…™Ú
+[2014-12-26 19:03:37]-[http://192.168.1.214/backend/web/index.php]-[data] :Request platform way=get
+[2014-12-26 19:03:37]-[http://192.168.1.214/backend/web/index.php]-[data] :Request platform signature string=oI0T/j+oLEUOfacWWN1cTluXA/CIJUYXUxLKeWZfX5+MLCopTG72NMxekTNOsytaFILtYrLt1sLtQPGalY8PwVV8b7he0R7HhdysGBkF6869+ue86G0dfnKg6tbVf9kUOG4UKu8ibKOXityHwmF+yJzvQ9gtFwybwRS4G47JqvI=
+[2014-12-26 19:03:37]-[http://192.168.1.214/backend/web/index.php]-[data] :Clear information request platform=charset=UTF-8&mer_id=25116&service=query_account_balance&version=4.0
+[2014-12-26 19:03:37]-[http://192.168.1.214/backend/web/index.php]-[data] :The service query_account_balance request platform to get the address url=http://pay.soopay.net/spay/pay/payservice.do?charset=UTF-8&mer_id=25116&service=query_account_balance&sign_type=RSA&version=4.0&sign=oI0T/j+oLEUOfacWWN1cTluXA/CIJUYXUxLKeWZfX5+MLCopTG72NMxekTNOsytaFILtYrLt1sLtQPGalY8PwVV8b7he0R7HhdysGBkF6869+ue86G0dfnKg6tbVf9kUOG4UKu8ibKOXityHwmF+yJzvQ9gtFwybwRS4G47JqvI=
+[2014-12-26 19:03:37]-[http://192.168.1.214/backend/web/index.php]-[data] :plat response mer data:bal_sign=000000000025710936&mer_id=25116&ret_code=0000&ret_msg=Êü•ËØ¢ÊàêÂäü&sign_type=RSA&version=4.0&sign=clG8e39FHmLs9ZNeCJfrqCFp56u2e2Y5KlVp97Ci5BAzhQBwF5c/KJi3RQIk32cHqZvlakUr9fBzXLu5mgPCvRN1S5RFlBUNhfvqNTNHKpAFB+U4wcyf6Te37xZfXU6+e4EHwIiY4irum7qsMixXvGf2MxXKsr6YxtqbNCCkPe8=
+[2014-12-26 19:03:37]-[http://192.168.1.214/backend/web/index.php]-[data] :interface fields:merId,goodsId,orderId,merDate,retCode,retMsg,version,sign
+[2014-12-26 19:03:37]-[http://192.168.1.214/backend/web/index.php]-[data] :response sign=bal_sign=000000000025710936&mer_id=25116&ret_code=0000&ret_msg=Êü•ËØ¢ÊàêÂäü&sign_type=RSA&version=4.0
+[2014-12-26 19:03:37]-[http://192.168.1.214/backend/web/index.php]-[data] :response sign=clG8e39FHmLs9ZNeCJfrqCFp56u2e2Y5KlVp97Ci5BAzhQBwF5c/KJi3RQIk32cHqZvlakUr9fBzXLu5mgPCvRN1S5RFlBUNhfvqNTNHKpAFB+U4wcyf6Te37xZfXU6+e4EHwIiY4irum7qsMixXvGf2MxXKsr6YxtqbNCCkPe8=
+[2014-12-26 19:03:37]-[http://192.168.1.214/backend/web/index.php]-[data] :response plain=bal_sign=000000000025710936&mer_id=25116&ret_code=0000&ret_msg=Êü•ËØ¢ÊàêÂäü&version=4.0
+[2014-12-26 19:03:37]-[http://192.168.1.214/backend/web/index.php]-[data] :verify:1
+[2014-12-26 19:05:11]-[http://192.168.1.214/backend/web/index.php]-[data] :Request Para=array (
+  'service' => 'query_account_balance',
+  'sign_type' => 'RSA',
+  'mer_id' => '25116',
+  'version' => '4.0',
+  'charset' => 'UTF-8',
+)
+[2014-12-26 19:05:11]-[http://192.168.1.214/backend/web/index.php]-[data] :Participate in the signature parametersÔºö[charset=UTF-8&mer_id=25116&service=query_account_balance&version=4.0],Merchant number isÔºö[25116]
+[2014-12-26 19:05:11]-[http://192.168.1.214/backend/web/index.php]-[data] :The private key path forÔºö/opt/lampp/htdocs/common/config/cert/25116_wenzhoudai.key.pem
+[2014-12-26 19:05:11]-[http://192.168.1.214/backend/web/index.php]-[data] :Signature string forÔºö†ç˛?®,E}ßX›\N[óà%FS yf__üå,*)Lnˆ4Ã^ë3N≥+ZÇÌb≤Ì÷¬Ì@Òöïè¡U|o∏^—«Ö‹¨ÎŒΩ˙ÁºËm~r†Í÷’Ÿ8n*Ô"l£óä‹á¬a~»úÔCÿ-õ¡∏é…™Ú
+[2014-12-26 19:05:11]-[http://192.168.1.214/backend/web/index.php]-[data] :Request platform way=get
+[2014-12-26 19:05:11]-[http://192.168.1.214/backend/web/index.php]-[data] :Request platform signature string=oI0T/j+oLEUOfacWWN1cTluXA/CIJUYXUxLKeWZfX5+MLCopTG72NMxekTNOsytaFILtYrLt1sLtQPGalY8PwVV8b7he0R7HhdysGBkF6869+ue86G0dfnKg6tbVf9kUOG4UKu8ibKOXityHwmF+yJzvQ9gtFwybwRS4G47JqvI=
+[2014-12-26 19:05:11]-[http://192.168.1.214/backend/web/index.php]-[data] :Clear information request platform=charset=UTF-8&mer_id=25116&service=query_account_balance&version=4.0
+[2014-12-26 19:05:11]-[http://192.168.1.214/backend/web/index.php]-[data] :The service query_account_balance request platform to get the address url=http://pay.soopay.net/spay/pay/payservice.do?charset=UTF-8&mer_id=25116&service=query_account_balance&sign_type=RSA&version=4.0&sign=oI0T/j+oLEUOfacWWN1cTluXA/CIJUYXUxLKeWZfX5+MLCopTG72NMxekTNOsytaFILtYrLt1sLtQPGalY8PwVV8b7he0R7HhdysGBkF6869+ue86G0dfnKg6tbVf9kUOG4UKu8ibKOXityHwmF+yJzvQ9gtFwybwRS4G47JqvI=
+[2014-12-26 19:05:11]-[http://192.168.1.214/backend/web/index.php]-[data] :plat response mer data:bal_sign=000000000025710936&mer_id=25116&ret_code=0000&ret_msg=Êü•ËØ¢ÊàêÂäü&sign_type=RSA&version=4.0&sign=clG8e39FHmLs9ZNeCJfrqCFp56u2e2Y5KlVp97Ci5BAzhQBwF5c/KJi3RQIk32cHqZvlakUr9fBzXLu5mgPCvRN1S5RFlBUNhfvqNTNHKpAFB+U4wcyf6Te37xZfXU6+e4EHwIiY4irum7qsMixXvGf2MxXKsr6YxtqbNCCkPe8=
+[2014-12-26 19:05:11]-[http://192.168.1.214/backend/web/index.php]-[data] :interface fields:merId,goodsId,orderId,merDate,retCode,retMsg,version,sign
+[2014-12-26 19:05:11]-[http://192.168.1.214/backend/web/index.php]-[data] :response sign=bal_sign=000000000025710936&mer_id=25116&ret_code=0000&ret_msg=Êü•ËØ¢ÊàêÂäü&sign_type=RSA&version=4.0
+[2014-12-26 19:05:11]-[http://192.168.1.214/backend/web/index.php]-[data] :response sign=clG8e39FHmLs9ZNeCJfrqCFp56u2e2Y5KlVp97Ci5BAzhQBwF5c/KJi3RQIk32cHqZvlakUr9fBzXLu5mgPCvRN1S5RFlBUNhfvqNTNHKpAFB+U4wcyf6Te37xZfXU6+e4EHwIiY4irum7qsMixXvGf2MxXKsr6YxtqbNCCkPe8=
+[2014-12-26 19:05:11]-[http://192.168.1.214/backend/web/index.php]-[data] :response plain=bal_sign=000000000025710936&mer_id=25116&ret_code=0000&ret_msg=Êü•ËØ¢ÊàêÂäü&version=4.0
+[2014-12-26 19:05:11]-[http://192.168.1.214/backend/web/index.php]-[data] :verify:1

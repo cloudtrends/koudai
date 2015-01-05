@@ -1,0 +1,816 @@
+[2014-12-08 10:45:59]-[]-[data] :Participate in the signature parameters：[busi_no=1&card_holder=&card_id=&card_type=0&charset=UTF-8&identity_code=&identity_type=1&media_id=15601609971&mer_id=25116&pub_pri_flag=1&res_format=HTML&service=user_reg&version=4.0],Merchant number is：[25116]
+[2014-12-08 10:45:59]-[]-[data] :The private key path for：/opt/lampp/htdocs/common/config/cert/25116_wenzhoudai.key.pem
+[2014-12-08 10:45:59]-[]-[data] :Request platform way=get
+[2014-12-08 10:45:59]-[]-[data] :Request platform signature string=
+[2014-12-08 10:45:59]-[]-[data] :Clear information request platform=busi_no=1&card_holder=&card_id=&card_type=0&charset=UTF-8&identity_code=&identity_type=1&media_id=15601609971&mer_id=25116&pub_pri_flag=1&res_format=HTML&service=user_reg&version=4.0
+[2014-12-08 10:45:59]-[]-[data] :The service user_reg request platform to get the address url=http://pay.soopay.net/spay/pay/payservice.do?busi_no=1&card_holder=&card_id=&card_type=0&charset=UTF-8&identity_code=&identity_type=1&media_id=15601609971&mer_id=25116&pub_pri_flag=1&res_format=HTML&service=user_reg&version=4.0&sign=
+[2014-12-08 10:46:01]-[]-[data] :Participate in the signature parameters：[busi_no=1&card_holder=&card_id=&card_type=0&charset=UTF-8&identity_code=&identity_type=1&media_id=15601609971&mer_id=25116&pub_pri_flag=1&res_format=HTML&service=user_reg&version=4.0],Merchant number is：[25116]
+[2014-12-08 10:46:01]-[]-[data] :The private key path for：/opt/lampp/htdocs/common/config/cert/25116_wenzhoudai.key.pem
+[2014-12-08 10:46:01]-[]-[data] :Request platform way=get
+[2014-12-08 10:46:01]-[]-[data] :Request platform signature string=
+[2014-12-08 10:46:01]-[]-[data] :Clear information request platform=busi_no=1&card_holder=&card_id=&card_type=0&charset=UTF-8&identity_code=&identity_type=1&media_id=15601609971&mer_id=25116&pub_pri_flag=1&res_format=HTML&service=user_reg&version=4.0
+[2014-12-08 10:46:01]-[]-[data] :The service user_reg request platform to get the address url=http://pay.soopay.net/spay/pay/payservice.do?busi_no=1&card_holder=&card_id=&card_type=0&charset=UTF-8&identity_code=&identity_type=1&media_id=15601609971&mer_id=25116&pub_pri_flag=1&res_format=HTML&service=user_reg&version=4.0&sign=
+[2014-12-08 10:46:02]-[]-[data] :plat response mer data:ret_code=00060700&ret_msg=数据校验未通过&sign=q61Ijm/wqpeAJcFjvzSNuM4uXvuVketcS5V0TtxrolA1EQ4y/758HiRO46FHTUUIgMfrslC/LN/iOCOxliDNpgvaYTVH0fAs2ffe9mVQXj9TbzwllS/XiBZb0yLEXsj+BE0FqOuvc1uuFYTVNDExhuFgsREycqCn9GyqGxsh+K4=
+[2014-12-08 10:46:02]-[]-[data] :interface fields:merId,goodsId,orderId,merDate,retCode,retMsg,version,sign
+[2014-12-08 10:46:02]-[]-[data] :response sign=ret_code=00060700&ret_msg=数据校验未通过
+[2014-12-08 10:46:02]-[]-[data] :response sign=q61Ijm/wqpeAJcFjvzSNuM4uXvuVketcS5V0TtxrolA1EQ4y/758HiRO46FHTUUIgMfrslC/LN/iOCOxliDNpgvaYTVH0fAs2ffe9mVQXj9TbzwllS/XiBZb0yLEXsj+BE0FqOuvc1uuFYTVNDExhuFgsREycqCn9GyqGxsh+K4=
+[2014-12-08 10:46:02]-[]-[data] :response plain=ret_code=00060700&ret_msg=数据校验未通过
+[2014-12-08 10:46:02]-[]-[data] :平台响应数据验签失败:plain=ret_code=00060700&ret_msg=数据校验未通过;sign=q61Ijm/wqpeAJcFjvzSNuM4uXvuVketcS5V0TtxrolA1EQ4y/758HiRO46FHTUUIgMfrslC/LN/iOCOxliDNpgvaYTVH0fAs2ffe9mVQXj9TbzwllS/XiBZb0yLEXsj+BE0FqOuvc1uuFYTVNDExhuFgsREycqCn9GyqGxsh+K4=
+[2014-12-08 10:46:04]-[]-[data] :plat response mer data:ret_code=00060700&ret_msg=数据校验未通过&sign=q61Ijm/wqpeAJcFjvzSNuM4uXvuVketcS5V0TtxrolA1EQ4y/758HiRO46FHTUUIgMfrslC/LN/iOCOxliDNpgvaYTVH0fAs2ffe9mVQXj9TbzwllS/XiBZb0yLEXsj+BE0FqOuvc1uuFYTVNDExhuFgsREycqCn9GyqGxsh+K4=
+[2014-12-08 10:46:04]-[]-[data] :interface fields:merId,goodsId,orderId,merDate,retCode,retMsg,version,sign
+[2014-12-08 10:46:04]-[]-[data] :response sign=ret_code=00060700&ret_msg=数据校验未通过
+[2014-12-08 10:46:04]-[]-[data] :response sign=q61Ijm/wqpeAJcFjvzSNuM4uXvuVketcS5V0TtxrolA1EQ4y/758HiRO46FHTUUIgMfrslC/LN/iOCOxliDNpgvaYTVH0fAs2ffe9mVQXj9TbzwllS/XiBZb0yLEXsj+BE0FqOuvc1uuFYTVNDExhuFgsREycqCn9GyqGxsh+K4=
+[2014-12-08 10:46:04]-[]-[data] :response plain=ret_code=00060700&ret_msg=数据校验未通过
+[2014-12-08 10:46:04]-[]-[data] :平台响应数据验签失败:plain=ret_code=00060700&ret_msg=数据校验未通过;sign=q61Ijm/wqpeAJcFjvzSNuM4uXvuVketcS5V0TtxrolA1EQ4y/758HiRO46FHTUUIgMfrslC/LN/iOCOxliDNpgvaYTVH0fAs2ffe9mVQXj9TbzwllS/XiBZb0yLEXsj+BE0FqOuvc1uuFYTVNDExhuFgsREycqCn9GyqGxsh+K4=
+[2014-12-08 10:46:11]-[]-[data] :Participate in the signature parameters：[busi_no=1&card_holder=&card_id=&card_type=0&charset=UTF-8&identity_code=&identity_type=1&media_id=15601609971&mer_id=25116&pub_pri_flag=1&res_format=HTML&service=user_reg&version=4.0],Merchant number is：[25116]
+[2014-12-08 10:46:11]-[]-[data] :The private key path for：/opt/lampp/htdocs/common/config/cert/25116_wenzhoudai.key.pem
+[2014-12-08 10:46:11]-[]-[data] :Request platform way=get
+[2014-12-08 10:46:11]-[]-[data] :Request platform signature string=
+[2014-12-08 10:46:11]-[]-[data] :Clear information request platform=busi_no=1&card_holder=&card_id=&card_type=0&charset=UTF-8&identity_code=&identity_type=1&media_id=15601609971&mer_id=25116&pub_pri_flag=1&res_format=HTML&service=user_reg&version=4.0
+[2014-12-08 10:46:11]-[]-[data] :The service user_reg request platform to get the address url=http://pay.soopay.net/spay/pay/payservice.do?busi_no=1&card_holder=&card_id=&card_type=0&charset=UTF-8&identity_code=&identity_type=1&media_id=15601609971&mer_id=25116&pub_pri_flag=1&res_format=HTML&service=user_reg&version=4.0&sign=
+[2014-12-08 10:46:11]-[]-[data] :plat response mer data:ret_code=00060700&ret_msg=数据校验未通过&sign=q61Ijm/wqpeAJcFjvzSNuM4uXvuVketcS5V0TtxrolA1EQ4y/758HiRO46FHTUUIgMfrslC/LN/iOCOxliDNpgvaYTVH0fAs2ffe9mVQXj9TbzwllS/XiBZb0yLEXsj+BE0FqOuvc1uuFYTVNDExhuFgsREycqCn9GyqGxsh+K4=
+[2014-12-08 10:46:11]-[]-[data] :interface fields:merId,goodsId,orderId,merDate,retCode,retMsg,version,sign
+[2014-12-08 10:46:11]-[]-[data] :response sign=ret_code=00060700&ret_msg=数据校验未通过
+[2014-12-08 10:46:11]-[]-[data] :response sign=q61Ijm/wqpeAJcFjvzSNuM4uXvuVketcS5V0TtxrolA1EQ4y/758HiRO46FHTUUIgMfrslC/LN/iOCOxliDNpgvaYTVH0fAs2ffe9mVQXj9TbzwllS/XiBZb0yLEXsj+BE0FqOuvc1uuFYTVNDExhuFgsREycqCn9GyqGxsh+K4=
+[2014-12-08 10:46:11]-[]-[data] :response plain=ret_code=00060700&ret_msg=数据校验未通过
+[2014-12-08 10:46:11]-[]-[data] :平台响应数据验签失败:plain=ret_code=00060700&ret_msg=数据校验未通过;sign=q61Ijm/wqpeAJcFjvzSNuM4uXvuVketcS5V0TtxrolA1EQ4y/758HiRO46FHTUUIgMfrslC/LN/iOCOxliDNpgvaYTVH0fAs2ffe9mVQXj9TbzwllS/XiBZb0yLEXsj+BE0FqOuvc1uuFYTVNDExhuFgsREycqCn9GyqGxsh+K4=
+[2014-12-08 10:46:21]-[]-[data] :Participate in the signature parameters：[busi_no=1&card_holder=&card_id=&card_type=0&charset=UTF-8&identity_code=&identity_type=1&media_id=15601609971&mer_id=25116&pub_pri_flag=1&res_format=HTML&service=user_reg&version=4.0],Merchant number is：[25116]
+[2014-12-08 10:46:21]-[]-[data] :The private key path for：/opt/lampp/htdocs/common/config/cert/25116_wenzhoudai.key.pem
+[2014-12-08 10:46:21]-[]-[data] :Request platform way=get
+[2014-12-08 10:46:21]-[]-[data] :Request platform signature string=
+[2014-12-08 10:46:21]-[]-[data] :Clear information request platform=busi_no=1&card_holder=&card_id=&card_type=0&charset=UTF-8&identity_code=&identity_type=1&media_id=15601609971&mer_id=25116&pub_pri_flag=1&res_format=HTML&service=user_reg&version=4.0
+[2014-12-08 10:46:21]-[]-[data] :The service user_reg request platform to get the address url=http://pay.soopay.net/spay/pay/payservice.do?busi_no=1&card_holder=&card_id=&card_type=0&charset=UTF-8&identity_code=&identity_type=1&media_id=15601609971&mer_id=25116&pub_pri_flag=1&res_format=HTML&service=user_reg&version=4.0&sign=
+[2014-12-08 10:46:21]-[]-[data] :plat response mer data:ret_code=00060700&ret_msg=数据校验未通过&sign=q61Ijm/wqpeAJcFjvzSNuM4uXvuVketcS5V0TtxrolA1EQ4y/758HiRO46FHTUUIgMfrslC/LN/iOCOxliDNpgvaYTVH0fAs2ffe9mVQXj9TbzwllS/XiBZb0yLEXsj+BE0FqOuvc1uuFYTVNDExhuFgsREycqCn9GyqGxsh+K4=
+[2014-12-08 10:46:21]-[]-[data] :interface fields:merId,goodsId,orderId,merDate,retCode,retMsg,version,sign
+[2014-12-08 10:46:21]-[]-[data] :response sign=ret_code=00060700&ret_msg=数据校验未通过
+[2014-12-08 10:46:21]-[]-[data] :response sign=q61Ijm/wqpeAJcFjvzSNuM4uXvuVketcS5V0TtxrolA1EQ4y/758HiRO46FHTUUIgMfrslC/LN/iOCOxliDNpgvaYTVH0fAs2ffe9mVQXj9TbzwllS/XiBZb0yLEXsj+BE0FqOuvc1uuFYTVNDExhuFgsREycqCn9GyqGxsh+K4=
+[2014-12-08 10:46:21]-[]-[data] :response plain=ret_code=00060700&ret_msg=数据校验未通过
+[2014-12-08 10:46:21]-[]-[data] :平台响应数据验签失败:plain=ret_code=00060700&ret_msg=数据校验未通过;sign=q61Ijm/wqpeAJcFjvzSNuM4uXvuVketcS5V0TtxrolA1EQ4y/758HiRO46FHTUUIgMfrslC/LN/iOCOxliDNpgvaYTVH0fAs2ffe9mVQXj9TbzwllS/XiBZb0yLEXsj+BE0FqOuvc1uuFYTVNDExhuFgsREycqCn9GyqGxsh+K4=
+[2014-12-08 10:46:23]-[]-[data] :Participate in the signature parameters：[busi_no=1&card_holder=&card_id=&card_type=0&charset=UTF-8&identity_code=&identity_type=1&media_id=15601609971&mer_id=25116&pub_pri_flag=1&res_format=HTML&service=user_reg&version=4.0],Merchant number is：[25116]
+[2014-12-08 10:46:23]-[]-[data] :The private key path for：/opt/lampp/htdocs/common/config/cert/25116_wenzhoudai.key.pem
+[2014-12-08 10:46:23]-[]-[data] :Request platform way=get
+[2014-12-08 10:46:23]-[]-[data] :Request platform signature string=
+[2014-12-08 10:46:23]-[]-[data] :Clear information request platform=busi_no=1&card_holder=&card_id=&card_type=0&charset=UTF-8&identity_code=&identity_type=1&media_id=15601609971&mer_id=25116&pub_pri_flag=1&res_format=HTML&service=user_reg&version=4.0
+[2014-12-08 10:46:23]-[]-[data] :The service user_reg request platform to get the address url=http://pay.soopay.net/spay/pay/payservice.do?busi_no=1&card_holder=&card_id=&card_type=0&charset=UTF-8&identity_code=&identity_type=1&media_id=15601609971&mer_id=25116&pub_pri_flag=1&res_format=HTML&service=user_reg&version=4.0&sign=
+[2014-12-08 10:46:23]-[]-[data] :plat response mer data:ret_code=00060700&ret_msg=数据校验未通过&sign=q61Ijm/wqpeAJcFjvzSNuM4uXvuVketcS5V0TtxrolA1EQ4y/758HiRO46FHTUUIgMfrslC/LN/iOCOxliDNpgvaYTVH0fAs2ffe9mVQXj9TbzwllS/XiBZb0yLEXsj+BE0FqOuvc1uuFYTVNDExhuFgsREycqCn9GyqGxsh+K4=
+[2014-12-08 10:46:23]-[]-[data] :interface fields:merId,goodsId,orderId,merDate,retCode,retMsg,version,sign
+[2014-12-08 10:46:23]-[]-[data] :response sign=ret_code=00060700&ret_msg=数据校验未通过
+[2014-12-08 10:46:23]-[]-[data] :response sign=q61Ijm/wqpeAJcFjvzSNuM4uXvuVketcS5V0TtxrolA1EQ4y/758HiRO46FHTUUIgMfrslC/LN/iOCOxliDNpgvaYTVH0fAs2ffe9mVQXj9TbzwllS/XiBZb0yLEXsj+BE0FqOuvc1uuFYTVNDExhuFgsREycqCn9GyqGxsh+K4=
+[2014-12-08 10:46:23]-[]-[data] :response plain=ret_code=00060700&ret_msg=数据校验未通过
+[2014-12-08 10:46:23]-[]-[data] :平台响应数据验签失败:plain=ret_code=00060700&ret_msg=数据校验未通过;sign=q61Ijm/wqpeAJcFjvzSNuM4uXvuVketcS5V0TtxrolA1EQ4y/758HiRO46FHTUUIgMfrslC/LN/iOCOxliDNpgvaYTVH0fAs2ffe9mVQXj9TbzwllS/XiBZb0yLEXsj+BE0FqOuvc1uuFYTVNDExhuFgsREycqCn9GyqGxsh+K4=
+[2014-12-08 10:46:24]-[]-[data] :Participate in the signature parameters：[busi_no=1&card_holder=&card_id=&card_type=0&charset=UTF-8&identity_code=&identity_type=1&media_id=15601609971&mer_id=25116&pub_pri_flag=1&res_format=HTML&service=user_reg&version=4.0],Merchant number is：[25116]
+[2014-12-08 10:46:24]-[]-[data] :The private key path for：/opt/lampp/htdocs/common/config/cert/25116_wenzhoudai.key.pem
+[2014-12-08 10:46:24]-[]-[data] :Request platform way=get
+[2014-12-08 10:46:24]-[]-[data] :Request platform signature string=
+[2014-12-08 10:46:24]-[]-[data] :Clear information request platform=busi_no=1&card_holder=&card_id=&card_type=0&charset=UTF-8&identity_code=&identity_type=1&media_id=15601609971&mer_id=25116&pub_pri_flag=1&res_format=HTML&service=user_reg&version=4.0
+[2014-12-08 10:46:24]-[]-[data] :The service user_reg request platform to get the address url=http://pay.soopay.net/spay/pay/payservice.do?busi_no=1&card_holder=&card_id=&card_type=0&charset=UTF-8&identity_code=&identity_type=1&media_id=15601609971&mer_id=25116&pub_pri_flag=1&res_format=HTML&service=user_reg&version=4.0&sign=
+[2014-12-08 10:46:24]-[]-[data] :plat response mer data:ret_code=00060700&ret_msg=数据校验未通过&sign=q61Ijm/wqpeAJcFjvzSNuM4uXvuVketcS5V0TtxrolA1EQ4y/758HiRO46FHTUUIgMfrslC/LN/iOCOxliDNpgvaYTVH0fAs2ffe9mVQXj9TbzwllS/XiBZb0yLEXsj+BE0FqOuvc1uuFYTVNDExhuFgsREycqCn9GyqGxsh+K4=
+[2014-12-08 10:46:24]-[]-[data] :interface fields:merId,goodsId,orderId,merDate,retCode,retMsg,version,sign
+[2014-12-08 10:46:24]-[]-[data] :response sign=ret_code=00060700&ret_msg=数据校验未通过
+[2014-12-08 10:46:24]-[]-[data] :response sign=q61Ijm/wqpeAJcFjvzSNuM4uXvuVketcS5V0TtxrolA1EQ4y/758HiRO46FHTUUIgMfrslC/LN/iOCOxliDNpgvaYTVH0fAs2ffe9mVQXj9TbzwllS/XiBZb0yLEXsj+BE0FqOuvc1uuFYTVNDExhuFgsREycqCn9GyqGxsh+K4=
+[2014-12-08 10:46:24]-[]-[data] :response plain=ret_code=00060700&ret_msg=数据校验未通过
+[2014-12-08 10:46:24]-[]-[data] :平台响应数据验签失败:plain=ret_code=00060700&ret_msg=数据校验未通过;sign=q61Ijm/wqpeAJcFjvzSNuM4uXvuVketcS5V0TtxrolA1EQ4y/758HiRO46FHTUUIgMfrslC/LN/iOCOxliDNpgvaYTVH0fAs2ffe9mVQXj9TbzwllS/XiBZb0yLEXsj+BE0FqOuvc1uuFYTVNDExhuFgsREycqCn9GyqGxsh+K4=
+[2014-12-08 10:46:25]-[]-[data] :Participate in the signature parameters：[busi_no=1&card_holder=&card_id=&card_type=0&charset=UTF-8&identity_code=&identity_type=1&media_id=15601609971&mer_id=25116&pub_pri_flag=1&res_format=HTML&service=user_reg&version=4.0],Merchant number is：[25116]
+[2014-12-08 10:46:25]-[]-[data] :The private key path for：/opt/lampp/htdocs/common/config/cert/25116_wenzhoudai.key.pem
+[2014-12-08 10:46:25]-[]-[data] :Request platform way=get
+[2014-12-08 10:46:25]-[]-[data] :Request platform signature string=
+[2014-12-08 10:46:25]-[]-[data] :Clear information request platform=busi_no=1&card_holder=&card_id=&card_type=0&charset=UTF-8&identity_code=&identity_type=1&media_id=15601609971&mer_id=25116&pub_pri_flag=1&res_format=HTML&service=user_reg&version=4.0
+[2014-12-08 10:46:25]-[]-[data] :The service user_reg request platform to get the address url=http://pay.soopay.net/spay/pay/payservice.do?busi_no=1&card_holder=&card_id=&card_type=0&charset=UTF-8&identity_code=&identity_type=1&media_id=15601609971&mer_id=25116&pub_pri_flag=1&res_format=HTML&service=user_reg&version=4.0&sign=
+[2014-12-08 10:46:25]-[]-[data] :plat response mer data:ret_code=00060700&ret_msg=数据校验未通过&sign=q61Ijm/wqpeAJcFjvzSNuM4uXvuVketcS5V0TtxrolA1EQ4y/758HiRO46FHTUUIgMfrslC/LN/iOCOxliDNpgvaYTVH0fAs2ffe9mVQXj9TbzwllS/XiBZb0yLEXsj+BE0FqOuvc1uuFYTVNDExhuFgsREycqCn9GyqGxsh+K4=
+[2014-12-08 10:46:25]-[]-[data] :interface fields:merId,goodsId,orderId,merDate,retCode,retMsg,version,sign
+[2014-12-08 10:46:25]-[]-[data] :response sign=ret_code=00060700&ret_msg=数据校验未通过
+[2014-12-08 10:46:25]-[]-[data] :response sign=q61Ijm/wqpeAJcFjvzSNuM4uXvuVketcS5V0TtxrolA1EQ4y/758HiRO46FHTUUIgMfrslC/LN/iOCOxliDNpgvaYTVH0fAs2ffe9mVQXj9TbzwllS/XiBZb0yLEXsj+BE0FqOuvc1uuFYTVNDExhuFgsREycqCn9GyqGxsh+K4=
+[2014-12-08 10:46:25]-[]-[data] :response plain=ret_code=00060700&ret_msg=数据校验未通过
+[2014-12-08 10:46:25]-[]-[data] :平台响应数据验签失败:plain=ret_code=00060700&ret_msg=数据校验未通过;sign=q61Ijm/wqpeAJcFjvzSNuM4uXvuVketcS5V0TtxrolA1EQ4y/758HiRO46FHTUUIgMfrslC/LN/iOCOxliDNpgvaYTVH0fAs2ffe9mVQXj9TbzwllS/XiBZb0yLEXsj+BE0FqOuvc1uuFYTVNDExhuFgsREycqCn9GyqGxsh+K4=
+[2014-12-08 10:46:27]-[]-[data] :Participate in the signature parameters：[busi_no=1&card_holder=&card_id=&card_type=0&charset=UTF-8&identity_code=&identity_type=1&media_id=15601609971&mer_id=25116&pub_pri_flag=1&res_format=HTML&service=user_reg&version=4.0],Merchant number is：[25116]
+[2014-12-08 10:46:27]-[]-[data] :The private key path for：/opt/lampp/htdocs/common/config/cert/25116_wenzhoudai.key.pem
+[2014-12-08 10:46:27]-[]-[data] :Request platform way=get
+[2014-12-08 10:46:27]-[]-[data] :Request platform signature string=
+[2014-12-08 10:46:27]-[]-[data] :Clear information request platform=busi_no=1&card_holder=&card_id=&card_type=0&charset=UTF-8&identity_code=&identity_type=1&media_id=15601609971&mer_id=25116&pub_pri_flag=1&res_format=HTML&service=user_reg&version=4.0
+[2014-12-08 10:46:27]-[]-[data] :The service user_reg request platform to get the address url=http://pay.soopay.net/spay/pay/payservice.do?busi_no=1&card_holder=&card_id=&card_type=0&charset=UTF-8&identity_code=&identity_type=1&media_id=15601609971&mer_id=25116&pub_pri_flag=1&res_format=HTML&service=user_reg&version=4.0&sign=
+[2014-12-08 10:46:27]-[]-[data] :plat response mer data:ret_code=00060700&ret_msg=数据校验未通过&sign=q61Ijm/wqpeAJcFjvzSNuM4uXvuVketcS5V0TtxrolA1EQ4y/758HiRO46FHTUUIgMfrslC/LN/iOCOxliDNpgvaYTVH0fAs2ffe9mVQXj9TbzwllS/XiBZb0yLEXsj+BE0FqOuvc1uuFYTVNDExhuFgsREycqCn9GyqGxsh+K4=
+[2014-12-08 10:46:27]-[]-[data] :interface fields:merId,goodsId,orderId,merDate,retCode,retMsg,version,sign
+[2014-12-08 10:46:27]-[]-[data] :response sign=ret_code=00060700&ret_msg=数据校验未通过
+[2014-12-08 10:46:27]-[]-[data] :response sign=q61Ijm/wqpeAJcFjvzSNuM4uXvuVketcS5V0TtxrolA1EQ4y/758HiRO46FHTUUIgMfrslC/LN/iOCOxliDNpgvaYTVH0fAs2ffe9mVQXj9TbzwllS/XiBZb0yLEXsj+BE0FqOuvc1uuFYTVNDExhuFgsREycqCn9GyqGxsh+K4=
+[2014-12-08 10:46:27]-[]-[data] :response plain=ret_code=00060700&ret_msg=数据校验未通过
+[2014-12-08 10:46:27]-[]-[data] :平台响应数据验签失败:plain=ret_code=00060700&ret_msg=数据校验未通过;sign=q61Ijm/wqpeAJcFjvzSNuM4uXvuVketcS5V0TtxrolA1EQ4y/758HiRO46FHTUUIgMfrslC/LN/iOCOxliDNpgvaYTVH0fAs2ffe9mVQXj9TbzwllS/XiBZb0yLEXsj+BE0FqOuvc1uuFYTVNDExhuFgsREycqCn9GyqGxsh+K4=
+[2014-12-08 10:46:28]-[]-[data] :Participate in the signature parameters：[busi_no=1&card_holder=&card_id=&card_type=0&charset=UTF-8&identity_code=&identity_type=1&media_id=15601609971&mer_id=25116&pub_pri_flag=1&res_format=HTML&service=user_reg&version=4.0],Merchant number is：[25116]
+[2014-12-08 10:46:28]-[]-[data] :The private key path for：/opt/lampp/htdocs/common/config/cert/25116_wenzhoudai.key.pem
+[2014-12-08 10:46:28]-[]-[data] :Request platform way=get
+[2014-12-08 10:46:28]-[]-[data] :Request platform signature string=
+[2014-12-08 10:46:28]-[]-[data] :Clear information request platform=busi_no=1&card_holder=&card_id=&card_type=0&charset=UTF-8&identity_code=&identity_type=1&media_id=15601609971&mer_id=25116&pub_pri_flag=1&res_format=HTML&service=user_reg&version=4.0
+[2014-12-08 10:46:28]-[]-[data] :The service user_reg request platform to get the address url=http://pay.soopay.net/spay/pay/payservice.do?busi_no=1&card_holder=&card_id=&card_type=0&charset=UTF-8&identity_code=&identity_type=1&media_id=15601609971&mer_id=25116&pub_pri_flag=1&res_format=HTML&service=user_reg&version=4.0&sign=
+[2014-12-08 10:46:28]-[]-[data] :plat response mer data:ret_code=00060700&ret_msg=数据校验未通过&sign=q61Ijm/wqpeAJcFjvzSNuM4uXvuVketcS5V0TtxrolA1EQ4y/758HiRO46FHTUUIgMfrslC/LN/iOCOxliDNpgvaYTVH0fAs2ffe9mVQXj9TbzwllS/XiBZb0yLEXsj+BE0FqOuvc1uuFYTVNDExhuFgsREycqCn9GyqGxsh+K4=
+[2014-12-08 10:46:28]-[]-[data] :interface fields:merId,goodsId,orderId,merDate,retCode,retMsg,version,sign
+[2014-12-08 10:46:28]-[]-[data] :response sign=ret_code=00060700&ret_msg=数据校验未通过
+[2014-12-08 10:46:28]-[]-[data] :response sign=q61Ijm/wqpeAJcFjvzSNuM4uXvuVketcS5V0TtxrolA1EQ4y/758HiRO46FHTUUIgMfrslC/LN/iOCOxliDNpgvaYTVH0fAs2ffe9mVQXj9TbzwllS/XiBZb0yLEXsj+BE0FqOuvc1uuFYTVNDExhuFgsREycqCn9GyqGxsh+K4=
+[2014-12-08 10:46:28]-[]-[data] :response plain=ret_code=00060700&ret_msg=数据校验未通过
+[2014-12-08 10:46:28]-[]-[data] :平台响应数据验签失败:plain=ret_code=00060700&ret_msg=数据校验未通过;sign=q61Ijm/wqpeAJcFjvzSNuM4uXvuVketcS5V0TtxrolA1EQ4y/758HiRO46FHTUUIgMfrslC/LN/iOCOxliDNpgvaYTVH0fAs2ffe9mVQXj9TbzwllS/XiBZb0yLEXsj+BE0FqOuvc1uuFYTVNDExhuFgsREycqCn9GyqGxsh+K4=
+[2014-12-08 10:46:29]-[]-[data] :Participate in the signature parameters：[busi_no=1&card_holder=&card_id=&card_type=0&charset=UTF-8&identity_code=&identity_type=1&media_id=15601609971&mer_id=25116&pub_pri_flag=1&res_format=HTML&service=user_reg&version=4.0],Merchant number is：[25116]
+[2014-12-08 10:46:29]-[]-[data] :The private key path for：/opt/lampp/htdocs/common/config/cert/25116_wenzhoudai.key.pem
+[2014-12-08 10:46:29]-[]-[data] :Request platform way=get
+[2014-12-08 10:46:29]-[]-[data] :Request platform signature string=
+[2014-12-08 10:46:29]-[]-[data] :Clear information request platform=busi_no=1&card_holder=&card_id=&card_type=0&charset=UTF-8&identity_code=&identity_type=1&media_id=15601609971&mer_id=25116&pub_pri_flag=1&res_format=HTML&service=user_reg&version=4.0
+[2014-12-08 10:46:29]-[]-[data] :The service user_reg request platform to get the address url=http://pay.soopay.net/spay/pay/payservice.do?busi_no=1&card_holder=&card_id=&card_type=0&charset=UTF-8&identity_code=&identity_type=1&media_id=15601609971&mer_id=25116&pub_pri_flag=1&res_format=HTML&service=user_reg&version=4.0&sign=
+[2014-12-08 10:46:29]-[]-[data] :plat response mer data:ret_code=00060700&ret_msg=数据校验未通过&sign=q61Ijm/wqpeAJcFjvzSNuM4uXvuVketcS5V0TtxrolA1EQ4y/758HiRO46FHTUUIgMfrslC/LN/iOCOxliDNpgvaYTVH0fAs2ffe9mVQXj9TbzwllS/XiBZb0yLEXsj+BE0FqOuvc1uuFYTVNDExhuFgsREycqCn9GyqGxsh+K4=
+[2014-12-08 10:46:29]-[]-[data] :interface fields:merId,goodsId,orderId,merDate,retCode,retMsg,version,sign
+[2014-12-08 10:46:29]-[]-[data] :response sign=ret_code=00060700&ret_msg=数据校验未通过
+[2014-12-08 10:46:29]-[]-[data] :response sign=q61Ijm/wqpeAJcFjvzSNuM4uXvuVketcS5V0TtxrolA1EQ4y/758HiRO46FHTUUIgMfrslC/LN/iOCOxliDNpgvaYTVH0fAs2ffe9mVQXj9TbzwllS/XiBZb0yLEXsj+BE0FqOuvc1uuFYTVNDExhuFgsREycqCn9GyqGxsh+K4=
+[2014-12-08 10:46:29]-[]-[data] :response plain=ret_code=00060700&ret_msg=数据校验未通过
+[2014-12-08 10:46:29]-[]-[data] :平台响应数据验签失败:plain=ret_code=00060700&ret_msg=数据校验未通过;sign=q61Ijm/wqpeAJcFjvzSNuM4uXvuVketcS5V0TtxrolA1EQ4y/758HiRO46FHTUUIgMfrslC/LN/iOCOxliDNpgvaYTVH0fAs2ffe9mVQXj9TbzwllS/XiBZb0yLEXsj+BE0FqOuvc1uuFYTVNDExhuFgsREycqCn9GyqGxsh+K4=
+[2014-12-08 10:46:30]-[]-[data] :Participate in the signature parameters：[busi_no=1&card_holder=&card_id=&card_type=0&charset=UTF-8&identity_code=&identity_type=1&media_id=15601609971&mer_id=25116&pub_pri_flag=1&res_format=HTML&service=user_reg&version=4.0],Merchant number is：[25116]
+[2014-12-08 10:46:30]-[]-[data] :The private key path for：/opt/lampp/htdocs/common/config/cert/25116_wenzhoudai.key.pem
+[2014-12-08 10:46:30]-[]-[data] :Request platform way=get
+[2014-12-08 10:46:30]-[]-[data] :Request platform signature string=
+[2014-12-08 10:46:30]-[]-[data] :Clear information request platform=busi_no=1&card_holder=&card_id=&card_type=0&charset=UTF-8&identity_code=&identity_type=1&media_id=15601609971&mer_id=25116&pub_pri_flag=1&res_format=HTML&service=user_reg&version=4.0
+[2014-12-08 10:46:30]-[]-[data] :The service user_reg request platform to get the address url=http://pay.soopay.net/spay/pay/payservice.do?busi_no=1&card_holder=&card_id=&card_type=0&charset=UTF-8&identity_code=&identity_type=1&media_id=15601609971&mer_id=25116&pub_pri_flag=1&res_format=HTML&service=user_reg&version=4.0&sign=
+[2014-12-08 10:46:30]-[]-[data] :plat response mer data:ret_code=00060700&ret_msg=数据校验未通过&sign=q61Ijm/wqpeAJcFjvzSNuM4uXvuVketcS5V0TtxrolA1EQ4y/758HiRO46FHTUUIgMfrslC/LN/iOCOxliDNpgvaYTVH0fAs2ffe9mVQXj9TbzwllS/XiBZb0yLEXsj+BE0FqOuvc1uuFYTVNDExhuFgsREycqCn9GyqGxsh+K4=
+[2014-12-08 10:46:30]-[]-[data] :interface fields:merId,goodsId,orderId,merDate,retCode,retMsg,version,sign
+[2014-12-08 10:46:30]-[]-[data] :response sign=ret_code=00060700&ret_msg=数据校验未通过
+[2014-12-08 10:46:30]-[]-[data] :response sign=q61Ijm/wqpeAJcFjvzSNuM4uXvuVketcS5V0TtxrolA1EQ4y/758HiRO46FHTUUIgMfrslC/LN/iOCOxliDNpgvaYTVH0fAs2ffe9mVQXj9TbzwllS/XiBZb0yLEXsj+BE0FqOuvc1uuFYTVNDExhuFgsREycqCn9GyqGxsh+K4=
+[2014-12-08 10:46:30]-[]-[data] :response plain=ret_code=00060700&ret_msg=数据校验未通过
+[2014-12-08 10:46:30]-[]-[data] :平台响应数据验签失败:plain=ret_code=00060700&ret_msg=数据校验未通过;sign=q61Ijm/wqpeAJcFjvzSNuM4uXvuVketcS5V0TtxrolA1EQ4y/758HiRO46FHTUUIgMfrslC/LN/iOCOxliDNpgvaYTVH0fAs2ffe9mVQXj9TbzwllS/XiBZb0yLEXsj+BE0FqOuvc1uuFYTVNDExhuFgsREycqCn9GyqGxsh+K4=
+[2014-12-08 10:46:31]-[]-[data] :Participate in the signature parameters：[busi_no=1&card_holder=&card_id=&card_type=0&charset=UTF-8&identity_code=&identity_type=1&media_id=15601609971&mer_id=25116&pub_pri_flag=1&res_format=HTML&service=user_reg&version=4.0],Merchant number is：[25116]
+[2014-12-08 10:46:31]-[]-[data] :The private key path for：/opt/lampp/htdocs/common/config/cert/25116_wenzhoudai.key.pem
+[2014-12-08 10:46:31]-[]-[data] :Request platform way=get
+[2014-12-08 10:46:31]-[]-[data] :Request platform signature string=
+[2014-12-08 10:46:31]-[]-[data] :Clear information request platform=busi_no=1&card_holder=&card_id=&card_type=0&charset=UTF-8&identity_code=&identity_type=1&media_id=15601609971&mer_id=25116&pub_pri_flag=1&res_format=HTML&service=user_reg&version=4.0
+[2014-12-08 10:46:31]-[]-[data] :The service user_reg request platform to get the address url=http://pay.soopay.net/spay/pay/payservice.do?busi_no=1&card_holder=&card_id=&card_type=0&charset=UTF-8&identity_code=&identity_type=1&media_id=15601609971&mer_id=25116&pub_pri_flag=1&res_format=HTML&service=user_reg&version=4.0&sign=
+[2014-12-08 10:46:31]-[]-[data] :plat response mer data:ret_code=00060700&ret_msg=数据校验未通过&sign=q61Ijm/wqpeAJcFjvzSNuM4uXvuVketcS5V0TtxrolA1EQ4y/758HiRO46FHTUUIgMfrslC/LN/iOCOxliDNpgvaYTVH0fAs2ffe9mVQXj9TbzwllS/XiBZb0yLEXsj+BE0FqOuvc1uuFYTVNDExhuFgsREycqCn9GyqGxsh+K4=
+[2014-12-08 10:46:31]-[]-[data] :interface fields:merId,goodsId,orderId,merDate,retCode,retMsg,version,sign
+[2014-12-08 10:46:31]-[]-[data] :response sign=ret_code=00060700&ret_msg=数据校验未通过
+[2014-12-08 10:46:31]-[]-[data] :response sign=q61Ijm/wqpeAJcFjvzSNuM4uXvuVketcS5V0TtxrolA1EQ4y/758HiRO46FHTUUIgMfrslC/LN/iOCOxliDNpgvaYTVH0fAs2ffe9mVQXj9TbzwllS/XiBZb0yLEXsj+BE0FqOuvc1uuFYTVNDExhuFgsREycqCn9GyqGxsh+K4=
+[2014-12-08 10:46:31]-[]-[data] :response plain=ret_code=00060700&ret_msg=数据校验未通过
+[2014-12-08 10:46:31]-[]-[data] :平台响应数据验签失败:plain=ret_code=00060700&ret_msg=数据校验未通过;sign=q61Ijm/wqpeAJcFjvzSNuM4uXvuVketcS5V0TtxrolA1EQ4y/758HiRO46FHTUUIgMfrslC/LN/iOCOxliDNpgvaYTVH0fAs2ffe9mVQXj9TbzwllS/XiBZb0yLEXsj+BE0FqOuvc1uuFYTVNDExhuFgsREycqCn9GyqGxsh+K4=
+[2014-12-08 10:46:32]-[]-[data] :Participate in the signature parameters：[busi_no=1&card_holder=&card_id=&card_type=0&charset=UTF-8&identity_code=&identity_type=1&media_id=15601609971&mer_id=25116&pub_pri_flag=1&res_format=HTML&service=user_reg&version=4.0],Merchant number is：[25116]
+[2014-12-08 10:46:32]-[]-[data] :The private key path for：/opt/lampp/htdocs/common/config/cert/25116_wenzhoudai.key.pem
+[2014-12-08 10:46:32]-[]-[data] :Request platform way=get
+[2014-12-08 10:46:32]-[]-[data] :Request platform signature string=
+[2014-12-08 10:46:32]-[]-[data] :Clear information request platform=busi_no=1&card_holder=&card_id=&card_type=0&charset=UTF-8&identity_code=&identity_type=1&media_id=15601609971&mer_id=25116&pub_pri_flag=1&res_format=HTML&service=user_reg&version=4.0
+[2014-12-08 10:46:32]-[]-[data] :The service user_reg request platform to get the address url=http://pay.soopay.net/spay/pay/payservice.do?busi_no=1&card_holder=&card_id=&card_type=0&charset=UTF-8&identity_code=&identity_type=1&media_id=15601609971&mer_id=25116&pub_pri_flag=1&res_format=HTML&service=user_reg&version=4.0&sign=
+[2014-12-08 10:46:32]-[]-[data] :plat response mer data:ret_code=00060700&ret_msg=数据校验未通过&sign=q61Ijm/wqpeAJcFjvzSNuM4uXvuVketcS5V0TtxrolA1EQ4y/758HiRO46FHTUUIgMfrslC/LN/iOCOxliDNpgvaYTVH0fAs2ffe9mVQXj9TbzwllS/XiBZb0yLEXsj+BE0FqOuvc1uuFYTVNDExhuFgsREycqCn9GyqGxsh+K4=
+[2014-12-08 10:46:32]-[]-[data] :interface fields:merId,goodsId,orderId,merDate,retCode,retMsg,version,sign
+[2014-12-08 10:46:32]-[]-[data] :response sign=ret_code=00060700&ret_msg=数据校验未通过
+[2014-12-08 10:46:32]-[]-[data] :response sign=q61Ijm/wqpeAJcFjvzSNuM4uXvuVketcS5V0TtxrolA1EQ4y/758HiRO46FHTUUIgMfrslC/LN/iOCOxliDNpgvaYTVH0fAs2ffe9mVQXj9TbzwllS/XiBZb0yLEXsj+BE0FqOuvc1uuFYTVNDExhuFgsREycqCn9GyqGxsh+K4=
+[2014-12-08 10:46:32]-[]-[data] :response plain=ret_code=00060700&ret_msg=数据校验未通过
+[2014-12-08 10:46:32]-[]-[data] :平台响应数据验签失败:plain=ret_code=00060700&ret_msg=数据校验未通过;sign=q61Ijm/wqpeAJcFjvzSNuM4uXvuVketcS5V0TtxrolA1EQ4y/758HiRO46FHTUUIgMfrslC/LN/iOCOxliDNpgvaYTVH0fAs2ffe9mVQXj9TbzwllS/XiBZb0yLEXsj+BE0FqOuvc1uuFYTVNDExhuFgsREycqCn9GyqGxsh+K4=
+[2014-12-08 10:46:33]-[]-[data] :Participate in the signature parameters：[busi_no=1&card_holder=&card_id=&card_type=0&charset=UTF-8&identity_code=&identity_type=1&media_id=15601609971&mer_id=25116&pub_pri_flag=1&res_format=HTML&service=user_reg&version=4.0],Merchant number is：[25116]
+[2014-12-08 10:46:33]-[]-[data] :The private key path for：/opt/lampp/htdocs/common/config/cert/25116_wenzhoudai.key.pem
+[2014-12-08 10:46:33]-[]-[data] :Request platform way=get
+[2014-12-08 10:46:33]-[]-[data] :Request platform signature string=
+[2014-12-08 10:46:33]-[]-[data] :Clear information request platform=busi_no=1&card_holder=&card_id=&card_type=0&charset=UTF-8&identity_code=&identity_type=1&media_id=15601609971&mer_id=25116&pub_pri_flag=1&res_format=HTML&service=user_reg&version=4.0
+[2014-12-08 10:46:33]-[]-[data] :The service user_reg request platform to get the address url=http://pay.soopay.net/spay/pay/payservice.do?busi_no=1&card_holder=&card_id=&card_type=0&charset=UTF-8&identity_code=&identity_type=1&media_id=15601609971&mer_id=25116&pub_pri_flag=1&res_format=HTML&service=user_reg&version=4.0&sign=
+[2014-12-08 10:46:33]-[]-[data] :plat response mer data:ret_code=00060700&ret_msg=数据校验未通过&sign=q61Ijm/wqpeAJcFjvzSNuM4uXvuVketcS5V0TtxrolA1EQ4y/758HiRO46FHTUUIgMfrslC/LN/iOCOxliDNpgvaYTVH0fAs2ffe9mVQXj9TbzwllS/XiBZb0yLEXsj+BE0FqOuvc1uuFYTVNDExhuFgsREycqCn9GyqGxsh+K4=
+[2014-12-08 10:46:33]-[]-[data] :interface fields:merId,goodsId,orderId,merDate,retCode,retMsg,version,sign
+[2014-12-08 10:46:33]-[]-[data] :response sign=ret_code=00060700&ret_msg=数据校验未通过
+[2014-12-08 10:46:33]-[]-[data] :response sign=q61Ijm/wqpeAJcFjvzSNuM4uXvuVketcS5V0TtxrolA1EQ4y/758HiRO46FHTUUIgMfrslC/LN/iOCOxliDNpgvaYTVH0fAs2ffe9mVQXj9TbzwllS/XiBZb0yLEXsj+BE0FqOuvc1uuFYTVNDExhuFgsREycqCn9GyqGxsh+K4=
+[2014-12-08 10:46:33]-[]-[data] :response plain=ret_code=00060700&ret_msg=数据校验未通过
+[2014-12-08 10:46:33]-[]-[data] :平台响应数据验签失败:plain=ret_code=00060700&ret_msg=数据校验未通过;sign=q61Ijm/wqpeAJcFjvzSNuM4uXvuVketcS5V0TtxrolA1EQ4y/758HiRO46FHTUUIgMfrslC/LN/iOCOxliDNpgvaYTVH0fAs2ffe9mVQXj9TbzwllS/XiBZb0yLEXsj+BE0FqOuvc1uuFYTVNDExhuFgsREycqCn9GyqGxsh+K4=
+[2014-12-08 10:46:49]-[]-[data] :Participate in the signature parameters：[busi_no=1&card_holder=&card_id=&card_type=0&charset=UTF-8&identity_code=&identity_type=1&media_id=15601609971&mer_id=25116&pub_pri_flag=1&res_format=HTML&service=user_reg&version=4.0],Merchant number is：[25116]
+[2014-12-08 10:46:49]-[]-[data] :The private key path for：/opt/lampp/htdocs/common/config/cert/25116_wenzhoudai.key.pem
+[2014-12-08 10:46:49]-[]-[data] :Request platform way=get
+[2014-12-08 10:46:49]-[]-[data] :Request platform signature string=
+[2014-12-08 10:46:49]-[]-[data] :Clear information request platform=busi_no=1&card_holder=&card_id=&card_type=0&charset=UTF-8&identity_code=&identity_type=1&media_id=15601609971&mer_id=25116&pub_pri_flag=1&res_format=HTML&service=user_reg&version=4.0
+[2014-12-08 10:46:49]-[]-[data] :The service user_reg request platform to get the address url=http://pay.soopay.net/spay/pay/payservice.do?busi_no=1&card_holder=&card_id=&card_type=0&charset=UTF-8&identity_code=&identity_type=1&media_id=15601609971&mer_id=25116&pub_pri_flag=1&res_format=HTML&service=user_reg&version=4.0&sign=
+[2014-12-08 10:46:50]-[]-[data] :plat response mer data:ret_code=00060700&ret_msg=数据校验未通过&sign=q61Ijm/wqpeAJcFjvzSNuM4uXvuVketcS5V0TtxrolA1EQ4y/758HiRO46FHTUUIgMfrslC/LN/iOCOxliDNpgvaYTVH0fAs2ffe9mVQXj9TbzwllS/XiBZb0yLEXsj+BE0FqOuvc1uuFYTVNDExhuFgsREycqCn9GyqGxsh+K4=
+[2014-12-08 10:46:50]-[]-[data] :interface fields:merId,goodsId,orderId,merDate,retCode,retMsg,version,sign
+[2014-12-08 10:46:50]-[]-[data] :response sign=ret_code=00060700&ret_msg=数据校验未通过
+[2014-12-08 10:46:50]-[]-[data] :response sign=q61Ijm/wqpeAJcFjvzSNuM4uXvuVketcS5V0TtxrolA1EQ4y/758HiRO46FHTUUIgMfrslC/LN/iOCOxliDNpgvaYTVH0fAs2ffe9mVQXj9TbzwllS/XiBZb0yLEXsj+BE0FqOuvc1uuFYTVNDExhuFgsREycqCn9GyqGxsh+K4=
+[2014-12-08 10:46:50]-[]-[data] :response plain=ret_code=00060700&ret_msg=数据校验未通过
+[2014-12-08 10:46:50]-[]-[data] :平台响应数据验签失败:plain=ret_code=00060700&ret_msg=数据校验未通过;sign=q61Ijm/wqpeAJcFjvzSNuM4uXvuVketcS5V0TtxrolA1EQ4y/758HiRO46FHTUUIgMfrslC/LN/iOCOxliDNpgvaYTVH0fAs2ffe9mVQXj9TbzwllS/XiBZb0yLEXsj+BE0FqOuvc1uuFYTVNDExhuFgsREycqCn9GyqGxsh+K4=
+[2014-12-08 10:47:12]-[]-[data] :Participate in the signature parameters：[busi_no=1&card_holder=&card_id=&card_type=0&charset=UTF-8&identity_code=&identity_type=1&media_id=15601609971&mer_id=25116&pub_pri_flag=1&res_format=HTML&service=user_reg&version=4.0],Merchant number is：[25116]
+[2014-12-08 10:47:12]-[]-[data] :The private key path for：/opt/lampp/htdocs/common/config/cert/25116_wenzhoudai.key.pem
+[2014-12-08 10:47:12]-[]-[data] :Request platform way=get
+[2014-12-08 10:47:12]-[]-[data] :Request platform signature string=
+[2014-12-08 10:47:12]-[]-[data] :Clear information request platform=busi_no=1&card_holder=&card_id=&card_type=0&charset=UTF-8&identity_code=&identity_type=1&media_id=15601609971&mer_id=25116&pub_pri_flag=1&res_format=HTML&service=user_reg&version=4.0
+[2014-12-08 10:47:12]-[]-[data] :The service user_reg request platform to get the address url=http://pay.soopay.net/spay/pay/payservice.do?busi_no=1&card_holder=&card_id=&card_type=0&charset=UTF-8&identity_code=&identity_type=1&media_id=15601609971&mer_id=25116&pub_pri_flag=1&res_format=HTML&service=user_reg&version=4.0&sign=
+[2014-12-08 10:47:13]-[]-[data] :plat response mer data:ret_code=00060700&ret_msg=数据校验未通过&sign=q61Ijm/wqpeAJcFjvzSNuM4uXvuVketcS5V0TtxrolA1EQ4y/758HiRO46FHTUUIgMfrslC/LN/iOCOxliDNpgvaYTVH0fAs2ffe9mVQXj9TbzwllS/XiBZb0yLEXsj+BE0FqOuvc1uuFYTVNDExhuFgsREycqCn9GyqGxsh+K4=
+[2014-12-08 10:47:13]-[]-[data] :interface fields:merId,goodsId,orderId,merDate,retCode,retMsg,version,sign
+[2014-12-08 10:47:13]-[]-[data] :response sign=ret_code=00060700&ret_msg=数据校验未通过
+[2014-12-08 10:47:13]-[]-[data] :response sign=q61Ijm/wqpeAJcFjvzSNuM4uXvuVketcS5V0TtxrolA1EQ4y/758HiRO46FHTUUIgMfrslC/LN/iOCOxliDNpgvaYTVH0fAs2ffe9mVQXj9TbzwllS/XiBZb0yLEXsj+BE0FqOuvc1uuFYTVNDExhuFgsREycqCn9GyqGxsh+K4=
+[2014-12-08 10:47:13]-[]-[data] :response plain=ret_code=00060700&ret_msg=数据校验未通过
+[2014-12-08 10:47:13]-[]-[data] :平台响应数据验签失败:plain=ret_code=00060700&ret_msg=数据校验未通过;sign=q61Ijm/wqpeAJcFjvzSNuM4uXvuVketcS5V0TtxrolA1EQ4y/758HiRO46FHTUUIgMfrslC/LN/iOCOxliDNpgvaYTVH0fAs2ffe9mVQXj9TbzwllS/XiBZb0yLEXsj+BE0FqOuvc1uuFYTVNDExhuFgsREycqCn9GyqGxsh+K4=
+[2014-12-08 10:47:13]-[]-[data] :Participate in the signature parameters：[busi_no=1&card_holder=&card_id=&card_type=0&charset=UTF-8&identity_code=&identity_type=1&media_id=15601609971&mer_id=25116&pub_pri_flag=1&res_format=HTML&service=user_reg&version=4.0],Merchant number is：[25116]
+[2014-12-08 10:47:13]-[]-[data] :The private key path for：/opt/lampp/htdocs/common/config/cert/25116_wenzhoudai.key.pem
+[2014-12-08 10:47:13]-[]-[data] :Request platform way=get
+[2014-12-08 10:47:13]-[]-[data] :Request platform signature string=
+[2014-12-08 10:47:13]-[]-[data] :Clear information request platform=busi_no=1&card_holder=&card_id=&card_type=0&charset=UTF-8&identity_code=&identity_type=1&media_id=15601609971&mer_id=25116&pub_pri_flag=1&res_format=HTML&service=user_reg&version=4.0
+[2014-12-08 10:47:13]-[]-[data] :The service user_reg request platform to get the address url=http://pay.soopay.net/spay/pay/payservice.do?busi_no=1&card_holder=&card_id=&card_type=0&charset=UTF-8&identity_code=&identity_type=1&media_id=15601609971&mer_id=25116&pub_pri_flag=1&res_format=HTML&service=user_reg&version=4.0&sign=
+[2014-12-08 10:47:13]-[]-[data] :Participate in the signature parameters：[busi_no=1&card_holder=&card_id=&card_type=0&charset=UTF-8&identity_code=&identity_type=1&media_id=15601609971&mer_id=25116&pub_pri_flag=1&res_format=HTML&service=user_reg&version=4.0],Merchant number is：[25116]
+[2014-12-08 10:47:13]-[]-[data] :The private key path for：/opt/lampp/htdocs/common/config/cert/25116_wenzhoudai.key.pem
+[2014-12-08 10:47:13]-[]-[data] :Request platform way=get
+[2014-12-08 10:47:13]-[]-[data] :Request platform signature string=
+[2014-12-08 10:47:13]-[]-[data] :Clear information request platform=busi_no=1&card_holder=&card_id=&card_type=0&charset=UTF-8&identity_code=&identity_type=1&media_id=15601609971&mer_id=25116&pub_pri_flag=1&res_format=HTML&service=user_reg&version=4.0
+[2014-12-08 10:47:13]-[]-[data] :The service user_reg request platform to get the address url=http://pay.soopay.net/spay/pay/payservice.do?busi_no=1&card_holder=&card_id=&card_type=0&charset=UTF-8&identity_code=&identity_type=1&media_id=15601609971&mer_id=25116&pub_pri_flag=1&res_format=HTML&service=user_reg&version=4.0&sign=
+[2014-12-08 10:47:14]-[]-[data] :plat response mer data:ret_code=00060700&ret_msg=数据校验未通过&sign=q61Ijm/wqpeAJcFjvzSNuM4uXvuVketcS5V0TtxrolA1EQ4y/758HiRO46FHTUUIgMfrslC/LN/iOCOxliDNpgvaYTVH0fAs2ffe9mVQXj9TbzwllS/XiBZb0yLEXsj+BE0FqOuvc1uuFYTVNDExhuFgsREycqCn9GyqGxsh+K4=
+[2014-12-08 10:47:14]-[]-[data] :interface fields:merId,goodsId,orderId,merDate,retCode,retMsg,version,sign
+[2014-12-08 10:47:14]-[]-[data] :response sign=ret_code=00060700&ret_msg=数据校验未通过
+[2014-12-08 10:47:14]-[]-[data] :response sign=q61Ijm/wqpeAJcFjvzSNuM4uXvuVketcS5V0TtxrolA1EQ4y/758HiRO46FHTUUIgMfrslC/LN/iOCOxliDNpgvaYTVH0fAs2ffe9mVQXj9TbzwllS/XiBZb0yLEXsj+BE0FqOuvc1uuFYTVNDExhuFgsREycqCn9GyqGxsh+K4=
+[2014-12-08 10:47:14]-[]-[data] :response plain=ret_code=00060700&ret_msg=数据校验未通过
+[2014-12-08 10:47:14]-[]-[data] :平台响应数据验签失败:plain=ret_code=00060700&ret_msg=数据校验未通过;sign=q61Ijm/wqpeAJcFjvzSNuM4uXvuVketcS5V0TtxrolA1EQ4y/758HiRO46FHTUUIgMfrslC/LN/iOCOxliDNpgvaYTVH0fAs2ffe9mVQXj9TbzwllS/XiBZb0yLEXsj+BE0FqOuvc1uuFYTVNDExhuFgsREycqCn9GyqGxsh+K4=
+[2014-12-08 10:47:14]-[]-[data] :plat response mer data:ret_code=00060700&ret_msg=数据校验未通过&sign=q61Ijm/wqpeAJcFjvzSNuM4uXvuVketcS5V0TtxrolA1EQ4y/758HiRO46FHTUUIgMfrslC/LN/iOCOxliDNpgvaYTVH0fAs2ffe9mVQXj9TbzwllS/XiBZb0yLEXsj+BE0FqOuvc1uuFYTVNDExhuFgsREycqCn9GyqGxsh+K4=
+[2014-12-08 10:47:14]-[]-[data] :interface fields:merId,goodsId,orderId,merDate,retCode,retMsg,version,sign
+[2014-12-08 10:47:14]-[]-[data] :response sign=ret_code=00060700&ret_msg=数据校验未通过
+[2014-12-08 10:47:14]-[]-[data] :response sign=q61Ijm/wqpeAJcFjvzSNuM4uXvuVketcS5V0TtxrolA1EQ4y/758HiRO46FHTUUIgMfrslC/LN/iOCOxliDNpgvaYTVH0fAs2ffe9mVQXj9TbzwllS/XiBZb0yLEXsj+BE0FqOuvc1uuFYTVNDExhuFgsREycqCn9GyqGxsh+K4=
+[2014-12-08 10:47:14]-[]-[data] :response plain=ret_code=00060700&ret_msg=数据校验未通过
+[2014-12-08 10:47:14]-[]-[data] :平台响应数据验签失败:plain=ret_code=00060700&ret_msg=数据校验未通过;sign=q61Ijm/wqpeAJcFjvzSNuM4uXvuVketcS5V0TtxrolA1EQ4y/758HiRO46FHTUUIgMfrslC/LN/iOCOxliDNpgvaYTVH0fAs2ffe9mVQXj9TbzwllS/XiBZb0yLEXsj+BE0FqOuvc1uuFYTVNDExhuFgsREycqCn9GyqGxsh+K4=
+[2014-12-08 10:47:15]-[]-[data] :Participate in the signature parameters：[busi_no=1&card_holder=&card_id=&card_type=0&charset=UTF-8&identity_code=&identity_type=1&media_id=15601609971&mer_id=25116&pub_pri_flag=1&res_format=HTML&service=user_reg&version=4.0],Merchant number is：[25116]
+[2014-12-08 10:47:15]-[]-[data] :The private key path for：/opt/lampp/htdocs/common/config/cert/25116_wenzhoudai.key.pem
+[2014-12-08 10:47:15]-[]-[data] :Request platform way=get
+[2014-12-08 10:47:15]-[]-[data] :Request platform signature string=
+[2014-12-08 10:47:15]-[]-[data] :Clear information request platform=busi_no=1&card_holder=&card_id=&card_type=0&charset=UTF-8&identity_code=&identity_type=1&media_id=15601609971&mer_id=25116&pub_pri_flag=1&res_format=HTML&service=user_reg&version=4.0
+[2014-12-08 10:47:15]-[]-[data] :The service user_reg request platform to get the address url=http://pay.soopay.net/spay/pay/payservice.do?busi_no=1&card_holder=&card_id=&card_type=0&charset=UTF-8&identity_code=&identity_type=1&media_id=15601609971&mer_id=25116&pub_pri_flag=1&res_format=HTML&service=user_reg&version=4.0&sign=
+[2014-12-08 10:47:15]-[]-[data] :plat response mer data:ret_code=00060700&ret_msg=数据校验未通过&sign=q61Ijm/wqpeAJcFjvzSNuM4uXvuVketcS5V0TtxrolA1EQ4y/758HiRO46FHTUUIgMfrslC/LN/iOCOxliDNpgvaYTVH0fAs2ffe9mVQXj9TbzwllS/XiBZb0yLEXsj+BE0FqOuvc1uuFYTVNDExhuFgsREycqCn9GyqGxsh+K4=
+[2014-12-08 10:47:15]-[]-[data] :interface fields:merId,goodsId,orderId,merDate,retCode,retMsg,version,sign
+[2014-12-08 10:47:15]-[]-[data] :response sign=ret_code=00060700&ret_msg=数据校验未通过
+[2014-12-08 10:47:15]-[]-[data] :response sign=q61Ijm/wqpeAJcFjvzSNuM4uXvuVketcS5V0TtxrolA1EQ4y/758HiRO46FHTUUIgMfrslC/LN/iOCOxliDNpgvaYTVH0fAs2ffe9mVQXj9TbzwllS/XiBZb0yLEXsj+BE0FqOuvc1uuFYTVNDExhuFgsREycqCn9GyqGxsh+K4=
+[2014-12-08 10:47:15]-[]-[data] :response plain=ret_code=00060700&ret_msg=数据校验未通过
+[2014-12-08 10:47:15]-[]-[data] :平台响应数据验签失败:plain=ret_code=00060700&ret_msg=数据校验未通过;sign=q61Ijm/wqpeAJcFjvzSNuM4uXvuVketcS5V0TtxrolA1EQ4y/758HiRO46FHTUUIgMfrslC/LN/iOCOxliDNpgvaYTVH0fAs2ffe9mVQXj9TbzwllS/XiBZb0yLEXsj+BE0FqOuvc1uuFYTVNDExhuFgsREycqCn9GyqGxsh+K4=
+[2014-12-08 10:47:15]-[]-[data] :Participate in the signature parameters：[busi_no=1&card_holder=&card_id=&card_type=0&charset=UTF-8&identity_code=&identity_type=1&media_id=15601609971&mer_id=25116&pub_pri_flag=1&res_format=HTML&service=user_reg&version=4.0],Merchant number is：[25116]
+[2014-12-08 10:47:15]-[]-[data] :The private key path for：/opt/lampp/htdocs/common/config/cert/25116_wenzhoudai.key.pem
+[2014-12-08 10:47:15]-[]-[data] :Request platform way=get
+[2014-12-08 10:47:15]-[]-[data] :Request platform signature string=
+[2014-12-08 10:47:15]-[]-[data] :Clear information request platform=busi_no=1&card_holder=&card_id=&card_type=0&charset=UTF-8&identity_code=&identity_type=1&media_id=15601609971&mer_id=25116&pub_pri_flag=1&res_format=HTML&service=user_reg&version=4.0
+[2014-12-08 10:47:15]-[]-[data] :The service user_reg request platform to get the address url=http://pay.soopay.net/spay/pay/payservice.do?busi_no=1&card_holder=&card_id=&card_type=0&charset=UTF-8&identity_code=&identity_type=1&media_id=15601609971&mer_id=25116&pub_pri_flag=1&res_format=HTML&service=user_reg&version=4.0&sign=
+[2014-12-08 10:47:15]-[]-[data] :plat response mer data:ret_code=00060700&ret_msg=数据校验未通过&sign=q61Ijm/wqpeAJcFjvzSNuM4uXvuVketcS5V0TtxrolA1EQ4y/758HiRO46FHTUUIgMfrslC/LN/iOCOxliDNpgvaYTVH0fAs2ffe9mVQXj9TbzwllS/XiBZb0yLEXsj+BE0FqOuvc1uuFYTVNDExhuFgsREycqCn9GyqGxsh+K4=
+[2014-12-08 10:47:15]-[]-[data] :interface fields:merId,goodsId,orderId,merDate,retCode,retMsg,version,sign
+[2014-12-08 10:47:15]-[]-[data] :response sign=ret_code=00060700&ret_msg=数据校验未通过
+[2014-12-08 10:47:15]-[]-[data] :response sign=q61Ijm/wqpeAJcFjvzSNuM4uXvuVketcS5V0TtxrolA1EQ4y/758HiRO46FHTUUIgMfrslC/LN/iOCOxliDNpgvaYTVH0fAs2ffe9mVQXj9TbzwllS/XiBZb0yLEXsj+BE0FqOuvc1uuFYTVNDExhuFgsREycqCn9GyqGxsh+K4=
+[2014-12-08 10:47:15]-[]-[data] :response plain=ret_code=00060700&ret_msg=数据校验未通过
+[2014-12-08 10:47:15]-[]-[data] :平台响应数据验签失败:plain=ret_code=00060700&ret_msg=数据校验未通过;sign=q61Ijm/wqpeAJcFjvzSNuM4uXvuVketcS5V0TtxrolA1EQ4y/758HiRO46FHTUUIgMfrslC/LN/iOCOxliDNpgvaYTVH0fAs2ffe9mVQXj9TbzwllS/XiBZb0yLEXsj+BE0FqOuvc1uuFYTVNDExhuFgsREycqCn9GyqGxsh+K4=
+[2014-12-08 10:47:15]-[]-[data] :Participate in the signature parameters：[busi_no=1&card_holder=&card_id=&card_type=0&charset=UTF-8&identity_code=&identity_type=1&media_id=15601609971&mer_id=25116&pub_pri_flag=1&res_format=HTML&service=user_reg&version=4.0],Merchant number is：[25116]
+[2014-12-08 10:47:15]-[]-[data] :The private key path for：/opt/lampp/htdocs/common/config/cert/25116_wenzhoudai.key.pem
+[2014-12-08 10:47:15]-[]-[data] :Request platform way=get
+[2014-12-08 10:47:15]-[]-[data] :Request platform signature string=
+[2014-12-08 10:47:15]-[]-[data] :Clear information request platform=busi_no=1&card_holder=&card_id=&card_type=0&charset=UTF-8&identity_code=&identity_type=1&media_id=15601609971&mer_id=25116&pub_pri_flag=1&res_format=HTML&service=user_reg&version=4.0
+[2014-12-08 10:47:15]-[]-[data] :The service user_reg request platform to get the address url=http://pay.soopay.net/spay/pay/payservice.do?busi_no=1&card_holder=&card_id=&card_type=0&charset=UTF-8&identity_code=&identity_type=1&media_id=15601609971&mer_id=25116&pub_pri_flag=1&res_format=HTML&service=user_reg&version=4.0&sign=
+[2014-12-08 10:47:15]-[]-[data] :plat response mer data:ret_code=00060700&ret_msg=数据校验未通过&sign=q61Ijm/wqpeAJcFjvzSNuM4uXvuVketcS5V0TtxrolA1EQ4y/758HiRO46FHTUUIgMfrslC/LN/iOCOxliDNpgvaYTVH0fAs2ffe9mVQXj9TbzwllS/XiBZb0yLEXsj+BE0FqOuvc1uuFYTVNDExhuFgsREycqCn9GyqGxsh+K4=
+[2014-12-08 10:47:15]-[]-[data] :interface fields:merId,goodsId,orderId,merDate,retCode,retMsg,version,sign
+[2014-12-08 10:47:15]-[]-[data] :response sign=ret_code=00060700&ret_msg=数据校验未通过
+[2014-12-08 10:47:15]-[]-[data] :response sign=q61Ijm/wqpeAJcFjvzSNuM4uXvuVketcS5V0TtxrolA1EQ4y/758HiRO46FHTUUIgMfrslC/LN/iOCOxliDNpgvaYTVH0fAs2ffe9mVQXj9TbzwllS/XiBZb0yLEXsj+BE0FqOuvc1uuFYTVNDExhuFgsREycqCn9GyqGxsh+K4=
+[2014-12-08 10:47:15]-[]-[data] :response plain=ret_code=00060700&ret_msg=数据校验未通过
+[2014-12-08 10:47:15]-[]-[data] :平台响应数据验签失败:plain=ret_code=00060700&ret_msg=数据校验未通过;sign=q61Ijm/wqpeAJcFjvzSNuM4uXvuVketcS5V0TtxrolA1EQ4y/758HiRO46FHTUUIgMfrslC/LN/iOCOxliDNpgvaYTVH0fAs2ffe9mVQXj9TbzwllS/XiBZb0yLEXsj+BE0FqOuvc1uuFYTVNDExhuFgsREycqCn9GyqGxsh+K4=
+[2014-12-08 10:47:16]-[]-[data] :Participate in the signature parameters：[busi_no=1&card_holder=&card_id=&card_type=0&charset=UTF-8&identity_code=&identity_type=1&media_id=15601609971&mer_id=25116&pub_pri_flag=1&res_format=HTML&service=user_reg&version=4.0],Merchant number is：[25116]
+[2014-12-08 10:47:16]-[]-[data] :The private key path for：/opt/lampp/htdocs/common/config/cert/25116_wenzhoudai.key.pem
+[2014-12-08 10:47:16]-[]-[data] :Request platform way=get
+[2014-12-08 10:47:16]-[]-[data] :Request platform signature string=
+[2014-12-08 10:47:16]-[]-[data] :Clear information request platform=busi_no=1&card_holder=&card_id=&card_type=0&charset=UTF-8&identity_code=&identity_type=1&media_id=15601609971&mer_id=25116&pub_pri_flag=1&res_format=HTML&service=user_reg&version=4.0
+[2014-12-08 10:47:16]-[]-[data] :The service user_reg request platform to get the address url=http://pay.soopay.net/spay/pay/payservice.do?busi_no=1&card_holder=&card_id=&card_type=0&charset=UTF-8&identity_code=&identity_type=1&media_id=15601609971&mer_id=25116&pub_pri_flag=1&res_format=HTML&service=user_reg&version=4.0&sign=
+[2014-12-08 10:47:16]-[]-[data] :plat response mer data:ret_code=00060700&ret_msg=数据校验未通过&sign=q61Ijm/wqpeAJcFjvzSNuM4uXvuVketcS5V0TtxrolA1EQ4y/758HiRO46FHTUUIgMfrslC/LN/iOCOxliDNpgvaYTVH0fAs2ffe9mVQXj9TbzwllS/XiBZb0yLEXsj+BE0FqOuvc1uuFYTVNDExhuFgsREycqCn9GyqGxsh+K4=
+[2014-12-08 10:47:16]-[]-[data] :interface fields:merId,goodsId,orderId,merDate,retCode,retMsg,version,sign
+[2014-12-08 10:47:16]-[]-[data] :response sign=ret_code=00060700&ret_msg=数据校验未通过
+[2014-12-08 10:47:16]-[]-[data] :response sign=q61Ijm/wqpeAJcFjvzSNuM4uXvuVketcS5V0TtxrolA1EQ4y/758HiRO46FHTUUIgMfrslC/LN/iOCOxliDNpgvaYTVH0fAs2ffe9mVQXj9TbzwllS/XiBZb0yLEXsj+BE0FqOuvc1uuFYTVNDExhuFgsREycqCn9GyqGxsh+K4=
+[2014-12-08 10:47:16]-[]-[data] :response plain=ret_code=00060700&ret_msg=数据校验未通过
+[2014-12-08 10:47:16]-[]-[data] :平台响应数据验签失败:plain=ret_code=00060700&ret_msg=数据校验未通过;sign=q61Ijm/wqpeAJcFjvzSNuM4uXvuVketcS5V0TtxrolA1EQ4y/758HiRO46FHTUUIgMfrslC/LN/iOCOxliDNpgvaYTVH0fAs2ffe9mVQXj9TbzwllS/XiBZb0yLEXsj+BE0FqOuvc1uuFYTVNDExhuFgsREycqCn9GyqGxsh+K4=
+[2014-12-08 10:47:17]-[]-[data] :Participate in the signature parameters：[busi_no=1&card_holder=&card_id=&card_type=0&charset=UTF-8&identity_code=&identity_type=1&media_id=15601609971&mer_id=25116&pub_pri_flag=1&res_format=HTML&service=user_reg&version=4.0],Merchant number is：[25116]
+[2014-12-08 10:47:17]-[]-[data] :The private key path for：/opt/lampp/htdocs/common/config/cert/25116_wenzhoudai.key.pem
+[2014-12-08 10:47:17]-[]-[data] :Request platform way=get
+[2014-12-08 10:47:17]-[]-[data] :Request platform signature string=
+[2014-12-08 10:47:17]-[]-[data] :Clear information request platform=busi_no=1&card_holder=&card_id=&card_type=0&charset=UTF-8&identity_code=&identity_type=1&media_id=15601609971&mer_id=25116&pub_pri_flag=1&res_format=HTML&service=user_reg&version=4.0
+[2014-12-08 10:47:17]-[]-[data] :The service user_reg request platform to get the address url=http://pay.soopay.net/spay/pay/payservice.do?busi_no=1&card_holder=&card_id=&card_type=0&charset=UTF-8&identity_code=&identity_type=1&media_id=15601609971&mer_id=25116&pub_pri_flag=1&res_format=HTML&service=user_reg&version=4.0&sign=
+[2014-12-08 10:47:17]-[]-[data] :plat response mer data:ret_code=00060700&ret_msg=数据校验未通过&sign=q61Ijm/wqpeAJcFjvzSNuM4uXvuVketcS5V0TtxrolA1EQ4y/758HiRO46FHTUUIgMfrslC/LN/iOCOxliDNpgvaYTVH0fAs2ffe9mVQXj9TbzwllS/XiBZb0yLEXsj+BE0FqOuvc1uuFYTVNDExhuFgsREycqCn9GyqGxsh+K4=
+[2014-12-08 10:47:17]-[]-[data] :interface fields:merId,goodsId,orderId,merDate,retCode,retMsg,version,sign
+[2014-12-08 10:47:17]-[]-[data] :response sign=ret_code=00060700&ret_msg=数据校验未通过
+[2014-12-08 10:47:17]-[]-[data] :response sign=q61Ijm/wqpeAJcFjvzSNuM4uXvuVketcS5V0TtxrolA1EQ4y/758HiRO46FHTUUIgMfrslC/LN/iOCOxliDNpgvaYTVH0fAs2ffe9mVQXj9TbzwllS/XiBZb0yLEXsj+BE0FqOuvc1uuFYTVNDExhuFgsREycqCn9GyqGxsh+K4=
+[2014-12-08 10:47:17]-[]-[data] :response plain=ret_code=00060700&ret_msg=数据校验未通过
+[2014-12-08 10:47:17]-[]-[data] :平台响应数据验签失败:plain=ret_code=00060700&ret_msg=数据校验未通过;sign=q61Ijm/wqpeAJcFjvzSNuM4uXvuVketcS5V0TtxrolA1EQ4y/758HiRO46FHTUUIgMfrslC/LN/iOCOxliDNpgvaYTVH0fAs2ffe9mVQXj9TbzwllS/XiBZb0yLEXsj+BE0FqOuvc1uuFYTVNDExhuFgsREycqCn9GyqGxsh+K4=
+[2014-12-08 10:47:17]-[]-[data] :Participate in the signature parameters：[busi_no=1&card_holder=&card_id=&card_type=0&charset=UTF-8&identity_code=&identity_type=1&media_id=15601609971&mer_id=25116&pub_pri_flag=1&res_format=HTML&service=user_reg&version=4.0],Merchant number is：[25116]
+[2014-12-08 10:47:17]-[]-[data] :The private key path for：/opt/lampp/htdocs/common/config/cert/25116_wenzhoudai.key.pem
+[2014-12-08 10:47:17]-[]-[data] :Request platform way=get
+[2014-12-08 10:47:17]-[]-[data] :Request platform signature string=
+[2014-12-08 10:47:17]-[]-[data] :Clear information request platform=busi_no=1&card_holder=&card_id=&card_type=0&charset=UTF-8&identity_code=&identity_type=1&media_id=15601609971&mer_id=25116&pub_pri_flag=1&res_format=HTML&service=user_reg&version=4.0
+[2014-12-08 10:47:17]-[]-[data] :The service user_reg request platform to get the address url=http://pay.soopay.net/spay/pay/payservice.do?busi_no=1&card_holder=&card_id=&card_type=0&charset=UTF-8&identity_code=&identity_type=1&media_id=15601609971&mer_id=25116&pub_pri_flag=1&res_format=HTML&service=user_reg&version=4.0&sign=
+[2014-12-08 10:47:17]-[]-[data] :plat response mer data:ret_code=00060700&ret_msg=数据校验未通过&sign=q61Ijm/wqpeAJcFjvzSNuM4uXvuVketcS5V0TtxrolA1EQ4y/758HiRO46FHTUUIgMfrslC/LN/iOCOxliDNpgvaYTVH0fAs2ffe9mVQXj9TbzwllS/XiBZb0yLEXsj+BE0FqOuvc1uuFYTVNDExhuFgsREycqCn9GyqGxsh+K4=
+[2014-12-08 10:47:17]-[]-[data] :interface fields:merId,goodsId,orderId,merDate,retCode,retMsg,version,sign
+[2014-12-08 10:47:17]-[]-[data] :response sign=ret_code=00060700&ret_msg=数据校验未通过
+[2014-12-08 10:47:17]-[]-[data] :response sign=q61Ijm/wqpeAJcFjvzSNuM4uXvuVketcS5V0TtxrolA1EQ4y/758HiRO46FHTUUIgMfrslC/LN/iOCOxliDNpgvaYTVH0fAs2ffe9mVQXj9TbzwllS/XiBZb0yLEXsj+BE0FqOuvc1uuFYTVNDExhuFgsREycqCn9GyqGxsh+K4=
+[2014-12-08 10:47:17]-[]-[data] :response plain=ret_code=00060700&ret_msg=数据校验未通过
+[2014-12-08 10:47:17]-[]-[data] :平台响应数据验签失败:plain=ret_code=00060700&ret_msg=数据校验未通过;sign=q61Ijm/wqpeAJcFjvzSNuM4uXvuVketcS5V0TtxrolA1EQ4y/758HiRO46FHTUUIgMfrslC/LN/iOCOxliDNpgvaYTVH0fAs2ffe9mVQXj9TbzwllS/XiBZb0yLEXsj+BE0FqOuvc1uuFYTVNDExhuFgsREycqCn9GyqGxsh+K4=
+[2014-12-08 10:47:39]-[]-[data] :Participate in the signature parameters：[busi_no=1&card_holder=&card_id=&card_type=0&charset=UTF-8&identity_code=&identity_type=1&media_id=15601609971&mer_id=25116&pub_pri_flag=1&res_format=HTML&service=user_reg&version=4.0],Merchant number is：[25116]
+[2014-12-08 10:47:39]-[]-[data] :The private key path for：/opt/lampp/htdocs/common/config/cert/25116_wenzhoudai.key.pem
+[2014-12-08 10:47:39]-[]-[data] :Request platform way=get
+[2014-12-08 10:47:39]-[]-[data] :Request platform signature string=
+[2014-12-08 10:47:39]-[]-[data] :Clear information request platform=busi_no=1&card_holder=&card_id=&card_type=0&charset=UTF-8&identity_code=&identity_type=1&media_id=15601609971&mer_id=25116&pub_pri_flag=1&res_format=HTML&service=user_reg&version=4.0
+[2014-12-08 10:47:39]-[]-[data] :The service user_reg request platform to get the address url=http://pay.soopay.net/spay/pay/payservice.do?busi_no=1&card_holder=&card_id=&card_type=0&charset=UTF-8&identity_code=&identity_type=1&media_id=15601609971&mer_id=25116&pub_pri_flag=1&res_format=HTML&service=user_reg&version=4.0&sign=
+[2014-12-08 10:47:39]-[]-[data] :plat response mer data:ret_code=00060700&ret_msg=数据校验未通过&sign=q61Ijm/wqpeAJcFjvzSNuM4uXvuVketcS5V0TtxrolA1EQ4y/758HiRO46FHTUUIgMfrslC/LN/iOCOxliDNpgvaYTVH0fAs2ffe9mVQXj9TbzwllS/XiBZb0yLEXsj+BE0FqOuvc1uuFYTVNDExhuFgsREycqCn9GyqGxsh+K4=
+[2014-12-08 10:47:39]-[]-[data] :interface fields:merId,goodsId,orderId,merDate,retCode,retMsg,version,sign
+[2014-12-08 10:47:39]-[]-[data] :response sign=ret_code=00060700&ret_msg=数据校验未通过
+[2014-12-08 10:47:39]-[]-[data] :response sign=q61Ijm/wqpeAJcFjvzSNuM4uXvuVketcS5V0TtxrolA1EQ4y/758HiRO46FHTUUIgMfrslC/LN/iOCOxliDNpgvaYTVH0fAs2ffe9mVQXj9TbzwllS/XiBZb0yLEXsj+BE0FqOuvc1uuFYTVNDExhuFgsREycqCn9GyqGxsh+K4=
+[2014-12-08 10:47:39]-[]-[data] :response plain=ret_code=00060700&ret_msg=数据校验未通过
+[2014-12-08 10:47:39]-[]-[data] :平台响应数据验签失败:plain=ret_code=00060700&ret_msg=数据校验未通过;sign=q61Ijm/wqpeAJcFjvzSNuM4uXvuVketcS5V0TtxrolA1EQ4y/758HiRO46FHTUUIgMfrslC/LN/iOCOxliDNpgvaYTVH0fAs2ffe9mVQXj9TbzwllS/XiBZb0yLEXsj+BE0FqOuvc1uuFYTVNDExhuFgsREycqCn9GyqGxsh+K4=
+[2014-12-08 10:47:39]-[]-[data] :Participate in the signature parameters：[busi_no=1&card_holder=&card_id=&card_type=0&charset=UTF-8&identity_code=&identity_type=1&media_id=15601609971&mer_id=25116&pub_pri_flag=1&res_format=HTML&service=user_reg&version=4.0],Merchant number is：[25116]
+[2014-12-08 10:47:39]-[]-[data] :The private key path for：/opt/lampp/htdocs/common/config/cert/25116_wenzhoudai.key.pem
+[2014-12-08 10:47:39]-[]-[data] :Request platform way=get
+[2014-12-08 10:47:39]-[]-[data] :Request platform signature string=
+[2014-12-08 10:47:39]-[]-[data] :Clear information request platform=busi_no=1&card_holder=&card_id=&card_type=0&charset=UTF-8&identity_code=&identity_type=1&media_id=15601609971&mer_id=25116&pub_pri_flag=1&res_format=HTML&service=user_reg&version=4.0
+[2014-12-08 10:47:39]-[]-[data] :The service user_reg request platform to get the address url=http://pay.soopay.net/spay/pay/payservice.do?busi_no=1&card_holder=&card_id=&card_type=0&charset=UTF-8&identity_code=&identity_type=1&media_id=15601609971&mer_id=25116&pub_pri_flag=1&res_format=HTML&service=user_reg&version=4.0&sign=
+[2014-12-08 10:47:39]-[]-[data] :plat response mer data:ret_code=00060700&ret_msg=数据校验未通过&sign=q61Ijm/wqpeAJcFjvzSNuM4uXvuVketcS5V0TtxrolA1EQ4y/758HiRO46FHTUUIgMfrslC/LN/iOCOxliDNpgvaYTVH0fAs2ffe9mVQXj9TbzwllS/XiBZb0yLEXsj+BE0FqOuvc1uuFYTVNDExhuFgsREycqCn9GyqGxsh+K4=
+[2014-12-08 10:47:39]-[]-[data] :interface fields:merId,goodsId,orderId,merDate,retCode,retMsg,version,sign
+[2014-12-08 10:47:39]-[]-[data] :response sign=ret_code=00060700&ret_msg=数据校验未通过
+[2014-12-08 10:47:39]-[]-[data] :response sign=q61Ijm/wqpeAJcFjvzSNuM4uXvuVketcS5V0TtxrolA1EQ4y/758HiRO46FHTUUIgMfrslC/LN/iOCOxliDNpgvaYTVH0fAs2ffe9mVQXj9TbzwllS/XiBZb0yLEXsj+BE0FqOuvc1uuFYTVNDExhuFgsREycqCn9GyqGxsh+K4=
+[2014-12-08 10:47:39]-[]-[data] :response plain=ret_code=00060700&ret_msg=数据校验未通过
+[2014-12-08 10:47:39]-[]-[data] :平台响应数据验签失败:plain=ret_code=00060700&ret_msg=数据校验未通过;sign=q61Ijm/wqpeAJcFjvzSNuM4uXvuVketcS5V0TtxrolA1EQ4y/758HiRO46FHTUUIgMfrslC/LN/iOCOxliDNpgvaYTVH0fAs2ffe9mVQXj9TbzwllS/XiBZb0yLEXsj+BE0FqOuvc1uuFYTVNDExhuFgsREycqCn9GyqGxsh+K4=
+[2014-12-08 10:47:39]-[]-[data] :Participate in the signature parameters：[busi_no=1&card_holder=&card_id=&card_type=0&charset=UTF-8&identity_code=&identity_type=1&media_id=15601609971&mer_id=25116&pub_pri_flag=1&res_format=HTML&service=user_reg&version=4.0],Merchant number is：[25116]
+[2014-12-08 10:47:39]-[]-[data] :The private key path for：/opt/lampp/htdocs/common/config/cert/25116_wenzhoudai.key.pem
+[2014-12-08 10:47:39]-[]-[data] :Request platform way=get
+[2014-12-08 10:47:39]-[]-[data] :Request platform signature string=
+[2014-12-08 10:47:39]-[]-[data] :Clear information request platform=busi_no=1&card_holder=&card_id=&card_type=0&charset=UTF-8&identity_code=&identity_type=1&media_id=15601609971&mer_id=25116&pub_pri_flag=1&res_format=HTML&service=user_reg&version=4.0
+[2014-12-08 10:47:39]-[]-[data] :The service user_reg request platform to get the address url=http://pay.soopay.net/spay/pay/payservice.do?busi_no=1&card_holder=&card_id=&card_type=0&charset=UTF-8&identity_code=&identity_type=1&media_id=15601609971&mer_id=25116&pub_pri_flag=1&res_format=HTML&service=user_reg&version=4.0&sign=
+[2014-12-08 10:47:39]-[]-[data] :plat response mer data:ret_code=00060700&ret_msg=数据校验未通过&sign=q61Ijm/wqpeAJcFjvzSNuM4uXvuVketcS5V0TtxrolA1EQ4y/758HiRO46FHTUUIgMfrslC/LN/iOCOxliDNpgvaYTVH0fAs2ffe9mVQXj9TbzwllS/XiBZb0yLEXsj+BE0FqOuvc1uuFYTVNDExhuFgsREycqCn9GyqGxsh+K4=
+[2014-12-08 10:47:39]-[]-[data] :interface fields:merId,goodsId,orderId,merDate,retCode,retMsg,version,sign
+[2014-12-08 10:47:39]-[]-[data] :response sign=ret_code=00060700&ret_msg=数据校验未通过
+[2014-12-08 10:47:39]-[]-[data] :response sign=q61Ijm/wqpeAJcFjvzSNuM4uXvuVketcS5V0TtxrolA1EQ4y/758HiRO46FHTUUIgMfrslC/LN/iOCOxliDNpgvaYTVH0fAs2ffe9mVQXj9TbzwllS/XiBZb0yLEXsj+BE0FqOuvc1uuFYTVNDExhuFgsREycqCn9GyqGxsh+K4=
+[2014-12-08 10:47:39]-[]-[data] :response plain=ret_code=00060700&ret_msg=数据校验未通过
+[2014-12-08 10:47:39]-[]-[data] :平台响应数据验签失败:plain=ret_code=00060700&ret_msg=数据校验未通过;sign=q61Ijm/wqpeAJcFjvzSNuM4uXvuVketcS5V0TtxrolA1EQ4y/758HiRO46FHTUUIgMfrslC/LN/iOCOxliDNpgvaYTVH0fAs2ffe9mVQXj9TbzwllS/XiBZb0yLEXsj+BE0FqOuvc1uuFYTVNDExhuFgsREycqCn9GyqGxsh+K4=
+[2014-12-08 10:47:41]-[]-[data] :Participate in the signature parameters：[busi_no=1&card_holder=&card_id=&card_type=0&charset=UTF-8&identity_code=&identity_type=1&media_id=15601609971&mer_id=25116&pub_pri_flag=1&res_format=HTML&service=user_reg&version=4.0],Merchant number is：[25116]
+[2014-12-08 10:47:41]-[]-[data] :The private key path for：/opt/lampp/htdocs/common/config/cert/25116_wenzhoudai.key.pem
+[2014-12-08 10:47:41]-[]-[data] :Request platform way=get
+[2014-12-08 10:47:41]-[]-[data] :Request platform signature string=
+[2014-12-08 10:47:41]-[]-[data] :Clear information request platform=busi_no=1&card_holder=&card_id=&card_type=0&charset=UTF-8&identity_code=&identity_type=1&media_id=15601609971&mer_id=25116&pub_pri_flag=1&res_format=HTML&service=user_reg&version=4.0
+[2014-12-08 10:47:41]-[]-[data] :The service user_reg request platform to get the address url=http://pay.soopay.net/spay/pay/payservice.do?busi_no=1&card_holder=&card_id=&card_type=0&charset=UTF-8&identity_code=&identity_type=1&media_id=15601609971&mer_id=25116&pub_pri_flag=1&res_format=HTML&service=user_reg&version=4.0&sign=
+[2014-12-08 10:47:41]-[]-[data] :plat response mer data:ret_code=00060700&ret_msg=数据校验未通过&sign=q61Ijm/wqpeAJcFjvzSNuM4uXvuVketcS5V0TtxrolA1EQ4y/758HiRO46FHTUUIgMfrslC/LN/iOCOxliDNpgvaYTVH0fAs2ffe9mVQXj9TbzwllS/XiBZb0yLEXsj+BE0FqOuvc1uuFYTVNDExhuFgsREycqCn9GyqGxsh+K4=
+[2014-12-08 10:47:41]-[]-[data] :interface fields:merId,goodsId,orderId,merDate,retCode,retMsg,version,sign
+[2014-12-08 10:47:41]-[]-[data] :response sign=ret_code=00060700&ret_msg=数据校验未通过
+[2014-12-08 10:47:41]-[]-[data] :response sign=q61Ijm/wqpeAJcFjvzSNuM4uXvuVketcS5V0TtxrolA1EQ4y/758HiRO46FHTUUIgMfrslC/LN/iOCOxliDNpgvaYTVH0fAs2ffe9mVQXj9TbzwllS/XiBZb0yLEXsj+BE0FqOuvc1uuFYTVNDExhuFgsREycqCn9GyqGxsh+K4=
+[2014-12-08 10:47:41]-[]-[data] :response plain=ret_code=00060700&ret_msg=数据校验未通过
+[2014-12-08 10:47:41]-[]-[data] :平台响应数据验签失败:plain=ret_code=00060700&ret_msg=数据校验未通过;sign=q61Ijm/wqpeAJcFjvzSNuM4uXvuVketcS5V0TtxrolA1EQ4y/758HiRO46FHTUUIgMfrslC/LN/iOCOxliDNpgvaYTVH0fAs2ffe9mVQXj9TbzwllS/XiBZb0yLEXsj+BE0FqOuvc1uuFYTVNDExhuFgsREycqCn9GyqGxsh+K4=
+[2014-12-08 10:48:00]-[]-[data] :Participate in the signature parameters：[busi_no=1&card_holder=&card_id=&card_type=0&charset=UTF-8&identity_code=&identity_type=1&media_id=15601609971&mer_id=25116&pub_pri_flag=1&res_format=HTML&service=user_reg&version=4.0],Merchant number is：[25116]
+[2014-12-08 10:48:00]-[]-[data] :The private key path for：/opt/lampp/htdocs/common/config/cert/25116_wenzhoudai.key.pem
+[2014-12-08 10:48:00]-[]-[data] :Request platform way=get
+[2014-12-08 10:48:00]-[]-[data] :Request platform signature string=
+[2014-12-08 10:48:00]-[]-[data] :Clear information request platform=busi_no=1&card_holder=&card_id=&card_type=0&charset=UTF-8&identity_code=&identity_type=1&media_id=15601609971&mer_id=25116&pub_pri_flag=1&res_format=HTML&service=user_reg&version=4.0
+[2014-12-08 10:48:00]-[]-[data] :The service user_reg request platform to get the address url=http://pay.soopay.net/spay/pay/payservice.do?busi_no=1&card_holder=&card_id=&card_type=0&charset=UTF-8&identity_code=&identity_type=1&media_id=15601609971&mer_id=25116&pub_pri_flag=1&res_format=HTML&service=user_reg&version=4.0&sign=
+[2014-12-08 10:48:00]-[]-[data] :plat response mer data:ret_code=00060700&ret_msg=数据校验未通过&sign=q61Ijm/wqpeAJcFjvzSNuM4uXvuVketcS5V0TtxrolA1EQ4y/758HiRO46FHTUUIgMfrslC/LN/iOCOxliDNpgvaYTVH0fAs2ffe9mVQXj9TbzwllS/XiBZb0yLEXsj+BE0FqOuvc1uuFYTVNDExhuFgsREycqCn9GyqGxsh+K4=
+[2014-12-08 10:48:00]-[]-[data] :interface fields:merId,goodsId,orderId,merDate,retCode,retMsg,version,sign
+[2014-12-08 10:48:00]-[]-[data] :response sign=ret_code=00060700&ret_msg=数据校验未通过
+[2014-12-08 10:48:00]-[]-[data] :response sign=q61Ijm/wqpeAJcFjvzSNuM4uXvuVketcS5V0TtxrolA1EQ4y/758HiRO46FHTUUIgMfrslC/LN/iOCOxliDNpgvaYTVH0fAs2ffe9mVQXj9TbzwllS/XiBZb0yLEXsj+BE0FqOuvc1uuFYTVNDExhuFgsREycqCn9GyqGxsh+K4=
+[2014-12-08 10:48:00]-[]-[data] :response plain=ret_code=00060700&ret_msg=数据校验未通过
+[2014-12-08 10:48:00]-[]-[data] :平台响应数据验签失败:plain=ret_code=00060700&ret_msg=数据校验未通过;sign=q61Ijm/wqpeAJcFjvzSNuM4uXvuVketcS5V0TtxrolA1EQ4y/758HiRO46FHTUUIgMfrslC/LN/iOCOxliDNpgvaYTVH0fAs2ffe9mVQXj9TbzwllS/XiBZb0yLEXsj+BE0FqOuvc1uuFYTVNDExhuFgsREycqCn9GyqGxsh+K4=
+[2014-12-08 10:48:02]-[]-[data] :Participate in the signature parameters：[busi_no=1&card_holder=&card_id=&card_type=0&charset=UTF-8&identity_code=&identity_type=1&media_id=15601609971&mer_id=25116&pub_pri_flag=1&res_format=HTML&service=user_reg&version=4.0],Merchant number is：[25116]
+[2014-12-08 10:48:02]-[]-[data] :The private key path for：/opt/lampp/htdocs/common/config/cert/25116_wenzhoudai.key.pem
+[2014-12-08 10:48:02]-[]-[data] :Request platform way=get
+[2014-12-08 10:48:02]-[]-[data] :Request platform signature string=
+[2014-12-08 10:48:02]-[]-[data] :Clear information request platform=busi_no=1&card_holder=&card_id=&card_type=0&charset=UTF-8&identity_code=&identity_type=1&media_id=15601609971&mer_id=25116&pub_pri_flag=1&res_format=HTML&service=user_reg&version=4.0
+[2014-12-08 10:48:02]-[]-[data] :The service user_reg request platform to get the address url=http://pay.soopay.net/spay/pay/payservice.do?busi_no=1&card_holder=&card_id=&card_type=0&charset=UTF-8&identity_code=&identity_type=1&media_id=15601609971&mer_id=25116&pub_pri_flag=1&res_format=HTML&service=user_reg&version=4.0&sign=
+[2014-12-08 10:48:02]-[]-[data] :plat response mer data:ret_code=00060700&ret_msg=数据校验未通过&sign=q61Ijm/wqpeAJcFjvzSNuM4uXvuVketcS5V0TtxrolA1EQ4y/758HiRO46FHTUUIgMfrslC/LN/iOCOxliDNpgvaYTVH0fAs2ffe9mVQXj9TbzwllS/XiBZb0yLEXsj+BE0FqOuvc1uuFYTVNDExhuFgsREycqCn9GyqGxsh+K4=
+[2014-12-08 10:48:02]-[]-[data] :interface fields:merId,goodsId,orderId,merDate,retCode,retMsg,version,sign
+[2014-12-08 10:48:02]-[]-[data] :response sign=ret_code=00060700&ret_msg=数据校验未通过
+[2014-12-08 10:48:02]-[]-[data] :response sign=q61Ijm/wqpeAJcFjvzSNuM4uXvuVketcS5V0TtxrolA1EQ4y/758HiRO46FHTUUIgMfrslC/LN/iOCOxliDNpgvaYTVH0fAs2ffe9mVQXj9TbzwllS/XiBZb0yLEXsj+BE0FqOuvc1uuFYTVNDExhuFgsREycqCn9GyqGxsh+K4=
+[2014-12-08 10:48:02]-[]-[data] :response plain=ret_code=00060700&ret_msg=数据校验未通过
+[2014-12-08 10:48:02]-[]-[data] :平台响应数据验签失败:plain=ret_code=00060700&ret_msg=数据校验未通过;sign=q61Ijm/wqpeAJcFjvzSNuM4uXvuVketcS5V0TtxrolA1EQ4y/758HiRO46FHTUUIgMfrslC/LN/iOCOxliDNpgvaYTVH0fAs2ffe9mVQXj9TbzwllS/XiBZb0yLEXsj+BE0FqOuvc1uuFYTVNDExhuFgsREycqCn9GyqGxsh+K4=
+[2014-12-08 10:48:09]-[]-[data] :Participate in the signature parameters：[busi_no=1&card_holder=&card_id=&card_type=0&charset=UTF-8&identity_code=&identity_type=1&media_id=15601609971&mer_id=25116&pub_pri_flag=1&res_format=HTML&service=user_reg&version=4.0],Merchant number is：[25116]
+[2014-12-08 10:48:09]-[]-[data] :The private key path for：/opt/lampp/htdocs/common/config/cert/25116_wenzhoudai.key.pem
+[2014-12-08 10:48:09]-[]-[data] :Request platform way=get
+[2014-12-08 10:48:09]-[]-[data] :Request platform signature string=
+[2014-12-08 10:48:09]-[]-[data] :Clear information request platform=busi_no=1&card_holder=&card_id=&card_type=0&charset=UTF-8&identity_code=&identity_type=1&media_id=15601609971&mer_id=25116&pub_pri_flag=1&res_format=HTML&service=user_reg&version=4.0
+[2014-12-08 10:48:09]-[]-[data] :The service user_reg request platform to get the address url=http://pay.soopay.net/spay/pay/payservice.do?busi_no=1&card_holder=&card_id=&card_type=0&charset=UTF-8&identity_code=&identity_type=1&media_id=15601609971&mer_id=25116&pub_pri_flag=1&res_format=HTML&service=user_reg&version=4.0&sign=
+[2014-12-08 10:48:09]-[]-[data] :plat response mer data:ret_code=00060700&ret_msg=数据校验未通过&sign=q61Ijm/wqpeAJcFjvzSNuM4uXvuVketcS5V0TtxrolA1EQ4y/758HiRO46FHTUUIgMfrslC/LN/iOCOxliDNpgvaYTVH0fAs2ffe9mVQXj9TbzwllS/XiBZb0yLEXsj+BE0FqOuvc1uuFYTVNDExhuFgsREycqCn9GyqGxsh+K4=
+[2014-12-08 10:48:09]-[]-[data] :interface fields:merId,goodsId,orderId,merDate,retCode,retMsg,version,sign
+[2014-12-08 10:48:09]-[]-[data] :response sign=ret_code=00060700&ret_msg=数据校验未通过
+[2014-12-08 10:48:09]-[]-[data] :response sign=q61Ijm/wqpeAJcFjvzSNuM4uXvuVketcS5V0TtxrolA1EQ4y/758HiRO46FHTUUIgMfrslC/LN/iOCOxliDNpgvaYTVH0fAs2ffe9mVQXj9TbzwllS/XiBZb0yLEXsj+BE0FqOuvc1uuFYTVNDExhuFgsREycqCn9GyqGxsh+K4=
+[2014-12-08 10:48:09]-[]-[data] :response plain=ret_code=00060700&ret_msg=数据校验未通过
+[2014-12-08 10:48:09]-[]-[data] :平台响应数据验签失败:plain=ret_code=00060700&ret_msg=数据校验未通过;sign=q61Ijm/wqpeAJcFjvzSNuM4uXvuVketcS5V0TtxrolA1EQ4y/758HiRO46FHTUUIgMfrslC/LN/iOCOxliDNpgvaYTVH0fAs2ffe9mVQXj9TbzwllS/XiBZb0yLEXsj+BE0FqOuvc1uuFYTVNDExhuFgsREycqCn9GyqGxsh+K4=
+[2014-12-08 10:48:10]-[]-[data] :Participate in the signature parameters：[busi_no=1&card_holder=&card_id=&card_type=0&charset=UTF-8&identity_code=&identity_type=1&media_id=15601609971&mer_id=25116&pub_pri_flag=1&res_format=HTML&service=user_reg&version=4.0],Merchant number is：[25116]
+[2014-12-08 10:48:10]-[]-[data] :The private key path for：/opt/lampp/htdocs/common/config/cert/25116_wenzhoudai.key.pem
+[2014-12-08 10:48:10]-[]-[data] :Request platform way=get
+[2014-12-08 10:48:10]-[]-[data] :Request platform signature string=
+[2014-12-08 10:48:10]-[]-[data] :Clear information request platform=busi_no=1&card_holder=&card_id=&card_type=0&charset=UTF-8&identity_code=&identity_type=1&media_id=15601609971&mer_id=25116&pub_pri_flag=1&res_format=HTML&service=user_reg&version=4.0
+[2014-12-08 10:48:10]-[]-[data] :The service user_reg request platform to get the address url=http://pay.soopay.net/spay/pay/payservice.do?busi_no=1&card_holder=&card_id=&card_type=0&charset=UTF-8&identity_code=&identity_type=1&media_id=15601609971&mer_id=25116&pub_pri_flag=1&res_format=HTML&service=user_reg&version=4.0&sign=
+[2014-12-08 10:48:10]-[]-[data] :plat response mer data:ret_code=00060700&ret_msg=数据校验未通过&sign=q61Ijm/wqpeAJcFjvzSNuM4uXvuVketcS5V0TtxrolA1EQ4y/758HiRO46FHTUUIgMfrslC/LN/iOCOxliDNpgvaYTVH0fAs2ffe9mVQXj9TbzwllS/XiBZb0yLEXsj+BE0FqOuvc1uuFYTVNDExhuFgsREycqCn9GyqGxsh+K4=
+[2014-12-08 10:48:10]-[]-[data] :interface fields:merId,goodsId,orderId,merDate,retCode,retMsg,version,sign
+[2014-12-08 10:48:10]-[]-[data] :response sign=ret_code=00060700&ret_msg=数据校验未通过
+[2014-12-08 10:48:10]-[]-[data] :response sign=q61Ijm/wqpeAJcFjvzSNuM4uXvuVketcS5V0TtxrolA1EQ4y/758HiRO46FHTUUIgMfrslC/LN/iOCOxliDNpgvaYTVH0fAs2ffe9mVQXj9TbzwllS/XiBZb0yLEXsj+BE0FqOuvc1uuFYTVNDExhuFgsREycqCn9GyqGxsh+K4=
+[2014-12-08 10:48:10]-[]-[data] :response plain=ret_code=00060700&ret_msg=数据校验未通过
+[2014-12-08 10:48:10]-[]-[data] :平台响应数据验签失败:plain=ret_code=00060700&ret_msg=数据校验未通过;sign=q61Ijm/wqpeAJcFjvzSNuM4uXvuVketcS5V0TtxrolA1EQ4y/758HiRO46FHTUUIgMfrslC/LN/iOCOxliDNpgvaYTVH0fAs2ffe9mVQXj9TbzwllS/XiBZb0yLEXsj+BE0FqOuvc1uuFYTVNDExhuFgsREycqCn9GyqGxsh+K4=
+[2014-12-08 10:48:11]-[]-[data] :Participate in the signature parameters：[busi_no=1&card_holder=&card_id=&card_type=0&charset=UTF-8&identity_code=&identity_type=1&media_id=15601609971&mer_id=25116&pub_pri_flag=1&res_format=HTML&service=user_reg&version=4.0],Merchant number is：[25116]
+[2014-12-08 10:48:11]-[]-[data] :The private key path for：/opt/lampp/htdocs/common/config/cert/25116_wenzhoudai.key.pem
+[2014-12-08 10:48:11]-[]-[data] :Request platform way=get
+[2014-12-08 10:48:11]-[]-[data] :Request platform signature string=
+[2014-12-08 10:48:11]-[]-[data] :Clear information request platform=busi_no=1&card_holder=&card_id=&card_type=0&charset=UTF-8&identity_code=&identity_type=1&media_id=15601609971&mer_id=25116&pub_pri_flag=1&res_format=HTML&service=user_reg&version=4.0
+[2014-12-08 10:48:11]-[]-[data] :The service user_reg request platform to get the address url=http://pay.soopay.net/spay/pay/payservice.do?busi_no=1&card_holder=&card_id=&card_type=0&charset=UTF-8&identity_code=&identity_type=1&media_id=15601609971&mer_id=25116&pub_pri_flag=1&res_format=HTML&service=user_reg&version=4.0&sign=
+[2014-12-08 10:48:11]-[]-[data] :plat response mer data:ret_code=00060700&ret_msg=数据校验未通过&sign=q61Ijm/wqpeAJcFjvzSNuM4uXvuVketcS5V0TtxrolA1EQ4y/758HiRO46FHTUUIgMfrslC/LN/iOCOxliDNpgvaYTVH0fAs2ffe9mVQXj9TbzwllS/XiBZb0yLEXsj+BE0FqOuvc1uuFYTVNDExhuFgsREycqCn9GyqGxsh+K4=
+[2014-12-08 10:48:11]-[]-[data] :interface fields:merId,goodsId,orderId,merDate,retCode,retMsg,version,sign
+[2014-12-08 10:48:11]-[]-[data] :response sign=ret_code=00060700&ret_msg=数据校验未通过
+[2014-12-08 10:48:11]-[]-[data] :response sign=q61Ijm/wqpeAJcFjvzSNuM4uXvuVketcS5V0TtxrolA1EQ4y/758HiRO46FHTUUIgMfrslC/LN/iOCOxliDNpgvaYTVH0fAs2ffe9mVQXj9TbzwllS/XiBZb0yLEXsj+BE0FqOuvc1uuFYTVNDExhuFgsREycqCn9GyqGxsh+K4=
+[2014-12-08 10:48:11]-[]-[data] :response plain=ret_code=00060700&ret_msg=数据校验未通过
+[2014-12-08 10:48:11]-[]-[data] :平台响应数据验签失败:plain=ret_code=00060700&ret_msg=数据校验未通过;sign=q61Ijm/wqpeAJcFjvzSNuM4uXvuVketcS5V0TtxrolA1EQ4y/758HiRO46FHTUUIgMfrslC/LN/iOCOxliDNpgvaYTVH0fAs2ffe9mVQXj9TbzwllS/XiBZb0yLEXsj+BE0FqOuvc1uuFYTVNDExhuFgsREycqCn9GyqGxsh+K4=
+[2014-12-08 10:48:11]-[]-[data] :Participate in the signature parameters：[busi_no=1&card_holder=&card_id=&card_type=0&charset=UTF-8&identity_code=&identity_type=1&media_id=15601609971&mer_id=25116&pub_pri_flag=1&res_format=HTML&service=user_reg&version=4.0],Merchant number is：[25116]
+[2014-12-08 10:48:11]-[]-[data] :The private key path for：/opt/lampp/htdocs/common/config/cert/25116_wenzhoudai.key.pem
+[2014-12-08 10:48:11]-[]-[data] :Request platform way=get
+[2014-12-08 10:48:11]-[]-[data] :Request platform signature string=
+[2014-12-08 10:48:11]-[]-[data] :Clear information request platform=busi_no=1&card_holder=&card_id=&card_type=0&charset=UTF-8&identity_code=&identity_type=1&media_id=15601609971&mer_id=25116&pub_pri_flag=1&res_format=HTML&service=user_reg&version=4.0
+[2014-12-08 10:48:11]-[]-[data] :The service user_reg request platform to get the address url=http://pay.soopay.net/spay/pay/payservice.do?busi_no=1&card_holder=&card_id=&card_type=0&charset=UTF-8&identity_code=&identity_type=1&media_id=15601609971&mer_id=25116&pub_pri_flag=1&res_format=HTML&service=user_reg&version=4.0&sign=
+[2014-12-08 10:48:11]-[]-[data] :plat response mer data:ret_code=00060700&ret_msg=数据校验未通过&sign=q61Ijm/wqpeAJcFjvzSNuM4uXvuVketcS5V0TtxrolA1EQ4y/758HiRO46FHTUUIgMfrslC/LN/iOCOxliDNpgvaYTVH0fAs2ffe9mVQXj9TbzwllS/XiBZb0yLEXsj+BE0FqOuvc1uuFYTVNDExhuFgsREycqCn9GyqGxsh+K4=
+[2014-12-08 10:48:11]-[]-[data] :interface fields:merId,goodsId,orderId,merDate,retCode,retMsg,version,sign
+[2014-12-08 10:48:11]-[]-[data] :response sign=ret_code=00060700&ret_msg=数据校验未通过
+[2014-12-08 10:48:11]-[]-[data] :response sign=q61Ijm/wqpeAJcFjvzSNuM4uXvuVketcS5V0TtxrolA1EQ4y/758HiRO46FHTUUIgMfrslC/LN/iOCOxliDNpgvaYTVH0fAs2ffe9mVQXj9TbzwllS/XiBZb0yLEXsj+BE0FqOuvc1uuFYTVNDExhuFgsREycqCn9GyqGxsh+K4=
+[2014-12-08 10:48:11]-[]-[data] :response plain=ret_code=00060700&ret_msg=数据校验未通过
+[2014-12-08 10:48:11]-[]-[data] :平台响应数据验签失败:plain=ret_code=00060700&ret_msg=数据校验未通过;sign=q61Ijm/wqpeAJcFjvzSNuM4uXvuVketcS5V0TtxrolA1EQ4y/758HiRO46FHTUUIgMfrslC/LN/iOCOxliDNpgvaYTVH0fAs2ffe9mVQXj9TbzwllS/XiBZb0yLEXsj+BE0FqOuvc1uuFYTVNDExhuFgsREycqCn9GyqGxsh+K4=
+[2014-12-08 10:48:12]-[]-[data] :Participate in the signature parameters：[busi_no=1&card_holder=&card_id=&card_type=0&charset=UTF-8&identity_code=&identity_type=1&media_id=15601609971&mer_id=25116&pub_pri_flag=1&res_format=HTML&service=user_reg&version=4.0],Merchant number is：[25116]
+[2014-12-08 10:48:12]-[]-[data] :The private key path for：/opt/lampp/htdocs/common/config/cert/25116_wenzhoudai.key.pem
+[2014-12-08 10:48:12]-[]-[data] :Request platform way=get
+[2014-12-08 10:48:12]-[]-[data] :Request platform signature string=
+[2014-12-08 10:48:12]-[]-[data] :Clear information request platform=busi_no=1&card_holder=&card_id=&card_type=0&charset=UTF-8&identity_code=&identity_type=1&media_id=15601609971&mer_id=25116&pub_pri_flag=1&res_format=HTML&service=user_reg&version=4.0
+[2014-12-08 10:48:12]-[]-[data] :The service user_reg request platform to get the address url=http://pay.soopay.net/spay/pay/payservice.do?busi_no=1&card_holder=&card_id=&card_type=0&charset=UTF-8&identity_code=&identity_type=1&media_id=15601609971&mer_id=25116&pub_pri_flag=1&res_format=HTML&service=user_reg&version=4.0&sign=
+[2014-12-08 10:48:12]-[]-[data] :plat response mer data:ret_code=00060700&ret_msg=数据校验未通过&sign=q61Ijm/wqpeAJcFjvzSNuM4uXvuVketcS5V0TtxrolA1EQ4y/758HiRO46FHTUUIgMfrslC/LN/iOCOxliDNpgvaYTVH0fAs2ffe9mVQXj9TbzwllS/XiBZb0yLEXsj+BE0FqOuvc1uuFYTVNDExhuFgsREycqCn9GyqGxsh+K4=
+[2014-12-08 10:48:12]-[]-[data] :interface fields:merId,goodsId,orderId,merDate,retCode,retMsg,version,sign
+[2014-12-08 10:48:12]-[]-[data] :response sign=ret_code=00060700&ret_msg=数据校验未通过
+[2014-12-08 10:48:12]-[]-[data] :response sign=q61Ijm/wqpeAJcFjvzSNuM4uXvuVketcS5V0TtxrolA1EQ4y/758HiRO46FHTUUIgMfrslC/LN/iOCOxliDNpgvaYTVH0fAs2ffe9mVQXj9TbzwllS/XiBZb0yLEXsj+BE0FqOuvc1uuFYTVNDExhuFgsREycqCn9GyqGxsh+K4=
+[2014-12-08 10:48:12]-[]-[data] :response plain=ret_code=00060700&ret_msg=数据校验未通过
+[2014-12-08 10:48:12]-[]-[data] :平台响应数据验签失败:plain=ret_code=00060700&ret_msg=数据校验未通过;sign=q61Ijm/wqpeAJcFjvzSNuM4uXvuVketcS5V0TtxrolA1EQ4y/758HiRO46FHTUUIgMfrslC/LN/iOCOxliDNpgvaYTVH0fAs2ffe9mVQXj9TbzwllS/XiBZb0yLEXsj+BE0FqOuvc1uuFYTVNDExhuFgsREycqCn9GyqGxsh+K4=
+[2014-12-08 10:48:13]-[]-[data] :Participate in the signature parameters：[busi_no=1&card_holder=&card_id=&card_type=0&charset=UTF-8&identity_code=&identity_type=1&media_id=15601609971&mer_id=25116&pub_pri_flag=1&res_format=HTML&service=user_reg&version=4.0],Merchant number is：[25116]
+[2014-12-08 10:48:13]-[]-[data] :The private key path for：/opt/lampp/htdocs/common/config/cert/25116_wenzhoudai.key.pem
+[2014-12-08 10:48:13]-[]-[data] :Request platform way=get
+[2014-12-08 10:48:13]-[]-[data] :Request platform signature string=
+[2014-12-08 10:48:13]-[]-[data] :Clear information request platform=busi_no=1&card_holder=&card_id=&card_type=0&charset=UTF-8&identity_code=&identity_type=1&media_id=15601609971&mer_id=25116&pub_pri_flag=1&res_format=HTML&service=user_reg&version=4.0
+[2014-12-08 10:48:13]-[]-[data] :The service user_reg request platform to get the address url=http://pay.soopay.net/spay/pay/payservice.do?busi_no=1&card_holder=&card_id=&card_type=0&charset=UTF-8&identity_code=&identity_type=1&media_id=15601609971&mer_id=25116&pub_pri_flag=1&res_format=HTML&service=user_reg&version=4.0&sign=
+[2014-12-08 10:48:13]-[]-[data] :plat response mer data:ret_code=00060700&ret_msg=数据校验未通过&sign=q61Ijm/wqpeAJcFjvzSNuM4uXvuVketcS5V0TtxrolA1EQ4y/758HiRO46FHTUUIgMfrslC/LN/iOCOxliDNpgvaYTVH0fAs2ffe9mVQXj9TbzwllS/XiBZb0yLEXsj+BE0FqOuvc1uuFYTVNDExhuFgsREycqCn9GyqGxsh+K4=
+[2014-12-08 10:48:13]-[]-[data] :interface fields:merId,goodsId,orderId,merDate,retCode,retMsg,version,sign
+[2014-12-08 10:48:13]-[]-[data] :response sign=ret_code=00060700&ret_msg=数据校验未通过
+[2014-12-08 10:48:13]-[]-[data] :response sign=q61Ijm/wqpeAJcFjvzSNuM4uXvuVketcS5V0TtxrolA1EQ4y/758HiRO46FHTUUIgMfrslC/LN/iOCOxliDNpgvaYTVH0fAs2ffe9mVQXj9TbzwllS/XiBZb0yLEXsj+BE0FqOuvc1uuFYTVNDExhuFgsREycqCn9GyqGxsh+K4=
+[2014-12-08 10:48:13]-[]-[data] :response plain=ret_code=00060700&ret_msg=数据校验未通过
+[2014-12-08 10:48:13]-[]-[data] :平台响应数据验签失败:plain=ret_code=00060700&ret_msg=数据校验未通过;sign=q61Ijm/wqpeAJcFjvzSNuM4uXvuVketcS5V0TtxrolA1EQ4y/758HiRO46FHTUUIgMfrslC/LN/iOCOxliDNpgvaYTVH0fAs2ffe9mVQXj9TbzwllS/XiBZb0yLEXsj+BE0FqOuvc1uuFYTVNDExhuFgsREycqCn9GyqGxsh+K4=
+[2014-12-08 10:48:13]-[]-[data] :Participate in the signature parameters：[busi_no=1&card_holder=&card_id=&card_type=0&charset=UTF-8&identity_code=&identity_type=1&media_id=15601609971&mer_id=25116&pub_pri_flag=1&res_format=HTML&service=user_reg&version=4.0],Merchant number is：[25116]
+[2014-12-08 10:48:13]-[]-[data] :The private key path for：/opt/lampp/htdocs/common/config/cert/25116_wenzhoudai.key.pem
+[2014-12-08 10:48:13]-[]-[data] :Request platform way=get
+[2014-12-08 10:48:13]-[]-[data] :Request platform signature string=
+[2014-12-08 10:48:13]-[]-[data] :Clear information request platform=busi_no=1&card_holder=&card_id=&card_type=0&charset=UTF-8&identity_code=&identity_type=1&media_id=15601609971&mer_id=25116&pub_pri_flag=1&res_format=HTML&service=user_reg&version=4.0
+[2014-12-08 10:48:13]-[]-[data] :The service user_reg request platform to get the address url=http://pay.soopay.net/spay/pay/payservice.do?busi_no=1&card_holder=&card_id=&card_type=0&charset=UTF-8&identity_code=&identity_type=1&media_id=15601609971&mer_id=25116&pub_pri_flag=1&res_format=HTML&service=user_reg&version=4.0&sign=
+[2014-12-08 10:48:13]-[]-[data] :plat response mer data:ret_code=00060700&ret_msg=数据校验未通过&sign=q61Ijm/wqpeAJcFjvzSNuM4uXvuVketcS5V0TtxrolA1EQ4y/758HiRO46FHTUUIgMfrslC/LN/iOCOxliDNpgvaYTVH0fAs2ffe9mVQXj9TbzwllS/XiBZb0yLEXsj+BE0FqOuvc1uuFYTVNDExhuFgsREycqCn9GyqGxsh+K4=
+[2014-12-08 10:48:13]-[]-[data] :interface fields:merId,goodsId,orderId,merDate,retCode,retMsg,version,sign
+[2014-12-08 10:48:13]-[]-[data] :response sign=ret_code=00060700&ret_msg=数据校验未通过
+[2014-12-08 10:48:13]-[]-[data] :response sign=q61Ijm/wqpeAJcFjvzSNuM4uXvuVketcS5V0TtxrolA1EQ4y/758HiRO46FHTUUIgMfrslC/LN/iOCOxliDNpgvaYTVH0fAs2ffe9mVQXj9TbzwllS/XiBZb0yLEXsj+BE0FqOuvc1uuFYTVNDExhuFgsREycqCn9GyqGxsh+K4=
+[2014-12-08 10:48:13]-[]-[data] :response plain=ret_code=00060700&ret_msg=数据校验未通过
+[2014-12-08 10:48:13]-[]-[data] :平台响应数据验签失败:plain=ret_code=00060700&ret_msg=数据校验未通过;sign=q61Ijm/wqpeAJcFjvzSNuM4uXvuVketcS5V0TtxrolA1EQ4y/758HiRO46FHTUUIgMfrslC/LN/iOCOxliDNpgvaYTVH0fAs2ffe9mVQXj9TbzwllS/XiBZb0yLEXsj+BE0FqOuvc1uuFYTVNDExhuFgsREycqCn9GyqGxsh+K4=
+[2014-12-08 10:48:15]-[]-[data] :Participate in the signature parameters：[busi_no=1&card_holder=&card_id=&card_type=0&charset=UTF-8&identity_code=&identity_type=1&media_id=15601609971&mer_id=25116&pub_pri_flag=1&res_format=HTML&service=user_reg&version=4.0],Merchant number is：[25116]
+[2014-12-08 10:48:15]-[]-[data] :The private key path for：/opt/lampp/htdocs/common/config/cert/25116_wenzhoudai.key.pem
+[2014-12-08 10:48:15]-[]-[data] :Request platform way=get
+[2014-12-08 10:48:15]-[]-[data] :Request platform signature string=
+[2014-12-08 10:48:15]-[]-[data] :Clear information request platform=busi_no=1&card_holder=&card_id=&card_type=0&charset=UTF-8&identity_code=&identity_type=1&media_id=15601609971&mer_id=25116&pub_pri_flag=1&res_format=HTML&service=user_reg&version=4.0
+[2014-12-08 10:48:15]-[]-[data] :The service user_reg request platform to get the address url=http://pay.soopay.net/spay/pay/payservice.do?busi_no=1&card_holder=&card_id=&card_type=0&charset=UTF-8&identity_code=&identity_type=1&media_id=15601609971&mer_id=25116&pub_pri_flag=1&res_format=HTML&service=user_reg&version=4.0&sign=
+[2014-12-08 10:48:15]-[]-[data] :plat response mer data:ret_code=00060700&ret_msg=数据校验未通过&sign=q61Ijm/wqpeAJcFjvzSNuM4uXvuVketcS5V0TtxrolA1EQ4y/758HiRO46FHTUUIgMfrslC/LN/iOCOxliDNpgvaYTVH0fAs2ffe9mVQXj9TbzwllS/XiBZb0yLEXsj+BE0FqOuvc1uuFYTVNDExhuFgsREycqCn9GyqGxsh+K4=
+[2014-12-08 10:48:15]-[]-[data] :interface fields:merId,goodsId,orderId,merDate,retCode,retMsg,version,sign
+[2014-12-08 10:48:15]-[]-[data] :response sign=ret_code=00060700&ret_msg=数据校验未通过
+[2014-12-08 10:48:15]-[]-[data] :response sign=q61Ijm/wqpeAJcFjvzSNuM4uXvuVketcS5V0TtxrolA1EQ4y/758HiRO46FHTUUIgMfrslC/LN/iOCOxliDNpgvaYTVH0fAs2ffe9mVQXj9TbzwllS/XiBZb0yLEXsj+BE0FqOuvc1uuFYTVNDExhuFgsREycqCn9GyqGxsh+K4=
+[2014-12-08 10:48:15]-[]-[data] :response plain=ret_code=00060700&ret_msg=数据校验未通过
+[2014-12-08 10:48:15]-[]-[data] :平台响应数据验签失败:plain=ret_code=00060700&ret_msg=数据校验未通过;sign=q61Ijm/wqpeAJcFjvzSNuM4uXvuVketcS5V0TtxrolA1EQ4y/758HiRO46FHTUUIgMfrslC/LN/iOCOxliDNpgvaYTVH0fAs2ffe9mVQXj9TbzwllS/XiBZb0yLEXsj+BE0FqOuvc1uuFYTVNDExhuFgsREycqCn9GyqGxsh+K4=
+[2014-12-08 10:48:16]-[]-[data] :Participate in the signature parameters：[busi_no=1&card_holder=&card_id=&card_type=0&charset=UTF-8&identity_code=&identity_type=1&media_id=15601609971&mer_id=25116&pub_pri_flag=1&res_format=HTML&service=user_reg&version=4.0],Merchant number is：[25116]
+[2014-12-08 10:48:16]-[]-[data] :The private key path for：/opt/lampp/htdocs/common/config/cert/25116_wenzhoudai.key.pem
+[2014-12-08 10:48:16]-[]-[data] :Request platform way=get
+[2014-12-08 10:48:16]-[]-[data] :Request platform signature string=
+[2014-12-08 10:48:16]-[]-[data] :Clear information request platform=busi_no=1&card_holder=&card_id=&card_type=0&charset=UTF-8&identity_code=&identity_type=1&media_id=15601609971&mer_id=25116&pub_pri_flag=1&res_format=HTML&service=user_reg&version=4.0
+[2014-12-08 10:48:16]-[]-[data] :The service user_reg request platform to get the address url=http://pay.soopay.net/spay/pay/payservice.do?busi_no=1&card_holder=&card_id=&card_type=0&charset=UTF-8&identity_code=&identity_type=1&media_id=15601609971&mer_id=25116&pub_pri_flag=1&res_format=HTML&service=user_reg&version=4.0&sign=
+[2014-12-08 10:48:16]-[]-[data] :plat response mer data:ret_code=00060700&ret_msg=数据校验未通过&sign=q61Ijm/wqpeAJcFjvzSNuM4uXvuVketcS5V0TtxrolA1EQ4y/758HiRO46FHTUUIgMfrslC/LN/iOCOxliDNpgvaYTVH0fAs2ffe9mVQXj9TbzwllS/XiBZb0yLEXsj+BE0FqOuvc1uuFYTVNDExhuFgsREycqCn9GyqGxsh+K4=
+[2014-12-08 10:48:16]-[]-[data] :interface fields:merId,goodsId,orderId,merDate,retCode,retMsg,version,sign
+[2014-12-08 10:48:16]-[]-[data] :response sign=ret_code=00060700&ret_msg=数据校验未通过
+[2014-12-08 10:48:16]-[]-[data] :response sign=q61Ijm/wqpeAJcFjvzSNuM4uXvuVketcS5V0TtxrolA1EQ4y/758HiRO46FHTUUIgMfrslC/LN/iOCOxliDNpgvaYTVH0fAs2ffe9mVQXj9TbzwllS/XiBZb0yLEXsj+BE0FqOuvc1uuFYTVNDExhuFgsREycqCn9GyqGxsh+K4=
+[2014-12-08 10:48:16]-[]-[data] :response plain=ret_code=00060700&ret_msg=数据校验未通过
+[2014-12-08 10:48:16]-[]-[data] :平台响应数据验签失败:plain=ret_code=00060700&ret_msg=数据校验未通过;sign=q61Ijm/wqpeAJcFjvzSNuM4uXvuVketcS5V0TtxrolA1EQ4y/758HiRO46FHTUUIgMfrslC/LN/iOCOxliDNpgvaYTVH0fAs2ffe9mVQXj9TbzwllS/XiBZb0yLEXsj+BE0FqOuvc1uuFYTVNDExhuFgsREycqCn9GyqGxsh+K4=
+[2014-12-08 10:48:16]-[]-[data] :Participate in the signature parameters：[busi_no=1&card_holder=&card_id=&card_type=0&charset=UTF-8&identity_code=&identity_type=1&media_id=15601609971&mer_id=25116&pub_pri_flag=1&res_format=HTML&service=user_reg&version=4.0],Merchant number is：[25116]
+[2014-12-08 10:48:16]-[]-[data] :The private key path for：/opt/lampp/htdocs/common/config/cert/25116_wenzhoudai.key.pem
+[2014-12-08 10:48:16]-[]-[data] :Request platform way=get
+[2014-12-08 10:48:16]-[]-[data] :Request platform signature string=
+[2014-12-08 10:48:16]-[]-[data] :Clear information request platform=busi_no=1&card_holder=&card_id=&card_type=0&charset=UTF-8&identity_code=&identity_type=1&media_id=15601609971&mer_id=25116&pub_pri_flag=1&res_format=HTML&service=user_reg&version=4.0
+[2014-12-08 10:48:16]-[]-[data] :The service user_reg request platform to get the address url=http://pay.soopay.net/spay/pay/payservice.do?busi_no=1&card_holder=&card_id=&card_type=0&charset=UTF-8&identity_code=&identity_type=1&media_id=15601609971&mer_id=25116&pub_pri_flag=1&res_format=HTML&service=user_reg&version=4.0&sign=
+[2014-12-08 10:48:16]-[]-[data] :plat response mer data:ret_code=00060700&ret_msg=数据校验未通过&sign=q61Ijm/wqpeAJcFjvzSNuM4uXvuVketcS5V0TtxrolA1EQ4y/758HiRO46FHTUUIgMfrslC/LN/iOCOxliDNpgvaYTVH0fAs2ffe9mVQXj9TbzwllS/XiBZb0yLEXsj+BE0FqOuvc1uuFYTVNDExhuFgsREycqCn9GyqGxsh+K4=
+[2014-12-08 10:48:16]-[]-[data] :interface fields:merId,goodsId,orderId,merDate,retCode,retMsg,version,sign
+[2014-12-08 10:48:16]-[]-[data] :response sign=ret_code=00060700&ret_msg=数据校验未通过
+[2014-12-08 10:48:16]-[]-[data] :response sign=q61Ijm/wqpeAJcFjvzSNuM4uXvuVketcS5V0TtxrolA1EQ4y/758HiRO46FHTUUIgMfrslC/LN/iOCOxliDNpgvaYTVH0fAs2ffe9mVQXj9TbzwllS/XiBZb0yLEXsj+BE0FqOuvc1uuFYTVNDExhuFgsREycqCn9GyqGxsh+K4=
+[2014-12-08 10:48:16]-[]-[data] :response plain=ret_code=00060700&ret_msg=数据校验未通过
+[2014-12-08 10:48:16]-[]-[data] :平台响应数据验签失败:plain=ret_code=00060700&ret_msg=数据校验未通过;sign=q61Ijm/wqpeAJcFjvzSNuM4uXvuVketcS5V0TtxrolA1EQ4y/758HiRO46FHTUUIgMfrslC/LN/iOCOxliDNpgvaYTVH0fAs2ffe9mVQXj9TbzwllS/XiBZb0yLEXsj+BE0FqOuvc1uuFYTVNDExhuFgsREycqCn9GyqGxsh+K4=
+[2014-12-08 10:48:16]-[]-[data] :Participate in the signature parameters：[busi_no=1&card_holder=&card_id=&card_type=0&charset=UTF-8&identity_code=&identity_type=1&media_id=15601609971&mer_id=25116&pub_pri_flag=1&res_format=HTML&service=user_reg&version=4.0],Merchant number is：[25116]
+[2014-12-08 10:48:16]-[]-[data] :The private key path for：/opt/lampp/htdocs/common/config/cert/25116_wenzhoudai.key.pem
+[2014-12-08 10:48:16]-[]-[data] :Request platform way=get
+[2014-12-08 10:48:16]-[]-[data] :Request platform signature string=
+[2014-12-08 10:48:16]-[]-[data] :Clear information request platform=busi_no=1&card_holder=&card_id=&card_type=0&charset=UTF-8&identity_code=&identity_type=1&media_id=15601609971&mer_id=25116&pub_pri_flag=1&res_format=HTML&service=user_reg&version=4.0
+[2014-12-08 10:48:16]-[]-[data] :The service user_reg request platform to get the address url=http://pay.soopay.net/spay/pay/payservice.do?busi_no=1&card_holder=&card_id=&card_type=0&charset=UTF-8&identity_code=&identity_type=1&media_id=15601609971&mer_id=25116&pub_pri_flag=1&res_format=HTML&service=user_reg&version=4.0&sign=
+[2014-12-08 10:48:16]-[]-[data] :plat response mer data:ret_code=00060700&ret_msg=数据校验未通过&sign=q61Ijm/wqpeAJcFjvzSNuM4uXvuVketcS5V0TtxrolA1EQ4y/758HiRO46FHTUUIgMfrslC/LN/iOCOxliDNpgvaYTVH0fAs2ffe9mVQXj9TbzwllS/XiBZb0yLEXsj+BE0FqOuvc1uuFYTVNDExhuFgsREycqCn9GyqGxsh+K4=
+[2014-12-08 10:48:16]-[]-[data] :interface fields:merId,goodsId,orderId,merDate,retCode,retMsg,version,sign
+[2014-12-08 10:48:16]-[]-[data] :response sign=ret_code=00060700&ret_msg=数据校验未通过
+[2014-12-08 10:48:16]-[]-[data] :response sign=q61Ijm/wqpeAJcFjvzSNuM4uXvuVketcS5V0TtxrolA1EQ4y/758HiRO46FHTUUIgMfrslC/LN/iOCOxliDNpgvaYTVH0fAs2ffe9mVQXj9TbzwllS/XiBZb0yLEXsj+BE0FqOuvc1uuFYTVNDExhuFgsREycqCn9GyqGxsh+K4=
+[2014-12-08 10:48:16]-[]-[data] :response plain=ret_code=00060700&ret_msg=数据校验未通过
+[2014-12-08 10:48:16]-[]-[data] :平台响应数据验签失败:plain=ret_code=00060700&ret_msg=数据校验未通过;sign=q61Ijm/wqpeAJcFjvzSNuM4uXvuVketcS5V0TtxrolA1EQ4y/758HiRO46FHTUUIgMfrslC/LN/iOCOxliDNpgvaYTVH0fAs2ffe9mVQXj9TbzwllS/XiBZb0yLEXsj+BE0FqOuvc1uuFYTVNDExhuFgsREycqCn9GyqGxsh+K4=
+[2014-12-08 10:48:16]-[]-[data] :Participate in the signature parameters：[busi_no=1&card_holder=&card_id=&card_type=0&charset=UTF-8&identity_code=&identity_type=1&media_id=15601609971&mer_id=25116&pub_pri_flag=1&res_format=HTML&service=user_reg&version=4.0],Merchant number is：[25116]
+[2014-12-08 10:48:16]-[]-[data] :The private key path for：/opt/lampp/htdocs/common/config/cert/25116_wenzhoudai.key.pem
+[2014-12-08 10:48:16]-[]-[data] :Request platform way=get
+[2014-12-08 10:48:16]-[]-[data] :Request platform signature string=
+[2014-12-08 10:48:16]-[]-[data] :Clear information request platform=busi_no=1&card_holder=&card_id=&card_type=0&charset=UTF-8&identity_code=&identity_type=1&media_id=15601609971&mer_id=25116&pub_pri_flag=1&res_format=HTML&service=user_reg&version=4.0
+[2014-12-08 10:48:16]-[]-[data] :The service user_reg request platform to get the address url=http://pay.soopay.net/spay/pay/payservice.do?busi_no=1&card_holder=&card_id=&card_type=0&charset=UTF-8&identity_code=&identity_type=1&media_id=15601609971&mer_id=25116&pub_pri_flag=1&res_format=HTML&service=user_reg&version=4.0&sign=
+[2014-12-08 10:48:16]-[]-[data] :plat response mer data:ret_code=00060700&ret_msg=数据校验未通过&sign=q61Ijm/wqpeAJcFjvzSNuM4uXvuVketcS5V0TtxrolA1EQ4y/758HiRO46FHTUUIgMfrslC/LN/iOCOxliDNpgvaYTVH0fAs2ffe9mVQXj9TbzwllS/XiBZb0yLEXsj+BE0FqOuvc1uuFYTVNDExhuFgsREycqCn9GyqGxsh+K4=
+[2014-12-08 10:48:16]-[]-[data] :interface fields:merId,goodsId,orderId,merDate,retCode,retMsg,version,sign
+[2014-12-08 10:48:16]-[]-[data] :response sign=ret_code=00060700&ret_msg=数据校验未通过
+[2014-12-08 10:48:16]-[]-[data] :response sign=q61Ijm/wqpeAJcFjvzSNuM4uXvuVketcS5V0TtxrolA1EQ4y/758HiRO46FHTUUIgMfrslC/LN/iOCOxliDNpgvaYTVH0fAs2ffe9mVQXj9TbzwllS/XiBZb0yLEXsj+BE0FqOuvc1uuFYTVNDExhuFgsREycqCn9GyqGxsh+K4=
+[2014-12-08 10:48:16]-[]-[data] :response plain=ret_code=00060700&ret_msg=数据校验未通过
+[2014-12-08 10:48:16]-[]-[data] :平台响应数据验签失败:plain=ret_code=00060700&ret_msg=数据校验未通过;sign=q61Ijm/wqpeAJcFjvzSNuM4uXvuVketcS5V0TtxrolA1EQ4y/758HiRO46FHTUUIgMfrslC/LN/iOCOxliDNpgvaYTVH0fAs2ffe9mVQXj9TbzwllS/XiBZb0yLEXsj+BE0FqOuvc1uuFYTVNDExhuFgsREycqCn9GyqGxsh+K4=
+[2014-12-08 10:48:17]-[]-[data] :Participate in the signature parameters：[busi_no=1&card_holder=&card_id=&card_type=0&charset=UTF-8&identity_code=&identity_type=1&media_id=15601609971&mer_id=25116&pub_pri_flag=1&res_format=HTML&service=user_reg&version=4.0],Merchant number is：[25116]
+[2014-12-08 10:48:17]-[]-[data] :The private key path for：/opt/lampp/htdocs/common/config/cert/25116_wenzhoudai.key.pem
+[2014-12-08 10:48:17]-[]-[data] :Request platform way=get
+[2014-12-08 10:48:17]-[]-[data] :Request platform signature string=
+[2014-12-08 10:48:17]-[]-[data] :Clear information request platform=busi_no=1&card_holder=&card_id=&card_type=0&charset=UTF-8&identity_code=&identity_type=1&media_id=15601609971&mer_id=25116&pub_pri_flag=1&res_format=HTML&service=user_reg&version=4.0
+[2014-12-08 10:48:17]-[]-[data] :The service user_reg request platform to get the address url=http://pay.soopay.net/spay/pay/payservice.do?busi_no=1&card_holder=&card_id=&card_type=0&charset=UTF-8&identity_code=&identity_type=1&media_id=15601609971&mer_id=25116&pub_pri_flag=1&res_format=HTML&service=user_reg&version=4.0&sign=
+[2014-12-08 10:48:17]-[]-[data] :plat response mer data:ret_code=00060700&ret_msg=数据校验未通过&sign=q61Ijm/wqpeAJcFjvzSNuM4uXvuVketcS5V0TtxrolA1EQ4y/758HiRO46FHTUUIgMfrslC/LN/iOCOxliDNpgvaYTVH0fAs2ffe9mVQXj9TbzwllS/XiBZb0yLEXsj+BE0FqOuvc1uuFYTVNDExhuFgsREycqCn9GyqGxsh+K4=
+[2014-12-08 10:48:17]-[]-[data] :interface fields:merId,goodsId,orderId,merDate,retCode,retMsg,version,sign
+[2014-12-08 10:48:17]-[]-[data] :response sign=ret_code=00060700&ret_msg=数据校验未通过
+[2014-12-08 10:48:17]-[]-[data] :response sign=q61Ijm/wqpeAJcFjvzSNuM4uXvuVketcS5V0TtxrolA1EQ4y/758HiRO46FHTUUIgMfrslC/LN/iOCOxliDNpgvaYTVH0fAs2ffe9mVQXj9TbzwllS/XiBZb0yLEXsj+BE0FqOuvc1uuFYTVNDExhuFgsREycqCn9GyqGxsh+K4=
+[2014-12-08 10:48:17]-[]-[data] :response plain=ret_code=00060700&ret_msg=数据校验未通过
+[2014-12-08 10:48:17]-[]-[data] :平台响应数据验签失败:plain=ret_code=00060700&ret_msg=数据校验未通过;sign=q61Ijm/wqpeAJcFjvzSNuM4uXvuVketcS5V0TtxrolA1EQ4y/758HiRO46FHTUUIgMfrslC/LN/iOCOxliDNpgvaYTVH0fAs2ffe9mVQXj9TbzwllS/XiBZb0yLEXsj+BE0FqOuvc1uuFYTVNDExhuFgsREycqCn9GyqGxsh+K4=
+[2014-12-08 10:48:17]-[]-[data] :Participate in the signature parameters：[busi_no=1&card_holder=&card_id=&card_type=0&charset=UTF-8&identity_code=&identity_type=1&media_id=15601609971&mer_id=25116&pub_pri_flag=1&res_format=HTML&service=user_reg&version=4.0],Merchant number is：[25116]
+[2014-12-08 10:48:17]-[]-[data] :The private key path for：/opt/lampp/htdocs/common/config/cert/25116_wenzhoudai.key.pem
+[2014-12-08 10:48:17]-[]-[data] :Request platform way=get
+[2014-12-08 10:48:17]-[]-[data] :Request platform signature string=
+[2014-12-08 10:48:17]-[]-[data] :Clear information request platform=busi_no=1&card_holder=&card_id=&card_type=0&charset=UTF-8&identity_code=&identity_type=1&media_id=15601609971&mer_id=25116&pub_pri_flag=1&res_format=HTML&service=user_reg&version=4.0
+[2014-12-08 10:48:17]-[]-[data] :The service user_reg request platform to get the address url=http://pay.soopay.net/spay/pay/payservice.do?busi_no=1&card_holder=&card_id=&card_type=0&charset=UTF-8&identity_code=&identity_type=1&media_id=15601609971&mer_id=25116&pub_pri_flag=1&res_format=HTML&service=user_reg&version=4.0&sign=
+[2014-12-08 10:48:17]-[]-[data] :plat response mer data:ret_code=00060700&ret_msg=数据校验未通过&sign=q61Ijm/wqpeAJcFjvzSNuM4uXvuVketcS5V0TtxrolA1EQ4y/758HiRO46FHTUUIgMfrslC/LN/iOCOxliDNpgvaYTVH0fAs2ffe9mVQXj9TbzwllS/XiBZb0yLEXsj+BE0FqOuvc1uuFYTVNDExhuFgsREycqCn9GyqGxsh+K4=
+[2014-12-08 10:48:17]-[]-[data] :interface fields:merId,goodsId,orderId,merDate,retCode,retMsg,version,sign
+[2014-12-08 10:48:17]-[]-[data] :response sign=ret_code=00060700&ret_msg=数据校验未通过
+[2014-12-08 10:48:17]-[]-[data] :response sign=q61Ijm/wqpeAJcFjvzSNuM4uXvuVketcS5V0TtxrolA1EQ4y/758HiRO46FHTUUIgMfrslC/LN/iOCOxliDNpgvaYTVH0fAs2ffe9mVQXj9TbzwllS/XiBZb0yLEXsj+BE0FqOuvc1uuFYTVNDExhuFgsREycqCn9GyqGxsh+K4=
+[2014-12-08 10:48:17]-[]-[data] :response plain=ret_code=00060700&ret_msg=数据校验未通过
+[2014-12-08 10:48:17]-[]-[data] :平台响应数据验签失败:plain=ret_code=00060700&ret_msg=数据校验未通过;sign=q61Ijm/wqpeAJcFjvzSNuM4uXvuVketcS5V0TtxrolA1EQ4y/758HiRO46FHTUUIgMfrslC/LN/iOCOxliDNpgvaYTVH0fAs2ffe9mVQXj9TbzwllS/XiBZb0yLEXsj+BE0FqOuvc1uuFYTVNDExhuFgsREycqCn9GyqGxsh+K4=
+[2014-12-08 10:48:25]-[]-[data] :Participate in the signature parameters：[busi_no=1&card_holder=&card_id=&card_type=0&charset=UTF-8&identity_code=&identity_type=1&media_id=15601609971&mer_id=25116&pub_pri_flag=1&res_format=HTML&service=user_reg&version=4.0],Merchant number is：[25116]
+[2014-12-08 10:48:25]-[]-[data] :The private key path for：/opt/lampp/htdocs/common/config/cert/25116_wenzhoudai.key.pem
+[2014-12-08 10:48:25]-[]-[data] :Request platform way=get
+[2014-12-08 10:48:25]-[]-[data] :Request platform signature string=
+[2014-12-08 10:48:25]-[]-[data] :Clear information request platform=busi_no=1&card_holder=&card_id=&card_type=0&charset=UTF-8&identity_code=&identity_type=1&media_id=15601609971&mer_id=25116&pub_pri_flag=1&res_format=HTML&service=user_reg&version=4.0
+[2014-12-08 10:48:25]-[]-[data] :The service user_reg request platform to get the address url=http://pay.soopay.net/spay/pay/payservice.do?busi_no=1&card_holder=&card_id=&card_type=0&charset=UTF-8&identity_code=&identity_type=1&media_id=15601609971&mer_id=25116&pub_pri_flag=1&res_format=HTML&service=user_reg&version=4.0&sign=
+[2014-12-08 10:48:25]-[]-[data] :plat response mer data:ret_code=00060700&ret_msg=数据校验未通过&sign=q61Ijm/wqpeAJcFjvzSNuM4uXvuVketcS5V0TtxrolA1EQ4y/758HiRO46FHTUUIgMfrslC/LN/iOCOxliDNpgvaYTVH0fAs2ffe9mVQXj9TbzwllS/XiBZb0yLEXsj+BE0FqOuvc1uuFYTVNDExhuFgsREycqCn9GyqGxsh+K4=
+[2014-12-08 10:48:25]-[]-[data] :interface fields:merId,goodsId,orderId,merDate,retCode,retMsg,version,sign
+[2014-12-08 10:48:25]-[]-[data] :response sign=ret_code=00060700&ret_msg=数据校验未通过
+[2014-12-08 10:48:25]-[]-[data] :response sign=q61Ijm/wqpeAJcFjvzSNuM4uXvuVketcS5V0TtxrolA1EQ4y/758HiRO46FHTUUIgMfrslC/LN/iOCOxliDNpgvaYTVH0fAs2ffe9mVQXj9TbzwllS/XiBZb0yLEXsj+BE0FqOuvc1uuFYTVNDExhuFgsREycqCn9GyqGxsh+K4=
+[2014-12-08 10:48:25]-[]-[data] :response plain=ret_code=00060700&ret_msg=数据校验未通过
+[2014-12-08 10:48:25]-[]-[data] :平台响应数据验签失败:plain=ret_code=00060700&ret_msg=数据校验未通过;sign=q61Ijm/wqpeAJcFjvzSNuM4uXvuVketcS5V0TtxrolA1EQ4y/758HiRO46FHTUUIgMfrslC/LN/iOCOxliDNpgvaYTVH0fAs2ffe9mVQXj9TbzwllS/XiBZb0yLEXsj+BE0FqOuvc1uuFYTVNDExhuFgsREycqCn9GyqGxsh+K4=
+[2014-12-08 10:52:28]-[]-[data] :Participate in the signature parameters：[busi_no=1&card_holder=&card_id=&card_type=0&charset=UTF-8&identity_code=&identity_type=1&media_id=15601609971&mer_id=25116&pub_pri_flag=1&res_format=HTML&service=user_reg&version=4.0],Merchant number is：[25116]
+[2014-12-08 10:52:28]-[]-[data] :The private key path for：/opt/lampp/htdocs/common/config/cert/25116_wenzhoudai.key.pem
+[2014-12-08 10:52:28]-[]-[data] :Request platform way=get
+[2014-12-08 10:52:28]-[]-[data] :Request platform signature string=
+[2014-12-08 10:52:28]-[]-[data] :Clear information request platform=busi_no=1&card_holder=&card_id=&card_type=0&charset=UTF-8&identity_code=&identity_type=1&media_id=15601609971&mer_id=25116&pub_pri_flag=1&res_format=HTML&service=user_reg&version=4.0
+[2014-12-08 10:52:28]-[]-[data] :The service user_reg request platform to get the address url=http://pay.soopay.net/spay/pay/payservice.do?busi_no=1&card_holder=&card_id=&card_type=0&charset=UTF-8&identity_code=&identity_type=1&media_id=15601609971&mer_id=25116&pub_pri_flag=1&res_format=HTML&service=user_reg&version=4.0&sign=
+[2014-12-08 10:52:28]-[]-[data] :plat response mer data:ret_code=00060700&ret_msg=数据校验未通过&sign=q61Ijm/wqpeAJcFjvzSNuM4uXvuVketcS5V0TtxrolA1EQ4y/758HiRO46FHTUUIgMfrslC/LN/iOCOxliDNpgvaYTVH0fAs2ffe9mVQXj9TbzwllS/XiBZb0yLEXsj+BE0FqOuvc1uuFYTVNDExhuFgsREycqCn9GyqGxsh+K4=
+[2014-12-08 10:52:28]-[]-[data] :interface fields:merId,goodsId,orderId,merDate,retCode,retMsg,version,sign
+[2014-12-08 10:52:28]-[]-[data] :response sign=ret_code=00060700&ret_msg=数据校验未通过
+[2014-12-08 10:52:28]-[]-[data] :response sign=q61Ijm/wqpeAJcFjvzSNuM4uXvuVketcS5V0TtxrolA1EQ4y/758HiRO46FHTUUIgMfrslC/LN/iOCOxliDNpgvaYTVH0fAs2ffe9mVQXj9TbzwllS/XiBZb0yLEXsj+BE0FqOuvc1uuFYTVNDExhuFgsREycqCn9GyqGxsh+K4=
+[2014-12-08 10:52:28]-[]-[data] :response plain=ret_code=00060700&ret_msg=数据校验未通过
+[2014-12-08 10:52:28]-[]-[data] :平台响应数据验签失败:plain=ret_code=00060700&ret_msg=数据校验未通过;sign=q61Ijm/wqpeAJcFjvzSNuM4uXvuVketcS5V0TtxrolA1EQ4y/758HiRO46FHTUUIgMfrslC/LN/iOCOxliDNpgvaYTVH0fAs2ffe9mVQXj9TbzwllS/XiBZb0yLEXsj+BE0FqOuvc1uuFYTVNDExhuFgsREycqCn9GyqGxsh+K4=
+[2014-12-08 10:52:31]-[]-[data] :Participate in the signature parameters：[busi_no=1&card_holder=&card_id=&card_type=0&charset=UTF-8&identity_code=&identity_type=1&media_id=15601609971&mer_id=25116&pub_pri_flag=1&res_format=HTML&service=user_reg&version=4.0],Merchant number is：[25116]
+[2014-12-08 10:52:31]-[]-[data] :The private key path for：/opt/lampp/htdocs/common/config/cert/25116_wenzhoudai.key.pem
+[2014-12-08 10:52:31]-[]-[data] :Request platform way=get
+[2014-12-08 10:52:31]-[]-[data] :Request platform signature string=
+[2014-12-08 10:52:31]-[]-[data] :Clear information request platform=busi_no=1&card_holder=&card_id=&card_type=0&charset=UTF-8&identity_code=&identity_type=1&media_id=15601609971&mer_id=25116&pub_pri_flag=1&res_format=HTML&service=user_reg&version=4.0
+[2014-12-08 10:52:31]-[]-[data] :The service user_reg request platform to get the address url=http://pay.soopay.net/spay/pay/payservice.do?busi_no=1&card_holder=&card_id=&card_type=0&charset=UTF-8&identity_code=&identity_type=1&media_id=15601609971&mer_id=25116&pub_pri_flag=1&res_format=HTML&service=user_reg&version=4.0&sign=
+[2014-12-08 10:52:31]-[]-[data] :plat response mer data:ret_code=00060700&ret_msg=数据校验未通过&sign=q61Ijm/wqpeAJcFjvzSNuM4uXvuVketcS5V0TtxrolA1EQ4y/758HiRO46FHTUUIgMfrslC/LN/iOCOxliDNpgvaYTVH0fAs2ffe9mVQXj9TbzwllS/XiBZb0yLEXsj+BE0FqOuvc1uuFYTVNDExhuFgsREycqCn9GyqGxsh+K4=
+[2014-12-08 10:52:31]-[]-[data] :interface fields:merId,goodsId,orderId,merDate,retCode,retMsg,version,sign
+[2014-12-08 10:52:31]-[]-[data] :response sign=ret_code=00060700&ret_msg=数据校验未通过
+[2014-12-08 10:52:31]-[]-[data] :response sign=q61Ijm/wqpeAJcFjvzSNuM4uXvuVketcS5V0TtxrolA1EQ4y/758HiRO46FHTUUIgMfrslC/LN/iOCOxliDNpgvaYTVH0fAs2ffe9mVQXj9TbzwllS/XiBZb0yLEXsj+BE0FqOuvc1uuFYTVNDExhuFgsREycqCn9GyqGxsh+K4=
+[2014-12-08 10:52:31]-[]-[data] :response plain=ret_code=00060700&ret_msg=数据校验未通过
+[2014-12-08 10:52:31]-[]-[data] :平台响应数据验签失败:plain=ret_code=00060700&ret_msg=数据校验未通过;sign=q61Ijm/wqpeAJcFjvzSNuM4uXvuVketcS5V0TtxrolA1EQ4y/758HiRO46FHTUUIgMfrslC/LN/iOCOxliDNpgvaYTVH0fAs2ffe9mVQXj9TbzwllS/XiBZb0yLEXsj+BE0FqOuvc1uuFYTVNDExhuFgsREycqCn9GyqGxsh+K4=
+[2014-12-08 10:52:34]-[]-[data] :Participate in the signature parameters：[busi_no=1&card_holder=&card_id=&card_type=0&charset=UTF-8&identity_code=&identity_type=1&media_id=15601609971&mer_id=25116&pub_pri_flag=1&res_format=HTML&service=user_reg&version=4.0],Merchant number is：[25116]
+[2014-12-08 10:52:34]-[]-[data] :The private key path for：/opt/lampp/htdocs/common/config/cert/25116_wenzhoudai.key.pem
+[2014-12-08 10:52:34]-[]-[data] :Request platform way=get
+[2014-12-08 10:52:34]-[]-[data] :Request platform signature string=
+[2014-12-08 10:52:34]-[]-[data] :Clear information request platform=busi_no=1&card_holder=&card_id=&card_type=0&charset=UTF-8&identity_code=&identity_type=1&media_id=15601609971&mer_id=25116&pub_pri_flag=1&res_format=HTML&service=user_reg&version=4.0
+[2014-12-08 10:52:34]-[]-[data] :The service user_reg request platform to get the address url=http://pay.soopay.net/spay/pay/payservice.do?busi_no=1&card_holder=&card_id=&card_type=0&charset=UTF-8&identity_code=&identity_type=1&media_id=15601609971&mer_id=25116&pub_pri_flag=1&res_format=HTML&service=user_reg&version=4.0&sign=
+[2014-12-08 10:52:35]-[]-[data] :plat response mer data:ret_code=00060700&ret_msg=数据校验未通过&sign=q61Ijm/wqpeAJcFjvzSNuM4uXvuVketcS5V0TtxrolA1EQ4y/758HiRO46FHTUUIgMfrslC/LN/iOCOxliDNpgvaYTVH0fAs2ffe9mVQXj9TbzwllS/XiBZb0yLEXsj+BE0FqOuvc1uuFYTVNDExhuFgsREycqCn9GyqGxsh+K4=
+[2014-12-08 10:52:35]-[]-[data] :interface fields:merId,goodsId,orderId,merDate,retCode,retMsg,version,sign
+[2014-12-08 10:52:35]-[]-[data] :response sign=ret_code=00060700&ret_msg=数据校验未通过
+[2014-12-08 10:52:35]-[]-[data] :response sign=q61Ijm/wqpeAJcFjvzSNuM4uXvuVketcS5V0TtxrolA1EQ4y/758HiRO46FHTUUIgMfrslC/LN/iOCOxliDNpgvaYTVH0fAs2ffe9mVQXj9TbzwllS/XiBZb0yLEXsj+BE0FqOuvc1uuFYTVNDExhuFgsREycqCn9GyqGxsh+K4=
+[2014-12-08 10:52:35]-[]-[data] :response plain=ret_code=00060700&ret_msg=数据校验未通过
+[2014-12-08 10:52:35]-[]-[data] :平台响应数据验签失败:plain=ret_code=00060700&ret_msg=数据校验未通过;sign=q61Ijm/wqpeAJcFjvzSNuM4uXvuVketcS5V0TtxrolA1EQ4y/758HiRO46FHTUUIgMfrslC/LN/iOCOxliDNpgvaYTVH0fAs2ffe9mVQXj9TbzwllS/XiBZb0yLEXsj+BE0FqOuvc1uuFYTVNDExhuFgsREycqCn9GyqGxsh+K4=
+[2014-12-08 10:53:11]-[]-[data] :Participate in the signature parameters：[busi_no=1&card_holder=&card_id=&card_type=0&charset=UTF-8&identity_code=&identity_type=1&media_id=15601609971&mer_id=25116&pub_pri_flag=1&res_format=HTML&service=user_reg&version=4.0],Merchant number is：[25116]
+[2014-12-08 10:53:11]-[]-[data] :The private key path for：/opt/lampp/htdocs/common/config/cert/25116_wenzhoudai.key.pem
+[2014-12-08 10:53:11]-[]-[data] :Request platform way=get
+[2014-12-08 10:53:11]-[]-[data] :Request platform signature string=
+[2014-12-08 10:53:11]-[]-[data] :Clear information request platform=busi_no=1&card_holder=&card_id=&card_type=0&charset=UTF-8&identity_code=&identity_type=1&media_id=15601609971&mer_id=25116&pub_pri_flag=1&res_format=HTML&service=user_reg&version=4.0
+[2014-12-08 10:53:11]-[]-[data] :The service user_reg request platform to get the address url=http://pay.soopay.net/spay/pay/payservice.do?busi_no=1&card_holder=&card_id=&card_type=0&charset=UTF-8&identity_code=&identity_type=1&media_id=15601609971&mer_id=25116&pub_pri_flag=1&res_format=HTML&service=user_reg&version=4.0&sign=
+[2014-12-08 10:53:11]-[]-[data] :plat response mer data:ret_code=00060700&ret_msg=数据校验未通过&sign=q61Ijm/wqpeAJcFjvzSNuM4uXvuVketcS5V0TtxrolA1EQ4y/758HiRO46FHTUUIgMfrslC/LN/iOCOxliDNpgvaYTVH0fAs2ffe9mVQXj9TbzwllS/XiBZb0yLEXsj+BE0FqOuvc1uuFYTVNDExhuFgsREycqCn9GyqGxsh+K4=
+[2014-12-08 10:53:11]-[]-[data] :interface fields:merId,goodsId,orderId,merDate,retCode,retMsg,version,sign
+[2014-12-08 10:53:11]-[]-[data] :response sign=ret_code=00060700&ret_msg=数据校验未通过
+[2014-12-08 10:53:11]-[]-[data] :response sign=q61Ijm/wqpeAJcFjvzSNuM4uXvuVketcS5V0TtxrolA1EQ4y/758HiRO46FHTUUIgMfrslC/LN/iOCOxliDNpgvaYTVH0fAs2ffe9mVQXj9TbzwllS/XiBZb0yLEXsj+BE0FqOuvc1uuFYTVNDExhuFgsREycqCn9GyqGxsh+K4=
+[2014-12-08 10:53:11]-[]-[data] :response plain=ret_code=00060700&ret_msg=数据校验未通过
+[2014-12-08 10:53:11]-[]-[data] :平台响应数据验签失败:plain=ret_code=00060700&ret_msg=数据校验未通过;sign=q61Ijm/wqpeAJcFjvzSNuM4uXvuVketcS5V0TtxrolA1EQ4y/758HiRO46FHTUUIgMfrslC/LN/iOCOxliDNpgvaYTVH0fAs2ffe9mVQXj9TbzwllS/XiBZb0yLEXsj+BE0FqOuvc1uuFYTVNDExhuFgsREycqCn9GyqGxsh+K4=
+[2014-12-08 10:53:13]-[]-[data] :Participate in the signature parameters：[busi_no=1&card_holder=&card_id=&card_type=0&charset=UTF-8&identity_code=&identity_type=1&media_id=15601609971&mer_id=25116&pub_pri_flag=1&res_format=HTML&service=user_reg&version=4.0],Merchant number is：[25116]
+[2014-12-08 10:53:13]-[]-[data] :The private key path for：/opt/lampp/htdocs/common/config/cert/25116_wenzhoudai.key.pem
+[2014-12-08 10:53:13]-[]-[data] :Request platform way=get
+[2014-12-08 10:53:13]-[]-[data] :Request platform signature string=
+[2014-12-08 10:53:13]-[]-[data] :Clear information request platform=busi_no=1&card_holder=&card_id=&card_type=0&charset=UTF-8&identity_code=&identity_type=1&media_id=15601609971&mer_id=25116&pub_pri_flag=1&res_format=HTML&service=user_reg&version=4.0
+[2014-12-08 10:53:13]-[]-[data] :The service user_reg request platform to get the address url=http://pay.soopay.net/spay/pay/payservice.do?busi_no=1&card_holder=&card_id=&card_type=0&charset=UTF-8&identity_code=&identity_type=1&media_id=15601609971&mer_id=25116&pub_pri_flag=1&res_format=HTML&service=user_reg&version=4.0&sign=
+[2014-12-08 10:53:13]-[]-[data] :plat response mer data:ret_code=00060700&ret_msg=数据校验未通过&sign=q61Ijm/wqpeAJcFjvzSNuM4uXvuVketcS5V0TtxrolA1EQ4y/758HiRO46FHTUUIgMfrslC/LN/iOCOxliDNpgvaYTVH0fAs2ffe9mVQXj9TbzwllS/XiBZb0yLEXsj+BE0FqOuvc1uuFYTVNDExhuFgsREycqCn9GyqGxsh+K4=
+[2014-12-08 10:53:13]-[]-[data] :interface fields:merId,goodsId,orderId,merDate,retCode,retMsg,version,sign
+[2014-12-08 10:53:13]-[]-[data] :response sign=ret_code=00060700&ret_msg=数据校验未通过
+[2014-12-08 10:53:13]-[]-[data] :response sign=q61Ijm/wqpeAJcFjvzSNuM4uXvuVketcS5V0TtxrolA1EQ4y/758HiRO46FHTUUIgMfrslC/LN/iOCOxliDNpgvaYTVH0fAs2ffe9mVQXj9TbzwllS/XiBZb0yLEXsj+BE0FqOuvc1uuFYTVNDExhuFgsREycqCn9GyqGxsh+K4=
+[2014-12-08 10:53:13]-[]-[data] :response plain=ret_code=00060700&ret_msg=数据校验未通过
+[2014-12-08 10:53:13]-[]-[data] :平台响应数据验签失败:plain=ret_code=00060700&ret_msg=数据校验未通过;sign=q61Ijm/wqpeAJcFjvzSNuM4uXvuVketcS5V0TtxrolA1EQ4y/758HiRO46FHTUUIgMfrslC/LN/iOCOxliDNpgvaYTVH0fAs2ffe9mVQXj9TbzwllS/XiBZb0yLEXsj+BE0FqOuvc1uuFYTVNDExhuFgsREycqCn9GyqGxsh+K4=
+[2014-12-08 10:53:13]-[]-[data] :Participate in the signature parameters：[busi_no=1&card_holder=&card_id=&card_type=0&charset=UTF-8&identity_code=&identity_type=1&media_id=15601609971&mer_id=25116&pub_pri_flag=1&res_format=HTML&service=user_reg&version=4.0],Merchant number is：[25116]
+[2014-12-08 10:53:13]-[]-[data] :The private key path for：/opt/lampp/htdocs/common/config/cert/25116_wenzhoudai.key.pem
+[2014-12-08 10:53:13]-[]-[data] :Request platform way=get
+[2014-12-08 10:53:13]-[]-[data] :Request platform signature string=
+[2014-12-08 10:53:13]-[]-[data] :Clear information request platform=busi_no=1&card_holder=&card_id=&card_type=0&charset=UTF-8&identity_code=&identity_type=1&media_id=15601609971&mer_id=25116&pub_pri_flag=1&res_format=HTML&service=user_reg&version=4.0
+[2014-12-08 10:53:13]-[]-[data] :The service user_reg request platform to get the address url=http://pay.soopay.net/spay/pay/payservice.do?busi_no=1&card_holder=&card_id=&card_type=0&charset=UTF-8&identity_code=&identity_type=1&media_id=15601609971&mer_id=25116&pub_pri_flag=1&res_format=HTML&service=user_reg&version=4.0&sign=
+[2014-12-08 10:53:13]-[]-[data] :plat response mer data:ret_code=00060700&ret_msg=数据校验未通过&sign=q61Ijm/wqpeAJcFjvzSNuM4uXvuVketcS5V0TtxrolA1EQ4y/758HiRO46FHTUUIgMfrslC/LN/iOCOxliDNpgvaYTVH0fAs2ffe9mVQXj9TbzwllS/XiBZb0yLEXsj+BE0FqOuvc1uuFYTVNDExhuFgsREycqCn9GyqGxsh+K4=
+[2014-12-08 10:53:13]-[]-[data] :interface fields:merId,goodsId,orderId,merDate,retCode,retMsg,version,sign
+[2014-12-08 10:53:13]-[]-[data] :response sign=ret_code=00060700&ret_msg=数据校验未通过
+[2014-12-08 10:53:13]-[]-[data] :response sign=q61Ijm/wqpeAJcFjvzSNuM4uXvuVketcS5V0TtxrolA1EQ4y/758HiRO46FHTUUIgMfrslC/LN/iOCOxliDNpgvaYTVH0fAs2ffe9mVQXj9TbzwllS/XiBZb0yLEXsj+BE0FqOuvc1uuFYTVNDExhuFgsREycqCn9GyqGxsh+K4=
+[2014-12-08 10:53:13]-[]-[data] :response plain=ret_code=00060700&ret_msg=数据校验未通过
+[2014-12-08 10:53:13]-[]-[data] :平台响应数据验签失败:plain=ret_code=00060700&ret_msg=数据校验未通过;sign=q61Ijm/wqpeAJcFjvzSNuM4uXvuVketcS5V0TtxrolA1EQ4y/758HiRO46FHTUUIgMfrslC/LN/iOCOxliDNpgvaYTVH0fAs2ffe9mVQXj9TbzwllS/XiBZb0yLEXsj+BE0FqOuvc1uuFYTVNDExhuFgsREycqCn9GyqGxsh+K4=
+[2014-12-08 15:12:37]-[]-[data] :Participate in the signature parameters：[busi_no=1&card_holder=&card_id=&card_type=0&charset=UTF-8&identity_code=&identity_type=1&media_id=18521035789&mer_id=25116&pub_pri_flag=1&res_format=HTML&service=user_reg&version=4.0],Merchant number is：[25116]
+[2014-12-08 15:12:37]-[]-[data] :The private key path for：/opt/lampp/htdocs/common/config/cert/25116_wenzhoudai.key.pem
+[2014-12-08 15:12:37]-[]-[data] :Request platform way=get
+[2014-12-08 15:12:37]-[]-[data] :Request platform signature string=
+[2014-12-08 15:12:37]-[]-[data] :Clear information request platform=busi_no=1&card_holder=&card_id=&card_type=0&charset=UTF-8&identity_code=&identity_type=1&media_id=18521035789&mer_id=25116&pub_pri_flag=1&res_format=HTML&service=user_reg&version=4.0
+[2014-12-08 15:12:37]-[]-[data] :The service user_reg request platform to get the address url=http://pay.soopay.net/spay/pay/payservice.do?busi_no=1&card_holder=&card_id=&card_type=0&charset=UTF-8&identity_code=&identity_type=1&media_id=18521035789&mer_id=25116&pub_pri_flag=1&res_format=HTML&service=user_reg&version=4.0&sign=
+[2014-12-08 15:12:39]-[]-[data] :plat response mer data:ret_code=00060700&ret_msg=数据校验未通过&sign=q61Ijm/wqpeAJcFjvzSNuM4uXvuVketcS5V0TtxrolA1EQ4y/758HiRO46FHTUUIgMfrslC/LN/iOCOxliDNpgvaYTVH0fAs2ffe9mVQXj9TbzwllS/XiBZb0yLEXsj+BE0FqOuvc1uuFYTVNDExhuFgsREycqCn9GyqGxsh+K4=
+[2014-12-08 15:12:39]-[]-[data] :interface fields:merId,goodsId,orderId,merDate,retCode,retMsg,version,sign
+[2014-12-08 15:12:39]-[]-[data] :response sign=ret_code=00060700&ret_msg=数据校验未通过
+[2014-12-08 15:12:39]-[]-[data] :response sign=q61Ijm/wqpeAJcFjvzSNuM4uXvuVketcS5V0TtxrolA1EQ4y/758HiRO46FHTUUIgMfrslC/LN/iOCOxliDNpgvaYTVH0fAs2ffe9mVQXj9TbzwllS/XiBZb0yLEXsj+BE0FqOuvc1uuFYTVNDExhuFgsREycqCn9GyqGxsh+K4=
+[2014-12-08 15:12:39]-[]-[data] :response plain=ret_code=00060700&ret_msg=数据校验未通过
+[2014-12-08 15:12:39]-[]-[data] :平台响应数据验签失败:plain=ret_code=00060700&ret_msg=数据校验未通过;sign=q61Ijm/wqpeAJcFjvzSNuM4uXvuVketcS5V0TtxrolA1EQ4y/758HiRO46FHTUUIgMfrslC/LN/iOCOxliDNpgvaYTVH0fAs2ffe9mVQXj9TbzwllS/XiBZb0yLEXsj+BE0FqOuvc1uuFYTVNDExhuFgsREycqCn9GyqGxsh+K4=
+[2014-12-08 15:13:29]-[]-[data] :Participate in the signature parameters：[busi_no=1&card_holder=&card_id=&card_type=0&charset=UTF-8&identity_code=&identity_type=1&media_id=18521035789&mer_id=25116&pub_pri_flag=1&res_format=HTML&service=user_reg&version=4.0],Merchant number is：[25116]
+[2014-12-08 15:13:29]-[]-[data] :The private key path for：/opt/lampp/htdocs/common/config/cert/25116_wenzhoudai.key.pem
+[2014-12-08 15:13:29]-[]-[data] :Request platform way=get
+[2014-12-08 15:13:29]-[]-[data] :Request platform signature string=
+[2014-12-08 15:13:29]-[]-[data] :Clear information request platform=busi_no=1&card_holder=&card_id=&card_type=0&charset=UTF-8&identity_code=&identity_type=1&media_id=18521035789&mer_id=25116&pub_pri_flag=1&res_format=HTML&service=user_reg&version=4.0
+[2014-12-08 15:13:29]-[]-[data] :The service user_reg request platform to get the address url=http://pay.soopay.net/spay/pay/payservice.do?busi_no=1&card_holder=&card_id=&card_type=0&charset=UTF-8&identity_code=&identity_type=1&media_id=18521035789&mer_id=25116&pub_pri_flag=1&res_format=HTML&service=user_reg&version=4.0&sign=
+[2014-12-08 15:13:29]-[]-[data] :plat response mer data:ret_code=00060700&ret_msg=数据校验未通过&sign=q61Ijm/wqpeAJcFjvzSNuM4uXvuVketcS5V0TtxrolA1EQ4y/758HiRO46FHTUUIgMfrslC/LN/iOCOxliDNpgvaYTVH0fAs2ffe9mVQXj9TbzwllS/XiBZb0yLEXsj+BE0FqOuvc1uuFYTVNDExhuFgsREycqCn9GyqGxsh+K4=
+[2014-12-08 15:13:29]-[]-[data] :interface fields:merId,goodsId,orderId,merDate,retCode,retMsg,version,sign
+[2014-12-08 15:13:29]-[]-[data] :response sign=ret_code=00060700&ret_msg=数据校验未通过
+[2014-12-08 15:13:29]-[]-[data] :response sign=q61Ijm/wqpeAJcFjvzSNuM4uXvuVketcS5V0TtxrolA1EQ4y/758HiRO46FHTUUIgMfrslC/LN/iOCOxliDNpgvaYTVH0fAs2ffe9mVQXj9TbzwllS/XiBZb0yLEXsj+BE0FqOuvc1uuFYTVNDExhuFgsREycqCn9GyqGxsh+K4=
+[2014-12-08 15:13:29]-[]-[data] :response plain=ret_code=00060700&ret_msg=数据校验未通过
+[2014-12-08 15:13:29]-[]-[data] :平台响应数据验签失败:plain=ret_code=00060700&ret_msg=数据校验未通过;sign=q61Ijm/wqpeAJcFjvzSNuM4uXvuVketcS5V0TtxrolA1EQ4y/758HiRO46FHTUUIgMfrslC/LN/iOCOxliDNpgvaYTVH0fAs2ffe9mVQXj9TbzwllS/XiBZb0yLEXsj+BE0FqOuvc1uuFYTVNDExhuFgsREycqCn9GyqGxsh+K4=
+[2014-12-08 15:18:26]-[]-[data] :Participate in the signature parameters：[busi_no=1&card_holder=&card_id=&card_type=0&charset=UTF-8&identity_code=&identity_type=1&media_id=18521035789&mer_id=25116&pub_pri_flag=1&res_format=HTML&service=user_reg&version=4.0],Merchant number is：[25116]
+[2014-12-08 15:18:26]-[]-[data] :The private key path for：/opt/lampp/htdocs/common/config/cert/25116_wenzhoudai.key.pem
+[2014-12-08 15:18:26]-[]-[data] :Request platform way=get
+[2014-12-08 15:18:26]-[]-[data] :Request platform signature string=
+[2014-12-08 15:18:26]-[]-[data] :Clear information request platform=busi_no=1&card_holder=&card_id=&card_type=0&charset=UTF-8&identity_code=&identity_type=1&media_id=18521035789&mer_id=25116&pub_pri_flag=1&res_format=HTML&service=user_reg&version=4.0
+[2014-12-08 15:18:26]-[]-[data] :The service user_reg request platform to get the address url=http://pay.soopay.net/spay/pay/payservice.do?busi_no=1&card_holder=&card_id=&card_type=0&charset=UTF-8&identity_code=&identity_type=1&media_id=18521035789&mer_id=25116&pub_pri_flag=1&res_format=HTML&service=user_reg&version=4.0&sign=
+[2014-12-08 15:18:26]-[]-[data] :plat response mer data:ret_code=00060700&ret_msg=数据校验未通过&sign=q61Ijm/wqpeAJcFjvzSNuM4uXvuVketcS5V0TtxrolA1EQ4y/758HiRO46FHTUUIgMfrslC/LN/iOCOxliDNpgvaYTVH0fAs2ffe9mVQXj9TbzwllS/XiBZb0yLEXsj+BE0FqOuvc1uuFYTVNDExhuFgsREycqCn9GyqGxsh+K4=
+[2014-12-08 15:18:26]-[]-[data] :interface fields:merId,goodsId,orderId,merDate,retCode,retMsg,version,sign
+[2014-12-08 15:18:26]-[]-[data] :response sign=ret_code=00060700&ret_msg=数据校验未通过
+[2014-12-08 15:18:26]-[]-[data] :response sign=q61Ijm/wqpeAJcFjvzSNuM4uXvuVketcS5V0TtxrolA1EQ4y/758HiRO46FHTUUIgMfrslC/LN/iOCOxliDNpgvaYTVH0fAs2ffe9mVQXj9TbzwllS/XiBZb0yLEXsj+BE0FqOuvc1uuFYTVNDExhuFgsREycqCn9GyqGxsh+K4=
+[2014-12-08 15:18:26]-[]-[data] :response plain=ret_code=00060700&ret_msg=数据校验未通过
+[2014-12-08 15:18:26]-[]-[data] :平台响应数据验签失败:plain=ret_code=00060700&ret_msg=数据校验未通过;sign=q61Ijm/wqpeAJcFjvzSNuM4uXvuVketcS5V0TtxrolA1EQ4y/758HiRO46FHTUUIgMfrslC/LN/iOCOxliDNpgvaYTVH0fAs2ffe9mVQXj9TbzwllS/XiBZb0yLEXsj+BE0FqOuvc1uuFYTVNDExhuFgsREycqCn9GyqGxsh+K4=
+[2014-12-08 15:18:28]-[]-[data] :Participate in the signature parameters：[busi_no=1&card_holder=&card_id=&card_type=0&charset=UTF-8&identity_code=&identity_type=1&media_id=18521035789&mer_id=25116&pub_pri_flag=1&res_format=HTML&service=user_reg&version=4.0],Merchant number is：[25116]
+[2014-12-08 15:18:28]-[]-[data] :The private key path for：/opt/lampp/htdocs/common/config/cert/25116_wenzhoudai.key.pem
+[2014-12-08 15:18:28]-[]-[data] :Request platform way=get
+[2014-12-08 15:18:28]-[]-[data] :Request platform signature string=
+[2014-12-08 15:18:28]-[]-[data] :Clear information request platform=busi_no=1&card_holder=&card_id=&card_type=0&charset=UTF-8&identity_code=&identity_type=1&media_id=18521035789&mer_id=25116&pub_pri_flag=1&res_format=HTML&service=user_reg&version=4.0
+[2014-12-08 15:18:28]-[]-[data] :The service user_reg request platform to get the address url=http://pay.soopay.net/spay/pay/payservice.do?busi_no=1&card_holder=&card_id=&card_type=0&charset=UTF-8&identity_code=&identity_type=1&media_id=18521035789&mer_id=25116&pub_pri_flag=1&res_format=HTML&service=user_reg&version=4.0&sign=
+[2014-12-08 15:18:28]-[]-[data] :plat response mer data:ret_code=00060700&ret_msg=数据校验未通过&sign=q61Ijm/wqpeAJcFjvzSNuM4uXvuVketcS5V0TtxrolA1EQ4y/758HiRO46FHTUUIgMfrslC/LN/iOCOxliDNpgvaYTVH0fAs2ffe9mVQXj9TbzwllS/XiBZb0yLEXsj+BE0FqOuvc1uuFYTVNDExhuFgsREycqCn9GyqGxsh+K4=
+[2014-12-08 15:18:28]-[]-[data] :interface fields:merId,goodsId,orderId,merDate,retCode,retMsg,version,sign
+[2014-12-08 15:18:28]-[]-[data] :response sign=ret_code=00060700&ret_msg=数据校验未通过
+[2014-12-08 15:18:28]-[]-[data] :response sign=q61Ijm/wqpeAJcFjvzSNuM4uXvuVketcS5V0TtxrolA1EQ4y/758HiRO46FHTUUIgMfrslC/LN/iOCOxliDNpgvaYTVH0fAs2ffe9mVQXj9TbzwllS/XiBZb0yLEXsj+BE0FqOuvc1uuFYTVNDExhuFgsREycqCn9GyqGxsh+K4=
+[2014-12-08 15:18:28]-[]-[data] :response plain=ret_code=00060700&ret_msg=数据校验未通过
+[2014-12-08 15:18:28]-[]-[data] :平台响应数据验签失败:plain=ret_code=00060700&ret_msg=数据校验未通过;sign=q61Ijm/wqpeAJcFjvzSNuM4uXvuVketcS5V0TtxrolA1EQ4y/758HiRO46FHTUUIgMfrslC/LN/iOCOxliDNpgvaYTVH0fAs2ffe9mVQXj9TbzwllS/XiBZb0yLEXsj+BE0FqOuvc1uuFYTVNDExhuFgsREycqCn9GyqGxsh+K4=
+[2014-12-08 15:21:20]-[]-[data] :Participate in the signature parameters：[busi_no=1&card_holder=&card_id=&card_type=0&charset=UTF-8&identity_code=&identity_type=1&media_id=18521035789&mer_id=25116&pub_pri_flag=1&res_format=HTML&service=user_reg&version=4.0],Merchant number is：[25116]
+[2014-12-08 15:21:20]-[]-[data] :The private key path for：/opt/lampp/htdocs/common/config/cert/25116_wenzhoudai.key.pem
+[2014-12-08 15:21:20]-[]-[data] :Request platform way=get
+[2014-12-08 15:21:20]-[]-[data] :Request platform signature string=
+[2014-12-08 15:21:20]-[]-[data] :Clear information request platform=busi_no=1&card_holder=&card_id=&card_type=0&charset=UTF-8&identity_code=&identity_type=1&media_id=18521035789&mer_id=25116&pub_pri_flag=1&res_format=HTML&service=user_reg&version=4.0
+[2014-12-08 15:21:20]-[]-[data] :The service user_reg request platform to get the address url=http://pay.soopay.net/spay/pay/payservice.do?busi_no=1&card_holder=&card_id=&card_type=0&charset=UTF-8&identity_code=&identity_type=1&media_id=18521035789&mer_id=25116&pub_pri_flag=1&res_format=HTML&service=user_reg&version=4.0&sign=
+[2014-12-08 15:21:20]-[]-[data] :plat response mer data:ret_code=00060700&ret_msg=数据校验未通过&sign=q61Ijm/wqpeAJcFjvzSNuM4uXvuVketcS5V0TtxrolA1EQ4y/758HiRO46FHTUUIgMfrslC/LN/iOCOxliDNpgvaYTVH0fAs2ffe9mVQXj9TbzwllS/XiBZb0yLEXsj+BE0FqOuvc1uuFYTVNDExhuFgsREycqCn9GyqGxsh+K4=
+[2014-12-08 15:21:20]-[]-[data] :interface fields:merId,goodsId,orderId,merDate,retCode,retMsg,version,sign
+[2014-12-08 15:21:20]-[]-[data] :response sign=ret_code=00060700&ret_msg=数据校验未通过
+[2014-12-08 15:21:20]-[]-[data] :response sign=q61Ijm/wqpeAJcFjvzSNuM4uXvuVketcS5V0TtxrolA1EQ4y/758HiRO46FHTUUIgMfrslC/LN/iOCOxliDNpgvaYTVH0fAs2ffe9mVQXj9TbzwllS/XiBZb0yLEXsj+BE0FqOuvc1uuFYTVNDExhuFgsREycqCn9GyqGxsh+K4=
+[2014-12-08 15:21:20]-[]-[data] :response plain=ret_code=00060700&ret_msg=数据校验未通过
+[2014-12-08 15:21:20]-[]-[data] :平台响应数据验签失败:plain=ret_code=00060700&ret_msg=数据校验未通过;sign=q61Ijm/wqpeAJcFjvzSNuM4uXvuVketcS5V0TtxrolA1EQ4y/758HiRO46FHTUUIgMfrslC/LN/iOCOxliDNpgvaYTVH0fAs2ffe9mVQXj9TbzwllS/XiBZb0yLEXsj+BE0FqOuvc1uuFYTVNDExhuFgsREycqCn9GyqGxsh+K4=
+[2014-12-08 15:21:20]-[]-[data] :Participate in the signature parameters：[busi_no=1&card_holder=&card_id=&card_type=0&charset=UTF-8&identity_code=&identity_type=1&media_id=18521035789&mer_id=25116&pub_pri_flag=1&res_format=HTML&service=user_reg&version=4.0],Merchant number is：[25116]
+[2014-12-08 15:21:20]-[]-[data] :The private key path for：/opt/lampp/htdocs/common/config/cert/25116_wenzhoudai.key.pem
+[2014-12-08 15:21:20]-[]-[data] :Request platform way=get
+[2014-12-08 15:21:20]-[]-[data] :Request platform signature string=
+[2014-12-08 15:21:20]-[]-[data] :Clear information request platform=busi_no=1&card_holder=&card_id=&card_type=0&charset=UTF-8&identity_code=&identity_type=1&media_id=18521035789&mer_id=25116&pub_pri_flag=1&res_format=HTML&service=user_reg&version=4.0
+[2014-12-08 15:21:20]-[]-[data] :The service user_reg request platform to get the address url=http://pay.soopay.net/spay/pay/payservice.do?busi_no=1&card_holder=&card_id=&card_type=0&charset=UTF-8&identity_code=&identity_type=1&media_id=18521035789&mer_id=25116&pub_pri_flag=1&res_format=HTML&service=user_reg&version=4.0&sign=
+[2014-12-08 15:21:21]-[]-[data] :plat response mer data:ret_code=00060700&ret_msg=数据校验未通过&sign=q61Ijm/wqpeAJcFjvzSNuM4uXvuVketcS5V0TtxrolA1EQ4y/758HiRO46FHTUUIgMfrslC/LN/iOCOxliDNpgvaYTVH0fAs2ffe9mVQXj9TbzwllS/XiBZb0yLEXsj+BE0FqOuvc1uuFYTVNDExhuFgsREycqCn9GyqGxsh+K4=
+[2014-12-08 15:21:21]-[]-[data] :interface fields:merId,goodsId,orderId,merDate,retCode,retMsg,version,sign
+[2014-12-08 15:21:21]-[]-[data] :response sign=ret_code=00060700&ret_msg=数据校验未通过
+[2014-12-08 15:21:21]-[]-[data] :response sign=q61Ijm/wqpeAJcFjvzSNuM4uXvuVketcS5V0TtxrolA1EQ4y/758HiRO46FHTUUIgMfrslC/LN/iOCOxliDNpgvaYTVH0fAs2ffe9mVQXj9TbzwllS/XiBZb0yLEXsj+BE0FqOuvc1uuFYTVNDExhuFgsREycqCn9GyqGxsh+K4=
+[2014-12-08 15:21:21]-[]-[data] :response plain=ret_code=00060700&ret_msg=数据校验未通过
+[2014-12-08 15:21:21]-[]-[data] :平台响应数据验签失败:plain=ret_code=00060700&ret_msg=数据校验未通过;sign=q61Ijm/wqpeAJcFjvzSNuM4uXvuVketcS5V0TtxrolA1EQ4y/758HiRO46FHTUUIgMfrslC/LN/iOCOxliDNpgvaYTVH0fAs2ffe9mVQXj9TbzwllS/XiBZb0yLEXsj+BE0FqOuvc1uuFYTVNDExhuFgsREycqCn9GyqGxsh+K4=
+[2014-12-08 15:22:32]-[]-[data] :Participate in the signature parameters：[busi_no=1&card_holder=&card_id=&card_type=0&charset=UTF-8&identity_code=&identity_type=1&media_id=18600651804&mer_id=25116&pub_pri_flag=1&res_format=HTML&service=user_reg&version=4.0],Merchant number is：[25116]
+[2014-12-08 15:22:32]-[]-[data] :The private key path for：/opt/lampp/htdocs/common/config/cert/25116_wenzhoudai.key.pem
+[2014-12-08 15:22:32]-[]-[data] :Request platform way=get
+[2014-12-08 15:22:32]-[]-[data] :Request platform signature string=
+[2014-12-08 15:22:32]-[]-[data] :Clear information request platform=busi_no=1&card_holder=&card_id=&card_type=0&charset=UTF-8&identity_code=&identity_type=1&media_id=18600651804&mer_id=25116&pub_pri_flag=1&res_format=HTML&service=user_reg&version=4.0
+[2014-12-08 15:22:32]-[]-[data] :The service user_reg request platform to get the address url=http://pay.soopay.net/spay/pay/payservice.do?busi_no=1&card_holder=&card_id=&card_type=0&charset=UTF-8&identity_code=&identity_type=1&media_id=18600651804&mer_id=25116&pub_pri_flag=1&res_format=HTML&service=user_reg&version=4.0&sign=
+[2014-12-08 15:22:32]-[]-[data] :plat response mer data:ret_code=00060700&ret_msg=数据校验未通过&sign=q61Ijm/wqpeAJcFjvzSNuM4uXvuVketcS5V0TtxrolA1EQ4y/758HiRO46FHTUUIgMfrslC/LN/iOCOxliDNpgvaYTVH0fAs2ffe9mVQXj9TbzwllS/XiBZb0yLEXsj+BE0FqOuvc1uuFYTVNDExhuFgsREycqCn9GyqGxsh+K4=
+[2014-12-08 15:22:32]-[]-[data] :interface fields:merId,goodsId,orderId,merDate,retCode,retMsg,version,sign
+[2014-12-08 15:22:32]-[]-[data] :response sign=ret_code=00060700&ret_msg=数据校验未通过
+[2014-12-08 15:22:32]-[]-[data] :response sign=q61Ijm/wqpeAJcFjvzSNuM4uXvuVketcS5V0TtxrolA1EQ4y/758HiRO46FHTUUIgMfrslC/LN/iOCOxliDNpgvaYTVH0fAs2ffe9mVQXj9TbzwllS/XiBZb0yLEXsj+BE0FqOuvc1uuFYTVNDExhuFgsREycqCn9GyqGxsh+K4=
+[2014-12-08 15:22:32]-[]-[data] :response plain=ret_code=00060700&ret_msg=数据校验未通过
+[2014-12-08 15:22:32]-[]-[data] :平台响应数据验签失败:plain=ret_code=00060700&ret_msg=数据校验未通过;sign=q61Ijm/wqpeAJcFjvzSNuM4uXvuVketcS5V0TtxrolA1EQ4y/758HiRO46FHTUUIgMfrslC/LN/iOCOxliDNpgvaYTVH0fAs2ffe9mVQXj9TbzwllS/XiBZb0yLEXsj+BE0FqOuvc1uuFYTVNDExhuFgsREycqCn9GyqGxsh+K4=
+[2014-12-08 15:22:34]-[]-[data] :Participate in the signature parameters：[busi_no=1&card_holder=&card_id=&card_type=0&charset=UTF-8&identity_code=&identity_type=1&media_id=18600651804&mer_id=25116&pub_pri_flag=1&res_format=HTML&service=user_reg&version=4.0],Merchant number is：[25116]
+[2014-12-08 15:22:34]-[]-[data] :The private key path for：/opt/lampp/htdocs/common/config/cert/25116_wenzhoudai.key.pem
+[2014-12-08 15:22:34]-[]-[data] :Request platform way=get
+[2014-12-08 15:22:34]-[]-[data] :Request platform signature string=
+[2014-12-08 15:22:34]-[]-[data] :Clear information request platform=busi_no=1&card_holder=&card_id=&card_type=0&charset=UTF-8&identity_code=&identity_type=1&media_id=18600651804&mer_id=25116&pub_pri_flag=1&res_format=HTML&service=user_reg&version=4.0
+[2014-12-08 15:22:34]-[]-[data] :The service user_reg request platform to get the address url=http://pay.soopay.net/spay/pay/payservice.do?busi_no=1&card_holder=&card_id=&card_type=0&charset=UTF-8&identity_code=&identity_type=1&media_id=18600651804&mer_id=25116&pub_pri_flag=1&res_format=HTML&service=user_reg&version=4.0&sign=
+[2014-12-08 15:22:34]-[]-[data] :plat response mer data:ret_code=00060700&ret_msg=数据校验未通过&sign=q61Ijm/wqpeAJcFjvzSNuM4uXvuVketcS5V0TtxrolA1EQ4y/758HiRO46FHTUUIgMfrslC/LN/iOCOxliDNpgvaYTVH0fAs2ffe9mVQXj9TbzwllS/XiBZb0yLEXsj+BE0FqOuvc1uuFYTVNDExhuFgsREycqCn9GyqGxsh+K4=
+[2014-12-08 15:22:34]-[]-[data] :interface fields:merId,goodsId,orderId,merDate,retCode,retMsg,version,sign
+[2014-12-08 15:22:34]-[]-[data] :response sign=ret_code=00060700&ret_msg=数据校验未通过
+[2014-12-08 15:22:34]-[]-[data] :response sign=q61Ijm/wqpeAJcFjvzSNuM4uXvuVketcS5V0TtxrolA1EQ4y/758HiRO46FHTUUIgMfrslC/LN/iOCOxliDNpgvaYTVH0fAs2ffe9mVQXj9TbzwllS/XiBZb0yLEXsj+BE0FqOuvc1uuFYTVNDExhuFgsREycqCn9GyqGxsh+K4=
+[2014-12-08 15:22:34]-[]-[data] :response plain=ret_code=00060700&ret_msg=数据校验未通过
+[2014-12-08 15:22:34]-[]-[data] :平台响应数据验签失败:plain=ret_code=00060700&ret_msg=数据校验未通过;sign=q61Ijm/wqpeAJcFjvzSNuM4uXvuVketcS5V0TtxrolA1EQ4y/758HiRO46FHTUUIgMfrslC/LN/iOCOxliDNpgvaYTVH0fAs2ffe9mVQXj9TbzwllS/XiBZb0yLEXsj+BE0FqOuvc1uuFYTVNDExhuFgsREycqCn9GyqGxsh+K4=
+[2014-12-08 15:22:38]-[]-[data] :Participate in the signature parameters：[busi_no=1&card_holder=&card_id=&card_type=0&charset=UTF-8&identity_code=&identity_type=1&media_id=18600651804&mer_id=25116&pub_pri_flag=1&res_format=HTML&service=user_reg&version=4.0],Merchant number is：[25116]
+[2014-12-08 15:22:38]-[]-[data] :The private key path for：/opt/lampp/htdocs/common/config/cert/25116_wenzhoudai.key.pem
+[2014-12-08 15:22:38]-[]-[data] :Request platform way=get
+[2014-12-08 15:22:38]-[]-[data] :Request platform signature string=
+[2014-12-08 15:22:38]-[]-[data] :Clear information request platform=busi_no=1&card_holder=&card_id=&card_type=0&charset=UTF-8&identity_code=&identity_type=1&media_id=18600651804&mer_id=25116&pub_pri_flag=1&res_format=HTML&service=user_reg&version=4.0
+[2014-12-08 15:22:38]-[]-[data] :The service user_reg request platform to get the address url=http://pay.soopay.net/spay/pay/payservice.do?busi_no=1&card_holder=&card_id=&card_type=0&charset=UTF-8&identity_code=&identity_type=1&media_id=18600651804&mer_id=25116&pub_pri_flag=1&res_format=HTML&service=user_reg&version=4.0&sign=
+[2014-12-08 15:22:38]-[]-[data] :plat response mer data:ret_code=00060700&ret_msg=数据校验未通过&sign=q61Ijm/wqpeAJcFjvzSNuM4uXvuVketcS5V0TtxrolA1EQ4y/758HiRO46FHTUUIgMfrslC/LN/iOCOxliDNpgvaYTVH0fAs2ffe9mVQXj9TbzwllS/XiBZb0yLEXsj+BE0FqOuvc1uuFYTVNDExhuFgsREycqCn9GyqGxsh+K4=
+[2014-12-08 15:22:38]-[]-[data] :interface fields:merId,goodsId,orderId,merDate,retCode,retMsg,version,sign
+[2014-12-08 15:22:38]-[]-[data] :response sign=ret_code=00060700&ret_msg=数据校验未通过
+[2014-12-08 15:22:38]-[]-[data] :response sign=q61Ijm/wqpeAJcFjvzSNuM4uXvuVketcS5V0TtxrolA1EQ4y/758HiRO46FHTUUIgMfrslC/LN/iOCOxliDNpgvaYTVH0fAs2ffe9mVQXj9TbzwllS/XiBZb0yLEXsj+BE0FqOuvc1uuFYTVNDExhuFgsREycqCn9GyqGxsh+K4=
+[2014-12-08 15:22:38]-[]-[data] :response plain=ret_code=00060700&ret_msg=数据校验未通过
+[2014-12-08 15:22:38]-[]-[data] :平台响应数据验签失败:plain=ret_code=00060700&ret_msg=数据校验未通过;sign=q61Ijm/wqpeAJcFjvzSNuM4uXvuVketcS5V0TtxrolA1EQ4y/758HiRO46FHTUUIgMfrslC/LN/iOCOxliDNpgvaYTVH0fAs2ffe9mVQXj9TbzwllS/XiBZb0yLEXsj+BE0FqOuvc1uuFYTVNDExhuFgsREycqCn9GyqGxsh+K4=
+[2014-12-08 15:24:39]-[]-[data] :Participate in the signature parameters：[busi_no=1&card_holder=&card_id=&card_type=0&charset=UTF-8&identity_code=&identity_type=1&media_id=18600651804&mer_id=25116&pub_pri_flag=1&res_format=HTML&service=user_reg&version=4.0],Merchant number is：[25116]
+[2014-12-08 15:24:39]-[]-[data] :The private key path for：/opt/lampp/htdocs/common/config/cert/25116_wenzhoudai.key.pem
+[2014-12-08 15:24:39]-[]-[data] :Request platform way=get
+[2014-12-08 15:24:39]-[]-[data] :Request platform signature string=
+[2014-12-08 15:24:39]-[]-[data] :Clear information request platform=busi_no=1&card_holder=&card_id=&card_type=0&charset=UTF-8&identity_code=&identity_type=1&media_id=18600651804&mer_id=25116&pub_pri_flag=1&res_format=HTML&service=user_reg&version=4.0
+[2014-12-08 15:24:39]-[]-[data] :The service user_reg request platform to get the address url=http://pay.soopay.net/spay/pay/payservice.do?busi_no=1&card_holder=&card_id=&card_type=0&charset=UTF-8&identity_code=&identity_type=1&media_id=18600651804&mer_id=25116&pub_pri_flag=1&res_format=HTML&service=user_reg&version=4.0&sign=
+[2014-12-08 15:24:39]-[]-[data] :plat response mer data:ret_code=00060700&ret_msg=数据校验未通过&sign=q61Ijm/wqpeAJcFjvzSNuM4uXvuVketcS5V0TtxrolA1EQ4y/758HiRO46FHTUUIgMfrslC/LN/iOCOxliDNpgvaYTVH0fAs2ffe9mVQXj9TbzwllS/XiBZb0yLEXsj+BE0FqOuvc1uuFYTVNDExhuFgsREycqCn9GyqGxsh+K4=
+[2014-12-08 15:24:39]-[]-[data] :interface fields:merId,goodsId,orderId,merDate,retCode,retMsg,version,sign
+[2014-12-08 15:24:39]-[]-[data] :response sign=ret_code=00060700&ret_msg=数据校验未通过
+[2014-12-08 15:24:39]-[]-[data] :response sign=q61Ijm/wqpeAJcFjvzSNuM4uXvuVketcS5V0TtxrolA1EQ4y/758HiRO46FHTUUIgMfrslC/LN/iOCOxliDNpgvaYTVH0fAs2ffe9mVQXj9TbzwllS/XiBZb0yLEXsj+BE0FqOuvc1uuFYTVNDExhuFgsREycqCn9GyqGxsh+K4=
+[2014-12-08 15:24:39]-[]-[data] :response plain=ret_code=00060700&ret_msg=数据校验未通过
+[2014-12-08 15:24:39]-[]-[data] :平台响应数据验签失败:plain=ret_code=00060700&ret_msg=数据校验未通过;sign=q61Ijm/wqpeAJcFjvzSNuM4uXvuVketcS5V0TtxrolA1EQ4y/758HiRO46FHTUUIgMfrslC/LN/iOCOxliDNpgvaYTVH0fAs2ffe9mVQXj9TbzwllS/XiBZb0yLEXsj+BE0FqOuvc1uuFYTVNDExhuFgsREycqCn9GyqGxsh+K4=
+[2014-12-08 15:27:58]-[]-[data] :Participate in the signature parameters：[busi_no=1&card_holder=&card_id=&card_type=0&charset=UTF-8&identity_code=&identity_type=1&media_id=18600651804&mer_id=25116&pub_pri_flag=1&res_format=HTML&service=user_reg&version=4.0],Merchant number is：[25116]
+[2014-12-08 15:27:58]-[]-[data] :The private key path for：/opt/lampp/htdocs/common/config/cert/25116_wenzhoudai.key.pem
+[2014-12-08 15:27:58]-[]-[data] :Request platform way=get
+[2014-12-08 15:27:58]-[]-[data] :Request platform signature string=
+[2014-12-08 15:27:58]-[]-[data] :Clear information request platform=busi_no=1&card_holder=&card_id=&card_type=0&charset=UTF-8&identity_code=&identity_type=1&media_id=18600651804&mer_id=25116&pub_pri_flag=1&res_format=HTML&service=user_reg&version=4.0
+[2014-12-08 15:27:58]-[]-[data] :The service user_reg request platform to get the address url=http://pay.soopay.net/spay/pay/payservice.do?busi_no=1&card_holder=&card_id=&card_type=0&charset=UTF-8&identity_code=&identity_type=1&media_id=18600651804&mer_id=25116&pub_pri_flag=1&res_format=HTML&service=user_reg&version=4.0&sign=
+[2014-12-08 15:27:59]-[]-[data] :plat response mer data:ret_code=00060700&ret_msg=数据校验未通过&sign=q61Ijm/wqpeAJcFjvzSNuM4uXvuVketcS5V0TtxrolA1EQ4y/758HiRO46FHTUUIgMfrslC/LN/iOCOxliDNpgvaYTVH0fAs2ffe9mVQXj9TbzwllS/XiBZb0yLEXsj+BE0FqOuvc1uuFYTVNDExhuFgsREycqCn9GyqGxsh+K4=
+[2014-12-08 15:27:59]-[]-[data] :interface fields:merId,goodsId,orderId,merDate,retCode,retMsg,version,sign
+[2014-12-08 15:27:59]-[]-[data] :response sign=ret_code=00060700&ret_msg=数据校验未通过
+[2014-12-08 15:27:59]-[]-[data] :response sign=q61Ijm/wqpeAJcFjvzSNuM4uXvuVketcS5V0TtxrolA1EQ4y/758HiRO46FHTUUIgMfrslC/LN/iOCOxliDNpgvaYTVH0fAs2ffe9mVQXj9TbzwllS/XiBZb0yLEXsj+BE0FqOuvc1uuFYTVNDExhuFgsREycqCn9GyqGxsh+K4=
+[2014-12-08 15:27:59]-[]-[data] :response plain=ret_code=00060700&ret_msg=数据校验未通过
+[2014-12-08 15:27:59]-[]-[data] :平台响应数据验签失败:plain=ret_code=00060700&ret_msg=数据校验未通过;sign=q61Ijm/wqpeAJcFjvzSNuM4uXvuVketcS5V0TtxrolA1EQ4y/758HiRO46FHTUUIgMfrslC/LN/iOCOxliDNpgvaYTVH0fAs2ffe9mVQXj9TbzwllS/XiBZb0yLEXsj+BE0FqOuvc1uuFYTVNDExhuFgsREycqCn9GyqGxsh+K4=
+[2014-12-08 15:33:10]-[]-[data] :Participate in the signature parameters：[busi_no=1&card_holder=&card_id=&card_type=0&charset=UTF-8&identity_code=&identity_type=1&media_id=18600651804&mer_id=25116&pub_pri_flag=1&res_format=HTML&service=user_reg&version=4.0],Merchant number is：[25116]
+[2014-12-08 15:33:10]-[]-[data] :The private key path for：/opt/lampp/htdocs/common/config/cert/25116_wenzhoudai.key.pem
+[2014-12-08 15:33:10]-[]-[data] :Request platform way=get
+[2014-12-08 15:33:10]-[]-[data] :Request platform signature string=
+[2014-12-08 15:33:10]-[]-[data] :Clear information request platform=busi_no=1&card_holder=&card_id=&card_type=0&charset=UTF-8&identity_code=&identity_type=1&media_id=18600651804&mer_id=25116&pub_pri_flag=1&res_format=HTML&service=user_reg&version=4.0
+[2014-12-08 15:33:10]-[]-[data] :The service user_reg request platform to get the address url=http://pay.soopay.net/spay/pay/payservice.do?busi_no=1&card_holder=&card_id=&card_type=0&charset=UTF-8&identity_code=&identity_type=1&media_id=18600651804&mer_id=25116&pub_pri_flag=1&res_format=HTML&service=user_reg&version=4.0&sign=
+[2014-12-08 15:33:10]-[]-[data] :plat response mer data:ret_code=00060700&ret_msg=数据校验未通过&sign=q61Ijm/wqpeAJcFjvzSNuM4uXvuVketcS5V0TtxrolA1EQ4y/758HiRO46FHTUUIgMfrslC/LN/iOCOxliDNpgvaYTVH0fAs2ffe9mVQXj9TbzwllS/XiBZb0yLEXsj+BE0FqOuvc1uuFYTVNDExhuFgsREycqCn9GyqGxsh+K4=
+[2014-12-08 15:33:10]-[]-[data] :interface fields:merId,goodsId,orderId,merDate,retCode,retMsg,version,sign
+[2014-12-08 15:33:10]-[]-[data] :response sign=ret_code=00060700&ret_msg=数据校验未通过
+[2014-12-08 15:33:10]-[]-[data] :response sign=q61Ijm/wqpeAJcFjvzSNuM4uXvuVketcS5V0TtxrolA1EQ4y/758HiRO46FHTUUIgMfrslC/LN/iOCOxliDNpgvaYTVH0fAs2ffe9mVQXj9TbzwllS/XiBZb0yLEXsj+BE0FqOuvc1uuFYTVNDExhuFgsREycqCn9GyqGxsh+K4=
+[2014-12-08 15:33:10]-[]-[data] :response plain=ret_code=00060700&ret_msg=数据校验未通过
+[2014-12-08 15:33:10]-[]-[data] :平台响应数据验签失败:plain=ret_code=00060700&ret_msg=数据校验未通过;sign=q61Ijm/wqpeAJcFjvzSNuM4uXvuVketcS5V0TtxrolA1EQ4y/758HiRO46FHTUUIgMfrslC/LN/iOCOxliDNpgvaYTVH0fAs2ffe9mVQXj9TbzwllS/XiBZb0yLEXsj+BE0FqOuvc1uuFYTVNDExhuFgsREycqCn9GyqGxsh+K4=
+[2014-12-08 15:40:32]-[]-[data] :Participate in the signature parameters：[busi_no=1&card_holder=&card_id=&card_type=0&charset=UTF-8&identity_code=&identity_type=1&media_id=18600651804&mer_id=25116&pub_pri_flag=1&res_format=HTML&service=user_reg&version=4.0],Merchant number is：[25116]
+[2014-12-08 15:40:32]-[]-[data] :The private key path for：/opt/lampp/htdocs/common/config/cert/25116_wenzhoudai.key.pem
+[2014-12-08 15:40:32]-[]-[data] :Request platform way=get
+[2014-12-08 15:40:32]-[]-[data] :Request platform signature string=
+[2014-12-08 15:40:32]-[]-[data] :Clear information request platform=busi_no=1&card_holder=&card_id=&card_type=0&charset=UTF-8&identity_code=&identity_type=1&media_id=18600651804&mer_id=25116&pub_pri_flag=1&res_format=HTML&service=user_reg&version=4.0
+[2014-12-08 15:40:32]-[]-[data] :The service user_reg request platform to get the address url=http://pay.soopay.net/spay/pay/payservice.do?busi_no=1&card_holder=&card_id=&card_type=0&charset=UTF-8&identity_code=&identity_type=1&media_id=18600651804&mer_id=25116&pub_pri_flag=1&res_format=HTML&service=user_reg&version=4.0&sign=
+[2014-12-08 15:40:32]-[]-[data] :plat response mer data:ret_code=00060700&ret_msg=数据校验未通过&sign=q61Ijm/wqpeAJcFjvzSNuM4uXvuVketcS5V0TtxrolA1EQ4y/758HiRO46FHTUUIgMfrslC/LN/iOCOxliDNpgvaYTVH0fAs2ffe9mVQXj9TbzwllS/XiBZb0yLEXsj+BE0FqOuvc1uuFYTVNDExhuFgsREycqCn9GyqGxsh+K4=
+[2014-12-08 15:40:32]-[]-[data] :interface fields:merId,goodsId,orderId,merDate,retCode,retMsg,version,sign
+[2014-12-08 15:40:32]-[]-[data] :response sign=ret_code=00060700&ret_msg=数据校验未通过
+[2014-12-08 15:40:32]-[]-[data] :response sign=q61Ijm/wqpeAJcFjvzSNuM4uXvuVketcS5V0TtxrolA1EQ4y/758HiRO46FHTUUIgMfrslC/LN/iOCOxliDNpgvaYTVH0fAs2ffe9mVQXj9TbzwllS/XiBZb0yLEXsj+BE0FqOuvc1uuFYTVNDExhuFgsREycqCn9GyqGxsh+K4=
+[2014-12-08 15:40:32]-[]-[data] :response plain=ret_code=00060700&ret_msg=数据校验未通过
+[2014-12-08 15:40:32]-[]-[data] :平台响应数据验签失败:plain=ret_code=00060700&ret_msg=数据校验未通过;sign=q61Ijm/wqpeAJcFjvzSNuM4uXvuVketcS5V0TtxrolA1EQ4y/758HiRO46FHTUUIgMfrslC/LN/iOCOxliDNpgvaYTVH0fAs2ffe9mVQXj9TbzwllS/XiBZb0yLEXsj+BE0FqOuvc1uuFYTVNDExhuFgsREycqCn9GyqGxsh+K4=
+[2014-12-08 15:40:34]-[]-[data] :Participate in the signature parameters：[busi_no=1&card_holder=&card_id=&card_type=0&charset=UTF-8&identity_code=&identity_type=1&media_id=18600651804&mer_id=25116&pub_pri_flag=1&res_format=HTML&service=user_reg&version=4.0],Merchant number is：[25116]
+[2014-12-08 15:40:34]-[]-[data] :The private key path for：/opt/lampp/htdocs/common/config/cert/25116_wenzhoudai.key.pem
+[2014-12-08 15:40:34]-[]-[data] :Request platform way=get
+[2014-12-08 15:40:34]-[]-[data] :Request platform signature string=
+[2014-12-08 15:40:34]-[]-[data] :Clear information request platform=busi_no=1&card_holder=&card_id=&card_type=0&charset=UTF-8&identity_code=&identity_type=1&media_id=18600651804&mer_id=25116&pub_pri_flag=1&res_format=HTML&service=user_reg&version=4.0
+[2014-12-08 15:40:34]-[]-[data] :The service user_reg request platform to get the address url=http://pay.soopay.net/spay/pay/payservice.do?busi_no=1&card_holder=&card_id=&card_type=0&charset=UTF-8&identity_code=&identity_type=1&media_id=18600651804&mer_id=25116&pub_pri_flag=1&res_format=HTML&service=user_reg&version=4.0&sign=
+[2014-12-08 15:40:34]-[]-[data] :plat response mer data:ret_code=00060700&ret_msg=数据校验未通过&sign=q61Ijm/wqpeAJcFjvzSNuM4uXvuVketcS5V0TtxrolA1EQ4y/758HiRO46FHTUUIgMfrslC/LN/iOCOxliDNpgvaYTVH0fAs2ffe9mVQXj9TbzwllS/XiBZb0yLEXsj+BE0FqOuvc1uuFYTVNDExhuFgsREycqCn9GyqGxsh+K4=
+[2014-12-08 15:40:34]-[]-[data] :interface fields:merId,goodsId,orderId,merDate,retCode,retMsg,version,sign
+[2014-12-08 15:40:34]-[]-[data] :response sign=ret_code=00060700&ret_msg=数据校验未通过
+[2014-12-08 15:40:34]-[]-[data] :response sign=q61Ijm/wqpeAJcFjvzSNuM4uXvuVketcS5V0TtxrolA1EQ4y/758HiRO46FHTUUIgMfrslC/LN/iOCOxliDNpgvaYTVH0fAs2ffe9mVQXj9TbzwllS/XiBZb0yLEXsj+BE0FqOuvc1uuFYTVNDExhuFgsREycqCn9GyqGxsh+K4=
+[2014-12-08 15:40:34]-[]-[data] :response plain=ret_code=00060700&ret_msg=数据校验未通过
+[2014-12-08 15:40:34]-[]-[data] :平台响应数据验签失败:plain=ret_code=00060700&ret_msg=数据校验未通过;sign=q61Ijm/wqpeAJcFjvzSNuM4uXvuVketcS5V0TtxrolA1EQ4y/758HiRO46FHTUUIgMfrslC/LN/iOCOxliDNpgvaYTVH0fAs2ffe9mVQXj9TbzwllS/XiBZb0yLEXsj+BE0FqOuvc1uuFYTVNDExhuFgsREycqCn9GyqGxsh+K4=
+[2014-12-08 15:40:35]-[]-[data] :Participate in the signature parameters：[busi_no=1&card_holder=&card_id=&card_type=0&charset=UTF-8&identity_code=&identity_type=1&media_id=18600651804&mer_id=25116&pub_pri_flag=1&res_format=HTML&service=user_reg&version=4.0],Merchant number is：[25116]
+[2014-12-08 15:40:35]-[]-[data] :The private key path for：/opt/lampp/htdocs/common/config/cert/25116_wenzhoudai.key.pem
+[2014-12-08 15:40:35]-[]-[data] :Request platform way=get
+[2014-12-08 15:40:35]-[]-[data] :Request platform signature string=
+[2014-12-08 15:40:35]-[]-[data] :Clear information request platform=busi_no=1&card_holder=&card_id=&card_type=0&charset=UTF-8&identity_code=&identity_type=1&media_id=18600651804&mer_id=25116&pub_pri_flag=1&res_format=HTML&service=user_reg&version=4.0
+[2014-12-08 15:40:35]-[]-[data] :The service user_reg request platform to get the address url=http://pay.soopay.net/spay/pay/payservice.do?busi_no=1&card_holder=&card_id=&card_type=0&charset=UTF-8&identity_code=&identity_type=1&media_id=18600651804&mer_id=25116&pub_pri_flag=1&res_format=HTML&service=user_reg&version=4.0&sign=
+[2014-12-08 15:40:36]-[]-[data] :plat response mer data:ret_code=00060700&ret_msg=数据校验未通过&sign=q61Ijm/wqpeAJcFjvzSNuM4uXvuVketcS5V0TtxrolA1EQ4y/758HiRO46FHTUUIgMfrslC/LN/iOCOxliDNpgvaYTVH0fAs2ffe9mVQXj9TbzwllS/XiBZb0yLEXsj+BE0FqOuvc1uuFYTVNDExhuFgsREycqCn9GyqGxsh+K4=
+[2014-12-08 15:40:36]-[]-[data] :interface fields:merId,goodsId,orderId,merDate,retCode,retMsg,version,sign
+[2014-12-08 15:40:36]-[]-[data] :response sign=ret_code=00060700&ret_msg=数据校验未通过
+[2014-12-08 15:40:36]-[]-[data] :response sign=q61Ijm/wqpeAJcFjvzSNuM4uXvuVketcS5V0TtxrolA1EQ4y/758HiRO46FHTUUIgMfrslC/LN/iOCOxliDNpgvaYTVH0fAs2ffe9mVQXj9TbzwllS/XiBZb0yLEXsj+BE0FqOuvc1uuFYTVNDExhuFgsREycqCn9GyqGxsh+K4=
+[2014-12-08 15:40:36]-[]-[data] :response plain=ret_code=00060700&ret_msg=数据校验未通过
+[2014-12-08 15:40:36]-[]-[data] :平台响应数据验签失败:plain=ret_code=00060700&ret_msg=数据校验未通过;sign=q61Ijm/wqpeAJcFjvzSNuM4uXvuVketcS5V0TtxrolA1EQ4y/758HiRO46FHTUUIgMfrslC/LN/iOCOxliDNpgvaYTVH0fAs2ffe9mVQXj9TbzwllS/XiBZb0yLEXsj+BE0FqOuvc1uuFYTVNDExhuFgsREycqCn9GyqGxsh+K4=
+[2014-12-08 15:43:59]-[]-[data] :Participate in the signature parameters：[busi_no=1&card_holder=&card_id=&card_type=0&charset=UTF-8&identity_code=&identity_type=1&media_id=18600651804&mer_id=25116&pub_pri_flag=1&res_format=HTML&service=user_reg&version=4.0],Merchant number is：[25116]
+[2014-12-08 15:43:59]-[]-[data] :The private key path for：/opt/lampp/htdocs/common/config/cert/25116_wenzhoudai.key.pem
+[2014-12-08 15:43:59]-[]-[data] :Request platform way=get
+[2014-12-08 15:43:59]-[]-[data] :Request platform signature string=
+[2014-12-08 15:43:59]-[]-[data] :Clear information request platform=busi_no=1&card_holder=&card_id=&card_type=0&charset=UTF-8&identity_code=&identity_type=1&media_id=18600651804&mer_id=25116&pub_pri_flag=1&res_format=HTML&service=user_reg&version=4.0
+[2014-12-08 15:43:59]-[]-[data] :The service user_reg request platform to get the address url=http://pay.soopay.net/spay/pay/payservice.do?busi_no=1&card_holder=&card_id=&card_type=0&charset=UTF-8&identity_code=&identity_type=1&media_id=18600651804&mer_id=25116&pub_pri_flag=1&res_format=HTML&service=user_reg&version=4.0&sign=
+[2014-12-08 15:43:59]-[]-[data] :plat response mer data:ret_code=00060700&ret_msg=数据校验未通过&sign=q61Ijm/wqpeAJcFjvzSNuM4uXvuVketcS5V0TtxrolA1EQ4y/758HiRO46FHTUUIgMfrslC/LN/iOCOxliDNpgvaYTVH0fAs2ffe9mVQXj9TbzwllS/XiBZb0yLEXsj+BE0FqOuvc1uuFYTVNDExhuFgsREycqCn9GyqGxsh+K4=
+[2014-12-08 15:43:59]-[]-[data] :interface fields:merId,goodsId,orderId,merDate,retCode,retMsg,version,sign
+[2014-12-08 15:43:59]-[]-[data] :response sign=ret_code=00060700&ret_msg=数据校验未通过
+[2014-12-08 15:43:59]-[]-[data] :response sign=q61Ijm/wqpeAJcFjvzSNuM4uXvuVketcS5V0TtxrolA1EQ4y/758HiRO46FHTUUIgMfrslC/LN/iOCOxliDNpgvaYTVH0fAs2ffe9mVQXj9TbzwllS/XiBZb0yLEXsj+BE0FqOuvc1uuFYTVNDExhuFgsREycqCn9GyqGxsh+K4=
+[2014-12-08 15:43:59]-[]-[data] :response plain=ret_code=00060700&ret_msg=数据校验未通过
+[2014-12-08 15:43:59]-[]-[data] :平台响应数据验签失败:plain=ret_code=00060700&ret_msg=数据校验未通过;sign=q61Ijm/wqpeAJcFjvzSNuM4uXvuVketcS5V0TtxrolA1EQ4y/758HiRO46FHTUUIgMfrslC/LN/iOCOxliDNpgvaYTVH0fAs2ffe9mVQXj9TbzwllS/XiBZb0yLEXsj+BE0FqOuvc1uuFYTVNDExhuFgsREycqCn9GyqGxsh+K4=
+[2014-12-08 15:44:42]-[]-[data] :Participate in the signature parameters：[busi_no=1&card_holder=&card_id=&card_type=0&charset=UTF-8&identity_code=&identity_type=1&media_id=18600651804&mer_id=25116&pub_pri_flag=1&res_format=HTML&service=user_reg&version=4.0],Merchant number is：[25116]
+[2014-12-08 15:44:42]-[]-[data] :The private key path for：/opt/lampp/htdocs/common/config/cert/25116_wenzhoudai.key.pem
+[2014-12-08 15:44:42]-[]-[data] :Request platform way=get
+[2014-12-08 15:44:42]-[]-[data] :Request platform signature string=
+[2014-12-08 15:44:42]-[]-[data] :Clear information request platform=busi_no=1&card_holder=&card_id=&card_type=0&charset=UTF-8&identity_code=&identity_type=1&media_id=18600651804&mer_id=25116&pub_pri_flag=1&res_format=HTML&service=user_reg&version=4.0
+[2014-12-08 15:44:42]-[]-[data] :The service user_reg request platform to get the address url=http://pay.soopay.net/spay/pay/payservice.do?busi_no=1&card_holder=&card_id=&card_type=0&charset=UTF-8&identity_code=&identity_type=1&media_id=18600651804&mer_id=25116&pub_pri_flag=1&res_format=HTML&service=user_reg&version=4.0&sign=
+[2014-12-08 15:44:42]-[]-[data] :plat response mer data:ret_code=00060700&ret_msg=数据校验未通过&sign=q61Ijm/wqpeAJcFjvzSNuM4uXvuVketcS5V0TtxrolA1EQ4y/758HiRO46FHTUUIgMfrslC/LN/iOCOxliDNpgvaYTVH0fAs2ffe9mVQXj9TbzwllS/XiBZb0yLEXsj+BE0FqOuvc1uuFYTVNDExhuFgsREycqCn9GyqGxsh+K4=
+[2014-12-08 15:44:42]-[]-[data] :interface fields:merId,goodsId,orderId,merDate,retCode,retMsg,version,sign
+[2014-12-08 15:44:42]-[]-[data] :response sign=ret_code=00060700&ret_msg=数据校验未通过
+[2014-12-08 15:44:42]-[]-[data] :response sign=q61Ijm/wqpeAJcFjvzSNuM4uXvuVketcS5V0TtxrolA1EQ4y/758HiRO46FHTUUIgMfrslC/LN/iOCOxliDNpgvaYTVH0fAs2ffe9mVQXj9TbzwllS/XiBZb0yLEXsj+BE0FqOuvc1uuFYTVNDExhuFgsREycqCn9GyqGxsh+K4=
+[2014-12-08 15:44:42]-[]-[data] :response plain=ret_code=00060700&ret_msg=数据校验未通过
+[2014-12-08 15:44:42]-[]-[data] :平台响应数据验签失败:plain=ret_code=00060700&ret_msg=数据校验未通过;sign=q61Ijm/wqpeAJcFjvzSNuM4uXvuVketcS5V0TtxrolA1EQ4y/758HiRO46FHTUUIgMfrslC/LN/iOCOxliDNpgvaYTVH0fAs2ffe9mVQXj9TbzwllS/XiBZb0yLEXsj+BE0FqOuvc1uuFYTVNDExhuFgsREycqCn9GyqGxsh+K4=

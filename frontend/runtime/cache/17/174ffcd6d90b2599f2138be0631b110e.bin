@@ -1,0 +1,1 @@
+a:2:{i:0;s:1:"5";i:1;O:32:"yii\caching\ExpressionDependency":4:{s:10:"expression";s:6:"time()";s:6:"params";N;s:4:"data";i:1418954237;s:8:"reusable";b:0;}}

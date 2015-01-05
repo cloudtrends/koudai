@@ -1,0 +1,25 @@
+
+
+<html>
+<script src="http://libs.baidu.com/jquery/1.9.0/jquery.js"></script>
+It Works!!!
+
+	
+<script>
+ 
+function abc()
+{
+	var url = 'http://www.koudailc.com/credit/market-for-app';  
+	$.ajax(url, {  
+		data: { },   
+		dataType: 'jsonp',
+		success: function(data) {  
+			console.log(data); 
+		}  
+	});  
+}
+
+
+</script>
+<input type="button" onclick="abc()" value="click!" />
+</html>

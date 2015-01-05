@@ -1,0 +1,821 @@
+2014-12-09 14:43:00 [-][-][-][info][console\controllers\KoudaibaoController] begin action
+2014-12-09 14:43:00 [-][-][-][info][console\controllers\KoudaibaoController] end action
+2014-12-09 14:43:00 [-][-][-][info][application] $_SERVER = [
+    'HOSTNAME' => 'koudai.dev'
+    'SELINUX_ROLE_REQUESTED' => ''
+    'TERM' => 'ansi'
+    'SHELL' => '/bin/bash'
+    'HISTSIZE' => '1000'
+    'SSH_CLIENT' => '192.168.1.131 51482 22'
+    'SELINUX_USE_CURRENT_RANGE' => ''
+    'QTDIR' => '/usr/lib64/qt-3.3'
+    'QTINC' => '/usr/lib64/qt-3.3/include'
+    'SSH_TTY' => '/dev/pts/5'
+    'USER' => 'root'
+    'LS_COLORS' => 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=01;05;37;41:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arj=01;31:*.taz=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lz=01;31:*.xz=01;31:*.bz2=01;31:*.tbz=01;31:*.tbz2=01;31:*.bz=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.rar=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.jpg=01;35:*.jpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.axv=01;35:*.anx=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=01;36:*.au=01;36:*.flac=01;36:*.mid=01;36:*.midi=01;36:*.mka=01;36:*.mp3=01;36:*.mpc=01;36:*.ogg=01;36:*.ra=01;36:*.wav=01;36:*.axa=01;36:*.oga=01;36:*.spx=01;36:*.xspf=01;36:'
+    'MAIL' => '/var/spool/mail/root'
+    'PATH' => '/opt/lampp/bin:/opt/lampp/:/usr/lib64/qt-3.3/bin:/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin:/root/bin'
+    'PWD' => '/opt/lampp/htdocs/console/runtime'
+    'LANG' => 'en_US.UTF-8'
+    'PS1' => '[\\u@\\h \\w]$ '
+    'SELINUX_LEVEL_REQUESTED' => ''
+    'SSH_ASKPASS' => '/usr/libexec/openssh/gnome-ssh-askpass'
+    'HISTCONTROL' => 'ignoredups'
+    'SHLVL' => '1'
+    'HOME' => '/root'
+    'LOGNAME' => 'root'
+    'QTLIB' => '/usr/lib64/qt-3.3/lib'
+    'CVS_RSH' => 'ssh'
+    'SSH_CONNECTION' => '192.168.1.131 51482 192.168.1.214 22'
+    'LESSOPEN' => '||/usr/bin/lesspipe.sh %s'
+    'G_BROKEN_FILENAMES' => '1'
+    '_' => '/opt/lampp/bin/php'
+    'OLDPWD' => '/opt/lampp/htdocs/console/runtime/logs'
+    'PHP_SELF' => '/opt/lampp/htdocs/yii'
+    'SCRIPT_NAME' => '/opt/lampp/htdocs/yii'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/yii'
+    'PATH_TRANSLATED' => '/opt/lampp/htdocs/yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1418107380.5871
+    'REQUEST_TIME' => 1418107380
+    'argv' => [
+        0 => '/opt/lampp/htdocs/yii'
+        1 => 'koudaibao/stat'
+    ]
+    'argc' => 2
+]
+2014-12-10 01:00:01 [-][-][-][info][console\controllers\KoudaibaoController] begin action
+2014-12-10 01:00:01 [-][-][-][info][console\controllers\KoudaibaoController] end action
+2014-12-10 01:00:01 [-][-][-][info][application] $_SERVER = [
+    'SHELL' => '/bin/sh'
+    'USER' => 'root'
+    'PATH' => '/usr/bin:/bin'
+    'PWD' => '/root'
+    'LANG' => 'en_US.UTF-8'
+    'SHLVL' => '1'
+    'HOME' => '/root'
+    'LOGNAME' => 'root'
+    '_' => '/opt/lampp/bin/php'
+    'PHP_SELF' => '/opt/lampp/htdocs/yii'
+    'SCRIPT_NAME' => '/opt/lampp/htdocs/yii'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/yii'
+    'PATH_TRANSLATED' => '/opt/lampp/htdocs/yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1418144401.4424
+    'REQUEST_TIME' => 1418144401
+    'argv' => [
+        0 => '/opt/lampp/htdocs/yii'
+        1 => 'koudaibao/stat'
+    ]
+    'argc' => 2
+]
+2014-12-11 01:00:01 [-][-][-][info][console\controllers\KoudaibaoController] begin action
+2014-12-11 01:00:01 [-][-][-][info][console\controllers\KoudaibaoController] end action
+2014-12-11 01:00:01 [-][-][-][info][application] $_SERVER = [
+    'SHELL' => '/bin/sh'
+    'USER' => 'root'
+    'PATH' => '/usr/bin:/bin'
+    'PWD' => '/root'
+    'LANG' => 'en_US.UTF-8'
+    'SHLVL' => '1'
+    'HOME' => '/root'
+    'LOGNAME' => 'root'
+    '_' => '/opt/lampp/bin/php'
+    'PHP_SELF' => '/opt/lampp/htdocs/yii'
+    'SCRIPT_NAME' => '/opt/lampp/htdocs/yii'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/yii'
+    'PATH_TRANSLATED' => '/opt/lampp/htdocs/yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1418230801.9286
+    'REQUEST_TIME' => 1418230801
+    'argv' => [
+        0 => '/opt/lampp/htdocs/yii'
+        1 => 'koudaibao/stat'
+    ]
+    'argc' => 2
+]
+2014-12-12 01:00:01 [-][-][-][info][console\controllers\KoudaibaoController] begin action
+2014-12-12 01:00:01 [-][-][-][info][console\controllers\KoudaibaoController] end action
+2014-12-12 01:00:01 [-][-][-][info][application] $_SERVER = [
+    'SHELL' => '/bin/sh'
+    'USER' => 'root'
+    'PATH' => '/usr/bin:/bin'
+    'PWD' => '/root'
+    'LANG' => 'en_US.UTF-8'
+    'SHLVL' => '1'
+    'HOME' => '/root'
+    'LOGNAME' => 'root'
+    '_' => '/opt/lampp/bin/php'
+    'PHP_SELF' => '/opt/lampp/htdocs/yii'
+    'SCRIPT_NAME' => '/opt/lampp/htdocs/yii'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/yii'
+    'PATH_TRANSLATED' => '/opt/lampp/htdocs/yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1418317201.2549
+    'REQUEST_TIME' => 1418317201
+    'argv' => [
+        0 => '/opt/lampp/htdocs/yii'
+        1 => 'koudaibao/stat'
+    ]
+    'argc' => 2
+]
+2014-12-13 01:00:01 [-][-][-][info][console\controllers\KoudaibaoController] begin action
+2014-12-13 01:00:01 [-][-][-][info][console\controllers\KoudaibaoController] end action
+2014-12-13 01:00:01 [-][-][-][info][application] $_SERVER = [
+    'SHELL' => '/bin/sh'
+    'USER' => 'root'
+    'PATH' => '/usr/bin:/bin'
+    'PWD' => '/root'
+    'LANG' => 'en_US.UTF-8'
+    'SHLVL' => '1'
+    'HOME' => '/root'
+    'LOGNAME' => 'root'
+    '_' => '/opt/lampp/bin/php'
+    'PHP_SELF' => '/opt/lampp/htdocs/yii'
+    'SCRIPT_NAME' => '/opt/lampp/htdocs/yii'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/yii'
+    'PATH_TRANSLATED' => '/opt/lampp/htdocs/yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1418403601.1362
+    'REQUEST_TIME' => 1418403601
+    'argv' => [
+        0 => '/opt/lampp/htdocs/yii'
+        1 => 'koudaibao/stat'
+    ]
+    'argc' => 2
+]
+2014-12-14 01:00:01 [-][-][-][info][console\controllers\KoudaibaoController] begin action
+2014-12-14 01:00:01 [-][-][-][info][console\controllers\KoudaibaoController] end action
+2014-12-14 01:00:01 [-][-][-][info][application] $_SERVER = [
+    'SHELL' => '/bin/sh'
+    'USER' => 'root'
+    'PATH' => '/usr/bin:/bin'
+    'PWD' => '/root'
+    'LANG' => 'en_US.UTF-8'
+    'SHLVL' => '1'
+    'HOME' => '/root'
+    'LOGNAME' => 'root'
+    '_' => '/opt/lampp/bin/php'
+    'PHP_SELF' => '/opt/lampp/htdocs/yii'
+    'SCRIPT_NAME' => '/opt/lampp/htdocs/yii'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/yii'
+    'PATH_TRANSLATED' => '/opt/lampp/htdocs/yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1418490001.3841
+    'REQUEST_TIME' => 1418490001
+    'argv' => [
+        0 => '/opt/lampp/htdocs/yii'
+        1 => 'koudaibao/stat'
+    ]
+    'argc' => 2
+]
+2014-12-15 01:00:01 [-][-][-][info][console\controllers\KoudaibaoController] begin action
+2014-12-15 01:00:01 [-][-][-][info][console\controllers\KoudaibaoController] end action
+2014-12-15 01:00:01 [-][-][-][info][application] $_SERVER = [
+    'SHELL' => '/bin/sh'
+    'USER' => 'root'
+    'PATH' => '/usr/bin:/bin'
+    'PWD' => '/root'
+    'LANG' => 'en_US.UTF-8'
+    'SHLVL' => '1'
+    'HOME' => '/root'
+    'LOGNAME' => 'root'
+    '_' => '/opt/lampp/bin/php'
+    'PHP_SELF' => '/opt/lampp/htdocs/yii'
+    'SCRIPT_NAME' => '/opt/lampp/htdocs/yii'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/yii'
+    'PATH_TRANSLATED' => '/opt/lampp/htdocs/yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1418576401.4592
+    'REQUEST_TIME' => 1418576401
+    'argv' => [
+        0 => '/opt/lampp/htdocs/yii'
+        1 => 'koudaibao/stat'
+    ]
+    'argc' => 2
+]
+2014-12-16 01:00:02 [-][-][-][info][console\controllers\KoudaibaoController] begin action
+2014-12-16 01:00:02 [-][-][-][info][console\controllers\KoudaibaoController] end action
+2014-12-16 01:00:02 [-][-][-][info][application] $_SERVER = [
+    'SHELL' => '/bin/sh'
+    'USER' => 'root'
+    'PATH' => '/usr/bin:/bin'
+    'PWD' => '/root'
+    'LANG' => 'en_US.UTF-8'
+    'SHLVL' => '1'
+    'HOME' => '/root'
+    'LOGNAME' => 'root'
+    '_' => '/opt/lampp/bin/php'
+    'PHP_SELF' => '/opt/lampp/htdocs/yii'
+    'SCRIPT_NAME' => '/opt/lampp/htdocs/yii'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/yii'
+    'PATH_TRANSLATED' => '/opt/lampp/htdocs/yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1418662802.0045
+    'REQUEST_TIME' => 1418662802
+    'argv' => [
+        0 => '/opt/lampp/htdocs/yii'
+        1 => 'koudaibao/stat'
+    ]
+    'argc' => 2
+]
+2014-12-17 01:00:01 [-][-][-][info][console\controllers\KoudaibaoController] begin action
+2014-12-17 01:00:01 [-][-][-][info][console\controllers\KoudaibaoController] end action
+2014-12-17 01:00:01 [-][-][-][info][application] $_SERVER = [
+    'SHELL' => '/bin/sh'
+    'USER' => 'root'
+    'PATH' => '/usr/bin:/bin'
+    'PWD' => '/root'
+    'LANG' => 'en_US.UTF-8'
+    'SHLVL' => '1'
+    'HOME' => '/root'
+    'LOGNAME' => 'root'
+    '_' => '/opt/lampp/bin/php'
+    'PHP_SELF' => '/opt/lampp/htdocs/yii'
+    'SCRIPT_NAME' => '/opt/lampp/htdocs/yii'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/yii'
+    'PATH_TRANSLATED' => '/opt/lampp/htdocs/yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1418749201.7839
+    'REQUEST_TIME' => 1418749201
+    'argv' => [
+        0 => '/opt/lampp/htdocs/yii'
+        1 => 'koudaibao/stat'
+    ]
+    'argc' => 2
+]
+2014-12-18 01:00:01 [-][-][-][info][console\controllers\KoudaibaoController] begin action
+2014-12-18 01:00:01 [-][-][-][info][console\controllers\KoudaibaoController] end action
+2014-12-18 01:00:01 [-][-][-][info][application] $_SERVER = [
+    'SHELL' => '/bin/sh'
+    'USER' => 'root'
+    'PATH' => '/usr/bin:/bin'
+    'PWD' => '/root'
+    'LANG' => 'en_US.UTF-8'
+    'SHLVL' => '1'
+    'HOME' => '/root'
+    'LOGNAME' => 'root'
+    '_' => '/opt/lampp/bin/php'
+    'PHP_SELF' => '/opt/lampp/htdocs/yii'
+    'SCRIPT_NAME' => '/opt/lampp/htdocs/yii'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/yii'
+    'PATH_TRANSLATED' => '/opt/lampp/htdocs/yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1418835601.092
+    'REQUEST_TIME' => 1418835601
+    'argv' => [
+        0 => '/opt/lampp/htdocs/yii'
+        1 => 'koudaibao/stat'
+    ]
+    'argc' => 2
+]
+2014-12-19 01:00:01 [-][-][-][info][console\controllers\KoudaibaoController] begin action
+2014-12-19 01:00:01 [-][-][-][info][console\controllers\KoudaibaoController] end action
+2014-12-19 01:00:01 [-][-][-][info][application] $_SERVER = [
+    'SHELL' => '/bin/sh'
+    'USER' => 'root'
+    'PATH' => '/usr/bin:/bin'
+    'PWD' => '/root'
+    'LANG' => 'en_US.UTF-8'
+    'SHLVL' => '1'
+    'HOME' => '/root'
+    'LOGNAME' => 'root'
+    '_' => '/opt/lampp/bin/php'
+    'PHP_SELF' => '/opt/lampp/htdocs/yii'
+    'SCRIPT_NAME' => '/opt/lampp/htdocs/yii'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/yii'
+    'PATH_TRANSLATED' => '/opt/lampp/htdocs/yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1418922001.7598
+    'REQUEST_TIME' => 1418922001
+    'argv' => [
+        0 => '/opt/lampp/htdocs/yii'
+        1 => 'koudaibao/stat'
+    ]
+    'argc' => 2
+]
+2014-12-19 17:21:01 [-][-][-][info][console\controllers\KoudaibaoController] begin action
+2014-12-19 17:21:01 [-][-][-][info][console\controllers\KoudaibaoController] end action
+2014-12-19 17:21:01 [-][-][-][info][application] $_SERVER = [
+    'SHELL' => '/bin/sh'
+    'USER' => 'root'
+    'PATH' => '/usr/bin:/bin'
+    'PWD' => '/root'
+    'LANG' => 'en_US.UTF-8'
+    'SHLVL' => '1'
+    'HOME' => '/root'
+    'LOGNAME' => 'root'
+    '_' => '/opt/lampp/bin/php'
+    'PHP_SELF' => '/opt/lampp/htdocs/yii'
+    'SCRIPT_NAME' => '/opt/lampp/htdocs/yii'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/yii'
+    'PATH_TRANSLATED' => '/opt/lampp/htdocs/yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1418980861.919
+    'REQUEST_TIME' => 1418980861
+    'argv' => [
+        0 => '/opt/lampp/htdocs/yii'
+        1 => 'koudaibao/stat'
+    ]
+    'argc' => 2
+]
+2014-12-19 17:22:01 [-][-][-][info][console\controllers\KoudaibaoController] begin action
+2014-12-19 17:22:01 [-][-][-][info][console\controllers\KoudaibaoController] end action
+2014-12-19 17:22:01 [-][-][-][info][application] $_SERVER = [
+    'SHELL' => '/bin/sh'
+    'USER' => 'root'
+    'PATH' => '/usr/bin:/bin'
+    'PWD' => '/root'
+    'LANG' => 'en_US.UTF-8'
+    'SHLVL' => '1'
+    'HOME' => '/root'
+    'LOGNAME' => 'root'
+    '_' => '/opt/lampp/bin/php'
+    'PHP_SELF' => '/opt/lampp/htdocs/yii'
+    'SCRIPT_NAME' => '/opt/lampp/htdocs/yii'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/yii'
+    'PATH_TRANSLATED' => '/opt/lampp/htdocs/yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1418980921.4916
+    'REQUEST_TIME' => 1418980921
+    'argv' => [
+        0 => '/opt/lampp/htdocs/yii'
+        1 => 'koudaibao/stat'
+    ]
+    'argc' => 2
+]
+2014-12-19 17:23:01 [-][-][-][info][console\controllers\KoudaibaoController] begin action
+2014-12-19 17:23:01 [-][-][-][info][console\controllers\KoudaibaoController] end action
+2014-12-19 17:23:01 [-][-][-][info][application] $_SERVER = [
+    'SHELL' => '/bin/sh'
+    'USER' => 'root'
+    'PATH' => '/usr/bin:/bin'
+    'PWD' => '/root'
+    'LANG' => 'en_US.UTF-8'
+    'SHLVL' => '1'
+    'HOME' => '/root'
+    'LOGNAME' => 'root'
+    '_' => '/opt/lampp/bin/php'
+    'PHP_SELF' => '/opt/lampp/htdocs/yii'
+    'SCRIPT_NAME' => '/opt/lampp/htdocs/yii'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/yii'
+    'PATH_TRANSLATED' => '/opt/lampp/htdocs/yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1418980981.6243
+    'REQUEST_TIME' => 1418980981
+    'argv' => [
+        0 => '/opt/lampp/htdocs/yii'
+        1 => 'koudaibao/stat'
+    ]
+    'argc' => 2
+]
+2014-12-19 17:24:01 [-][-][-][info][console\controllers\KoudaibaoController] begin action
+2014-12-19 17:24:01 [-][-][-][info][console\controllers\KoudaibaoController] end action
+2014-12-19 17:24:01 [-][-][-][info][application] $_SERVER = [
+    'SHELL' => '/bin/sh'
+    'USER' => 'root'
+    'PATH' => '/usr/bin:/bin'
+    'PWD' => '/root'
+    'LANG' => 'en_US.UTF-8'
+    'SHLVL' => '1'
+    'HOME' => '/root'
+    'LOGNAME' => 'root'
+    '_' => '/opt/lampp/bin/php'
+    'PHP_SELF' => '/opt/lampp/htdocs/yii'
+    'SCRIPT_NAME' => '/opt/lampp/htdocs/yii'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/yii'
+    'PATH_TRANSLATED' => '/opt/lampp/htdocs/yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1418981041.7373
+    'REQUEST_TIME' => 1418981041
+    'argv' => [
+        0 => '/opt/lampp/htdocs/yii'
+        1 => 'koudaibao/stat'
+    ]
+    'argc' => 2
+]
+2014-12-20 01:00:01 [-][-][-][info][console\controllers\KoudaibaoController] begin action
+2014-12-20 01:00:01 [-][-][-][info][console\controllers\KoudaibaoController] end action
+2014-12-20 01:00:01 [-][-][-][info][application] $_SERVER = [
+    'SHELL' => '/bin/sh'
+    'USER' => 'root'
+    'PATH' => '/usr/bin:/bin'
+    'PWD' => '/root'
+    'LANG' => 'en_US.UTF-8'
+    'SHLVL' => '1'
+    'HOME' => '/root'
+    'LOGNAME' => 'root'
+    '_' => '/opt/lampp/bin/php'
+    'PHP_SELF' => '/opt/lampp/htdocs/yii'
+    'SCRIPT_NAME' => '/opt/lampp/htdocs/yii'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/yii'
+    'PATH_TRANSLATED' => '/opt/lampp/htdocs/yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1419008401.2794
+    'REQUEST_TIME' => 1419008401
+    'argv' => [
+        0 => '/opt/lampp/htdocs/yii'
+        1 => 'koudaibao/stat'
+    ]
+    'argc' => 2
+]
+2014-12-21 01:00:01 [-][-][-][info][console\controllers\KoudaibaoController] begin action
+2014-12-21 01:00:01 [-][-][-][info][console\controllers\KoudaibaoController] end action
+2014-12-21 01:00:01 [-][-][-][info][application] $_SERVER = [
+    'SHELL' => '/bin/sh'
+    'USER' => 'root'
+    'PATH' => '/usr/bin:/bin'
+    'PWD' => '/root'
+    'LANG' => 'en_US.UTF-8'
+    'SHLVL' => '1'
+    'HOME' => '/root'
+    'LOGNAME' => 'root'
+    '_' => '/opt/lampp/bin/php'
+    'PHP_SELF' => '/opt/lampp/htdocs/yii'
+    'SCRIPT_NAME' => '/opt/lampp/htdocs/yii'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/yii'
+    'PATH_TRANSLATED' => '/opt/lampp/htdocs/yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1419094801.9043
+    'REQUEST_TIME' => 1419094801
+    'argv' => [
+        0 => '/opt/lampp/htdocs/yii'
+        1 => 'koudaibao/stat'
+    ]
+    'argc' => 2
+]
+2014-12-22 01:00:01 [-][-][-][info][console\controllers\KoudaibaoController] begin action
+2014-12-22 01:00:01 [-][-][-][info][console\controllers\KoudaibaoController] end action
+2014-12-22 01:00:01 [-][-][-][info][application] $_SERVER = [
+    'SHELL' => '/bin/sh'
+    'USER' => 'root'
+    'PATH' => '/usr/bin:/bin'
+    'PWD' => '/root'
+    'LANG' => 'en_US.UTF-8'
+    'SHLVL' => '1'
+    'HOME' => '/root'
+    'LOGNAME' => 'root'
+    '_' => '/opt/lampp/bin/php'
+    'PHP_SELF' => '/opt/lampp/htdocs/yii'
+    'SCRIPT_NAME' => '/opt/lampp/htdocs/yii'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/yii'
+    'PATH_TRANSLATED' => '/opt/lampp/htdocs/yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1419181201.7507
+    'REQUEST_TIME' => 1419181201
+    'argv' => [
+        0 => '/opt/lampp/htdocs/yii'
+        1 => 'koudaibao/stat'
+    ]
+    'argc' => 2
+]
+2014-12-23 01:00:01 [-][-][-][info][console\controllers\KoudaibaoController] begin action
+2014-12-23 01:00:01 [-][-][-][info][console\controllers\KoudaibaoController] end action
+2014-12-23 01:00:01 [-][-][-][info][application] $_SERVER = [
+    'SHELL' => '/bin/sh'
+    'USER' => 'root'
+    'PATH' => '/usr/bin:/bin'
+    'PWD' => '/root'
+    'LANG' => 'en_US.UTF-8'
+    'SHLVL' => '1'
+    'HOME' => '/root'
+    'LOGNAME' => 'root'
+    '_' => '/opt/lampp/bin/php'
+    'PHP_SELF' => '/opt/lampp/htdocs/yii'
+    'SCRIPT_NAME' => '/opt/lampp/htdocs/yii'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/yii'
+    'PATH_TRANSLATED' => '/opt/lampp/htdocs/yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1419267601.4953
+    'REQUEST_TIME' => 1419267601
+    'argv' => [
+        0 => '/opt/lampp/htdocs/yii'
+        1 => 'koudaibao/stat'
+    ]
+    'argc' => 2
+]
+2014-12-24 01:00:01 [-][-][-][info][console\controllers\KoudaibaoController] begin action
+2014-12-24 01:00:01 [-][-][-][info][console\controllers\KoudaibaoController] end action
+2014-12-24 01:00:01 [-][-][-][info][application] $_SERVER = [
+    'SHELL' => '/bin/sh'
+    'USER' => 'root'
+    'PATH' => '/usr/bin:/bin'
+    'PWD' => '/root'
+    'LANG' => 'en_US.UTF-8'
+    'SHLVL' => '1'
+    'HOME' => '/root'
+    'LOGNAME' => 'root'
+    '_' => '/opt/lampp/bin/php'
+    'PHP_SELF' => '/opt/lampp/htdocs/yii'
+    'SCRIPT_NAME' => '/opt/lampp/htdocs/yii'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/yii'
+    'PATH_TRANSLATED' => '/opt/lampp/htdocs/yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1419354001.1389
+    'REQUEST_TIME' => 1419354001
+    'argv' => [
+        0 => '/opt/lampp/htdocs/yii'
+        1 => 'koudaibao/stat'
+    ]
+    'argc' => 2
+]
+2014-12-25 01:00:01 [-][-][-][info][console\controllers\KoudaibaoController] begin action
+2014-12-25 01:00:01 [-][-][-][info][console\controllers\KoudaibaoController] end action
+2014-12-25 01:00:01 [-][-][-][info][application] $_SERVER = [
+    'SHELL' => '/bin/sh'
+    'USER' => 'root'
+    'PATH' => '/usr/bin:/bin'
+    'PWD' => '/root'
+    'LANG' => 'en_US.UTF-8'
+    'SHLVL' => '1'
+    'HOME' => '/root'
+    'LOGNAME' => 'root'
+    '_' => '/opt/lampp/bin/php'
+    'PHP_SELF' => '/opt/lampp/htdocs/yii'
+    'SCRIPT_NAME' => '/opt/lampp/htdocs/yii'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/yii'
+    'PATH_TRANSLATED' => '/opt/lampp/htdocs/yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1419440401.6377
+    'REQUEST_TIME' => 1419440401
+    'argv' => [
+        0 => '/opt/lampp/htdocs/yii'
+        1 => 'koudaibao/stat'
+    ]
+    'argc' => 2
+]
+2014-12-26 01:00:01 [-][-][-][info][console\controllers\KoudaibaoController] begin action
+2014-12-26 01:00:01 [-][-][-][info][console\controllers\KoudaibaoController] end action
+2014-12-26 01:00:01 [-][-][-][info][application] $_SERVER = [
+    'SHELL' => '/bin/sh'
+    'USER' => 'root'
+    'PATH' => '/usr/bin:/bin'
+    'PWD' => '/root'
+    'LANG' => 'en_US.UTF-8'
+    'SHLVL' => '1'
+    'HOME' => '/root'
+    'LOGNAME' => 'root'
+    '_' => '/opt/lampp/bin/php'
+    'PHP_SELF' => '/opt/lampp/htdocs/yii'
+    'SCRIPT_NAME' => '/opt/lampp/htdocs/yii'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/yii'
+    'PATH_TRANSLATED' => '/opt/lampp/htdocs/yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1419526801.4384
+    'REQUEST_TIME' => 1419526801
+    'argv' => [
+        0 => '/opt/lampp/htdocs/yii'
+        1 => 'koudaibao/stat'
+    ]
+    'argc' => 2
+]
+2014-12-27 01:00:01 [-][-][-][info][console\controllers\KoudaibaoController] begin action
+2014-12-27 01:00:01 [-][-][-][info][console\controllers\KoudaibaoController] end action
+2014-12-27 01:00:01 [-][-][-][info][application] $_SERVER = [
+    'SHELL' => '/bin/sh'
+    'USER' => 'root'
+    'PATH' => '/usr/bin:/bin'
+    'PWD' => '/root'
+    'LANG' => 'en_US.UTF-8'
+    'SHLVL' => '1'
+    'HOME' => '/root'
+    'LOGNAME' => 'root'
+    '_' => '/opt/lampp/bin/php'
+    'PHP_SELF' => '/opt/lampp/htdocs/yii'
+    'SCRIPT_NAME' => '/opt/lampp/htdocs/yii'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/yii'
+    'PATH_TRANSLATED' => '/opt/lampp/htdocs/yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1419613201.1514
+    'REQUEST_TIME' => 1419613201
+    'argv' => [
+        0 => '/opt/lampp/htdocs/yii'
+        1 => 'koudaibao/stat'
+    ]
+    'argc' => 2
+]
+2014-12-28 01:00:01 [-][-][-][info][console\controllers\KoudaibaoController] begin action
+2014-12-28 01:00:02 [-][-][-][info][console\controllers\KoudaibaoController] end action
+2014-12-28 01:00:01 [-][-][-][info][application] $_SERVER = [
+    'SHELL' => '/bin/sh'
+    'USER' => 'root'
+    'PATH' => '/usr/bin:/bin'
+    'PWD' => '/root'
+    'LANG' => 'en_US.UTF-8'
+    'SHLVL' => '1'
+    'HOME' => '/root'
+    'LOGNAME' => 'root'
+    '_' => '/opt/lampp/bin/php'
+    'PHP_SELF' => '/opt/lampp/htdocs/yii'
+    'SCRIPT_NAME' => '/opt/lampp/htdocs/yii'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/yii'
+    'PATH_TRANSLATED' => '/opt/lampp/htdocs/yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1419699601.9718
+    'REQUEST_TIME' => 1419699601
+    'argv' => [
+        0 => '/opt/lampp/htdocs/yii'
+        1 => 'koudaibao/stat'
+    ]
+    'argc' => 2
+]
+2014-12-29 01:00:01 [-][-][-][info][console\controllers\KoudaibaoController] begin action
+2014-12-29 01:00:01 [-][-][-][info][console\controllers\KoudaibaoController] end action
+2014-12-29 01:00:01 [-][-][-][info][application] $_SERVER = [
+    'SHELL' => '/bin/sh'
+    'USER' => 'root'
+    'PATH' => '/usr/bin:/bin'
+    'PWD' => '/root'
+    'LANG' => 'en_US.UTF-8'
+    'SHLVL' => '1'
+    'HOME' => '/root'
+    'LOGNAME' => 'root'
+    '_' => '/opt/lampp/bin/php'
+    'PHP_SELF' => '/opt/lampp/htdocs/yii'
+    'SCRIPT_NAME' => '/opt/lampp/htdocs/yii'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/yii'
+    'PATH_TRANSLATED' => '/opt/lampp/htdocs/yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1419786001.1535
+    'REQUEST_TIME' => 1419786001
+    'argv' => [
+        0 => '/opt/lampp/htdocs/yii'
+        1 => 'koudaibao/stat'
+    ]
+    'argc' => 2
+]
+2014-12-30 01:00:01 [-][-][-][info][console\controllers\KoudaibaoController] begin action
+2014-12-30 01:00:01 [-][-][-][info][console\controllers\KoudaibaoController] end action
+2014-12-30 01:00:01 [-][-][-][info][application] $_SERVER = [
+    'SHELL' => '/bin/sh'
+    'USER' => 'root'
+    'PATH' => '/usr/bin:/bin'
+    'PWD' => '/root'
+    'LANG' => 'en_US.UTF-8'
+    'SHLVL' => '1'
+    'HOME' => '/root'
+    'LOGNAME' => 'root'
+    '_' => '/opt/lampp/bin/php'
+    'PHP_SELF' => '/opt/lampp/htdocs/yii'
+    'SCRIPT_NAME' => '/opt/lampp/htdocs/yii'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/yii'
+    'PATH_TRANSLATED' => '/opt/lampp/htdocs/yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1419872401.7116
+    'REQUEST_TIME' => 1419872401
+    'argv' => [
+        0 => '/opt/lampp/htdocs/yii'
+        1 => 'koudaibao/stat'
+    ]
+    'argc' => 2
+]
+2014-12-31 01:00:01 [-][-][-][info][console\controllers\KoudaibaoController] begin action
+2014-12-31 01:00:01 [-][-][-][info][console\controllers\KoudaibaoController] end action
+2014-12-31 01:00:01 [-][-][-][info][application] $_SERVER = [
+    'SHELL' => '/bin/sh'
+    'USER' => 'root'
+    'PATH' => '/usr/bin:/bin'
+    'PWD' => '/root'
+    'LANG' => 'en_US.UTF-8'
+    'SHLVL' => '1'
+    'HOME' => '/root'
+    'LOGNAME' => 'root'
+    '_' => '/opt/lampp/bin/php'
+    'PHP_SELF' => '/opt/lampp/htdocs/yii'
+    'SCRIPT_NAME' => '/opt/lampp/htdocs/yii'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/yii'
+    'PATH_TRANSLATED' => '/opt/lampp/htdocs/yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1419958801.9298
+    'REQUEST_TIME' => 1419958801
+    'argv' => [
+        0 => '/opt/lampp/htdocs/yii'
+        1 => 'koudaibao/stat'
+    ]
+    'argc' => 2
+]
+2015-01-01 01:00:01 [-][-][-][info][console\controllers\KoudaibaoController] begin action
+2015-01-01 01:00:01 [-][-][-][info][console\controllers\KoudaibaoController] end action
+2015-01-01 01:00:01 [-][-][-][info][application] $_SERVER = [
+    'SHELL' => '/bin/sh'
+    'USER' => 'root'
+    'PATH' => '/usr/bin:/bin'
+    'PWD' => '/root'
+    'LANG' => 'en_US.UTF-8'
+    'SHLVL' => '1'
+    'HOME' => '/root'
+    'LOGNAME' => 'root'
+    '_' => '/opt/lampp/bin/php'
+    'PHP_SELF' => '/opt/lampp/htdocs/yii'
+    'SCRIPT_NAME' => '/opt/lampp/htdocs/yii'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/yii'
+    'PATH_TRANSLATED' => '/opt/lampp/htdocs/yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1420045201.4202
+    'REQUEST_TIME' => 1420045201
+    'argv' => [
+        0 => '/opt/lampp/htdocs/yii'
+        1 => 'koudaibao/stat'
+    ]
+    'argc' => 2
+]
+2015-01-02 01:00:01 [-][-][-][info][console\controllers\KoudaibaoController] begin action
+2015-01-02 01:00:01 [-][-][-][info][console\controllers\KoudaibaoController] end action
+2015-01-02 01:00:01 [-][-][-][info][application] $_SERVER = [
+    'SHELL' => '/bin/sh'
+    'USER' => 'root'
+    'PATH' => '/usr/bin:/bin'
+    'PWD' => '/root'
+    'LANG' => 'en_US.UTF-8'
+    'SHLVL' => '1'
+    'HOME' => '/root'
+    'LOGNAME' => 'root'
+    '_' => '/opt/lampp/bin/php'
+    'PHP_SELF' => '/opt/lampp/htdocs/yii'
+    'SCRIPT_NAME' => '/opt/lampp/htdocs/yii'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/yii'
+    'PATH_TRANSLATED' => '/opt/lampp/htdocs/yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1420131601.557
+    'REQUEST_TIME' => 1420131601
+    'argv' => [
+        0 => '/opt/lampp/htdocs/yii'
+        1 => 'koudaibao/stat'
+    ]
+    'argc' => 2
+]
+2015-01-03 01:00:01 [-][-][-][info][console\controllers\KoudaibaoController] begin action
+2015-01-03 01:00:01 [-][-][-][info][console\controllers\KoudaibaoController] end action
+2015-01-03 01:00:01 [-][-][-][info][application] $_SERVER = [
+    'SHELL' => '/bin/sh'
+    'USER' => 'root'
+    'PATH' => '/usr/bin:/bin'
+    'PWD' => '/root'
+    'LANG' => 'en_US.UTF-8'
+    'SHLVL' => '1'
+    'HOME' => '/root'
+    'LOGNAME' => 'root'
+    '_' => '/opt/lampp/bin/php'
+    'PHP_SELF' => '/opt/lampp/htdocs/yii'
+    'SCRIPT_NAME' => '/opt/lampp/htdocs/yii'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/yii'
+    'PATH_TRANSLATED' => '/opt/lampp/htdocs/yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1420218001.6886
+    'REQUEST_TIME' => 1420218001
+    'argv' => [
+        0 => '/opt/lampp/htdocs/yii'
+        1 => 'koudaibao/stat'
+    ]
+    'argc' => 2
+]
+2015-01-04 01:00:01 [-][-][-][info][console\controllers\KoudaibaoController] begin action
+2015-01-04 01:00:01 [-][-][-][info][console\controllers\KoudaibaoController] end action
+2015-01-04 01:00:01 [-][-][-][info][application] $_SERVER = [
+    'SHELL' => '/bin/sh'
+    'USER' => 'root'
+    'PATH' => '/usr/bin:/bin'
+    'PWD' => '/root'
+    'LANG' => 'en_US.UTF-8'
+    'SHLVL' => '1'
+    'HOME' => '/root'
+    'LOGNAME' => 'root'
+    '_' => '/opt/lampp/bin/php'
+    'PHP_SELF' => '/opt/lampp/htdocs/yii'
+    'SCRIPT_NAME' => '/opt/lampp/htdocs/yii'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/yii'
+    'PATH_TRANSLATED' => '/opt/lampp/htdocs/yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1420304401.2139
+    'REQUEST_TIME' => 1420304401
+    'argv' => [
+        0 => '/opt/lampp/htdocs/yii'
+        1 => 'koudaibao/stat'
+    ]
+    'argc' => 2
+]
+2015-01-05 01:00:01 [-][-][-][info][console\controllers\KoudaibaoController] begin action
+2015-01-05 01:00:01 [-][-][-][info][console\controllers\KoudaibaoController] end action
+2015-01-05 01:00:01 [-][-][-][info][application] $_SERVER = [
+    'SHELL' => '/bin/sh'
+    'USER' => 'root'
+    'PATH' => '/usr/bin:/bin'
+    'PWD' => '/root'
+    'LANG' => 'en_US.UTF-8'
+    'SHLVL' => '1'
+    'HOME' => '/root'
+    'LOGNAME' => 'root'
+    '_' => '/opt/lampp/bin/php'
+    'PHP_SELF' => '/opt/lampp/htdocs/yii'
+    'SCRIPT_NAME' => '/opt/lampp/htdocs/yii'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/yii'
+    'PATH_TRANSLATED' => '/opt/lampp/htdocs/yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1420390801.0917
+    'REQUEST_TIME' => 1420390801
+    'argv' => [
+        0 => '/opt/lampp/htdocs/yii'
+        1 => 'koudaibao/stat'
+    ]
+    'argc' => 2
+]

@@ -1,0 +1,104 @@
+
+@import url("common.css");
+#t_head{
+    padding:20px;
+    height:40px;
+}
+div .h_image{
+    width:30px;
+    float:left;
+    margin-top: 3px;
+}
+
+div.h_text{
+    height:40px;
+    font:16px/16px "微软雅黑";
+    /*color:#999;*/
+    margin:10px;
+    position:absolute;
+    margin-right: 15px;
+    top:10px;
+    left:50px;
+
+}
+
+/* 覆盖input自动产生的样式 */
+.ui-input-text{
+    margin-top: -1px;
+    margin-bottom: 0px;
+    border-radius: 0px;
+    height: 50px;
+}
+/* 姓名输入对齐 */
+#username{
+    height: 100%;
+    margin-left: 15px;
+}
+
+/* 身份证输入对齐 */
+#idcard{
+    height: 100%;
+    margin-left: 15px;
+}
+
+/* 银行卡输入对齐 */
+#bankcard{
+    height: 100%;
+    margin-left: 15px;
+}
+
+/* 持卡人输入对齐 */
+#card_holder{
+    margin-left: 20px;
+    font:16px/16px "微软雅黑";
+}
+#banklist-button{
+    border-radius: 0;
+    height: 20px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-left: 20px;
+    padding-top: 15px;
+    font:16px/16px "微软雅黑";
+    text-align: left;
+    vertical-align: middle;
+
+}
+
+
+.ui-select{
+    margin-bottom: 0px;
+}
+
+.ui-shadow{
+    box-shadow : 0 0;
+}
+
+#banklist{
+    height: 100px;
+}
+
+
+
+
+#notice{
+    margin-left: 16px;
+    margin-right: 16px;
+    font:12px/12px "微软雅黑";
+    line-height: 15px;
+
+}
+/*设置交易密码*/
+#password{
+    height: 100%;
+    margin-left: 15px;
+}
+#repassword{
+    height: 100%;
+    margin-left: 15px;
+}
+#t_text2{
+    font:15px/15px "微软雅黑";
+    color:#999;
+    margin:20px;
+}

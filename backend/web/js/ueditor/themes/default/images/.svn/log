@@ -1,0 +1,943 @@
+<modify-entry
+   name="table-cell-align.png"
+   present-props=""
+   has-prop-mods="false"
+   has-props="true"/>
+<mv
+   dest=".svn/prop-base/table-cell-align.png.svn-base"
+   name=".svn/prop-base/tempfile.tmp"/>
+<readonly
+   name=".svn/prop-base/table-cell-align.png.svn-base"/>
+<modify-entry
+   committed-rev="5215"
+   committed-date="2014-12-23T03:32:47.652036Z"
+   name="table-cell-align.png"
+   last-author="liumin"
+   uuid="2512e77a-f209-4e56-bd4a-def6d2bcc206"/>
+<modify-entry
+   text-time="1970-01-01T00:00:00.000000Z"
+   name="table-cell-align.png"
+   kind="file"
+   deleted="false"
+   working-size="-1"
+   absent="false"
+   revision="5215"/>
+<cp-and-translate
+   dest="table-cell-align.png"
+   name=".svn/tmp/text-base/table-cell-align.png.svn-base"/>
+<mv
+   dest=".svn/text-base/table-cell-align.png.svn-base"
+   name=".svn/tmp/text-base/table-cell-align.png.svn-base"/>
+<readonly
+   name=".svn/text-base/table-cell-align.png.svn-base"/>
+<modify-entry
+   name="table-cell-align.png"
+   checksum="676456b57740b2a325b23a54902d21a6"/>
+<modify-entry
+   name="table-cell-align.png"
+   text-time="working"/>
+<modify-entry
+   name="table-cell-align.png"
+   working-size="working"/>
+<modify-entry
+   name="icons.gif"
+   present-props=""
+   has-prop-mods="false"
+   has-props="true"/>
+<mv
+   dest=".svn/prop-base/icons.gif.svn-base"
+   name=".svn/prop-base/tempfile.2.tmp"/>
+<readonly
+   name=".svn/prop-base/icons.gif.svn-base"/>
+<modify-entry
+   committed-rev="5215"
+   committed-date="2014-12-23T03:32:47.652036Z"
+   name="icons.gif"
+   last-author="liumin"
+   uuid="2512e77a-f209-4e56-bd4a-def6d2bcc206"/>
+<modify-entry
+   text-time="1970-01-01T00:00:00.000000Z"
+   name="icons.gif"
+   kind="file"
+   deleted="false"
+   working-size="-1"
+   absent="false"
+   revision="5215"/>
+<cp-and-translate
+   dest="icons.gif"
+   name=".svn/tmp/text-base/icons.gif.svn-base"/>
+<mv
+   dest=".svn/text-base/icons.gif.svn-base"
+   name=".svn/tmp/text-base/icons.gif.svn-base"/>
+<readonly
+   name=".svn/text-base/icons.gif.svn-base"/>
+<modify-entry
+   name="icons.gif"
+   checksum="d6ed19f7eb5d55fc824c588465cf2647"/>
+<modify-entry
+   name="icons.gif"
+   text-time="working"/>
+<modify-entry
+   name="icons.gif"
+   working-size="working"/>
+<modify-entry
+   name="loading.gif"
+   present-props=""
+   has-prop-mods="false"
+   has-props="true"/>
+<mv
+   dest=".svn/prop-base/loading.gif.svn-base"
+   name=".svn/prop-base/tempfile.3.tmp"/>
+<readonly
+   name=".svn/prop-base/loading.gif.svn-base"/>
+<modify-entry
+   committed-rev="5215"
+   committed-date="2014-12-23T03:32:47.652036Z"
+   name="loading.gif"
+   last-author="liumin"
+   uuid="2512e77a-f209-4e56-bd4a-def6d2bcc206"/>
+<modify-entry
+   text-time="1970-01-01T00:00:00.000000Z"
+   name="loading.gif"
+   kind="file"
+   deleted="false"
+   working-size="-1"
+   absent="false"
+   revision="5215"/>
+<cp-and-translate
+   dest="loading.gif"
+   name=".svn/tmp/text-base/loading.gif.svn-base"/>
+<mv
+   dest=".svn/text-base/loading.gif.svn-base"
+   name=".svn/tmp/text-base/loading.gif.svn-base"/>
+<readonly
+   name=".svn/text-base/loading.gif.svn-base"/>
+<modify-entry
+   name="loading.gif"
+   checksum="9c92dd524f2abd5edc87d2d46d4a10de"/>
+<modify-entry
+   name="loading.gif"
+   text-time="working"/>
+<modify-entry
+   name="loading.gif"
+   working-size="working"/>
+<modify-entry
+   name="arrow_up.png"
+   present-props=""
+   has-prop-mods="false"
+   has-props="true"/>
+<mv
+   dest=".svn/prop-base/arrow_up.png.svn-base"
+   name=".svn/prop-base/tempfile.4.tmp"/>
+<readonly
+   name=".svn/prop-base/arrow_up.png.svn-base"/>
+<modify-entry
+   committed-rev="5215"
+   committed-date="2014-12-23T03:32:47.652036Z"
+   name="arrow_up.png"
+   last-author="liumin"
+   uuid="2512e77a-f209-4e56-bd4a-def6d2bcc206"/>
+<modify-entry
+   text-time="1970-01-01T00:00:00.000000Z"
+   name="arrow_up.png"
+   kind="file"
+   deleted="false"
+   working-size="-1"
+   absent="false"
+   revision="5215"/>
+<cp-and-translate
+   dest="arrow_up.png"
+   name=".svn/tmp/text-base/arrow_up.png.svn-base"/>
+<mv
+   dest=".svn/text-base/arrow_up.png.svn-base"
+   name=".svn/tmp/text-base/arrow_up.png.svn-base"/>
+<readonly
+   name=".svn/text-base/arrow_up.png.svn-base"/>
+<modify-entry
+   name="arrow_up.png"
+   checksum="888bff7ff3165632455621e1b899287d"/>
+<modify-entry
+   name="arrow_up.png"
+   text-time="working"/>
+<modify-entry
+   name="arrow_up.png"
+   working-size="working"/>
+<modify-entry
+   name="pagebreak.gif"
+   present-props=""
+   has-prop-mods="false"
+   has-props="true"/>
+<mv
+   dest=".svn/prop-base/pagebreak.gif.svn-base"
+   name=".svn/prop-base/tempfile.5.tmp"/>
+<readonly
+   name=".svn/prop-base/pagebreak.gif.svn-base"/>
+<modify-entry
+   committed-rev="5215"
+   committed-date="2014-12-23T03:32:47.652036Z"
+   name="pagebreak.gif"
+   last-author="liumin"
+   uuid="2512e77a-f209-4e56-bd4a-def6d2bcc206"/>
+<modify-entry
+   text-time="1970-01-01T00:00:00.000000Z"
+   name="pagebreak.gif"
+   kind="file"
+   deleted="false"
+   working-size="-1"
+   absent="false"
+   revision="5215"/>
+<cp-and-translate
+   dest="pagebreak.gif"
+   name=".svn/tmp/text-base/pagebreak.gif.svn-base"/>
+<mv
+   dest=".svn/text-base/pagebreak.gif.svn-base"
+   name=".svn/tmp/text-base/pagebreak.gif.svn-base"/>
+<readonly
+   name=".svn/text-base/pagebreak.gif.svn-base"/>
+<modify-entry
+   name="pagebreak.gif"
+   checksum="59caae8ab95b2eeba9444ba219446c75"/>
+<modify-entry
+   name="pagebreak.gif"
+   text-time="working"/>
+<modify-entry
+   name="pagebreak.gif"
+   working-size="working"/>
+<modify-entry
+   name="cursor_v.png"
+   present-props=""
+   has-prop-mods="false"
+   has-props="true"/>
+<mv
+   dest=".svn/prop-base/cursor_v.png.svn-base"
+   name=".svn/prop-base/tempfile.6.tmp"/>
+<readonly
+   name=".svn/prop-base/cursor_v.png.svn-base"/>
+<modify-entry
+   committed-rev="5215"
+   committed-date="2014-12-23T03:32:47.652036Z"
+   name="cursor_v.png"
+   last-author="liumin"
+   uuid="2512e77a-f209-4e56-bd4a-def6d2bcc206"/>
+<modify-entry
+   text-time="1970-01-01T00:00:00.000000Z"
+   name="cursor_v.png"
+   kind="file"
+   deleted="false"
+   working-size="-1"
+   absent="false"
+   revision="5215"/>
+<cp-and-translate
+   dest="cursor_v.png"
+   name=".svn/tmp/text-base/cursor_v.png.svn-base"/>
+<mv
+   dest=".svn/text-base/cursor_v.png.svn-base"
+   name=".svn/tmp/text-base/cursor_v.png.svn-base"/>
+<readonly
+   name=".svn/text-base/cursor_v.png.svn-base"/>
+<modify-entry
+   name="cursor_v.png"
+   checksum="270f36fdf73544c528fe81d5494d5c6f"/>
+<modify-entry
+   name="cursor_v.png"
+   text-time="working"/>
+<modify-entry
+   name="cursor_v.png"
+   working-size="working"/>
+<modify-entry
+   name="icons-all.gif"
+   present-props=""
+   has-prop-mods="false"
+   has-props="true"/>
+<mv
+   dest=".svn/prop-base/icons-all.gif.svn-base"
+   name=".svn/prop-base/tempfile.7.tmp"/>
+<readonly
+   name=".svn/prop-base/icons-all.gif.svn-base"/>
+<modify-entry
+   committed-rev="5215"
+   committed-date="2014-12-23T03:32:47.652036Z"
+   name="icons-all.gif"
+   last-author="liumin"
+   uuid="2512e77a-f209-4e56-bd4a-def6d2bcc206"/>
+<modify-entry
+   text-time="1970-01-01T00:00:00.000000Z"
+   name="icons-all.gif"
+   kind="file"
+   deleted="false"
+   working-size="-1"
+   absent="false"
+   revision="5215"/>
+<cp-and-translate
+   dest="icons-all.gif"
+   name=".svn/tmp/text-base/icons-all.gif.svn-base"/>
+<mv
+   dest=".svn/text-base/icons-all.gif.svn-base"
+   name=".svn/tmp/text-base/icons-all.gif.svn-base"/>
+<readonly
+   name=".svn/text-base/icons-all.gif.svn-base"/>
+<modify-entry
+   name="icons-all.gif"
+   checksum="885afa097b98821279ea8aa3c68cc293"/>
+<modify-entry
+   name="icons-all.gif"
+   text-time="working"/>
+<modify-entry
+   name="icons-all.gif"
+   working-size="working"/>
+<modify-entry
+   name="unhighlighted.gif"
+   present-props=""
+   has-prop-mods="false"
+   has-props="true"/>
+<mv
+   dest=".svn/prop-base/unhighlighted.gif.svn-base"
+   name=".svn/prop-base/tempfile.8.tmp"/>
+<readonly
+   name=".svn/prop-base/unhighlighted.gif.svn-base"/>
+<modify-entry
+   committed-rev="5215"
+   committed-date="2014-12-23T03:32:47.652036Z"
+   name="unhighlighted.gif"
+   last-author="liumin"
+   uuid="2512e77a-f209-4e56-bd4a-def6d2bcc206"/>
+<modify-entry
+   text-time="1970-01-01T00:00:00.000000Z"
+   name="unhighlighted.gif"
+   kind="file"
+   deleted="false"
+   working-size="-1"
+   absent="false"
+   revision="5215"/>
+<cp-and-translate
+   dest="unhighlighted.gif"
+   name=".svn/tmp/text-base/unhighlighted.gif.svn-base"/>
+<mv
+   dest=".svn/text-base/unhighlighted.gif.svn-base"
+   name=".svn/tmp/text-base/unhighlighted.gif.svn-base"/>
+<readonly
+   name=".svn/text-base/unhighlighted.gif.svn-base"/>
+<modify-entry
+   name="unhighlighted.gif"
+   checksum="ccba56505949f6d112ff6127d9b7eef0"/>
+<modify-entry
+   name="unhighlighted.gif"
+   text-time="working"/>
+<modify-entry
+   name="unhighlighted.gif"
+   working-size="working"/>
+<modify-entry
+   name="dialog-title-bg.png"
+   present-props=""
+   has-prop-mods="false"
+   has-props="true"/>
+<mv
+   dest=".svn/prop-base/dialog-title-bg.png.svn-base"
+   name=".svn/prop-base/tempfile.9.tmp"/>
+<readonly
+   name=".svn/prop-base/dialog-title-bg.png.svn-base"/>
+<modify-entry
+   committed-rev="5215"
+   committed-date="2014-12-23T03:32:47.652036Z"
+   name="dialog-title-bg.png"
+   last-author="liumin"
+   uuid="2512e77a-f209-4e56-bd4a-def6d2bcc206"/>
+<modify-entry
+   text-time="1970-01-01T00:00:00.000000Z"
+   name="dialog-title-bg.png"
+   kind="file"
+   deleted="false"
+   working-size="-1"
+   absent="false"
+   revision="5215"/>
+<cp-and-translate
+   dest="dialog-title-bg.png"
+   name=".svn/tmp/text-base/dialog-title-bg.png.svn-base"/>
+<mv
+   dest=".svn/text-base/dialog-title-bg.png.svn-base"
+   name=".svn/tmp/text-base/dialog-title-bg.png.svn-base"/>
+<readonly
+   name=".svn/text-base/dialog-title-bg.png.svn-base"/>
+<modify-entry
+   name="dialog-title-bg.png"
+   checksum="1c4486a78ac7758a7ab3bd84e1a38066"/>
+<modify-entry
+   name="dialog-title-bg.png"
+   text-time="working"/>
+<modify-entry
+   name="dialog-title-bg.png"
+   working-size="working"/>
+<modify-entry
+   name="cursor_h.gif"
+   present-props=""
+   has-prop-mods="false"
+   has-props="true"/>
+<mv
+   dest=".svn/prop-base/cursor_h.gif.svn-base"
+   name=".svn/prop-base/tempfile.10.tmp"/>
+<readonly
+   name=".svn/prop-base/cursor_h.gif.svn-base"/>
+<modify-entry
+   committed-rev="5215"
+   committed-date="2014-12-23T03:32:47.652036Z"
+   name="cursor_h.gif"
+   last-author="liumin"
+   uuid="2512e77a-f209-4e56-bd4a-def6d2bcc206"/>
+<modify-entry
+   text-time="1970-01-01T00:00:00.000000Z"
+   name="cursor_h.gif"
+   kind="file"
+   deleted="false"
+   working-size="-1"
+   absent="false"
+   revision="5215"/>
+<cp-and-translate
+   dest="cursor_h.gif"
+   name=".svn/tmp/text-base/cursor_h.gif.svn-base"/>
+<mv
+   dest=".svn/text-base/cursor_h.gif.svn-base"
+   name=".svn/tmp/text-base/cursor_h.gif.svn-base"/>
+<readonly
+   name=".svn/text-base/cursor_h.gif.svn-base"/>
+<modify-entry
+   name="cursor_h.gif"
+   checksum="0950cf5272ea8e30635e1c27954bf104"/>
+<modify-entry
+   name="cursor_h.gif"
+   text-time="working"/>
+<modify-entry
+   name="cursor_h.gif"
+   working-size="working"/>
+<modify-entry
+   name="wordpaste.png"
+   present-props=""
+   has-prop-mods="false"
+   has-props="true"/>
+<mv
+   dest=".svn/prop-base/wordpaste.png.svn-base"
+   name=".svn/prop-base/tempfile.11.tmp"/>
+<readonly
+   name=".svn/prop-base/wordpaste.png.svn-base"/>
+<modify-entry
+   committed-rev="5215"
+   committed-date="2014-12-23T03:32:47.652036Z"
+   name="wordpaste.png"
+   last-author="liumin"
+   uuid="2512e77a-f209-4e56-bd4a-def6d2bcc206"/>
+<modify-entry
+   text-time="1970-01-01T00:00:00.000000Z"
+   name="wordpaste.png"
+   kind="file"
+   deleted="false"
+   working-size="-1"
+   absent="false"
+   revision="5215"/>
+<cp-and-translate
+   dest="wordpaste.png"
+   name=".svn/tmp/text-base/wordpaste.png.svn-base"/>
+<mv
+   dest=".svn/text-base/wordpaste.png.svn-base"
+   name=".svn/tmp/text-base/wordpaste.png.svn-base"/>
+<readonly
+   name=".svn/text-base/wordpaste.png.svn-base"/>
+<modify-entry
+   name="wordpaste.png"
+   checksum="c78d50851eeb7922d57ef3281f676dd1"/>
+<modify-entry
+   name="wordpaste.png"
+   text-time="working"/>
+<modify-entry
+   name="wordpaste.png"
+   working-size="working"/>
+<modify-entry
+   name="lock.gif"
+   present-props=""
+   has-prop-mods="false"
+   has-props="true"/>
+<mv
+   dest=".svn/prop-base/lock.gif.svn-base"
+   name=".svn/prop-base/tempfile.12.tmp"/>
+<readonly
+   name=".svn/prop-base/lock.gif.svn-base"/>
+<modify-entry
+   committed-rev="5215"
+   committed-date="2014-12-23T03:32:47.652036Z"
+   name="lock.gif"
+   last-author="liumin"
+   uuid="2512e77a-f209-4e56-bd4a-def6d2bcc206"/>
+<modify-entry
+   text-time="1970-01-01T00:00:00.000000Z"
+   name="lock.gif"
+   kind="file"
+   deleted="false"
+   working-size="-1"
+   absent="false"
+   revision="5215"/>
+<cp-and-translate
+   dest="lock.gif"
+   name=".svn/tmp/text-base/lock.gif.svn-base"/>
+<mv
+   dest=".svn/text-base/lock.gif.svn-base"
+   name=".svn/tmp/text-base/lock.gif.svn-base"/>
+<readonly
+   name=".svn/text-base/lock.gif.svn-base"/>
+<modify-entry
+   name="lock.gif"
+   checksum="b2939e1b402cc732c078ec8fd3b10974"/>
+<modify-entry
+   name="lock.gif"
+   text-time="working"/>
+<modify-entry
+   name="lock.gif"
+   working-size="working"/>
+<modify-entry
+   name="sortable.png"
+   present-props=""
+   has-prop-mods="false"
+   has-props="true"/>
+<mv
+   dest=".svn/prop-base/sortable.png.svn-base"
+   name=".svn/prop-base/tempfile.13.tmp"/>
+<readonly
+   name=".svn/prop-base/sortable.png.svn-base"/>
+<modify-entry
+   committed-rev="5215"
+   committed-date="2014-12-23T03:32:47.652036Z"
+   name="sortable.png"
+   last-author="liumin"
+   uuid="2512e77a-f209-4e56-bd4a-def6d2bcc206"/>
+<modify-entry
+   text-time="1970-01-01T00:00:00.000000Z"
+   name="sortable.png"
+   kind="file"
+   deleted="false"
+   working-size="-1"
+   absent="false"
+   revision="5215"/>
+<cp-and-translate
+   dest="sortable.png"
+   name=".svn/tmp/text-base/sortable.png.svn-base"/>
+<mv
+   dest=".svn/text-base/sortable.png.svn-base"
+   name=".svn/tmp/text-base/sortable.png.svn-base"/>
+<readonly
+   name=".svn/text-base/sortable.png.svn-base"/>
+<modify-entry
+   name="sortable.png"
+   checksum="297a921544f1f9518b1180bb74317c9a"/>
+<modify-entry
+   name="sortable.png"
+   text-time="working"/>
+<modify-entry
+   name="sortable.png"
+   working-size="working"/>
+<modify-entry
+   name="sparator_v.png"
+   present-props=""
+   has-prop-mods="false"
+   has-props="true"/>
+<mv
+   dest=".svn/prop-base/sparator_v.png.svn-base"
+   name=".svn/prop-base/tempfile.14.tmp"/>
+<readonly
+   name=".svn/prop-base/sparator_v.png.svn-base"/>
+<modify-entry
+   committed-rev="5215"
+   committed-date="2014-12-23T03:32:47.652036Z"
+   name="sparator_v.png"
+   last-author="liumin"
+   uuid="2512e77a-f209-4e56-bd4a-def6d2bcc206"/>
+<modify-entry
+   text-time="1970-01-01T00:00:00.000000Z"
+   name="sparator_v.png"
+   kind="file"
+   deleted="false"
+   working-size="-1"
+   absent="false"
+   revision="5215"/>
+<cp-and-translate
+   dest="sparator_v.png"
+   name=".svn/tmp/text-base/sparator_v.png.svn-base"/>
+<mv
+   dest=".svn/text-base/sparator_v.png.svn-base"
+   name=".svn/tmp/text-base/sparator_v.png.svn-base"/>
+<readonly
+   name=".svn/text-base/sparator_v.png.svn-base"/>
+<modify-entry
+   name="sparator_v.png"
+   checksum="9d34b0cc46ae6d88e3c7183933be762f"/>
+<modify-entry
+   name="sparator_v.png"
+   text-time="working"/>
+<modify-entry
+   name="sparator_v.png"
+   working-size="working"/>
+<modify-entry
+   name="arrow_down.png"
+   present-props=""
+   has-prop-mods="false"
+   has-props="true"/>
+<mv
+   dest=".svn/prop-base/arrow_down.png.svn-base"
+   name=".svn/prop-base/tempfile.15.tmp"/>
+<readonly
+   name=".svn/prop-base/arrow_down.png.svn-base"/>
+<modify-entry
+   committed-rev="5215"
+   committed-date="2014-12-23T03:32:47.652036Z"
+   name="arrow_down.png"
+   last-author="liumin"
+   uuid="2512e77a-f209-4e56-bd4a-def6d2bcc206"/>
+<modify-entry
+   text-time="1970-01-01T00:00:00.000000Z"
+   name="arrow_down.png"
+   kind="file"
+   deleted="false"
+   working-size="-1"
+   absent="false"
+   revision="5215"/>
+<cp-and-translate
+   dest="arrow_down.png"
+   name=".svn/tmp/text-base/arrow_down.png.svn-base"/>
+<mv
+   dest=".svn/text-base/arrow_down.png.svn-base"
+   name=".svn/tmp/text-base/arrow_down.png.svn-base"/>
+<readonly
+   name=".svn/text-base/arrow_down.png.svn-base"/>
+<modify-entry
+   name="arrow_down.png"
+   checksum="06a16826b506f5264e29cc3c84137455"/>
+<modify-entry
+   name="arrow_down.png"
+   text-time="working"/>
+<modify-entry
+   name="arrow_down.png"
+   working-size="working"/>
+<modify-entry
+   name="cursor_v.gif"
+   present-props=""
+   has-prop-mods="false"
+   has-props="true"/>
+<mv
+   dest=".svn/prop-base/cursor_v.gif.svn-base"
+   name=".svn/prop-base/tempfile.16.tmp"/>
+<readonly
+   name=".svn/prop-base/cursor_v.gif.svn-base"/>
+<modify-entry
+   committed-rev="5215"
+   committed-date="2014-12-23T03:32:47.652036Z"
+   name="cursor_v.gif"
+   last-author="liumin"
+   uuid="2512e77a-f209-4e56-bd4a-def6d2bcc206"/>
+<modify-entry
+   text-time="1970-01-01T00:00:00.000000Z"
+   name="cursor_v.gif"
+   kind="file"
+   deleted="false"
+   working-size="-1"
+   absent="false"
+   revision="5215"/>
+<cp-and-translate
+   dest="cursor_v.gif"
+   name=".svn/tmp/text-base/cursor_v.gif.svn-base"/>
+<mv
+   dest=".svn/text-base/cursor_v.gif.svn-base"
+   name=".svn/tmp/text-base/cursor_v.gif.svn-base"/>
+<readonly
+   name=".svn/text-base/cursor_v.gif.svn-base"/>
+<modify-entry
+   name="cursor_v.gif"
+   checksum="fe9d01cb9e8b0cc9a34ed668f8acfb6a"/>
+<modify-entry
+   name="cursor_v.gif"
+   text-time="working"/>
+<modify-entry
+   name="cursor_v.gif"
+   working-size="working"/>
+<modify-entry
+   name="scale.png"
+   present-props=""
+   has-prop-mods="false"
+   has-props="true"/>
+<mv
+   dest=".svn/prop-base/scale.png.svn-base"
+   name=".svn/prop-base/tempfile.17.tmp"/>
+<readonly
+   name=".svn/prop-base/scale.png.svn-base"/>
+<modify-entry
+   committed-rev="5215"
+   committed-date="2014-12-23T03:32:47.652036Z"
+   name="scale.png"
+   last-author="liumin"
+   uuid="2512e77a-f209-4e56-bd4a-def6d2bcc206"/>
+<modify-entry
+   text-time="1970-01-01T00:00:00.000000Z"
+   name="scale.png"
+   kind="file"
+   deleted="false"
+   working-size="-1"
+   absent="false"
+   revision="5215"/>
+<cp-and-translate
+   dest="scale.png"
+   name=".svn/tmp/text-base/scale.png.svn-base"/>
+<mv
+   dest=".svn/text-base/scale.png.svn-base"
+   name=".svn/tmp/text-base/scale.png.svn-base"/>
+<readonly
+   name=".svn/text-base/scale.png.svn-base"/>
+<modify-entry
+   name="scale.png"
+   checksum="44274c1e95b775c004f110f84db1c058"/>
+<modify-entry
+   name="scale.png"
+   text-time="working"/>
+<modify-entry
+   name="scale.png"
+   working-size="working"/>
+<modify-entry
+   name="anchor.gif"
+   present-props=""
+   has-prop-mods="false"
+   has-props="true"/>
+<mv
+   dest=".svn/prop-base/anchor.gif.svn-base"
+   name=".svn/prop-base/tempfile.18.tmp"/>
+<readonly
+   name=".svn/prop-base/anchor.gif.svn-base"/>
+<modify-entry
+   committed-rev="5215"
+   committed-date="2014-12-23T03:32:47.652036Z"
+   name="anchor.gif"
+   last-author="liumin"
+   uuid="2512e77a-f209-4e56-bd4a-def6d2bcc206"/>
+<modify-entry
+   text-time="1970-01-01T00:00:00.000000Z"
+   name="anchor.gif"
+   kind="file"
+   deleted="false"
+   working-size="-1"
+   absent="false"
+   revision="5215"/>
+<cp-and-translate
+   dest="anchor.gif"
+   name=".svn/tmp/text-base/anchor.gif.svn-base"/>
+<mv
+   dest=".svn/text-base/anchor.gif.svn-base"
+   name=".svn/tmp/text-base/anchor.gif.svn-base"/>
+<readonly
+   name=".svn/text-base/anchor.gif.svn-base"/>
+<modify-entry
+   name="anchor.gif"
+   checksum="60a2121d55f9238f529458ee5f2e6e4e"/>
+<modify-entry
+   name="anchor.gif"
+   text-time="working"/>
+<modify-entry
+   name="anchor.gif"
+   working-size="working"/>
+<modify-entry
+   name="word.gif"
+   present-props=""
+   has-prop-mods="false"
+   has-props="true"/>
+<mv
+   dest=".svn/prop-base/word.gif.svn-base"
+   name=".svn/prop-base/tempfile.19.tmp"/>
+<readonly
+   name=".svn/prop-base/word.gif.svn-base"/>
+<modify-entry
+   committed-rev="5215"
+   committed-date="2014-12-23T03:32:47.652036Z"
+   name="word.gif"
+   last-author="liumin"
+   uuid="2512e77a-f209-4e56-bd4a-def6d2bcc206"/>
+<modify-entry
+   text-time="1970-01-01T00:00:00.000000Z"
+   name="word.gif"
+   kind="file"
+   deleted="false"
+   working-size="-1"
+   absent="false"
+   revision="5215"/>
+<cp-and-translate
+   dest="word.gif"
+   name=".svn/tmp/text-base/word.gif.svn-base"/>
+<mv
+   dest=".svn/text-base/word.gif.svn-base"
+   name=".svn/tmp/text-base/word.gif.svn-base"/>
+<readonly
+   name=".svn/text-base/word.gif.svn-base"/>
+<modify-entry
+   name="word.gif"
+   checksum="0bc553bf91fd21796d9444b4b444f899"/>
+<modify-entry
+   name="word.gif"
+   text-time="working"/>
+<modify-entry
+   name="word.gif"
+   working-size="working"/>
+<modify-entry
+   name="spacer.gif"
+   present-props=""
+   has-prop-mods="false"
+   has-props="true"/>
+<mv
+   dest=".svn/prop-base/spacer.gif.svn-base"
+   name=".svn/prop-base/tempfile.20.tmp"/>
+<readonly
+   name=".svn/prop-base/spacer.gif.svn-base"/>
+<modify-entry
+   committed-rev="5215"
+   committed-date="2014-12-23T03:32:47.652036Z"
+   name="spacer.gif"
+   last-author="liumin"
+   uuid="2512e77a-f209-4e56-bd4a-def6d2bcc206"/>
+<modify-entry
+   text-time="1970-01-01T00:00:00.000000Z"
+   name="spacer.gif"
+   kind="file"
+   deleted="false"
+   working-size="-1"
+   absent="false"
+   revision="5215"/>
+<cp-and-translate
+   dest="spacer.gif"
+   name=".svn/tmp/text-base/spacer.gif.svn-base"/>
+<mv
+   dest=".svn/text-base/spacer.gif.svn-base"
+   name=".svn/tmp/text-base/spacer.gif.svn-base"/>
+<readonly
+   name=".svn/text-base/spacer.gif.svn-base"/>
+<modify-entry
+   name="spacer.gif"
+   checksum="df3e567d6f16d040326c7a0ea29a4f41"/>
+<modify-entry
+   name="spacer.gif"
+   text-time="working"/>
+<modify-entry
+   name="spacer.gif"
+   working-size="working"/>
+<modify-entry
+   name="highlighted.gif"
+   present-props=""
+   has-prop-mods="false"
+   has-props="true"/>
+<mv
+   dest=".svn/prop-base/highlighted.gif.svn-base"
+   name=".svn/prop-base/tempfile.21.tmp"/>
+<readonly
+   name=".svn/prop-base/highlighted.gif.svn-base"/>
+<modify-entry
+   committed-rev="5215"
+   committed-date="2014-12-23T03:32:47.652036Z"
+   name="highlighted.gif"
+   last-author="liumin"
+   uuid="2512e77a-f209-4e56-bd4a-def6d2bcc206"/>
+<modify-entry
+   text-time="1970-01-01T00:00:00.000000Z"
+   name="highlighted.gif"
+   kind="file"
+   deleted="false"
+   working-size="-1"
+   absent="false"
+   revision="5215"/>
+<cp-and-translate
+   dest="highlighted.gif"
+   name=".svn/tmp/text-base/highlighted.gif.svn-base"/>
+<mv
+   dest=".svn/text-base/highlighted.gif.svn-base"
+   name=".svn/tmp/text-base/highlighted.gif.svn-base"/>
+<readonly
+   name=".svn/text-base/highlighted.gif.svn-base"/>
+<modify-entry
+   name="highlighted.gif"
+   checksum="940250e1b9b228f11916e9591417235e"/>
+<modify-entry
+   name="highlighted.gif"
+   text-time="working"/>
+<modify-entry
+   name="highlighted.gif"
+   working-size="working"/>
+<modify-entry
+   name="cancelbutton.gif"
+   present-props=""
+   has-prop-mods="false"
+   has-props="true"/>
+<mv
+   dest=".svn/prop-base/cancelbutton.gif.svn-base"
+   name=".svn/prop-base/tempfile.22.tmp"/>
+<readonly
+   name=".svn/prop-base/cancelbutton.gif.svn-base"/>
+<modify-entry
+   committed-rev="5215"
+   committed-date="2014-12-23T03:32:47.652036Z"
+   name="cancelbutton.gif"
+   last-author="liumin"
+   uuid="2512e77a-f209-4e56-bd4a-def6d2bcc206"/>
+<modify-entry
+   text-time="1970-01-01T00:00:00.000000Z"
+   name="cancelbutton.gif"
+   kind="file"
+   deleted="false"
+   working-size="-1"
+   absent="false"
+   revision="5215"/>
+<cp-and-translate
+   dest="cancelbutton.gif"
+   name=".svn/tmp/text-base/cancelbutton.gif.svn-base"/>
+<mv
+   dest=".svn/text-base/cancelbutton.gif.svn-base"
+   name=".svn/tmp/text-base/cancelbutton.gif.svn-base"/>
+<readonly
+   name=".svn/text-base/cancelbutton.gif.svn-base"/>
+<modify-entry
+   name="cancelbutton.gif"
+   checksum="f8bcaa64071e4173b7cd8daa9613ff34"/>
+<modify-entry
+   name="cancelbutton.gif"
+   text-time="working"/>
+<modify-entry
+   name="cancelbutton.gif"
+   working-size="working"/>
+<modify-entry
+   name="tangram-colorpicker.png"
+   present-props=""
+   has-prop-mods="false"
+   has-props="true"/>
+<mv
+   dest=".svn/prop-base/tangram-colorpicker.png.svn-base"
+   name=".svn/prop-base/tempfile.23.tmp"/>
+<readonly
+   name=".svn/prop-base/tangram-colorpicker.png.svn-base"/>
+<modify-entry
+   committed-rev="5215"
+   committed-date="2014-12-23T03:32:47.652036Z"
+   name="tangram-colorpicker.png"
+   last-author="liumin"
+   uuid="2512e77a-f209-4e56-bd4a-def6d2bcc206"/>
+<modify-entry
+   text-time="1970-01-01T00:00:00.000000Z"
+   name="tangram-colorpicker.png"
+   kind="file"
+   deleted="false"
+   working-size="-1"
+   absent="false"
+   revision="5215"/>
+<cp-and-translate
+   dest="tangram-colorpicker.png"
+   name=".svn/tmp/text-base/tangram-colorpicker.png.svn-base"/>
+<mv
+   dest=".svn/text-base/tangram-colorpicker.png.svn-base"
+   name=".svn/tmp/text-base/tangram-colorpicker.png.svn-base"/>
+<readonly
+   name=".svn/text-base/tangram-colorpicker.png.svn-base"/>
+<modify-entry
+   name="tangram-colorpicker.png"
+   checksum="c58df79dc817794353a65858035b71b6"/>
+<modify-entry
+   name="tangram-colorpicker.png"
+   text-time="working"/>
+<modify-entry
+   name="tangram-colorpicker.png"
+   working-size="working"/>

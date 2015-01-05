@@ -1,0 +1,387 @@
+/*共用样式开始*/
+*{
+	padding:0;
+	margin: 0;
+	list-style: none;
+	text-decoration: none;
+	border: none;
+	font-family: microsoft Yahei;
+}
+::-webkit-input-placeholder { /* WebKit browsers */
+	color: #999999;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+	color: #999999;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+	color: #999999;
+}
+:-ms-input-placeholder { /* Internet Explorer 10+ */
+	color: #999999;
+}
+.wrap{
+	margin: 0 auto;
+	width:100%;
+	min-width:1000px;
+}
+.content{
+	width: 980px;
+	margin: 0 auto;
+}
+.clear{
+	clear: both;
+}
+.aligncenter{
+	text-align: center;
+}
+.alignright{
+	text-align: right;
+}
+.bg_button{
+	background: #FD5353;
+	border-radius: 5px;
+}
+.bg_input{
+	background: #FFFFFF;
+	border-radius: 5px;
+}
+.clear_inline_block{
+	font-size: 0;/*消除inline-block元素间间距*/
+}
+.font1{
+	font:normal 14px/16px microsoft Yahei;
+}
+.font11{
+	font:normal 14px/35px microsoft Yahei;
+}
+.font111{
+	font:normal 14px/47px microsoft Yahei;
+}
+.font2{
+	font:normal 24px/26px microsoft Yahei;
+}
+.font3{
+	font:normal 20px/22px microsoft Yahei;
+}
+.font4{
+	font:normal 20px/50px microsoft Yahei;
+}
+.font44{
+	font:normal 20px/61px microsoft Yahei;
+}
+.font444{
+	font:normal 20px/45px microsoft Yahei;
+}
+.color1{
+	color: #666666;
+}
+.color2{
+	color: #333333;
+}
+.color3{
+	color: #999999;
+}
+.color4{
+	color: #FFFFFF;
+}
+.color5{
+	color: #433F3E;
+}
+.color6{
+	color: #AAAAAA;
+}
+.color7{
+	color:#FF534F;
+}
+.color8{
+	color:#3D3D3B;
+}
+.color9{
+	color:#B5B5B5;
+}
+/*共用样式结束*/
+
+/*头部开始*/
+#header{
+	background: #F7F7F7;
+	padding: 15px 0;
+}
+#header .content #nav_left li{
+	float: left;
+	margin-right: 10px;
+}
+#header .content #nav_right li{
+	float: right;
+	margin-right: 20px;
+}
+#header .content #nav_right .first_child{
+	margin-right: 0;
+}
+#header .content li a img{
+	vertical-align:middle;
+	margin-right: 5px;
+}
+#header .content li span{
+	padding-left: 5px;
+}
+#header .content li .line{
+	font:normal 18px/18px microsoft Yahei;
+	color:#D3D3D3;
+}
+/*头部logo部分开始*/
+#logo{
+	background: #FFFFFF;
+	padding: 30px 0;
+}
+#logo .content #nav_left li{
+	float: left;
+	margin-right: 10px;
+}
+#logo .content #nav_right li{
+	float: right;
+	margin-right: 50px;
+}
+#logo .content #nav_right li a:hover{
+	color: #FD5353;
+}
+#logo .content #nav_right .first_child{
+	margin-right: 0;
+}
+/*头部logo部分结束*/
+/*头部结束*/
+
+/*底部开始*/
+#footer{
+	background: #F7F7F7;
+	padding: 45px 0 50px;
+}
+#footer .content>ul{
+	margin-bottom: 45px;
+	padding-top: 10px;
+}
+#footer .content .float_left{
+	float: left;
+	width: 450px;
+}
+#footer .content .float_center{
+	float: left;
+	width: 220px;
+	padding-left: 30px;
+	padding-bottom: 5px;
+	border-left: 1px solid #D2D2D2;
+	border-right: 1px solid #D2D2D2;
+}
+#footer .content .float_right{
+	float: right;
+	width: 250px;
+}
+#footer .content .float_right .f_left{
+	float: left;
+}
+#footer .content .float_right .f_right{
+	float: right;
+}
+#footer .content .m_top{
+	margin-top: 25px;
+}
+#footer .content #links li{
+	float: left;
+	margin-right: 30px;
+}
+#footer .content #links li a:hover{
+	color: #FD5353;
+}
+/*底部结束*/
+
+/*首页开始*/
+#index_wrap #scroll{
+	margin: 0 auto;
+	background: #952523 url(../image/site/scroll1.png) no-repeat center center;
+	height: 385px;
+}
+#index_wrap #kdb{
+	margin: 0 auto;
+	background: #FFFFFF url(../image/site/kdb.png) no-repeat center 55px;
+	height: 520px;
+}
+#index_wrap #projectlist{
+	margin: 0 auto;
+	background: #F7F7F7;
+	padding: 60px 0 35px;
+}
+#index_wrap #recordlist{
+	margin: 0 auto;
+	background: #FFFFFF url(../image/site/record.png) no-repeat center 55px;
+	height: 470px;
+}
+#index_wrap #scroll .scroll_form{
+	background: #FAF4F4;
+	width: 288px;
+	height: 326px;
+	display: inline-block;
+	margin-top: 30px;
+	padding-right: 20px;
+	margin-left: 680px;
+}
+#index_wrap #scroll .scroll_form #title{
+	border-bottom: 1px solid #E7E1E1;
+	display: inline-block;
+	padding: 22px 5px 10px;
+}
+#index_wrap #scroll .scroll_form #title .first_child{
+	margin-right: 65px;
+}
+#index_wrap #scroll .scroll_input{
+	height: 33px;
+	width: 175px;
+	display: inline-block;
+	border: 1px solid #E3E3E3;
+	margin-top: 10px;
+	margin-left: 14px;
+	padding-left: 5px;
+}
+#index_wrap #scroll .scroll_input_width{
+	width: 80px;
+}
+#index_wrap #scroll .scroll_getcode{
+	height: 35px;
+	width: 85px;
+	display: inline-block;
+	margin-left: 10px;
+	margin-top: 10px;
+}
+#index_wrap #scroll .scroll_button{
+	height: 50px;
+	width: 266px;
+	display: inline-block;
+	margin-top: 20px;
+}
+#index_wrap #kdb .kdb_video{
+	border: 9px solid #F4F4F4;
+	display: inline-block;
+	margin-top: 120px;
+}
+#index_wrap #kdb .kdb_button{
+	height: 50px;
+	width: 270px;
+	display: inline-block;
+	margin-top: 52px;
+	margin-left: 550px;
+}
+/*首页结束*/
+
+/*注册页开始*/
+#register_wrap{
+	background: #F7F7F7;
+	padding: 50px 0;
+}
+#register_wrap .content .r_left{
+	display: inline-block;
+	float: left;
+	padding: 50px 0 20px;
+	height: 457px;
+}
+#register_wrap .content .r_left li{
+	float: left;
+}
+#register_wrap .content .r_left #left{
+	margin-right: 40px;
+	padding: 90px 25px;
+}
+#register_wrap .content .r_left #right{
+	margin-left: 40px;
+	padding: 90px 25px;
+}
+#register_wrap .content .r_right{
+	background: #FFFFFF;
+	width: 404px;
+	display: inline-block;
+	float: right;
+	padding: 50px 0 20px;
+}
+#register_wrap .content ._input{
+	height: 45px;
+	width: 240px;
+	display: inline-block;
+	border: 1px solid #E3E3E3;
+	margin: 20px 34px auto 8px;
+	padding-left: 15px; 
+}
+#register_wrap .content ._w_input{
+	width: 131px;
+	margin-right: auto;
+}
+#register_wrap .content ._w_input1{
+	width: 100px;
+	display: inline-block;
+	margin-left: 9px;
+	margin-right: 34px;
+}
+#register_wrap .content .first_child{
+	display: inline-block;
+	padding-bottom: 30px;
+}
+#register_wrap .content ._border{
+	border: 1px solid #FD5353;
+	margin-top: 50px;
+}
+#register_wrap .content ._border1{
+	border: none;
+	margin-top: 30px;
+}
+
+/*注册页结束*/
+
+/*登录页开始*/
+#login_wrap{
+	background: #F7F7F7;
+	padding: 50px 0;
+}
+#login_wrap .content .l_left{
+	display: inline-block;
+	float: left;
+	height: 427px;
+	padding: 20px 0;
+}
+#login_wrap .content .l_left li{
+	float: left;
+}
+#login_wrap .content .l_left #left{
+	margin-right: 40px;
+	padding: 90px 25px;
+}
+#login_wrap .content .l_left #right{
+	margin-left: 40px;
+	padding: 90px 25px;
+}
+#login_wrap .content .l_right{
+	background: #FFFFFF;
+	width: 404px;
+	display: inline-block;
+	float: right;
+	padding: 50px 0 20px;
+}
+#login_wrap .content ._input{
+	height: 48px;
+	width: 280px;
+	display: inline-block;
+	border: 1px solid #E3E3E3;
+	margin: 20px 30px auto 20px;
+	padding-left: 15px; 
+}
+#login_wrap .content .first_child{
+	display: inline-block;
+	padding-bottom: 30px;
+}
+#login_wrap .content ._border{
+	border: 1px solid #FD5353;
+	margin-top: 50px;
+}
+#login_wrap .content ._border1{
+	border: none;
+	margin-top: 30px;
+}
+#login_wrap .content ._border1 .nth_child{
+	margin: 0 10px;
+}
+/*登录页结束*/

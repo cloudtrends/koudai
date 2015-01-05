@@ -1,0 +1,20 @@
+[2014-12-27 03:00:01]-[]-[data] :Request Para=array (
+  'service' => 'query_account_balance',
+  'sign_type' => 'RSA',
+  'mer_id' => '25116',
+  'version' => '4.0',
+  'charset' => 'UTF-8',
+)
+[2014-12-27 03:00:01]-[]-[data] :Participate in the signature parametersÔºö[charset=UTF-8&mer_id=25116&service=query_account_balance&version=4.0],Merchant number isÔºö[25116]
+[2014-12-27 03:00:01]-[]-[data] :The private key path forÔºö/opt/lampp/htdocs/common/config/cert/25116_wenzhoudai.key.pem
+[2014-12-27 03:00:01]-[]-[data] :Signature string forÔºö†ç˛?®,E}ßX›\N[óà%FS yf__üå,*)Lnˆ4Ã^ë3N≥+ZÇÌb≤Ì÷¬Ì@Òöïè¡U|o∏^—«Ö‹¨ÎŒΩ˙ÁºËm~r†Í÷’Ÿ8n*Ô"l£óä‹á¬a~»úÔCÿ-õ¡∏é…™Ú
+[2014-12-27 03:00:01]-[]-[data] :Request platform way=get
+[2014-12-27 03:00:01]-[]-[data] :Request platform signature string=oI0T/j+oLEUOfacWWN1cTluXA/CIJUYXUxLKeWZfX5+MLCopTG72NMxekTNOsytaFILtYrLt1sLtQPGalY8PwVV8b7he0R7HhdysGBkF6869+ue86G0dfnKg6tbVf9kUOG4UKu8ibKOXityHwmF+yJzvQ9gtFwybwRS4G47JqvI=
+[2014-12-27 03:00:01]-[]-[data] :Clear information request platform=charset=UTF-8&mer_id=25116&service=query_account_balance&version=4.0
+[2014-12-27 03:00:01]-[]-[data] :The service query_account_balance request platform to get the address url=http://pay.soopay.net/spay/pay/payservice.do?charset=UTF-8&mer_id=25116&service=query_account_balance&sign_type=RSA&version=4.0&sign=oI0T/j+oLEUOfacWWN1cTluXA/CIJUYXUxLKeWZfX5+MLCopTG72NMxekTNOsytaFILtYrLt1sLtQPGalY8PwVV8b7he0R7HhdysGBkF6869+ue86G0dfnKg6tbVf9kUOG4UKu8ibKOXityHwmF+yJzvQ9gtFwybwRS4G47JqvI=
+[2014-12-27 03:00:01]-[]-[data] :plat response mer data:bal_sign=000000000025710936&mer_id=25116&ret_code=0000&ret_msg=Êü•ËØ¢ÊàêÂäü&sign_type=RSA&version=4.0&sign=clG8e39FHmLs9ZNeCJfrqCFp56u2e2Y5KlVp97Ci5BAzhQBwF5c/KJi3RQIk32cHqZvlakUr9fBzXLu5mgPCvRN1S5RFlBUNhfvqNTNHKpAFB+U4wcyf6Te37xZfXU6+e4EHwIiY4irum7qsMixXvGf2MxXKsr6YxtqbNCCkPe8=
+[2014-12-27 03:00:01]-[]-[data] :interface fields:merId,goodsId,orderId,merDate,retCode,retMsg,version,sign
+[2014-12-27 03:00:01]-[]-[data] :response sign=bal_sign=000000000025710936&mer_id=25116&ret_code=0000&ret_msg=Êü•ËØ¢ÊàêÂäü&sign_type=RSA&version=4.0
+[2014-12-27 03:00:01]-[]-[data] :response sign=clG8e39FHmLs9ZNeCJfrqCFp56u2e2Y5KlVp97Ci5BAzhQBwF5c/KJi3RQIk32cHqZvlakUr9fBzXLu5mgPCvRN1S5RFlBUNhfvqNTNHKpAFB+U4wcyf6Te37xZfXU6+e4EHwIiY4irum7qsMixXvGf2MxXKsr6YxtqbNCCkPe8=
+[2014-12-27 03:00:01]-[]-[data] :response plain=bal_sign=000000000025710936&mer_id=25116&ret_code=0000&ret_msg=Êü•ËØ¢ÊàêÂäü&version=4.0
+[2014-12-27 03:00:01]-[]-[data] :verify:1

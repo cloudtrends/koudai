@@ -1,0 +1,757 @@
+<?php
+namespace frontend\controllers;
+
+use common\models\NoticeSms;
+use Yii;
+use yii\db\Query;
+use yii\base\UserException;
+use yii\filters\AccessControl;
+use common\services\AccountService;
+use common\models\UserDailyProfits;
+use common\models\ProjectProfits;
+use common\models\KdbInvest;
+use common\models\ProjectInvest;
+use common\models\Project;
+use common\models\UserWithdraw;
+use common\models\UserAccount;
+use common\models\UserAccountLog;
+use common\models\UserBankCard;
+use common\helpers\TimeHelper;
+use common\models\KdbInfo;
+use common\models\Order;
+
+/**
+ * Account controller
+ */
+class AccountController extends BaseController
+{
+	protected $accountService;
+	
+	public function __construct($id, $module, AccountService $accountService, $config = [])
+	{
+		$this->accountService = $accountService;
+		parent::__construct($id, $module, $config);
+	}
+	
+	public function behaviors()
+	{
+		// 所有的action都需要登录
+		return [
+			'access' => [
+				'class' => AccessControl::className(),
+				'rules' => [
+					[
+						'allow' => true,
+						'roles' => ['@'],
+					],
+				],
+			],
+		];
+	}
+	
+	/**
+	 * 用户资金主页
+	 * 
+	 * @name 用户资金主页 [accountHome]
+	 */
+	public function actionHome()
+	{
+		$curUser = Yii::$app->user->identity;
+        $readCount = NoticeSms::findNewNoticeByCount($curUser->account->user_id);
+		return [
+			'code' => 0,
+			'data' => [
+				'lastday_profits_date' => strtotime(date('Y-m-d', time() - 24 * 3600)),
+				'lastday_profits' => $curUser->account->getLastdayProfits(),
+				'total_profits' => $curUser->account->total_profits,
+				'total_money' => $curUser->account->total_money,
+				'hold_money' => $curUser->account->getTotalHoldMoney(),
+				'remain_money' => $curUser->account->usable_money + $curUser->account->withdrawing_money,
+				'trade_count' => $curUser->getInvestCount(),
+				'finished_count' => $curUser->getFinishedProjInvestCount(),
+              'new_read_count' => $readCount,
+			],
+		];
+	}
+	
+	/**
+	 * 已完结项目列表
+	 * 
+	 * @name 已完结项目列表 [accountFinishedProj]
+	 * @param integer $page 第几页
+	 * @param integer $pageSize 每页个数
+	 */
+	public function actionFinishedProj($page = 1, $pageSize = 15)
+	{
+		$page = $page > 1 ? intval($page) : 1;
+		$pageSize = intval($pageSize);
+		$offset = ($page - 1) * $pageSize;
+		
+		$curUser = Yii::$app->user->identity;
+		$data = ProjectInvest::find()->with('profits')->where([
+			'user_id' => $curUser->id,
+			'status' => [ProjectInvest::STATUS_CANCELED, ProjectInvest::STATUS_FULLY_ASSIGNED, ProjectInvest::STATUS_REPAYED],
+		])->orderBy([
+			'id' => SORT_DESC,
+		])->offset($offset)->limit($pageSize)->asArray()->all();
+		
+		$projects = [];
+		foreach ($data as $v) {
+			$projects[] = [
+				'profits_id' => isset($v['profits']) ? $v['profits']['id'] : 0,
+				'project_name' => $v['project_name'],
+				'invest_money' => $v['invest_money'],
+				'status' => $v['status'],
+				'status_label' => ProjectInvest::$status[$v['status']],
+				'updated_at' => $v['updated_at'],
+			];
+		}
+		return [
+			'code' => 0,
+			'projects' => $projects,
+		];
+	}
+	
+	/**
+	 * 上一天收益详情
+	 *
+	 * @name 上一天收益详情 [accountLastdayProfits]
+	 */
+	public function actionLastdayProfits()
+	{
+		$lastdate = date('Y-m-d', time() - 24 * 3600);
+		$curUser = Yii::$app->user->identity;
+		
+		$profits = (new Query())->from(UserDailyProfits::tableName())->select([
+			'id', 'lastday_profits', 'project_type', 'project_name', 'invest_id', 'date',
+		])->where([
+			'user_id' => $curUser->id,
+			'date' => $lastdate,
+		])->orderBy([
+			'date' => SORT_DESC,
+		])->all();
+		
+		return [
+			'code' => 0,
+			'data' => [
+				'lastdate' => strtotime($lastdate),
+				'lastday_profits' => $curUser->account->getLastdayProfits(),
+			],
+			'profits' => $profits,
+		];
+	}
+	
+	/**
+	 * 累计收益详情
+	 *
+	 * @name 累计收益详情 [accountTotalProfits]
+	 * @param integer $page 第几页
+	 * @param integer $pageSize 每页个数
+	 */
+	public function actionTotalProfits($page = 1, $pageSize = 15)
+	{
+		$curUser = Yii::$app->user->identity;
+		
+		$page = $page > 1 ? intval($page) : 1;
+		$pageSize = intval($pageSize);
+		$offset = ($page - 1) * $pageSize;
+		
+		if ($page <= 1) {
+			$data = [
+				// 总收益
+				'total_profits' => $curUser->account->total_profits,
+			];
+		} else {
+			$data = [];
+		}
+		
+		$profits = [];
+		// 老逻辑，先弃用
+// 		$profitsList = UserRedis::HGET($curUser->id, 'profits_list');
+// 		if ($profitsList) {
+// 			$profits = array_slice(unserialize($profitsList), $offset, $pageSize);
+// 		}
+		if ($curUser->account->kdb_total_profits) {
+			$profits[] = [
+				'id' => 0,
+				'invest_id' => 0,
+				'project_name' => '口袋宝',
+				'profits' => $curUser->account->kdb_total_profits,
+				'status' => 0,
+			];
+		}
+		$projProfits = ProjectProfits::find()->where([
+			'profits_uid' => $curUser->id,
+			'status' => [ProjectProfits::STATUS_REPAYED, ProjectProfits::STATUS_FULLY_ASSIGNED],
+		])->asArray()->all();
+		foreach ($projProfits as $v) {
+			$profits[] = [
+				'id' => $v['id'],
+				'invest_id' => $v['invest_id'],
+				'project_name' => $v['project_name'],
+				'profits' => $v['duein_profits'],
+				'status' => 0,
+			];
+		}
+		if ($profits) {
+			$profits = array_slice($profits, $offset, $pageSize);
+		}
+		
+		return [
+			'code' => 0,
+			'data' => $data,
+			'profits' => $profits,
+		];
+	}
+	
+	/**
+	 * 项目收益详情
+	 * 
+	 * @name 项目收益详情 [accountProfitsDetail]
+	 * @param integer $id 收益id，为0表示口袋宝
+	 * @param integer $invest_id 投资id
+	 */
+	public function actionProfitsDetail($id, $invest_id = 0)
+	{
+		$curUser = Yii::$app->user->identity;
+		$id = intval($id);
+		if ($id == 0) {
+			// 新流程中口袋宝的收益详情已经不走这里了，暂不删除以保持老版本兼容
+			$kdb = KdbInfo::findKoudai();
+			return [
+				'code' => 0,
+				'data' => [
+					'project_name' => $kdb->title,
+					'duein_capital' => $curUser->account->kdb_total_money - $curUser->account->kdb_total_profits,
+					'apr' => $kdb->apr,
+					'duein_money' => $curUser->account->kdb_total_money,
+					'period_label' => '',
+					'created_at' => '',
+					'interest_start_date' => '',
+					'last_repay_date' => '',
+					'interest_date' => '',
+					'repay_date' => '',
+					'expression' => '年化利率×投资金额×持有天数/365',
+				],
+			];
+		} else {
+			// 如果两个id相等，表明是申购中的投资，还没有收益记录
+			if ($invest_id && $id == $invest_id) {
+				$invest = ProjectInvest::findOne(intval($invest_id));
+				return [
+					'code' => 0,
+					'data' => [
+						'project_name' => $invest->project_name,
+						'duein_capital' => $invest->invest_money,
+						'apr' => $invest->project->apr,
+						'duein_money' => $invest->invest_money + $invest->getDueinProfits($invest->project),
+						'period_label' => $invest->project->getPeriodLabel(),
+						'created_at' => date('Y-m-d', $invest->created_at),
+						'interest_start_date' => '',
+						'last_repay_date' => '',
+						'interest_date' => $invest->project->interest_date,
+						'repay_date' => $invest->project->repay_date,
+						'expression' => $invest->project->is_day ? '年化利率×投资金额×持有天数/365' : '年化利率×投资金额×持有月数/12',
+					],
+				];
+			} else {
+				$profits = ProjectProfits::findOne([
+					'id' => $id,
+					'profits_uid' => $curUser->id,
+				]);
+				return [
+					'code' => 0,
+					'data' => [
+						'project_name' => $profits->project_name,
+						'duein_capital' => $profits->duein_capital,
+						'apr' => $profits->project_apr,
+						'duein_money' => $profits->duein_money,
+						'period_label' => $profits->project->getPeriodLabel(),
+						'created_at' => date('Y-m-d', $profits->invest->created_at),
+						'interest_start_date' => $profits->interest_start_date,
+						'last_repay_date' => $profits->last_repay_date,
+						'interest_date' => $profits->project->interest_date,
+						'repay_date' => $profits->project->repay_date,
+						'expression' => $profits->project->is_day ? '年化利率×投资金额×持有天数/365' : '年化利率×投资金额×持有月数/12',
+					],
+				];
+			}
+		}
+	}
+	
+	/**
+	 * 持有资产详情
+	 *
+	 * @name 持有资产详情 [accountHold]
+	 * @param integer $page 第几页
+	 * @param integer $pageSize 每页个数
+	 */
+	public function actionHold($page = 1, $pageSize = 10)
+	{
+		$curUser = Yii::$app->user->identity;
+		
+		$page = $page > 1 ? intval($page) : 1;
+		$pageSize = intval($pageSize);
+		$offset = ($page - 1) * $pageSize;
+		$profits = (new Query())->from(ProjectProfits::tableName())->select([
+			'id', 'invest_id', 'project_name', 'project_apr', 'duein_capital', 'duein_profits',
+			'interest_start_date', 'last_repay_date', 'is_transfer', 'status'
+		])->where([
+			'invest_uid' => $curUser->id,
+			'status' => [ProjectProfits::STATUS_PENDING, ProjectProfits::STATUS_SUCCESS, ProjectProfits::STATUS_ASSIGNING],
+		])->orderBy([
+			'id' => SORT_DESC,
+		])->offset($offset)->limit($pageSize)->all();
+		// btn_type: 1无按钮，2转让按钮，3取消按钮
+		foreach ($profits as $k => $v) {
+			if ($v['status'] == ProjectProfits::STATUS_PENDING) {
+				$profits[$k]['statusLabel'] = '申购中';
+				$profits[$k]['btn_type'] = 1; // 无按钮
+			} else if ($v['status'] == ProjectProfits::STATUS_SUCCESS) {
+				if ($v['is_transfer']) {
+					$profits[$k]['statusLabel'] = '申购成功，来自转让';
+					$profits[$k]['btn_type'] = 1; // 无按钮
+				} else {
+					$profits[$k]['statusLabel'] = '申购成功';
+ 					$now = TimeHelper::Now();
+ 					$start_time = strtotime($v['interest_start_date']);
+ 					$end_time = strtotime($v['last_repay_date']);
+ 					if (!TimeHelper::isLT30Days($now, $start_time) || !TimeHelper::isLT30Days($end_time, $now)) {
+ 						$profits[$k]['btn_type'] = 1; // 无按钮
+ 					} else {
+						$profits[$k]['btn_type'] = 2; // 转让按钮
+ 					}
+				}
+			} else if ($v['status'] == ProjectProfits::STATUS_ASSIGNING) {
+				$profits[$k]['statusLabel'] = '转让中';
+				$profits[$k]['btn_type'] = 3; // 取消按钮
+			}
+		}
+		
+		if ($page <= 1) {
+			$data = [
+				// 总持有资产
+				'total_hold_money' => $curUser->account->getTotalHoldMoney(),
+				// 口袋宝总额
+				'kdb_total_money' => $curUser->account->kdb_total_money,
+				// 口袋宝总收益
+				'kdb_total_profits' => $curUser->account->kdb_total_profits,
+				// 申购中冻结金额
+				'investing_money' => $curUser->account->investing_money,
+				// 待收本金
+				'duein_capital' => $curUser->account->duein_capital,
+				// 未结算收益
+				'duein_profits' => $curUser->account->duein_profits,
+			];
+			$tempProjs = (new Query())->from(ProjectInvest::tableName() . ' as pi')->select([
+				'pi.id', 'pi.invest_money', 'pi.project_id', 'pi.status', 'p.name', 'p.apr'
+			])->leftJoin(
+				Project::tableName() . ' as p',
+				'pi.project_id = p.id'
+			)->where([
+				'pi.user_id' => $curUser->id,
+				'pi.status' => ProjectInvest::STATUS_PENDING,
+			])->orderBy([
+				'pi.id' => SORT_DESC,
+			])->all();
+			$pending_projects = [];
+			if ($tempProjs) {
+				foreach ($tempProjs as $proj) {
+					$pending_projects[] = [
+						'id' => $proj['id'],
+						'invest_id' => $proj['id'],
+						'project_name' => $proj['name'],
+						'project_apr' => $proj['apr'],
+						'duein_capital' => $proj['invest_money'],
+						'duein_profits' => 0,
+						'interest_start_date' => '',
+						'last_repay_date' => '',
+						"is_transfer" => '0',
+						'status' => $proj['status'],
+						'statusLabel' => '申购中',
+						'btn_type' => 1, // 无按钮
+					];
+				}
+			}
+		} else {
+			$data = [];
+			$pending_projects = [];
+		}
+		
+		return [
+			'code' => 0,
+			'data' => $data,
+			'pending_projects' => $pending_projects,
+			'list' => $profits,
+		];
+	}
+	
+	/**
+	 * 账户余额详情
+	 *
+	 * @name 账户余额详情 [accountRemain]
+	 */
+	public function actionRemain()
+	{
+		$curUser = Yii::$app->user->identity;
+		return [
+			'code' => 0,
+			'data' => [
+				'money' => $curUser->account->usable_money + $curUser->account->withdrawing_money,
+				'usable_money' => $curUser->account->usable_money,
+				'withdrawing_money' => $curUser->account->withdrawing_money,
+			],
+		];
+	}
+	
+	/**
+	 * 余额收支明细
+	 * 
+	 * @name 余额收支明细 [accountRemainList]
+	 * @param integer $type 1代表收入列表，2代表支出列表，0或不传是所有列表
+	 * @param integer $page 第几页
+	 * @param integer $pageSize 每页个数
+	 */
+	public function actionRemainList($type = 0, $page = 1, $pageSize = 15)
+	{
+		if ($type == 1) {
+			$types = UserAccount::$remainInTypes;
+		} else if ($type == 2) {
+			$types = UserAccount::$remainOutTypes;
+		} else {
+			$types = array_merge(UserAccount::$remainInTypes, UserAccount::$remainOutTypes);
+		}
+		
+		$curUser = Yii::$app->user->identity;
+		
+		$page = $page > 1 ? intval($page) : 1;
+		$pageSize = intval($pageSize);
+		$offset = ($page - 1) * $pageSize;
+		
+		$logs = (new Query())->from(UserAccountLog::tableName())->select([
+			'id', 'operate_money', 'type', 'created_at'
+		])->where([
+			'user_id' => $curUser->id,
+			'type' => $types,
+		])->orderBy([
+			'id' => SORT_DESC,
+		])->offset($offset)->limit($pageSize)->all();
+		
+		$data = [];
+		foreach ($logs as $log) {
+			$data[] = [
+				'id' => $log['id'],
+				'money' => $log['operate_money'],
+				'tag' => in_array($log['type'], UserAccount::$remainInTypes) ? '+' : '-',
+				'type' => $log['type'],
+				'title' => UserAccount::$tradeTypes[$log['type']],
+				'created_at' => $log['created_at'],
+			];
+		}
+		
+		return [
+			'code' => 0,
+			'data' => $data,
+		];
+	}
+	
+	/**
+	 * 口袋宝交易记录列表
+	 *
+	 * @name 口袋宝交易记录列表 [accountKdbTrades]
+	 * @param integer $page 第几页
+	 * @param integer $pageSize 每页个数
+	 */
+	public function actionKdbTrades($page = 1, $pageSize = 10)
+	{
+		$curUser = Yii::$app->user->identity;
+		
+		$page = $page > 1 ? intval($page) : 1;
+		$pageSize = intval($pageSize);
+		$offset = ($page - 1) * $pageSize;
+		
+		$data = (new Query())->from(KdbInvest::tableName())->select([
+			'id', 'invest_money', 'created_at', 'status'
+		])->where([
+			'user_id' => $curUser->id,
+		])->orderBy([
+			'id' => SORT_DESC,
+		])->offset($offset)->limit($pageSize)->all();
+		
+		foreach ($data as $k => $v) {
+			$data[$k]['status'] = KdbInvest::$status[$v['status']];
+		}
+		
+		return [
+			'code' => 0,
+			'data' => $data,
+		];
+	}
+	
+	/**
+	 * 普通项目交易记录列表
+	 *
+	 * @name 普通项目交易记录列表 [accountProjectTrades]
+	 * @param integer $page 第几页
+	 * @param integer $pageSize 每页个数
+	 */
+	public function actionProjectTrades($page = 1, $pageSize = 10)
+	{
+		$curUser = Yii::$app->user->identity;
+		
+		$page = $page > 1 ? intval($page) : 1;
+		$pageSize = intval($pageSize);
+		$offset = ($page - 1) * $pageSize;
+		
+		$data = (new Query())->from(ProjectInvest::tableName() . 'as pi')->select([
+			'pi.id', 'pi.invest_money', 'pi.created_at', 'pi.status', 'p.name'
+		])->leftJoin(
+			Project::tableName() . 'as p', 'p.id = pi.project_id'
+		)->where([
+			'pi.user_id' => $curUser->id,
+		])->orderBy([
+			'pi.id' => SORT_DESC,
+		])->offset($offset)->limit($pageSize)->all();
+		
+		foreach ($data as $k => $v) {
+			$data[$k]['status'] = ProjectInvest::$status[$v['status']];
+		}
+		
+		return [
+			'code' => 0,
+			'data' => $data,
+		];
+	}
+	
+	/**
+	 * 获取可用余额和银行卡列表
+	 * 
+	 * @name 获取可用余额和银行卡列表 [accountGet]
+	 */
+	public function actionGet()
+	{
+		$curUser = Yii::$app->user->identity;
+		$cards = UserBankCard::find()->select(
+			['bank_id', 'bank_name', 'card_no']
+		)->where(['user_id' => $curUser->id])->asArray()->all();
+		$banks = [];
+		if ($cards) {
+			foreach ($cards as $card) {
+				$banks[] = [
+					'id' => $card['bank_id'],
+					'bank_name' => $card['bank_name'],
+					'tail_number' => substr($card['card_no'], -4),
+				];
+			};
+		}
+		return [
+			'code' => 0,
+			'usable_money' => $curUser->account->usable_money,
+			'banks' => $banks,
+		];
+	}
+	
+	/**
+	 * 提现下单
+	 *
+	 * @name 提现下单 [accountWithdrawOrder]
+	 * @method post
+	 */
+	public function actionWithdrawOrder()
+	{
+		$curUser = Yii::$app->user->identity;
+	
+		// 简单验证
+		if (!$curUser->getUserPayPassword()) {
+			throw new UserException('您还没有设置交易密码');
+		}
+	
+		$order = new Order();
+		$order->order_id = Order::generateOrderId();
+		$order->type = Order::TYPE_WITHDRAW;
+		$order->user_id = $curUser->id;
+		$order->money = 0; // 提现不提前村金额
+		if ($order->save()) {
+			return [
+				'code' => 0,
+				'order_id'=> $order->order_id,
+			];
+		} else {
+			throw new UserException('系统繁忙，请重试');
+		}
+	}
+	
+	/**
+	 * 提现
+	 * 
+	 * @name 提现 [accountWithdraw]
+	 * @method post
+	 * @param string $money 提现金额
+	 * @param string $pay_password 交易密码
+	 * @param string $order_id 订单ID
+	 * @param string $sign 签名：签名方式同kdbInvest接口
+	 */
+	public function actionWithdraw()
+	{
+		$money = intval(bcmul($this->request->post('money'), 100));
+		$payPwd = $this->request->post('pay_password');
+		
+		$curUser = Yii::$app->user->identity;
+		if ($money <= 0) {
+			throw new UserException('提现金额需大于0');
+		} else if ($payPwd === null) {
+			throw new UserException('交易密码不能为空');
+		} else if ($money > $curUser->account->usable_money) {
+			throw new UserException('提现金额不能大于可用余额');
+		} else if (!$curUser->validatePayPassword($payPwd)) {
+			throw new UserException('交易密码错误');
+		}
+		
+		if (!($this->client->clientType == 'ios' && $this->client->appVersion == '1.0.1')) {
+			// 验证签名
+			$params = $this->request->post();
+			$sign = $this->request->post('sign');
+			if (!Order::validateSign($params, $sign)) {
+				throw new UserException('请求签名无效，请按正常流程重试', 2001);
+			}
+		
+			// 验证订单
+			$order_id = $this->request->post('order_id');
+			$order = Order::findOne(['order_id' => $order_id]);
+			if (!$order) {
+				throw new UserException('请求无效，请按正常流程重试', 2002);
+			} else if (!$order->getCanCommit()) {
+				throw new UserException('您的请求已处理完成，请勿重复提交', 2003);
+			}
+		}
+		
+		// 加锁，如果已经有锁，则抛异常失败
+		$curUser->addTradeLock();
+		try {
+			// 提现次数限制
+			$times = UserWithdraw::find()->where(['user_id' => $curUser->id])->count();
+			$timesLimit = Yii::$app->params['withdraw']['daily_times_limit'];
+			if ($times > $timesLimit) {
+				throw new UserException("单日提现次数不能超过{$timesLimit}次");
+			}
+			$result = $this->accountService->withdraw($curUser, $money);
+			
+			if ($result) {
+				if (!($this->client->clientType == 'ios' && $this->client->appVersion == '1.0.1')) {
+					$order->status = Order::STATUS_SUCCESS;
+					$order->save(false);
+				}
+				$curUser->releaseTradeLock();
+				
+				return [
+					'code' => 0,
+					'result' => $result,
+				];
+			} else {
+				throw new UserException('申请提现失败，请稍后再试');
+			}
+		} catch (\Exception $e) {
+			if (!($this->client->clientType == 'ios' && $this->client->appVersion == '1.0.1')) {
+				$order->status = Order::STATUS_FAILED;
+				$order->save(false);
+			}
+			$curUser->releaseTradeLock();
+			throw $e;
+		}
+	}
+	
+	/**
+	 * 提现记录
+	 * 
+	 * @name 提现记录 [accountWithdrawLog]
+	 * @param integer $page 第几页
+	 * @param integer $pageSize 每页个数
+	 */
+	public function actionWithdrawLog($page = 1, $pageSize = 15)
+	{
+		$curUser = Yii::$app->user->identity;
+		
+		$page = $page > 1 ? intval($page) : 1;
+		$pageSize = intval($pageSize);
+		$offset = ($page - 1) * $pageSize;
+		
+		$data = (new Query())->from(UserWithdraw::tableName())->select([
+			'id', 'money', 'status', 'created_at'
+		])->where([
+			'user_id' => $curUser->id,
+		])->orderBy([
+			'id' => SORT_DESC,
+		])->offset($offset)->limit($pageSize)->all();
+		
+		foreach ($data as &$v) {
+			$v['statusLabel'] = UserWithdraw::$ump_pay_status[$v['status']];
+		}
+		
+		return [
+			'code' => 0,
+			'data' => $data,
+		];
+	}
+
+	/**
+	 * 口袋宝收益列表
+	 * 
+	 * @name 口袋宝收益列表 [accountUserDailyProfits]
+	 *
+	 */
+	public function actionUserDailyProfits()
+	{
+		$curUser = Yii::$app->user->identity;
+		$kdb_total_profits = $curUser->account->kdb_total_profits;
+		$date =strtotime(date('Y-m-d',time()-30*86400));
+		
+		$data = (new Query())->from(UserDailyProfits::tableName())->select([
+			'id','date', 'lastday_profits',
+		])->where([
+			'user_id' => $curUser->id,
+		])->andwhere(
+			'UNIX_TIMESTAMP(date) >= "'.$date.'"'
+		)->orderBy([
+			'lastday_profits' => SORT_DESC,
+		])->all();
+		foreach ($data as &$v) {
+			$arr[] =$v['lastday_profits'];
+			$arr1[] =$v['lastday_profits'];
+			$min = end($arr);
+			$max = current($arr1);
+		}
+		foreach ($data as &$v) {
+			$v['Percentage'] = sprintf('%.3f',($v['lastday_profits']-$min) / ($max-$min));
+		}		
+
+		return [
+			'code' => 0,
+			'kdb_total_profits'=> $kdb_total_profits,
+			'data' => $data,
+		];
+	}
+
+    /**
+     * 根据用户ID获取未读信息
+     * @return array
+     */
+    public function actionNoticeInfo()
+    {
+        $curUser = Yii::$app->user->identity;
+        $data = NoticeSms::findNewNotice($curUser->account->user_id);
+        $projects = [];
+        foreach ($data as $dataVal ) {
+            $projects[] = [
+                'id' => $dataVal['id'],
+                'type' => $dataVal['type'],
+                'remark' => $dataVal['remark'],
+                'created_at' => $dataVal['created_at'],
+            ];
+        }
+
+        return [
+            'code' => 0,
+            'data' => $projects,
+        ];
+    }
+}

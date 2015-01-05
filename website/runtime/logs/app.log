@@ -1,0 +1,229 @@
+2015-01-05 11:48:15 [192.168.1.129][-][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "video/12-29kdb.mp4".' in /opt/lampp/htdocs/vendor/yiisoft/yii2/base/Module.php:468
+Stack trace:
+#0 /opt/lampp/htdocs/vendor/yiisoft/yii2/web/Application.php(83): yii\base\Module->runAction('video/12-29kdb....', Array)
+#1 /opt/lampp/htdocs/vendor/yiisoft/yii2/base/Application.php(371): yii\web\Application->handleRequest(Object(website\components\Request))
+#2 /opt/lampp/htdocs/website/web/index.php(18): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Unable to resolve the request "video/12-29kdb.mp4".' in /opt/lampp/htdocs/vendor/yiisoft/yii2/web/Application.php:95
+Stack trace:
+#0 /opt/lampp/htdocs/vendor/yiisoft/yii2/base/Application.php(371): yii\web\Application->handleRequest(Object(website\components\Request))
+#1 /opt/lampp/htdocs/website/web/index.php(18): yii\base\Application->run()
+#2 {main}
+2015-01-05 11:48:18 [192.168.1.129][-][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "video/12-29kdb.mp4".' in /opt/lampp/htdocs/vendor/yiisoft/yii2/base/Module.php:468
+Stack trace:
+#0 /opt/lampp/htdocs/vendor/yiisoft/yii2/web/Application.php(83): yii\base\Module->runAction('video/12-29kdb....', Array)
+#1 /opt/lampp/htdocs/vendor/yiisoft/yii2/base/Application.php(371): yii\web\Application->handleRequest(Object(website\components\Request))
+#2 /opt/lampp/htdocs/website/web/index.php(18): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Unable to resolve the request "video/12-29kdb.mp4".' in /opt/lampp/htdocs/vendor/yiisoft/yii2/web/Application.php:95
+Stack trace:
+#0 /opt/lampp/htdocs/vendor/yiisoft/yii2/base/Application.php(371): yii\web\Application->handleRequest(Object(website\components\Request))
+#1 /opt/lampp/htdocs/website/web/index.php(18): yii\base\Application->run()
+#2 {main}
+2015-01-05 11:48:18 [192.168.1.129][-][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "video/12-29kdb.mp4".' in /opt/lampp/htdocs/vendor/yiisoft/yii2/base/Module.php:468
+Stack trace:
+#0 /opt/lampp/htdocs/vendor/yiisoft/yii2/web/Application.php(83): yii\base\Module->runAction('video/12-29kdb....', Array)
+#1 /opt/lampp/htdocs/vendor/yiisoft/yii2/base/Application.php(371): yii\web\Application->handleRequest(Object(website\components\Request))
+#2 /opt/lampp/htdocs/website/web/index.php(18): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Unable to resolve the request "video/12-29kdb.mp4".' in /opt/lampp/htdocs/vendor/yiisoft/yii2/web/Application.php:95
+Stack trace:
+#0 /opt/lampp/htdocs/vendor/yiisoft/yii2/base/Application.php(371): yii\web\Application->handleRequest(Object(website\components\Request))
+#1 /opt/lampp/htdocs/website/web/index.php(18): yii\base\Application->run()
+#2 {main}
+2015-01-05 11:48:18 [192.168.1.129][-][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "video/12-29kdb.mp4".' in /opt/lampp/htdocs/vendor/yiisoft/yii2/base/Module.php:468
+Stack trace:
+#0 /opt/lampp/htdocs/vendor/yiisoft/yii2/web/Application.php(83): yii\base\Module->runAction('video/12-29kdb....', Array)
+#1 /opt/lampp/htdocs/vendor/yiisoft/yii2/base/Application.php(371): yii\web\Application->handleRequest(Object(website\components\Request))
+#2 /opt/lampp/htdocs/website/web/index.php(18): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Unable to resolve the request "video/12-29kdb.mp4".' in /opt/lampp/htdocs/vendor/yiisoft/yii2/web/Application.php:95
+Stack trace:
+#0 /opt/lampp/htdocs/vendor/yiisoft/yii2/base/Application.php(371): yii\web\Application->handleRequest(Object(website\components\Request))
+#1 /opt/lampp/htdocs/website/web/index.php(18): yii\base\Application->run()
+#2 {main}
+2015-01-05 11:48:19 [192.168.1.129][-][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "video/12-29kdb.mp4".' in /opt/lampp/htdocs/vendor/yiisoft/yii2/base/Module.php:468
+Stack trace:
+#0 /opt/lampp/htdocs/vendor/yiisoft/yii2/web/Application.php(83): yii\base\Module->runAction('video/12-29kdb....', Array)
+#1 /opt/lampp/htdocs/vendor/yiisoft/yii2/base/Application.php(371): yii\web\Application->handleRequest(Object(website\components\Request))
+#2 /opt/lampp/htdocs/website/web/index.php(18): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Unable to resolve the request "video/12-29kdb.mp4".' in /opt/lampp/htdocs/vendor/yiisoft/yii2/web/Application.php:95
+Stack trace:
+#0 /opt/lampp/htdocs/vendor/yiisoft/yii2/base/Application.php(371): yii\web\Application->handleRequest(Object(website\components\Request))
+#1 /opt/lampp/htdocs/website/web/index.php(18): yii\base\Application->run()
+#2 {main}
+2015-01-05 11:48:45 [192.168.1.129][-][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "login".' in /opt/lampp/htdocs/vendor/yiisoft/yii2/base/Module.php:468
+Stack trace:
+#0 /opt/lampp/htdocs/vendor/yiisoft/yii2/web/Application.php(83): yii\base\Module->runAction('login', Array)
+#1 /opt/lampp/htdocs/vendor/yiisoft/yii2/base/Application.php(371): yii\web\Application->handleRequest(Object(website\components\Request))
+#2 /opt/lampp/htdocs/website/web/index.php(18): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Unable to resolve the request "login".' in /opt/lampp/htdocs/vendor/yiisoft/yii2/web/Application.php:95
+Stack trace:
+#0 /opt/lampp/htdocs/vendor/yiisoft/yii2/base/Application.php(371): yii\web\Application->handleRequest(Object(website\components\Request))
+#1 /opt/lampp/htdocs/website/web/index.php(18): yii\base\Application->run()
+#2 {main}
+2015-01-05 11:48:54 [192.168.1.129][-][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request: site/login' in /opt/lampp/htdocs/vendor/yiisoft/yii2/base/Controller.php:123
+Stack trace:
+#0 /opt/lampp/htdocs/vendor/yiisoft/yii2/base/Module.php(462): yii\base\Controller->runAction('login', Array)
+#1 /opt/lampp/htdocs/vendor/yiisoft/yii2/web/Application.php(83): yii\base\Module->runAction('site/login', Array)
+#2 /opt/lampp/htdocs/vendor/yiisoft/yii2/base/Application.php(371): yii\web\Application->handleRequest(Object(website\components\Request))
+#3 /opt/lampp/htdocs/website/web/index.php(18): yii\base\Application->run()
+#4 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Unable to resolve the request: site/login' in /opt/lampp/htdocs/vendor/yiisoft/yii2/web/Application.php:95
+Stack trace:
+#0 /opt/lampp/htdocs/vendor/yiisoft/yii2/base/Application.php(371): yii\web\Application->handleRequest(Object(website\components\Request))
+#1 /opt/lampp/htdocs/website/web/index.php(18): yii\base\Application->run()
+#2 {main}
+2015-01-05 11:48:58 [192.168.1.129][-][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "video/12-29kdb.mp4".' in /opt/lampp/htdocs/vendor/yiisoft/yii2/base/Module.php:468
+Stack trace:
+#0 /opt/lampp/htdocs/vendor/yiisoft/yii2/web/Application.php(83): yii\base\Module->runAction('video/12-29kdb....', Array)
+#1 /opt/lampp/htdocs/vendor/yiisoft/yii2/base/Application.php(371): yii\web\Application->handleRequest(Object(website\components\Request))
+#2 /opt/lampp/htdocs/website/web/index.php(18): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Unable to resolve the request "video/12-29kdb.mp4".' in /opt/lampp/htdocs/vendor/yiisoft/yii2/web/Application.php:95
+Stack trace:
+#0 /opt/lampp/htdocs/vendor/yiisoft/yii2/base/Application.php(371): yii\web\Application->handleRequest(Object(website\components\Request))
+#1 /opt/lampp/htdocs/website/web/index.php(18): yii\base\Application->run()
+#2 {main}
+2015-01-05 11:49:03 [192.168.1.129][-][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "video/12-29kdb.mp4".' in /opt/lampp/htdocs/vendor/yiisoft/yii2/base/Module.php:468
+Stack trace:
+#0 /opt/lampp/htdocs/vendor/yiisoft/yii2/web/Application.php(83): yii\base\Module->runAction('video/12-29kdb....', Array)
+#1 /opt/lampp/htdocs/vendor/yiisoft/yii2/base/Application.php(371): yii\web\Application->handleRequest(Object(website\components\Request))
+#2 /opt/lampp/htdocs/website/web/index.php(18): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Unable to resolve the request "video/12-29kdb.mp4".' in /opt/lampp/htdocs/vendor/yiisoft/yii2/web/Application.php:95
+Stack trace:
+#0 /opt/lampp/htdocs/vendor/yiisoft/yii2/base/Application.php(371): yii\web\Application->handleRequest(Object(website\components\Request))
+#1 /opt/lampp/htdocs/website/web/index.php(18): yii\base\Application->run()
+#2 {main}
+2015-01-05 13:55:42 [192.168.1.129][-][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "video/12-29kdb.mp4".' in /opt/lampp/htdocs/vendor/yiisoft/yii2/base/Module.php:468
+Stack trace:
+#0 /opt/lampp/htdocs/vendor/yiisoft/yii2/web/Application.php(83): yii\base\Module->runAction('video/12-29kdb....', Array)
+#1 /opt/lampp/htdocs/vendor/yiisoft/yii2/base/Application.php(371): yii\web\Application->handleRequest(Object(website\components\Request))
+#2 /opt/lampp/htdocs/website/web/index.php(18): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Unable to resolve the request "video/12-29kdb.mp4".' in /opt/lampp/htdocs/vendor/yiisoft/yii2/web/Application.php:95
+Stack trace:
+#0 /opt/lampp/htdocs/vendor/yiisoft/yii2/base/Application.php(371): yii\web\Application->handleRequest(Object(website\components\Request))
+#1 /opt/lampp/htdocs/website/web/index.php(18): yii\base\Application->run()
+#2 {main}
+2015-01-05 13:55:56 [192.168.1.129][-][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "video/12-29kdb.mp4".' in /opt/lampp/htdocs/vendor/yiisoft/yii2/base/Module.php:468
+Stack trace:
+#0 /opt/lampp/htdocs/vendor/yiisoft/yii2/web/Application.php(83): yii\base\Module->runAction('video/12-29kdb....', Array)
+#1 /opt/lampp/htdocs/vendor/yiisoft/yii2/base/Application.php(371): yii\web\Application->handleRequest(Object(website\components\Request))
+#2 /opt/lampp/htdocs/website/web/index.php(18): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Unable to resolve the request "video/12-29kdb.mp4".' in /opt/lampp/htdocs/vendor/yiisoft/yii2/web/Application.php:95
+Stack trace:
+#0 /opt/lampp/htdocs/vendor/yiisoft/yii2/base/Application.php(371): yii\web\Application->handleRequest(Object(website\components\Request))
+#1 /opt/lampp/htdocs/website/web/index.php(18): yii\base\Application->run()
+#2 {main}
+2015-01-05 13:56:09 [192.168.1.129][-][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "video/12-29kdb.mp4".' in /opt/lampp/htdocs/vendor/yiisoft/yii2/base/Module.php:468
+Stack trace:
+#0 /opt/lampp/htdocs/vendor/yiisoft/yii2/web/Application.php(83): yii\base\Module->runAction('video/12-29kdb....', Array)
+#1 /opt/lampp/htdocs/vendor/yiisoft/yii2/base/Application.php(371): yii\web\Application->handleRequest(Object(website\components\Request))
+#2 /opt/lampp/htdocs/website/web/index.php(18): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Unable to resolve the request "video/12-29kdb.mp4".' in /opt/lampp/htdocs/vendor/yiisoft/yii2/web/Application.php:95
+Stack trace:
+#0 /opt/lampp/htdocs/vendor/yiisoft/yii2/base/Application.php(371): yii\web\Application->handleRequest(Object(website\components\Request))
+#1 /opt/lampp/htdocs/website/web/index.php(18): yii\base\Application->run()
+#2 {main}
+2015-01-05 13:56:16 [192.168.1.129][-][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "video/12-29kdb.mp4".' in /opt/lampp/htdocs/vendor/yiisoft/yii2/base/Module.php:468
+Stack trace:
+#0 /opt/lampp/htdocs/vendor/yiisoft/yii2/web/Application.php(83): yii\base\Module->runAction('video/12-29kdb....', Array)
+#1 /opt/lampp/htdocs/vendor/yiisoft/yii2/base/Application.php(371): yii\web\Application->handleRequest(Object(website\components\Request))
+#2 /opt/lampp/htdocs/website/web/index.php(18): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Unable to resolve the request "video/12-29kdb.mp4".' in /opt/lampp/htdocs/vendor/yiisoft/yii2/web/Application.php:95
+Stack trace:
+#0 /opt/lampp/htdocs/vendor/yiisoft/yii2/base/Application.php(371): yii\web\Application->handleRequest(Object(website\components\Request))
+#1 /opt/lampp/htdocs/website/web/index.php(18): yii\base\Application->run()
+#2 {main}
+2015-01-05 13:56:21 [192.168.1.129][-][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "video/12-29kdb.mp4".' in /opt/lampp/htdocs/vendor/yiisoft/yii2/base/Module.php:468
+Stack trace:
+#0 /opt/lampp/htdocs/vendor/yiisoft/yii2/web/Application.php(83): yii\base\Module->runAction('video/12-29kdb....', Array)
+#1 /opt/lampp/htdocs/vendor/yiisoft/yii2/base/Application.php(371): yii\web\Application->handleRequest(Object(website\components\Request))
+#2 /opt/lampp/htdocs/website/web/index.php(18): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Unable to resolve the request "video/12-29kdb.mp4".' in /opt/lampp/htdocs/vendor/yiisoft/yii2/web/Application.php:95
+Stack trace:
+#0 /opt/lampp/htdocs/vendor/yiisoft/yii2/base/Application.php(371): yii\web\Application->handleRequest(Object(website\components\Request))
+#1 /opt/lampp/htdocs/website/web/index.php(18): yii\base\Application->run()
+#2 {main}
+2015-01-05 13:56:27 [192.168.1.129][-][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "video/12-29kdb.avi".' in /opt/lampp/htdocs/vendor/yiisoft/yii2/base/Module.php:468
+Stack trace:
+#0 /opt/lampp/htdocs/vendor/yiisoft/yii2/web/Application.php(83): yii\base\Module->runAction('video/12-29kdb....', Array)
+#1 /opt/lampp/htdocs/vendor/yiisoft/yii2/base/Application.php(371): yii\web\Application->handleRequest(Object(website\components\Request))
+#2 /opt/lampp/htdocs/website/web/index.php(18): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Unable to resolve the request "video/12-29kdb.avi".' in /opt/lampp/htdocs/vendor/yiisoft/yii2/web/Application.php:95
+Stack trace:
+#0 /opt/lampp/htdocs/vendor/yiisoft/yii2/base/Application.php(371): yii\web\Application->handleRequest(Object(website\components\Request))
+#1 /opt/lampp/htdocs/website/web/index.php(18): yii\base\Application->run()
+#2 {main}
+2015-01-05 13:56:27 [192.168.1.129][-][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "video/12-29kdb.mp4".' in /opt/lampp/htdocs/vendor/yiisoft/yii2/base/Module.php:468
+Stack trace:
+#0 /opt/lampp/htdocs/vendor/yiisoft/yii2/web/Application.php(83): yii\base\Module->runAction('video/12-29kdb....', Array)
+#1 /opt/lampp/htdocs/vendor/yiisoft/yii2/base/Application.php(371): yii\web\Application->handleRequest(Object(website\components\Request))
+#2 /opt/lampp/htdocs/website/web/index.php(18): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Unable to resolve the request "video/12-29kdb.mp4".' in /opt/lampp/htdocs/vendor/yiisoft/yii2/web/Application.php:95
+Stack trace:
+#0 /opt/lampp/htdocs/vendor/yiisoft/yii2/base/Application.php(371): yii\web\Application->handleRequest(Object(website\components\Request))
+#1 /opt/lampp/htdocs/website/web/index.php(18): yii\base\Application->run()
+#2 {main}
+2015-01-05 13:56:38 [192.168.1.129][-][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "video/12-29kdb.mp4".' in /opt/lampp/htdocs/vendor/yiisoft/yii2/base/Module.php:468
+Stack trace:
+#0 /opt/lampp/htdocs/vendor/yiisoft/yii2/web/Application.php(83): yii\base\Module->runAction('video/12-29kdb....', Array)
+#1 /opt/lampp/htdocs/vendor/yiisoft/yii2/base/Application.php(371): yii\web\Application->handleRequest(Object(website\components\Request))
+#2 /opt/lampp/htdocs/website/web/index.php(18): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Unable to resolve the request "video/12-29kdb.mp4".' in /opt/lampp/htdocs/vendor/yiisoft/yii2/web/Application.php:95
+Stack trace:
+#0 /opt/lampp/htdocs/vendor/yiisoft/yii2/base/Application.php(371): yii\web\Application->handleRequest(Object(website\components\Request))
+#1 /opt/lampp/htdocs/website/web/index.php(18): yii\base\Application->run()
+#2 {main}
+2015-01-05 13:56:40 [192.168.1.129][-][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "video/12-29kdb.mp4".' in /opt/lampp/htdocs/vendor/yiisoft/yii2/base/Module.php:468
+Stack trace:
+#0 /opt/lampp/htdocs/vendor/yiisoft/yii2/web/Application.php(83): yii\base\Module->runAction('video/12-29kdb....', Array)
+#1 /opt/lampp/htdocs/vendor/yiisoft/yii2/base/Application.php(371): yii\web\Application->handleRequest(Object(website\components\Request))
+#2 /opt/lampp/htdocs/website/web/index.php(18): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Unable to resolve the request "video/12-29kdb.mp4".' in /opt/lampp/htdocs/vendor/yiisoft/yii2/web/Application.php:95
+Stack trace:
+#0 /opt/lampp/htdocs/vendor/yiisoft/yii2/base/Application.php(371): yii\web\Application->handleRequest(Object(website\components\Request))
+#1 /opt/lampp/htdocs/website/web/index.php(18): yii\base\Application->run()
+#2 {main}
+2015-01-05 13:57:39 [192.168.1.129][-][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "login".' in /opt/lampp/htdocs/vendor/yiisoft/yii2/base/Module.php:468
+Stack trace:
+#0 /opt/lampp/htdocs/vendor/yiisoft/yii2/web/Application.php(83): yii\base\Module->runAction('login', Array)
+#1 /opt/lampp/htdocs/vendor/yiisoft/yii2/base/Application.php(371): yii\web\Application->handleRequest(Object(website\components\Request))
+#2 /opt/lampp/htdocs/website/web/index.php(18): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Unable to resolve the request "login".' in /opt/lampp/htdocs/vendor/yiisoft/yii2/web/Application.php:95
+Stack trace:
+#0 /opt/lampp/htdocs/vendor/yiisoft/yii2/base/Application.php(371): yii\web\Application->handleRequest(Object(website\components\Request))
+#1 /opt/lampp/htdocs/website/web/index.php(18): yii\base\Application->run()
+#2 {main}

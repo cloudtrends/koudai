@@ -1,0 +1,18 @@
+<?php
+//http://localhost/koudai/php_code/frontend/web/test/index
+if (isset($_SERVER['SERVER_ADDR']) && $_SERVER['SERVER_ADDR'] == '42.96.204.114') {
+    define("HOSTURL","http://42.96.204.114/koudai");
+}else{
+    define("HOSTURL","http://localhost/koudai/php_code");
+}
+
+
+return [
+    'vendorPath' => dirname(dirname(__DIR__)) . '/vendor',
+    'components' => [
+        'cache' => [
+            'class' => 'yii\redis\Cache',
+            'redis' => 'redis',
+        ],
+    ],
+];

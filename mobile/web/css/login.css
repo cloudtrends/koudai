@@ -1,0 +1,185 @@
+
+@import url("common.css");
+
+/*登录页面样式 start*/
+.weixin{
+    font:13px/13px "微软雅黑";
+}
+
+
+.cztitle{line-height: 36px;font-size: 0.9em;}
+.phoneli{position: relative; font:13px/13px "微软雅黑";}
+.iuser{position: absolute;top: 25px;left: 15px;background: url("../image/user.png") no-repeat;width: 15px;height: 18px;}
+.ipwd{position: absolute;top: 83px;left: 15px;background: url("../image/key.png") no-repeat;width: 15px;height: 18px;}
+input.reinput{height: 50px;text-indent: 30px;}
+input.reinput:focus{border: 1px solid #fd5353;outline: 0px}
+#acontent{margin-top: 20px;}
+a#login{color: #a09d9d;}
+.bimage{background: url("../image/logo.png") no-repeat;width: 200px;height: 100px;margin: 0 auto;}
+div#afooter{text-align: center;margin-top: 60px;}
+
+div.forget
+{
+    border-left: 1px #ddd solid;
+    position: absolute;
+    top: 69px;
+    right: 0px;
+    height: 22px;
+    padding: 14px;
+    color: #b8b8b8;
+    font-weight: bolder;
+    font:13px/13px "微软雅黑";
+}
+
+div.regcode {
+    border-left: 1px #ddd solid;
+    position: absolute;
+    top: 9px;
+    right: 0px;
+    height: 22px;
+    padding: 14px;
+    color: #b8b8b8;
+    font-weight: bolder;
+    font:13px/13px "微软雅黑";
+}
+
+#notification{
+    color: #000000;
+    font:13px/13px "微软雅黑";
+    height: 10px;
+    text-align: center;
+    margin-top: 5px;
+}
+#prompt{
+    height:50px;
+    position:absolute ;
+    top:9px;
+    right:0px;
+    /*border-color: #ddd;*/
+    border:1px solid #ddd;
+}
+
+@media screen and (max-width: 448px) {
+    .iuser{position: absolute;top: 37px;left: 13px;}
+    .ipwd{position: absolute;top: 97px;left: 15px;}
+    .phoneli{padding-left: 20px; font:14px/14px "微软雅黑";}
+    div.forget{top: 82px;}
+    div.regcode{top: 22px;}
+    #prompt{position: absolute;top: 22px;}
+}
+/*登录页面样式 end*/
+
+/*首页 start*/
+div#mcontent{
+    overflow-Y: auto;  
+    margin: 0 auto;
+    padding:0px;
+}
+div#mheader{
+    height:70px;
+    margin-top: 10px;
+    text-align:center;
+    
+}
+div#mheader2{
+    height:40px;
+    border-bottom:1px solid #e9e7e8;
+    text-align:center;
+}
+div.ctitle{text-align: center;color:black;font:25px/30px "微软雅黑";margin-top: 15px;}
+a#login:focus{background: url("../image/bg_zqd.png") no-repeat;}
+a#login{
+    /*border-radius: 1.1em;*/
+    background-color:#ee4741;
+    color: #fff;
+    height:30px;   
+    
+    font:20px/30px "微软雅黑";
+    text-shadow: none;
+    margin-top: 30px;
+}
+a#f_login{
+    /*border-radius: 1.1em;*/
+    background-color:#ee4741;
+    color: #fff;
+    height:30px;   
+    
+    font:20px/30px "微软雅黑";
+    text-shadow: none;
+    margin-top: 30px;
+}
+div.btext{
+    margin-top: 10px;
+    color: black;
+    font-family: "微软雅黑";
+     text-align:center;
+     /*width:80%;*/
+}
+span.rtext{
+    color: #E90606;
+    font-family: "微软雅黑";
+    font-weight: 800;
+    font-size: 0.9em;
+}
+span.mtext{
+    height:20px;
+   text-align:center;
+    font:16px/20px "微软雅黑";
+    
+}
+.mimage{
+    position: relative;
+  
+  top: 2px;
+    
+}
+span.rbao{
+    width: 29px;
+    height: 33px;
+    display: block;
+    float: left;
+    background: url("../image/bao.png") no-repeat;
+}
+div.botbao{
+    width: 240px;
+    margin: 0 auto;
+}
+div.pocan{
+    position: relative;
+}
+div#mbutton{
+    margin:0 auto;
+   width:80%;
+   margin-bottom: 10px;
+}
+div.pocan{
+	position: relative;
+	height: 220px;
+	margin: 0 auto;
+	width: 220px;
+}
+/*canvas#myCanvas{
+     z-index: 1;   0
+    position: absolute;
+}
+canvas#myCanvas1{
+        z-index: 100;  
+	position: absolute;
+}*/
+canvas#myCanvas,canvas#myCanvas1{
+	position: absolute;
+}
+#f_submit{
+    background-color:#ee4741;
+    color: #fff;
+    height:30px;   
+    
+    font:20px/30px "微软雅黑";
+    text-shadow: none;
+    margin-top: 30px;
+}
+/*首页 end*/
+#msgcode{
+/*    width:80%;*/
+    
+}

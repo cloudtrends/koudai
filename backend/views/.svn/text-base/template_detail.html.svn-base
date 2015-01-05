@@ -1,0 +1,127 @@
+<!-- 项目详情模版 -->
+<style type="text/css">
+	*{
+		margin: 0;
+		padding: 0;
+		list-style: none;
+	}
+	#warp{
+		margin: 0 auto;
+		padding: 14px 0 19px;
+		background: #F2F2F2;
+	}
+	#header{
+		padding-top: 3px;
+		padding-left: 5px;
+		padding-bottom: 3px;
+		background: #FFFFFF;
+		border: 1px solid #BBBBBB;
+		margin: auto 13px;
+	}
+	.title{
+		padding: 10px 0 10px 13px;
+		color: #000000;
+		font-size: 13px;
+		font-weight: bold;
+	}
+	#content1{
+		padding: 12px;
+		padding-bottom: 11px;
+		background: #FFFFFF;        
+		border: 1px solid #BBBBBB;
+		border-left: none; 
+		border-right: none; 
+	}    
+	#content2{
+		padding: 11px 12px;
+		background: #FFFFFF;        
+		border: 1px solid #BBBBBB;
+		border-left: none; 
+		border-right: none; 
+	}
+	.td1{
+		width: 110px;
+		vertical-align: bottom;
+		color: #999999;
+		font-size: 13px;
+	}
+	.td11{
+		width: 134px;
+	}
+	.td2{
+		vertical-align: bottom;
+		color: #333333;
+		font-size: 13px;
+	}
+	.font1{
+		color: #666666;
+		font-size: 12px;
+		line-height: 120%;
+	}
+</style>
+
+<div id='warp'>        
+    <div id='header'>
+          <div align="left">
+            <table border="0" cellpadding="0" cellspacing="11" class="font1">
+              <tr>
+                <td><span  class="td1">融资方</span></td>
+                <td><span  class="td2">sir</span></td>
+              </tr>
+              <tr>
+                <td><span  class="td1">融资金额</span></td>
+                <td><span  class="td2">13,000000</span></td>
+              </tr>
+              <tr>
+                <td><span  class="td1">融资所在区域</span></td>
+                <td><span  class="td2">上海杨浦区</span></td>
+              </tr>
+              <tr>
+                <td><span  class="td1">资金用途</span></td>
+                <td><span  class="td2">个人消费周转</span></td>
+              </tr>
+              </table>
+          </div>
+  </div>
+	<p class="title">项目背景</p>
+    <div id='content1'>
+        <p class="font1">国际在线消息：11月24日上午，由中央网信办等多部委联合主办的首届国家网络安全宣传周在北京中华世纪坛启动。中国互联网络信息中心（CNNIC）作为我国互联网基础设施重要的建设者、运行者和管理者，参加了本次宣传周“感知身边的网络安全”主题公众体验展，倡导推动全行业重视域名系统等互联网基础资源安全，向公众普及网络基础资源安全知识。</p>
+    </div>
+    <p class="title">抵押物车的各项参数</p>
+    <div id='content2'>
+        <table border="0" cellpadding="0" cellspacing="0">
+            <tr>
+                <td><span class="td1 td11">车辆型号</span></td>
+                <td><span  class="td2">宝马520</span></td>
+            </tr>
+            <tr>
+                <td><span class="td1 td11">车辆颜色</span></td>
+                <td><span  class="td2">黑</span></td>
+            </tr>
+            <tr>
+                <td><span class="td1 td11">购买价格</span></td>
+                <td><span  class="td2">45万</span></td>
+            </tr>
+            <tr>
+                <td><span class="td1 td11">使用年限</span></td>
+                <td><span  class="td2">1年</span></td>
+            </tr>
+            <tr>
+                <td><span class="td1 td11">行驶里程</span></td>
+                <td><span  class="td2">333333公里</span></td>
+            </tr>
+            <tr>
+                <td><span class="td1 td11">评估价格</span></td>
+                <td><span  class="td2">33万</span></td>
+            </tr>
+            <tr>
+                <td><span class="td1 td11">购买保险</span></td>
+                <td><span  class="td2">&nbsp;</span></td>
+            </tr>
+        </table> 
+    </div>        
+    <p class="title">风险措施</p>
+    <div id='content1'>
+        <p class="font1">国际在线消息：11月24日上午，由中央网信办等多部委联合主办的首届国家网络安全宣传周在北京中华世纪坛启动。中国互联网络信息中心（CNNIC）作为我国互联网基础设施重要的建设者、运行者和管理者，参加了本次宣传周“感知身边的网络安全”主题公众体验展，倡导推动全行业重视域名系统等互联网基础资源安全，向公众普及网络基础资源安全知识。</p>
+    </div>
+</div>

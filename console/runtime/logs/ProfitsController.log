@@ -1,0 +1,2670 @@
+2014-12-09 15:06:44 [-][-][-][info][console\controllers\ProfitsController] begin action
+2014-12-09 15:06:44 [-][-][-][info][console\controllers\ProfitsController] end action
+2014-12-09 15:06:44 [-][-][-][info][application] $_SERVER = [
+    'HOSTNAME' => 'koudai.dev'
+    'SELINUX_ROLE_REQUESTED' => ''
+    'TERM' => 'ansi'
+    'SHELL' => '/bin/bash'
+    'HISTSIZE' => '1000'
+    'SSH_CLIENT' => '192.168.1.131 51482 22'
+    'SELINUX_USE_CURRENT_RANGE' => ''
+    'QTDIR' => '/usr/lib64/qt-3.3'
+    'QTINC' => '/usr/lib64/qt-3.3/include'
+    'SSH_TTY' => '/dev/pts/5'
+    'USER' => 'root'
+    'LS_COLORS' => 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=01;05;37;41:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arj=01;31:*.taz=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lz=01;31:*.xz=01;31:*.bz2=01;31:*.tbz=01;31:*.tbz2=01;31:*.bz=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.rar=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.jpg=01;35:*.jpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.axv=01;35:*.anx=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=01;36:*.au=01;36:*.flac=01;36:*.mid=01;36:*.midi=01;36:*.mka=01;36:*.mp3=01;36:*.mpc=01;36:*.ogg=01;36:*.ra=01;36:*.wav=01;36:*.axa=01;36:*.oga=01;36:*.spx=01;36:*.xspf=01;36:'
+    'MAIL' => '/var/spool/mail/root'
+    'PATH' => '/opt/lampp/bin:/opt/lampp/:/usr/lib64/qt-3.3/bin:/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin:/root/bin'
+    'PWD' => '/opt/lampp/htdocs/console/runtime'
+    'LANG' => 'en_US.UTF-8'
+    'PS1' => '[\\u@\\h \\w]$ '
+    'SELINUX_LEVEL_REQUESTED' => ''
+    'SSH_ASKPASS' => '/usr/libexec/openssh/gnome-ssh-askpass'
+    'HISTCONTROL' => 'ignoredups'
+    'SHLVL' => '1'
+    'HOME' => '/root'
+    'LOGNAME' => 'root'
+    'QTLIB' => '/usr/lib64/qt-3.3/lib'
+    'CVS_RSH' => 'ssh'
+    'SSH_CONNECTION' => '192.168.1.131 51482 192.168.1.214 22'
+    'LESSOPEN' => '||/usr/bin/lesspipe.sh %s'
+    'G_BROKEN_FILENAMES' => '1'
+    '_' => '/opt/lampp/bin/php'
+    'OLDPWD' => '/opt/lampp/htdocs/console/runtime/logs'
+    'PHP_SELF' => '/opt/lampp/htdocs/yii'
+    'SCRIPT_NAME' => '/opt/lampp/htdocs/yii'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/yii'
+    'PATH_TRANSLATED' => '/opt/lampp/htdocs/yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1418108804.4001
+    'REQUEST_TIME' => 1418108804
+    'argv' => [
+        0 => '/opt/lampp/htdocs/yii'
+        1 => 'profits/daily-project'
+    ]
+    'argc' => 2
+]
+2014-12-09 15:07:17 [-][-][-][info][console\controllers\ProfitsController] begin action
+2014-12-09 15:07:17 [-][-][-][info][console\controllers\ProfitsController] end action
+2014-12-09 15:07:17 [-][-][-][info][application] $_SERVER = [
+    'HOSTNAME' => 'koudai.dev'
+    'SELINUX_ROLE_REQUESTED' => ''
+    'TERM' => 'ansi'
+    'SHELL' => '/bin/bash'
+    'HISTSIZE' => '1000'
+    'SSH_CLIENT' => '192.168.1.131 51482 22'
+    'SELINUX_USE_CURRENT_RANGE' => ''
+    'QTDIR' => '/usr/lib64/qt-3.3'
+    'QTINC' => '/usr/lib64/qt-3.3/include'
+    'SSH_TTY' => '/dev/pts/5'
+    'USER' => 'root'
+    'LS_COLORS' => 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=01;05;37;41:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arj=01;31:*.taz=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lz=01;31:*.xz=01;31:*.bz2=01;31:*.tbz=01;31:*.tbz2=01;31:*.bz=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.rar=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.jpg=01;35:*.jpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.axv=01;35:*.anx=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=01;36:*.au=01;36:*.flac=01;36:*.mid=01;36:*.midi=01;36:*.mka=01;36:*.mp3=01;36:*.mpc=01;36:*.ogg=01;36:*.ra=01;36:*.wav=01;36:*.axa=01;36:*.oga=01;36:*.spx=01;36:*.xspf=01;36:'
+    'MAIL' => '/var/spool/mail/root'
+    'PATH' => '/opt/lampp/bin:/opt/lampp/:/usr/lib64/qt-3.3/bin:/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin:/root/bin'
+    'PWD' => '/opt/lampp/htdocs'
+    'LANG' => 'en_US.UTF-8'
+    'PS1' => '[\\u@\\h \\w]$ '
+    'SELINUX_LEVEL_REQUESTED' => ''
+    'SSH_ASKPASS' => '/usr/libexec/openssh/gnome-ssh-askpass'
+    'HISTCONTROL' => 'ignoredups'
+    'SHLVL' => '1'
+    'HOME' => '/root'
+    'LOGNAME' => 'root'
+    'QTLIB' => '/usr/lib64/qt-3.3/lib'
+    'CVS_RSH' => 'ssh'
+    'SSH_CONNECTION' => '192.168.1.131 51482 192.168.1.214 22'
+    'LESSOPEN' => '||/usr/bin/lesspipe.sh %s'
+    'G_BROKEN_FILENAMES' => '1'
+    '_' => '/opt/lampp/bin/php'
+    'OLDPWD' => '/opt/lampp/htdocs/console/runtime'
+    'PHP_SELF' => '/opt/lampp/htdocs/yii'
+    'SCRIPT_NAME' => '/opt/lampp/htdocs/yii'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/yii'
+    'PATH_TRANSLATED' => '/opt/lampp/htdocs/yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1418108837.0586
+    'REQUEST_TIME' => 1418108837
+    'argv' => [
+        0 => '/opt/lampp/htdocs/yii'
+        1 => 'profits/daily-project'
+    ]
+    'argc' => 2
+]
+2014-12-09 15:09:36 [-][-][-][info][console\controllers\ProfitsController] begin action
+2014-12-09 15:09:36 [-][-][-][info][console\controllers\ProfitsController] end action
+2014-12-09 15:09:36 [-][-][-][info][application] $_SERVER = [
+    'HOSTNAME' => 'koudai.dev'
+    'SELINUX_ROLE_REQUESTED' => ''
+    'TERM' => 'ansi'
+    'SHELL' => '/bin/bash'
+    'HISTSIZE' => '1000'
+    'SSH_CLIENT' => '192.168.1.131 51482 22'
+    'SELINUX_USE_CURRENT_RANGE' => ''
+    'QTDIR' => '/usr/lib64/qt-3.3'
+    'QTINC' => '/usr/lib64/qt-3.3/include'
+    'SSH_TTY' => '/dev/pts/5'
+    'USER' => 'root'
+    'LS_COLORS' => 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=01;05;37;41:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arj=01;31:*.taz=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lz=01;31:*.xz=01;31:*.bz2=01;31:*.tbz=01;31:*.tbz2=01;31:*.bz=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.rar=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.jpg=01;35:*.jpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.axv=01;35:*.anx=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=01;36:*.au=01;36:*.flac=01;36:*.mid=01;36:*.midi=01;36:*.mka=01;36:*.mp3=01;36:*.mpc=01;36:*.ogg=01;36:*.ra=01;36:*.wav=01;36:*.axa=01;36:*.oga=01;36:*.spx=01;36:*.xspf=01;36:'
+    'MAIL' => '/var/spool/mail/root'
+    'PATH' => '/opt/lampp/bin:/opt/lampp/:/usr/lib64/qt-3.3/bin:/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin:/root/bin'
+    'PWD' => '/opt/lampp/htdocs'
+    'LANG' => 'en_US.UTF-8'
+    'PS1' => '[\\u@\\h \\w]$ '
+    'SELINUX_LEVEL_REQUESTED' => ''
+    'SSH_ASKPASS' => '/usr/libexec/openssh/gnome-ssh-askpass'
+    'HISTCONTROL' => 'ignoredups'
+    'SHLVL' => '1'
+    'HOME' => '/root'
+    'LOGNAME' => 'root'
+    'QTLIB' => '/usr/lib64/qt-3.3/lib'
+    'CVS_RSH' => 'ssh'
+    'SSH_CONNECTION' => '192.168.1.131 51482 192.168.1.214 22'
+    'LESSOPEN' => '||/usr/bin/lesspipe.sh %s'
+    'G_BROKEN_FILENAMES' => '1'
+    '_' => '/opt/lampp/bin/php'
+    'OLDPWD' => '/opt/lampp/htdocs/console/runtime'
+    'PHP_SELF' => '/opt/lampp/htdocs/yii'
+    'SCRIPT_NAME' => '/opt/lampp/htdocs/yii'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/yii'
+    'PATH_TRANSLATED' => '/opt/lampp/htdocs/yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1418108976.4869
+    'REQUEST_TIME' => 1418108976
+    'argv' => [
+        0 => '/opt/lampp/htdocs/yii'
+        1 => 'profits/daily-project'
+    ]
+    'argc' => 2
+]
+2014-12-10 00:05:01 [-][-][-][info][console\controllers\ProfitsController] begin action
+2014-12-10 00:05:02 [-][-][-][info][console\controllers\ProfitsController] end action
+2014-12-10 00:05:01 [-][-][-][info][application] $_SERVER = [
+    'SHELL' => '/bin/sh'
+    'USER' => 'root'
+    'PATH' => '/usr/bin:/bin'
+    'PWD' => '/root'
+    'LANG' => 'en_US.UTF-8'
+    'SHLVL' => '1'
+    'HOME' => '/root'
+    'LOGNAME' => 'root'
+    '_' => '/opt/lampp/bin/php'
+    'PHP_SELF' => '/opt/lampp/htdocs/yii'
+    'SCRIPT_NAME' => '/opt/lampp/htdocs/yii'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/yii'
+    'PATH_TRANSLATED' => '/opt/lampp/htdocs/yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1418141101.8796
+    'REQUEST_TIME' => 1418141101
+    'argv' => [
+        0 => '/opt/lampp/htdocs/yii'
+        1 => 'profits/daily-kdb'
+    ]
+    'argc' => 2
+]
+2014-12-10 00:05:01 [-][-][-][info][console\controllers\ProfitsController] begin action
+2014-12-10 00:05:03 [-][-][-][info][console\controllers\ProfitsController] end action
+2014-12-10 00:05:01 [-][-][-][info][application] $_SERVER = [
+    'SHELL' => '/bin/sh'
+    'USER' => 'root'
+    'PATH' => '/usr/bin:/bin'
+    'PWD' => '/root'
+    'LANG' => 'en_US.UTF-8'
+    'SHLVL' => '1'
+    'HOME' => '/root'
+    'LOGNAME' => 'root'
+    '_' => '/opt/lampp/bin/php'
+    'PHP_SELF' => '/opt/lampp/htdocs/yii'
+    'SCRIPT_NAME' => '/opt/lampp/htdocs/yii'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/yii'
+    'PATH_TRANSLATED' => '/opt/lampp/htdocs/yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1418141101.8758
+    'REQUEST_TIME' => 1418141101
+    'argv' => [
+        0 => '/opt/lampp/htdocs/yii'
+        1 => 'profits/daily-project'
+    ]
+    'argc' => 2
+]
+2014-12-10 16:40:08 [-][-][-][info][console\controllers\ProfitsController] begin action
+2014-12-10 16:40:09 [-][-][-][info][console\controllers\ProfitsController] end action
+2014-12-10 16:40:08 [-][-][-][info][application] $_SERVER = [
+    'HOSTNAME' => 'koudai.dev'
+    'SELINUX_ROLE_REQUESTED' => ''
+    'TERM' => 'ansi'
+    'SHELL' => '/bin/bash'
+    'HISTSIZE' => '1000'
+    'SSH_CLIENT' => '192.168.1.131 51482 22'
+    'SELINUX_USE_CURRENT_RANGE' => ''
+    'QTDIR' => '/usr/lib64/qt-3.3'
+    'QTINC' => '/usr/lib64/qt-3.3/include'
+    'SSH_TTY' => '/dev/pts/5'
+    'USER' => 'root'
+    'LS_COLORS' => 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=01;05;37;41:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arj=01;31:*.taz=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lz=01;31:*.xz=01;31:*.bz2=01;31:*.tbz=01;31:*.tbz2=01;31:*.bz=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.rar=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.jpg=01;35:*.jpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.axv=01;35:*.anx=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=01;36:*.au=01;36:*.flac=01;36:*.mid=01;36:*.midi=01;36:*.mka=01;36:*.mp3=01;36:*.mpc=01;36:*.ogg=01;36:*.ra=01;36:*.wav=01;36:*.axa=01;36:*.oga=01;36:*.spx=01;36:*.xspf=01;36:'
+    'MAIL' => '/var/spool/mail/root'
+    'PATH' => '/opt/lampp/bin:/opt/lampp/:/usr/lib64/qt-3.3/bin:/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin:/root/bin'
+    'PWD' => '/opt/lampp/htdocs'
+    'LANG' => 'en_US.UTF-8'
+    'PS1' => '[\\u@\\h \\w]$ '
+    'SELINUX_LEVEL_REQUESTED' => ''
+    'SSH_ASKPASS' => '/usr/libexec/openssh/gnome-ssh-askpass'
+    'HISTCONTROL' => 'ignoredups'
+    'SHLVL' => '1'
+    'HOME' => '/root'
+    'LOGNAME' => 'root'
+    'QTLIB' => '/usr/lib64/qt-3.3/lib'
+    'CVS_RSH' => 'ssh'
+    'SSH_CONNECTION' => '192.168.1.131 51482 192.168.1.214 22'
+    'LESSOPEN' => '||/usr/bin/lesspipe.sh %s'
+    'G_BROKEN_FILENAMES' => '1'
+    '_' => '/opt/lampp/bin/php'
+    'OLDPWD' => '/opt/lampp/htdocs/common/services'
+    'PHP_SELF' => '/opt/lampp/htdocs/yii'
+    'SCRIPT_NAME' => '/opt/lampp/htdocs/yii'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/yii'
+    'PATH_TRANSLATED' => '/opt/lampp/htdocs/yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1418200808.8889
+    'REQUEST_TIME' => 1418200808
+    'argv' => [
+        0 => '/opt/lampp/htdocs/yii'
+        1 => 'profits/daily-project'
+    ]
+    'argc' => 2
+]
+2014-12-11 00:05:01 [-][-][-][info][console\controllers\ProfitsController] begin action
+2014-12-11 00:05:01 [-][-][-][info][console\controllers\ProfitsController] end action
+2014-12-11 00:05:01 [-][-][-][info][application] $_SERVER = [
+    'SHELL' => '/bin/sh'
+    'USER' => 'root'
+    'PATH' => '/usr/bin:/bin'
+    'PWD' => '/root'
+    'LANG' => 'en_US.UTF-8'
+    'SHLVL' => '1'
+    'HOME' => '/root'
+    'LOGNAME' => 'root'
+    '_' => '/opt/lampp/bin/php'
+    'PHP_SELF' => '/opt/lampp/htdocs/yii'
+    'SCRIPT_NAME' => '/opt/lampp/htdocs/yii'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/yii'
+    'PATH_TRANSLATED' => '/opt/lampp/htdocs/yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1418227501.2633
+    'REQUEST_TIME' => 1418227501
+    'argv' => [
+        0 => '/opt/lampp/htdocs/yii'
+        1 => 'profits/daily-kdb'
+    ]
+    'argc' => 2
+]
+2014-12-11 00:05:01 [-][-][-][info][console\controllers\ProfitsController] begin action
+2014-12-11 00:05:02 [-][-][-][info][console\controllers\ProfitsController] end action
+2014-12-11 00:05:01 [-][-][-][info][application] $_SERVER = [
+    'SHELL' => '/bin/sh'
+    'USER' => 'root'
+    'PATH' => '/usr/bin:/bin'
+    'PWD' => '/root'
+    'LANG' => 'en_US.UTF-8'
+    'SHLVL' => '1'
+    'HOME' => '/root'
+    'LOGNAME' => 'root'
+    '_' => '/opt/lampp/bin/php'
+    'PHP_SELF' => '/opt/lampp/htdocs/yii'
+    'SCRIPT_NAME' => '/opt/lampp/htdocs/yii'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/yii'
+    'PATH_TRANSLATED' => '/opt/lampp/htdocs/yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1418227501.2633
+    'REQUEST_TIME' => 1418227501
+    'argv' => [
+        0 => '/opt/lampp/htdocs/yii'
+        1 => 'profits/daily-project'
+    ]
+    'argc' => 2
+]
+2014-12-12 00:05:01 [-][-][-][info][console\controllers\ProfitsController] begin action
+2014-12-12 00:05:01 [-][-][-][info][console\controllers\ProfitsController] end action
+2014-12-12 00:05:01 [-][-][-][info][application] $_SERVER = [
+    'SHELL' => '/bin/sh'
+    'USER' => 'root'
+    'PATH' => '/usr/bin:/bin'
+    'PWD' => '/root'
+    'LANG' => 'en_US.UTF-8'
+    'SHLVL' => '1'
+    'HOME' => '/root'
+    'LOGNAME' => 'root'
+    '_' => '/opt/lampp/bin/php'
+    'PHP_SELF' => '/opt/lampp/htdocs/yii'
+    'SCRIPT_NAME' => '/opt/lampp/htdocs/yii'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/yii'
+    'PATH_TRANSLATED' => '/opt/lampp/htdocs/yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1418313901.6497
+    'REQUEST_TIME' => 1418313901
+    'argv' => [
+        0 => '/opt/lampp/htdocs/yii'
+        1 => 'profits/daily-kdb'
+    ]
+    'argc' => 2
+]
+2014-12-12 00:05:01 [-][-][-][info][console\controllers\ProfitsController] begin action
+2014-12-12 00:05:02 [-][-][-][info][console\controllers\ProfitsController] end action
+2014-12-12 00:05:01 [-][-][-][info][application] $_SERVER = [
+    'SHELL' => '/bin/sh'
+    'USER' => 'root'
+    'PATH' => '/usr/bin:/bin'
+    'PWD' => '/root'
+    'LANG' => 'en_US.UTF-8'
+    'SHLVL' => '1'
+    'HOME' => '/root'
+    'LOGNAME' => 'root'
+    '_' => '/opt/lampp/bin/php'
+    'PHP_SELF' => '/opt/lampp/htdocs/yii'
+    'SCRIPT_NAME' => '/opt/lampp/htdocs/yii'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/yii'
+    'PATH_TRANSLATED' => '/opt/lampp/htdocs/yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1418313901.6497
+    'REQUEST_TIME' => 1418313901
+    'argv' => [
+        0 => '/opt/lampp/htdocs/yii'
+        1 => 'profits/daily-project'
+    ]
+    'argc' => 2
+]
+2014-12-12 13:00:28 [-][-][-][info][console\controllers\ProfitsController] begin action
+2014-12-12 13:00:28 [-][-][-][info][console\controllers\ProfitsController] end action
+2014-12-12 13:00:28 [-][-][-][info][application] $_SERVER = [
+    'HOSTNAME' => 'koudai.dev'
+    'SELINUX_ROLE_REQUESTED' => ''
+    'SHELL' => '/bin/bash'
+    'TERM' => 'vt100'
+    'HISTSIZE' => '1000'
+    'SSH_CLIENT' => '192.168.1.129 63560 22'
+    'SELINUX_USE_CURRENT_RANGE' => ''
+    'QTDIR' => '/usr/lib64/qt-3.3'
+    'QTINC' => '/usr/lib64/qt-3.3/include'
+    'SSH_TTY' => '/dev/pts/3'
+    'USER' => 'koudai'
+    'LS_COLORS' => 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=01;05;37;41:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arj=01;31:*.taz=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lz=01;31:*.xz=01;31:*.bz2=01;31:*.tbz=01;31:*.tbz2=01;31:*.bz=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.rar=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.jpg=01;35:*.jpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.axv=01;35:*.anx=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=01;36:*.au=01;36:*.flac=01;36:*.mid=01;36:*.midi=01;36:*.mka=01;36:*.mp3=01;36:*.mpc=01;36:*.ogg=01;36:*.ra=01;36:*.wav=01;36:*.axa=01;36:*.oga=01;36:*.spx=01;36:*.xspf=01;36:'
+    'PATH' => '/opt/lampp/bin:/opt/lampp/:/opt/lampp/bin:/opt/lampp/:/usr/lib64/qt-3.3/bin:/usr/local/bin:/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/sbin:/home/koudai/bin'
+    'MAIL' => '/var/spool/mail/koudai'
+    'PWD' => '/home/koudai'
+    'LANG' => 'en_US.UTF-8'
+    'SELINUX_LEVEL_REQUESTED' => ''
+    'PS1' => '[\\u@\\h \\w]$ '
+    'HISTCONTROL' => 'ignoredups'
+    'SSH_ASKPASS' => '/usr/libexec/openssh/gnome-ssh-askpass'
+    'HOME' => '/root'
+    'SHLVL' => '2'
+    'LOGNAME' => 'koudai'
+    'CVS_RSH' => 'ssh'
+    'QTLIB' => '/usr/lib64/qt-3.3/lib'
+    'SSH_CONNECTION' => '192.168.1.129 63560 192.168.1.214 22'
+    'LESSOPEN' => '||/usr/bin/lesspipe.sh %s'
+    'G_BROKEN_FILENAMES' => '1'
+    '_' => '/opt/lampp/bin/php'
+    'PHP_SELF' => '/opt/lampp/htdocs/yii'
+    'SCRIPT_NAME' => '/opt/lampp/htdocs/yii'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/yii'
+    'PATH_TRANSLATED' => '/opt/lampp/htdocs/yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1418360428.643
+    'REQUEST_TIME' => 1418360428
+    'argv' => [
+        0 => '/opt/lampp/htdocs/yii'
+        1 => 'profits/daily-project'
+    ]
+    'argc' => 2
+]
+2014-12-13 00:05:01 [-][-][-][info][console\controllers\ProfitsController] begin action
+2014-12-13 00:05:01 [-][-][-][info][console\controllers\ProfitsController] end action
+2014-12-13 00:05:01 [-][-][-][info][application] $_SERVER = [
+    'SHELL' => '/bin/sh'
+    'USER' => 'root'
+    'PATH' => '/usr/bin:/bin'
+    'PWD' => '/root'
+    'LANG' => 'en_US.UTF-8'
+    'SHLVL' => '1'
+    'HOME' => '/root'
+    'LOGNAME' => 'root'
+    '_' => '/opt/lampp/bin/php'
+    'PHP_SELF' => '/opt/lampp/htdocs/yii'
+    'SCRIPT_NAME' => '/opt/lampp/htdocs/yii'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/yii'
+    'PATH_TRANSLATED' => '/opt/lampp/htdocs/yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1418400301.3231
+    'REQUEST_TIME' => 1418400301
+    'argv' => [
+        0 => '/opt/lampp/htdocs/yii'
+        1 => 'profits/daily-kdb'
+    ]
+    'argc' => 2
+]
+2014-12-13 00:05:01 [-][-][-][info][console\controllers\ProfitsController] begin action
+2014-12-13 00:05:02 [-][-][-][info][console\controllers\ProfitsController] end action
+2014-12-13 00:05:01 [-][-][-][info][application] $_SERVER = [
+    'SHELL' => '/bin/sh'
+    'USER' => 'root'
+    'PATH' => '/usr/bin:/bin'
+    'PWD' => '/root'
+    'LANG' => 'en_US.UTF-8'
+    'SHLVL' => '1'
+    'HOME' => '/root'
+    'LOGNAME' => 'root'
+    '_' => '/opt/lampp/bin/php'
+    'PHP_SELF' => '/opt/lampp/htdocs/yii'
+    'SCRIPT_NAME' => '/opt/lampp/htdocs/yii'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/yii'
+    'PATH_TRANSLATED' => '/opt/lampp/htdocs/yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1418400301.3231
+    'REQUEST_TIME' => 1418400301
+    'argv' => [
+        0 => '/opt/lampp/htdocs/yii'
+        1 => 'profits/daily-project'
+    ]
+    'argc' => 2
+]
+2014-12-14 00:05:01 [-][-][-][info][console\controllers\ProfitsController] begin action
+2014-12-14 00:05:01 [-][-][-][info][console\controllers\ProfitsController] end action
+2014-12-14 00:05:01 [-][-][-][info][application] $_SERVER = [
+    'SHELL' => '/bin/sh'
+    'USER' => 'root'
+    'PATH' => '/usr/bin:/bin'
+    'PWD' => '/root'
+    'LANG' => 'en_US.UTF-8'
+    'SHLVL' => '1'
+    'HOME' => '/root'
+    'LOGNAME' => 'root'
+    '_' => '/opt/lampp/bin/php'
+    'PHP_SELF' => '/opt/lampp/htdocs/yii'
+    'SCRIPT_NAME' => '/opt/lampp/htdocs/yii'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/yii'
+    'PATH_TRANSLATED' => '/opt/lampp/htdocs/yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1418486701.7303
+    'REQUEST_TIME' => 1418486701
+    'argv' => [
+        0 => '/opt/lampp/htdocs/yii'
+        1 => 'profits/daily-kdb'
+    ]
+    'argc' => 2
+]
+2014-12-15 00:05:01 [-][-][-][info][console\controllers\ProfitsController] begin action
+2014-12-15 00:05:02 [-][-][-][info][console\controllers\ProfitsController] end action
+2014-12-15 00:05:01 [-][-][-][info][application] $_SERVER = [
+    'SHELL' => '/bin/sh'
+    'USER' => 'root'
+    'PATH' => '/usr/bin:/bin'
+    'PWD' => '/root'
+    'LANG' => 'en_US.UTF-8'
+    'SHLVL' => '1'
+    'HOME' => '/root'
+    'LOGNAME' => 'root'
+    '_' => '/opt/lampp/bin/php'
+    'PHP_SELF' => '/opt/lampp/htdocs/yii'
+    'SCRIPT_NAME' => '/opt/lampp/htdocs/yii'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/yii'
+    'PATH_TRANSLATED' => '/opt/lampp/htdocs/yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1418573101.7657
+    'REQUEST_TIME' => 1418573101
+    'argv' => [
+        0 => '/opt/lampp/htdocs/yii'
+        1 => 'profits/daily-kdb'
+    ]
+    'argc' => 2
+]
+2014-12-15 10:57:19 [-][-][-][info][console\controllers\ProfitsController] begin action
+2014-12-15 10:57:19 [-][-][-][info][console\controllers\ProfitsController] end action
+2014-12-15 10:57:19 [-][-][-][info][application] $_SERVER = [
+    'HOSTNAME' => 'koudai.dev'
+    'SELINUX_ROLE_REQUESTED' => ''
+    'TERM' => 'ansi'
+    'SHELL' => '/bin/bash'
+    'HISTSIZE' => '1000'
+    'SSH_CLIENT' => '192.168.1.131 58239 22'
+    'SELINUX_USE_CURRENT_RANGE' => ''
+    'QTDIR' => '/usr/lib64/qt-3.3'
+    'QTINC' => '/usr/lib64/qt-3.3/include'
+    'SSH_TTY' => '/dev/pts/2'
+    'USER' => 'root'
+    'LS_COLORS' => 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=01;05;37;41:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arj=01;31:*.taz=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lz=01;31:*.xz=01;31:*.bz2=01;31:*.tbz=01;31:*.tbz2=01;31:*.bz=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.rar=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.jpg=01;35:*.jpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.axv=01;35:*.anx=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=01;36:*.au=01;36:*.flac=01;36:*.mid=01;36:*.midi=01;36:*.mka=01;36:*.mp3=01;36:*.mpc=01;36:*.ogg=01;36:*.ra=01;36:*.wav=01;36:*.axa=01;36:*.oga=01;36:*.spx=01;36:*.xspf=01;36:'
+    'MAIL' => '/var/spool/mail/root'
+    'PATH' => '/opt/lampp/bin:/opt/lampp/:/usr/lib64/qt-3.3/bin:/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin:/root/bin'
+    'PWD' => '/opt/lampp/htdocs/console'
+    'LANG' => 'en_US.UTF-8'
+    'PS1' => '[\\u@\\h \\w]$ '
+    'SELINUX_LEVEL_REQUESTED' => ''
+    'SSH_ASKPASS' => '/usr/libexec/openssh/gnome-ssh-askpass'
+    'HISTCONTROL' => 'ignoredups'
+    'SHLVL' => '1'
+    'HOME' => '/root'
+    'LOGNAME' => 'root'
+    'QTLIB' => '/usr/lib64/qt-3.3/lib'
+    'CVS_RSH' => 'ssh'
+    'SSH_CONNECTION' => '192.168.1.131 58239 192.168.1.214 22'
+    'LESSOPEN' => '||/usr/bin/lesspipe.sh %s'
+    'G_BROKEN_FILENAMES' => '1'
+    '_' => '/opt/lampp/bin/php'
+    'OLDPWD' => '/opt/lampp/htdocs'
+    'PHP_SELF' => '/opt/lampp/htdocs/yii'
+    'SCRIPT_NAME' => '/opt/lampp/htdocs/yii'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/yii'
+    'PATH_TRANSLATED' => '/opt/lampp/htdocs/yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1418612239.219
+    'REQUEST_TIME' => 1418612239
+    'argv' => [
+        0 => '/opt/lampp/htdocs/yii'
+        1 => 'profits/daily-project'
+    ]
+    'argc' => 2
+]
+2014-12-15 10:57:26 [-][-][-][info][console\controllers\ProfitsController] begin action
+2014-12-15 10:57:27 [-][-][-][info][console\controllers\ProfitsController] end action
+2014-12-15 10:57:26 [-][-][-][info][application] $_SERVER = [
+    'HOSTNAME' => 'koudai.dev'
+    'SELINUX_ROLE_REQUESTED' => ''
+    'TERM' => 'ansi'
+    'SHELL' => '/bin/bash'
+    'HISTSIZE' => '1000'
+    'SSH_CLIENT' => '192.168.1.131 58239 22'
+    'SELINUX_USE_CURRENT_RANGE' => ''
+    'QTDIR' => '/usr/lib64/qt-3.3'
+    'QTINC' => '/usr/lib64/qt-3.3/include'
+    'SSH_TTY' => '/dev/pts/2'
+    'USER' => 'root'
+    'LS_COLORS' => 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=01;05;37;41:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arj=01;31:*.taz=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lz=01;31:*.xz=01;31:*.bz2=01;31:*.tbz=01;31:*.tbz2=01;31:*.bz=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.rar=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.jpg=01;35:*.jpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.axv=01;35:*.anx=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=01;36:*.au=01;36:*.flac=01;36:*.mid=01;36:*.midi=01;36:*.mka=01;36:*.mp3=01;36:*.mpc=01;36:*.ogg=01;36:*.ra=01;36:*.wav=01;36:*.axa=01;36:*.oga=01;36:*.spx=01;36:*.xspf=01;36:'
+    'MAIL' => '/var/spool/mail/root'
+    'PATH' => '/opt/lampp/bin:/opt/lampp/:/usr/lib64/qt-3.3/bin:/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin:/root/bin'
+    'PWD' => '/opt/lampp/htdocs/console'
+    'LANG' => 'en_US.UTF-8'
+    'PS1' => '[\\u@\\h \\w]$ '
+    'SELINUX_LEVEL_REQUESTED' => ''
+    'SSH_ASKPASS' => '/usr/libexec/openssh/gnome-ssh-askpass'
+    'HISTCONTROL' => 'ignoredups'
+    'SHLVL' => '1'
+    'HOME' => '/root'
+    'LOGNAME' => 'root'
+    'QTLIB' => '/usr/lib64/qt-3.3/lib'
+    'CVS_RSH' => 'ssh'
+    'SSH_CONNECTION' => '192.168.1.131 58239 192.168.1.214 22'
+    'LESSOPEN' => '||/usr/bin/lesspipe.sh %s'
+    'G_BROKEN_FILENAMES' => '1'
+    '_' => '/opt/lampp/bin/php'
+    'OLDPWD' => '/opt/lampp/htdocs'
+    'PHP_SELF' => '/opt/lampp/htdocs/yii'
+    'SCRIPT_NAME' => '/opt/lampp/htdocs/yii'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/yii'
+    'PATH_TRANSLATED' => '/opt/lampp/htdocs/yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1418612246.9872
+    'REQUEST_TIME' => 1418612246
+    'argv' => [
+        0 => '/opt/lampp/htdocs/yii'
+        1 => 'profits/daily-project'
+    ]
+    'argc' => 2
+]
+2014-12-15 10:58:46 [-][-][-][info][console\controllers\ProfitsController] begin action
+2014-12-15 10:58:46 [-][-][-][info][console\controllers\ProfitsController] end action
+2014-12-15 10:58:46 [-][-][-][info][application] $_SERVER = [
+    'HOSTNAME' => 'koudai.dev'
+    'SELINUX_ROLE_REQUESTED' => ''
+    'TERM' => 'ansi'
+    'SHELL' => '/bin/bash'
+    'HISTSIZE' => '1000'
+    'SSH_CLIENT' => '192.168.1.131 58239 22'
+    'SELINUX_USE_CURRENT_RANGE' => ''
+    'QTDIR' => '/usr/lib64/qt-3.3'
+    'QTINC' => '/usr/lib64/qt-3.3/include'
+    'SSH_TTY' => '/dev/pts/2'
+    'USER' => 'root'
+    'LS_COLORS' => 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=01;05;37;41:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arj=01;31:*.taz=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lz=01;31:*.xz=01;31:*.bz2=01;31:*.tbz=01;31:*.tbz2=01;31:*.bz=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.rar=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.jpg=01;35:*.jpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.axv=01;35:*.anx=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=01;36:*.au=01;36:*.flac=01;36:*.mid=01;36:*.midi=01;36:*.mka=01;36:*.mp3=01;36:*.mpc=01;36:*.ogg=01;36:*.ra=01;36:*.wav=01;36:*.axa=01;36:*.oga=01;36:*.spx=01;36:*.xspf=01;36:'
+    'MAIL' => '/var/spool/mail/root'
+    'PATH' => '/opt/lampp/bin:/opt/lampp/:/usr/lib64/qt-3.3/bin:/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin:/root/bin'
+    'PWD' => '/opt/lampp/htdocs/console/runtime/logs'
+    'LANG' => 'en_US.UTF-8'
+    'PS1' => '[\\u@\\h \\w]$ '
+    'SELINUX_LEVEL_REQUESTED' => ''
+    'SSH_ASKPASS' => '/usr/libexec/openssh/gnome-ssh-askpass'
+    'HISTCONTROL' => 'ignoredups'
+    'SHLVL' => '1'
+    'HOME' => '/root'
+    'LOGNAME' => 'root'
+    'QTLIB' => '/usr/lib64/qt-3.3/lib'
+    'CVS_RSH' => 'ssh'
+    'SSH_CONNECTION' => '192.168.1.131 58239 192.168.1.214 22'
+    'LESSOPEN' => '||/usr/bin/lesspipe.sh %s'
+    'G_BROKEN_FILENAMES' => '1'
+    '_' => '/opt/lampp/bin/php'
+    'OLDPWD' => '/opt/lampp/htdocs/console'
+    'PHP_SELF' => '/opt/lampp/htdocs/yii'
+    'SCRIPT_NAME' => '/opt/lampp/htdocs/yii'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/yii'
+    'PATH_TRANSLATED' => '/opt/lampp/htdocs/yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1418612326.3389
+    'REQUEST_TIME' => 1418612326
+    'argv' => [
+        0 => '/opt/lampp/htdocs/yii'
+        1 => 'profits/daily-project'
+    ]
+    'argc' => 2
+]
+2014-12-15 10:59:50 [-][-][-][info][console\controllers\ProfitsController] begin action
+2014-12-15 10:59:50 [-][-][-][info][console\controllers\ProfitsController] end action
+2014-12-15 10:59:50 [-][-][-][info][application] $_SERVER = [
+    'HOSTNAME' => 'koudai.dev'
+    'SELINUX_ROLE_REQUESTED' => ''
+    'TERM' => 'ansi'
+    'SHELL' => '/bin/bash'
+    'HISTSIZE' => '1000'
+    'SSH_CLIENT' => '192.168.1.131 58239 22'
+    'SELINUX_USE_CURRENT_RANGE' => ''
+    'QTDIR' => '/usr/lib64/qt-3.3'
+    'QTINC' => '/usr/lib64/qt-3.3/include'
+    'SSH_TTY' => '/dev/pts/2'
+    'USER' => 'root'
+    'LS_COLORS' => 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=01;05;37;41:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arj=01;31:*.taz=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lz=01;31:*.xz=01;31:*.bz2=01;31:*.tbz=01;31:*.tbz2=01;31:*.bz=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.rar=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.jpg=01;35:*.jpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.axv=01;35:*.anx=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=01;36:*.au=01;36:*.flac=01;36:*.mid=01;36:*.midi=01;36:*.mka=01;36:*.mp3=01;36:*.mpc=01;36:*.ogg=01;36:*.ra=01;36:*.wav=01;36:*.axa=01;36:*.oga=01;36:*.spx=01;36:*.xspf=01;36:'
+    'MAIL' => '/var/spool/mail/root'
+    'PATH' => '/opt/lampp/bin:/opt/lampp/:/usr/lib64/qt-3.3/bin:/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin:/root/bin'
+    'PWD' => '/opt/lampp/htdocs/console/runtime/logs'
+    'LANG' => 'en_US.UTF-8'
+    'PS1' => '[\\u@\\h \\w]$ '
+    'SELINUX_LEVEL_REQUESTED' => ''
+    'SSH_ASKPASS' => '/usr/libexec/openssh/gnome-ssh-askpass'
+    'HISTCONTROL' => 'ignoredups'
+    'SHLVL' => '1'
+    'HOME' => '/root'
+    'LOGNAME' => 'root'
+    'QTLIB' => '/usr/lib64/qt-3.3/lib'
+    'CVS_RSH' => 'ssh'
+    'SSH_CONNECTION' => '192.168.1.131 58239 192.168.1.214 22'
+    'LESSOPEN' => '||/usr/bin/lesspipe.sh %s'
+    'G_BROKEN_FILENAMES' => '1'
+    '_' => '/opt/lampp/bin/php'
+    'OLDPWD' => '/opt/lampp/htdocs/console'
+    'PHP_SELF' => '/opt/lampp/htdocs/yii'
+    'SCRIPT_NAME' => '/opt/lampp/htdocs/yii'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/yii'
+    'PATH_TRANSLATED' => '/opt/lampp/htdocs/yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1418612390.7409
+    'REQUEST_TIME' => 1418612390
+    'argv' => [
+        0 => '/opt/lampp/htdocs/yii'
+        1 => 'profits/daily-project'
+    ]
+    'argc' => 2
+]
+2014-12-15 11:00:03 [-][-][-][info][console\controllers\ProfitsController] begin action
+2014-12-15 11:00:03 [-][-][-][info][console\controllers\ProfitsController] end action
+2014-12-15 11:00:03 [-][-][-][info][application] $_SERVER = [
+    'HOSTNAME' => 'koudai.dev'
+    'SELINUX_ROLE_REQUESTED' => ''
+    'TERM' => 'ansi'
+    'SHELL' => '/bin/bash'
+    'HISTSIZE' => '1000'
+    'SSH_CLIENT' => '192.168.1.131 58239 22'
+    'SELINUX_USE_CURRENT_RANGE' => ''
+    'QTDIR' => '/usr/lib64/qt-3.3'
+    'QTINC' => '/usr/lib64/qt-3.3/include'
+    'SSH_TTY' => '/dev/pts/2'
+    'USER' => 'root'
+    'LS_COLORS' => 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=01;05;37;41:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arj=01;31:*.taz=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lz=01;31:*.xz=01;31:*.bz2=01;31:*.tbz=01;31:*.tbz2=01;31:*.bz=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.rar=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.jpg=01;35:*.jpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.axv=01;35:*.anx=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=01;36:*.au=01;36:*.flac=01;36:*.mid=01;36:*.midi=01;36:*.mka=01;36:*.mp3=01;36:*.mpc=01;36:*.ogg=01;36:*.ra=01;36:*.wav=01;36:*.axa=01;36:*.oga=01;36:*.spx=01;36:*.xspf=01;36:'
+    'MAIL' => '/var/spool/mail/root'
+    'PATH' => '/opt/lampp/bin:/opt/lampp/:/usr/lib64/qt-3.3/bin:/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin:/root/bin'
+    'PWD' => '/opt/lampp/htdocs/console'
+    'LANG' => 'en_US.UTF-8'
+    'PS1' => '[\\u@\\h \\w]$ '
+    'SELINUX_LEVEL_REQUESTED' => ''
+    'SSH_ASKPASS' => '/usr/libexec/openssh/gnome-ssh-askpass'
+    'HISTCONTROL' => 'ignoredups'
+    'SHLVL' => '1'
+    'HOME' => '/root'
+    'LOGNAME' => 'root'
+    'QTLIB' => '/usr/lib64/qt-3.3/lib'
+    'CVS_RSH' => 'ssh'
+    'SSH_CONNECTION' => '192.168.1.131 58239 192.168.1.214 22'
+    'LESSOPEN' => '||/usr/bin/lesspipe.sh %s'
+    'G_BROKEN_FILENAMES' => '1'
+    '_' => '/opt/lampp/bin/php'
+    'OLDPWD' => '/opt/lampp/htdocs/console/runtime/logs'
+    'PHP_SELF' => '/opt/lampp/htdocs/yii'
+    'SCRIPT_NAME' => '/opt/lampp/htdocs/yii'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/yii'
+    'PATH_TRANSLATED' => '/opt/lampp/htdocs/yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1418612403.7868
+    'REQUEST_TIME' => 1418612403
+    'argv' => [
+        0 => '/opt/lampp/htdocs/yii'
+        1 => 'profits/daily-project'
+    ]
+    'argc' => 2
+]
+2014-12-15 11:00:59 [-][-][-][info][console\controllers\ProfitsController] begin action
+2014-12-15 11:00:59 [-][-][-][info][console\controllers\ProfitsController] end action
+2014-12-15 11:00:59 [-][-][-][info][application] $_SERVER = [
+    'HOSTNAME' => 'koudai.dev'
+    'SELINUX_ROLE_REQUESTED' => ''
+    'TERM' => 'ansi'
+    'SHELL' => '/bin/bash'
+    'HISTSIZE' => '1000'
+    'SSH_CLIENT' => '192.168.1.131 58239 22'
+    'SELINUX_USE_CURRENT_RANGE' => ''
+    'QTDIR' => '/usr/lib64/qt-3.3'
+    'QTINC' => '/usr/lib64/qt-3.3/include'
+    'SSH_TTY' => '/dev/pts/2'
+    'USER' => 'root'
+    'LS_COLORS' => 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=01;05;37;41:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arj=01;31:*.taz=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lz=01;31:*.xz=01;31:*.bz2=01;31:*.tbz=01;31:*.tbz2=01;31:*.bz=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.rar=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.jpg=01;35:*.jpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.axv=01;35:*.anx=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=01;36:*.au=01;36:*.flac=01;36:*.mid=01;36:*.midi=01;36:*.mka=01;36:*.mp3=01;36:*.mpc=01;36:*.ogg=01;36:*.ra=01;36:*.wav=01;36:*.axa=01;36:*.oga=01;36:*.spx=01;36:*.xspf=01;36:'
+    'MAIL' => '/var/spool/mail/root'
+    'PATH' => '/opt/lampp/bin:/opt/lampp/:/usr/lib64/qt-3.3/bin:/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin:/root/bin'
+    'PWD' => '/opt/lampp/htdocs/console'
+    'LANG' => 'en_US.UTF-8'
+    'PS1' => '[\\u@\\h \\w]$ '
+    'SELINUX_LEVEL_REQUESTED' => ''
+    'SSH_ASKPASS' => '/usr/libexec/openssh/gnome-ssh-askpass'
+    'HISTCONTROL' => 'ignoredups'
+    'SHLVL' => '1'
+    'HOME' => '/root'
+    'LOGNAME' => 'root'
+    'QTLIB' => '/usr/lib64/qt-3.3/lib'
+    'CVS_RSH' => 'ssh'
+    'SSH_CONNECTION' => '192.168.1.131 58239 192.168.1.214 22'
+    'LESSOPEN' => '||/usr/bin/lesspipe.sh %s'
+    'G_BROKEN_FILENAMES' => '1'
+    '_' => '/opt/lampp/bin/php'
+    'OLDPWD' => '/opt/lampp/htdocs/console/runtime/logs'
+    'PHP_SELF' => '/opt/lampp/htdocs/yii'
+    'SCRIPT_NAME' => '/opt/lampp/htdocs/yii'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/yii'
+    'PATH_TRANSLATED' => '/opt/lampp/htdocs/yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1418612459.8126
+    'REQUEST_TIME' => 1418612459
+    'argv' => [
+        0 => '/opt/lampp/htdocs/yii'
+        1 => 'profits/daily-project'
+    ]
+    'argc' => 2
+]
+2014-12-15 11:02:02 [-][-][-][info][console\controllers\ProfitsController] begin action
+2014-12-15 11:02:02 [-][-][-][info][console\controllers\ProfitsController] end action
+2014-12-15 11:02:02 [-][-][-][info][application] $_SERVER = [
+    'HOSTNAME' => 'koudai.dev'
+    'SELINUX_ROLE_REQUESTED' => ''
+    'TERM' => 'ansi'
+    'SHELL' => '/bin/bash'
+    'HISTSIZE' => '1000'
+    'SSH_CLIENT' => '192.168.1.131 58239 22'
+    'SELINUX_USE_CURRENT_RANGE' => ''
+    'QTDIR' => '/usr/lib64/qt-3.3'
+    'QTINC' => '/usr/lib64/qt-3.3/include'
+    'SSH_TTY' => '/dev/pts/2'
+    'USER' => 'root'
+    'LS_COLORS' => 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=01;05;37;41:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arj=01;31:*.taz=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lz=01;31:*.xz=01;31:*.bz2=01;31:*.tbz=01;31:*.tbz2=01;31:*.bz=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.rar=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.jpg=01;35:*.jpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.axv=01;35:*.anx=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=01;36:*.au=01;36:*.flac=01;36:*.mid=01;36:*.midi=01;36:*.mka=01;36:*.mp3=01;36:*.mpc=01;36:*.ogg=01;36:*.ra=01;36:*.wav=01;36:*.axa=01;36:*.oga=01;36:*.spx=01;36:*.xspf=01;36:'
+    'MAIL' => '/var/spool/mail/root'
+    'PATH' => '/opt/lampp/bin:/opt/lampp/:/usr/lib64/qt-3.3/bin:/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin:/root/bin'
+    'PWD' => '/opt/lampp/htdocs/console'
+    'LANG' => 'en_US.UTF-8'
+    'PS1' => '[\\u@\\h \\w]$ '
+    'SELINUX_LEVEL_REQUESTED' => ''
+    'SSH_ASKPASS' => '/usr/libexec/openssh/gnome-ssh-askpass'
+    'HISTCONTROL' => 'ignoredups'
+    'SHLVL' => '1'
+    'HOME' => '/root'
+    'LOGNAME' => 'root'
+    'QTLIB' => '/usr/lib64/qt-3.3/lib'
+    'CVS_RSH' => 'ssh'
+    'SSH_CONNECTION' => '192.168.1.131 58239 192.168.1.214 22'
+    'LESSOPEN' => '||/usr/bin/lesspipe.sh %s'
+    'G_BROKEN_FILENAMES' => '1'
+    '_' => '/opt/lampp/bin/php'
+    'OLDPWD' => '/opt/lampp/htdocs/console/runtime/logs'
+    'PHP_SELF' => '/opt/lampp/htdocs/yii'
+    'SCRIPT_NAME' => '/opt/lampp/htdocs/yii'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/yii'
+    'PATH_TRANSLATED' => '/opt/lampp/htdocs/yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1418612522.08
+    'REQUEST_TIME' => 1418612522
+    'argv' => [
+        0 => '/opt/lampp/htdocs/yii'
+        1 => 'profits/daily-project'
+    ]
+    'argc' => 2
+]
+2014-12-15 12:14:33 [-][-][-][info][console\controllers\ProfitsController] begin action
+2014-12-15 12:14:33 [-][-][-][info][console\controllers\ProfitsController] end action
+2014-12-15 12:14:33 [-][-][-][info][application] $_SERVER = [
+    'HOSTNAME' => 'koudai.dev'
+    'SELINUX_ROLE_REQUESTED' => ''
+    'TERM' => 'ansi'
+    'SHELL' => '/bin/bash'
+    'HISTSIZE' => '1000'
+    'SSH_CLIENT' => '192.168.1.131 58239 22'
+    'SELINUX_USE_CURRENT_RANGE' => ''
+    'QTDIR' => '/usr/lib64/qt-3.3'
+    'QTINC' => '/usr/lib64/qt-3.3/include'
+    'SSH_TTY' => '/dev/pts/2'
+    'USER' => 'root'
+    'LS_COLORS' => 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=01;05;37;41:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arj=01;31:*.taz=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lz=01;31:*.xz=01;31:*.bz2=01;31:*.tbz=01;31:*.tbz2=01;31:*.bz=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.rar=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.jpg=01;35:*.jpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.axv=01;35:*.anx=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=01;36:*.au=01;36:*.flac=01;36:*.mid=01;36:*.midi=01;36:*.mka=01;36:*.mp3=01;36:*.mpc=01;36:*.ogg=01;36:*.ra=01;36:*.wav=01;36:*.axa=01;36:*.oga=01;36:*.spx=01;36:*.xspf=01;36:'
+    'MAIL' => '/var/spool/mail/root'
+    'PATH' => '/opt/lampp/bin:/opt/lampp/:/usr/lib64/qt-3.3/bin:/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin:/root/bin'
+    'PWD' => '/opt/lampp/htdocs'
+    'LANG' => 'en_US.UTF-8'
+    'PS1' => '[\\u@\\h \\w]$ '
+    'SELINUX_LEVEL_REQUESTED' => ''
+    'SSH_ASKPASS' => '/usr/libexec/openssh/gnome-ssh-askpass'
+    'HISTCONTROL' => 'ignoredups'
+    'SHLVL' => '1'
+    'HOME' => '/root'
+    'LOGNAME' => 'root'
+    'QTLIB' => '/usr/lib64/qt-3.3/lib'
+    'CVS_RSH' => 'ssh'
+    'SSH_CONNECTION' => '192.168.1.131 58239 192.168.1.214 22'
+    'LESSOPEN' => '||/usr/bin/lesspipe.sh %s'
+    'G_BROKEN_FILENAMES' => '1'
+    '_' => '/opt/lampp/bin/php'
+    'OLDPWD' => '/opt/lampp/htdocs/console'
+    'PHP_SELF' => '/opt/lampp/htdocs/yii'
+    'SCRIPT_NAME' => '/opt/lampp/htdocs/yii'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/yii'
+    'PATH_TRANSLATED' => '/opt/lampp/htdocs/yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1418616873.2288
+    'REQUEST_TIME' => 1418616873
+    'argv' => [
+        0 => '/opt/lampp/htdocs/yii'
+        1 => 'profits/daily-kdb'
+    ]
+    'argc' => 2
+]
+2014-12-15 12:14:53 [-][-][-][info][console\controllers\ProfitsController] begin action
+2014-12-15 12:14:55 [-][-][-][info][console\controllers\ProfitsController] end action
+2014-12-15 12:14:53 [-][-][-][info][application] $_SERVER = [
+    'HOSTNAME' => 'koudai.dev'
+    'SELINUX_ROLE_REQUESTED' => ''
+    'TERM' => 'ansi'
+    'SHELL' => '/bin/bash'
+    'HISTSIZE' => '1000'
+    'SSH_CLIENT' => '192.168.1.131 58239 22'
+    'SELINUX_USE_CURRENT_RANGE' => ''
+    'QTDIR' => '/usr/lib64/qt-3.3'
+    'QTINC' => '/usr/lib64/qt-3.3/include'
+    'SSH_TTY' => '/dev/pts/2'
+    'USER' => 'root'
+    'LS_COLORS' => 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=01;05;37;41:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arj=01;31:*.taz=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lz=01;31:*.xz=01;31:*.bz2=01;31:*.tbz=01;31:*.tbz2=01;31:*.bz=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.rar=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.jpg=01;35:*.jpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.axv=01;35:*.anx=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=01;36:*.au=01;36:*.flac=01;36:*.mid=01;36:*.midi=01;36:*.mka=01;36:*.mp3=01;36:*.mpc=01;36:*.ogg=01;36:*.ra=01;36:*.wav=01;36:*.axa=01;36:*.oga=01;36:*.spx=01;36:*.xspf=01;36:'
+    'MAIL' => '/var/spool/mail/root'
+    'PATH' => '/opt/lampp/bin:/opt/lampp/:/usr/lib64/qt-3.3/bin:/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin:/root/bin'
+    'PWD' => '/opt/lampp/htdocs'
+    'LANG' => 'en_US.UTF-8'
+    'PS1' => '[\\u@\\h \\w]$ '
+    'SELINUX_LEVEL_REQUESTED' => ''
+    'SSH_ASKPASS' => '/usr/libexec/openssh/gnome-ssh-askpass'
+    'HISTCONTROL' => 'ignoredups'
+    'SHLVL' => '1'
+    'HOME' => '/root'
+    'LOGNAME' => 'root'
+    'QTLIB' => '/usr/lib64/qt-3.3/lib'
+    'CVS_RSH' => 'ssh'
+    'SSH_CONNECTION' => '192.168.1.131 58239 192.168.1.214 22'
+    'LESSOPEN' => '||/usr/bin/lesspipe.sh %s'
+    'G_BROKEN_FILENAMES' => '1'
+    '_' => '/opt/lampp/bin/php'
+    'OLDPWD' => '/opt/lampp/htdocs/console'
+    'PHP_SELF' => '/opt/lampp/htdocs/yii'
+    'SCRIPT_NAME' => '/opt/lampp/htdocs/yii'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/yii'
+    'PATH_TRANSLATED' => '/opt/lampp/htdocs/yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1418616893.8766
+    'REQUEST_TIME' => 1418616893
+    'argv' => [
+        0 => '/opt/lampp/htdocs/yii'
+        1 => 'profits/daily-kdb'
+    ]
+    'argc' => 2
+]
+2014-12-15 12:16:01 [-][-][-][info][console\controllers\ProfitsController] begin action
+2014-12-15 12:16:03 [-][-][-][info][console\controllers\ProfitsController] end action
+2014-12-15 12:16:01 [-][-][-][info][application] $_SERVER = [
+    'HOSTNAME' => 'koudai.dev'
+    'SELINUX_ROLE_REQUESTED' => ''
+    'TERM' => 'ansi'
+    'SHELL' => '/bin/bash'
+    'HISTSIZE' => '1000'
+    'SSH_CLIENT' => '192.168.1.131 58239 22'
+    'SELINUX_USE_CURRENT_RANGE' => ''
+    'QTDIR' => '/usr/lib64/qt-3.3'
+    'QTINC' => '/usr/lib64/qt-3.3/include'
+    'SSH_TTY' => '/dev/pts/2'
+    'USER' => 'root'
+    'LS_COLORS' => 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=01;05;37;41:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arj=01;31:*.taz=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lz=01;31:*.xz=01;31:*.bz2=01;31:*.tbz=01;31:*.tbz2=01;31:*.bz=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.rar=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.jpg=01;35:*.jpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.axv=01;35:*.anx=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=01;36:*.au=01;36:*.flac=01;36:*.mid=01;36:*.midi=01;36:*.mka=01;36:*.mp3=01;36:*.mpc=01;36:*.ogg=01;36:*.ra=01;36:*.wav=01;36:*.axa=01;36:*.oga=01;36:*.spx=01;36:*.xspf=01;36:'
+    'MAIL' => '/var/spool/mail/root'
+    'PATH' => '/opt/lampp/bin:/opt/lampp/:/usr/lib64/qt-3.3/bin:/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin:/root/bin'
+    'PWD' => '/opt/lampp/htdocs/console/controllers'
+    'LANG' => 'en_US.UTF-8'
+    'PS1' => '[\\u@\\h \\w]$ '
+    'SELINUX_LEVEL_REQUESTED' => ''
+    'SSH_ASKPASS' => '/usr/libexec/openssh/gnome-ssh-askpass'
+    'HISTCONTROL' => 'ignoredups'
+    'SHLVL' => '1'
+    'HOME' => '/root'
+    'LOGNAME' => 'root'
+    'QTLIB' => '/usr/lib64/qt-3.3/lib'
+    'CVS_RSH' => 'ssh'
+    'SSH_CONNECTION' => '192.168.1.131 58239 192.168.1.214 22'
+    'LESSOPEN' => '||/usr/bin/lesspipe.sh %s'
+    'G_BROKEN_FILENAMES' => '1'
+    '_' => '/opt/lampp/bin/php'
+    'OLDPWD' => '/opt/lampp/htdocs'
+    'PHP_SELF' => '/opt/lampp/htdocs/yii'
+    'SCRIPT_NAME' => '/opt/lampp/htdocs/yii'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/yii'
+    'PATH_TRANSLATED' => '/opt/lampp/htdocs/yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1418616961.7001
+    'REQUEST_TIME' => 1418616961
+    'argv' => [
+        0 => '/opt/lampp/htdocs/yii'
+        1 => 'profits/daily-kdb'
+    ]
+    'argc' => 2
+]
+2014-12-15 13:35:11 [-][-][-][info][console\controllers\ProfitsController] begin action
+2014-12-15 13:35:13 [-][-][-][info][console\controllers\ProfitsController] end action
+2014-12-15 13:35:11 [-][-][-][info][application] $_SERVER = [
+    'HOSTNAME' => 'koudai.dev'
+    'SELINUX_ROLE_REQUESTED' => ''
+    'TERM' => 'ansi'
+    'SHELL' => '/bin/bash'
+    'HISTSIZE' => '1000'
+    'SSH_CLIENT' => '192.168.1.131 58239 22'
+    'SELINUX_USE_CURRENT_RANGE' => ''
+    'QTDIR' => '/usr/lib64/qt-3.3'
+    'QTINC' => '/usr/lib64/qt-3.3/include'
+    'SSH_TTY' => '/dev/pts/2'
+    'USER' => 'root'
+    'LS_COLORS' => 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=01;05;37;41:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arj=01;31:*.taz=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lz=01;31:*.xz=01;31:*.bz2=01;31:*.tbz=01;31:*.tbz2=01;31:*.bz=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.rar=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.jpg=01;35:*.jpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.axv=01;35:*.anx=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=01;36:*.au=01;36:*.flac=01;36:*.mid=01;36:*.midi=01;36:*.mka=01;36:*.mp3=01;36:*.mpc=01;36:*.ogg=01;36:*.ra=01;36:*.wav=01;36:*.axa=01;36:*.oga=01;36:*.spx=01;36:*.xspf=01;36:'
+    'MAIL' => '/var/spool/mail/root'
+    'PATH' => '/opt/lampp/bin:/opt/lampp/:/usr/lib64/qt-3.3/bin:/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin:/root/bin'
+    'PWD' => '/opt/lampp/htdocs/console/controllers'
+    'LANG' => 'en_US.UTF-8'
+    'PS1' => '[\\u@\\h \\w]$ '
+    'SELINUX_LEVEL_REQUESTED' => ''
+    'SSH_ASKPASS' => '/usr/libexec/openssh/gnome-ssh-askpass'
+    'HISTCONTROL' => 'ignoredups'
+    'SHLVL' => '1'
+    'HOME' => '/root'
+    'LOGNAME' => 'root'
+    'QTLIB' => '/usr/lib64/qt-3.3/lib'
+    'CVS_RSH' => 'ssh'
+    'SSH_CONNECTION' => '192.168.1.131 58239 192.168.1.214 22'
+    'LESSOPEN' => '||/usr/bin/lesspipe.sh %s'
+    'G_BROKEN_FILENAMES' => '1'
+    '_' => '/opt/lampp/bin/php'
+    'OLDPWD' => '/opt/lampp/htdocs'
+    'PHP_SELF' => '/opt/lampp/htdocs/yii'
+    'SCRIPT_NAME' => '/opt/lampp/htdocs/yii'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/yii'
+    'PATH_TRANSLATED' => '/opt/lampp/htdocs/yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1418621711.931
+    'REQUEST_TIME' => 1418621711
+    'argv' => [
+        0 => '/opt/lampp/htdocs/yii'
+        1 => 'profits/daily-kdb'
+    ]
+    'argc' => 2
+]
+2014-12-15 13:35:46 [-][-][-][info][console\controllers\ProfitsController] begin action
+2014-12-15 13:35:47 [-][-][-][info][console\controllers\ProfitsController] end action
+2014-12-15 13:35:46 [-][-][-][info][application] $_SERVER = [
+    'HOSTNAME' => 'koudai.dev'
+    'SELINUX_ROLE_REQUESTED' => ''
+    'TERM' => 'ansi'
+    'SHELL' => '/bin/bash'
+    'HISTSIZE' => '1000'
+    'SSH_CLIENT' => '192.168.1.131 58239 22'
+    'SELINUX_USE_CURRENT_RANGE' => ''
+    'QTDIR' => '/usr/lib64/qt-3.3'
+    'QTINC' => '/usr/lib64/qt-3.3/include'
+    'SSH_TTY' => '/dev/pts/2'
+    'USER' => 'root'
+    'LS_COLORS' => 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=01;05;37;41:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arj=01;31:*.taz=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lz=01;31:*.xz=01;31:*.bz2=01;31:*.tbz=01;31:*.tbz2=01;31:*.bz=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.rar=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.jpg=01;35:*.jpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.axv=01;35:*.anx=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=01;36:*.au=01;36:*.flac=01;36:*.mid=01;36:*.midi=01;36:*.mka=01;36:*.mp3=01;36:*.mpc=01;36:*.ogg=01;36:*.ra=01;36:*.wav=01;36:*.axa=01;36:*.oga=01;36:*.spx=01;36:*.xspf=01;36:'
+    'MAIL' => '/var/spool/mail/root'
+    'PATH' => '/opt/lampp/bin:/opt/lampp/:/usr/lib64/qt-3.3/bin:/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin:/root/bin'
+    'PWD' => '/opt/lampp/htdocs/console/controllers'
+    'LANG' => 'en_US.UTF-8'
+    'PS1' => '[\\u@\\h \\w]$ '
+    'SELINUX_LEVEL_REQUESTED' => ''
+    'SSH_ASKPASS' => '/usr/libexec/openssh/gnome-ssh-askpass'
+    'HISTCONTROL' => 'ignoredups'
+    'SHLVL' => '1'
+    'HOME' => '/root'
+    'LOGNAME' => 'root'
+    'QTLIB' => '/usr/lib64/qt-3.3/lib'
+    'CVS_RSH' => 'ssh'
+    'SSH_CONNECTION' => '192.168.1.131 58239 192.168.1.214 22'
+    'LESSOPEN' => '||/usr/bin/lesspipe.sh %s'
+    'G_BROKEN_FILENAMES' => '1'
+    '_' => '/opt/lampp/bin/php'
+    'OLDPWD' => '/opt/lampp/htdocs'
+    'PHP_SELF' => '/opt/lampp/htdocs/yii'
+    'SCRIPT_NAME' => '/opt/lampp/htdocs/yii'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/yii'
+    'PATH_TRANSLATED' => '/opt/lampp/htdocs/yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1418621746.0476
+    'REQUEST_TIME' => 1418621746
+    'argv' => [
+        0 => '/opt/lampp/htdocs/yii'
+        1 => 'profits/daily-kdb'
+    ]
+    'argc' => 2
+]
+2014-12-15 13:51:05 [-][-][-][info][console\controllers\ProfitsController] begin action
+2014-12-15 13:51:05 [-][-][-][info][console\controllers\ProfitsController] end action
+2014-12-15 13:51:05 [-][-][-][info][application] $_SERVER = [
+    'HOSTNAME' => 'koudai.dev'
+    'SELINUX_ROLE_REQUESTED' => ''
+    'TERM' => 'ansi'
+    'SHELL' => '/bin/bash'
+    'HISTSIZE' => '1000'
+    'SSH_CLIENT' => '192.168.1.131 58239 22'
+    'SELINUX_USE_CURRENT_RANGE' => ''
+    'QTDIR' => '/usr/lib64/qt-3.3'
+    'QTINC' => '/usr/lib64/qt-3.3/include'
+    'SSH_TTY' => '/dev/pts/2'
+    'USER' => 'root'
+    'LS_COLORS' => 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=01;05;37;41:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arj=01;31:*.taz=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lz=01;31:*.xz=01;31:*.bz2=01;31:*.tbz=01;31:*.tbz2=01;31:*.bz=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.rar=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.jpg=01;35:*.jpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.axv=01;35:*.anx=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=01;36:*.au=01;36:*.flac=01;36:*.mid=01;36:*.midi=01;36:*.mka=01;36:*.mp3=01;36:*.mpc=01;36:*.ogg=01;36:*.ra=01;36:*.wav=01;36:*.axa=01;36:*.oga=01;36:*.spx=01;36:*.xspf=01;36:'
+    'MAIL' => '/var/spool/mail/root'
+    'PATH' => '/opt/lampp/bin:/opt/lampp/:/usr/lib64/qt-3.3/bin:/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin:/root/bin'
+    'PWD' => '/opt/lampp/htdocs/console/runtime/logs'
+    'LANG' => 'en_US.UTF-8'
+    'PS1' => '[\\u@\\h \\w]$ '
+    'SELINUX_LEVEL_REQUESTED' => ''
+    'SSH_ASKPASS' => '/usr/libexec/openssh/gnome-ssh-askpass'
+    'HISTCONTROL' => 'ignoredups'
+    'SHLVL' => '1'
+    'HOME' => '/root'
+    'LOGNAME' => 'root'
+    'QTLIB' => '/usr/lib64/qt-3.3/lib'
+    'CVS_RSH' => 'ssh'
+    'SSH_CONNECTION' => '192.168.1.131 58239 192.168.1.214 22'
+    'LESSOPEN' => '||/usr/bin/lesspipe.sh %s'
+    'G_BROKEN_FILENAMES' => '1'
+    '_' => '/opt/lampp/bin/php'
+    'OLDPWD' => '/opt/lampp/htdocs/console/controllers'
+    'PHP_SELF' => '/opt/lampp/htdocs/yii'
+    'SCRIPT_NAME' => '/opt/lampp/htdocs/yii'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/yii'
+    'PATH_TRANSLATED' => '/opt/lampp/htdocs/yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1418622665.8066
+    'REQUEST_TIME' => 1418622665
+    'argv' => [
+        0 => '/opt/lampp/htdocs/yii'
+        1 => 'profits/daily-kdb'
+    ]
+    'argc' => 2
+]
+2014-12-15 13:55:39 [-][-][-][info][console\controllers\ProfitsController] begin action
+2014-12-15 13:55:39 [-][-][-][info][application] $_SERVER = [
+    'HOSTNAME' => 'koudai.dev'
+    'SELINUX_ROLE_REQUESTED' => ''
+    'TERM' => 'ansi'
+    'SHELL' => '/bin/bash'
+    'HISTSIZE' => '1000'
+    'SSH_CLIENT' => '192.168.1.131 58239 22'
+    'SELINUX_USE_CURRENT_RANGE' => ''
+    'QTDIR' => '/usr/lib64/qt-3.3'
+    'QTINC' => '/usr/lib64/qt-3.3/include'
+    'SSH_TTY' => '/dev/pts/2'
+    'USER' => 'root'
+    'LS_COLORS' => 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=01;05;37;41:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arj=01;31:*.taz=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lz=01;31:*.xz=01;31:*.bz2=01;31:*.tbz=01;31:*.tbz2=01;31:*.bz=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.rar=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.jpg=01;35:*.jpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.axv=01;35:*.anx=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=01;36:*.au=01;36:*.flac=01;36:*.mid=01;36:*.midi=01;36:*.mka=01;36:*.mp3=01;36:*.mpc=01;36:*.ogg=01;36:*.ra=01;36:*.wav=01;36:*.axa=01;36:*.oga=01;36:*.spx=01;36:*.xspf=01;36:'
+    'MAIL' => '/var/spool/mail/root'
+    'PATH' => '/opt/lampp/bin:/opt/lampp/:/usr/lib64/qt-3.3/bin:/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin:/root/bin'
+    'PWD' => '/opt/lampp/htdocs/console/runtime/logs'
+    'LANG' => 'en_US.UTF-8'
+    'PS1' => '[\\u@\\h \\w]$ '
+    'SELINUX_LEVEL_REQUESTED' => ''
+    'SSH_ASKPASS' => '/usr/libexec/openssh/gnome-ssh-askpass'
+    'HISTCONTROL' => 'ignoredups'
+    'SHLVL' => '1'
+    'HOME' => '/root'
+    'LOGNAME' => 'root'
+    'QTLIB' => '/usr/lib64/qt-3.3/lib'
+    'CVS_RSH' => 'ssh'
+    'SSH_CONNECTION' => '192.168.1.131 58239 192.168.1.214 22'
+    'LESSOPEN' => '||/usr/bin/lesspipe.sh %s'
+    'G_BROKEN_FILENAMES' => '1'
+    '_' => '/opt/lampp/bin/php'
+    'OLDPWD' => '/opt/lampp/htdocs/console/controllers'
+    'PHP_SELF' => '/opt/lampp/htdocs/yii'
+    'SCRIPT_NAME' => '/opt/lampp/htdocs/yii'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/yii'
+    'PATH_TRANSLATED' => '/opt/lampp/htdocs/yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1418622939.1187
+    'REQUEST_TIME' => 1418622939
+    'argv' => [
+        0 => '/opt/lampp/htdocs/yii'
+        1 => 'profits/daily-kdb'
+    ]
+    'argc' => 2
+]
+2014-12-16 00:05:01 [-][-][-][info][console\controllers\ProfitsController] begin action
+2014-12-16 00:05:02 [-][-][-][info][console\controllers\ProfitsController] end action
+2014-12-16 00:05:01 [-][-][-][info][application] $_SERVER = [
+    'SHELL' => '/bin/sh'
+    'USER' => 'root'
+    'PATH' => '/usr/bin:/bin'
+    'PWD' => '/root'
+    'LANG' => 'en_US.UTF-8'
+    'SHLVL' => '1'
+    'HOME' => '/root'
+    'LOGNAME' => 'root'
+    '_' => '/opt/lampp/bin/php'
+    'PHP_SELF' => '/opt/lampp/htdocs/yii'
+    'SCRIPT_NAME' => '/opt/lampp/htdocs/yii'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/yii'
+    'PATH_TRANSLATED' => '/opt/lampp/htdocs/yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1418659501.9356
+    'REQUEST_TIME' => 1418659501
+    'argv' => [
+        0 => '/opt/lampp/htdocs/yii'
+        1 => 'profits/daily-kdb'
+    ]
+    'argc' => 2
+]
+2014-12-16 00:05:01 [-][-][-][info][console\controllers\ProfitsController] begin action
+2014-12-16 00:05:02 [-][-][-][info][console\controllers\ProfitsController] end action
+2014-12-16 00:05:01 [-][-][-][info][application] $_SERVER = [
+    'SHELL' => '/bin/sh'
+    'USER' => 'root'
+    'PATH' => '/usr/bin:/bin'
+    'PWD' => '/root'
+    'LANG' => 'en_US.UTF-8'
+    'SHLVL' => '1'
+    'HOME' => '/root'
+    'LOGNAME' => 'root'
+    '_' => '/opt/lampp/bin/php'
+    'PHP_SELF' => '/opt/lampp/htdocs/yii'
+    'SCRIPT_NAME' => '/opt/lampp/htdocs/yii'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/yii'
+    'PATH_TRANSLATED' => '/opt/lampp/htdocs/yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1418659501.9267
+    'REQUEST_TIME' => 1418659501
+    'argv' => [
+        0 => '/opt/lampp/htdocs/yii'
+        1 => 'profits/daily-project'
+    ]
+    'argc' => 2
+]
+2014-12-16 19:44:24 [-][-][-][info][console\controllers\ProfitsController] begin action
+2014-12-16 19:44:25 [-][-][-][info][console\controllers\ProfitsController] end action
+2014-12-16 19:44:24 [-][-][-][info][application] $_SERVER = [
+    'HOSTNAME' => 'koudai.dev'
+    'SELINUX_ROLE_REQUESTED' => ''
+    'TERM' => 'ansi'
+    'SHELL' => '/bin/bash'
+    'HISTSIZE' => '1000'
+    'SSH_CLIENT' => '192.168.1.131 58239 22'
+    'SELINUX_USE_CURRENT_RANGE' => ''
+    'QTDIR' => '/usr/lib64/qt-3.3'
+    'QTINC' => '/usr/lib64/qt-3.3/include'
+    'SSH_TTY' => '/dev/pts/2'
+    'USER' => 'root'
+    'LS_COLORS' => 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=01;05;37;41:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arj=01;31:*.taz=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lz=01;31:*.xz=01;31:*.bz2=01;31:*.tbz=01;31:*.tbz2=01;31:*.bz=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.rar=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.jpg=01;35:*.jpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.axv=01;35:*.anx=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=01;36:*.au=01;36:*.flac=01;36:*.mid=01;36:*.midi=01;36:*.mka=01;36:*.mp3=01;36:*.mpc=01;36:*.ogg=01;36:*.ra=01;36:*.wav=01;36:*.axa=01;36:*.oga=01;36:*.spx=01;36:*.xspf=01;36:'
+    'MAIL' => '/var/spool/mail/root'
+    'PATH' => '/opt/lampp/bin:/opt/lampp/:/usr/lib64/qt-3.3/bin:/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin:/root/bin'
+    'PWD' => '/opt/lampp/htdocs'
+    'LANG' => 'en_US.UTF-8'
+    'PS1' => '[\\u@\\h \\w]$ '
+    'SELINUX_LEVEL_REQUESTED' => ''
+    'SSH_ASKPASS' => '/usr/libexec/openssh/gnome-ssh-askpass'
+    'HISTCONTROL' => 'ignoredups'
+    'SHLVL' => '1'
+    'HOME' => '/root'
+    'LOGNAME' => 'root'
+    'QTLIB' => '/usr/lib64/qt-3.3/lib'
+    'CVS_RSH' => 'ssh'
+    'SSH_CONNECTION' => '192.168.1.131 58239 192.168.1.214 22'
+    'LESSOPEN' => '||/usr/bin/lesspipe.sh %s'
+    'G_BROKEN_FILENAMES' => '1'
+    '_' => '/opt/lampp/bin/php'
+    'OLDPWD' => '/opt/lampp/htdocs/common/services'
+    'PHP_SELF' => '/opt/lampp/htdocs/yii'
+    'SCRIPT_NAME' => '/opt/lampp/htdocs/yii'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/yii'
+    'PATH_TRANSLATED' => '/opt/lampp/htdocs/yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1418730264.9893
+    'REQUEST_TIME' => 1418730264
+    'argv' => [
+        0 => '/opt/lampp/htdocs/yii'
+        1 => 'profits/daily-project'
+    ]
+    'argc' => 2
+]
+2014-12-17 00:05:01 [-][-][-][info][console\controllers\ProfitsController] begin action
+2014-12-17 00:05:02 [-][-][-][info][console\controllers\ProfitsController] end action
+2014-12-17 00:05:01 [-][-][-][info][application] $_SERVER = [
+    'SHELL' => '/bin/sh'
+    'USER' => 'root'
+    'PATH' => '/usr/bin:/bin'
+    'PWD' => '/root'
+    'LANG' => 'en_US.UTF-8'
+    'SHLVL' => '1'
+    'HOME' => '/root'
+    'LOGNAME' => 'root'
+    '_' => '/opt/lampp/bin/php'
+    'PHP_SELF' => '/opt/lampp/htdocs/yii'
+    'SCRIPT_NAME' => '/opt/lampp/htdocs/yii'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/yii'
+    'PATH_TRANSLATED' => '/opt/lampp/htdocs/yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1418745901.8673
+    'REQUEST_TIME' => 1418745901
+    'argv' => [
+        0 => '/opt/lampp/htdocs/yii'
+        1 => 'profits/daily-project'
+    ]
+    'argc' => 2
+]
+2014-12-17 00:05:01 [-][-][-][info][console\controllers\ProfitsController] begin action
+2014-12-17 00:05:02 [-][-][-][info][console\controllers\ProfitsController] end action
+2014-12-17 00:05:01 [-][-][-][info][application] $_SERVER = [
+    'SHELL' => '/bin/sh'
+    'USER' => 'root'
+    'PATH' => '/usr/bin:/bin'
+    'PWD' => '/root'
+    'LANG' => 'en_US.UTF-8'
+    'SHLVL' => '1'
+    'HOME' => '/root'
+    'LOGNAME' => 'root'
+    '_' => '/opt/lampp/bin/php'
+    'PHP_SELF' => '/opt/lampp/htdocs/yii'
+    'SCRIPT_NAME' => '/opt/lampp/htdocs/yii'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/yii'
+    'PATH_TRANSLATED' => '/opt/lampp/htdocs/yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1418745901.8673
+    'REQUEST_TIME' => 1418745901
+    'argv' => [
+        0 => '/opt/lampp/htdocs/yii'
+        1 => 'profits/daily-kdb'
+    ]
+    'argc' => 2
+]
+2014-12-18 00:05:01 [-][-][-][info][console\controllers\ProfitsController] begin action
+2014-12-18 00:05:01 [-][-][-][info][console\controllers\ProfitsController] end action
+2014-12-18 00:05:01 [-][-][-][info][application] $_SERVER = [
+    'SHELL' => '/bin/sh'
+    'USER' => 'root'
+    'PATH' => '/usr/bin:/bin'
+    'PWD' => '/root'
+    'LANG' => 'en_US.UTF-8'
+    'SHLVL' => '1'
+    'HOME' => '/root'
+    'LOGNAME' => 'root'
+    '_' => '/opt/lampp/bin/php'
+    'PHP_SELF' => '/opt/lampp/htdocs/yii'
+    'SCRIPT_NAME' => '/opt/lampp/htdocs/yii'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/yii'
+    'PATH_TRANSLATED' => '/opt/lampp/htdocs/yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1418832301.2156
+    'REQUEST_TIME' => 1418832301
+    'argv' => [
+        0 => '/opt/lampp/htdocs/yii'
+        1 => 'profits/daily-project'
+    ]
+    'argc' => 2
+]
+2014-12-18 00:05:01 [-][-][-][info][console\controllers\ProfitsController] begin action
+2014-12-18 00:05:01 [-][-][-][info][console\controllers\ProfitsController] end action
+2014-12-18 00:05:01 [-][-][-][info][application] $_SERVER = [
+    'SHELL' => '/bin/sh'
+    'USER' => 'root'
+    'PATH' => '/usr/bin:/bin'
+    'PWD' => '/root'
+    'LANG' => 'en_US.UTF-8'
+    'SHLVL' => '1'
+    'HOME' => '/root'
+    'LOGNAME' => 'root'
+    '_' => '/opt/lampp/bin/php'
+    'PHP_SELF' => '/opt/lampp/htdocs/yii'
+    'SCRIPT_NAME' => '/opt/lampp/htdocs/yii'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/yii'
+    'PATH_TRANSLATED' => '/opt/lampp/htdocs/yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1418832301.2156
+    'REQUEST_TIME' => 1418832301
+    'argv' => [
+        0 => '/opt/lampp/htdocs/yii'
+        1 => 'profits/daily-kdb'
+    ]
+    'argc' => 2
+]
+2014-12-19 00:05:01 [-][-][-][info][console\controllers\ProfitsController] begin action
+2014-12-19 00:05:02 [-][-][-][info][console\controllers\ProfitsController] end action
+2014-12-19 00:05:01 [-][-][-][info][application] $_SERVER = [
+    'SHELL' => '/bin/sh'
+    'USER' => 'root'
+    'PATH' => '/usr/bin:/bin'
+    'PWD' => '/root'
+    'LANG' => 'en_US.UTF-8'
+    'SHLVL' => '1'
+    'HOME' => '/root'
+    'LOGNAME' => 'root'
+    '_' => '/opt/lampp/bin/php'
+    'PHP_SELF' => '/opt/lampp/htdocs/yii'
+    'SCRIPT_NAME' => '/opt/lampp/htdocs/yii'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/yii'
+    'PATH_TRANSLATED' => '/opt/lampp/htdocs/yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1418918701.8613
+    'REQUEST_TIME' => 1418918701
+    'argv' => [
+        0 => '/opt/lampp/htdocs/yii'
+        1 => 'profits/daily-project'
+    ]
+    'argc' => 2
+]
+2014-12-19 00:05:01 [-][-][-][info][console\controllers\ProfitsController] begin action
+2014-12-19 00:05:02 [-][-][-][info][console\controllers\ProfitsController] end action
+2014-12-19 00:05:01 [-][-][-][info][application] $_SERVER = [
+    'SHELL' => '/bin/sh'
+    'USER' => 'root'
+    'PATH' => '/usr/bin:/bin'
+    'PWD' => '/root'
+    'LANG' => 'en_US.UTF-8'
+    'SHLVL' => '1'
+    'HOME' => '/root'
+    'LOGNAME' => 'root'
+    '_' => '/opt/lampp/bin/php'
+    'PHP_SELF' => '/opt/lampp/htdocs/yii'
+    'SCRIPT_NAME' => '/opt/lampp/htdocs/yii'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/yii'
+    'PATH_TRANSLATED' => '/opt/lampp/htdocs/yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1418918701.8613
+    'REQUEST_TIME' => 1418918701
+    'argv' => [
+        0 => '/opt/lampp/htdocs/yii'
+        1 => 'profits/daily-kdb'
+    ]
+    'argc' => 2
+]
+2014-12-20 00:05:01 [-][-][-][info][console\controllers\ProfitsController] begin action
+2014-12-20 00:05:01 [-][-][-][info][console\controllers\ProfitsController] end action
+2014-12-20 00:05:01 [-][-][-][info][application] $_SERVER = [
+    'SHELL' => '/bin/sh'
+    'USER' => 'root'
+    'PATH' => '/usr/bin:/bin'
+    'PWD' => '/root'
+    'LANG' => 'en_US.UTF-8'
+    'SHLVL' => '1'
+    'HOME' => '/root'
+    'LOGNAME' => 'root'
+    '_' => '/opt/lampp/bin/php'
+    'PHP_SELF' => '/opt/lampp/htdocs/yii'
+    'SCRIPT_NAME' => '/opt/lampp/htdocs/yii'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/yii'
+    'PATH_TRANSLATED' => '/opt/lampp/htdocs/yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1419005101.2564
+    'REQUEST_TIME' => 1419005101
+    'argv' => [
+        0 => '/opt/lampp/htdocs/yii'
+        1 => 'profits/daily-project'
+    ]
+    'argc' => 2
+]
+2014-12-20 00:05:01 [-][-][-][info][console\controllers\ProfitsController] begin action
+2014-12-20 00:05:01 [-][-][-][info][console\controllers\ProfitsController] end action
+2014-12-20 00:05:01 [-][-][-][info][application] $_SERVER = [
+    'SHELL' => '/bin/sh'
+    'USER' => 'root'
+    'PATH' => '/usr/bin:/bin'
+    'PWD' => '/root'
+    'LANG' => 'en_US.UTF-8'
+    'SHLVL' => '1'
+    'HOME' => '/root'
+    'LOGNAME' => 'root'
+    '_' => '/opt/lampp/bin/php'
+    'PHP_SELF' => '/opt/lampp/htdocs/yii'
+    'SCRIPT_NAME' => '/opt/lampp/htdocs/yii'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/yii'
+    'PATH_TRANSLATED' => '/opt/lampp/htdocs/yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1419005101.2564
+    'REQUEST_TIME' => 1419005101
+    'argv' => [
+        0 => '/opt/lampp/htdocs/yii'
+        1 => 'profits/daily-kdb'
+    ]
+    'argc' => 2
+]
+2014-12-21 00:05:01 [-][-][-][info][console\controllers\ProfitsController] begin action
+2014-12-21 00:05:02 [-][-][-][info][console\controllers\ProfitsController] end action
+2014-12-21 00:05:01 [-][-][-][info][application] $_SERVER = [
+    'SHELL' => '/bin/sh'
+    'USER' => 'root'
+    'PATH' => '/usr/bin:/bin'
+    'PWD' => '/root'
+    'LANG' => 'en_US.UTF-8'
+    'SHLVL' => '1'
+    'HOME' => '/root'
+    'LOGNAME' => 'root'
+    '_' => '/opt/lampp/bin/php'
+    'PHP_SELF' => '/opt/lampp/htdocs/yii'
+    'SCRIPT_NAME' => '/opt/lampp/htdocs/yii'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/yii'
+    'PATH_TRANSLATED' => '/opt/lampp/htdocs/yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1419091501.886
+    'REQUEST_TIME' => 1419091501
+    'argv' => [
+        0 => '/opt/lampp/htdocs/yii'
+        1 => 'profits/daily-project'
+    ]
+    'argc' => 2
+]
+2014-12-21 00:05:01 [-][-][-][info][console\controllers\ProfitsController] begin action
+2014-12-21 00:05:02 [-][-][-][info][console\controllers\ProfitsController] end action
+2014-12-21 00:05:01 [-][-][-][info][application] $_SERVER = [
+    'SHELL' => '/bin/sh'
+    'USER' => 'root'
+    'PATH' => '/usr/bin:/bin'
+    'PWD' => '/root'
+    'LANG' => 'en_US.UTF-8'
+    'SHLVL' => '1'
+    'HOME' => '/root'
+    'LOGNAME' => 'root'
+    '_' => '/opt/lampp/bin/php'
+    'PHP_SELF' => '/opt/lampp/htdocs/yii'
+    'SCRIPT_NAME' => '/opt/lampp/htdocs/yii'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/yii'
+    'PATH_TRANSLATED' => '/opt/lampp/htdocs/yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1419091501.886
+    'REQUEST_TIME' => 1419091501
+    'argv' => [
+        0 => '/opt/lampp/htdocs/yii'
+        1 => 'profits/daily-kdb'
+    ]
+    'argc' => 2
+]
+2014-12-22 00:05:01 [-][-][-][info][console\controllers\ProfitsController] begin action
+2014-12-22 00:05:02 [-][-][-][info][console\controllers\ProfitsController] end action
+2014-12-22 00:05:01 [-][-][-][info][application] $_SERVER = [
+    'SHELL' => '/bin/sh'
+    'USER' => 'root'
+    'PATH' => '/usr/bin:/bin'
+    'PWD' => '/root'
+    'LANG' => 'en_US.UTF-8'
+    'SHLVL' => '1'
+    'HOME' => '/root'
+    'LOGNAME' => 'root'
+    '_' => '/opt/lampp/bin/php'
+    'PHP_SELF' => '/opt/lampp/htdocs/yii'
+    'SCRIPT_NAME' => '/opt/lampp/htdocs/yii'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/yii'
+    'PATH_TRANSLATED' => '/opt/lampp/htdocs/yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1419177901.7802
+    'REQUEST_TIME' => 1419177901
+    'argv' => [
+        0 => '/opt/lampp/htdocs/yii'
+        1 => 'profits/daily-project'
+    ]
+    'argc' => 2
+]
+2014-12-22 00:05:01 [-][-][-][info][console\controllers\ProfitsController] begin action
+2014-12-22 00:05:02 [-][-][-][info][console\controllers\ProfitsController] end action
+2014-12-22 00:05:01 [-][-][-][info][application] $_SERVER = [
+    'SHELL' => '/bin/sh'
+    'USER' => 'root'
+    'PATH' => '/usr/bin:/bin'
+    'PWD' => '/root'
+    'LANG' => 'en_US.UTF-8'
+    'SHLVL' => '1'
+    'HOME' => '/root'
+    'LOGNAME' => 'root'
+    '_' => '/opt/lampp/bin/php'
+    'PHP_SELF' => '/opt/lampp/htdocs/yii'
+    'SCRIPT_NAME' => '/opt/lampp/htdocs/yii'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/yii'
+    'PATH_TRANSLATED' => '/opt/lampp/htdocs/yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1419177901.7802
+    'REQUEST_TIME' => 1419177901
+    'argv' => [
+        0 => '/opt/lampp/htdocs/yii'
+        1 => 'profits/daily-kdb'
+    ]
+    'argc' => 2
+]
+2014-12-23 00:05:01 [-][-][-][info][console\controllers\ProfitsController] begin action
+2014-12-23 00:05:02 [-][-][-][info][console\controllers\ProfitsController] end action
+2014-12-23 00:05:01 [-][-][-][info][application] $_SERVER = [
+    'SHELL' => '/bin/sh'
+    'USER' => 'root'
+    'PATH' => '/usr/bin:/bin'
+    'PWD' => '/root'
+    'LANG' => 'en_US.UTF-8'
+    'SHLVL' => '1'
+    'HOME' => '/root'
+    'LOGNAME' => 'root'
+    '_' => '/opt/lampp/bin/php'
+    'PHP_SELF' => '/opt/lampp/htdocs/yii'
+    'SCRIPT_NAME' => '/opt/lampp/htdocs/yii'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/yii'
+    'PATH_TRANSLATED' => '/opt/lampp/htdocs/yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1419264301.5819
+    'REQUEST_TIME' => 1419264301
+    'argv' => [
+        0 => '/opt/lampp/htdocs/yii'
+        1 => 'profits/daily-project'
+    ]
+    'argc' => 2
+]
+2014-12-23 00:05:01 [-][-][-][info][console\controllers\ProfitsController] begin action
+2014-12-23 00:05:02 [-][-][-][info][console\controllers\ProfitsController] end action
+2014-12-23 00:05:01 [-][-][-][info][application] $_SERVER = [
+    'SHELL' => '/bin/sh'
+    'USER' => 'root'
+    'PATH' => '/usr/bin:/bin'
+    'PWD' => '/root'
+    'LANG' => 'en_US.UTF-8'
+    'SHLVL' => '1'
+    'HOME' => '/root'
+    'LOGNAME' => 'root'
+    '_' => '/opt/lampp/bin/php'
+    'PHP_SELF' => '/opt/lampp/htdocs/yii'
+    'SCRIPT_NAME' => '/opt/lampp/htdocs/yii'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/yii'
+    'PATH_TRANSLATED' => '/opt/lampp/htdocs/yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1419264301.5819
+    'REQUEST_TIME' => 1419264301
+    'argv' => [
+        0 => '/opt/lampp/htdocs/yii'
+        1 => 'profits/daily-kdb'
+    ]
+    'argc' => 2
+]
+2014-12-24 00:05:01 [-][-][-][info][console\controllers\ProfitsController] begin action
+2014-12-24 00:05:01 [-][-][-][info][console\controllers\ProfitsController] end action
+2014-12-24 00:05:01 [-][-][-][info][application] $_SERVER = [
+    'SHELL' => '/bin/sh'
+    'USER' => 'root'
+    'PATH' => '/usr/bin:/bin'
+    'PWD' => '/root'
+    'LANG' => 'en_US.UTF-8'
+    'SHLVL' => '1'
+    'HOME' => '/root'
+    'LOGNAME' => 'root'
+    '_' => '/opt/lampp/bin/php'
+    'PHP_SELF' => '/opt/lampp/htdocs/yii'
+    'SCRIPT_NAME' => '/opt/lampp/htdocs/yii'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/yii'
+    'PATH_TRANSLATED' => '/opt/lampp/htdocs/yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1419350701.1841
+    'REQUEST_TIME' => 1419350701
+    'argv' => [
+        0 => '/opt/lampp/htdocs/yii'
+        1 => 'profits/daily-project'
+    ]
+    'argc' => 2
+]
+2014-12-24 00:05:01 [-][-][-][info][console\controllers\ProfitsController] begin action
+2014-12-24 00:05:01 [-][-][-][info][console\controllers\ProfitsController] end action
+2014-12-24 00:05:01 [-][-][-][info][application] $_SERVER = [
+    'SHELL' => '/bin/sh'
+    'USER' => 'root'
+    'PATH' => '/usr/bin:/bin'
+    'PWD' => '/root'
+    'LANG' => 'en_US.UTF-8'
+    'SHLVL' => '1'
+    'HOME' => '/root'
+    'LOGNAME' => 'root'
+    '_' => '/opt/lampp/bin/php'
+    'PHP_SELF' => '/opt/lampp/htdocs/yii'
+    'SCRIPT_NAME' => '/opt/lampp/htdocs/yii'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/yii'
+    'PATH_TRANSLATED' => '/opt/lampp/htdocs/yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1419350701.1841
+    'REQUEST_TIME' => 1419350701
+    'argv' => [
+        0 => '/opt/lampp/htdocs/yii'
+        1 => 'profits/daily-kdb'
+    ]
+    'argc' => 2
+]
+2014-12-25 00:05:01 [-][-][-][info][console\controllers\ProfitsController] begin action
+2014-12-25 00:05:02 [-][-][-][info][console\controllers\ProfitsController] end action
+2014-12-25 00:05:01 [-][-][-][info][application] $_SERVER = [
+    'SHELL' => '/bin/sh'
+    'USER' => 'root'
+    'PATH' => '/usr/bin:/bin'
+    'PWD' => '/root'
+    'LANG' => 'en_US.UTF-8'
+    'SHLVL' => '1'
+    'HOME' => '/root'
+    'LOGNAME' => 'root'
+    '_' => '/opt/lampp/bin/php'
+    'PHP_SELF' => '/opt/lampp/htdocs/yii'
+    'SCRIPT_NAME' => '/opt/lampp/htdocs/yii'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/yii'
+    'PATH_TRANSLATED' => '/opt/lampp/htdocs/yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1419437101.753
+    'REQUEST_TIME' => 1419437101
+    'argv' => [
+        0 => '/opt/lampp/htdocs/yii'
+        1 => 'profits/daily-project'
+    ]
+    'argc' => 2
+]
+2014-12-25 00:05:01 [-][-][-][info][console\controllers\ProfitsController] begin action
+2014-12-25 00:05:02 [-][-][-][info][console\controllers\ProfitsController] end action
+2014-12-25 00:05:01 [-][-][-][info][application] $_SERVER = [
+    'SHELL' => '/bin/sh'
+    'USER' => 'root'
+    'PATH' => '/usr/bin:/bin'
+    'PWD' => '/root'
+    'LANG' => 'en_US.UTF-8'
+    'SHLVL' => '1'
+    'HOME' => '/root'
+    'LOGNAME' => 'root'
+    '_' => '/opt/lampp/bin/php'
+    'PHP_SELF' => '/opt/lampp/htdocs/yii'
+    'SCRIPT_NAME' => '/opt/lampp/htdocs/yii'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/yii'
+    'PATH_TRANSLATED' => '/opt/lampp/htdocs/yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1419437101.753
+    'REQUEST_TIME' => 1419437101
+    'argv' => [
+        0 => '/opt/lampp/htdocs/yii'
+        1 => 'profits/daily-kdb'
+    ]
+    'argc' => 2
+]
+2014-12-26 00:05:01 [-][-][-][info][console\controllers\ProfitsController] begin action
+2014-12-26 00:05:01 [-][-][-][info][console\controllers\ProfitsController] end action
+2014-12-26 00:05:01 [-][-][-][info][application] $_SERVER = [
+    'SHELL' => '/bin/sh'
+    'USER' => 'root'
+    'PATH' => '/usr/bin:/bin'
+    'PWD' => '/root'
+    'LANG' => 'en_US.UTF-8'
+    'SHLVL' => '1'
+    'HOME' => '/root'
+    'LOGNAME' => 'root'
+    '_' => '/opt/lampp/bin/php'
+    'PHP_SELF' => '/opt/lampp/htdocs/yii'
+    'SCRIPT_NAME' => '/opt/lampp/htdocs/yii'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/yii'
+    'PATH_TRANSLATED' => '/opt/lampp/htdocs/yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1419523501.43
+    'REQUEST_TIME' => 1419523501
+    'argv' => [
+        0 => '/opt/lampp/htdocs/yii'
+        1 => 'profits/daily-project'
+    ]
+    'argc' => 2
+]
+2014-12-26 00:05:01 [-][-][-][info][console\controllers\ProfitsController] begin action
+2014-12-26 00:05:02 [-][-][-][info][console\controllers\ProfitsController] end action
+2014-12-26 00:05:01 [-][-][-][info][application] $_SERVER = [
+    'SHELL' => '/bin/sh'
+    'USER' => 'root'
+    'PATH' => '/usr/bin:/bin'
+    'PWD' => '/root'
+    'LANG' => 'en_US.UTF-8'
+    'SHLVL' => '1'
+    'HOME' => '/root'
+    'LOGNAME' => 'root'
+    '_' => '/opt/lampp/bin/php'
+    'PHP_SELF' => '/opt/lampp/htdocs/yii'
+    'SCRIPT_NAME' => '/opt/lampp/htdocs/yii'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/yii'
+    'PATH_TRANSLATED' => '/opt/lampp/htdocs/yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1419523501.43
+    'REQUEST_TIME' => 1419523501
+    'argv' => [
+        0 => '/opt/lampp/htdocs/yii'
+        1 => 'profits/daily-kdb'
+    ]
+    'argc' => 2
+]
+2014-12-27 00:05:01 [-][-][-][info][console\controllers\ProfitsController] begin action
+2014-12-27 00:05:01 [-][-][-][info][console\controllers\ProfitsController] end action
+2014-12-27 00:05:01 [-][-][-][info][application] $_SERVER = [
+    'SHELL' => '/bin/sh'
+    'USER' => 'root'
+    'PATH' => '/usr/bin:/bin'
+    'PWD' => '/root'
+    'LANG' => 'en_US.UTF-8'
+    'SHLVL' => '1'
+    'HOME' => '/root'
+    'LOGNAME' => 'root'
+    '_' => '/opt/lampp/bin/php'
+    'PHP_SELF' => '/opt/lampp/htdocs/yii'
+    'SCRIPT_NAME' => '/opt/lampp/htdocs/yii'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/yii'
+    'PATH_TRANSLATED' => '/opt/lampp/htdocs/yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1419609901.1624
+    'REQUEST_TIME' => 1419609901
+    'argv' => [
+        0 => '/opt/lampp/htdocs/yii'
+        1 => 'profits/daily-project'
+    ]
+    'argc' => 2
+]
+2014-12-27 00:05:01 [-][-][-][info][console\controllers\ProfitsController] begin action
+2014-12-27 00:05:01 [-][-][-][info][console\controllers\ProfitsController] end action
+2014-12-27 00:05:01 [-][-][-][info][application] $_SERVER = [
+    'SHELL' => '/bin/sh'
+    'USER' => 'root'
+    'PATH' => '/usr/bin:/bin'
+    'PWD' => '/root'
+    'LANG' => 'en_US.UTF-8'
+    'SHLVL' => '1'
+    'HOME' => '/root'
+    'LOGNAME' => 'root'
+    '_' => '/opt/lampp/bin/php'
+    'PHP_SELF' => '/opt/lampp/htdocs/yii'
+    'SCRIPT_NAME' => '/opt/lampp/htdocs/yii'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/yii'
+    'PATH_TRANSLATED' => '/opt/lampp/htdocs/yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1419609901.1586
+    'REQUEST_TIME' => 1419609901
+    'argv' => [
+        0 => '/opt/lampp/htdocs/yii'
+        1 => 'profits/daily-kdb'
+    ]
+    'argc' => 2
+]
+2014-12-28 00:05:01 [-][-][-][info][console\controllers\ProfitsController] begin action
+2014-12-28 00:05:02 [-][-][-][info][console\controllers\ProfitsController] end action
+2014-12-28 00:05:01 [-][-][-][info][application] $_SERVER = [
+    'SHELL' => '/bin/sh'
+    'USER' => 'root'
+    'PATH' => '/usr/bin:/bin'
+    'PWD' => '/root'
+    'LANG' => 'en_US.UTF-8'
+    'SHLVL' => '1'
+    'HOME' => '/root'
+    'LOGNAME' => 'root'
+    '_' => '/opt/lampp/bin/php'
+    'PHP_SELF' => '/opt/lampp/htdocs/yii'
+    'SCRIPT_NAME' => '/opt/lampp/htdocs/yii'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/yii'
+    'PATH_TRANSLATED' => '/opt/lampp/htdocs/yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1419696301.8737
+    'REQUEST_TIME' => 1419696301
+    'argv' => [
+        0 => '/opt/lampp/htdocs/yii'
+        1 => 'profits/daily-project'
+    ]
+    'argc' => 2
+]
+2014-12-28 00:05:01 [-][-][-][info][console\controllers\ProfitsController] begin action
+2014-12-28 00:05:02 [-][-][-][info][console\controllers\ProfitsController] end action
+2014-12-28 00:05:01 [-][-][-][info][application] $_SERVER = [
+    'SHELL' => '/bin/sh'
+    'USER' => 'root'
+    'PATH' => '/usr/bin:/bin'
+    'PWD' => '/root'
+    'LANG' => 'en_US.UTF-8'
+    'SHLVL' => '1'
+    'HOME' => '/root'
+    'LOGNAME' => 'root'
+    '_' => '/opt/lampp/bin/php'
+    'PHP_SELF' => '/opt/lampp/htdocs/yii'
+    'SCRIPT_NAME' => '/opt/lampp/htdocs/yii'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/yii'
+    'PATH_TRANSLATED' => '/opt/lampp/htdocs/yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1419696301.8747
+    'REQUEST_TIME' => 1419696301
+    'argv' => [
+        0 => '/opt/lampp/htdocs/yii'
+        1 => 'profits/daily-kdb'
+    ]
+    'argc' => 2
+]
+2014-12-29 00:05:01 [-][-][-][info][console\controllers\ProfitsController] begin action
+2014-12-29 00:05:01 [-][-][-][info][console\controllers\ProfitsController] end action
+2014-12-29 00:05:01 [-][-][-][info][application] $_SERVER = [
+    'SHELL' => '/bin/sh'
+    'USER' => 'root'
+    'PATH' => '/usr/bin:/bin'
+    'PWD' => '/root'
+    'LANG' => 'en_US.UTF-8'
+    'SHLVL' => '1'
+    'HOME' => '/root'
+    'LOGNAME' => 'root'
+    '_' => '/opt/lampp/bin/php'
+    'PHP_SELF' => '/opt/lampp/htdocs/yii'
+    'SCRIPT_NAME' => '/opt/lampp/htdocs/yii'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/yii'
+    'PATH_TRANSLATED' => '/opt/lampp/htdocs/yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1419782701.1219
+    'REQUEST_TIME' => 1419782701
+    'argv' => [
+        0 => '/opt/lampp/htdocs/yii'
+        1 => 'profits/daily-project'
+    ]
+    'argc' => 2
+]
+2014-12-29 00:05:01 [-][-][-][info][console\controllers\ProfitsController] begin action
+2014-12-29 00:05:01 [-][-][-][info][console\controllers\ProfitsController] end action
+2014-12-29 00:05:01 [-][-][-][info][application] $_SERVER = [
+    'SHELL' => '/bin/sh'
+    'USER' => 'root'
+    'PATH' => '/usr/bin:/bin'
+    'PWD' => '/root'
+    'LANG' => 'en_US.UTF-8'
+    'SHLVL' => '1'
+    'HOME' => '/root'
+    'LOGNAME' => 'root'
+    '_' => '/opt/lampp/bin/php'
+    'PHP_SELF' => '/opt/lampp/htdocs/yii'
+    'SCRIPT_NAME' => '/opt/lampp/htdocs/yii'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/yii'
+    'PATH_TRANSLATED' => '/opt/lampp/htdocs/yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1419782701.118
+    'REQUEST_TIME' => 1419782701
+    'argv' => [
+        0 => '/opt/lampp/htdocs/yii'
+        1 => 'profits/daily-kdb'
+    ]
+    'argc' => 2
+]
+2014-12-30 00:05:01 [-][-][-][info][console\controllers\ProfitsController] begin action
+2014-12-30 00:05:02 [-][-][-][info][console\controllers\ProfitsController] end action
+2014-12-30 00:05:01 [-][-][-][info][application] $_SERVER = [
+    'SHELL' => '/bin/sh'
+    'USER' => 'root'
+    'PATH' => '/usr/bin:/bin'
+    'PWD' => '/root'
+    'LANG' => 'en_US.UTF-8'
+    'SHLVL' => '1'
+    'HOME' => '/root'
+    'LOGNAME' => 'root'
+    '_' => '/opt/lampp/bin/php'
+    'PHP_SELF' => '/opt/lampp/htdocs/yii'
+    'SCRIPT_NAME' => '/opt/lampp/htdocs/yii'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/yii'
+    'PATH_TRANSLATED' => '/opt/lampp/htdocs/yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1419869101.7837
+    'REQUEST_TIME' => 1419869101
+    'argv' => [
+        0 => '/opt/lampp/htdocs/yii'
+        1 => 'profits/daily-project'
+    ]
+    'argc' => 2
+]
+2014-12-30 00:05:01 [-][-][-][info][console\controllers\ProfitsController] begin action
+2014-12-30 00:05:02 [-][-][-][info][console\controllers\ProfitsController] end action
+2014-12-30 00:05:01 [-][-][-][info][application] $_SERVER = [
+    'SHELL' => '/bin/sh'
+    'USER' => 'root'
+    'PATH' => '/usr/bin:/bin'
+    'PWD' => '/root'
+    'LANG' => 'en_US.UTF-8'
+    'SHLVL' => '1'
+    'HOME' => '/root'
+    'LOGNAME' => 'root'
+    '_' => '/opt/lampp/bin/php'
+    'PHP_SELF' => '/opt/lampp/htdocs/yii'
+    'SCRIPT_NAME' => '/opt/lampp/htdocs/yii'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/yii'
+    'PATH_TRANSLATED' => '/opt/lampp/htdocs/yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1419869101.7837
+    'REQUEST_TIME' => 1419869101
+    'argv' => [
+        0 => '/opt/lampp/htdocs/yii'
+        1 => 'profits/daily-kdb'
+    ]
+    'argc' => 2
+]
+2014-12-31 00:05:02 [-][-][-][info][console\controllers\ProfitsController] begin action
+2014-12-31 00:05:02 [-][-][-][info][console\controllers\ProfitsController] end action
+2014-12-31 00:05:02 [-][-][-][info][application] $_SERVER = [
+    'SHELL' => '/bin/sh'
+    'USER' => 'root'
+    'PATH' => '/usr/bin:/bin'
+    'PWD' => '/root'
+    'LANG' => 'en_US.UTF-8'
+    'SHLVL' => '1'
+    'HOME' => '/root'
+    'LOGNAME' => 'root'
+    '_' => '/opt/lampp/bin/php'
+    'PHP_SELF' => '/opt/lampp/htdocs/yii'
+    'SCRIPT_NAME' => '/opt/lampp/htdocs/yii'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/yii'
+    'PATH_TRANSLATED' => '/opt/lampp/htdocs/yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1419955502.0129
+    'REQUEST_TIME' => 1419955502
+    'argv' => [
+        0 => '/opt/lampp/htdocs/yii'
+        1 => 'profits/daily-project'
+    ]
+    'argc' => 2
+]
+2014-12-31 00:05:02 [-][-][-][info][console\controllers\ProfitsController] begin action
+2014-12-31 00:05:02 [-][-][-][info][console\controllers\ProfitsController] end action
+2014-12-31 00:05:02 [-][-][-][info][application] $_SERVER = [
+    'SHELL' => '/bin/sh'
+    'USER' => 'root'
+    'PATH' => '/usr/bin:/bin'
+    'PWD' => '/root'
+    'LANG' => 'en_US.UTF-8'
+    'SHLVL' => '1'
+    'HOME' => '/root'
+    'LOGNAME' => 'root'
+    '_' => '/opt/lampp/bin/php'
+    'PHP_SELF' => '/opt/lampp/htdocs/yii'
+    'SCRIPT_NAME' => '/opt/lampp/htdocs/yii'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/yii'
+    'PATH_TRANSLATED' => '/opt/lampp/htdocs/yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1419955502.0129
+    'REQUEST_TIME' => 1419955502
+    'argv' => [
+        0 => '/opt/lampp/htdocs/yii'
+        1 => 'profits/daily-kdb'
+    ]
+    'argc' => 2
+]
+2014-12-31 20:56:56 [-][-][-][info][console\controllers\ProfitsController] begin action
+2014-12-31 20:56:57 [-][-][-][info][console\controllers\ProfitsController] end action
+2014-12-31 20:56:56 [-][-][-][info][application] $_SERVER = [
+    'HOSTNAME' => 'koudai.dev'
+    'SELINUX_ROLE_REQUESTED' => ''
+    'TERM' => 'ansi'
+    'SHELL' => '/bin/bash'
+    'HISTSIZE' => '1000'
+    'SSH_CLIENT' => '192.168.1.131 63176 22'
+    'SELINUX_USE_CURRENT_RANGE' => ''
+    'QTDIR' => '/usr/lib64/qt-3.3'
+    'QTINC' => '/usr/lib64/qt-3.3/include'
+    'SSH_TTY' => '/dev/pts/2'
+    'USER' => 'root'
+    'LS_COLORS' => 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=01;05;37;41:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arj=01;31:*.taz=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lz=01;31:*.xz=01;31:*.bz2=01;31:*.tbz=01;31:*.tbz2=01;31:*.bz=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.rar=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.jpg=01;35:*.jpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.axv=01;35:*.anx=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=01;36:*.au=01;36:*.flac=01;36:*.mid=01;36:*.midi=01;36:*.mka=01;36:*.mp3=01;36:*.mpc=01;36:*.ogg=01;36:*.ra=01;36:*.wav=01;36:*.axa=01;36:*.oga=01;36:*.spx=01;36:*.xspf=01;36:'
+    'MAIL' => '/var/spool/mail/root'
+    'PATH' => '/opt/lampp/bin:/opt/lampp/:/usr/lib64/qt-3.3/bin:/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin:/root/bin'
+    'PWD' => '/opt/lampp/htdocs/website'
+    'LANG' => 'en_US.UTF-8'
+    'PS1' => '[\\u@\\h \\w]$ '
+    'SELINUX_LEVEL_REQUESTED' => ''
+    'SSH_ASKPASS' => '/usr/libexec/openssh/gnome-ssh-askpass'
+    'HISTCONTROL' => 'ignoredups'
+    'SHLVL' => '1'
+    'HOME' => '/root'
+    'LOGNAME' => 'root'
+    'QTLIB' => '/usr/lib64/qt-3.3/lib'
+    'CVS_RSH' => 'ssh'
+    'SSH_CONNECTION' => '192.168.1.131 63176 192.168.1.214 22'
+    'LESSOPEN' => '||/usr/bin/lesspipe.sh %s'
+    'G_BROKEN_FILENAMES' => '1'
+    '_' => '/opt/lampp/bin/php'
+    'OLDPWD' => '/opt/lampp/htdocs'
+    'PHP_SELF' => '/opt/lampp/htdocs/yii'
+    'SCRIPT_NAME' => '/opt/lampp/htdocs/yii'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/yii'
+    'PATH_TRANSLATED' => '/opt/lampp/htdocs/yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1420030616.6067
+    'REQUEST_TIME' => 1420030616
+    'argv' => [
+        0 => '/opt/lampp/htdocs/yii'
+        1 => 'profits/daily-kdb'
+    ]
+    'argc' => 2
+]
+2014-12-31 20:58:02 [-][-][-][info][console\controllers\ProfitsController] begin action
+2014-12-31 20:58:02 [-][-][-][info][application] $_SERVER = [
+    'HOSTNAME' => 'koudai.dev'
+    'SELINUX_ROLE_REQUESTED' => ''
+    'TERM' => 'ansi'
+    'SHELL' => '/bin/bash'
+    'HISTSIZE' => '1000'
+    'SSH_CLIENT' => '192.168.1.131 63176 22'
+    'SELINUX_USE_CURRENT_RANGE' => ''
+    'QTDIR' => '/usr/lib64/qt-3.3'
+    'QTINC' => '/usr/lib64/qt-3.3/include'
+    'SSH_TTY' => '/dev/pts/2'
+    'USER' => 'root'
+    'LS_COLORS' => 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=01;05;37;41:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arj=01;31:*.taz=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lz=01;31:*.xz=01;31:*.bz2=01;31:*.tbz=01;31:*.tbz2=01;31:*.bz=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.rar=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.jpg=01;35:*.jpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.axv=01;35:*.anx=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=01;36:*.au=01;36:*.flac=01;36:*.mid=01;36:*.midi=01;36:*.mka=01;36:*.mp3=01;36:*.mpc=01;36:*.ogg=01;36:*.ra=01;36:*.wav=01;36:*.axa=01;36:*.oga=01;36:*.spx=01;36:*.xspf=01;36:'
+    'MAIL' => '/var/spool/mail/root'
+    'PATH' => '/opt/lampp/bin:/opt/lampp/:/usr/lib64/qt-3.3/bin:/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin:/root/bin'
+    'PWD' => '/opt/lampp/htdocs'
+    'LANG' => 'en_US.UTF-8'
+    'PS1' => '[\\u@\\h \\w]$ '
+    'SELINUX_LEVEL_REQUESTED' => ''
+    'SSH_ASKPASS' => '/usr/libexec/openssh/gnome-ssh-askpass'
+    'HISTCONTROL' => 'ignoredups'
+    'SHLVL' => '1'
+    'HOME' => '/root'
+    'LOGNAME' => 'root'
+    'QTLIB' => '/usr/lib64/qt-3.3/lib'
+    'CVS_RSH' => 'ssh'
+    'SSH_CONNECTION' => '192.168.1.131 63176 192.168.1.214 22'
+    'LESSOPEN' => '||/usr/bin/lesspipe.sh %s'
+    'G_BROKEN_FILENAMES' => '1'
+    '_' => '/opt/lampp/bin/php'
+    'OLDPWD' => '/opt/lampp'
+    'PHP_SELF' => '/opt/lampp/htdocs/yii'
+    'SCRIPT_NAME' => '/opt/lampp/htdocs/yii'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/yii'
+    'PATH_TRANSLATED' => '/opt/lampp/htdocs/yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1420030682.3766
+    'REQUEST_TIME' => 1420030682
+    'argv' => [
+        0 => '/opt/lampp/htdocs/yii'
+        1 => 'profits/daily-kdb'
+    ]
+    'argc' => 2
+]
+2014-12-31 20:58:26 [-][-][-][info][console\controllers\ProfitsController] begin action
+2014-12-31 20:58:26 [-][-][-][info][application] $_SERVER = [
+    'HOSTNAME' => 'koudai.dev'
+    'SELINUX_ROLE_REQUESTED' => ''
+    'TERM' => 'ansi'
+    'SHELL' => '/bin/bash'
+    'HISTSIZE' => '1000'
+    'SSH_CLIENT' => '192.168.1.131 63176 22'
+    'SELINUX_USE_CURRENT_RANGE' => ''
+    'QTDIR' => '/usr/lib64/qt-3.3'
+    'QTINC' => '/usr/lib64/qt-3.3/include'
+    'SSH_TTY' => '/dev/pts/2'
+    'USER' => 'root'
+    'LS_COLORS' => 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=01;05;37;41:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arj=01;31:*.taz=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lz=01;31:*.xz=01;31:*.bz2=01;31:*.tbz=01;31:*.tbz2=01;31:*.bz=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.rar=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.jpg=01;35:*.jpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.axv=01;35:*.anx=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=01;36:*.au=01;36:*.flac=01;36:*.mid=01;36:*.midi=01;36:*.mka=01;36:*.mp3=01;36:*.mpc=01;36:*.ogg=01;36:*.ra=01;36:*.wav=01;36:*.axa=01;36:*.oga=01;36:*.spx=01;36:*.xspf=01;36:'
+    'MAIL' => '/var/spool/mail/root'
+    'PATH' => '/opt/lampp/bin:/opt/lampp/:/usr/lib64/qt-3.3/bin:/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin:/root/bin'
+    'PWD' => '/opt/lampp/htdocs'
+    'LANG' => 'en_US.UTF-8'
+    'PS1' => '[\\u@\\h \\w]$ '
+    'SELINUX_LEVEL_REQUESTED' => ''
+    'SSH_ASKPASS' => '/usr/libexec/openssh/gnome-ssh-askpass'
+    'HISTCONTROL' => 'ignoredups'
+    'SHLVL' => '1'
+    'HOME' => '/root'
+    'LOGNAME' => 'root'
+    'QTLIB' => '/usr/lib64/qt-3.3/lib'
+    'CVS_RSH' => 'ssh'
+    'SSH_CONNECTION' => '192.168.1.131 63176 192.168.1.214 22'
+    'LESSOPEN' => '||/usr/bin/lesspipe.sh %s'
+    'G_BROKEN_FILENAMES' => '1'
+    '_' => '/opt/lampp/bin/php'
+    'OLDPWD' => '/opt/lampp'
+    'PHP_SELF' => '/opt/lampp/htdocs/yii'
+    'SCRIPT_NAME' => '/opt/lampp/htdocs/yii'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/yii'
+    'PATH_TRANSLATED' => '/opt/lampp/htdocs/yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1420030706.0277
+    'REQUEST_TIME' => 1420030706
+    'argv' => [
+        0 => '/opt/lampp/htdocs/yii'
+        1 => 'profits/daily-kdb'
+    ]
+    'argc' => 2
+]
+2014-12-31 20:58:50 [-][-][-][info][console\controllers\ProfitsController] begin action
+2014-12-31 20:58:50 [-][-][-][info][application] $_SERVER = [
+    'HOSTNAME' => 'koudai.dev'
+    'SELINUX_ROLE_REQUESTED' => ''
+    'TERM' => 'ansi'
+    'SHELL' => '/bin/bash'
+    'HISTSIZE' => '1000'
+    'SSH_CLIENT' => '192.168.1.131 63176 22'
+    'SELINUX_USE_CURRENT_RANGE' => ''
+    'QTDIR' => '/usr/lib64/qt-3.3'
+    'QTINC' => '/usr/lib64/qt-3.3/include'
+    'SSH_TTY' => '/dev/pts/2'
+    'USER' => 'root'
+    'LS_COLORS' => 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=01;05;37;41:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arj=01;31:*.taz=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lz=01;31:*.xz=01;31:*.bz2=01;31:*.tbz=01;31:*.tbz2=01;31:*.bz=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.rar=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.jpg=01;35:*.jpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.axv=01;35:*.anx=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=01;36:*.au=01;36:*.flac=01;36:*.mid=01;36:*.midi=01;36:*.mka=01;36:*.mp3=01;36:*.mpc=01;36:*.ogg=01;36:*.ra=01;36:*.wav=01;36:*.axa=01;36:*.oga=01;36:*.spx=01;36:*.xspf=01;36:'
+    'MAIL' => '/var/spool/mail/root'
+    'PATH' => '/opt/lampp/bin:/opt/lampp/:/usr/lib64/qt-3.3/bin:/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin:/root/bin'
+    'PWD' => '/opt/lampp/htdocs'
+    'LANG' => 'en_US.UTF-8'
+    'PS1' => '[\\u@\\h \\w]$ '
+    'SELINUX_LEVEL_REQUESTED' => ''
+    'SSH_ASKPASS' => '/usr/libexec/openssh/gnome-ssh-askpass'
+    'HISTCONTROL' => 'ignoredups'
+    'SHLVL' => '1'
+    'HOME' => '/root'
+    'LOGNAME' => 'root'
+    'QTLIB' => '/usr/lib64/qt-3.3/lib'
+    'CVS_RSH' => 'ssh'
+    'SSH_CONNECTION' => '192.168.1.131 63176 192.168.1.214 22'
+    'LESSOPEN' => '||/usr/bin/lesspipe.sh %s'
+    'G_BROKEN_FILENAMES' => '1'
+    '_' => '/opt/lampp/bin/php'
+    'OLDPWD' => '/opt/lampp'
+    'PHP_SELF' => '/opt/lampp/htdocs/yii'
+    'SCRIPT_NAME' => '/opt/lampp/htdocs/yii'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/yii'
+    'PATH_TRANSLATED' => '/opt/lampp/htdocs/yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1420030730.9189
+    'REQUEST_TIME' => 1420030730
+    'argv' => [
+        0 => '/opt/lampp/htdocs/yii'
+        1 => 'profits/daily-kdb'
+    ]
+    'argc' => 2
+]
+2014-12-31 21:00:03 [-][-][-][info][console\controllers\ProfitsController] begin action
+2014-12-31 21:00:03 [-][-][-][info][application] $_SERVER = [
+    'HOSTNAME' => 'koudai.dev'
+    'SELINUX_ROLE_REQUESTED' => ''
+    'TERM' => 'ansi'
+    'SHELL' => '/bin/bash'
+    'HISTSIZE' => '1000'
+    'SSH_CLIENT' => '192.168.1.131 63176 22'
+    'SELINUX_USE_CURRENT_RANGE' => ''
+    'QTDIR' => '/usr/lib64/qt-3.3'
+    'QTINC' => '/usr/lib64/qt-3.3/include'
+    'SSH_TTY' => '/dev/pts/2'
+    'USER' => 'root'
+    'LS_COLORS' => 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=01;05;37;41:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arj=01;31:*.taz=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lz=01;31:*.xz=01;31:*.bz2=01;31:*.tbz=01;31:*.tbz2=01;31:*.bz=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.rar=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.jpg=01;35:*.jpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.axv=01;35:*.anx=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=01;36:*.au=01;36:*.flac=01;36:*.mid=01;36:*.midi=01;36:*.mka=01;36:*.mp3=01;36:*.mpc=01;36:*.ogg=01;36:*.ra=01;36:*.wav=01;36:*.axa=01;36:*.oga=01;36:*.spx=01;36:*.xspf=01;36:'
+    'MAIL' => '/var/spool/mail/root'
+    'PATH' => '/opt/lampp/bin:/opt/lampp/:/usr/lib64/qt-3.3/bin:/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin:/root/bin'
+    'PWD' => '/opt/lampp/htdocs'
+    'LANG' => 'en_US.UTF-8'
+    'PS1' => '[\\u@\\h \\w]$ '
+    'SELINUX_LEVEL_REQUESTED' => ''
+    'SSH_ASKPASS' => '/usr/libexec/openssh/gnome-ssh-askpass'
+    'HISTCONTROL' => 'ignoredups'
+    'SHLVL' => '1'
+    'HOME' => '/root'
+    'LOGNAME' => 'root'
+    'QTLIB' => '/usr/lib64/qt-3.3/lib'
+    'CVS_RSH' => 'ssh'
+    'SSH_CONNECTION' => '192.168.1.131 63176 192.168.1.214 22'
+    'LESSOPEN' => '||/usr/bin/lesspipe.sh %s'
+    'G_BROKEN_FILENAMES' => '1'
+    '_' => '/opt/lampp/bin/php'
+    'OLDPWD' => '/opt/lampp'
+    'PHP_SELF' => '/opt/lampp/htdocs/yii'
+    'SCRIPT_NAME' => '/opt/lampp/htdocs/yii'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/yii'
+    'PATH_TRANSLATED' => '/opt/lampp/htdocs/yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1420030803.7961
+    'REQUEST_TIME' => 1420030803
+    'argv' => [
+        0 => '/opt/lampp/htdocs/yii'
+        1 => 'profits/daily-kdb'
+    ]
+    'argc' => 2
+]
+2015-01-01 00:05:01 [-][-][-][info][console\controllers\ProfitsController] begin action
+2015-01-01 00:05:01 [-][-][-][info][application] $_SERVER = [
+    'SHELL' => '/bin/sh'
+    'USER' => 'root'
+    'PATH' => '/usr/bin:/bin'
+    'PWD' => '/root'
+    'LANG' => 'en_US.UTF-8'
+    'SHLVL' => '1'
+    'HOME' => '/root'
+    'LOGNAME' => 'root'
+    '_' => '/opt/lampp/bin/php'
+    'PHP_SELF' => '/opt/lampp/htdocs/yii'
+    'SCRIPT_NAME' => '/opt/lampp/htdocs/yii'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/yii'
+    'PATH_TRANSLATED' => '/opt/lampp/htdocs/yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1420041901.8032
+    'REQUEST_TIME' => 1420041901
+    'argv' => [
+        0 => '/opt/lampp/htdocs/yii'
+        1 => 'profits/daily-kdb'
+    ]
+    'argc' => 2
+]
+2015-01-01 00:05:01 [-][-][-][info][console\controllers\ProfitsController] begin action
+2015-01-01 00:05:02 [-][-][-][info][console\controllers\ProfitsController] end action
+2015-01-01 00:05:01 [-][-][-][info][application] $_SERVER = [
+    'SHELL' => '/bin/sh'
+    'USER' => 'root'
+    'PATH' => '/usr/bin:/bin'
+    'PWD' => '/root'
+    'LANG' => 'en_US.UTF-8'
+    'SHLVL' => '1'
+    'HOME' => '/root'
+    'LOGNAME' => 'root'
+    '_' => '/opt/lampp/bin/php'
+    'PHP_SELF' => '/opt/lampp/htdocs/yii'
+    'SCRIPT_NAME' => '/opt/lampp/htdocs/yii'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/yii'
+    'PATH_TRANSLATED' => '/opt/lampp/htdocs/yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1420041901.802
+    'REQUEST_TIME' => 1420041901
+    'argv' => [
+        0 => '/opt/lampp/htdocs/yii'
+        1 => 'profits/daily-project'
+    ]
+    'argc' => 2
+]
+2015-01-02 00:05:01 [-][-][-][info][console\controllers\ProfitsController] begin action
+2015-01-02 00:05:01 [-][-][-][info][application] $_SERVER = [
+    'SHELL' => '/bin/sh'
+    'USER' => 'root'
+    'PATH' => '/usr/bin:/bin'
+    'PWD' => '/root'
+    'LANG' => 'en_US.UTF-8'
+    'SHLVL' => '1'
+    'HOME' => '/root'
+    'LOGNAME' => 'root'
+    '_' => '/opt/lampp/bin/php'
+    'PHP_SELF' => '/opt/lampp/htdocs/yii'
+    'SCRIPT_NAME' => '/opt/lampp/htdocs/yii'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/yii'
+    'PATH_TRANSLATED' => '/opt/lampp/htdocs/yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1420128301.8574
+    'REQUEST_TIME' => 1420128301
+    'argv' => [
+        0 => '/opt/lampp/htdocs/yii'
+        1 => 'profits/daily-kdb'
+    ]
+    'argc' => 2
+]
+2015-01-02 00:05:01 [-][-][-][info][console\controllers\ProfitsController] begin action
+2015-01-02 00:05:02 [-][-][-][info][console\controllers\ProfitsController] end action
+2015-01-02 00:05:01 [-][-][-][info][application] $_SERVER = [
+    'SHELL' => '/bin/sh'
+    'USER' => 'root'
+    'PATH' => '/usr/bin:/bin'
+    'PWD' => '/root'
+    'LANG' => 'en_US.UTF-8'
+    'SHLVL' => '1'
+    'HOME' => '/root'
+    'LOGNAME' => 'root'
+    '_' => '/opt/lampp/bin/php'
+    'PHP_SELF' => '/opt/lampp/htdocs/yii'
+    'SCRIPT_NAME' => '/opt/lampp/htdocs/yii'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/yii'
+    'PATH_TRANSLATED' => '/opt/lampp/htdocs/yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1420128301.8574
+    'REQUEST_TIME' => 1420128301
+    'argv' => [
+        0 => '/opt/lampp/htdocs/yii'
+        1 => 'profits/daily-project'
+    ]
+    'argc' => 2
+]
+2015-01-03 00:05:01 [-][-][-][info][console\controllers\ProfitsController] begin action
+2015-01-03 00:05:01 [-][-][-][info][application] $_SERVER = [
+    'SHELL' => '/bin/sh'
+    'USER' => 'root'
+    'PATH' => '/usr/bin:/bin'
+    'PWD' => '/root'
+    'LANG' => 'en_US.UTF-8'
+    'SHLVL' => '1'
+    'HOME' => '/root'
+    'LOGNAME' => 'root'
+    '_' => '/opt/lampp/bin/php'
+    'PHP_SELF' => '/opt/lampp/htdocs/yii'
+    'SCRIPT_NAME' => '/opt/lampp/htdocs/yii'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/yii'
+    'PATH_TRANSLATED' => '/opt/lampp/htdocs/yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1420214701.0662
+    'REQUEST_TIME' => 1420214701
+    'argv' => [
+        0 => '/opt/lampp/htdocs/yii'
+        1 => 'profits/daily-kdb'
+    ]
+    'argc' => 2
+]
+2015-01-03 00:05:01 [-][-][-][info][console\controllers\ProfitsController] begin action
+2015-01-03 00:05:01 [-][-][-][info][console\controllers\ProfitsController] end action
+2015-01-03 00:05:01 [-][-][-][info][application] $_SERVER = [
+    'SHELL' => '/bin/sh'
+    'USER' => 'root'
+    'PATH' => '/usr/bin:/bin'
+    'PWD' => '/root'
+    'LANG' => 'en_US.UTF-8'
+    'SHLVL' => '1'
+    'HOME' => '/root'
+    'LOGNAME' => 'root'
+    '_' => '/opt/lampp/bin/php'
+    'PHP_SELF' => '/opt/lampp/htdocs/yii'
+    'SCRIPT_NAME' => '/opt/lampp/htdocs/yii'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/yii'
+    'PATH_TRANSLATED' => '/opt/lampp/htdocs/yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1420214701.0649
+    'REQUEST_TIME' => 1420214701
+    'argv' => [
+        0 => '/opt/lampp/htdocs/yii'
+        1 => 'profits/daily-project'
+    ]
+    'argc' => 2
+]
+2015-01-04 00:05:01 [-][-][-][info][console\controllers\ProfitsController] begin action
+2015-01-04 00:05:01 [-][-][-][info][application] $_SERVER = [
+    'SHELL' => '/bin/sh'
+    'USER' => 'root'
+    'PATH' => '/usr/bin:/bin'
+    'PWD' => '/root'
+    'LANG' => 'en_US.UTF-8'
+    'SHLVL' => '1'
+    'HOME' => '/root'
+    'LOGNAME' => 'root'
+    '_' => '/opt/lampp/bin/php'
+    'PHP_SELF' => '/opt/lampp/htdocs/yii'
+    'SCRIPT_NAME' => '/opt/lampp/htdocs/yii'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/yii'
+    'PATH_TRANSLATED' => '/opt/lampp/htdocs/yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1420301101.6198
+    'REQUEST_TIME' => 1420301101
+    'argv' => [
+        0 => '/opt/lampp/htdocs/yii'
+        1 => 'profits/daily-kdb'
+    ]
+    'argc' => 2
+]
+2015-01-04 00:05:01 [-][-][-][info][console\controllers\ProfitsController] begin action
+2015-01-04 00:05:01 [-][-][-][info][console\controllers\ProfitsController] end action
+2015-01-04 00:05:01 [-][-][-][info][application] $_SERVER = [
+    'SHELL' => '/bin/sh'
+    'USER' => 'root'
+    'PATH' => '/usr/bin:/bin'
+    'PWD' => '/root'
+    'LANG' => 'en_US.UTF-8'
+    'SHLVL' => '1'
+    'HOME' => '/root'
+    'LOGNAME' => 'root'
+    '_' => '/opt/lampp/bin/php'
+    'PHP_SELF' => '/opt/lampp/htdocs/yii'
+    'SCRIPT_NAME' => '/opt/lampp/htdocs/yii'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/yii'
+    'PATH_TRANSLATED' => '/opt/lampp/htdocs/yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1420301101.6198
+    'REQUEST_TIME' => 1420301101
+    'argv' => [
+        0 => '/opt/lampp/htdocs/yii'
+        1 => 'profits/daily-project'
+    ]
+    'argc' => 2
+]
+2015-01-04 16:26:28 [-][-][-][info][console\controllers\ProfitsController] begin action
+2015-01-04 16:26:28 [-][-][-][info][console\controllers\ProfitsController] end action
+2015-01-04 16:26:28 [-][-][-][info][application] $_SERVER = [
+    'HOSTNAME' => 'koudai.dev'
+    'SELINUX_ROLE_REQUESTED' => ''
+    'TERM' => 'ansi'
+    'SHELL' => '/bin/bash'
+    'HISTSIZE' => '1000'
+    'SSH_CLIENT' => '192.168.1.131 63176 22'
+    'SELINUX_USE_CURRENT_RANGE' => ''
+    'QTDIR' => '/usr/lib64/qt-3.3'
+    'QTINC' => '/usr/lib64/qt-3.3/include'
+    'SSH_TTY' => '/dev/pts/2'
+    'USER' => 'root'
+    'LS_COLORS' => 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=01;05;37;41:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arj=01;31:*.taz=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lz=01;31:*.xz=01;31:*.bz2=01;31:*.tbz=01;31:*.tbz2=01;31:*.bz=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.rar=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.jpg=01;35:*.jpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.axv=01;35:*.anx=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=01;36:*.au=01;36:*.flac=01;36:*.mid=01;36:*.midi=01;36:*.mka=01;36:*.mp3=01;36:*.mpc=01;36:*.ogg=01;36:*.ra=01;36:*.wav=01;36:*.axa=01;36:*.oga=01;36:*.spx=01;36:*.xspf=01;36:'
+    'MAIL' => '/var/spool/mail/root'
+    'PATH' => '/opt/lampp/bin:/opt/lampp/:/usr/lib64/qt-3.3/bin:/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin:/root/bin'
+    'PWD' => '/opt/lampp/htdocs/console/runtime/logs'
+    'LANG' => 'en_US.UTF-8'
+    'PS1' => '[\\u@\\h \\w]$ '
+    'SELINUX_LEVEL_REQUESTED' => ''
+    'SSH_ASKPASS' => '/usr/libexec/openssh/gnome-ssh-askpass'
+    'HISTCONTROL' => 'ignoredups'
+    'SHLVL' => '1'
+    'HOME' => '/root'
+    'LOGNAME' => 'root'
+    'QTLIB' => '/usr/lib64/qt-3.3/lib'
+    'CVS_RSH' => 'ssh'
+    'SSH_CONNECTION' => '192.168.1.131 63176 192.168.1.214 22'
+    'LESSOPEN' => '||/usr/bin/lesspipe.sh %s'
+    'G_BROKEN_FILENAMES' => '1'
+    '_' => '/opt/lampp/bin/php'
+    'OLDPWD' => '/opt/lampp/htdocs/console/runtime'
+    'PHP_SELF' => '/opt/lampp/htdocs/yii'
+    'SCRIPT_NAME' => '/opt/lampp/htdocs/yii'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/yii'
+    'PATH_TRANSLATED' => '/opt/lampp/htdocs/yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1420359988.261
+    'REQUEST_TIME' => 1420359988
+    'argv' => [
+        0 => '/opt/lampp/htdocs/yii'
+        1 => 'profits/daily-kdb'
+    ]
+    'argc' => 2
+]
+2015-01-04 16:40:22 [-][-][-][info][console\controllers\ProfitsController] begin action
+2015-01-04 16:40:23 [-][-][-][info][console\controllers\ProfitsController] end action
+2015-01-04 16:40:22 [-][-][-][info][application] $_SERVER = [
+    'HOSTNAME' => 'koudai.dev'
+    'SELINUX_ROLE_REQUESTED' => ''
+    'TERM' => 'ansi'
+    'SHELL' => '/bin/bash'
+    'HISTSIZE' => '1000'
+    'SSH_CLIENT' => '192.168.1.131 63176 22'
+    'SELINUX_USE_CURRENT_RANGE' => ''
+    'QTDIR' => '/usr/lib64/qt-3.3'
+    'QTINC' => '/usr/lib64/qt-3.3/include'
+    'SSH_TTY' => '/dev/pts/2'
+    'USER' => 'root'
+    'LS_COLORS' => 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=01;05;37;41:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arj=01;31:*.taz=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lz=01;31:*.xz=01;31:*.bz2=01;31:*.tbz=01;31:*.tbz2=01;31:*.bz=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.rar=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.jpg=01;35:*.jpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.axv=01;35:*.anx=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=01;36:*.au=01;36:*.flac=01;36:*.mid=01;36:*.midi=01;36:*.mka=01;36:*.mp3=01;36:*.mpc=01;36:*.ogg=01;36:*.ra=01;36:*.wav=01;36:*.axa=01;36:*.oga=01;36:*.spx=01;36:*.xspf=01;36:'
+    'MAIL' => '/var/spool/mail/root'
+    'PATH' => '/opt/lampp/bin:/opt/lampp/:/usr/lib64/qt-3.3/bin:/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin:/root/bin'
+    'PWD' => '/opt/lampp/htdocs/console'
+    'LANG' => 'en_US.UTF-8'
+    'PS1' => '[\\u@\\h \\w]$ '
+    'SELINUX_LEVEL_REQUESTED' => ''
+    'SSH_ASKPASS' => '/usr/libexec/openssh/gnome-ssh-askpass'
+    'HISTCONTROL' => 'ignoredups'
+    'SHLVL' => '1'
+    'HOME' => '/root'
+    'LOGNAME' => 'root'
+    'QTLIB' => '/usr/lib64/qt-3.3/lib'
+    'CVS_RSH' => 'ssh'
+    'SSH_CONNECTION' => '192.168.1.131 63176 192.168.1.214 22'
+    'LESSOPEN' => '||/usr/bin/lesspipe.sh %s'
+    'G_BROKEN_FILENAMES' => '1'
+    '_' => '/opt/lampp/bin/php'
+    'OLDPWD' => '/opt/lampp/htdocs/console/runtime/logs'
+    'PHP_SELF' => '/opt/lampp/htdocs/yii'
+    'SCRIPT_NAME' => '/opt/lampp/htdocs/yii'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/yii'
+    'PATH_TRANSLATED' => '/opt/lampp/htdocs/yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1420360822.8005
+    'REQUEST_TIME' => 1420360822
+    'argv' => [
+        0 => '/opt/lampp/htdocs/yii'
+        1 => 'profits/daily-kdb'
+    ]
+    'argc' => 2
+]
+2015-01-04 17:23:20 [-][-][-][info][console\controllers\ProfitsController] begin action
+2015-01-04 17:23:20 [-][-][-][info][console\controllers\ProfitsController] end action
+2015-01-04 17:23:20 [-][-][-][info][application] $_SERVER = [
+    'HOSTNAME' => 'koudai.dev'
+    'SELINUX_ROLE_REQUESTED' => ''
+    'TERM' => 'ansi'
+    'SHELL' => '/bin/bash'
+    'HISTSIZE' => '1000'
+    'SSH_CLIENT' => '192.168.1.131 63176 22'
+    'SELINUX_USE_CURRENT_RANGE' => ''
+    'QTDIR' => '/usr/lib64/qt-3.3'
+    'QTINC' => '/usr/lib64/qt-3.3/include'
+    'SSH_TTY' => '/dev/pts/2'
+    'USER' => 'root'
+    'LS_COLORS' => 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=01;05;37;41:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arj=01;31:*.taz=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lz=01;31:*.xz=01;31:*.bz2=01;31:*.tbz=01;31:*.tbz2=01;31:*.bz=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.rar=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.jpg=01;35:*.jpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.axv=01;35:*.anx=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=01;36:*.au=01;36:*.flac=01;36:*.mid=01;36:*.midi=01;36:*.mka=01;36:*.mp3=01;36:*.mpc=01;36:*.ogg=01;36:*.ra=01;36:*.wav=01;36:*.axa=01;36:*.oga=01;36:*.spx=01;36:*.xspf=01;36:'
+    'MAIL' => '/var/spool/mail/root'
+    'PATH' => '/opt/lampp/bin:/opt/lampp/:/usr/lib64/qt-3.3/bin:/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin:/root/bin'
+    'PWD' => '/opt/lampp/htdocs/console'
+    'LANG' => 'en_US.UTF-8'
+    'PS1' => '[\\u@\\h \\w]$ '
+    'SELINUX_LEVEL_REQUESTED' => ''
+    'SSH_ASKPASS' => '/usr/libexec/openssh/gnome-ssh-askpass'
+    'HISTCONTROL' => 'ignoredups'
+    'SHLVL' => '1'
+    'HOME' => '/root'
+    'LOGNAME' => 'root'
+    'QTLIB' => '/usr/lib64/qt-3.3/lib'
+    'CVS_RSH' => 'ssh'
+    'SSH_CONNECTION' => '192.168.1.131 63176 192.168.1.214 22'
+    'LESSOPEN' => '||/usr/bin/lesspipe.sh %s'
+    'G_BROKEN_FILENAMES' => '1'
+    '_' => '/opt/lampp/bin/php'
+    'OLDPWD' => '/opt/lampp/htdocs/console/runtime/logs'
+    'PHP_SELF' => '/opt/lampp/htdocs/yii'
+    'SCRIPT_NAME' => '/opt/lampp/htdocs/yii'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/yii'
+    'PATH_TRANSLATED' => '/opt/lampp/htdocs/yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1420363400.0023
+    'REQUEST_TIME' => 1420363400
+    'argv' => [
+        0 => '/opt/lampp/htdocs/yii'
+        1 => 'profits/daily-kdb'
+    ]
+    'argc' => 2
+]
+2015-01-04 17:44:46 [-][-][-][info][console\controllers\ProfitsController] begin action
+2015-01-04 17:44:47 [-][-][-][info][console\controllers\ProfitsController] end action
+2015-01-04 17:44:46 [-][-][-][info][application] $_SERVER = [
+    'HOSTNAME' => 'koudai.dev'
+    'SELINUX_ROLE_REQUESTED' => ''
+    'TERM' => 'ansi'
+    'SHELL' => '/bin/bash'
+    'HISTSIZE' => '1000'
+    'SSH_CLIENT' => '192.168.1.131 63176 22'
+    'SELINUX_USE_CURRENT_RANGE' => ''
+    'QTDIR' => '/usr/lib64/qt-3.3'
+    'QTINC' => '/usr/lib64/qt-3.3/include'
+    'SSH_TTY' => '/dev/pts/2'
+    'USER' => 'root'
+    'LS_COLORS' => 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=01;05;37;41:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arj=01;31:*.taz=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lz=01;31:*.xz=01;31:*.bz2=01;31:*.tbz=01;31:*.tbz2=01;31:*.bz=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.rar=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.jpg=01;35:*.jpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.axv=01;35:*.anx=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=01;36:*.au=01;36:*.flac=01;36:*.mid=01;36:*.midi=01;36:*.mka=01;36:*.mp3=01;36:*.mpc=01;36:*.ogg=01;36:*.ra=01;36:*.wav=01;36:*.axa=01;36:*.oga=01;36:*.spx=01;36:*.xspf=01;36:'
+    'MAIL' => '/var/spool/mail/root'
+    'PATH' => '/opt/lampp/bin:/opt/lampp/:/usr/lib64/qt-3.3/bin:/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin:/root/bin'
+    'PWD' => '/opt/lampp/htdocs'
+    'LANG' => 'en_US.UTF-8'
+    'PS1' => '[\\u@\\h \\w]$ '
+    'SELINUX_LEVEL_REQUESTED' => ''
+    'SSH_ASKPASS' => '/usr/libexec/openssh/gnome-ssh-askpass'
+    'HISTCONTROL' => 'ignoredups'
+    'SHLVL' => '1'
+    'HOME' => '/root'
+    'LOGNAME' => 'root'
+    'QTLIB' => '/usr/lib64/qt-3.3/lib'
+    'CVS_RSH' => 'ssh'
+    'SSH_CONNECTION' => '192.168.1.131 63176 192.168.1.214 22'
+    'LESSOPEN' => '||/usr/bin/lesspipe.sh %s'
+    'G_BROKEN_FILENAMES' => '1'
+    '_' => '/opt/lampp/bin/php'
+    'OLDPWD' => '/opt/lampp'
+    'PHP_SELF' => '/opt/lampp/htdocs/yii'
+    'SCRIPT_NAME' => '/opt/lampp/htdocs/yii'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/yii'
+    'PATH_TRANSLATED' => '/opt/lampp/htdocs/yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1420364686.7687
+    'REQUEST_TIME' => 1420364686
+    'argv' => [
+        0 => '/opt/lampp/htdocs/yii'
+        1 => 'profits/daily-kdb'
+    ]
+    'argc' => 2
+]
+2015-01-04 17:45:59 [-][-][-][info][console\controllers\ProfitsController] begin action
+2015-01-04 17:45:59 [-][-][-][info][console\controllers\ProfitsController] end action
+2015-01-04 17:45:59 [-][-][-][info][application] $_SERVER = [
+    'HOSTNAME' => 'koudai.dev'
+    'SELINUX_ROLE_REQUESTED' => ''
+    'TERM' => 'ansi'
+    'SHELL' => '/bin/bash'
+    'HISTSIZE' => '1000'
+    'SSH_CLIENT' => '192.168.1.131 63176 22'
+    'SELINUX_USE_CURRENT_RANGE' => ''
+    'QTDIR' => '/usr/lib64/qt-3.3'
+    'QTINC' => '/usr/lib64/qt-3.3/include'
+    'SSH_TTY' => '/dev/pts/2'
+    'USER' => 'root'
+    'LS_COLORS' => 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=01;05;37;41:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arj=01;31:*.taz=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lz=01;31:*.xz=01;31:*.bz2=01;31:*.tbz=01;31:*.tbz2=01;31:*.bz=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.rar=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.jpg=01;35:*.jpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.axv=01;35:*.anx=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=01;36:*.au=01;36:*.flac=01;36:*.mid=01;36:*.midi=01;36:*.mka=01;36:*.mp3=01;36:*.mpc=01;36:*.ogg=01;36:*.ra=01;36:*.wav=01;36:*.axa=01;36:*.oga=01;36:*.spx=01;36:*.xspf=01;36:'
+    'MAIL' => '/var/spool/mail/root'
+    'PATH' => '/opt/lampp/bin:/opt/lampp/:/usr/lib64/qt-3.3/bin:/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin:/root/bin'
+    'PWD' => '/opt/lampp/htdocs'
+    'LANG' => 'en_US.UTF-8'
+    'PS1' => '[\\u@\\h \\w]$ '
+    'SELINUX_LEVEL_REQUESTED' => ''
+    'SSH_ASKPASS' => '/usr/libexec/openssh/gnome-ssh-askpass'
+    'HISTCONTROL' => 'ignoredups'
+    'SHLVL' => '1'
+    'HOME' => '/root'
+    'LOGNAME' => 'root'
+    'QTLIB' => '/usr/lib64/qt-3.3/lib'
+    'CVS_RSH' => 'ssh'
+    'SSH_CONNECTION' => '192.168.1.131 63176 192.168.1.214 22'
+    'LESSOPEN' => '||/usr/bin/lesspipe.sh %s'
+    'G_BROKEN_FILENAMES' => '1'
+    '_' => '/opt/lampp/bin/php'
+    'OLDPWD' => '/opt/lampp'
+    'PHP_SELF' => '/opt/lampp/htdocs/yii'
+    'SCRIPT_NAME' => '/opt/lampp/htdocs/yii'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/yii'
+    'PATH_TRANSLATED' => '/opt/lampp/htdocs/yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1420364759.0986
+    'REQUEST_TIME' => 1420364759
+    'argv' => [
+        0 => '/opt/lampp/htdocs/yii'
+        1 => 'profits/daily-kdb'
+    ]
+    'argc' => 2
+]
+2015-01-05 00:05:01 [-][-][-][info][console\controllers\ProfitsController] begin action
+2015-01-05 00:05:01 [-][-][-][info][console\controllers\ProfitsController] end action
+2015-01-05 00:05:01 [-][-][-][info][application] $_SERVER = [
+    'SHELL' => '/bin/sh'
+    'USER' => 'root'
+    'PATH' => '/usr/bin:/bin'
+    'PWD' => '/root'
+    'LANG' => 'en_US.UTF-8'
+    'SHLVL' => '1'
+    'HOME' => '/root'
+    'LOGNAME' => 'root'
+    '_' => '/opt/lampp/bin/php'
+    'PHP_SELF' => '/opt/lampp/htdocs/yii'
+    'SCRIPT_NAME' => '/opt/lampp/htdocs/yii'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/yii'
+    'PATH_TRANSLATED' => '/opt/lampp/htdocs/yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1420387501.1441
+    'REQUEST_TIME' => 1420387501
+    'argv' => [
+        0 => '/opt/lampp/htdocs/yii'
+        1 => 'profits/daily-project'
+    ]
+    'argc' => 2
+]
+2015-01-05 00:05:01 [-][-][-][info][console\controllers\ProfitsController] begin action
+2015-01-05 00:05:01 [-][-][-][info][console\controllers\ProfitsController] end action
+2015-01-05 00:05:01 [-][-][-][info][application] $_SERVER = [
+    'SHELL' => '/bin/sh'
+    'USER' => 'root'
+    'PATH' => '/usr/bin:/bin'
+    'PWD' => '/root'
+    'LANG' => 'en_US.UTF-8'
+    'SHLVL' => '1'
+    'HOME' => '/root'
+    'LOGNAME' => 'root'
+    '_' => '/opt/lampp/bin/php'
+    'PHP_SELF' => '/opt/lampp/htdocs/yii'
+    'SCRIPT_NAME' => '/opt/lampp/htdocs/yii'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/yii'
+    'PATH_TRANSLATED' => '/opt/lampp/htdocs/yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1420387501.143
+    'REQUEST_TIME' => 1420387501
+    'argv' => [
+        0 => '/opt/lampp/htdocs/yii'
+        1 => 'profits/daily-kdb'
+    ]
+    'argc' => 2
+]

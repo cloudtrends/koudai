@@ -1,0 +1,43 @@
+10
+
+dir
+6048
+svn://218.244.142.166/repos/project/koudai/php_code/console
+svn://218.244.142.166/repos
+
+
+
+2015-01-05T02:21:48.084557Z
+5985
+yakehuang
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+2512e77a-f209-4e56-bd4a-def6d2bcc206
+
+models
+dir
+
+runtime
+dir
+
+config
+dir
+
+controllers
+dir
+
+migrations
+dir
+
