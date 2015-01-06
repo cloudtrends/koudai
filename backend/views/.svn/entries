@@ -1,7 +1,7 @@
 10
 
 dir
-6081
+6123
 svn://218.244.142.166/repos/project/koudai/php_code/backend/views
 svn://218.244.142.166/repos
 
@@ -35,22 +35,22 @@ dir
 article
 dir
 
-financial
-dir
-
 main
 dir
 
-account
+financial
 dir
 
-app-version-info
+activity
 dir
 
 app-conf-info
 dir
 
-activity
+app-version-info
+dir
+
+account
 dir
 
 koudaibao
@@ -59,7 +59,7 @@ dir
 device
 dir
 
-app-image
+layouts
 dir
 
 template_detail.html
@@ -96,7 +96,7 @@ liumin
 
 4456
 
-layouts
+app-image
 dir
 
 article-type

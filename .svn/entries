@@ -1,7 +1,7 @@
 10
 
 dir
-6081
+6123
 svn://218.244.142.166/repos/project/koudai/php_code
 svn://218.244.142.166/repos
 
@@ -38,10 +38,10 @@ has-props
 frontend
 dir
 
-backend
+environments
 dir
 
-environments
+backend
 dir
 
 common
@@ -118,40 +118,6 @@ yakehuang
 vendor
 dir
 
-yii.bat
-file
-
-
-
-
-2014-11-26T03:06:41.997262Z
-4b286983b2eeb0e48232d7785501f625
-2014-09-28T06:54:56.089031Z
-1060
-yakehuang
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-515
-
 composer.json
 file
 
@@ -186,8 +152,39 @@ yakehuang
 
 1158
 
-console
-dir
+yii.bat
+file
+
+
+
+
+2014-11-26T03:06:41.997262Z
+4b286983b2eeb0e48232d7785501f625
+2014-09-28T06:54:56.089031Z
+1060
+yakehuang
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+515
 
 website
 dir
@@ -211,6 +208,9 @@ add
 copied
 svn://218.244.142.166/repos/project/koudai/php_code/website
 6035
+
+console
+dir
 
 init
 file
