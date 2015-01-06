@@ -207,6 +207,11 @@ class AppController extends BaseController
 	 */
 	public function actionDeviceReport()
 	{
+		// 如果是ios模拟器，则直接忽略
+		if ($this->client->deviceName == 'iPhone Simulator') {
+			return ['code' => 0];
+		}
+		
 		$device_id = trim($this->request->post('device_id'));
 		$installed_time = trim($this->request->post('installed_time'));
 		$uid = intval($this->request->post('uid'));
@@ -290,6 +295,8 @@ class AppController extends BaseController
 				'com.baidu.appsearch',
 				'com.tencent.android.qqdownloader',
 				'com.dragon',
+				'com.xiaomi',
+				'com.hiapk',
 			]
 		];
 	}

@@ -14,9 +14,4 @@ class UserDetail extends \yii\db\ActiveRecord
     {
         return '{{%user_detail}}';
     }
-    
-	public function getUser()
-	{
-		return $this->hasOne(User::className(), ['id' => 'user_id']);
-	}
 }

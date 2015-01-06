@@ -15,7 +15,7 @@ class TimeHelper
 
     // DateA 是否比 DateB 大于 30天
     public static function getLimitDay(){
-        return 30 * self::DAY;
+        return 5 * self::DAY;
     }
     public static function isLT30Days($timeA, $timeB)
     {

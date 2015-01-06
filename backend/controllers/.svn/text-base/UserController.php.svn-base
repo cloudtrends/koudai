@@ -71,7 +71,17 @@ class UserController extends BaseController
      */
     public function actionDetailList()
     {
-    	$condition = $this->getFilterCondition();
+    	$search = [];
+    	$condition = '1=1';
+    	if ($this->request->get('search_submit')) {
+    		$search = $this->request->get();
+    		if (isset($search['id']) && $search['id'] != '' ) {
+    			$condition .= " AND user_id = " . intval($search['id']);
+    		}
+    		if (isset($search['username']) && $search['username'] != '') {
+    			$condition .= " AND username LIKE '%" . trim($search['username']) . "%'";
+    		}
+    	}
     	$query = UserDetail::find()->where($condition)->orderBy('id desc');
     	$countQuery = clone $query;
     	$pages = new Pagination(['totalCount' => $countQuery->count()]);

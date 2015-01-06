@@ -17,6 +17,7 @@ th {border-right: 1px dotted #deeffb;}
 
 <?php $form = ActiveForm::begin(['id' => 'searchform','method'=>'get', 'options' => ['style' => 'margin-bottom:5px;']]); ?>
             ID：<input type="text" value="<?php echo Yii::$app->getRequest()->get('id', ''); ?>" name="id" class="txt" style="width:60px;">&nbsp;
+	用户名关键词：<input type="text" value="<?php echo Yii::$app->getRequest()->get('username', ''); ?>" name="username" class="txt" style="width:120px;">&nbsp;
 	<input type="submit" name="search_submit" value="过滤" class="btn">
 <?php ActiveForm::end(); ?>
 
@@ -36,7 +37,7 @@ th {border-right: 1px dotted #deeffb;}
 	<?php foreach ($users as $value): ?>
 	<tr class="hover">
 		<td class="td23"><?php echo $value->user_id; ?></td>
-		<td><?php echo $value->user->username; ?></td>
+		<td><?php echo $value->username; ?></td>
 		<td><?php echo $value->reg_client_type ? $value->reg_client_type : '-'; ?></td>
 		<td><?php echo $value->reg_app_version ? $value->reg_app_version : '-'; ?></td>
 		<td><?php echo $value->reg_device_name ? $value->reg_device_name : '-'; ?></td>

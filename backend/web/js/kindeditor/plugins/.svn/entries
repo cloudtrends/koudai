@@ -1,7 +1,7 @@
 10
 
 dir
-6048
+6081
 svn://218.244.142.166/repos/project/koudai/php_code/backend/web/js/kindeditor/plugins
 svn://218.244.142.166/repos
 
@@ -32,16 +32,16 @@ dir
 lineheight
 dir
 
-pagebreak
-dir
-
 preview
 dir
 
-image
+pagebreak
 dir
 
 baidumap
+dir
+
+image
 dir
 
 quickformat
@@ -50,19 +50,19 @@ dir
 table
 dir
 
-multiimage
+flash
 dir
 
 link
 dir
 
-flash
-dir
-
-emoticons
+multiimage
 dir
 
 plainpaste
+dir
+
+emoticons
 dir
 
 autoheight

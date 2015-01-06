@@ -139,6 +139,7 @@ class UserService extends Object
 			$request = Yii::$app->getRequest();
 			$userDetail = new UserDetail();
 			$userDetail->user_id = $user->id;
+			$userDetail->username = $user->username;
 			$userDetail->reg_client_type = $request->client->clientType;
 			$userDetail->reg_device_name = $request->client->deviceName;
 			$userDetail->reg_app_version = $request->client->appVersion;

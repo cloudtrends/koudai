@@ -85,14 +85,25 @@ class LLPayService extends Object
                 where ubc.status=". UserBankCard::STATUS_BIND."
                     and uc.user_id={$uid}
                     and uc.amount={$amount}
-                    and uc.status=" . UserCharge::STATUS_CHARGE_INIT;
+                    and uc.status=". UserCharge::STATUS_CHARGE_INIT;
 
         $existChargeOrder = $db->createCommand($sql)->queryOne();
+        $no_agree = empty($existChargeOrder['no_agree']) ? "" : $existChargeOrder['no_agree'];
 
+        Yii::info("已存在的充值订单：".var_export($existChargeOrder,true));
         if( empty($existChargeOrder) or empty($existChargeOrder['order_id'])
             or (TimeHelper::Now() - $existChargeOrder['updated_at'] > 60 * ( LLPayService::VALID_ORDER_LIMIT - 1 )))
         {
-            // 如果为空，或者订单已经过期, 则重新生成一条记录
+            // 如果为空，或者订单已经过期, 则先置为过期
+            $db->createCommand()->update(UserCharge::tableName(),[
+                'status' => UserCharge::STATUS_CHARGE_EXPIRED,
+            ],[
+                'user_id' => $uid,
+                'amount' => $amount,
+                'status' => UserCharge::STATUS_CHARGE_INIT,
+            ]);
+
+            // 然后重新生成一条记录
             $order_id = Order::generateOrderId();
 
             $existChargeOrder = [
@@ -136,13 +147,14 @@ class LLPayService extends Object
 
         // 补充不参与签名的参数
         $signParams['sign'] = $this->_sign($signParams);
-        $signParams['no_agree'] = $existChargeOrder['no_agree'];
+        $signParams['no_agree'] = strval($no_agree);
         $signParams['user_id'] = strval($curUser->username);
         $signParams['id_type'] = "0";
         $signParams['id_no'] = strval($curUser->id_card);
         $signParams['acct_name'] = strval($curUser->realname);
 
-        // 如果是连连支付，返回特定 2000 错误码，表示需要绑卡需要跳转连连支付
+        Yii::info("返回参数:".var_export($signParams,true));
+        // 如果是连连支付，返回特定 2002 错误码，表示需要绑卡需要跳转连连支付
 
         return [
             'code' => 2002,
@@ -373,7 +385,14 @@ class LLPayService extends Object
      */
     private function _rsaSign($data)
     {
-        $pi_key = openssl_pkey_get_private($this->private_key);
+        $private_key_file = Yii::getAlias('@common') . '/config/certkey/kd_ll_private_key.pem';
+        if(!file_exists($private_key_file)){
+            PayException::throwCodeExt(2225);
+        }
+
+        $private_key = file_get_contents($private_key_file);
+
+        $pi_key = openssl_pkey_get_private($private_key);
 
         //私钥加密,采用 MD5withRSA 算法
         openssl_sign($data, $encrypted, $pi_key, OPENSSL_ALGO_MD5);
@@ -391,7 +410,12 @@ class LLPayService extends Object
      */
     private function _rsaVerify($data, $sign)  {
         //读取连连支付公钥文件
-        $pubKey = file_get_contents('key/llpay_public_key.pem');
+        $public_key_file = Yii::getAlias('@common') . '/config/certkey/kd_ll_public_key.pem';
+        if(!file_exists($public_key_file)){
+            PayException::throwCodeExt(2225);
+        }
+
+        $pubKey = file_get_contents( $public_key_file );
 
         //转换为openssl格式密钥
         $res = openssl_get_publickey($pubKey);
@@ -413,29 +437,9 @@ class LLPayService extends Object
 
     private static $version = "1.1";
     private $private_key = <<<EOT
------BEGIN RSA PRIVATE KEY-----
-MIICXAIBAAKBgQCrTYU37d99Yssx1HlxrbAHx9CrTX0fgCu7yP8xlJk89Veyl+Vx
-3cgllVUO7AltY+78LWAZV+KJskjs66n4/5nw3o8jtJb3+QcLfViasl9AebqoH166
-/RFJz4JNb4jJEYSVCsyx0naMLF4ENqQLiqPza2ovXUNag4PyGp4zBS+KAwIDAQAB
-AoGABVBdTpPZd/lFlmEh903NBSDEr1uzAvQl5yhgCjiy3Do8IzUlD/gySkAsqE7Y
-KAWOl1INBhw80cqvCnJxDmFXdB1irdey4lEUSbPcpUJAfnzyI6ngQehK4ePd2tMw
-6Z/wDX7xRkMxivcQ52cU9s/n1ibfzmiUKs2iGLn5rse96nkCQQDZ0/gogBk4wMXF
-hVBauZZ5vE6gqCs+ZKS5tqAO0kk6QDUzCGJLvb/l7acuGAoyx4xntve1cSGKKkGg
-S+UywxKXAkEAyVJfweR/z29ZuIl8GDaiIyw8BviSciPeygXEKfhBBkbWlpFpiIJh
-Kh92WHYbrWgLAG5toLJxKRZmzeHi3EitdQJACa3BeQs4E619HCmwSFe2t/IGDF1s
-jnkqWJYkxoPRfSUdOAdHVtY3kJ/erc2jpl33fyRCHW3Jb7ow8E5vALJqQQJAVT3Y
-p7s9VrJ6FcW40nPHgQcIv5beQw/nFDkOzwp7VdIGqCgXvCIgS/qYXGpd27Vy+xLG
-vkTv3wrKKqBbMxRexQJBALR9AiNukbN++PAGv1OrYvnu8JccASV/zqmyHtBc7Psb
-hxbbUBl8OsWrWLjdFZ8uCud45hJvFwJ/lmPU7Ue7jqQ=
------END RSA PRIVATE KEY-----
 EOT;
 
     private $public_key = <<<EOT
------BEGIN PUBLIC KEY-----
-MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDxMqNpnRS82+8oZ5lng5l686ov
-1QvrO6xD8VptLtbrbL4ClmHNZxPRmMpKMSoLyeyFSCkZG6EQ/FKQi+ln2qeefuWj
-GuYfUiyARScvGzW67+3RCb7HOZQlL9MhIfADaSDW0CH93PTlHfYKm54GiU3ciI4g
-RZpd0hJZJ3JOUCfC0wIDAQAB
 -----END PUBLIC KEY-----
 EOT;
 } 

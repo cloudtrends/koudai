@@ -3,6 +3,7 @@
 namespace common\services;
 
 use common\exceptions\InvestException;
+use common\exceptions\PayException;
 use common\helpers\TimeHelper;
 use common\models\BankConfig;
 use common\models\User;
@@ -29,103 +30,6 @@ class PayService extends Object
     // 日志category
     const LOG_CATEGORY = "koudai.pay.*";
 
-    /**
-     * 获取银行卡列表
-     */
-    public function getSupportBanks()
-    {
-    	// 联动支付暂时不支持邮政，先去掉
-    	$banks = Yii::$app->params['supportBanks'];
-    	$data = [];
-    	foreach ($banks as $bank) {
-    		if ($bank['code'] == '4') {
-    			continue;
-    		} else {
-    			$data[] = $bank;
-    		}
-    	}
-        return $data;
-    }
-
-    /**
-     * 用户支付
-     */
-    public function pay($pay_amount, $phone_no, $pay_src)
-    {
-        //return LLpay::wapPay($pay_amount, $phone_no, $pay_src);
-        return UmpPay::pay($pay_amount, $phone_no, $pay_src);
-    }
-
-    /**
-     * 用户签约
-     */
-    public function userBindCard(
-        $user_id, // 用户的ID
-        $card_holder,//绑卡用户名
-        $card_id, // 卡号
-        $identity_code, // 身份证号码
-        $phone_no // 手机号
-    ){
-        return UmpPay::bindCard(
-            $user_id, // 用户的ID
-            $card_holder,//绑卡用户名
-            $card_id, // 卡号
-            $identity_code, // 身份证号码
-            $phone_no // 手机号
-        );
-    }
-
-    /**
-     * 用户解绑
-     */
-    public function unBindCard($phone_no)
-    {
-        return UmpPay::unBindCard($phone_no);
-    }
-    
-    /**
-     * 提现
-     */
-    public function withdraw(
-        $order_id,
-        $money,
-        $phone_no)
-    {
-    	return UmpPay::withdraw(
-            $order_id,
-            $money,
-            $phone_no);
-    }
-    
-    /**
-     * 提现付款查询
-     */
-    public function withdrawQuery($order_id)
-    {
-    	return UmpPay::withdrawQuery($order_id);
-    }
-    
-    /**
-     * 提现付款回调处理
-     */
-    public function withdrawHandleNotify($params)
-    {
-    	return UmpPay::withdrawHandleNotify($params);
-    }
-    
-    /**
-     * 获得商户号可用余额，单位分
-     */
-    public function getRemainMoney()
-    {
-    	return UmpPay::getRemainMoney();
-    }
-}
-
-
-// 联动支付
-class UmpPay
-{
     // 商户id
     const MER_ID = wzd_mer_id;
 
@@ -136,18 +40,17 @@ class UmpPay
     const CARD_TYPE_CREDIT = 'CREDITCARD';
     const CARD_TYPE_DEBIT = 'DEBITCARD';
 
-    // 用户支付
-    public static function pay(
-        $pay_amount,
-        $phone_no,
-        $pay_src
-    ){
+
+    /**
+     * 用户支付
+     */
+    public function pay($pay_amount, $phone_no, $pay_src)
+    {
+        //return LLpay::wapPay($pay_amount, $phone_no, $pay_src);
         if( empty($pay_amount) or $pay_amount < 1){
-            return [
-                'code' => 1301,
-                'ret_msg' => "输入的金额有误"
-            ];
+            PayException::throwCodeExt(2321);
         }
+
 
         // 后台先记录支付流水
         // 1. 找到绑定的银行卡号
@@ -171,20 +74,14 @@ class UmpPay
 
         if(empty($affected_rows))
         {
-            return [
-                'code' => -1,
-                'message' => "系统繁忙",
-            ];
+            PayException::throwCodeExt(2323);
         }
 
         $order_id = $db->getLastInsertID();
 
         if( strlen($order_id) < 4 or strlen($order_id) > 16)
         {
-            return [
-                'code' => -200,
-                'message' => "系统繁忙",
-            ];
+            PayException::throwCodeExt(2324);
         }
 
         // 2.
@@ -195,9 +92,9 @@ class UmpPay
         $map->put("mer_date", date("Ymd"));
         // 非线上环境先写死支付1分钱，线上环境扣实款
         if (YII_ENV == 'prod') {
-        	$map->put("amount", $pay_amount);;
+            $map->put("amount", $pay_amount);;
         } else {
-        	$map->put("amount", 1);
+            $map->put("amount", 1);
         }
         $map->put("amt_type", "RMB");
         $map->put("busi_no", "1");
@@ -229,37 +126,16 @@ class UmpPay
         ];
     }
 
-    // 用户解约 - 解绑银行卡
-    public static function unBindCard($phone_no)
-    {
-        $map = self::serviceMap("user_cancel");
-
-        // 业务参数
-        $map->put("media_id", $phone_no);
-        $map->put("media_type", "MOBILE");
-        $map->put("busi_no", "1");
-
-        // 发送请求
-        self::sendRequest($map, $httpResp, $httpRespMap);
-
-        Yii::info(var_export($httpRespMap,true));
-
-        return [
-            'httpCode' => $httpResp['code'],
-            'code' => $httpRespMap->get('ret_code'),
-            'message' => $httpRespMap->get('ret_msg')
-        ];
-    }
-
-    // 用户签约 - 绑定银行卡
-    public static function bindCard(
+    /**
+     * 用户签约
+     */
+    public function userBindCard(
         $user_id, // 用户的ID
-        $card_holder,// 绑卡用户名
-        $card_id, // 银行卡卡号
-        $identity_code, // 身份证
-        $phone_no // 银行预留的手机号
-    )
-    {
+        $card_holder,//绑卡用户名
+        $card_id, // 卡号
+        $identity_code, // 身份证号码
+        $phone_no // 手机号
+    ){
         // 1. 发起绑卡请求
         $map = self::serviceMap("user_reg");
 
@@ -300,24 +176,46 @@ class UmpPay
     }
 
     /**
-     * 提现
-     * @param integer $money 提现金额
-     * @param string $phone_no 手机号
+     * 用户解绑
      */
-    public static function withdraw(
+    public function unBindCard($phone_no)
+    {
+        $map = self::serviceMap("user_cancel");
+
+        // 业务参数
+        $map->put("media_id", $phone_no);
+        $map->put("media_type", "MOBILE");
+        $map->put("busi_no", "1");
+
+        // 发送请求
+        self::sendRequest($map, $httpResp, $httpRespMap);
+
+        Yii::info(var_export($httpRespMap,true));
+
+        return [
+            'httpCode' => $httpResp['code'],
+            'code' => $httpRespMap->get('ret_code'),
+            'message' => $httpRespMap->get('ret_msg')
+        ];
+    }
+    
+    /**
+     * 提现
+     */
+    public function withdraw(
         $order_id,
         $money,
         $phone_no)
     {
-    	// 非正式环境下，写死返回成功，add by yake
-    	if (YII_ENV != 'prod') {
-    		return [
-	    		'httpCode' => 200,
-	    		'code' => '0',
-	    		'message' => '',
-    		];
-    	}
-    	
+        // 非正式环境下，写死返回成功，add by yake
+        if (YII_ENV != 'prod') {
+            return [
+                'httpCode' => 200,
+                'code' => '0',
+                'message' => '',
+            ];
+        }
+
         $db = Yii::$app->db;
 
         $sql = "select * from " . User::tableName() ." u ".
@@ -328,20 +226,20 @@ class UmpPay
         $bankInfo = UserBankCard::getBankInfo($result['bank_id']);
 
         $map = self::serviceMap("transfer_direct_req");
-     	$map->put('notify_url', "http://api.koudailc.com/app/pay-notify");
-     	$map->put('order_id', $order_id);
-     	$map->put('mer_date', date("Ymd",time()));
-     	$map->put('amount', $money);
-     	$map->put('recv_account_type', '00');
-     	$map->put('recv_bank_acc_pro', '0');
-     	$map->put('recv_account', $result['card_no'] );
-     	$map->put('recv_user_name',  $result['realname'] );
-     	$map->put('identity_type', '01');
-     	$map->put('identity_code',$result['id_card']);
-     	$map->put('identity_holder',  $result['realname']);
-     	$map->put('media_type', 'MOBILE');
-     	$map->put('media_id',  $result['username']);
-     	$map->put('recv_gate_id', $bankInfo['abbreviation']);
+        $map->put('notify_url', "http://api.koudailc.com/app/pay-notify");
+        $map->put('order_id', $order_id);
+        $map->put('mer_date', date("Ymd",time()));
+        $map->put('amount', $money);
+        $map->put('recv_account_type', '00');
+        $map->put('recv_bank_acc_pro', '0');
+        $map->put('recv_account', $result['card_no'] );
+        $map->put('recv_user_name',  $result['realname'] );
+        $map->put('identity_type', '01');
+        $map->put('identity_code',$result['id_card']);
+        $map->put('identity_holder',  $result['realname']);
+        $map->put('media_type', 'MOBILE');
+        $map->put('media_id',  $result['username']);
+        $map->put('recv_gate_id', $bankInfo['abbreviation']);
         $map->put('bank_brhname', "上海市徐汇支行");
         $map->put('purpose', "提现");
 
@@ -371,73 +269,74 @@ class UmpPay
     }
     
     /**
-     * 提现查询
+     * 提现付款查询
      */
-    public static function withdrawQuery($order_id)
+    public function withdrawQuery($order_id)
     {
-    	$withdraw = UserWithdraw::findOne($order_id);
-    	$map = self::serviceMap("transfer_query");
-    	$map->put('order_id', $order_id);
-    	$map->put('mer_date', date('Ymd', $withdraw->review_time));
-    	self::sendRequest($map, $httpResp, $httpRespMap);
-    	$result = $httpRespMap->H_table;
-    	return $result;
+        $withdraw = UserWithdraw::findOne($order_id);
+        $map = self::serviceMap("transfer_query");
+        $map->put('order_id', $order_id);
+        $map->put('mer_date', date('Ymd', $withdraw->review_time));
+        self::sendRequest($map, $httpResp, $httpRespMap);
+        $result = $httpRespMap->H_table;
+        return $result;
     }
     
     /**
      * 提现付款回调处理
-     * @param array $params 通知的参数列表
-     * @return code为0表示验签通过，支付结果从$params中自行判断，return表示需要返回给联动的meta字符串
      */
-    public static function withdrawHandleNotify($params)
+    public function withdrawHandleNotify($params)
     {
-    	$map = new \HashMap();
-    	foreach ($params as $key => $value) {
-    		$map->put($key, $value);
-    	}
-    	
-    	$resData = new \HashMap();
-    	try {
-    		//获取UMPAY平台请求商户的支付结果通知数据,并对请求数据进行验签
-    		//如验证平台签名正确，即应响应UMPAY平台返回码为0000。【响应返回码代表通知是否成功，和通知的交易结果（支付失败、支付成功）无关】
-    		//验签支付结果通知 如验签成功，则返回ret_code=0000
-    		$reqData = \PlatToMer::getNotifyRequestData($map);
-    		$resData->put("ret_code","0000");
-    	} catch (\Exception $e) {
-    		//如果验签失败，则抛出异常，返回ret_code=1111
-    		Yii::error('验证签名发生异常：' . $e->getMessage(), PayService::LOG_CATEGORY);
-    		$resData->put("ret_code","1111");
-    	}
-    	
-    	$resData->put("mer_id", $map->get("mer_id"));
-    	$resData->put("sign_type", $map->get("sign_type"));
-    	$resData->put("mer_date", $map->get("mer_date"));
-    	$resData->put("order_id", $map->get("order_id"));
-    	$resData->put("version", $map->get("version"));
-    	$resData->put("ret_msg", "success");
-    	$returnUrl = \MerToPlat::notifyResponseData($resData);
-    	$return = '<META NAME="MobilePayPlatform" CONTENT="' . $returnUrl . '" />';
-    	
-    	return [
-    		'code' => $resData->get('ret_code') == '0000' ? '0' : $resData->get('ret_code'),
-    		'return' => $return,
-    	];
+    	//return UmpPay::withdrawHandleNotify($params);
+        $map = new \HashMap();
+        foreach ($params as $key => $value) {
+            $map->put($key, $value);
+        }
+
+        $resData = new \HashMap();
+        try {
+            //获取UMPAY平台请求商户的支付结果通知数据,并对请求数据进行验签
+            //如验证平台签名正确，即应响应UMPAY平台返回码为0000。【响应返回码代表通知是否成功，和通知的交易结果（支付失败、支付成功）无关】
+            //验签支付结果通知 如验签成功，则返回ret_code=0000
+            $reqData = \PlatToMer::getNotifyRequestData($map);
+            $resData->put("ret_code","0000");
+        } catch (\Exception $e) {
+            //如果验签失败，则抛出异常，返回ret_code=1111
+            Yii::error('验证签名发生异常：' . $e->getMessage(), PayService::LOG_CATEGORY);
+            $resData->put("ret_code","1111");
+        }
+
+        $resData->put("mer_id", $map->get("mer_id"));
+        $resData->put("sign_type", $map->get("sign_type"));
+        $resData->put("mer_date", $map->get("mer_date"));
+        $resData->put("order_id", $map->get("order_id"));
+        $resData->put("version", $map->get("version"));
+        $resData->put("ret_msg", "success");
+        $returnUrl = \MerToPlat::notifyResponseData($resData);
+        $return = '<META NAME="MobilePayPlatform" CONTENT="' . $returnUrl . '" />';
+
+        return [
+            'code' => $resData->get('ret_code') == '0000' ? '0' : $resData->get('ret_code'),
+            'return' => $return,
+        ];
     }
     
     /**
-     * 获得商户号可用余额
+     * 获得商户号可用余额，单位分
      */
-    public static function getRemainMoney()
+    public function getRemainMoney()
     {
-    	$map = self::serviceMap("query_account_balance");
-    	self::sendRequest($map, $httpResp, $httpRespMap);
-    	$result = $httpRespMap->H_table;
-		if ($result['ret_code'] == '0000') {
-			return intval($result['bal_sign']);
-		} else {
-			return 0;
-		}
+        $map = self::serviceMap("query_account_balance");
+        self::sendRequest($map, $httpResp, $httpRespMap);
+        $result = $httpRespMap->H_table;
+        if ($result['ret_code'] == '0000') {
+            return intval($result['bal_sign']);
+        } else {
+            return 0;
+        }
     }
+
+
 
     /*
      * 获取Map，包含公共的参数
@@ -483,44 +382,7 @@ class UmpPay
         $httpRespMap = \PlatToMer::getResDataByHtml($httpResp['resp']);
     }
 
-
-    public static function getSupportBanks()
-    {
-        $map = new \HashMap();
-        $map->put('service', 'query_mer_bank_shortcut');
-        $map->put('sign_type', 'RSA');
-        $map->put('charset', 'UTF-8');
-        $map->put('mer_id', self::MER_ID);
-        $map->put('version', self::SERVICE_VERSION);
-        $map->put('res_format', 'HTML');
-        $map->put('pay_type', self::CARD_TYPE_DEBIT);
-        $reqData = \MerToPlat::makeRequestDataByGet($map);
-
-        $req = new HttpRequest();
-        $req->url = $reqData->getUrl();
-        $req->method = 'GET';
-        $ret = $req->send();
-
-        if ($ret && $ret['code'] == HttpRequest::HTTP_Status_Code_OK) {
-            $data = \PlatToMer::getResDataByHtml($ret['resp']);
-            $mer_bank_list = $data->get("mer_bank_list");
-            if(!empty( $mer_bank_list ))
-            {
-                $banks = explode('|', $mer_bank_list);
-            }
-            else{
-                $banks = Yii::$app->params['supportBanks'];
-            }
-        } else {
-            throw new UserException('获取银行卡列表失败');
-        }
-        return [
-            'httpCode' => $ret['code'],
-            'code' => $data->get("ret_code"),
-            'message' => $data->get("ret_msg"),
-            'mer_bank_list' => $banks,
-        ];
-    }
 }
+
 
 

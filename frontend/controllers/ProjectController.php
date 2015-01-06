@@ -2,6 +2,9 @@
 
 namespace frontend\controllers;
 
+use common\exceptions\PayException;
+use common\models\BankConfig;
+use common\models\UserBankCard;
 use Yii;
 use yii\db\Query;
 use yii\web\NotFoundHttpException;
@@ -72,6 +75,10 @@ class ProjectController extends BaseController
 			'id' => SORT_DESC,
 		])->offset($offset)->limit($pageSize)->all();
 		
+		foreach ($projects as &$project) {
+			$project['success_percent'] = intval(100 * $project['success_money'] / $project['total_money']);
+		}
+		
 		// 第一页才拉口袋宝
 		$koudaibao = [];
 		if ($page == 1) {
@@ -126,6 +133,10 @@ class ProjectController extends BaseController
 			'is_novice' => SORT_DESC,
 			'id' => SORT_DESC,
 		])->offset($offset)->limit($pageSize)->all();
+		
+		foreach ($projects as &$project) {
+			$project['success_percent'] = intval(100 * $project['success_money'] / $project['total_money']);
+		}
 		
 		return [
 			'code' => 0,
@@ -277,13 +288,47 @@ class ProjectController extends BaseController
 			throw new UserException('您还没有设置交易密码', 1003);
 		} else if (!$curUser->validatePayPassword($payPassword)) {
 			throw new UserException('交易密码错误', 1004);
-		} else if (!$captcha && $userService->optionNeedCaptcha($curUser, UserCaptcha::TYPE_INVEST_PROJ, $this->request->post())) {
-			$userService->generateAndSendCaptcha($curUser->username, UserCaptcha::TYPE_INVEST_PROJ);
-			throw new UserException('需要验证码', 2001);
-		} else if ($captcha && !$userService->validatePhoneCaptcha($curUser->username, $captcha, UserCaptcha::TYPE_INVEST_PROJ)) {
-			throw new UserException('验证码错误或已过期', 2002);
 		}
-		
+
+
+        // 获取用户的绑定的银行卡
+        $db = Yii::$app->db;
+
+        $sql = "select * from ". UserBankCard::tableName() . " ubc " .
+            " where ubc.user_id=\"{$curUser->id}\"";
+
+        $existBindBank = $db->createCommand($sql)->queryOne();
+
+        if( empty($existBindBank) )
+        {
+            PayException::throwCodeExt(2205);
+        }
+
+
+        if ($existBindBank['third_platform'] == BankConfig::PLATFORM_UMPAY){
+
+            if (!$captcha && $userService->optionNeedCaptcha($curUser, UserCaptcha::TYPE_INVEST_PROJ, $this->request->post())) {
+                $userService->generateAndSendCaptcha($curUser->username, UserCaptcha::TYPE_INVEST_PROJ);
+                throw new UserException('需要验证码', 2001);
+            } else if ($captcha && !$userService->validatePhoneCaptcha($curUser->username, $captcha, UserCaptcha::TYPE_INVEST_PROJ)) {
+                throw new UserException('验证码错误或已过期', 2002);
+            }
+
+        }
+        else if ($existBindBank['third_platform'] == BankConfig::PLATFORM_LLPAY)
+        {
+            // 如果是连连支付, 必须使用余额支付
+            if( $useRemain == 0 )
+            {
+                PayException::throwCodeExt(2208);
+            }
+        }
+        else
+        {
+            PayException::throwCodeExt(2101);
+        }
+
+
 		if (!($this->client->clientType == 'ios' && $this->client->appVersion == '1.0.1')) {
 			// 验证签名
 			$params = $this->request->post();

@@ -17,7 +17,7 @@ $this->showsubmenu('反馈列表');
 		<th>ID</th>
 		<th>用户ID</th>
 		<th>反馈类型</th>
-		<th width="40%">内容</th>
+		<th>内容</th>
 		<th>联系方式</th>
 		<th>创建时间</th>
 		<th>来源平台</th>
