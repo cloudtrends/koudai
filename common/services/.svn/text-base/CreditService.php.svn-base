@@ -243,6 +243,7 @@ class CreditService extends Object
             // ------- 1. 新增申购用户的投资记录 -------
             $affected_rows = $db->createCommand()->insert( ProjectInvest::tableName(), [
                 'project_id' => $investInfo['project_id'],
+            	'project_name' => $investInfo['project_name'],
                 'user_id' => $uid,
                 'username' => $curUser['username'],
                 'status' => ProjectInvest::STATUS_SUCCESS,
@@ -370,7 +371,7 @@ class CreditService extends Object
                 'project_apr' => $investInfo['cbi_assign_rate'], // 计算结果要和 $new_project_apr 一致
                 'invest_uid' => $uid,
                 'is_transfer' => 1,
-                'profits_uid' => $destination_uid,
+                'profits_uid' => $uid,
                 'duein_money' => $investInfo['pp_duein_money'],
                 'duein_capital' => $investInfo['cbi_assign_fee'],
                 'duein_profits' => $investInfo['pp_duein_money'] - $investInfo['cbi_assign_fee'],
@@ -489,8 +490,8 @@ class CreditService extends Object
                     }
 
                     $payRet = $payService->pay(
+                        $curUser,
                         $pay_amount,
-                        $userBank['bind_phone'],
                         $pay_src
                     );
 
@@ -568,8 +569,8 @@ class CreditService extends Object
                 }
 
                 $payRet = $payService->pay(
+                    $curUser,
                     $pay_amount,
-                    $userBank['bind_phone'],
                     $pay_src
                 );
 

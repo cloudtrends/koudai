@@ -43,7 +43,7 @@ class StringHelper extends \yii\helpers\StringHelper
             return intval($numberM * self::ONE_MONTH);
         }
         $years = intval($numberM / 12 ) ;
-        $months = $numberM % 12 ;
+        $months = intval($numberM % 12) ;
         return intval(self::YEAR_DAYS * $years + self::ONE_MONTH * $months);
     }
 

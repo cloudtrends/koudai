@@ -7,6 +7,7 @@ use common\helpers\TimeHelper;
 use common\models\BankConfig;
 use common\models\Order;
 use common\models\UserContact;
+use common\models\UserPayOrder;
 use common\services\LLPayService;
 use Yii;
 use yii\base\UserException;
@@ -25,6 +26,7 @@ use common\models\UserBankCard;
 use common\helpers\StringHelper;
 use common\models\AppConfig;
 use common\models\UserCharge;
+use common\models\UserAccount;
 
 /**
  * User controller
@@ -628,8 +630,8 @@ class UserController extends BaseController
         }
 
         return $this->payService->pay(
+            $curUser,
             $pay_amount,
-            $curUser->username,
             $this->client->clientType
         );
 
@@ -707,13 +709,18 @@ class UserController extends BaseController
             {
                 // 联动支付，直接绑卡
                 $ret = $this->payService->userBindCard(
-                    $curUser->id,
-                    $curUser->realname,
-                    $bank_card,
-                    $curUser->id_card,
-                    $bind_phone
+                    $curUser,
+                    $bank_card
                 );
-
+                
+                // 绑卡扣除1分钱返回给用户余额
+                if ($ret['status'] == UserBankCard::STATUS_BIND) {
+                	UserAccount::updateAccount($curUser->id, [
+	                	['usable_money', '+', 1],
+	                	['total_money', '+', 1],
+                	], false);
+                	UserAccount::addLog($curUser->id, UserAccount::TRADE_TYPE_RECHARGE, 1);
+                }
             }
             else if( $bankConfig['third_platform'] == BankConfig::PLATFORM_LLPAY )
             {
@@ -733,16 +740,11 @@ class UserController extends BaseController
                 }
 
                 $ret = $this->llPayService->userBindCard(
-					$curUser->id,
+					$curUser,
+                    $bank_card,
                     $no_order,
                     date("YmdHis",$updated_time)
                 );
-
-                $ret['payParams']['user_id'] = strval($curUser->username);
-                $ret['payParams']['id_type'] = "0";
-                $ret['payParams']['id_no'] = strval($curUser->id_card);
-                $ret['payParams']['card_no'] = strval($bank_card);
-                $ret['payParams']['acct_name'] = strval($curUser->realname);
 
             }
             else
@@ -783,6 +785,7 @@ class UserController extends BaseController
                     "status" => $status,
                     "third_platform" => $bankConfig['third_platform'],
                     "bind_result" => json_encode($bindResult),
+                    "bank_name" => $bankConfig['bank_name'],
                     "card_no" => $bank_card,
                     "bind_phone" => $bind_phone,
                     "no_order" => $no_order,
@@ -803,36 +806,6 @@ class UserController extends BaseController
 		];
 	}
 
-
-    /**
-     *
-     * @name 解绑银行卡 [unBindCard]
-     * @method post
-     * @uses App个人中心，解绑银行卡操作，发起请求
-     */
-    public function actionUnBindCard()
-    {
-        $curUser = Yii::$app->user->identity;
-        $bank = UserBankCard::findOne(['user_id' => $curUser->id]);
-
-        if( !$curUser->card_bind_status )
-        {
-            throw new UserException("您尚未绑定银行卡");
-        }
-
-        $ret = $this->payService->unBindCard($bank['bind_phone']);
-
-        if($ret['code'] == 0 or $ret['code'] == "00060064" )
-        {
-            $bank->status = UserBankCard::STATUS_UNBIND;
-            $curUser->card_bind_status = UserBankCard::STATUS_UNBIND;
-            $curUser->save();
-            $bank->save();
-        }
-
-        return $ret;
-    }
-
     /**
      *
      * @name 连连支付测试 [LLPayTest]
@@ -851,21 +824,45 @@ class UserController extends BaseController
 	 */
 	public function actionSupportBanks()
 	{
+
         $db = Yii::$app->db;
-        $sql = "select "."
-                bank_id code,
-                bank_name name,
-                sml,
-                dml,
-                dtl,
-                third_platform
-                from tb_bank_config
-                where status = 0;
-                ";
+        //$appVersion = empty($this->client->appVersion) ? "" : $this->client->appVersion;
+        if ( !empty($this->client->appVersion) && $this->client->appVersion < "1.1.0" )
+        {
+            $sql = "select "."
+                    bank_id code,
+                    bank_name name,
+                    sml,
+                    dml,
+                    dtl,
+                    third_platform
+                from
+                    tb_bank_config
+                where
+                    status = 0 and third_platform=" . BankConfig::PLATFORM_UMPAY . "
+                    limit 7";
+        }
+        else
+        {
+            $sql = "select "."
+                    bank_id code,
+                    bank_name name,
+                    sml,
+                    dml,
+                    dtl,
+                    third_platform
+                from
+                    tb_bank_config
+                where
+                    status = 0;";
+        }
+
         $banks = $db->createCommand($sql)->queryAll();
+
 		return [
 			'code' => 0,
 			'banks' => $banks,
+			'client' => $this->client,
 		];
 	}
 	
@@ -999,7 +996,7 @@ class UserController extends BaseController
 		}
 		else if( $existBindBank['third_platform'] == BankConfig::PLATFORM_LLPAY )
 		{
-			$chargeResult = $this->llPayService->userCharge($curUser, $amount);
+			$chargeResult = $this->llPayService->userCharge($curUser, $amount,$this->client->clientType);
 			$msg = $chargeResult['msg'];
 			$code = $chargeResult['code'];
 			$payParams = $chargeResult['payParams'];
@@ -1063,16 +1060,17 @@ class UserController extends BaseController
 		$offset = ($page - 1) * $pageSize;
 		
 		// 为保持和提现记录字段一致amount给客户端改为money
-		$data = (new Query())->from(UserCharge::tableName())->select([
-			'id', 'amount as money', 'status', 'created_at'
+		$data = (new Query())->from(UserPayOrder::tableName())->select([
+			'order_char_id as id', 'pay_amount as money', 'status', 'created_at'
 		])->where([
 			'user_id' => Yii::$app->user->id,
+            'action' => UserPayOrder::ACTION_CHARGE_PAY,
 		])->orderBy([
-			'id' => SORT_DESC,
+			'created_at' => SORT_DESC,
 		])->offset($offset)->limit($pageSize)->all();
 		
 		foreach ($data as &$v) {
-			$v['statusLabel'] = UserCharge::$status[$v['status']];
+			$v['statusLabel'] = UserPayOrder::$charge_status[$v['status']];
 		}
 		
 		return [

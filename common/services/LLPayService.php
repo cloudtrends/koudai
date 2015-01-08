@@ -1,7 +1,7 @@
 <?php
 /**
  * Created by PhpStorm.
- * User: pc
+ * User: haoyu
  * Date: 2014/12/25
  * Time: 20:58
  */
@@ -15,6 +15,7 @@ use common\models\Order;
 use common\models\User;
 use common\models\UserAccount;
 use common\models\UserCharge;
+use common\models\UserPayOrder;
 use Yii;
 use common\helpers\TimeHelper;
 use common\models\UserBankCard;
@@ -26,6 +27,8 @@ class LLPayService extends Object
 {
     const VALID_ORDER_LIMIT = 1440; // 有效时间一天,单位分钟
 
+    // 日志category
+    const LOG_CATEGORY = "koudai.llpay.*";
 
     //充值完后，客户端查询状态
     public function userChargeQuery($curUser, $no_order, $info_order)
@@ -35,32 +38,47 @@ class LLPayService extends Object
             PayException::throwCodeExt(2102);
         }
 
-        $db = Yii::$app->db;
+        $info_order = json_decode($info_order, true);
+        if(empty($info_order))
+        {
+            PayException::throwCodeExt(2226);
+        }
 
-        // 是否存在对应成功的订单号
-        $sql = "select "."
-                  user_id,
-                  third_platform,
-                  amount,
-                  order_id,
-                  status,
-                  created_at,
-                  updated_at
-                from ". UserCharge::tableName() .
-            " where user_id={$curUser->id}
-                    and order_id=\"{$no_order}\"
-                    and status=" . UserCharge::STATUS_CHARGE_SUCCESS;
+        if( strtolower($info_order['action']) == strtolower("userCharge"))
+        {
+            $db = Yii::$app->db;
 
-        $existChargeOrder = $db->createCommand($sql)->queryOne();
+            // 是否存在对应成功的订单号
+            $sql = "select "."
+                      user_id,
+                      third_platform,
+                      pay_amount,
+                      order_char_id,
+                      status,
+                      created_at,
+                      updated_at
+                    from ". UserPayOrder::tableName() .
+                " where user_id={$curUser->id}
+                        and order_char_id=\"{$no_order}\"
+                        and status=" . UserPayOrder::STATUS_CHARGE_SUCCESS ."
+                        and third_platform=" . BankConfig::PLATFORM_LLPAY;
 
-        if( empty($existChargeOrder))
-            return false;
+            $existChargeOrder = $db->createCommand($sql)->queryOne();
 
-        return $existChargeOrder;
+            if( !empty($existChargeOrder))
+                return true;
+
+        }
+        else if (strtolower($info_order['action']) == strtolower("userBindCard"))
+        {
+            if($curUser->card_bind_status == 1)
+                return true;
+        }
+        return false;
     }
 
     // 用户充值
-    public function userCharge($curUser, $amount)
+    public function userCharge($curUser, $amount, $pay_src)
     {
         if( !($curUser instanceof IdentityInterface) )
         {
@@ -72,56 +90,59 @@ class LLPayService extends Object
 
         // 如果存在一份已经申请的充值，且金额一致，状态为未初始状态
         $sql = "select "."
-                 uc.user_id user_id,
-                  uc.third_platform third_platform,
-                  uc.amount amount,
-                  uc.order_id order_id,
-                  uc.status status,
-                  uc.created_at created_at,
-                  uc.updated_at updated_at,
-                  ubc.no_agree
-                from tb_user_charge uc left join tb_user_bank_card ubc
-                    on uc.user_id = ubc.user_id
-                where ubc.status=". UserBankCard::STATUS_BIND."
-                    and uc.user_id={$uid}
-                    and uc.amount={$amount}
-                    and uc.status=". UserCharge::STATUS_CHARGE_INIT;
+                   user_id,
+                   third_platform,
+                   pay_amount,
+                   order_char_id,
+                   status,
+                   created_at,
+                   updated_at
+                from ". UserPayOrder::tableName() . "
+                where user_id={$uid}
+                    and pay_amount={$amount}
+                    and status=". UserPayOrder::STATUS_CHARGE_INIT . "
+                    and third_platform=" . BankConfig::PLATFORM_LLPAY;
 
         $existChargeOrder = $db->createCommand($sql)->queryOne();
-        $no_agree = empty($existChargeOrder['no_agree']) ? "" : $existChargeOrder['no_agree'];
 
-        Yii::info("已存在的充值订单：".var_export($existChargeOrder,true));
-        if( empty($existChargeOrder) or empty($existChargeOrder['order_id'])
+        Yii::info("已存在的LL充值订单：".var_export($existChargeOrder,true));
+
+        if( empty($existChargeOrder) or empty($existChargeOrder['order_char_id'])
             or (TimeHelper::Now() - $existChargeOrder['updated_at'] > 60 * ( LLPayService::VALID_ORDER_LIMIT - 1 )))
         {
             // 如果为空，或者订单已经过期, 则先置为过期
-            $db->createCommand()->update(UserCharge::tableName(),[
-                'status' => UserCharge::STATUS_CHARGE_EXPIRED,
+            $db->createCommand()->update(UserPayOrder::tableName(),[
+                'status' => UserPayOrder::STATUS_CHARGE_EXPIRED,
             ],[
                 'user_id' => $uid,
-                'amount' => $amount,
-                'status' => UserCharge::STATUS_CHARGE_INIT,
+                'pay_amount' => $amount,
+                'status' => UserPayOrder::STATUS_CHARGE_INIT,
+                "third_platform" => BankConfig::PLATFORM_LLPAY,
+                'updated_at' => TimeHelper::Now(),
             ]);
 
             // 然后重新生成一条记录
-            $order_id = Order::generateOrderId();
+            $order_char_id = Order::generateOrderId();
 
             $existChargeOrder = [
                 'user_id' => $uid,
                 'third_platform' => BankConfig::PLATFORM_LLPAY,
-                'amount' => $amount,
-                'order_id' => $order_id,
-                'status' => UserCharge::STATUS_CHARGE_INIT,
+                'pay_amount' => $amount,
+                'order_char_id' => $order_char_id,
+                'status' => UserPayOrder::STATUS_CHARGE_INIT,
                 'created_at' => TimeHelper::Now(),
                 'updated_at' => TimeHelper::Now(),
+                'action' => UserPayOrder::ACTION_CHARGE_PAY,
+                'pay_source' => $pay_src,
             ];
 
-            $affected_rows = $db->createCommand()->insert(UserCharge::tableName(), $existChargeOrder)->execute();
+            $affected_rows = $db->createCommand()->insert( UserPayOrder::tableName(), $existChargeOrder )->execute();
 
             if(empty($affected_rows)){
                 PayException::throwCodeExt(2207);
             }
         }
+
 
         $dt_order = strval(date("YmdHis", $existChargeOrder['updated_at']));
 
@@ -131,27 +152,50 @@ class LLPayService extends Object
         ];
 
 
-        $money_order = strval(sprintf("%.2f", $amount / 100 ));
+        if( YII_ENV != 'prod' )
+        {
+            $money_order = "0.01";
+        }
+        else{
+            $money_order = strval(sprintf("%.2f", $amount / 100 ));
+        }
+
+        // 参与签名的参数
+
+
         $signParams = [
             'oid_partner' => strval(self::LLPAY_OID_PARTNER),
             'sign_type' => "RSA",
             'busi_partner' => "101001",
-            'no_order' => strval($existChargeOrder['order_id']),
+            'no_order' => strval($existChargeOrder['order_char_id']),
             'dt_order' => $dt_order,
             'name_goods' => "充值".$money_order."元",
             'info_order' => json_encode($info_order),
             'money_order' => $money_order,
             'notify_url' =>  Url::toRoute('notify/lian-lian-charge-notify',true),
             'valid_order' => strval(self::VALID_ORDER_LIMIT),
+            'risk_item' => $this->_getRiskItem($curUser),
         ];
 
+        $sql = "select "."
+                    no_agree
+                from tb_user_bank_card
+                where user_id={$uid}
+                    and status= ". UserBankCard::STATUS_BIND;
+
+        $existBankCard =  $db->createCommand($sql)->queryOne();
+        $no_agree = empty($existBankCard['no_agree']) ? "" : $existBankCard['no_agree'];
+
+        Yii::info("协议号：".var_export($no_agree,true));
+
         // 补充不参与签名的参数
-        $signParams['sign'] = $this->_sign($signParams);
-        $signParams['no_agree'] = strval($no_agree);
-        $signParams['user_id'] = strval($curUser->username);
-        $signParams['id_type'] = "0";
-        $signParams['id_no'] = strval($curUser->id_card);
-        $signParams['acct_name'] = strval($curUser->realname);
+        $payParams = $signParams;
+        $payParams['sign'] = $this->_sign($signParams);
+        $payParams['no_agree'] = strval($no_agree);
+        $payParams['user_id'] = strval($curUser->username);
+        $payParams['id_type'] = "0";
+        $payParams['id_no'] = strval($curUser->id_card);
+        $payParams['acct_name'] = strval($curUser->realname);
 
         Yii::info("返回参数:".var_export($signParams,true));
         // 如果是连连支付，返回特定 2002 错误码，表示需要绑卡需要跳转连连支付
@@ -160,7 +204,7 @@ class LLPayService extends Object
             'code' => 2002,
             'msg' => "",
             'chargeOrder' => $existChargeOrder,
-            'payParams' => $signParams,
+            'payParams' => $payParams,
         ];
 
         // 开启事务进行账户余额修改
@@ -174,8 +218,8 @@ class LLPayService extends Object
         // 用户状态修改
         $db = Yii::$app->db;
 
-        $sql = "select * from ". UserCharge::tableName() .
-            " where order_id=\"{$chargeResult['no_order']}\"";
+        $sql = "select * from ". UserPayOrder::tableName() .
+            " where order_char_id=\"{$chargeResult['no_order']}\"";
 
         $existCharge = $db->createCommand($sql)->queryOne();
 
@@ -185,13 +229,14 @@ class LLPayService extends Object
         }
 
         $uid = $existCharge['user_id'];
-        $affected_row = $db->createCommand()->update(UserCharge::tableName(),[
-            "status" => UserCharge::STATUS_CHARGE_SUCCESS,
-            "charge_result" => json_encode($chargeResult),
+        $affected_row = $db->createCommand()->update(UserPayOrder::tableName(),[
+            "status" => UserPayOrder::STATUS_CHARGE_SUCCESS,
+            "pay_result" => json_encode($chargeResult),
             "card_no" => empty($chargeResult['card_no']) ? "" : $chargeResult['card_no'],
+            "third_platform_order_id" => empty($chargeResult['oid_paybill']) ? "" : $chargeResult['oid_paybill'],
             "updated_at" => TimeHelper::Now(),
         ],[
-            "order_id" => $chargeResult['no_order'],
+            "order_char_id" => $chargeResult['no_order'],
         ])->execute();
 
         if(empty($affected_row))
@@ -199,7 +244,13 @@ class LLPayService extends Object
             PayException::throwCodeExt(2220);
         }
 
-        $amount = StringHelper::safeConvertCentToInt($chargeResult['money_order']);
+        if( YII_ENV != 'prod' )
+        {
+            $amount = $existCharge['pay_amount'];
+        }
+        else{
+            $amount = StringHelper::safeConvertCentToInt($chargeResult['money_order']);
+        }
 
         // 更新用户资金信息
         $affected_row = UserAccount::updateAccount($uid, [
@@ -213,11 +264,11 @@ class LLPayService extends Object
 
         UserAccount::addLog($uid,UserAccount::TRADE_TYPE_RECHARGE,$amount,"连连充值");
 
-        Yii::info("Charge Success, chargeResult:" . var_export($chargeResult, true), 'koudai.pay.*');
+        Yii::info("Charge Success, chargeResult:" . var_export($chargeResult, true), self::LOG_CATEGORY);
     }
 
     // 连连绑卡，支付0.01元
-    public function userBindCard($uid, $no_order, $dt_order)
+    public function userBindCard($curUser, $bank_card, $no_order, $dt_order)
     {
         // YYYYMMDDHHIISS 14位精确到秒 比如2014年12月26号，17点15分10秒，20141226171510
         $pattern = '/^[0-9]{14}$/';
@@ -228,16 +279,16 @@ class LLPayService extends Object
         // 构造连连支付 0.01 元 的参数
         // 签名参数
 
+        $uid = $curUser->id;
         $info_order = [
             'uid' => $uid,
             'action' => "userBindCard",
         ];
 
+        // 需要参与签名的参数
         $signParams = [
             'oid_partner' => strval(self::LLPAY_OID_PARTNER),
             'sign_type' => "RSA",
-            //'oid_partner' => strval(self::LLPAY_TEST_OID_PARTNER),
-            //'sign_type' => "MD5",
             'busi_partner' => "101001",
             'no_order' => strval($no_order),
             'dt_order' => strval($dt_order),
@@ -246,10 +297,17 @@ class LLPayService extends Object
             'money_order' => "0.01",
             'notify_url' =>  Url::toRoute('notify/lian-lian-bind-notify',true),
             'valid_order' => strval(self::VALID_ORDER_LIMIT),
+            'risk_item' => $this->_getRiskItem($curUser),
         ];
 
         // 补充不参与签名的参数
-        $signParams['sign'] = $this->_sign($signParams);
+        $payParams = $signParams;
+        $payParams['sign'] = $this->_sign($signParams);
+        $payParams['user_id'] = strval($curUser->username);
+        $payParams['id_type'] = "0";
+        $payParams['id_no'] = strval($curUser->id_card);
+        $payParams['card_no'] = strval($bank_card);
+        $payParams['acct_name'] = strval($curUser->realname);
 
         // 如果是连连支付，返回特定 2000 错误码，表示需要绑卡需要跳转连连支付
         $code = 2000;
@@ -262,7 +320,7 @@ class LLPayService extends Object
             'msg' => $msg,
             'status' => $status,
             'bindResult' => $bindResult,
-            'payParams' => $signParams,
+            'payParams' => $payParams,
         ];
     }
 
@@ -317,16 +375,49 @@ class LLPayService extends Object
             ['usable_money', '+', $amount],
             ['total_money', '+', $amount],
         ],false);
+        UserAccount::addLog($uid, UserAccount::TRADE_TYPE_RECHARGE, $amount);
 
         if(empty($affected_row)){
             PayException::throwCodeExt(2223);
         }
 
 
-        Yii::info("Pay Success parameter:" . var_export($bindResult, true), 'koudai.pay.*');
+        Yii::info("Bind Success parameter:" . var_export($bindResult, true), self::LOG_CATEGORY);
     }
 
+
+    public function withdraw($id)
+    {
+        // 非正式环境下，写死返回成功，add by yake
+        if (YII_ENV != 'prod') {
+            return [
+                'httpCode' => 200,
+                'code' => '0',
+                'message' => '',
+            ];
+        }
+
+
+    }
     // -------------- 私有函数开始 --------------
+
+    // 获取风控参数
+    private function _getRiskItem($curUser)
+    {
+        $risk_item = [
+            'frms_ware_category' => "2009",
+            'user_info_mercht_userno' => strval($curUser->username),
+            'user_info_bind_phone' => strval($curUser->username),
+            'user_info_dt_register' => strval(date("YmdHis",$curUser->created_at)),
+            'user_info_full_name' => strval($curUser->realname),
+            'user_info_id_type' => "0",
+            'user_info_id_no' => strval($curUser->id_card),
+            'user_info_identify_state' => "1",
+            'user_info_identify_type' => "3",
+        ];
+
+        return json_encode($risk_item);
+    }
 
     private function _sign($params)
     {
@@ -385,8 +476,9 @@ class LLPayService extends Object
      */
     private function _rsaSign($data)
     {
-        $private_key_file = Yii::getAlias('@common') . '/config/certkey/kd_ll_private_key.pem';
+        $private_key_file = Yii::getAlias('@common') . '/config/cert/kd_ll_private_key.pem';
         if(!file_exists($private_key_file)){
+            Yii::info($private_key_file);
             PayException::throwCodeExt(2225);
         }
 

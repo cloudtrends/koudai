@@ -102,6 +102,8 @@ class AccountController extends BaseController
 				'profits_id' => isset($v['profits']) ? $v['profits']['id'] : 0,
 				'project_name' => $v['project_name'],
 				'invest_money' => $v['invest_money'],
+				// 如果有收益则总额加上收益
+				'total_money' => isset($v['profits']) ? $v['profits']['duein_money'] : $v['invest_money'],
 				'status' => $v['status'],
 				'status_label' => ProjectInvest::$status[$v['status']],
 				'updated_at' => $v['updated_at'],
@@ -131,6 +133,15 @@ class AccountController extends BaseController
 		])->orderBy([
 			'date' => SORT_DESC,
 		])->all();
+		// 这里的id应该改为收益id，便于进入收益详情
+		foreach ($profits as &$pro) {
+			if ($pro['project_type'] == UserDailyProfits::PROJECT_TYPE_KDB) {
+				$pro['id'] = 0;
+			} else {
+				$profitsRes = ProjectProfits::findOne(['invest_id' => $pro['invest_id']]);
+				$pro['id'] = $profitsRes->id;
+			}
+		}
 		
 		return [
 			'code' => 0,
@@ -720,6 +731,7 @@ class AccountController extends BaseController
 			'id','date', 'lastday_profits',
 		])->where([
 			'user_id' => $curUser->id,
+			'project_type' => UserDailyProfits::PROJECT_TYPE_KDB,
 		])->andwhere(
 			'UNIX_TIMESTAMP(date) >= "'.$date.'"'
 		)->orderBy([
@@ -732,7 +744,11 @@ class AccountController extends BaseController
 			$max = current($arr1);
 		}
 		foreach ($data as &$v) {
-			$v['Percentage'] = sprintf('%.3f',($v['lastday_profits']-$min) / ($max-$min));
+			if ($max > $min) {
+				$v['Percentage'] = sprintf('%.3f',($v['lastday_profits']-$min) / ($max-$min));
+			} else {
+				$v['Percentage'] = 1;
+			}
 		}		
 
 		return [

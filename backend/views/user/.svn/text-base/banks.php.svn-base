@@ -26,6 +26,7 @@ $this->showsubmenu('银行卡信息');
 		<th>银行标识</th>
 		<th>银行名称</th>
 		<th>卡号</th>
+		<th>支付平台</th>
 		<th>状态</th>
 		<th>创建时间</th>
 		<th>更新时间</th>
@@ -38,6 +39,7 @@ $this->showsubmenu('银行卡信息');
 		<td><?php echo $value->bank_id; ?></td>
 		<td><?php echo $value->bank_name; ?></td>
 		<td><?php echo $value->card_no; ?></td>
+		<td><?php echo $value->getPlatformLabel(); ?></td>
 		<td><?php echo UserBankCard::$status_desc[$value->status]; ?></td>
 		<td><?php echo date('Y-m-d H:i:s', $value->created_at); ?></td>
 		<td><?php echo date('Y-m-d H:i:s', $value->updated_at); ?></td>

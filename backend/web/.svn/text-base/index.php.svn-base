@@ -2,7 +2,7 @@
 $env = get_cfg_var('env');
 $env = $env ? $env : 'dev';
 defined('YII_ENV') or define('YII_ENV', $env);
-defined('YII_DEBUG') or define('YII_DEBUG', $env == 'dev' ? true : false);
+defined('YII_DEBUG') or define('YII_DEBUG', $env == 'prod' ? false : true);
 
 require(__DIR__ . '/../../vendor/autoload.php');
 require(__DIR__ . '/../../vendor/yiisoft/yii2/Yii.php');

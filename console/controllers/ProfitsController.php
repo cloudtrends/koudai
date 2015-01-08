@@ -568,7 +568,7 @@ class ProfitsController extends BaseController
 					"user_id = {$uid}"
 				)->sum('invest_money');
 				if (!$remark['isExtend'] && $sum && $sum >= ExperienceMoneyAct::$config['extend_invest_money']) {
-					$remark['endDate'] = date(strtotime('+' . ExperienceMoneyAct::$config['extend_profits_time'] . ' day', strtotime($remark['endDate'])));
+					$remark['endDate'] = date('Y-m-d', strtotime('+' . ExperienceMoneyAct::$config['extend_profits_time'] . ' day', strtotime($remark['endDate'])));
 					$remark['isExtend'] = 1;
 					UserAccountLog::updateAll(
 						['remark' => json_encode($remark)],

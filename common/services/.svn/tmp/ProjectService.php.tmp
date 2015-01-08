@@ -3,6 +3,7 @@
 namespace common\services;
 
 use common\helpers\TimeHelper;
+use common\models\CreditBaseInfo;
 use Yii;
 use yii\db\Query;
 use yii\base\Object;
@@ -75,7 +76,7 @@ class ProjectService extends Object
 			// 银行卡扣款
 			if ($invest_pay_money > 0) {
 				$payService = Yii::$container->get('payService');
-				$ret = $payService->pay($invest_pay_money, $curUser->username, Yii::$app->getRequest()->client->clientType);
+				$ret = $payService->pay($curUser,$invest_pay_money, Yii::$app->getRequest()->client->clientType);
 				if ($ret['code'] != '0') {
 					throw new UserException("银行卡支付失败：{$ret['message']}({$ret['code']})", $ret['code']);
 				}
@@ -154,7 +155,7 @@ class ProjectService extends Object
 	 * @throws UserException
 	 * @throws Exception
 	 */
-	public function investProject(Project $project, $money, $invest_pay_money)
+	public function investProject( Project $project, $money, $invest_pay_money)
 	{
 		// 使用余额投资的金额
 		$invest_usable_money = $money - $invest_pay_money;
@@ -213,7 +214,7 @@ class ProjectService extends Object
 			// 银行卡扣款
 			if ($invest_pay_money > 0) {
 				$payService = Yii::$container->get('payService');
-				$ret = $payService->pay($invest_pay_money, $curUser->username, Yii::$app->getRequest()->client->clientType);
+				$ret = $payService->pay($curUser, $invest_pay_money, Yii::$app->getRequest()->client->clientType);
 				if ($ret['code'] != '0') {
 					throw new UserException("银行卡支付失败：{$ret['message']}({$ret['code']})", $ret['code']);
 				}
@@ -525,7 +526,13 @@ class ProjectService extends Object
 				['status' => ProjectProfits::STATUS_REPAYED],
 				['project_id' => $model->id, 'status' => [ProjectProfits::STATUS_SUCCESS, ProjectProfits::STATUS_ASSIGNING]]
 			);
-			
+
+            // 更新转让专区的状态
+            CreditBaseInfo::updateAll(
+                ['status' => CreditBaseInfo::STATUS_REPAYED],
+                ['project_id' => $model->id, 'status' => [CreditBaseInfo::STATUS_ASSIGNING]]
+            );
+
 			$transaction->commit();
 			return true;
 		} catch (\Exception $e) {

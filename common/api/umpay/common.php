@@ -208,7 +208,7 @@ Class SignUtil{
 		    @openssl_sign($plain, $signature, $pkeyid);
 		    // free the key from memory
 		    @openssl_free_key($pkeyid);
-			$log->logInfo("Signature string for：".$signature);
+			//$log->logInfo("Signature string for：".$signature);
 		    return base64_encode($signature);
     	}catch(Exception $e){
     		$log->logInfo("Signature attestation failure".$e->getMessage());
@@ -247,7 +247,7 @@ Class SignUtil{
     		@openssl_sign($plain, $signature, $pkeyid);
     		// free the key from memory
     		@openssl_free_key($pkeyid);
-    		$log->logInfo("Signature string for：".$signature);
+    		//$log->logInfo("Signature string for：".$signature);
     		return base64_encode($signature);
     	}catch(Exception $e){
     		$log->logInfo("Signature attestation failure".$e->getMessage());

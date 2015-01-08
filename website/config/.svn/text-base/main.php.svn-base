@@ -32,7 +32,7 @@ return [
         	// 与后台区分开会话key，保证前后台能同时单独登录
         	'name' => 'SESSIONID',
         	'timeout' => 24 * 3600,
-            'keyPrefix' => substr(md5("app-website"), 0, 5),
+            'keyPrefix' => substr(md5("app-frontend"), 0, 5),
         ],
         'log' => [
             'traceLevel' => YII_DEBUG ? 3 : 0,

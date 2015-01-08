@@ -57,7 +57,7 @@
 }
 #footer_content {
 	width:1190px;
-	height:120px;
+	height:180px;
 	margin:0 auto;
 	padding-top: 10px;
 }
@@ -119,6 +119,12 @@
 	display: inline;
 	float: right;
 }
+#copyright {
+	clear: both;
+	text-align: center;
+	font:14px microsoft Yahei;
+	line-height:50px;
+}
 </style>
 <div id="wrap">
 		<div id="header">
@@ -161,6 +167,7 @@
 					</ul>
 				</div>
 				<img src="<?php echo Yii::$app->getRequest()->getAbsoluteBaseUrl(); ?>/image/site/service_phone.png" class="alignright">
+				<div id="copyright">@2014 版权所有 上海凌融网络科技有限公司 沪ICP备14052872号-2</div>
 			</div>
 		</div>
 	</div>

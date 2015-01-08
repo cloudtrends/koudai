@@ -11,6 +11,8 @@ use common\models\UserBankCard;
 use common\models\UserLoginLog;
 use common\models\NoticeSms;
 use common\models\UserDetail;
+use common\models\BankConfig;
+use common\models\UserUnbindCard;
 
 /**
  * User controller
@@ -71,7 +73,17 @@ class UserController extends BaseController
      */
     public function actionDetailList()
     {
-    	$condition = [];
+    	$search = [];
+    	$condition = '1=1';
+    	if ($this->request->get('search_submit')) {
+    		$search = $this->request->get();
+    		if (isset($search['id']) && $search['id'] != '' ) {
+    			$condition .= " AND user_id = " . intval($search['id']);
+    		}
+    		if (isset($search['username']) && $search['username'] != '') {
+    			$condition .= " AND username LIKE '%" . trim($search['username']) . "%'";
+    		}
+    	}
     	$query = UserDetail::find()->where($condition)->orderBy('id desc');
     	$countQuery = clone $query;
     	$pages = new Pagination(['totalCount' => $countQuery->count()]);
@@ -159,13 +171,40 @@ class UserController extends BaseController
     	$bank = UserBankCard::findOne(['user_id' => $user->id]);
     	
     	$payService = Yii::$container->get('payService');
-    	$ret = $payService->unBindCard($bank['bind_phone']);
+    	if ($bank->third_platform == BankConfig::PLATFORM_UMPAY) {
+    		$ret = $payService->unBindCard($bank['bind_phone']);
+    	} else {
+    		// 连连的卡解绑先直接在我们这置为未绑定，暂不真实调用第三方支付解绑
+    		$ret['code'] = 0;
+    	}
     	
     	if ($ret['code'] == 0 or $ret['code'] == "00060064") {
+    		$no_agree = $bank->no_agree;
+    		$no_order = $bank->no_order;
+    		
     		$bank->status = UserBankCard::STATUS_UNBIND;
+    		$bank->no_agree = '';
+    		$bank->no_order = '';
     		$user->card_bind_status = UserBankCard::STATUS_UNBIND;
     		$user->save();
     		$bank->save();
+    		
+    		// 把解绑的卡存到另一个表中，方便以后有需要
+    		$unbindCard = new UserUnbindCard();
+    		$unbindCard->no_agree = $no_agree;
+    		$unbindCard->no_order = $no_order;
+    		$unbindCard->user_id = $bank->user_id;
+    		$unbindCard->user_account_id = $bank->user_account_id;
+    		$unbindCard->bank_id = $bank->bank_id;
+    		$unbindCard->bank_name = $bank->bank_name;
+    		$unbindCard->bank_detail = $bank->bank_detail;
+    		$unbindCard->bind_phone = $bank->bind_phone;
+    		$unbindCard->bind_result = $bank->bind_result;
+    		$unbindCard->third_platform = $bank->third_platform;
+    		$unbindCard->card_no = $bank->card_no;
+    		$unbindCard->status = $bank->status;
+    		$unbindCard->save();
+    		
     		return $this->redirectMessage('解绑成功', self::MSG_SUCCESS);
     	} else {
     		return $this->redirectMessage("解绑失败，code:{$ret['code']},message:{$ret['message']}", self::MSG_ERROR);
@@ -181,10 +220,10 @@ class UserController extends BaseController
         $condition = '1=1';
         if ($this->request->get('search_submit')) {
             $search = $this->request->get();
-            if ($search['id'] != '' ) {
+            if (isset($search['id']) && $search['id'] != '' ) {
         		$condition .= " AND id = " . intval($search['id']);
             }
-            if ($search['username'] != '') {
+            if (isset($search['username']) && $search['username'] != '') {
         		$condition .= " AND username LIKE '%" . trim($search['username']) . "%'";
             }
         }

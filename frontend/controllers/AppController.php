@@ -2,6 +2,7 @@
 namespace frontend\controllers;
 
 
+use common\services\PayService;
 use Yii;
 use yii\base\UserException;
 use common\models\Setting;
@@ -25,7 +26,7 @@ class AppController extends BaseController
 	 */
     public function actionConfig($configVersion)
     {
-        $confVer = strtotime('2014-12-03 20:00:04');
+        $confVer = strtotime('2015-01-07 20:00:01');
         if ($configVersion == $confVer) {
             throw new UserException('配置无更新');
         }
@@ -43,6 +44,10 @@ class AppController extends BaseController
             'companyEmail'		=> 'hr@koudailc.com',
             'companyAbout'		=> '口袋理财成立于2014年12月，注册资金500万元。公司以改善普通大众理财习惯为己任，以丰富普通大众理财渠道及保障投资人债权权益为企业核心价值观，旨在通过互联网技术和严格的风险控制管理技术为广大投资者带来更高、更稳健的投资收益。让普惠金融惠及更多的人民群众，实现金融民主化的目标。',
             'warrantWords'		=> '工商银行监管风险准备金',
+            // ios是否展示启动广告
+            'showLaunchImg'		=> 1,
+            // android是否展示启动广告
+            'showLaunchImgArd'	=> 1,
             'dataUrl'			=> [
                 'getIndex' => "{$baseUrl}/app/index",
                 'getLaunchImg' => "{$baseUrl}/app/launch-img",
@@ -188,9 +193,9 @@ class AppController extends BaseController
 		$baseUrl = $this->getRequest()->getHostInfo() . $this->getRequest()->getBaseUrl();
 		return [
 			'code' => 0,
-			// 'url' => $baseUrl . '/attachment/launch.jpg',
-			'url' => '',
-			'version' => strtotime('2014-11-29 20:00:00'),
+			'url' => $baseUrl . '/attachment/launch2.jpg',
+			//'url' => '',
+			'version' => strtotime('2015-01-08 20:00:01'),
 		];
 	}
 	
@@ -309,7 +314,7 @@ class AppController extends BaseController
 	public function actionPayNotify()
 	{
         $get = Yii::$app->getRequest()->get();
-        Yii::info("\nPayNotify get:" . var_export($get,true), 'koudai.pay.*');
+        Yii::info("\nPayNotify get:" . var_export($get,true), PayService::LOG_CATEGORY);
         
         $payService = Yii::$container->get('payService');
         $result = $payService->withdrawHandleNotify($get);

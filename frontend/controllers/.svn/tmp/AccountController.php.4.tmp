@@ -19,6 +19,7 @@ use common\models\UserBankCard;
 use common\helpers\TimeHelper;
 use common\models\KdbInfo;
 use common\models\Order;
+use common\models\BankConfig;
 
 /**
  * Account controller
@@ -101,6 +102,8 @@ class AccountController extends BaseController
 				'profits_id' => isset($v['profits']) ? $v['profits']['id'] : 0,
 				'project_name' => $v['project_name'],
 				'invest_money' => $v['invest_money'],
+				// 如果有收益则总额加上收益
+				'total_money' => isset($v['profits']) ? $v['profits']['duein_money'] : $v['invest_money'],
 				'status' => $v['status'],
 				'status_label' => ProjectInvest::$status[$v['status']],
 				'updated_at' => $v['updated_at'],
@@ -130,6 +133,15 @@ class AccountController extends BaseController
 		])->orderBy([
 			'date' => SORT_DESC,
 		])->all();
+		// 这里的id应该改为收益id，便于进入收益详情
+		foreach ($profits as &$pro) {
+			if ($pro['project_type'] == UserDailyProfits::PROJECT_TYPE_KDB) {
+				$pro['id'] = 0;
+			} else {
+				$profitsRes = ProjectProfits::findOne(['invest_id' => $pro['invest_id']]);
+				$pro['id'] = $profitsRes->id;
+			}
+		}
 		
 		return [
 			'code' => 0,
@@ -334,6 +346,8 @@ class AccountController extends BaseController
 				'total_hold_money' => $curUser->account->getTotalHoldMoney(),
 				// 口袋宝总额
 				'kdb_total_money' => $curUser->account->kdb_total_money,
+				// 口袋宝体验金
+				'kdb_experience_money' => $curUser->account->kdb_experience_money,
 				// 口袋宝总收益
 				'kdb_total_profits' => $curUser->account->kdb_total_profits,
 				// 申购中冻结金额
@@ -394,12 +408,18 @@ class AccountController extends BaseController
 	public function actionRemain()
 	{
 		$curUser = Yii::$app->user->identity;
+		// 是否要显示充值根据第三方支付判断
+		$card = UserBankCard::findOne([
+			'user_id' => $curUser->id,
+			'status' => UserBankCard::STATUS_BIND
+		]);
 		return [
 			'code' => 0,
 			'data' => [
 				'money' => $curUser->account->usable_money + $curUser->account->withdrawing_money,
 				'usable_money' => $curUser->account->usable_money,
 				'withdrawing_money' => $curUser->account->withdrawing_money,
+				'recharge_enable' => ($card && $card->third_platform == BankConfig::PLATFORM_LLPAY) ? 1 : 0,
 			],
 		];
 	}
@@ -532,7 +552,7 @@ class AccountController extends BaseController
 	{
 		$curUser = Yii::$app->user->identity;
 		$cards = UserBankCard::find()->select(
-			['bank_id', 'bank_name', 'card_no']
+			['bank_id', 'bank_name', 'card_no', 'third_platform']
 		)->where(['user_id' => $curUser->id])->asArray()->all();
 		$banks = [];
 		if ($cards) {
@@ -547,6 +567,8 @@ class AccountController extends BaseController
 		return [
 			'code' => 0,
 			'usable_money' => $curUser->account->usable_money,
+			// 现在只能绑一张卡，所以只有一个第三方支付类型
+			'third_platform' => $cards ? $cards[0]['third_platform'] : 0,
 			'banks' => $banks,
 		];
 	}
@@ -709,6 +731,7 @@ class AccountController extends BaseController
 			'id','date', 'lastday_profits',
 		])->where([
 			'user_id' => $curUser->id,
+			'project_type' => UserDailyProfits::PROJECT_TYPE_KDB,
 		])->andwhere(
 			'UNIX_TIMESTAMP(date) >= "'.$date.'"'
 		)->orderBy([
@@ -721,7 +744,11 @@ class AccountController extends BaseController
 			$max = current($arr1);
 		}
 		foreach ($data as &$v) {
-			$v['Percentage'] = sprintf('%.3f',($v['lastday_profits']-$min) / ($max-$min));
+			if ($max > $min) {
+				$v['Percentage'] = sprintf('%.3f',($v['lastday_profits']-$min) / ($max-$min));
+			} else {
+				$v['Percentage'] = 1;
+			}
 		}		
 
 		return [
@@ -732,22 +759,28 @@ class AccountController extends BaseController
 	}
 
     /**
-     * 根据用户ID获取未读信息
-     * @name 未读信息列表 [accountNoticeList]
+     * 根据用户ID获取消息列表
+     * @name 消息列表 [accountNoticeList]
+     * @param integer $page 第几页
+     * @param integer $pageSize 每页个数
      * @return array
      */
-    public function actionNoticeList()
+    public function actionNoticeList($page = 1, $pageSize = 15)
     {
-        $curUser = Yii::$app->user->identity;
-        $data = NoticeSms::findNewNotice($curUser->account->user_id);
-        $projects = [];
-        foreach ($data as $dataVal ) {
-            $projects[] = [
-                'id' => $dataVal['id'],
-                'type' => $dataVal['type'],
-                'remark' => $dataVal['remark'],
-                'created_at' => $dataVal['created_at'],
-            ];
+        $user_id = Yii::$app->user->id;
+
+        $data = NoticeSms::findNewNotice($user_id, $page, $pageSize);
+        $projects = array();
+        if (!empty($data)){
+            NoticeSms::UpdateNoticeReadStatus($user_id);
+            foreach ($data as $dataVal ) {
+                $projects[] = [
+                    'id' => $dataVal['id'],
+                    'type' => $dataVal['type'],
+                    'remark' => $dataVal['remark'],
+                    'created_at' => $dataVal['created_at'],
+                ];
+            }
         }
 
         return [

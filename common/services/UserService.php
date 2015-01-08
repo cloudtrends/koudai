@@ -121,19 +121,21 @@ class UserService extends Object
 			// 创建资金数据
 			$account = new UserAccount();
 			$account->user_id = $user->id;
-			// 注册送体验金
-			$account->kdb_experience_money = ExperienceMoneyAct::$config['money'];
-			$account->total_money = ExperienceMoneyAct::$config['money'];
+			// 注册送体验金，先不上这个功能
+// 			$account->kdb_experience_money = ExperienceMoneyAct::$config['money'];
+// 			$account->total_money = ExperienceMoneyAct::$config['money'];
 			$account->created_at = time();
 			$account->updated_at = $account->created_at;
 			$account->save();
 			
 			// 记录日志，并把计息开始时间和结束时间记录在remark字段
-			$startDate = date('Y-m-d', strtotime('+1 day'));
-			$endDate = date('Y-m-d', strtotime('+' . ExperienceMoneyAct::$config['profits_time'] . ' day'));
-			$isExtend = 0;
-			$remark = json_encode(['startDate' => $startDate, 'endDate' => $endDate, 'isExtend' => $isExtend]);
-			UserAccount::addLog($user->id, UserAccount::TRADE_TYPE_KDB_EXP_MONEY_IN, $account->kdb_experience_money, $remark);
+			if (!empty($account->kdb_experience_money)) {
+				$startDate = date('Y-m-d', strtotime('+1 day'));
+				$endDate = date('Y-m-d', strtotime('+' . ExperienceMoneyAct::$config['profits_time'] . ' day'));
+				$isExtend = 0;
+				$remark = json_encode(['startDate' => $startDate, 'endDate' => $endDate, 'isExtend' => $isExtend]);
+				UserAccount::addLog($user->id, UserAccount::TRADE_TYPE_KDB_EXP_MONEY_IN, $account->kdb_experience_money, $remark);
+			}
 			
 			// 保存用户详细信息
 			$request = Yii::$app->getRequest();
@@ -263,7 +265,8 @@ class UserService extends Object
 	 */
 	public function optionNeedCaptcha(User $user, $type, $params)
 	{
-		if ($params['use_remain'] == 0 || $params['money'] - $user->account->usable_money > 0) {
+		$money = intval(bcmul($params['money'], 100));
+		if ($params['use_remain'] == 0 || $money - $user->account->usable_money > 0) {
 			return true;
 		} else {
 			return false;

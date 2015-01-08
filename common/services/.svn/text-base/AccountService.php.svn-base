@@ -3,6 +3,9 @@
 namespace common\services;
 
 use common\exceptions\InvestException;
+use common\exceptions\PayException;
+use common\models\BankConfig;
+use common\models\UserBankCard;
 use Yii;
 use yii\base\Object;
 use yii\base\UserException;
@@ -11,11 +14,25 @@ use common\models\UserWithdraw;
 use common\models\UserAccount;
 use common\models\NoticeSms;
 
+use common\services\LLPayService;
+use common\services\PayService;
 /**
  * 用户资金模块service
  */
 class AccountService extends Object
 {
+    // LLPayService
+    protected $payService;
+    protected $llPayService;
+
+    public function __construct(PayService $payService, LLPayService $llPayService, $config = [])
+    {
+        $this->payService = $payService;
+        $this->llPayService = $llPayService;
+
+        parent::__construct($config);
+    }
+
 	/**
 	 * 申请提现
 	 * 成功返回时间，金额，手续费（手续费暂定免费）
@@ -58,36 +75,45 @@ class AccountService extends Object
 	{
 		$transaction = Yii::$app->db->beginTransaction();
 		try {
-            //Yii::
-            $payService = Yii::$container->get('payService');
-            $ret = $payService->withdraw(
-                $id,
-                $money,
-                $phone_no
-            );
-            if( $ret['code'] != 0 ){
-                InvestException::throwCodeAndMsg($ret['code'], $ret['message']);
+            $withdraw = UserWithdraw::findOne($id);
+            $uid = $withdraw->user_id; // 查找用户ID对应的绑卡平台
+            $existBankCard = UserBankCard::findOne(['user_id' => $uid]);
+            if( empty($existBankCard) or empty($existBankCard['third_platform']) )
+            {
+                PayException::throwCodeExt(2401);
             }
 
-			$withdraw = UserWithdraw::findOne($id);
-// 			$withdraw->status = UserWithdraw::UMP_PAY_SUCCESS;
+            $third_platform = $existBankCard['third_platform'];
+            if( $third_platform == BankConfig::PLATFORM_UMPAY )
+            {
+                //$payService = Yii::$container->get('payService');
+                $ret = $this->payService->withdraw(
+                    $id,
+                    $money,
+                    $phone_no
+                );
+                if( $ret['code'] != 0 ){
+                    InvestException::throwCodeAndMsg($ret['code'], $ret['message']);
+                }
+            }
+            else if ( $third_platform == BankConfig::PLATFORM_LLPAY )
+            {
+                $ret = $this->llPayService->withdraw(
+                    $id,
+                    $money,
+                    $phone_no
+                );
+                if( $ret['code'] != 0 ){
+                    InvestException::throwCodeAndMsg($ret['code'], $ret['message']);
+                }
+            }
+
+
 			$withdraw->review_username = $review_username;
 			$withdraw->review_time = time();
 			$withdraw->review_result = UserWithdraw::REVIEW_STATUS_APPROVE;
 			$withdraw->save();
-// 			if ($withdraw->save()) {
-// 				UserAccount::updateAccount($withdraw->user_id, [
-// 					['withdrawing_money', '-', $withdraw->money],
-// 					['total_money', '-', $withdraw->money],
-// 				]);
-// 				UserAccount::addLog($withdraw->user_id, UserAccount::TRADE_TYPE_WITHDRAW, $withdraw->money);
-// 			} else {
-// 				throw new \Exception('提现记录修改失败');
-// 			}
-//             /** 记录NoticeSms 提现成功 JohnnyLin */
-//             NoticeSms::instance()->init_sms_str($withdraw->user_id,NoticeSms::NOTICE_DRAWAL,array('money'=>$withdraw->money));
-
-			$transaction->commit();
+			$transaction->rollBack();
 			return true;
 		} catch (\Exception $e) {
 			$transaction->rollBack();

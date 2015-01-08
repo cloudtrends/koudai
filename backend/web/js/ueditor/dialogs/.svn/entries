@@ -1,7 +1,7 @@
 10
 
 dir
-6123
+6459
 svn://218.244.142.166/repos/project/koudai/php_code/backend/web/js/ueditor/dialogs
 svn://218.244.142.166/repos
 
@@ -26,10 +26,10 @@ liumin
 
 2512e77a-f209-4e56-bd4a-def6d2bcc206
 
-insertframe
+background
 dir
 
-background
+insertframe
 dir
 
 music
@@ -41,13 +41,10 @@ dir
 image
 dir
 
-gmap
-dir
-
 charts
 dir
 
-table
+gmap
 dir
 
 internal.js
@@ -84,10 +81,13 @@ liumin
 
 2682
 
-help
+table
 dir
 
 attachment
+dir
+
+help
 dir
 
 scrawl
@@ -96,10 +96,10 @@ dir
 link
 dir
 
-searchreplace
+snapscreen
 dir
 
-snapscreen
+searchreplace
 dir
 
 video

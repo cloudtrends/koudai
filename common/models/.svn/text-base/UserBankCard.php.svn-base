@@ -45,4 +45,15 @@ class UserBankCard extends \yii\db\ActiveRecord
     	}
     	return [];
     }
+    
+    public function getPlatformLabel()
+    {
+    	if ($this->third_platform == BankConfig::PLATFORM_LLPAY) {
+    		return '连连';
+    	} else if ($this->third_platform == BankConfig::PLATFORM_UMPAY) {
+    		return '联动';
+    	} else {
+    		return '';
+    	}
+    }
 }

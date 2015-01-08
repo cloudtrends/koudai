@@ -8,24 +8,18 @@
 
 namespace frontend\controllers;
 
-use common\helpers\StringHelper;
-use common\models\User;
-use common\models\UserAccount;
-use common\models\UserCharge;
 use Yii;
 use common\exceptions\PayException;
-use common\helpers\TimeHelper;
-use common\models\UserBankCard;
 use common\services\LLPayService;
 use yii\base\Exception;
 
 class NotifyController extends BaseController
 {
     protected $llPayService;
+
     public function __construct($id, $module, LLPayService $llPayService,$config = [])
     {
         $this->llPayService = $llPayService;
-
         parent::__construct($id, $module, $config);
     }
 
@@ -45,8 +39,8 @@ class NotifyController extends BaseController
             ];
         }
         catch(PayException $e) {
-            Yii::info("Pay Failed, parameter:" . var_export($bindResult, true), 'koudai.pay.*');
-            Yii::info("Pay Failed, code=" . $e->getCode() . ",message=" . $e->getMessage(), 'koudai.pay.*');
+            Yii::info("Bind Failed, parameter:" . var_export($bindResult, true), LLPayService::LOG_CATEGORY);
+            Yii::info("Bind Failed, code=" . $e->getCode() . ",message=" . $e->getMessage(), LLPayService::LOG_CATEGORY);
             throw $e;
         }
     }
@@ -68,7 +62,8 @@ class NotifyController extends BaseController
             ];
         }
         catch(Exception $e) {
-            Yii::info("Charge Failed, chargeResult:" . var_export($chargeResult, true), 'koudai.pay.*');
+            Yii::info("Charge Failed, chargeResult:" . var_export($chargeResult, true), LLPayService::LOG_CATEGORY);
+            Yii::info("Charge Failed, code=" . $e->getCode() . ",message=" . $e->getMessage(), LLPayService::LOG_CATEGORY);
             throw $e;
         }
     }
@@ -76,9 +71,9 @@ class NotifyController extends BaseController
     private function getLLPayResp()
     {
         $str = file_get_contents("php://input");
-        Yii::info($str,'koudai.pay.*');
+        Yii::info($str,LLPayService::LOG_CATEGORY);
         $resp = json_decode($str, true);
-        Yii::info(var_export($resp,true),'koudai.pay.*');
+        Yii::info(var_export($resp,true),LLPayService::LOG_CATEGORY);
 
         if(empty($resp)){
             PayException::throwCodeExt(2104);

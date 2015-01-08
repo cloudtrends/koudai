@@ -229,22 +229,20 @@ class KoudaibaoController extends BaseController
 			PayException::throwCodeExt(2101);
 		}
 
-		if (!($this->client->clientType == 'ios' && $this->client->appVersion == '1.0.1')) {
-			// 验证签名
-			$params = $this->request->post();
-			$sign = $this->request->post('sign');
-			if (!Order::validateSign($params, $sign)) {
-				throw new UserException('请求签名无效，请按正常流程重试', 3001);
-			}
-			
-			// 验证订单
-			$order_id = $this->request->post('order_id');
-			$order = Order::findOne(['order_id' => $order_id]);
-			if (!$order) {
-				throw new UserException('请求无效，请按正常流程重试', 3002);
-			} else if (!$order->getCanCommit()) {
-				throw new UserException('您的请求已处理完成，请勿重复提交', 3003);
-			}
+		// 验证签名
+		$params = $this->request->post();
+		$sign = $this->request->post('sign');
+		if (!Order::validateSign($params, $sign)) {
+			throw new UserException('请求签名无效，请按正常流程重试', 3001);
+		}
+		
+		// 验证订单
+		$order_id = $this->request->post('order_id');
+		$order = Order::findOne(['order_id' => $order_id]);
+		if (!$order) {
+			throw new UserException('请求无效，请按正常流程重试', 3002);
+		} else if (!$order->getCanCommit()) {
+			throw new UserException('您的请求已处理完成，请勿重复提交', 3003);
 		}
 		
 		// 加锁，如果已经有锁，则抛异常失败
@@ -281,10 +279,10 @@ class KoudaibaoController extends BaseController
 			}
 			
 			if ($result) {
-				if (!($this->client->clientType == 'ios' && $this->client->appVersion == '1.0.1')) {
-					$order->status = Order::STATUS_SUCCESS;
-					$order->save(false);
-				}
+				// 修改订单状态
+				$order->status = Order::STATUS_SUCCESS;
+				$order->save(false);
+				
 				// 删除验证码
 				UserCaptcha::deleteAll(['phone' => $curUser->username, 'type' => UserCaptcha::TYPE_INVEST_KDB]);
 				// 释放锁
@@ -317,10 +315,10 @@ class KoudaibaoController extends BaseController
 				throw new UserException('投资失败，请稍后再试');
 			}
 		} catch (\Exception $e) {
-			if (!($this->client->clientType == 'ios' && $this->client->appVersion == '1.0.1')) {
-				$order->status = Order::STATUS_FAILED;
-				$order->save(false);
-			}
+			// 修改订单状态
+			$order->status = Order::STATUS_FAILED;
+			$order->save(false);
+			
 			$curUser->releaseTradeLock();
 			throw $e;
 		}
@@ -355,7 +353,7 @@ class KoudaibaoController extends BaseController
 			} else {
 				$kdb = KdbInfo::findKoudai();
 				if ($money > $kdb->daily_withdraw_limit - $curUser->account->getTodayRolloutTotal()) {
-					throw new UserException('您已超过单日转出限额，请明天再试');
+					throw new UserException('您已超过单日转出限额' . ($kdb->daily_withdraw_limit / 100) . '元，请明天再试');
 				}
 			}
 			

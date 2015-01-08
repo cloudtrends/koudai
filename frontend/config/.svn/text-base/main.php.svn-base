@@ -46,6 +46,12 @@ return [
                     'categories' => ['koudai.pay.*'],
                     'logFile' => '@runtime/logs/notify.log',
                     'logVars' => [],
+                ],[
+                    'class' => 'yii\log\FileTarget',
+                    'levels' => ['error', 'info'],
+                    'categories' => ['koudai.llpay.*'],
+                    'logFile' => '@runtime/logs/llnotify.log',
+                    'logVars' => [],
                 ],
                 [
                     'class' => 'yii\log\FileTarget',

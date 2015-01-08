@@ -30,7 +30,7 @@ th {border-right: 1px dotted #deeffb;}
 		<th rowspan="2">姓名</th>
 		<th rowspan="2">总资产</th>
 		<th colspan="2" style="text-align:center;">账户余额</th>
-		<th colspan="4" style="text-align:center;">持有资产</th>
+		<th colspan="5" style="text-align:center;">持有资产</th>
 		<th colspan="2" style="text-align:center;">昨日总收益</th>
 		<th rowspan="2">口袋宝累计收益</th>
 		<th rowspan="2" style="border-right:none;">所有累计收益</th>
@@ -38,9 +38,10 @@ th {border-right: 1px dotted #deeffb;}
 	<tr class="header">
 		<th>可用余额</th>
 		<th>提现中余额</th>
-		<th>投资中金额（冻结）</th>
+		<th>投资中金额</th>
 		<th>待收本金</th>
 		<th>待收收益</th>
+		<th>口袋宝体验金</th>
 		<th>口袋宝总额</th>
 		<th>昨日项目收益</th>
 		<th>昨日口袋宝收益</th>
@@ -56,6 +57,7 @@ th {border-right: 1px dotted #deeffb;}
 		<td><?php echo sprintf('%.2f', $value->investing_money / 100); ?></td>
 		<td><?php echo sprintf('%.2f', $value->duein_capital / 100); ?></td>
 		<td><?php echo sprintf('%.2f', $value->duein_profits / 100); ?></td>
+		<td><?php echo sprintf('%.2f', $value->kdb_experience_money / 100); ?></td>
 		<td><?php echo sprintf('%.2f', $value->kdb_total_money / 100); ?></td>
 		<td><?php echo sprintf('%.2f', $value->lastday_proj_profits	 / 100); ?></td>
 		<td><?php echo sprintf('%.2f', $value->lastday_kdb_profits / 100); ?></td>

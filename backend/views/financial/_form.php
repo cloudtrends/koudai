@@ -275,7 +275,7 @@ $(function(){
         //获取选择的值
         var pid = $(this).val();
         //得到当前的select对象
-        var $_this = $(this);
+        // var $_this = $(this);
         //ajax操作
         $.ajax({
             url:'<?php echo Url::to(['financial/load-project']); ?>',

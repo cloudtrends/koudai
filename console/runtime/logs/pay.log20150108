@@ -1,0 +1,38 @@
+[2015-01-08 03:00:01]-[]-[data] :Request Para=array (
+  'service' => 'query_account_balance',
+  'sign_type' => 'RSA',
+  'mer_id' => '25116',
+  'version' => '4.0',
+  'charset' => 'UTF-8',
+)
+[2015-01-08 03:00:01]-[]-[data] :Participate in the signature parameters：[charset=UTF-8&mer_id=25116&service=query_account_balance&version=4.0],Merchant number is：[25116]
+[2015-01-08 03:00:01]-[]-[data] :The private key path for：/opt/lampp/htdocs/common/config/cert/25116_wenzhoudai.key.pem
+[2015-01-08 03:00:01]-[]-[data] :Request platform way=get
+[2015-01-08 03:00:01]-[]-[data] :Request platform signature string=oI0T/j+oLEUOfacWWN1cTluXA/CIJUYXUxLKeWZfX5+MLCopTG72NMxekTNOsytaFILtYrLt1sLtQPGalY8PwVV8b7he0R7HhdysGBkF6869+ue86G0dfnKg6tbVf9kUOG4UKu8ibKOXityHwmF+yJzvQ9gtFwybwRS4G47JqvI=
+[2015-01-08 03:00:01]-[]-[data] :Clear information request platform=charset=UTF-8&mer_id=25116&service=query_account_balance&version=4.0
+[2015-01-08 03:00:01]-[]-[data] :The service query_account_balance request platform to get the address url=http://pay.soopay.net/spay/pay/payservice.do?charset=UTF-8&mer_id=25116&service=query_account_balance&sign_type=RSA&version=4.0&sign=oI0T/j+oLEUOfacWWN1cTluXA/CIJUYXUxLKeWZfX5+MLCopTG72NMxekTNOsytaFILtYrLt1sLtQPGalY8PwVV8b7he0R7HhdysGBkF6869+ue86G0dfnKg6tbVf9kUOG4UKu8ibKOXityHwmF+yJzvQ9gtFwybwRS4G47JqvI=
+[2015-01-08 03:00:01]-[]-[data] :plat response mer data:bal_sign=000000000050251663&mer_id=25116&ret_code=0000&ret_msg=查询成功&sign_type=RSA&version=4.0&sign=oDneuWTI/HR1VhWWMSouK1hITay28ifq/ZbMhh7SD4uGCQRNslR+p8WtSl/8xGo10XCz64E/jS4tftTj/ZZ8NzTPLQx5X9yl9gY1O/QAsmcaRYHNpyKOODURNNZj61QwcaZ7znAHWV6Co32nrYEM4RYJKLVxgVqVbxXAKZuAvN4=
+[2015-01-08 03:00:01]-[]-[data] :interface fields:merId,goodsId,orderId,merDate,retCode,retMsg,version,sign
+[2015-01-08 03:00:01]-[]-[data] :response sign=bal_sign=000000000050251663&mer_id=25116&ret_code=0000&ret_msg=查询成功&sign_type=RSA&version=4.0
+[2015-01-08 03:00:01]-[]-[data] :response sign=oDneuWTI/HR1VhWWMSouK1hITay28ifq/ZbMhh7SD4uGCQRNslR+p8WtSl/8xGo10XCz64E/jS4tftTj/ZZ8NzTPLQx5X9yl9gY1O/QAsmcaRYHNpyKOODURNNZj61QwcaZ7znAHWV6Co32nrYEM4RYJKLVxgVqVbxXAKZuAvN4=
+[2015-01-08 03:00:01]-[]-[data] :response plain=bal_sign=000000000050251663&mer_id=25116&ret_code=0000&ret_msg=查询成功&version=4.0
+[2015-01-08 03:00:01]-[]-[data] :verify:1
+[2015-01-08 03:00:01]-[]-[data] :Request Para=array (
+  'service' => 'query_account_balance',
+  'sign_type' => 'RSA',
+  'mer_id' => '25116',
+  'version' => '4.0',
+  'charset' => 'UTF-8',
+)
+[2015-01-08 03:00:01]-[]-[data] :Participate in the signature parameters：[charset=UTF-8&mer_id=25116&service=query_account_balance&version=4.0],Merchant number is：[25116]
+[2015-01-08 03:00:01]-[]-[data] :The private key path for：/opt/lampp/htdocs/common/config/cert/25116_wenzhoudai.key.pem
+[2015-01-08 03:00:01]-[]-[data] :Request platform way=get
+[2015-01-08 03:00:01]-[]-[data] :Request platform signature string=oI0T/j+oLEUOfacWWN1cTluXA/CIJUYXUxLKeWZfX5+MLCopTG72NMxekTNOsytaFILtYrLt1sLtQPGalY8PwVV8b7he0R7HhdysGBkF6869+ue86G0dfnKg6tbVf9kUOG4UKu8ibKOXityHwmF+yJzvQ9gtFwybwRS4G47JqvI=
+[2015-01-08 03:00:01]-[]-[data] :Clear information request platform=charset=UTF-8&mer_id=25116&service=query_account_balance&version=4.0
+[2015-01-08 03:00:01]-[]-[data] :The service query_account_balance request platform to get the address url=http://pay.soopay.net/spay/pay/payservice.do?charset=UTF-8&mer_id=25116&service=query_account_balance&sign_type=RSA&version=4.0&sign=oI0T/j+oLEUOfacWWN1cTluXA/CIJUYXUxLKeWZfX5+MLCopTG72NMxekTNOsytaFILtYrLt1sLtQPGalY8PwVV8b7he0R7HhdysGBkF6869+ue86G0dfnKg6tbVf9kUOG4UKu8ibKOXityHwmF+yJzvQ9gtFwybwRS4G47JqvI=
+[2015-01-08 03:00:01]-[]-[data] :plat response mer data:bal_sign=000000000050251663&mer_id=25116&ret_code=0000&ret_msg=查询成功&sign_type=RSA&version=4.0&sign=oDneuWTI/HR1VhWWMSouK1hITay28ifq/ZbMhh7SD4uGCQRNslR+p8WtSl/8xGo10XCz64E/jS4tftTj/ZZ8NzTPLQx5X9yl9gY1O/QAsmcaRYHNpyKOODURNNZj61QwcaZ7znAHWV6Co32nrYEM4RYJKLVxgVqVbxXAKZuAvN4=
+[2015-01-08 03:00:01]-[]-[data] :interface fields:merId,goodsId,orderId,merDate,retCode,retMsg,version,sign
+[2015-01-08 03:00:01]-[]-[data] :response sign=bal_sign=000000000050251663&mer_id=25116&ret_code=0000&ret_msg=查询成功&sign_type=RSA&version=4.0
+[2015-01-08 03:00:01]-[]-[data] :response sign=oDneuWTI/HR1VhWWMSouK1hITay28ifq/ZbMhh7SD4uGCQRNslR+p8WtSl/8xGo10XCz64E/jS4tftTj/ZZ8NzTPLQx5X9yl9gY1O/QAsmcaRYHNpyKOODURNNZj61QwcaZ7znAHWV6Co32nrYEM4RYJKLVxgVqVbxXAKZuAvN4=
+[2015-01-08 03:00:01]-[]-[data] :response plain=bal_sign=000000000050251663&mer_id=25116&ret_code=0000&ret_msg=查询成功&version=4.0
+[2015-01-08 03:00:01]-[]-[data] :verify:1

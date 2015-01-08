@@ -17,6 +17,7 @@ class TimeHelper
     public static function getLimitDay(){
         return 5 * self::DAY;
     }
+
     public static function isLT30Days($timeA, $timeB)
     {
         $timeA = self::zeroClockTimeOfDay($timeA);

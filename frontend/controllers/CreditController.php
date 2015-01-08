@@ -117,7 +117,7 @@ class CreditController extends BaseController
             "count(1) as accumulatedCount,
             sum(duein_capital) as accumulatedAmount
             FROM tb_project_profits
-            WHERE status = " . ProjectProfits::STATUS_SUCCESS.
+            WHERE status in (".ProjectProfits::STATUS_SUCCESS. ",".ProjectProfits::STATUS_REPAYED." )".
             " AND is_transfer = 1;"
         )->queryOne();
 
@@ -295,11 +295,14 @@ class CreditController extends BaseController
         $pageSize = self::ASSIGNABLE_ITEMS_PAGE_SIZE
     )
     {
+
+        $page = $page < 1 ? 1 : $page;
         $creditQuery = CreditBaseInfo::find();
         $totalCount = $creditQuery->where(['status' => CreditBaseInfo::STATUS_ASSIGNING ])->count();
-        $pages = new Pagination(['totalCount' => $totalCount]);
+        /*$pages = new Pagination(['totalCount' => $totalCount]);
         $pages->page = $page - 1;
         $pages->pageSize = $pageSize;
+
 
         // 1. 查询 tb_ca_base_info 基本表获得转让的债权
         $results = $creditQuery->select([
@@ -364,10 +367,70 @@ class CreditController extends BaseController
             }
         }
 
+        */
+        $db = Yii::$app->db;
+
+        $start = ($page - 1) * $pageSize;
+        $sql = "select "."
+                    cbi.id ca_base_id,
+                    cbi.project_type cbi_project_type,
+                    cbi.invest_id cbi_invest_id ,
+                    cbi.assign_start_date cbi_assign_start_date,
+                    cbi.assign_end_date cbi_assign_end_date,
+                    cbi.assign_fee cbi_assign_fee,
+                    cbi.assign_rate cbi_assign_rate,
+                    cbi.commission_rate cbi_commission_rate,
+                    cbi.status cbi_status,
+                    cbi.user_name cbi_user_name,
+                    p.id project_id,
+                    p.name project_name,
+                    p.type p_type,
+                    p.product_type p_product_type,
+                    p.status p_status,
+                    p.is_day p_is_day,
+                    p.period p_period,
+                    p.publish_at p_publish_at,
+                    p.effect_time p_effect_time,
+                    p.review_at p_review_at,
+                    p.apr p_apr
+                from
+                    tb_ca_base_info cbi left join tb_project p
+                    on p.id = cbi.project_id
+                where
+                    cbi.status=".CreditBaseInfo::STATUS_ASSIGNING ."
+                order by cbi.updated_at desc
+                limit $start, $pageSize";
+
+        $results = $db->createCommand($sql)->queryAll();
+        $creditList2 = [];
+        if(!empty($results))
+        {
+            foreach($results as $value)
+            {
+                $credit = [];
+
+                $credit['id'] = $value['ca_base_id'];
+                $credit['invest_id'] = $value['cbi_invest_id'];
+                $credit['project_type'] = $value['cbi_project_type'];
+                $credit['assign_fee'] = $value['cbi_assign_fee'];
+                $credit['assign_rate'] = $value['cbi_assign_rate'];
+                $credit['rest_days'] = intval(($value['cbi_assign_end_date'] - time()) / TimeHelper::DAY);
+                $credit['user_name'] = $value['cbi_user_name'];
+
+                $credit['project'] = [
+                    'id' => $value['project_id'],
+                    'apr' => $value['p_apr'],
+                    'name' => $value['project_name'],
+                ];
+
+                $creditList2[] = $credit;
+            }
+        }
 
         return array(
             'code' => 0,
-            'creditItems' => $creditList,
+            //'creditItems' => $creditList,
+            'creditItems' => $creditList2,
             'creditItemsCount'=> $totalCount,
         );
     }
@@ -388,7 +451,7 @@ class CreditController extends BaseController
         $investQuery = ProjectProfits::find();
 
         $totalCount = $investQuery->where([
-            'status' => ProjectProfits::STATUS_SUCCESS,
+            'status' => [ProjectProfits::STATUS_SUCCESS,ProjectProfits::STATUS_REPAYED],
             'is_transfer' => 1 ]
         )->count();
             
@@ -397,7 +460,7 @@ class CreditController extends BaseController
         $pages->pageSize = $pageSize;
 
         $queryItems = $investQuery->where([
-            'status' => ProjectProfits::STATUS_SUCCESS,
+            'status' => [ProjectProfits::STATUS_SUCCESS,ProjectProfits::STATUS_REPAYED],
             'is_transfer' => 1,
         ])->orderBy("updated_at desc")
             ->offset($pages->offset)->limit($pages->limit)
@@ -717,7 +780,7 @@ class CreditController extends BaseController
         }
 
         $use_remain = $this->request->post("use_remain");
-        if( empty( $use_remain ))
+        if( !in_array($use_remain, [0, 1]) )
         {
             InvestException::throwCodeExt(-1002,"use_remain");
         }

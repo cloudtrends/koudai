@@ -72,6 +72,16 @@ class Order extends \yii\db\ActiveRecord
     	}
     	return $order_id;
     }
+
+    /**
+     * 生成订单号 16 位
+     */
+    public static function generateOrderId16()
+    {
+        $uniqid = self::generateOrderId();
+        $order_id = substr( md5($uniqid), 8, 16 );
+        return $order_id;
+    }
     
     /**
      * 验证签名

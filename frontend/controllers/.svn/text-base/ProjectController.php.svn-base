@@ -19,6 +19,7 @@ use common\services\ProjectService;
 use common\models\Order;
 use common\models\UserCaptcha;
 use yii\data\Pagination;
+use common\models\User;
 
 /**
  * Project controller
@@ -65,7 +66,7 @@ class ProjectController extends BaseController
 		$pageSize = intval($pageSize);
 		$offset = ($page - 1) * $pageSize;
 		$projects = (new Query())->from(Project::tableName())->select([
-			'id', 'name', 'status', 'total_money', 'success_money', 'success_number', 'is_novice', 'min_invest_money', 'period', 'is_day', 'apr',
+			'id', 'name', 'status', 'total_money', 'success_money', 'success_number', 'is_novice', 'min_invest_money', 'period', 'is_day', 'apr', 'summary',
 		])->where([
 			'type' => Project::TYPE_P2P,
 			'status' => [Project::STATUS_PUBLISHED, Project::STATUS_FULL, Project::STATUS_REPAYING, Project::STATUS_REPAYED],
@@ -124,7 +125,7 @@ class ProjectController extends BaseController
 		$pageSize = intval($pageSize);
 		$offset = ($page - 1) * $pageSize;
 		$projects = (new Query())->from(Project::tableName())->select([
-			'id', 'name', 'status', 'total_money', 'success_money', 'success_number', 'is_novice', 'min_invest_money', 'period', 'is_day', 'apr',
+			'id', 'name', 'status', 'total_money', 'success_money', 'success_number', 'is_novice', 'min_invest_money', 'period', 'is_day', 'apr', 'summary',
 		])->where([
 			'type' => Project::TYPE_TRUST,
 			'status' => [Project::STATUS_PUBLISHED, Project::STATUS_FULL, Project::STATUS_REPAYING, Project::STATUS_REPAYED],
@@ -161,7 +162,7 @@ class ProjectController extends BaseController
 		if (!$model) {
 			throw new NotFoundHttpException('不存在该项目');
 		}
-		
+
 		$project = $model->toArray();
 		// 此接口不返回desc字段
 		unset($project['desc']);
@@ -174,6 +175,8 @@ class ProjectController extends BaseController
 		} else {
 			$project['last_repay_date'] = 0;
 		}
+        $project['success_percent'] = intval(100 * $project['success_money'] / $project['total_money']);
+
 		
 		return [
 			'code' => 0,
@@ -328,23 +331,20 @@ class ProjectController extends BaseController
             PayException::throwCodeExt(2101);
         }
 
-
-		if (!($this->client->clientType == 'ios' && $this->client->appVersion == '1.0.1')) {
-			// 验证签名
-			$params = $this->request->post();
-			$sign = $this->request->post('sign');
-			if (!Order::validateSign($params, $sign)) {
-				throw new UserException('请求签名无效，请按正常流程重试', 3001);
-			}
-				
-			// 验证订单
-			$order_id = $this->request->post('order_id');
-			$order = Order::findOne(['order_id' => $order_id]);
-			if (!$order) {
-				throw new UserException('请求无效，请按正常流程重试', 3002);
-			} else if (!$order->getCanCommit()) {
-				throw new UserException('您的请求已处理完成，请勿重复提交', 3003);
-			}
+		// 验证签名
+		$params = $this->request->post();
+		$sign = $this->request->post('sign');
+		if (!Order::validateSign($params, $sign)) {
+			throw new UserException('请求签名无效，请按正常流程重试', 3001);
+		}
+			
+		// 验证订单
+		$order_id = $this->request->post('order_id');
+		$order = Order::findOne(['order_id' => $order_id]);
+		if (!$order) {
+			throw new UserException('请求无效，请按正常流程重试', 3002);
+		} else if (!$order->getCanCommit()) {
+			throw new UserException('您的请求已处理完成，请勿重复提交', 3003);
 		}
 		
 		// 加锁，如果已经有锁，则抛异常失败
@@ -387,10 +387,10 @@ class ProjectController extends BaseController
 			}
 
 			if ($result) {
-				if (!($this->client->clientType == 'ios' && $this->client->appVersion == '1.0.1')) {
-					$order->status = Order::STATUS_SUCCESS;
-					$order->save(false);
-				}
+				// 修改订单状态
+				$order->status = Order::STATUS_SUCCESS;
+				$order->save(false);
+					
 				// 删除验证码
 				UserCaptcha::deleteAll(['phone' => $curUser->username, 'type' => UserCaptcha::TYPE_INVEST_PROJ]);
 				// 释放锁
@@ -427,10 +427,10 @@ class ProjectController extends BaseController
 				throw new UserException('投资失败，请稍后再试', 1013);
 			}
 		} catch (\Exception $e) {
-			if (!($this->client->clientType == 'ios' && $this->client->appVersion == '1.0.1')) {
-				$order->status = Order::STATUS_FAILED;
-				$order->save(false);
-			}
+			// 修改订单状态
+			$order->status = Order::STATUS_FAILED;
+			$order->save(false);
+			
 			$curUser->releaseTradeLock();
 			throw $e;
 		}
@@ -471,10 +471,68 @@ class ProjectController extends BaseController
 	}
 
     /**
+     * 最新投资记录列表
+     * @name 最新投资记录列表 [projectInvestLog]
+     * @param int $page 第几页
+     * @param int $pageSize 每页个数
+     * @param int $status 投资状态
+     * @param string $id 项目id
+     * @return array
+     */
+    public function actionInvestLog($page = 1, $pageSize = 10,$status = 2 ,$id = ''){
+        $page = $page > 1 ? intval($page) : 1;
+        $pageSize = intval($pageSize);
+        $offset = ($page - 1) * $pageSize;
+
+        $condition = '`status` = ' . $status ;
+        if (!empty($id)){
+            $condition .= ' AND project_id = '.$id;
+        }
+        $invests = (new Query())->from(ProjectInvest::tableName())->select([
+            'id', 'username', 'invest_money', 'created_at', 'status','user_id','project_name'
+        ])->where($condition)->orderBy([
+            'created_at' => SORT_DESC,
+        ])->offset($offset)->limit($pageSize)->all();
+
+        $userArr = [];
+        foreach ($invests as $k => $v) {
+            $invests[$k]['username'] = StringHelper::blurPhone($v['username']);
+            $invests[$k]['statusLabel'] = ProjectInvest::$status[$v['status']];
+            $userArr[] = $v['user_id'];
+        }
+
+        $userInfo = (new Query())->from(User::tableName())->select([
+            'id', 'realname'
+        ])->where([
+            'id' => array_unique($userArr),
+        ])->all();
+
+
+
+        if (!empty($userInfo)){
+            $userResult = array();
+            foreach ($userInfo as $userInfoVal){
+                $userResult[$userInfoVal['id']] = $userInfoVal['realname'];
+            }
+
+            foreach ($invests as $k => $v) {
+                $invests[$k]['realname'] = !empty($userResult[$v['user_id']]) ? $userResult[$v['user_id']] : '';
+            }
+        }
+
+        return [
+            'code' => 0,
+            'page' => $page,
+            'pageSize' => $pageSize,
+            'invests' => $invests,
+        ];
+    }
+
+    /**
      * 网站列表页面
      *
      * @name 网站列表 [projectWebsiteList]
-     * @method post
+     * @method get
      * @param integer $page 第几页
      * @param integer $pageSize 每页个数
      * @param string $type 类型
@@ -483,19 +541,18 @@ class ProjectController extends BaseController
      * @param string $apr 利率
      */
     public function actionWebsiteList(){
-        $page = $this->request->post('page', 1);
-        $pageSize = $this->request->post('pageSize', 9);
-        $type = $this->request->post('type', '');
-        $status = $this->request->post('status', '');
-        $period = $this->request->post('period', '');
-        $apr = $this->request->post('apr', '');
+        $page = $this->request->get('page', 1);
+        $pageSize = $this->request->get('pageSize', 9);
+        $type = $this->request->get('type', '');
+        $status = $this->request->get('status', '');
+        $periodStr = $this->request->get('period', '');
+        $aprStr = $this->request->get('apr', '');
 
         $page = $page > 1 ? intval($page) : 1;
         $pageSize = intval($pageSize);
         $offset = ($page - 1) * $pageSize;
 
         $condition = '1=1';
-
         if (!empty($type)){
             $condition .= " AND `type` = ".$type;
         }
@@ -507,28 +564,35 @@ class ProjectController extends BaseController
             $condition .= " AND `status` in (".implode(',',$statusArr).")";
         }
 
-        if (!empty($apr)){
+        if (!empty(self::$aprArr[$aprStr])){
+            $apr = self::$aprArr[$aprStr];
             $aprArr = explode('-',$apr);
             if (count($aprArr) === 2){
                 $condition .= " AND apr >= ".$aprArr[0]." AND apr <= ".$aprArr[1];
             }else{
-                if ( in_array(substr( $apr, 0, 1 ),$this->CompareSym()) ){
-                    $condition .= " AND apr ".$apr;
+                $aprslicp = explode('_',$apr);
+                if (count($aprslicp) === 2){
+                    if ( in_array($aprslicp[0] , $this->CompareSym()) ){
+                        $condition .= " AND apr ".$aprslicp[0].$aprslicp[1];
+                    }
                 }
             }
         }
 
-        if (!empty($period)){
+        if (!empty(self::$perArr[$periodStr])){
+            $period = self::$perArr[$periodStr];
             $periodArr = explode('-',$period);
             if (count($periodArr) === 2){
-                $condition .= " AND ( is_day = 0 AND period >=". $periodArr[0] ." AND period <= ".$periodArr[1].")";
-                $condition .= " AND ( is_day = 1 AND period >=". StringHelper::monthToDays($periodArr[0]);
-                $condition .= " AND period <= ".StringHelper::monthToDays($periodArr[1]).")";
+                $condition .= " AND ( ( is_day = 0 AND period >=". $periodArr[0] ." AND period <= ".$periodArr[1].")";
+                $condition .= " OR ( is_day = 1 AND period >=". StringHelper::monthToDays($periodArr[0]);
+                $condition .= " AND period <= ".StringHelper::monthToDays($periodArr[1]).") )";
             }else{
-
-                if ( in_array(substr( $period, 0, 1 ),$this->CompareSym()) ){
-                    $condition .= " AND ( is_day = 0 AND period ". substr( $period, 0, 1 ) . substr( $period, 1, strlen($period) ) .")";
-                    $condition .= " AND ( is_day = 1 AND period ". substr( $period, 0, 1 ) . StringHelper::monthToDays(substr( $period, 1, strlen($period) ) ).")";
+                $periodslicp = explode('_',$period);
+                if (count($periodslicp) === 2){
+                    if ( in_array($periodslicp[0],$this->CompareSym()) ){
+                        $condition .= " AND ( ( is_day = 0 AND period ". $periodslicp[0] . $periodslicp[1] .")";
+                        $condition .= " OR ( is_day = 1 AND period ". $periodslicp[0] . StringHelper::monthToDays($periodslicp[1] ).") )";
+                    }
                 }
             }
         }
@@ -545,6 +609,10 @@ class ProjectController extends BaseController
         $pages = new Pagination(['totalCount' => $countQuery->count()]);
         $projects = $query->offset($offset)->limit($pageSize)->all();
 
+        foreach ($projects as &$project) {
+            $project['success_percent'] = intval(100 * $project['success_money'] / $project['total_money']);
+        }
+
         return [
             'code' => 0,
             'page' => $page,
@@ -553,6 +621,18 @@ class ProjectController extends BaseController
             'projects' => $projects,
         ];
     }
+
+    private static $perArr = array(1=>'<_1',
+        2=>'1-3',
+        3=>'3-6',
+        4=>'6-12',
+        5=>'>_12',
+    );
+
+    private static $aprArr = array(1=>'8-10',
+        2=>'10-12',
+        3=>'>_12',
+    );
 
     private function CompareSym(){
         return array('<','<=','>','>=','=');

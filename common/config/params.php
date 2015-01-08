@@ -6,14 +6,14 @@ return [
 	'appConfig' => [
 		'iosVersion'			=> '1.0.0',
 		'iosForceUpgrade'		=> 0,
-		'androidVersion'		=> '1.0.0',
+		'androidVersion'		=> '1.0.3',
 		'androidForceUpgrade'	=> 0,
 		'androidDownloadUrl'	=> 'http://www.koudailc.com/attachment/download/koudailicai.apk',
 	],
 	// 单日提现限制
 	'withdraw' => [
-		'daily_times_limit' => 100,		// 次数
-		'daily_money_limit' => 1000,	// 限额
+		'daily_times_limit' => 5,		// 次数
+		'daily_money_limit' => 1000,	// 限额，暂未使用
 	],
     // 短信服务配置
     'smsService' => [

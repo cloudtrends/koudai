@@ -2,6 +2,9 @@
 
 namespace common\services;
 
+use common\models\Order;
+use Yii;
+use yii\base\Object;
 use common\exceptions\InvestException;
 use common\exceptions\PayException;
 use common\helpers\TimeHelper;
@@ -10,10 +13,8 @@ use common\models\User;
 use common\models\UserBankCard;
 use common\models\UserPayOrder;
 use common\models\UserWithdraw;
-use Yii;
-use yii\base\Object;
 use common\api\HttpRequest;
-use yii\base\UserException;
+use yii\web\IdentityInterface;
 
 
 require_once Yii::getAlias('@common') . '/api/umpay/common.php';
@@ -44,42 +45,58 @@ class PayService extends Object
     /**
      * 用户支付
      */
-    public function pay($pay_amount, $phone_no, $pay_src)
+    public function pay($curUser, $pay_amount, $pay_src)
     {
-        //return LLpay::wapPay($pay_amount, $phone_no, $pay_src);
+        if( !($curUser instanceof IdentityInterface) )
+        {
+            PayException::throwCodeExt(2102, gettype($curUser));
+        }
+
+
         if( empty($pay_amount) or $pay_amount < 1){
             PayException::throwCodeExt(2321);
         }
 
+        // 电话号码和用户ID
+        $phone_no = $curUser->username;
+        $uid = $curUser->id;
 
         // 后台先记录支付流水
         // 1. 找到绑定的银行卡号
         $db = Yii::$app->db;
-        // select * from tb_user u inner join tb_user_bank_card ubc on u.id = ubc.user_id where u.username = "15102105045";
         $sql = "select * from " . User::tableName() ." u ".
             " inner join " . UserBankCard::tableName() . " ubc " .
-            " on u.id = ubc.user_id where u.username =\"{$phone_no}\"";
+            " on u.id = ubc.user_id where u.id ={$uid}";
 
         $result = $db->createCommand($sql)->queryOne();
-        Yii::info(var_export($result,true));
-        $affected_rows = $db->createCommand()->insert(UserPayOrder::tableName(),[
+        Yii::info("已绑定银行卡:" . var_export($result, true));
+
+        $order_char_id = Order::generateOrderId16();
+        $new_pay_order = [
+            'order_char_id' => $order_char_id,
+            'user_id' => $uid,
             'user_name' => $result['username'],
             'card_no' => $result['card_no'],
             'pay_amount' => $pay_amount,
-            'third_platform' => UserPayOrder::THIRD_PLATFORM_UMP,
+            'third_platform' => BankConfig::PLATFORM_UMPAY,
             'pay_source' => $pay_src,
             'created_at' => TimeHelper::Now(),
-            'updated_at' => TimeHelper::Now()
-        ])->execute();
+            'updated_at' => TimeHelper::Now(),
+            'action' => UserPayOrder::ACTION_INVEST_PAY
+        ];
+
+        Yii::info("支付订单信息:" . var_export($new_pay_order, true));
+
+        $affected_rows = $db->createCommand()->insert(UserPayOrder::tableName(),$new_pay_order)->execute();
 
         if(empty($affected_rows))
         {
             PayException::throwCodeExt(2323);
         }
 
-        $order_id = $db->getLastInsertID();
+        //$order_id = $db->getLastInsertID();
 
-        if( strlen($order_id) < 4 or strlen($order_id) > 16)
+        if( strlen($order_char_id) < 4 or strlen($order_char_id) > 16)
         {
             PayException::throwCodeExt(2324);
         }
@@ -88,7 +105,8 @@ class PayService extends Object
         $map = self::serviceMap("syn_pay");
         $map->put("media_id", $phone_no);
         $map->put("media_type", "MOBILE");
-        $map->put("order_id", $order_id);
+        //$map->put("order_id", $order_id);
+        $map->put("order_id", $order_char_id);
         $map->put("mer_date", date("Ymd"));
         // 非线上环境先写死支付1分钱，线上环境扣实款
         if (YII_ENV == 'prod') {
@@ -107,21 +125,39 @@ class PayService extends Object
         // debug 输出结果
         Yii::info(var_export($httpRespMap,true));
 
-        if (!empty($httpRespMap->H_table)){
+        $code = $httpRespMap->get('ret_code') == '0000' ? '0' : $httpRespMap->get('ret_code');
+        if (!empty($httpRespMap->H_table))
+        {
             // 联动支付是实时的，记录平台返回的结果
             $pay_result = json_encode($httpRespMap->H_table);
             $trade_no = $httpRespMap->H_table['trade_no'];
-            $db->createCommand()->update(UserPayOrder::tableName(),[
-                'pay_result' => $pay_result,
-                'third_platform_order_id' => $trade_no,
-            ],[
-                'order_id' => $order_id
+
+            // 00131062 该订单已支付成功请不要重复提交 参考联动错误码文档
+            if($code == 0 or $code == "00131062" )
+            {
+                $updated_data = [
+                    'pay_result' => $pay_result,
+                    'third_platform_order_id' => $trade_no,
+                    'status' => UserPayOrder::STATUS_UMP_PAY_SUCCESS,
+                ];
+            }
+            else
+            {
+                $updated_data = [
+                    'pay_result' => $pay_result,
+                    'third_platform_order_id' => $trade_no,
+                    'status' => UserPayOrder::STATUS_UMP_PAY_FAILED,
+                ];
+            }
+
+            $db->createCommand()->update(UserPayOrder::tableName(),$updated_data,[
+                'order_char_id' => $order_char_id,
             ])->execute();
         }
 
         return [
             'httpCode' => $httpResp['code'],
-            'code' => $httpRespMap->get('ret_code') == '0000' ? '0' : $httpRespMap->get('ret_code'),
+            'code' => $code,
             'message' => $httpRespMap->get('ret_msg')
         ];
     }
@@ -130,12 +166,18 @@ class PayService extends Object
      * 用户签约
      */
     public function userBindCard(
-        $user_id, // 用户的ID
-        $card_holder,//绑卡用户名
-        $card_id, // 卡号
-        $identity_code, // 身份证号码
-        $phone_no // 手机号
+        $curUser, // 用户信息
+        $card_id // 卡号
     ){
+
+        if( !($curUser instanceof IdentityInterface) )
+        {
+            PayException::throwCodeExt(2102, gettype($curUser));
+        }
+
+        $card_holder = $curUser->realname;
+        $identity_code = $curUser->id_card; // 身份证号码
+        $phone_no = $curUser->username;
         // 1. 发起绑卡请求
         $map = self::serviceMap("user_reg");
 
@@ -154,6 +196,7 @@ class PayService extends Object
         $code = $httpRespMap->get('ret_code');
         $bindResult = $httpRespMap->H_table;
 
+        //00160083	银行卡绑定关系已经存在，无需重复绑定 参考联动返回码文档
         if( intval($code) == 0 or $code == "00160083")
         {
             // 绑定成功，或者重复绑定
@@ -223,7 +266,11 @@ class PayService extends Object
             " on u.id = ubc.user_id where u.username =\"{$phone_no}\"";
 
         $result = $db->createCommand($sql)->queryOne();
-        $bankInfo = UserBankCard::getBankInfo($result['bank_id']);
+        // $bankInfo = UserBankCard::getBankInfo($result['bank_id']);
+        $bankInfo = BankConfig::findOne([
+        	'bank_id' => $result['bank_id'],
+        	'third_platform' => BankConfig::PLATFORM_UMPAY,
+        ]);
 
         $map = self::serviceMap("transfer_direct_req");
         $map->put('notify_url', "http://api.koudailc.com/app/pay-notify");
