@@ -11,6 +11,7 @@ use common\models\Project;
 use common\models\DeviceInfo;
 use common\models\DeviceVisitInfo;
 use common\models\UserWithdraw;
+use common\models\User;
 
 /**
  * App controller
@@ -26,7 +27,7 @@ class AppController extends BaseController
 	 */
     public function actionConfig($configVersion)
     {
-        $confVer = strtotime('2015-01-07 20:00:01');
+        $confVer = strtotime('2015-01-13 20:00:01');
         if ($configVersion == $confVer) {
             throw new UserException('配置无更新');
         }
@@ -47,7 +48,7 @@ class AppController extends BaseController
             // ios是否展示启动广告
             'showLaunchImg'		=> 1,
             // android是否展示启动广告
-            'showLaunchImgArd'	=> 1,
+            'showLaunchImgArd'	=> 0,
             'dataUrl'			=> [
                 'getIndex' => "{$baseUrl}/app/index",
                 'getLaunchImg' => "{$baseUrl}/app/launch-img",
@@ -193,8 +194,8 @@ class AppController extends BaseController
 		$baseUrl = $this->getRequest()->getHostInfo() . $this->getRequest()->getBaseUrl();
 		return [
 			'code' => 0,
-			'url' => $baseUrl . '/attachment/launch2.jpg',
-			//'url' => '',
+			//'url' => $baseUrl . '/attachment/launch2.jpg',
+			'url' => '',
 			'version' => strtotime('2015-01-08 20:00:01'),
 		];
 	}
@@ -265,9 +266,10 @@ class AppController extends BaseController
 			$has_upgrade = version_compare(Yii::$app->params['appConfig']['iosVersion'], $this->client->appVersion) > 0 ? 1 : 0;
 			$is_force_upgrade = Yii::$app->params['appConfig']['iosForceUpgrade'];
 			$new_version = Yii::$app->params['appConfig']['iosVersion'];
-			$new_features = '1、新特点1斯蒂芬
-2、新特点2斯蒂字多字多字多斯蒂芬斯蒂芬斯蒂芬芬
-3、新特点3斯蒂芬';
+			$new_features = '1.此版本针对iphone6，iphone6 Plus 做了界面适配
+2.修复ios低版本闪退问题
+3.银行卡支付增加至13家
+4.增加公告中心和消息中心，用户资金变更实时触达';
 		} else {
 			$has_upgrade = version_compare(Yii::$app->params['appConfig']['androidVersion'], $this->client->appVersion) > 0 ? 1 : 0;
 			$is_force_upgrade = Yii::$app->params['appConfig']['androidForceUpgrade'];
@@ -299,9 +301,9 @@ class AppController extends BaseController
 				'com.qihoo.appstore',
 				'com.baidu.appsearch',
 				'com.tencent.android.qqdownloader',
-				'com.dragon',
-				'com.xiaomi',
-				'com.hiapk',
+				'com.dragon.android.pandaspace',
+				'com.xiaomi.market',
+				'com.hiapk.marketpho',
 			]
 		];
 	}
@@ -325,7 +327,7 @@ class AppController extends BaseController
         	$get['notify_time'] = time();
         	UserWithdraw::updateAll(
         		['notify_result' => json_encode($get)],
-        		['id' => $get['order_id']]
+        		['order_id' => $get['order_id']]
 			);
         	
         	// 如果是支付成功则处理
@@ -339,6 +341,12 @@ class AppController extends BaseController
         echo $result['return'];
 	}
 
-
+// 	public function actionPayTest()
+// 	{
+// 		$user = User::findOne(71);
+// 		$payService = Yii::$container->get('payService');
+// 		$ret = $payService->pay($user, 130500, 'api');
+// 		print_r($ret);
+// 	}
 }
 

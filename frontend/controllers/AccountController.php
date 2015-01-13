@@ -20,6 +20,7 @@ use common\helpers\TimeHelper;
 use common\models\KdbInfo;
 use common\models\Order;
 use common\models\BankConfig;
+use common\helpers\StringHelper;
 
 /**
  * Account controller
@@ -564,11 +565,18 @@ class AccountController extends BaseController
 				];
 			};
 		}
+		$restrict_desc = '';
+		if ($cards) {
+			$bankConfig = BankConfig::findOne(['bank_id' => $cards[0]['bank_id']]);
+			$restrict_desc = $cards[0]['bank_name'] . StringHelper::getBankAmountRestrict($cards[0]['bank_name'], $bankConfig['sml'], $bankConfig['dml'], $bankConfig['dtl']);
+		}
+		
 		return [
 			'code' => 0,
 			'usable_money' => $curUser->account->usable_money,
 			// 现在只能绑一张卡，所以只有一个第三方支付类型
 			'third_platform' => $cards ? $cards[0]['third_platform'] : 0,
+			'restrict_desc' => $restrict_desc,
 			'banks' => $banks,
 		];
 	}
@@ -651,7 +659,12 @@ class AccountController extends BaseController
 		$curUser->addTradeLock();
 		try {
 			// 提现次数限制
-			$times = UserWithdraw::find()->where(['user_id' => $curUser->id])->count();
+			$today = strtotime(date('Y-m-d'));
+			$times = UserWithdraw::find()->where([
+				'user_id' => $curUser->id
+			])->andWhere(
+				'created_at >= ' . $today . ' and created_at <= ' . ($today + 86400)
+			)->count();
 			$timesLimit = Yii::$app->params['withdraw']['daily_times_limit'];
 			if ($times > $timesLimit) {
 				throw new UserException("单日提现次数不能超过{$timesLimit}次");
@@ -735,17 +748,18 @@ class AccountController extends BaseController
 		])->andwhere(
 			'UNIX_TIMESTAMP(date) >= "'.$date.'"'
 		)->orderBy([
-			'lastday_profits' => SORT_DESC,
+			'date' => SORT_DESC,
 		])->all();
+		$max = 0;
 		foreach ($data as &$v) {
-			$arr[] =$v['lastday_profits'];
-			$arr1[] =$v['lastday_profits'];
-			$min = end($arr);
-			$max = current($arr1);
+			$arr[] = $v['lastday_profits'];
+			if ($v['lastday_profits'] > $max) {
+				$max = $v['lastday_profits'];
+			}
 		}
 		foreach ($data as &$v) {
-			if ($max > $min) {
-				$v['Percentage'] = sprintf('%.3f',($v['lastday_profits']-$min) / ($max-$min));
+			if ($max > 0) {
+				$v['Percentage'] = sprintf('%.3f',$v['lastday_profits'] / $max);
 			} else {
 				$v['Percentage'] = 1;
 			}
@@ -777,6 +791,7 @@ class AccountController extends BaseController
                 $projects[] = [
                     'id' => $dataVal['id'],
                     'type' => $dataVal['type'],
+                    'title' => isset(NoticeSms::$status[$dataVal['type']]) ? NoticeSms::$status[$dataVal['type']] : '通知',
                     'remark' => $dataVal['remark'],
                     'created_at' => $dataVal['created_at'],
                 ];

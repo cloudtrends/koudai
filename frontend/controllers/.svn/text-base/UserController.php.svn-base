@@ -25,7 +25,6 @@ use common\services\PayService;
 use common\models\UserBankCard;
 use common\helpers\StringHelper;
 use common\models\AppConfig;
-use common\models\UserCharge;
 use common\models\UserAccount;
 
 /**
@@ -49,14 +48,14 @@ class UserController extends BaseController
 
         parent::__construct($id, $module, $config);
     }
-    
+
     public function behaviors()
 	{
 		return [
 			'access' => [
 				'class' => AccessControl::className(),
 				// 除了下面的action其他都需要登录
-				'except' => ['reg-get-code', 'register', 'login', 'logout', 'support-banks',
+				'except' => ['reg-get-code', 'register', 'login', 'logout',
 							 'reset-pwd-code', 'verify-reset-password', 'reset-password', 'state'],
 				'rules' => [
 					[
@@ -70,7 +69,7 @@ class UserController extends BaseController
 
 	/**
 	 * 注册步骤一：手机号获取验证码
-	 * 
+	 *
 	 * @name	获取注册验证码 [userRegGetCode]
 	 * @uses	用户注册是拉取验证码
 	 * @method	post
@@ -92,10 +91,10 @@ class UserController extends BaseController
 			throw new UserException('发送验证码失败，请稍后再试');
 		}
 	}
-	
+
 	/**
 	 * 注册步骤二：验证手机号获和验证码，并设置登录密码
-	 * 
+	 *
 	 * @name 注册 [userRegister]
 	 * @method	post
 	 * @param string $phone 手机号
@@ -162,10 +161,10 @@ class UserController extends BaseController
 			}
 		}
 	}
-	
+
 	/**
 	 * 登录
-	 * 
+	 *
 	 * @name 登录 [userLogin]
 	 * @method post
 	 * @param string $username 用户名，手机注册的为手机号
@@ -253,10 +252,10 @@ class UserController extends BaseController
 			}
 		}
 	}
-	
+
 	/**
 	 * 退出
-	 * 
+	 *
 	 * @name 退出 [userLogout]
 	 */
 	public function actionLogout()
@@ -266,11 +265,11 @@ class UserController extends BaseController
 			'result' => Yii::$app->user->logout()
 		];
 	}
-	
+
 	/**
 	 * 实名认证
 	 * @TODO 限制用户认证请求频率
-	 * 
+	 *
 	 * @name 实名认证 [userRealVerify]
 	 * @method post
 	 * @param string $realname 实名
@@ -280,7 +279,7 @@ class UserController extends BaseController
 	{
 		$realname = trim($this->request->post('realname'));
 		$id_card = trim($this->request->post('id_card'));
-		
+
 		// 已验证通过的无需再验证
 		$currentUser = Yii::$app->user->identity;
 		if ($currentUser->getIsRealVerify()) {
@@ -288,9 +287,9 @@ class UserController extends BaseController
 		} else if (User::findOne(['id_card' => $id_card])) {
 			throw new UserException('该身份证已使用，如被盗用，请联系客服');
 		}
-		
+
 		$result = $this->userService->realnameVerify($realname, $id_card);
-		
+
 		if ($result === false) {
 			throw new UserException('姓名和身份证不对应');
 		} else {
@@ -301,14 +300,14 @@ class UserController extends BaseController
 			$currentUser->birthday = $result['birthday'];
 			$currentUser->real_verify_status = User::REAL_STATUS_YES;
 			$currentUser->save();
-			
+
 			return [
 				'code' => 0,
 				'result' => $result
 			];
 		}
 	}
-	
+
 	/**
 	 * 修改登录密码
 	 *
@@ -321,7 +320,7 @@ class UserController extends BaseController
 	{
 		$oldPwd = $this->request->post('old_pwd');
 		$newPwd = $this->request->post('new_pwd');
-	
+
 		$curUser = Yii::$app->user->identity;
 		if ($curUser->validatePassword($oldPwd)) {
 			if ($this->userService->resetPassword($curUser, $newPwd)) {
@@ -336,7 +335,7 @@ class UserController extends BaseController
 			throw new UserException('原密码错误');
 		}
 	}
-	
+
 	/**
 	 * 初次设置交易密码
 	 *
@@ -355,7 +354,7 @@ class UserController extends BaseController
 		} else if ($currentUser->userPayPassword) {
 			throw new UserException('您已经设置了交易密码');
 		}
-	
+
 		if ($this->userService->setPayPassword($currentUser, $password)) {
 			return [
 				'code' => 0,
@@ -365,7 +364,7 @@ class UserController extends BaseController
 			throw new UserException('设置失败，请稍后再试');
 		}
 	}
-	
+
 	/**
 	 * 修改交易密码
 	 *
@@ -378,7 +377,7 @@ class UserController extends BaseController
 	{
 		$oldPwd = $this->request->post('old_pwd');
 		$newPwd = $this->request->post('new_pwd');
-	
+
 		$curUser = Yii::$app->user->identity;
 		if ($curUser->validatePayPassword($oldPwd)) {
 			if ($this->userService->setPayPassword($curUser, $newPwd)) {
@@ -393,10 +392,10 @@ class UserController extends BaseController
 			throw new UserException('原密码错误');
 		}
 	}
-	
+
 	/**
 	 * 获取找回登录密码/交易密码的验证码
-	 * 
+	 *
 	 * @name 获取找回登录密码/交易密码的验证码 [userResetPwdCode]
 	 * @method post
 	 * @param string $phone 手机号
@@ -406,7 +405,7 @@ class UserController extends BaseController
 	{
 		$phone = trim($this->request->post('phone'));
 		$type = trim($this->request->post('type'));
-		
+
 		$user = User::findByPhone($phone);
 		if (!$user) {
 			throw new UserException('无此用户');
@@ -415,7 +414,7 @@ class UserController extends BaseController
 		} else if ($type == UserCaptcha::TYPE_FIND_PAY_PWD && (!$user->getIsRealVerify() || !$user->getIsBindCard())) {
 			throw new UserException('请先实名认证和绑定银行卡');
 		}
-		
+
 		// 找回交易密码需要验证是否登录以及手机号是否一致
 		if ($type == UserCaptcha::TYPE_FIND_PAY_PWD) {
 			if (Yii::$app->user->getIsGuest()) {
@@ -424,7 +423,7 @@ class UserController extends BaseController
 				throw new UserException('您输入的手机号与注册手机号不一致');
 			}
 		}
-		
+
 		if ($this->userService->generateAndSendCaptcha($phone, $type)) {
 			return [
 				'code' => 0,
@@ -435,11 +434,11 @@ class UserController extends BaseController
 			throw new UserException('发送验证码失败，请稍后再试');
 		}
 	}
-	
+
 	/**
 	 * 找回登录密码/交易密码验证用户和手机验证码
 	 * 注：实名认证了的用户 还需要提交实名和身份证
-	 * 
+	 *
 	 * @name 找回登录密码/交易密码验证用户和手机验证码 [userVerifyResetPassword]
 	 * @method post
 	 * @param string $phone 手机号
@@ -453,7 +452,7 @@ class UserController extends BaseController
 		$phone = trim($this->request->post('phone'));
 		$code = trim($this->request->post('code'));
 		$type = trim($this->request->post('type'));
-		
+
 		$user = User::findByPhone($phone);
 		if (!$user) {
 			throw new UserException('无此用户');
@@ -462,7 +461,7 @@ class UserController extends BaseController
 		} else if ($type == UserCaptcha::TYPE_FIND_PAY_PWD && (!$user->getIsRealVerify() || !$user->getIsBindCard())) {
 			throw new UserException('请先实名认证和绑定银行卡');
 		}
-		
+
 		// 找回交易密码需要验证是否登录以及手机号是否一致
 		if ($type == UserCaptcha::TYPE_FIND_PAY_PWD) {
 			if (Yii::$app->user->getIsGuest()) {
@@ -471,7 +470,7 @@ class UserController extends BaseController
 				throw new UserException('您输入的手机号与注册手机号不一致');
 			}
 		}
-		
+
 		if (!$this->userService->validatePhoneCaptcha($phone, $code, $type)) {
 			throw new UserException('验证码错误或已过期');
 		} else {
@@ -488,11 +487,11 @@ class UserController extends BaseController
 			];
 		}
 	}
-	
+
 	/**
 	 * 找回登录密码时设置新密码
 	 * 注：实名认证了的用户 还需要提交实名和身份证
-	 * 
+	 *
 	 * @name 找回登录密码时设置新密码 [userResetPassword]
 	 * @method post
 	 * @param string $phone 手机号
@@ -506,12 +505,12 @@ class UserController extends BaseController
 		$phone = trim($this->request->post('phone'));
 		$code = trim($this->request->post('code'));
 		$password = $this->request->post('password');
-		
+
 		$user = User::findByPhone($phone);
 		if (!$user) {
 			throw new UserException('无此用户');
 		}
-		
+
 		if (!$this->userService->validatePhoneCaptcha($phone, $code, UserCaptcha::TYPE_FIND_PWD)) {
 			throw new UserException('验证码错误或已过期');
 		} else {
@@ -522,7 +521,7 @@ class UserController extends BaseController
 					throw new UserException('实名或身份证错误');
 				}
 			}
-			
+
 			if ($this->userService->resetPassword($user, $password)) {
 				UserCaptcha::deleteAll(['phone' => $phone, 'type' => UserCaptcha::TYPE_FIND_PWD]);
 				return [
@@ -534,7 +533,7 @@ class UserController extends BaseController
 			}
 		}
 	}
-	
+
 	/**
 	 * 找回交易密码时设置新密码
 	 * 注：实名认证了的用户 还需要提交实名和身份证
@@ -552,7 +551,7 @@ class UserController extends BaseController
 		$phone = trim($this->request->post('phone'));
 		$code = trim($this->request->post('code'));
 		$password = $this->request->post('password');
-		
+
 		$user = User::findByPhone($phone);
 		if (!$user) {
 			throw new UserException('无此用户');
@@ -561,7 +560,7 @@ class UserController extends BaseController
 		} else if (Yii::$app->user->identity->phone != $phone) {
 			throw new UserException('您输入的手机号与注册手机号不一致');
 		}
-		
+
 		if (!$this->userService->validatePhoneCaptcha($phone, $code, UserCaptcha::TYPE_FIND_PAY_PWD)) {
 			throw new UserException('验证码错误或已过期');
 		} else {
@@ -572,7 +571,7 @@ class UserController extends BaseController
 					throw new UserException('实名或身份证错误');
 				}
 			}
-				
+
 			if ($this->userService->setPayPassword($user, $password)) {
 				UserCaptcha::deleteAll(['phone' => $phone, 'type' => UserCaptcha::TYPE_FIND_PAY_PWD]);
 				return [
@@ -636,11 +635,11 @@ class UserController extends BaseController
         );
 
     }
-    
+
 
 	/**
 	 * 绑定银行卡
-	 * 
+	 *
 	 * @name 绑定银行卡  [userBindCard]
      * @param string $bank_card 用户银行卡卡号
      * @param string $bank_id
@@ -676,10 +675,13 @@ class UserController extends BaseController
             }
 
             $bank_card = $this->request->post("bank_card");
+            $bank_card = StringHelper::trimBankCard($bank_card);
 
             if ( empty($bank_card) ) {
-                throw new UserException("缺少 bank_card 参数");
+                throw new UserException("银行卡输入不正确");
             }
+
+
 
             $bank_id = $this->request->post("bank_id");
 
@@ -712,7 +714,7 @@ class UserController extends BaseController
                     $curUser,
                     $bank_card
                 );
-                
+
                 // 绑卡扣除1分钱返回给用户余额
                 if ($ret['status'] == UserBankCard::STATUS_BIND) {
                 	UserAccount::updateAccount($curUser->id, [
@@ -724,6 +726,7 @@ class UserController extends BaseController
             }
             else if( $bankConfig['third_platform'] == BankConfig::PLATFORM_LLPAY )
             {
+                /*
                 // 连连支付
                 if( empty( $existBindBank ) or empty( $existBindBank['no_order'] )
                     or ( TimeHelper::Now() - $existBindBank['updated_at'] > 60 * ( LLPayService::VALID_ORDER_LIMIT - 1 ) ) // 提前1分钟
@@ -738,6 +741,11 @@ class UserController extends BaseController
                     $no_order = $existBindBank['no_order'];
                     $updated_time = $existBindBank['updated_at'];
                 }
+                */
+
+                // 每次都更新订单ID
+                $no_order = Order::generateOrderId();
+                $updated_time = $existBindBank['updated_at'];
 
                 $ret = $this->llPayService->userBindCard(
 					$curUser,
@@ -763,6 +771,8 @@ class UserController extends BaseController
             $curUser->card_bind_status = $status;
             $curUser->save();
 
+            $bind_params = !empty($payParams) ? json_encode($payParams) : "";
+            $bind_result_str = !empty($bindResult) ? json_encode($bindResult) : "";
             if( empty($existBindBank) )
             {
                 $db->createCommand()->insert(UserBankCard::tableName(),[
@@ -771,7 +781,8 @@ class UserController extends BaseController
                     "bank_name" => $bankConfig['bank_name'],
                     "status" => $status,
                     "third_platform" => $bankConfig['third_platform'],
-                    "bind_result" => json_encode($bindResult),
+                    "bind_params" => $bind_params,
+                    "bind_result" => $bind_result_str,
                     "card_no" => $bank_card,
                     "no_order" => $no_order,
                     "bind_phone" => $bind_phone,
@@ -784,9 +795,11 @@ class UserController extends BaseController
                 $db->createCommand()->update(UserBankCard::tableName(),[
                     "status" => $status,
                     "third_platform" => $bankConfig['third_platform'],
-                    "bind_result" => json_encode($bindResult),
+                    "bind_result" => $bind_result_str,
+                    "bank_id" => $bank_id,
                     "bank_name" => $bankConfig['bank_name'],
                     "card_no" => $bank_card,
+                    "bind_params" => $bind_params,
                     "bind_phone" => $bind_phone,
                     "no_order" => $no_order,
                     "updated_at" => $updated_time,
@@ -795,13 +808,13 @@ class UserController extends BaseController
                     "id" => $existBindBank['id']
                 ])->execute();
             }
-            $bank = $db->createCommand($sql)->queryOne();
+            //$bank = $db->createCommand($sql)->queryOne();
         }
-		
+
 		return [
 			'code' => $code,
             'message' => $msg,
-			'bank' => $bank,
+			//'bank' => $bank,
 			'payParams' => $payParams,
 		];
 	}
@@ -816,19 +829,58 @@ class UserController extends BaseController
     {
         return LLPay::wapPay();
     }
-	
+
 	/**
 	 * 获得所有支持绑卡的银行
-	 * 
+	 *
 	 * @name 获得支持绑卡的银行 [userSupportBanks]
 	 */
-	public function actionSupportBanks()
-	{
+    public function actionSupportBanks()
+    {
+        $curUser = Yii::$app->user->identity;
+        $white_uids = [
+            1,//蔡亮
+            3,//聂世珺
+            5,//屈金娥
+            6,//徐浩然
+            7,//朱永敏
+            8,//晏家红
+            9,//田瑞娇
+            10,//高慧
+            11,//彭主林
+            12,//陈恺
+            13,//金挺聪
+            14,//常昊宇
+            18,//黄铭
+            20,//闫涛
+            32,//胡焱熠
+            34,//焦亚鹏
+            46,//朱磊
+            45,//李慧
+            127,//郑中业
+            19,//廖恒
+        ];
 
-        $db = Yii::$app->db;
         //$appVersion = empty($this->client->appVersion) ? "" : $this->client->appVersion;
-        if ( !empty($this->client->appVersion) && $this->client->appVersion < "1.1.0" )
+        if ( !empty($this->client->appVersion)
+            && $this->client->appVersion >= "1.1.0"
+            //&& in_array($curUser->id, $white_uids)
+        ) {
+            $sql = "select "."
+                    bank_id code,
+                    bank_name name,
+                    sml,
+                    dml,
+                    dtl,
+                    third_platform
+                from
+                    tb_bank_config
+                where
+                    status = 0 order by seq;";
+        }
+        else
         {
+
             $sql = "select "."
                     bank_id code,
                     bank_name name,
@@ -840,32 +892,31 @@ class UserController extends BaseController
                     tb_bank_config
                 where
                     status = 0 and third_platform=" . BankConfig::PLATFORM_UMPAY . "
-                    limit 7";
-        }
-        else
-        {
-            $sql = "select "."
-                    bank_id code,
-                    bank_name name,
-                    sml,
-                    dml,
-                    dtl,
-                    third_platform
-                from
-                    tb_bank_config
-                where
-                    status = 0;";
+                    order by seq limit 7";
         }
 
+        $db = Yii::$app->db;
         $banks = $db->createCommand($sql)->queryAll();
 
-		return [
-			'code' => 0,
-			'banks' => $banks,
-			'client' => $this->client,
-		];
-	}
-	
+
+        foreach($banks as &$bank)
+        {
+            $bank['restrict_desc'] = StringHelper::getBankAmountRestrict(
+                $bank['name'],
+                $bank['sml'],
+                $bank['dml'],
+                $bank['dtl'],
+                $bank['third_platform']
+            );
+        }
+
+        return [
+            'code' => 0,
+            'banks' => $banks,
+            'client' => $this->client,
+        ];
+    }
+
 	/**
 	 * 获得用户绑定的银行卡
 	 *
@@ -897,10 +948,10 @@ class UserController extends BaseController
 			'cards' => $cards
 		];
 	}
-	
+
 	/**
 	 * 获得登录用户基本信息
-	 * 
+	 *
 	 * @name 获得登录用户基本信息 [userInfo]
 	 */
 	public function actionInfo()
@@ -923,7 +974,7 @@ class UserController extends BaseController
 
 	/**
 	 * 获得未登录用户信息
-	 * 
+	 *
 	 * @name 获得未登录用户信息 [userState]
 	 * @method post
 	 * @param string $phone 手机号
@@ -1045,7 +1096,7 @@ class UserController extends BaseController
 			'message' => "充值成功",
 		];
 	}
-	
+
 	/**
 	 * 充值记录
 	 *
@@ -1058,7 +1109,7 @@ class UserController extends BaseController
 		$page = $page > 1 ? intval($page) : 1;
 		$pageSize = intval($pageSize);
 		$offset = ($page - 1) * $pageSize;
-		
+
 		// 为保持和提现记录字段一致amount给客户端改为money
 		$data = (new Query())->from(UserPayOrder::tableName())->select([
 			'order_char_id as id', 'pay_amount as money', 'status', 'created_at'
@@ -1068,11 +1119,11 @@ class UserController extends BaseController
 		])->orderBy([
 			'created_at' => SORT_DESC,
 		])->offset($offset)->limit($pageSize)->all();
-		
+
 		foreach ($data as &$v) {
 			$v['statusLabel'] = UserPayOrder::$charge_status[$v['status']];
 		}
-		
+
 		return [
 			'code' => 0,
 			'data' => $data,

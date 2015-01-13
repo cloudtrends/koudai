@@ -49,19 +49,38 @@ use yii\helpers\Html;
                 项目概述
                 </div>
             </div>
+            
             <div id="detail_invest">
-                账户余额
+                <div class="font1 detail_invest">账户余额</div>
+                <div><span class="detail_project_box_text">0</span><span class="font1">元</span></div>
             </div>
             <div id="detail_progress">
-                项目进度
+               
+                    <div class="detail_r_text" id="detail_r_text1">投资中</div>
+                    <div class="detail_r_text" id="detail_r_text2">已满款</div>
+                    <div class="detail_r_text" id="detail_r_text3">还款中</div>
+                    <div class="detail_r_text" id="detail_r_text4">已还款</div>
+                
             </div>
+            <div id="detail_investlist">
+                <div class="detail_r_text">投资明细</div>
+                <div id="detail_investlist_title">
+                    <span class="fl font1">投资人</span> 
+                    <span class="fr font1">金额(元)&nbsp;&nbsp;&nbsp;</span>
+                </div>
+                <div id="detail_invest_log">
+                </div>
+                <div id="pages_info" class="paging">
+
+                </div>
+            </div>
+            <div class="clear"></div>
         </div>
     </div>
 </body>
 <script type="text/javascript">
       
     var id = Number("<?php echo $id?>");
-    
     var ajaxurl = "<?php echo ApiUrl::toRoute(['project/detail'],true); ?>";
    
     $(document).ready(function(){        
@@ -86,11 +105,82 @@ use yii\helpers\Html;
                   $('#detail_project_progress_text1').html(data.project.success_percent);
                   $('#detail_project_progress_text2').html(remaining);
                   $('#detail_project_progress_text3').html(data.project.total_money);
-                  $("#detail_project_progress_in").attr("style","width:"+ data.project.success_percent +"%;");
-              }else{
-                     alert("get data error");
-                 }
+                  $("#detail_project_progress_in").attr("style","width:"+ data.project.success_percent +"%;");                
+              if(data.project.status == 3){
+                  $("#detail_progress").attr("style"," background: #FFFFFF url(../image/site/progress-1.jpg) no-repeat center;");
+                   $("#detail_r_text1").attr("style","color:#fd5353;");
+              }else if(data.project.status == 5){
+                  $("#detail_progress").attr("style"," background: #FFFFFF url(../image/site/progress-2.jpg) no-repeat center;");
+                   $("#detail_r_text2").attr("style","color:#fd5353;");
+              }else if(data.project.status == 7){
+                  $("#detail_progress").attr("style"," background: #FFFFFF url(../image/site/progress-3.jpg) no-repeat center;");
+                   $("#detail_r_text3").attr("style","color:#fd5353;");
+              }else if(data.project.status == 8){
+                  $("#detail_progress").attr("style"," background: #FFFFFF url(../image/site/progress-4.jpg) no-repeat center;");
+                   $("#detail_r_text4").attr("style","color:#fd5353;");
+              }
+            }
+           }
+        });
+
+        getInvestList(page);
+    });
+
+    var page = 1;
+    var pageSize = 10;
+    function getInvestList(page){
+        var url2 = "<?php echo ApiUrl::toRoute(['project/invest-list'],true); ?>";
+        var html2 ='';
+        $.ajax({
+            url : url2,
+            type: 'GET',
+            dataType: 'jsonp',
+            jsonp: 'callback',
+            data : {id : id,page:page,pageSize:pageSize},
+            success:function(data){
+                if( data.code == 0){
+                     if (data.invests.length == 0){
+                         html2 = '<div align="center">暂无数据</div>';
+                     }
+                    html2 +='<table  cellpadding=0 cellspacing=0>';
+                    $.each(data.invests,function(index,value){
+                        html2 +='<tr >';
+                        html2 +='<td class="font1" style="width:160px; height:20px;">'+value.username+'</td>';
+                        html2 +='<td rowspan="2" class="font1">'+value.invest_money+'</td>';
+                        html2 +='</tr>';
+                        html2 +='<tr>';
+                        html2 +='<td class="font1 color3">'+StrToTime(value.created_at)+'</td>';
+                        html2 +='</tr>';
+                        html2 +='<tr  colspan="2" style="height: 10px;">';
+                        html2 +='</tr>';
+                    });
+                    html2 +='</table>';
+                    $('#detail_invest_log').html(html2);
+
+                    var ajaxpage ="<?php echo Url::toRoute(['site/ajaxpages']);?>";
+                    $.ajax({
+                        url :ajaxpage,
+                        type: 'POST',
+                        dataType: 'json',
+                        data: {pages:data.pages.totalCount,cur:page,pageSize:pageSize,methodName:'getInvestList',hiddenNumber:'1'},
+                        success:function(data){
+                            $('#pages_info').html(data);
+                        }
+                    });
+                }else{
+                    $('#detail_invest_log').html('<div align="center">数据加载失败</div>');
+                }
             }
         });
-    });
+    }
+
+    function StrToTime(nS) {
+		return (new Date(parseInt(nS) * 1000).getFullYear())+'.'
+		+( ((new Date(parseInt(nS) * 1000).getMonth())+1) <10 
+			? '0'+((new Date(parseInt(nS) * 1000).getMonth())+1) 
+			: ((new Date(parseInt(nS) * 1000).getMonth())+1) )+'.'
+		+( (new Date(parseInt(nS) * 1000).getDate()) <10 
+			? '0'+(new Date(parseInt(nS) * 1000).getDate()) 
+			: (new Date(parseInt(nS) * 1000).getDate()) );
+	}
 </script>

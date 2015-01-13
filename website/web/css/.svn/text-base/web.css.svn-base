@@ -6,16 +6,16 @@
     padding:20px 0px 0px 0px;
     margin:0 auto;
    
-    width:1024px;
+    width:1020px;
     /*background-color: red;*/
 }
 /*搜索*/
 #list-search{
-    width:936px;
+    width:938px;
     height:140px;
     margin:0 auto;
     background-color:#fff;
-    border:2px solid #e7e7e7;
+    border:1px solid #e7e7e7;
     margin-bottom:20px;
     padding:20px;   
 }
@@ -57,13 +57,14 @@
 }
 
 .details{
-    width:246px;
+    width:248px;
     height:365px;
     padding:25px;
-    border-top:2px solid #e7e7e7;
-    border-left:2px solid #e7e7e7;
-    border-right:2px solid #e7e7e7;
+    border-top:1px solid #e7e7e7;
+    border-left:1px solid #e7e7e7;
+    border-right:1px solid #e7e7e7;
    border-color: #e7e7e7;
+/*   background: url(../image/site/xinshou.png) no-repeat 100% 0;*/
 }
 
 .name{
@@ -272,7 +273,7 @@
     float:left;
 }
 #detail_project_name_r{
-    font:16px/40px 微软雅黑;
+    font:14px/40px 微软雅黑;
     float:right;
 }
 #detail_project_m{
@@ -334,6 +335,7 @@
 }
 #desc{
      border-top: 1px solid #e7e7e7;
+     height:800px;
 }
 #detail_invest{
     width:220px;
@@ -341,18 +343,193 @@
     background-color: #fff;
     float:right;
     margin-top:20px;
-     padding: 20px;
+    padding: 20px;
+}
+.detail_invest{
+    margin-top: 22px;
+    margin-bottom:18px;
 }
 .detail_project_box_text{
     font:35px/60px 微软雅黑;
     margin: 10px;
 }
+/*投资进度*/
 #detail_progress{
-    width:220px;
+    width:219px;
     height:560px;
+    /*background-color: #fff;*/
+    float:right;
+    margin-top:20px;
+     padding: 20px;
+    background: #FFFFFF url(../image/site/progress-2.jpg) no-repeat center ;
+}
+.detail_r_text{
+   
+    font:16px/20px 微软雅黑;
+    text-align: center;
+    background:#fff;
+    width:64px;
+    height:20px;
+}
+#detail_r_text1{
+    position:relative;
+    top:88px;
+    left:80px;
+}
+#detail_r_text2{
+    position:relative;
+    top:202px;
+    left:80px;
+}
+#detail_r_text3{
+    position:relative;
+    top:318px;
+    left:80px;
+}
+#detail_r_text4{
+    position:relative;
+    top:434px;
+    left:80px;
+}
+/*投资明细*/
+#detail_investlist{
+     width:220px;
+    /*height:415px;*/
     background-color: #fff;
     float:right;
     margin-top:20px;
      padding: 20px;
+     /*overflow-y:scroll;*/
+}
+
+#detail_investlist_title{
+    margin-top: 20px;
+    margin-bottom: 10px;
+    height:30px;
+    border-bottom: 1px solid #e7e7e7;
+}
+
+
+/*我的投资*/
+
+#my-invest{
+    background-color:#f7f7f7;
+}
+#my-invest-header{
+    margin-top:10px;
+    width: 960px;
+    height:40px;
+    padding:10px;
+    background: #fff url(../image/site/header-1.jpg) no-repeat 15px 10px ;
+}
+#my-invest-header-text{
+    font:14px/40px 微软雅黑;
+    margin-left: 60px;
+}
+#my-invest-header-button1 a{
+     width:83px;
+    height:38px;
+    border: 1px solid #fd5353;
+    text-align: center;
+    margin-right:15px;
+    border-radius:5px;
+    display:block;
+    font:14px/40px 微软雅黑;
+    color:#fd5353;
+}
+#my-invest-header-button2 a{
+     width:85px;
+    height:40px;
+    background: #fd5353;
+    text-align: center;
+    margin-right: 15px;
+    border-radius:5px;
+    font:14px/40px 微软雅黑;
+    color:#fff;
+    display:block;
+}
+#my-invest-body{
+    margin-top:10px;
+    width: 978px;
+    height:1100px;
+    background-color: #fff;
+    border: 1px solid #e7e7e7;
+}
+#my-invest-left-bar{
+    width: 130px;
+    height:1080px;
+     background-color: #545454;
+     padding: 10px;
+     float:left;
+}
+.my-invest-left-bars{
+      text-align: center;
+      width: 130px;
+      height:60px;
+      border-bottom: 1px solid #626262;
+      display:block;
+      font:14px/60px 微软雅黑;
+      color:#999;
+}
+#my-invest-left-bar a:hover{
+    color:#fff;
+}
+#my-invest-right-bar{
+    width: 828px;
+    height:1100px;
     
+}
+#my-invest-content{
+     width: 828px;
+     height:600px;
+     
+}
+.none {display: none;}
+.block {display: block;}
+#my-invest-content-m{
+    width: 828px;
+     height:160px;
+     background: #fdfdfd;
+     position:  relative;
+}
+#my-invest-content-m ul{clear:both;margin:0;}
+#my-invest-content-m li{float:left;position: relative;width: 276px;}
+#my-invest-m1{
+    width: 275px;
+    height:160px;
+    border-right: 1px solid #e7e7e7;
+}
+#my-invest-m2{
+    width: 275px;
+    height:160px;
+    border-right: 1px solid #e7e7e7;
+}
+#my-invest-m3{
+    width: 276px;
+    height:160px;
+}
+.my-invest-content-s{
+    width:824px;
+    height:436px;
+    border: 2px solid #fd5353;
+}
+.c_0 {background-color: #fdfdfd;} /*隐藏状态*/
+.c_1 {background-color: #fd5353; color:#fff;} /*显示状态*/
+#my-invest-triangle1{
+    position: absolute;
+  left: 122px;
+  top: 150px;
+   z-index:999;
+}
+#my-invest-triangle2{
+    position: absolute;
+  left: 397px;
+  top: 150px;
+   z-index:999;
+}
+#my-invest-triangle3{
+    position: absolute;
+  left: 673px;
+  top: 150px;
+   z-index:999;
 }

@@ -66,6 +66,9 @@ class FinancialController extends BaseController
             if ($search['loan_time'] != '') {
                 $condition .= " AND UNIX_TIMESTAMP(loan_time) BETWEEN " . trim($search['loan_time']);
             }
+            if ($search['borrower_repayment_time'] != '') {
+                $condition .= " AND UNIX_TIMESTAMP(borrower_repayment_time) BETWEEN " . trim($search['borrower_repayment_time']);
+            }
         }
         $query = Financial::find()->where($condition)->orderBy('id desc');
         $countQuery = clone $query;

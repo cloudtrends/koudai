@@ -25,7 +25,8 @@ $this->showsubmenu($title);
     名称关键词：<input type="text" value="<?php echo Yii::$app->getRequest()->get('project_name', ''); ?>" name="project_name" class="txt" style="width:120px;">&nbsp;
     状态：<?php echo Html::dropDownList('status', Yii::$app->getRequest()->get('status', ''), Financial::$status, ['prompt' => '所有状态']); ?>&nbsp;
     项目类型：<?php echo Html::dropDownList('project_type', Yii::$app->getRequest()->get('project_type', ''), Financial::$type, ['prompt' => '所有类型']); ?>&nbsp;
-    放款开始时间：<?php echo Html::dropDownList('loan_time', Yii::$app->getRequest()->get('loan_time', ''), Financial::$loan_time_ranger, ['prompt' => '请选择']); ?>&nbsp;
+    放款时间：<?php echo Html::dropDownList('loan_time', Yii::$app->getRequest()->get('loan_time', ''), Financial::$loan_time_ranger, ['prompt' => '请选择']); ?>&nbsp;
+    还款时间：<?php echo Html::dropDownList('borrower_repayment_time', Yii::$app->getRequest()->get('borrower_repayment_time', ''), Financial::$borrower_repayment_time_ranger, ['prompt' => '请选择']); ?>&nbsp;
     <input type="submit" name="search_submit" value="过滤" class="btn">
 <?php ActiveForm::end(); ?>
 
@@ -41,8 +42,9 @@ $this->showsubmenu($title);
         <th>实际收益(元)</th>
         <th>借款收益(元)</th>
         <th>用户收益(元)</th>
-        <th>状态</th>        
-        <th>放款时间</th>        
+        <th>状态</th>
+        <th>放款时间</th>
+        <th>还款时间</th>
         <th>操作</th>
     </tr>
     <?php foreach ($financials as $value): ?>
@@ -62,6 +64,7 @@ $this->showsubmenu($title);
         <td><?php echo sprintf('%.2f',$value->investor_revenue / 100); ?></td>
         <td><?php echo Financial::$status[$value->status]; ?></td>
         <td><?php echo $value->loan_time; ?></td>
+        <td><?php echo $value->borrower_repayment_time; ?></td>
         <td class="td23">
             <?php if ($type == 'all'): ?>
                  <a href="<?php echo Url::to(['financial/view', 'id' => $value->id]); ?>">查看</a>
@@ -85,7 +88,7 @@ $this->showsubmenu($title);
     <?php endforeach; ?>
     </table>
     <?php if (empty($financials)): ?>
-        <div class="no-result">暂无记录</div>   
+        <div class="no-result">暂无记录</div>
     <?php endif; ?>
 </form>
 <?php echo LinkPager::widget(['pagination' => $pages]); ?>

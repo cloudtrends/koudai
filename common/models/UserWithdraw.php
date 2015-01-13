@@ -19,10 +19,8 @@ class UserWithdraw extends \yii\db\ActiveRecord
 		self::STATUS_FAILED => '提现失败',
 	);
 
-
-
     /*
-        联动支付接口状态
+        提现接口状态
         1-支付中
         3-失败
         4-成功
@@ -36,7 +34,7 @@ class UserWithdraw extends \yii\db\ActiveRecord
         self::UMP_PAY_FAILED => '提现失败',
         self::UMP_PAY_SUCCESS => '提现成功',
     );
-    
+
     /**
      * 审核状态
      */

@@ -8,6 +8,8 @@
 
 namespace frontend\controllers;
 
+use common\models\UserWithdraw;
+use common\services\AccountService;
 use Yii;
 use common\exceptions\PayException;
 use common\services\LLPayService;
@@ -16,10 +18,12 @@ use yii\base\Exception;
 class NotifyController extends BaseController
 {
     protected $llPayService;
+    protected $accountService;
 
-    public function __construct($id, $module, LLPayService $llPayService,$config = [])
+    public function __construct($id, $module, LLPayService $llPayService, AccountService $accountService, $config = [])
     {
         $this->llPayService = $llPayService;
+        $this->accountService = $accountService;
         parent::__construct($id, $module, $config);
     }
 
@@ -68,6 +72,43 @@ class NotifyController extends BaseController
         }
     }
 
+    // 连连提现回调
+    public function actionLianLianWithdrawNotify()
+    {
+        $withdrawResult = $this->getLLWithDrawResp();
+        Yii::info("Withdraw Result:" . var_export($withdrawResult, true), LLPayService::LOG_CATEGORY);
+
+        $withdrawResult['notify_time'] = time();
+        $order_id = $withdrawResult['no_order'];
+
+        UserWithdraw::updateAll(
+            ['notify_result' => json_encode($withdrawResult),],
+            ['order_id' => $order_id,]
+        );
+
+        if ( $withdrawResult['result_pay'] == "SUCCESS" )
+        {
+            $this->accountService->withdrawHandleSuccess($order_id);
+        }
+        else if ( $withdrawResult['result_pay'] == "WAITING" )
+        {
+            $this->accountService->withdrawHandleWait($order_id);
+        }
+        else if  ( $withdrawResult['result_pay'] == "FAILURE" )
+        {
+            $this->accountService->withdrawHandleFailed($order_id);
+        }
+        else
+        {
+            PayException::throwCodeExt(2228);
+        }
+
+        return [
+            'ret_code' => "0000",
+            'ret_msg' => "交易成功",
+        ];
+    }
+
     private function getLLPayResp()
     {
         $str = file_get_contents("php://input");
@@ -89,6 +130,26 @@ class NotifyController extends BaseController
         if ( empty($resp['result_pay']) or $resp['result_pay'] != "SUCCESS" )
         {
             PayException::throwCodeExt(2203);
+        }
+
+        return $resp;
+    }
+
+    private function getLLWithDrawResp()
+    {
+        $str = file_get_contents("php://input");
+        Yii::info($str,LLPayService::LOG_CATEGORY);
+        $resp = json_decode($str, true);
+        Yii::info(var_export($resp,true),LLPayService::LOG_CATEGORY);
+
+        if(empty($resp)){
+            PayException::throwCodeExt(2104);
+        }
+
+        //首先对获得的商户号进行比对
+        if( empty($resp['oid_partner']) or $resp['oid_partner'] != LLPayService::LLPAY_OID_PARTNER) {
+            //商户号错误
+            PayException::throwCodeExt(2201);
         }
 
         return $resp;

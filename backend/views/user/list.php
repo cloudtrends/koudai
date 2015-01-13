@@ -17,6 +17,7 @@ $this->showsubmenu('用户基本信息');
 <?php $form = ActiveForm::begin(['id' => 'searchform','method'=>'get', 'options' => ['style' => 'margin-bottom:5px;']]); ?>
             ID：<input type="text" value="<?php echo Yii::$app->getRequest()->get('id', ''); ?>" name="id" class="txt" style="width:60px;">&nbsp;
 	用户名关键词：<input type="text" value="<?php echo Yii::$app->getRequest()->get('username', ''); ?>" name="username" class="txt" style="width:120px;">&nbsp;
+	姓名：<input type="text" value="<?php echo Yii::$app->getRequest()->get('realname', ''); ?>" name="realname" class="txt" style="width:120px;">&nbsp;
 	<input type="submit" name="search_submit" value="过滤" class="btn">
 <?php ActiveForm::end(); ?>
 

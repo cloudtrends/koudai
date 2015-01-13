@@ -16,3 +16,4 @@ Yii::$container->set('msgPushService', 'common\services\MsgPushService');
 Yii::$container->set('payService', 'common\services\PayService');
 Yii::$container->set('llPayService', 'common\services\LLPayService');
 Yii::$container->set('weixinService', 'common\services\WeixinService');
+Yii::$container->set('accountService', 'common\services\AccountService');

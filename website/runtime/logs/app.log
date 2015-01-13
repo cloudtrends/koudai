@@ -227,3 +227,116 @@ Stack trace:
 #0 /opt/lampp/htdocs/vendor/yiisoft/yii2/base/Application.php(371): yii\web\Application->handleRequest(Object(website\components\Request))
 #1 /opt/lampp/htdocs/website/web/index.php(18): yii\base\Application->run()
 #2 {main}
+2015-01-09 11:52:47 [192.168.1.129][-][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "css/style.css".' in /opt/lampp/htdocs/vendor/yiisoft/yii2/base/Module.php:468
+Stack trace:
+#0 /opt/lampp/htdocs/vendor/yiisoft/yii2/web/Application.php(83): yii\base\Module->runAction('css/style.css', Array)
+#1 /opt/lampp/htdocs/vendor/yiisoft/yii2/base/Application.php(371): yii\web\Application->handleRequest(Object(website\components\Request))
+#2 /opt/lampp/htdocs/website/web/index.php(18): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Unable to resolve the request "css/style.css".' in /opt/lampp/htdocs/vendor/yiisoft/yii2/web/Application.php:95
+Stack trace:
+#0 /opt/lampp/htdocs/vendor/yiisoft/yii2/base/Application.php(371): yii\web\Application->handleRequest(Object(website\components\Request))
+#1 /opt/lampp/htdocs/website/web/index.php(18): yii\base\Application->run()
+#2 {main}
+2015-01-09 11:52:50 [192.168.1.129][-][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "css/style.css".' in /opt/lampp/htdocs/vendor/yiisoft/yii2/base/Module.php:468
+Stack trace:
+#0 /opt/lampp/htdocs/vendor/yiisoft/yii2/web/Application.php(83): yii\base\Module->runAction('css/style.css', Array)
+#1 /opt/lampp/htdocs/vendor/yiisoft/yii2/base/Application.php(371): yii\web\Application->handleRequest(Object(website\components\Request))
+#2 /opt/lampp/htdocs/website/web/index.php(18): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Unable to resolve the request "css/style.css".' in /opt/lampp/htdocs/vendor/yiisoft/yii2/web/Application.php:95
+Stack trace:
+#0 /opt/lampp/htdocs/vendor/yiisoft/yii2/base/Application.php(371): yii\web\Application->handleRequest(Object(website\components\Request))
+#1 /opt/lampp/htdocs/website/web/index.php(18): yii\base\Application->run()
+#2 {main}
+2015-01-09 11:52:50 [192.168.1.129][-][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "css/style.css".' in /opt/lampp/htdocs/vendor/yiisoft/yii2/base/Module.php:468
+Stack trace:
+#0 /opt/lampp/htdocs/vendor/yiisoft/yii2/web/Application.php(83): yii\base\Module->runAction('css/style.css', Array)
+#1 /opt/lampp/htdocs/vendor/yiisoft/yii2/base/Application.php(371): yii\web\Application->handleRequest(Object(website\components\Request))
+#2 /opt/lampp/htdocs/website/web/index.php(18): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Unable to resolve the request "css/style.css".' in /opt/lampp/htdocs/vendor/yiisoft/yii2/web/Application.php:95
+Stack trace:
+#0 /opt/lampp/htdocs/vendor/yiisoft/yii2/base/Application.php(371): yii\web\Application->handleRequest(Object(website\components\Request))
+#1 /opt/lampp/htdocs/website/web/index.php(18): yii\base\Application->run()
+#2 {main}
+2015-01-09 11:52:51 [192.168.1.129][-][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "css/style.css".' in /opt/lampp/htdocs/vendor/yiisoft/yii2/base/Module.php:468
+Stack trace:
+#0 /opt/lampp/htdocs/vendor/yiisoft/yii2/web/Application.php(83): yii\base\Module->runAction('css/style.css', Array)
+#1 /opt/lampp/htdocs/vendor/yiisoft/yii2/base/Application.php(371): yii\web\Application->handleRequest(Object(website\components\Request))
+#2 /opt/lampp/htdocs/website/web/index.php(18): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Unable to resolve the request "css/style.css".' in /opt/lampp/htdocs/vendor/yiisoft/yii2/web/Application.php:95
+Stack trace:
+#0 /opt/lampp/htdocs/vendor/yiisoft/yii2/base/Application.php(371): yii\web\Application->handleRequest(Object(website\components\Request))
+#1 /opt/lampp/htdocs/website/web/index.php(18): yii\base\Application->run()
+#2 {main}
+2015-01-09 11:52:51 [192.168.1.129][-][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "css/style.css".' in /opt/lampp/htdocs/vendor/yiisoft/yii2/base/Module.php:468
+Stack trace:
+#0 /opt/lampp/htdocs/vendor/yiisoft/yii2/web/Application.php(83): yii\base\Module->runAction('css/style.css', Array)
+#1 /opt/lampp/htdocs/vendor/yiisoft/yii2/base/Application.php(371): yii\web\Application->handleRequest(Object(website\components\Request))
+#2 /opt/lampp/htdocs/website/web/index.php(18): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Unable to resolve the request "css/style.css".' in /opt/lampp/htdocs/vendor/yiisoft/yii2/web/Application.php:95
+Stack trace:
+#0 /opt/lampp/htdocs/vendor/yiisoft/yii2/base/Application.php(371): yii\web\Application->handleRequest(Object(website\components\Request))
+#1 /opt/lampp/htdocs/website/web/index.php(18): yii\base\Application->run()
+#2 {main}
+2015-01-09 11:56:35 [192.168.1.129][-][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "css/style.css".' in /opt/lampp/htdocs/vendor/yiisoft/yii2/base/Module.php:468
+Stack trace:
+#0 /opt/lampp/htdocs/vendor/yiisoft/yii2/web/Application.php(83): yii\base\Module->runAction('css/style.css', Array)
+#1 /opt/lampp/htdocs/vendor/yiisoft/yii2/base/Application.php(371): yii\web\Application->handleRequest(Object(website\components\Request))
+#2 /opt/lampp/htdocs/website/web/index.php(18): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Unable to resolve the request "css/style.css".' in /opt/lampp/htdocs/vendor/yiisoft/yii2/web/Application.php:95
+Stack trace:
+#0 /opt/lampp/htdocs/vendor/yiisoft/yii2/base/Application.php(371): yii\web\Application->handleRequest(Object(website\components\Request))
+#1 /opt/lampp/htdocs/website/web/index.php(18): yii\base\Application->run()
+#2 {main}
+2015-01-09 11:57:41 [192.168.1.129][-][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "css/style.css".' in /opt/lampp/htdocs/vendor/yiisoft/yii2/base/Module.php:468
+Stack trace:
+#0 /opt/lampp/htdocs/vendor/yiisoft/yii2/web/Application.php(83): yii\base\Module->runAction('css/style.css', Array)
+#1 /opt/lampp/htdocs/vendor/yiisoft/yii2/base/Application.php(371): yii\web\Application->handleRequest(Object(website\components\Request))
+#2 /opt/lampp/htdocs/website/web/index.php(18): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Unable to resolve the request "css/style.css".' in /opt/lampp/htdocs/vendor/yiisoft/yii2/web/Application.php:95
+Stack trace:
+#0 /opt/lampp/htdocs/vendor/yiisoft/yii2/base/Application.php(371): yii\web\Application->handleRequest(Object(website\components\Request))
+#1 /opt/lampp/htdocs/website/web/index.php(18): yii\base\Application->run()
+#2 {main}
+2015-01-09 11:57:46 [192.168.1.129][-][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "css/style.css".' in /opt/lampp/htdocs/vendor/yiisoft/yii2/base/Module.php:468
+Stack trace:
+#0 /opt/lampp/htdocs/vendor/yiisoft/yii2/web/Application.php(83): yii\base\Module->runAction('css/style.css', Array)
+#1 /opt/lampp/htdocs/vendor/yiisoft/yii2/base/Application.php(371): yii\web\Application->handleRequest(Object(website\components\Request))
+#2 /opt/lampp/htdocs/website/web/index.php(18): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Unable to resolve the request "css/style.css".' in /opt/lampp/htdocs/vendor/yiisoft/yii2/web/Application.php:95
+Stack trace:
+#0 /opt/lampp/htdocs/vendor/yiisoft/yii2/base/Application.php(371): yii\web\Application->handleRequest(Object(website\components\Request))
+#1 /opt/lampp/htdocs/website/web/index.php(18): yii\base\Application->run()
+#2 {main}
+2015-01-09 16:08:58 [192.168.1.129][-][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request: site/re-success' in /opt/lampp/htdocs/vendor/yiisoft/yii2/base/Controller.php:123
+Stack trace:
+#0 /opt/lampp/htdocs/vendor/yiisoft/yii2/base/Module.php(462): yii\base\Controller->runAction('re-success', Array)
+#1 /opt/lampp/htdocs/vendor/yiisoft/yii2/web/Application.php(83): yii\base\Module->runAction('site/re-success', Array)
+#2 /opt/lampp/htdocs/vendor/yiisoft/yii2/base/Application.php(371): yii\web\Application->handleRequest(Object(website\components\Request))
+#3 /opt/lampp/htdocs/website/web/index.php(18): yii\base\Application->run()
+#4 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Unable to resolve the request: site/re-success' in /opt/lampp/htdocs/vendor/yiisoft/yii2/web/Application.php:95
+Stack trace:
+#0 /opt/lampp/htdocs/vendor/yiisoft/yii2/base/Application.php(371): yii\web\Application->handleRequest(Object(website\components\Request))
+#1 /opt/lampp/htdocs/website/web/index.php(18): yii\base\Application->run()
+#2 {main}
+2015-01-10 14:08:13 [192.168.1.129][44][pqfsp10vklv7gaeca6hh7gsqi6][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Class 'yii\helpers\html' not found' in /opt/lampp/htdocs/website/views/layouts/main.php:38
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}

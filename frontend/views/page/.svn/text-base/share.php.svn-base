@@ -11,6 +11,13 @@
 </div>
 
 <script type="text/javascript">
+	function downLoad() {
+		if (window.browser.iPhone || window.browser.ipad || window.browser.ios) {
+			iosDownload();
+        } else {
+        	androidDownload();
+        }
+	}
     function iosDownload() {
         if (!window.browser.wx){
             window.location.href = "https://itunes.apple.com/cn/app/id953061503?mt=8";

@@ -8,14 +8,16 @@
 
 namespace common\services;
 
+use common\api\HttpRequest;
 use common\exceptions\PayException;
 use common\helpers\StringHelper;
 use common\models\BankConfig;
 use common\models\Order;
 use common\models\User;
 use common\models\UserAccount;
-use common\models\UserCharge;
 use common\models\UserPayOrder;
+use common\models\UserWithdraw;
+use mobile\components\ApiUrl;
 use Yii;
 use common\helpers\TimeHelper;
 use common\models\UserBankCard;
@@ -149,6 +151,8 @@ class LLPayService extends Object
         $info_order = [
             'uid' => $uid,
             'action' => "userCharge",
+            'pay_amount' => $amount,
+
         ];
 
 
@@ -386,10 +390,12 @@ class LLPayService extends Object
     }
 
 
-    public function withdraw($id)
+    public function withdraw( $withdraw,
+                              $money,
+                              $phone_no)
     {
         // 非正式环境下，写死返回成功，add by yake
-        if (YII_ENV != 'prod') {
+        if (YII_ENV != 'prod' && YII_ENV != 'pre_release') {
             return [
                 'httpCode' => 200,
                 'code' => '0',
@@ -397,8 +403,146 @@ class LLPayService extends Object
             ];
         }
 
+        if (!($withdraw instanceof UserWithdraw))
+        {
+            PayException::throwCodeExt(2105);
+        }
 
+        $order_id = $withdraw['order_id'];
+        $dt_order = strval(date("YmdHis", $withdraw['updated_at']));
+
+        // 1. 找到 $order_id 对应的用户信息
+
+        $db = Yii::$app->db;
+
+        $sql = "select * from " . User::tableName() ." u ".
+            " inner join " . UserBankCard::tableName() . " ubc " .
+            " on u.id = ubc.user_id where u.username =\"{$phone_no}\"";
+
+        $userInfo = $db->createCommand($sql)->queryOne();
+        $bankInfo = BankConfig::findOne([
+            'bank_id' => $userInfo['bank_id'],
+            'third_platform' => BankConfig::PLATFORM_LLPAY,
+        ]);
+
+        if (empty($bankInfo))
+        {
+            PayException::throwCodeExt();
+        }
+
+        Yii::info("userInfo=".var_export($userInfo, true));
+        Yii::info("bankInfo=".var_export($bankInfo->toArray(), true));
+
+        // 2. 发起提现请求
+        $amount = $withdraw['money'] / 100;
+        $info_order = json_encode([
+            'uid' => $withdraw['user_id'],
+            'action' => "userWithDraw",
+            'amount' => $amount
+        ]);
+
+        // 需要参与签名的参数
+        $signParams = [
+            'oid_partner' => strval(self::LLPAY_OID_PARTNER),
+            'sign_type' => "RSA",
+            //'busi_partner' => "101001",
+            'no_order' => strval($order_id),
+            'dt_order' => strval($dt_order),// 格式：YYYYMMDDH24MISS 14 位数字，精确到秒
+            'money_order' => strval($amount),
+            'flag_card' => "0",
+            'card_no' => strval($userInfo['card_no']),
+            "acct_name" => strval($userInfo['realname']),
+            'info_order' => json_encode($info_order),
+            'notify_url' =>  "http://42.96.204.114/koudai/frontend/web/notify/lian-lian-withdraw-notify",//ApiUrl::toRoute('notify/lian-lian-withdraw-notify',true),
+            'api_version' => "1.2",
+            //'valid_order' => strval(self::VALID_ORDER_LIMIT),
+        ];
+
+        /*
+        return [
+            'httpCode' => 200,
+            'code' => -1,
+            'message' => "签名测试",
+        ];*/
+
+        $signParams['sign'] = $this->_sign($signParams);
+        Yii::info("signParams=".var_export($signParams,true));
+
+        $ret = $this->_withdrawReq($signParams);
+
+        // http 请求返回200 表示成功
+        if ( $ret['code'] != HttpRequest::HTTP_Status_200_Code_OK)
+        {
+            PayException::throwCodeExt(2227);
+        }
+
+        $withdraw_resp = json_decode($ret['resp'],true);
+
+        $code = $withdraw_resp['ret_code'];
+        if( intval($code) == 0 )
+        {
+            $code = 0;
+        }
+
+        return [
+            'httpCode' => 200,
+            'code' => $code,
+            'message' => $withdraw_resp['ret_msg'],
+        ];
     }
+
+
+    public function withdrawQuery($withdraw)
+    {
+        if (YII_ENV != 'prod' && YII_ENV != 'pre_release') {
+            return [
+                'httpCode' => 200,
+                'code' => '0',
+                'message' => '',
+            ];
+        }
+
+        if (!($withdraw instanceof UserWithdraw))
+        {
+            PayException::throwCodeExt(2105);
+        }
+
+        $order_id = $withdraw['order_id'];
+
+        // 1. 发起提现查询请求
+
+
+        // 需要参与签名的参数
+        $signParams = [
+            'oid_partner' => strval(self::LLPAY_OID_PARTNER),
+            'sign_type' => "RSA",
+            'no_order' => strval($order_id),
+            'type_dc' => "1",
+        ];
+
+
+        $signParams['sign'] = $this->_sign($signParams);
+        Yii::info("signParams=".var_export($signParams,true));
+
+        $ret = $this->_withdrawQuery($signParams);
+
+        // http 请求返回200 表示成功
+        if ( $ret['code'] != HttpRequest::HTTP_Status_200_Code_OK)
+        {
+            PayException::throwCodeExt(2227);
+        }
+
+        $withdraw_resp = json_decode($ret['resp'],true);
+
+        $code = $withdraw_resp['ret_code'];
+        if( intval($code) == 0 )
+        {
+            $code = 0;
+        }
+
+        return $withdraw_resp;
+    }
+
     // -------------- 私有函数开始 --------------
 
     // 获取风控参数
@@ -424,7 +568,7 @@ class LLPayService extends Object
         // 签名数组去空值，并且重新排序
         $signParams = [];
         foreach($params as $key=>$param){
-            if( !empty( $param ))
+            if( isset( $param ))
             {
                 $signParams[$key] = $param;
             }
@@ -522,16 +666,32 @@ class LLPayService extends Object
         return $result;
     }
 
+    private function _withdrawReq($signParams)
+    {
+        $httpReq = new HttpRequest();
+        $httpReq->url = "https://yintong.com.cn/traderapi/cardandpay.htm";
+        $httpReq->method = "POST";
+        $httpReq->postDataFormat = HttpRequest::POST_DATA_TYPE_JSON;
+        $httpReq->postFields = $signParams;
+
+        $ret = $httpReq->send();
+        return $ret;
+    }
+
+    private function _withdrawQuery($signParams)
+    {
+        $httpReq = new HttpRequest();
+        $httpReq->url = "https://yintong.com.cn/traderapi/orderquery.htm";
+        $httpReq->method = "POST";
+        $httpReq->postDataFormat = HttpRequest::POST_DATA_TYPE_JSON;
+        $httpReq->postFields = $signParams;
+
+        $ret = $httpReq->send();
+        return $ret;
+    }
 
     const LLPAY_TEST_OID_PARTNER = "201408071000001543";
     const LLPAY_TEST_OID_MD5_KEY = "201408071000001543test_20140812";
     const LLPAY_OID_PARTNER = "201409181000031503";
 
-    private static $version = "1.1";
-    private $private_key = <<<EOT
-EOT;
-
-    private $public_key = <<<EOT
------END PUBLIC KEY-----
-EOT;
 } 

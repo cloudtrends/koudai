@@ -2,6 +2,9 @@
 namespace website\components;
 
 use Yii;
+use common\models\NoticeSms;
+use yii\helpers\Html;
+use common\helpers\StringHelper;
 
 class View extends \yii\web\View
 {
@@ -19,6 +22,7 @@ class View extends \yii\web\View
 	 * $hostInfo + $baseUrl
 	 */
 	public $absBaseUrl;
+	public $userName;
 	
 	public function init()
 	{
@@ -26,5 +30,17 @@ class View extends \yii\web\View
 		$this->baseUrl = Yii::$app->getRequest()->getBaseUrl();
 		$this->hostInfo = Yii::$app->getRequest()->getHostInfo();
 		$this->absBaseUrl = $this->hostInfo . $this->baseUrl;
+		$this->userName = Yii::$app->user->identity['username'];
 	}
+
+	public function GetMsgCount()
+	{
+		return NoticeSms::findNewNoticeByCount(Yii::$app->user->identity->account->user_id);
+	}
+
+	public function GetUserName()
+	{
+		return Html::encode( StringHelper::blurPhone(Yii::$app->user->identity['username']) );
+	}
+
 }

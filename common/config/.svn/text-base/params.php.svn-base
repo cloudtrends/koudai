@@ -4,9 +4,9 @@
  */
 return [
 	'appConfig' => [
-		'iosVersion'			=> '1.0.0',
+		'iosVersion'			=> '1.1.0',
 		'iosForceUpgrade'		=> 0,
-		'androidVersion'		=> '1.0.3',
+		'androidVersion'		=> '1.0.0',
 		'androidForceUpgrade'	=> 0,
 		'androidDownloadUrl'	=> 'http://www.koudailc.com/attachment/download/koudailicai.apk',
 	],

@@ -449,14 +449,17 @@ class ProjectController extends BaseController
 		$page = $page > 1 ? intval($page) : 1;
 		$pageSize = intval($pageSize);
 		$offset = ($page - 1) * $pageSize;
-		$invests = (new Query())->from(ProjectInvest::tableName())->select([
+        $query = (new Query())->from(ProjectInvest::tableName())->select([
 			'id', 'username', 'invest_money', 'created_at', 'status'
 		])->where([
 			'project_id' => intval($id),
 		])->orderBy([
 			'id' => SORT_DESC,
-		])->offset($offset)->limit($pageSize)->all();
-		
+		]);
+        $countQuery = clone $query;
+        $pages = new Pagination(['totalCount' => $countQuery->count()]);
+        $invests = $query->offset($offset)->limit($pageSize)->all();
+
 		foreach ($invests as $k => $v) {
 			$invests[$k]['username'] = StringHelper::blurPhone($v['username']);
 			$invests[$k]['statusLabel'] = ProjectInvest::$status[$v['status']];
@@ -466,6 +469,7 @@ class ProjectController extends BaseController
 			'code' => 0,
 			'page' => $page,
 			'pageSize' => $pageSize,
+            'pages' => $pages,
 			'invests' => $invests,
 		];
 	}
@@ -484,7 +488,11 @@ class ProjectController extends BaseController
         $pageSize = intval($pageSize);
         $offset = ($page - 1) * $pageSize;
 
-        $condition = '`status` = ' . $status ;
+        $condition = '1=1';
+        if (isset($status)){
+            $condition .= ' AND `status` = ' . $status ;
+        }
+
         if (!empty($id)){
             $condition .= ' AND project_id = '.$id;
         }

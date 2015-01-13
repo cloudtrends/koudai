@@ -2818,3 +2818,253 @@
     ]
     'argc' => 2
 ]
+2015-01-09 00:05:01 [-][-][-][info][console\controllers\ProfitsController] begin action
+2015-01-09 00:05:02 [-][-][-][info][console\controllers\ProfitsController] end action
+2015-01-09 00:05:01 [-][-][-][info][application] $_SERVER = [
+    'SHELL' => '/bin/sh'
+    'USER' => 'root'
+    'PATH' => '/usr/bin:/bin'
+    'PWD' => '/root'
+    'LANG' => 'en_US.UTF-8'
+    'SHLVL' => '1'
+    'HOME' => '/root'
+    'LOGNAME' => 'root'
+    '_' => '/opt/lampp/bin/php'
+    'PHP_SELF' => '/opt/lampp/htdocs/yii'
+    'SCRIPT_NAME' => '/opt/lampp/htdocs/yii'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/yii'
+    'PATH_TRANSLATED' => '/opt/lampp/htdocs/yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1420733101.6655
+    'REQUEST_TIME' => 1420733101
+    'argv' => [
+        0 => '/opt/lampp/htdocs/yii'
+        1 => 'profits/daily-project'
+    ]
+    'argc' => 2
+]
+2015-01-09 00:05:01 [-][-][-][info][console\controllers\ProfitsController] begin action
+2015-01-09 00:05:02 [-][-][-][info][console\controllers\ProfitsController] end action
+2015-01-09 00:05:01 [-][-][-][info][application] $_SERVER = [
+    'SHELL' => '/bin/sh'
+    'USER' => 'root'
+    'PATH' => '/usr/bin:/bin'
+    'PWD' => '/root'
+    'LANG' => 'en_US.UTF-8'
+    'SHLVL' => '1'
+    'HOME' => '/root'
+    'LOGNAME' => 'root'
+    '_' => '/opt/lampp/bin/php'
+    'PHP_SELF' => '/opt/lampp/htdocs/yii'
+    'SCRIPT_NAME' => '/opt/lampp/htdocs/yii'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/yii'
+    'PATH_TRANSLATED' => '/opt/lampp/htdocs/yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1420733101.6739
+    'REQUEST_TIME' => 1420733101
+    'argv' => [
+        0 => '/opt/lampp/htdocs/yii'
+        1 => 'profits/daily-kdb'
+    ]
+    'argc' => 2
+]
+2015-01-10 00:05:01 [-][-][-][info][console\controllers\ProfitsController] begin action
+2015-01-10 00:05:02 [-][-][-][info][console\controllers\ProfitsController] end action
+2015-01-10 00:05:01 [-][-][-][info][application] $_SERVER = [
+    'SHELL' => '/bin/sh'
+    'USER' => 'root'
+    'PATH' => '/usr/bin:/bin'
+    'PWD' => '/root'
+    'LANG' => 'en_US.UTF-8'
+    'SHLVL' => '1'
+    'HOME' => '/root'
+    'LOGNAME' => 'root'
+    '_' => '/opt/lampp/bin/php'
+    'PHP_SELF' => '/opt/lampp/htdocs/yii'
+    'SCRIPT_NAME' => '/opt/lampp/htdocs/yii'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/yii'
+    'PATH_TRANSLATED' => '/opt/lampp/htdocs/yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1420819501.345
+    'REQUEST_TIME' => 1420819501
+    'argv' => [
+        0 => '/opt/lampp/htdocs/yii'
+        1 => 'profits/daily-project'
+    ]
+    'argc' => 2
+]
+2015-01-10 00:05:01 [-][-][-][info][console\controllers\ProfitsController] begin action
+2015-01-10 00:05:02 [-][-][-][info][console\controllers\ProfitsController] end action
+2015-01-10 00:05:01 [-][-][-][info][application] $_SERVER = [
+    'SHELL' => '/bin/sh'
+    'USER' => 'root'
+    'PATH' => '/usr/bin:/bin'
+    'PWD' => '/root'
+    'LANG' => 'en_US.UTF-8'
+    'SHLVL' => '1'
+    'HOME' => '/root'
+    'LOGNAME' => 'root'
+    '_' => '/opt/lampp/bin/php'
+    'PHP_SELF' => '/opt/lampp/htdocs/yii'
+    'SCRIPT_NAME' => '/opt/lampp/htdocs/yii'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/yii'
+    'PATH_TRANSLATED' => '/opt/lampp/htdocs/yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1420819501.3415
+    'REQUEST_TIME' => 1420819501
+    'argv' => [
+        0 => '/opt/lampp/htdocs/yii'
+        1 => 'profits/daily-kdb'
+    ]
+    'argc' => 2
+]
+2015-01-11 00:05:01 [-][-][-][info][console\controllers\ProfitsController] begin action
+2015-01-11 00:05:02 [-][-][-][info][console\controllers\ProfitsController] end action
+2015-01-11 00:05:01 [-][-][-][info][application] $_SERVER = [
+    'SHELL' => '/bin/sh'
+    'USER' => 'root'
+    'PATH' => '/usr/bin:/bin'
+    'PWD' => '/root'
+    'LANG' => 'en_US.UTF-8'
+    'SHLVL' => '1'
+    'HOME' => '/root'
+    'LOGNAME' => 'root'
+    '_' => '/opt/lampp/bin/php'
+    'PHP_SELF' => '/opt/lampp/htdocs/yii'
+    'SCRIPT_NAME' => '/opt/lampp/htdocs/yii'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/yii'
+    'PATH_TRANSLATED' => '/opt/lampp/htdocs/yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1420905901.8755
+    'REQUEST_TIME' => 1420905901
+    'argv' => [
+        0 => '/opt/lampp/htdocs/yii'
+        1 => 'profits/daily-project'
+    ]
+    'argc' => 2
+]
+2015-01-11 00:05:01 [-][-][-][info][console\controllers\ProfitsController] begin action
+2015-01-11 00:05:02 [-][-][-][info][console\controllers\ProfitsController] end action
+2015-01-11 00:05:01 [-][-][-][info][application] $_SERVER = [
+    'SHELL' => '/bin/sh'
+    'USER' => 'root'
+    'PATH' => '/usr/bin:/bin'
+    'PWD' => '/root'
+    'LANG' => 'en_US.UTF-8'
+    'SHLVL' => '1'
+    'HOME' => '/root'
+    'LOGNAME' => 'root'
+    '_' => '/opt/lampp/bin/php'
+    'PHP_SELF' => '/opt/lampp/htdocs/yii'
+    'SCRIPT_NAME' => '/opt/lampp/htdocs/yii'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/yii'
+    'PATH_TRANSLATED' => '/opt/lampp/htdocs/yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1420905901.8752
+    'REQUEST_TIME' => 1420905901
+    'argv' => [
+        0 => '/opt/lampp/htdocs/yii'
+        1 => 'profits/daily-kdb'
+    ]
+    'argc' => 2
+]
+2015-01-12 00:05:01 [-][-][-][info][console\controllers\ProfitsController] begin action
+2015-01-12 00:05:02 [-][-][-][info][console\controllers\ProfitsController] end action
+2015-01-12 00:05:01 [-][-][-][info][application] $_SERVER = [
+    'SHELL' => '/bin/sh'
+    'USER' => 'root'
+    'PATH' => '/usr/bin:/bin'
+    'PWD' => '/root'
+    'LANG' => 'en_US.UTF-8'
+    'SHLVL' => '1'
+    'HOME' => '/root'
+    'LOGNAME' => 'root'
+    '_' => '/opt/lampp/bin/php'
+    'PHP_SELF' => '/opt/lampp/htdocs/yii'
+    'SCRIPT_NAME' => '/opt/lampp/htdocs/yii'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/yii'
+    'PATH_TRANSLATED' => '/opt/lampp/htdocs/yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1420992301.4742
+    'REQUEST_TIME' => 1420992301
+    'argv' => [
+        0 => '/opt/lampp/htdocs/yii'
+        1 => 'profits/daily-project'
+    ]
+    'argc' => 2
+]
+2015-01-12 00:05:01 [-][-][-][info][console\controllers\ProfitsController] begin action
+2015-01-12 00:05:02 [-][-][-][info][console\controllers\ProfitsController] end action
+2015-01-12 00:05:01 [-][-][-][info][application] $_SERVER = [
+    'SHELL' => '/bin/sh'
+    'USER' => 'root'
+    'PATH' => '/usr/bin:/bin'
+    'PWD' => '/root'
+    'LANG' => 'en_US.UTF-8'
+    'SHLVL' => '1'
+    'HOME' => '/root'
+    'LOGNAME' => 'root'
+    '_' => '/opt/lampp/bin/php'
+    'PHP_SELF' => '/opt/lampp/htdocs/yii'
+    'SCRIPT_NAME' => '/opt/lampp/htdocs/yii'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/yii'
+    'PATH_TRANSLATED' => '/opt/lampp/htdocs/yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1420992301.4656
+    'REQUEST_TIME' => 1420992301
+    'argv' => [
+        0 => '/opt/lampp/htdocs/yii'
+        1 => 'profits/daily-kdb'
+    ]
+    'argc' => 2
+]
+2015-01-13 00:05:01 [-][-][-][info][console\controllers\ProfitsController] begin action
+2015-01-13 00:05:02 [-][-][-][info][console\controllers\ProfitsController] end action
+2015-01-13 00:05:01 [-][-][-][info][application] $_SERVER = [
+    'SHELL' => '/bin/sh'
+    'USER' => 'root'
+    'PATH' => '/usr/bin:/bin'
+    'PWD' => '/root'
+    'LANG' => 'en_US.UTF-8'
+    'SHLVL' => '1'
+    'HOME' => '/root'
+    'LOGNAME' => 'root'
+    '_' => '/opt/lampp/bin/php'
+    'PHP_SELF' => '/opt/lampp/htdocs/yii'
+    'SCRIPT_NAME' => '/opt/lampp/htdocs/yii'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/yii'
+    'PATH_TRANSLATED' => '/opt/lampp/htdocs/yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1421078701.643
+    'REQUEST_TIME' => 1421078701
+    'argv' => [
+        0 => '/opt/lampp/htdocs/yii'
+        1 => 'profits/daily-project'
+    ]
+    'argc' => 2
+]
+2015-01-13 00:05:01 [-][-][-][info][console\controllers\ProfitsController] begin action
+2015-01-13 00:05:02 [-][-][-][info][console\controllers\ProfitsController] end action
+2015-01-13 00:05:01 [-][-][-][info][application] $_SERVER = [
+    'SHELL' => '/bin/sh'
+    'USER' => 'root'
+    'PATH' => '/usr/bin:/bin'
+    'PWD' => '/root'
+    'LANG' => 'en_US.UTF-8'
+    'SHLVL' => '1'
+    'HOME' => '/root'
+    'LOGNAME' => 'root'
+    '_' => '/opt/lampp/bin/php'
+    'PHP_SELF' => '/opt/lampp/htdocs/yii'
+    'SCRIPT_NAME' => '/opt/lampp/htdocs/yii'
+    'SCRIPT_FILENAME' => '/opt/lampp/htdocs/yii'
+    'PATH_TRANSLATED' => '/opt/lampp/htdocs/yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1421078701.6445
+    'REQUEST_TIME' => 1421078701
+    'argv' => [
+        0 => '/opt/lampp/htdocs/yii'
+        1 => 'profits/daily-kdb'
+    ]
+    'argc' => 2
+]

@@ -3,7 +3,7 @@ return [
     'components' => [
         'db' => [
             'class' => 'yii\db\Connection',
-            'dsn' => 'mysql:host=localhost;dbname=koudai_online_1_6',
+            'dsn' => 'mysql:host=localhost;dbname=koudai_online_1_8',
             'username' => 'root',
             'password' => 'a68501425c',
             'tablePrefix' => 'tb_',

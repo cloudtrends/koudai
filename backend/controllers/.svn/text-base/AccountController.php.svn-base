@@ -3,6 +3,8 @@
 namespace backend\controllers;
 
 
+use common\exceptions\PayException;
+use common\models\BankConfig;
 use Yii;
 use yii\data\Pagination;
 use yii\db\ActiveQuery;
@@ -173,6 +175,7 @@ class AccountController extends BaseController {
             'id' => $result['id'],
             'user_id' => $result['user_id'],
             'user_name' => $user['username'],
+            'user_realname' => $user['realname'],
             'money' => $result['money'] / 100 ."元",
             'type' => $type,
             'status' => $result['status'],
@@ -299,12 +302,39 @@ class AccountController extends BaseController {
     /**
      * 提现付款查询
      */
-    public function actionWithdrawResult($id) {
-    	$payService = Yii::$container->get('payService');
-    	$result = $payService->withdrawQuery($id);
-    	return $this->render('withdraw-result', [
-			'result' => $result,
-        ]);
+    public function actionWithdrawResult($order_id) {
+
+    	if ($this->request->getIsPost()) {
+    		$accountService = Yii::$container->get('accountService');
+        	$accountService->withdrawHandleSuccess($order_id);
+        	return $this->redirectMessage('操作成功', self::MSG_SUCCESS, Url::toRoute('account/withdraw'));
+    	}
+
+        //
+        $withdraw = UserWithdraw::findOne(['order_id' => $order_id]);
+
+        if(empty($withdraw))
+        {
+            return $this->redirectMessage("操作出现异常：未找到提现记录" ."(2107)", self::MSG_ERROR);
+        }
+
+        if($withdraw['third_platform'] == BankConfig::PLATFORM_UMPAY)
+        {
+            $payService = Yii::$container->get('payService');
+            $result = $payService->withdrawQuery($order_id);
+            return $this->render('withdraw-result', [
+                'result' => $result,
+            ]);
+        }
+        else if($withdraw['third_platform'] == BankConfig::PLATFORM_LLPAY)
+        {
+            $llPayService = Yii::$container->get('llPayService');
+            $result = $llPayService->withdrawQuery($withdraw);
+            return $this->render('withdraw-result-ll', [
+                'result' => $result,
+            ]);
+        }
+        return $this->redirectMessage("操作出现异常：不支持的第三方支付" ."(2101)", self::MSG_ERROR);
     }
 
     /**

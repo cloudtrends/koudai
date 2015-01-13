@@ -1,4 +1,4 @@
-/*¹²ÓÑʽ¿ªʼ*/
+/*共用样式开始*/
 *{
 	padding:0;
 	margin: 0;
@@ -10,22 +10,26 @@
 a{
 	cursor: pointer;
 }
-::-webkit-input-placeholder { /* WebKit browsers */
+ /* WebKit browsers */
+::-webkit-input-placeholder {
 	color: #999999;
 }
-:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+/* Mozilla Firefox 4 to 18 */
+:-moz-placeholder {
 	color: #999999;
 }
-::-moz-placeholder { /* Mozilla Firefox 19+ */
+/* Mozilla Firefox 19+ */
+::-moz-placeholder {
 	color: #999999;
 }
-:-ms-input-placeholder { /* Internet Explorer 10+ */
+/* Internet Explorer 10+ */
+:-ms-input-placeholder {
 	color: #999999;
 }
 .wrap{
 	margin: 0 auto;
 	width:100%;
-	min-width:1000px;
+	min-width:1020px;
 }
 .content{
 	width: 980px;
@@ -40,23 +44,48 @@ a{
 .alignright{
 	text-align: right;
 }
+.f_right{
+	float: right;
+}
 .bg_button{
 	background: #FD5353;
 	border-radius: 5px;
+	-moz-border-radius: 5px 5px 5px 5px;
+	-webkit-border-radius: 5px;
 }
 .bg_button1{
 	background: #EB4444;
+	/* W3C syntax */
 	border-radius: 5px;
+	/* Gecko browsers */
+	-moz-border-radius: 5px 5px 5px 5px;
+	/* Webkit browsers */
+	-webkit-border-radius: 5px;
 	opacity:0.8;
+	-moz-opacity:0.8;
 	filter:"alpha(opacity=80)";
-	-ms-filter:"alpha(opacity=80)"; /* ¾ɰæ */
+	/* 旧版IE */
+	-ms-filter:"alpha(opacity=80)"; 
+}
+.bg_button2{
+	background: #FD5353;
+}
+.bg_button3{
+	background: #CCCCCC;
 }
 .bg_input{
 	background: #FFFFFF;
 	border-radius: 5px;
+	-moz-border-radius: 5px 5px 5px 5px;
+	-webkit-border-radius: 5px;
 }
 .clear_inline_block{
+	/*消除inline-block元素间间距*/
 	font-size: 0;
+}
+._relative{
+	position: relative;
+	z-index: 10000;
 }
 .font1{
 	font:normal 14px/16px microsoft Yahei;
@@ -82,6 +111,9 @@ a{
 .font444{
 	font:normal 20px/45px microsoft Yahei;
 }
+.font5{
+	font:normal 45px/47px microsoft Yahei;
+}
 .color1{
 	color: #666666;
 }
@@ -103,22 +135,64 @@ a{
 .color7{
 	color:#FF534F;
 }
+.color77{
+	color:#F7F7F7;
+}
 .color8{
 	color:#3D3D3B;
 }
 .color9{
 	color:#B5B5B5;
 }
-/*¹²ÓÑʽ½á*/
+.color10{
+	color:#FD5353;
+}
 
-/*ͷ²¿¿ªʼ*/
+/*共用样式结束*/
+
+/*头部开始*/
 #header{
 	background: #F7F7F7;
-	padding: 15px 0;
+	padding: 8px 0;
+	border-bottom: 1px solid #E6E6E6;
 }
+#header .content ._hover{
+	position: absolute;
+	display: inline;
+	display: none;
+	z-index: 1000;
+}
+#header .content > ._hover:first-child{
+	top: 38px;
+	left: 286px;
+}
+/*兼容旧版IE 7-8 代替nth-child(n) 开始*/
+#header .content > ._hover:first-child + ._hover{
+	top: 38px;
+	left: 337px;
+}
+#header .content > ._hover:first-child + ._hover + ._hover{
+	top: 38px;
+	left: 382px;
+}
+#header .content > ._hover:first-child + ._hover + ._hover + ._hover{
+	top: 38px;
+	left: 424px;
+}
+/*兼容旧版IE 7-8 结束*/
 #header .content #nav_left li{
 	float: left;
 	margin-right: 10px;
+}
+#header .content #nav_left li a{
+	display: inline;
+	margin-right: 5px;
+}
+#header .content #nav_left li a img{
+	vertical-align:middle;
+	border-radius: 17px;
+	-webkit-border-radius: 17px;
+	-moz-border-radius: 17px 17px 17px 17px;
 }
 #header .content #nav_right li{
 	float: right;
@@ -127,21 +201,19 @@ a{
 #header .content #nav_right .first_child{
 	margin-right: 0;
 }
-#header .content li a img{
-	vertical-align:middle;
-	margin-right: 5px;
+#header .content #nav_right .line img{
+	vertical-align: middle;
 }
-#header .content li span{
-	padding-left: 5px;
+#header .content #nav_right #msg{
+	width: 20px;
+	display: inline;
 }
-#header .content li .line{
-	font:normal 18px/18px microsoft Yahei;
-	color:#D3D3D3;
-}
-/*ͷ²¿logo²¿·ֿªʼ*/
+
+/*头部logo部分开始*/
 #logo{
 	background: #FFFFFF;
 	padding: 30px 0;
+	border-bottom: 1px solid #E6E6E6;
 }
 #logo .content #nav_left li{
 	float: left;
@@ -157,10 +229,10 @@ a{
 #logo .content #nav_right .first_child{
 	margin-right: 0;
 }
-/*ͷ²¿logo²¿·ֽá*/
-/*ͷ²¿½á*/
+/*头部logo部分结束*/
+/*头部结束*/
 
-/*µײ¿¿ªʼ*/
+/*底部开始*/
 #footer{
 	background: #F7F7F7;
 	padding: 45px 0 50px;
@@ -201,17 +273,17 @@ a{
 #footer .content #links li a:hover{
 	color: #FD5353;
 }
-/*µײ¿½á*/
+/*底部结束*/
 
-/*Êҳ¿ªʼ*/
+/*首页开始*/
 #index_wrap #scroll{
 	margin: 0 auto;
-	background: #952523 url(../image/site/scroll1.png) no-repeat center center;
+	background: #53CECC url(../image/site/scroll1.jpg) no-repeat center center;
 	height: 385px;
 }
 #index_wrap #kdb{
 	margin: 0 auto;
-	background: #FFFFFF url(../image/site/kdb.png) no-repeat center 55px;
+	background: #FFFFFF url(../image/site/kdb.jpg) no-repeat center 55px;
 	height: 520px;
 }
 #index_wrap #projectlist{
@@ -219,13 +291,14 @@ a{
 	background: #F7F7F7;
 	padding: 60px 0 35px;
 }
-#index_wrap #recordlist{
+#index_wrap #investlist{
 	margin: 0 auto;
-	background: #FFFFFF url(../image/site/record.png) no-repeat center 55px;
-	height: 470px;
+	background: #FFFFFF url(../image/site/record.jpg) no-repeat center 55px;
+	padding-bottom: 40px;
+	height: 405px;
 }
 #index_wrap #scroll .scroll_form{
-	background: #FAF4F4;
+	background: #F7FDFD;
 	width: 288px;
 	height: 326px;
 	display: inline-block;
@@ -243,6 +316,7 @@ a{
 }
 #index_wrap #scroll .scroll_input{
 	height: 33px;
+	line-height: 33px;
 	width: 175px;
 	display: inline-block;
 	border: 1px solid #E3E3E3;
@@ -259,6 +333,7 @@ a{
 	display: inline-block;
 	margin-left: 10px;
 	margin-top: 10px;
+	vertical-align: bottom;
 }
 #index_wrap #scroll .scroll_button{
 	height: 50px;
@@ -268,6 +343,8 @@ a{
 }
 #index_wrap #kdb .kdb_video{
 	border: 9px solid #F4F4F4;
+	width: 305px;
+	height: 230px;
 	display: inline-block;
 	margin-top: 120px;
 }
@@ -278,9 +355,56 @@ a{
 	margin-top: 52px;
 	margin-left: 550px;
 }
-/*Êҳ½á*/
+#index_wrap #projectlist #p2p_list{
+	margin-top: 40px;
+}
+#index_wrap #projectlist #p2p_list .p2p_details{
+	width: 302px;
+	border: 1px solid #E5E5E5;
+	margin-bottom: 30px;
+	float: left;
+	background: #FFFFFF;
+}
+#index_wrap #projectlist #p2p_list .p2p_details .details_content{
+	height:398px;
+	padding:30px 30px 0;
+}
+#index_wrap #projectlist #p2p_list .details_content .first_child{
+	margin-bottom: 15px;
+}
+#index_wrap #projectlist #p2p_list .p2p_details .l_apr{
+	margin:45px auto auto;
+	text-align: center;
+}
+#index_wrap #projectlist #p2p_list .p2p_details #progress{
+	height:15px;
+	background:#EAEAEA;
+	margin:60px auto 8px;
+	border-radius:15px;
+	-moz-border-radius: 15px 15px 15px 15px;
+	-webkit-border-radius: 15px;
+}
+#index_wrap #projectlist #p2p_list .p2p_details .progress_in{
+	border-radius:15px;
+	-moz-border-radius: 15px 15px 15px 15px;
+	-webkit-border-radius: 15px;
+	height:15px;
+	background:#fd5353;
+}
+#index_wrap #projectlist #p2p_list .p2p_details .summary{
+	margin-bottom: 30px;
+}
+#index_wrap #investlist #invest_log{
+	padding-top: 130px;
+	width: 480px;
+}
+#index_wrap #investlist #invest_log .invest_details_table{
+	width: 100%;
+	background: #FFFFFF;
+}
+/*首页结束*/
 
-/*ע²á¿ªʼ*/
+/*注册页开始*/
 #register_wrap{
 	background: #F7F7F7;
 	padding: 50px 0;
@@ -311,6 +435,7 @@ a{
 }
 #register_wrap .content ._input{
 	height: 45px;
+	line-height: 45px;
 	width: 240px;
 	display: inline-block;
 	border: 1px solid #E3E3E3;
@@ -335,6 +460,7 @@ a{
 	display: inline-block;
 	margin-left: 9px;
 	margin-right: 34px;
+	vertical-align: bottom;
 }
 #register_wrap .content ._border{
 	border: 1px solid #FD5353;
@@ -345,9 +471,9 @@ a{
 	margin-top: 30px;
 }
 
-/*ע²á½á*/
+/*注册页结束*/
 
-/*µÇ¼ҳ¿ªʼ*/
+/*登录页开始*/
 #login_wrap{
 	background: #F7F7F7;
 	padding: 50px 0;
@@ -378,6 +504,7 @@ a{
 }
 #login_wrap .content ._input{
 	height: 48px;
+	line-height: 48px;
 	width: 280px;
 	display: inline-block;
 	border: 1px solid #E3E3E3;
@@ -404,29 +531,34 @@ a{
 #login_wrap .content ._border1 .nth_child{
 	margin: 0 10px;
 }
-/*µÇ¼ҳ½á*/
+/*登录页结束*/
 
-/*´íҳ¿ªʼ*/
-#error_wrap{
+/*错误页开始*/
+.promat_wrap{
 	background: #F7F7F7;
 	padding: 50px 0;
 }
-#error_wrap .ctitle{
+.promat_wrap .ctitle{
 	background: #FFFFFF;
 	padding: 125px 0 0 250px;
 	height: 445px;
 }
-#error_wrap .ctitle #error{
+.promat_wrap .ctitle #promat{
 	float: left;
 	margin-right: 30px;
 	vertical-align: middle;
 }
-#error_wrap .ctitle .l_height{
+.promat_wrap .ctitle .l_height{
 	line-height: 28px;
 }
-#error_wrap .ctitle ._margin{
+.promat_wrap .ctitle ._margin{
 	display: inline-block;
 	margin: 35px auto auto 86px;
 }
-/*´íҳ½á*/
-
+.promat_wrap .ctitle .kdb_button{
+	height: 50px;
+	width: 270px;
+	display: inline-block;
+	margin: 80px auto auto 86px;
+}
+/*错误页结束*/

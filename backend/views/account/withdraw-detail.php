@@ -48,7 +48,7 @@ $notify_result = $withdraw['notify_result'];
         </th></tr>
     <tr>
         <td class="td24">用户名：</td>
-        <td width="300"><?php echo $withdraw['user_name'] ?></td>
+        <td width="300"><?php echo $withdraw['user_name'] . ' （' . $withdraw['user_realname'] . '）'; ?></td>
         <td class="td24">类型：</td>
         <td><?php echo $withdraw['type'] ?></td>
     </tr>

@@ -18,6 +18,7 @@ use common\models\UserInvite;
 use common\helpers\TimeHelper;
 use common\activity\ExperienceMoneyAct;
 use common\models\UserDetail;
+use common\models\NoticeSms;
 
 /**
  * 用户基本模块service
@@ -122,8 +123,8 @@ class UserService extends Object
 			$account = new UserAccount();
 			$account->user_id = $user->id;
 			// 注册送体验金，先不上这个功能
-// 			$account->kdb_experience_money = ExperienceMoneyAct::$config['money'];
-// 			$account->total_money = ExperienceMoneyAct::$config['money'];
+			$account->kdb_experience_money = ExperienceMoneyAct::$config['money'];
+			$account->total_money = ExperienceMoneyAct::$config['money'];
 			$account->created_at = time();
 			$account->updated_at = $account->created_at;
 			$account->save();
@@ -135,6 +136,12 @@ class UserService extends Object
 				$isExtend = 0;
 				$remark = json_encode(['startDate' => $startDate, 'endDate' => $endDate, 'isExtend' => $isExtend]);
 				UserAccount::addLog($user->id, UserAccount::TRADE_TYPE_KDB_EXP_MONEY_IN, $account->kdb_experience_money, $remark);
+				
+				// 发消息提醒
+				NoticeSms::instance()->init_sms_str($user->id, NoticeSms::NOTICE_KDB_EXP, array(
+					'money' => $account->kdb_experience_money,
+					'profits_time' => ExperienceMoneyAct::$config['profits_time']
+				));
 			}
 			
 			// 保存用户详细信息

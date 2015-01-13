@@ -5,6 +5,7 @@ use yii\widgets\LinkPager;
 use backend\components\widgets\ActiveForm;
 use yii\helpers\Html;
 use common\models\UserWithdraw;
+use common\models\BankConfig;
 
 /**
  *
@@ -38,12 +39,13 @@ $this->showsubmenu('提现列表');
 
 <table class="tb tb2 fixpadding">
 	<tr class="header">
-		<th>ID</th>
+		<th>订单ID</th>
 		<th>用户ID</th>
 		<th>用户名</th>
 		<th>姓名</th>
 		<th>提现金额</th>
-		<th>提现时间</th>
+		<th>申请时间</th>
+		<th>第三方平台</th>
 		<th>状态</th>
 		<th>审核状态</th>
 		<th>审核人</th>
@@ -52,12 +54,13 @@ $this->showsubmenu('提现列表');
 	</tr>
 	<?php foreach ($withdraws as $value): ?>
 	<tr class="hover">
-		<td class="td25"><?php echo $value->id; ?></td>
+		<td class="td25"><?php echo $value->order_id; ?></td>
 		<td><?php echo $value->user_id; ?></td>
 		<td><?php echo $value->user->username; ?></td>
 		<td><?php echo $value->user->realname; ?></td>
 		<td><?php echo sprintf('%.2f', $value->money / 100); ?></td>
 		<td><?php echo date('Y-m-d H:i:s', $value->created_at); ?></td>
+		<td><?php echo BankConfig::$platform[$value->third_platform]; ?></td>
 		<td><?php echo UserWithdraw::$ump_pay_status[$value->status]; ?></td>
 		<td><?php echo UserWithdraw::$review_status[$value->review_result]; ?></td>
 		<td><?php echo $value->review_username ? $value->review_username : '-'; ?></td>
@@ -65,7 +68,7 @@ $this->showsubmenu('提现列表');
 		<td>
             <a href="<?php echo Url::to(['account/withdraw-detail', 'id' => $value->id, 'user_id' => $value->user_id]); ?>">详情</a>
             <?php if ($value->review_result == UserWithdraw::REVIEW_STATUS_APPROVE): ?>
-            <a href="<?php echo Url::to(['account/withdraw-result', 'id' => $value->id]); ?>">付款查询</a>
+            <a href="<?php echo Url::to(['account/withdraw-result', 'order_id' => $value->order_id]); ?>">付款查询</a>
             <?php endif; ?>
 		</td>
 	</tr>

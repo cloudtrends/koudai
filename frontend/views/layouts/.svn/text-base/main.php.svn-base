@@ -19,10 +19,86 @@ body {
 	min-height:100%;
 	margin:0 auto;
 }
+/*下载客户端样式*/
+#download_client{
+		position:fixed;
+		bottom: 0;
+		width: 100%;
+		max-width:480px;
+	}
+#download_client > a:first-child > div{
+		width: 90%;
+		float: left;
+	}
+#download_client > a:first-child + div{
+		width: 10%;
+		position: relative;
+		float: right;
+	}
+#download_client > a:first-child + div>a:first-child{
+		display: block;
+		width: 100%;
+		padding-top: 100%;
+		position: absolute;
+	}
+.clear{
+		clear: both;
+	}
 </style>
 <body>
 	<div class="container">
 		<?php echo $content; ?>
 	</div>
+	
+	<?php if (Yii::$app->getRequest()->get('isShare')): ?>
+	<div id="download_client">
+		<a href="javascript:downLoad()"><div><img src="<?php echo Yii::$app->getRequest()->getAbsoluteBaseUrl(); ?>/image/page/download1.png"></div></a>
+		<div><a href="javascript:Close()"></a><a href="javascript:downLoad()"><img src="<?php echo Yii::$app->getRequest()->getAbsoluteBaseUrl(); ?>/image/page/close.png"></a></div>
+		<div class="clear"></div>
+	</div>
+	<script type="text/javascript">
+		var obj = document.getElementById("download_client");
+		function Close(){
+			obj.style.display = "none";
+		}
+	
+		function downLoad() {
+			if (window.browser.iPhone || window.browser.ipad || window.browser.ios) {
+				iosDownload();
+			} else {
+				androidDownload();
+			}
+		}
+		function iosDownload() {
+			if (!window.browser.wx){
+				window.location.href = "https://itunes.apple.com/cn/app/id953061503?mt=8";
+				// window.location.href = "itms-services://?action=download-manifest&url=https://app.irongbao.com/iosdown/koudai/koudai.plist";
+			}else{
+				window.location.href = "http://mp.weixin.qq.com/mp/redirect?url=https%3A%2F%2Fitunes.apple.com%2Fcn%2Fapp%2Fid953061503%3Fmt%3D8";
+				// window.location.href = "http://mp.weixin.qq.com/mp/redirect?url=itms-services%3A%2F%2F%3Faction%3Ddownload-manifest%26url%3Dhttps%3A%2F%2Fapp.irongbao.com%2Fiosdown%2Fkoudai%2Fkoudai.plist";
+			}
+		}
+		function androidDownload() {
+			if (!window.browser.wx){
+				window.location.href = "http://www.koudailc.com/attachment/download/koudailicai.apk";
+			}else{
+				// 后面换成应用宝地址
+				alert('请点击右上角按钮选择在浏览器中打开并下载！');
+			}
+		}
+		window.onload = function(){
+			var u = navigator.userAgent;
+			window.browser = {};
+			window.browser.iPhone = u.indexOf('iPhone') > -1;
+			window.browser.android = u.indexOf('Android') > -1 || u.indexOf('Linux') > -1;//android or uc
+			window.browser.ipad = u.indexOf('iPad') > -1;
+			window.browser.isclient = u.indexOf('lyWb') > -1;
+			window.browser.ios = u.match(/Mac OS/); //ios
+			window.browser.width = window.innerWidth;
+			window.browser.height = window.innerHeight;
+			window.browser.wx = u.match(/MicroMessenger/);
+		}
+	</script>
+	<?php endif; ?>
 </body>
 </html>

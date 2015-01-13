@@ -226,6 +226,9 @@ class UserController extends BaseController
             if (isset($search['username']) && $search['username'] != '') {
         		$condition .= " AND username LIKE '%" . trim($search['username']) . "%'";
             }
+            if (isset($search['realname']) && $search['realname'] != '') {
+            	$condition .= " AND realname LIKE '%" . trim($search['realname']) . "%'";
+            }
         }
         return $condition;
     }

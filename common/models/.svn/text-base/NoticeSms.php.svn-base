@@ -4,6 +4,7 @@ namespace common\models;
 use Yii;
 use yii\db\ActiveRecord;
 use common\helpers\TimeHelper;
+use common\helpers\MessageHelper;
 
 class NoticeSms extends ActiveRecord
 {
@@ -22,14 +23,16 @@ class NoticeSms extends ActiveRecord
     const NOTICE_FULL     = 4;      //满款审核通过
     const NOTICE_CANCEL   = 5;      //未满款作废
     const NOTICE_FULL_FAIL= 6;      //满款审核作废
+    const NOTICE_KDB_EXP  = 7;		//口袋宝体验金入账
 
     public static $status = [
         self::NOTICE_ASSIGNED => '转让成功',
         self::NOTICE_DRAWAL   => '提现成功',
-        self::NOTICE_REPAYED  => '已还款',
-        self::NOTICE_FULL     => '满款审核通过',
-        self::NOTICE_FULL_FAIL=> '满款审核作废',
-        self::NOTICE_CANCEL   => '未满款作废',
+        self::NOTICE_REPAYED  => '项目还款',
+        self::NOTICE_FULL     => '项目募集成功',
+        self::NOTICE_FULL_FAIL=> '项目满款审核作废',
+        self::NOTICE_CANCEL   => '项目未满款作废',
+        self::NOTICE_KDB_EXP  => '口袋宝体验金入账',
     ];
 
     public static $send_status = [
@@ -137,43 +140,49 @@ class NoticeSms extends ActiveRecord
      * @param $user_id
      * @param $type
      * @param array $memo
+     * @param bool $nowsend 是否立即发送短信，默认否即定时脚本触发
      * @return bool
-     *。
-
-
-
      */
     const STARTSTR = '尊敬的口袋会员，';
-    public function init_sms_str($user_id,$type,$memo=array()){
+    public function init_sms_str($user_id,$type,$memo=array(),$nowsend=false){
         if (empty($user_id) || empty($type) || empty($memo) ){
             return false;
         }
         $str = '';
         $now = TimeHelper::Now();
         switch ($type){
-            case self::NOTICE_ASSIGNED:  //【口袋理财﹒转让成功】 尊敬的口袋会员，您的投资项目【车袋袋9号】已于2014-12-29 16:10 成功转让且转让金额已放入您的口袋余额。需知悉：该项目之后的各项权益将归接手的投资者所有。
-                $str .= self::STARTSTR.'您的投资项目【'.$memo['project_name'].'】已于'.date("Y-m-d h:i",$now).' 成功转让且转让金额已放入您的口袋余额。需知悉：该项目之后的各项权益将归接手的投资者所有。';
+            case self::NOTICE_ASSIGNED:  //【口袋理财﹒转让成功】
+                $str .= self::STARTSTR.'您的投资项目【'.$memo['project_name'].'】已于'.date("Y年m月d日 H时i分",$now).' 成功转让且转让金额已放入您的口袋余额。需知悉：该项目之后的各项权益将归接手的投资者所有。';
                 break;
-            case self::NOTICE_DRAWAL:    //【口袋理财﹒提现成功】  尊敬的口袋会员，您于2014-12-29 16:00提交的1000元提现申请已处理成功，请查看您绑定银行卡的收入明细。
-                $str .= self::STARTSTR.'您于'.date("Y-m-d h:i",$now).'提交的'.sprintf('%.2f',$memo['money'] / 100).'元提现申请已处理成功，请查看您绑定银行卡的收入明细。';
+            case self::NOTICE_DRAWAL:    //【口袋理财﹒提现成功】
+                $str .= self::STARTSTR.'您于'.date("Y年m月d日 H时i分",$memo['time']).'提交的'.sprintf('%.2f',$memo['money'] / 100).'元提现申请已处理成功，请查看您绑定银行卡的收入明细。';
                 break;
-            case self::NOTICE_REPAYED:   //【口袋理财﹒已还款成功】  尊敬的口袋会员，您的投资项目【车袋袋9号】项目期满，已完成还款。请登录口袋理财至余额查看您的本金和收益。
+            case self::NOTICE_REPAYED:   //【口袋理财﹒已还款成功】
                 $str .= self::STARTSTR.'您的投资项目【'.$memo['project_name'].'】项目期满，已完成还款。请登录口袋理财至余额查看您的本金和收益。';
                 break;
-            case self::NOTICE_FULL:      //【口袋理财﹒满款审核通过】    尊敬的口袋会员，您的投资项目【车袋袋9号】已募集成功且审核通过，2014-12-30开始计算收益，预计2015年1月30号确认并完成还款。
-                $str .= self::STARTSTR.'您的投资项目【'.$memo['project_name'].'】已募集成功且审核通过，'.$memo["interest_start_date"].'开始计算收益，预计'.date('Y年m月d号',strtotime($memo["last_repay_date"])).'确认并完成还款。';
+            case self::NOTICE_FULL:      //【口袋理财﹒满款审核通过】
+                $str .= self::STARTSTR.'您的投资项目【'.$memo['project_name'].'】已募集成功且审核通过，'.date('Y年m月d日',strtotime($memo["interest_start_date"])).'开始计算收益，预计'.date('Y年m月d日',strtotime($memo["last_repay_date"])).'确认并完成还款。';
                 break;
-            case self::NOTICE_CANCEL:    //【口袋理财﹒满款审核作废】   尊敬的口袋会员，非常遗憾！您的投资项目【车袋袋9号】未通过口袋理财满款审核，该项目作废。您的投资金额已转入余额，请尝试投资其他项目。
+            case self::NOTICE_CANCEL:    //【口袋理财﹒满款审核作废】
                 $str .= self::STARTSTR.'非常遗憾！您的投资项目【'.$memo['project_name'].'】未通过口袋理财满款审核，该项目作废。您的投资金额已转入余额，请尝试投资其他项目。';
                 break;
-            case self::NOTICE_FULL_FAIL: //【口袋理财﹒未满款作废】  尊敬的口袋会员，非常遗憾！您的投资项目【车袋袋9号】在认购期限内未能募集成功，该项目作废。您的投资金额已转入余额，请尝试投资其他项目。
+            case self::NOTICE_FULL_FAIL: //【口袋理财﹒未满款作废】
                 $str .= self::STARTSTR.'非常遗憾！您的投资项目【'.$memo['project_name'].'】在认购期限内未能募集成功，该项目作废。您的投资金额已转入余额，请尝试投资其他项目。';
                 break;
+            case self::NOTICE_KDB_EXP: //【口袋理财﹒口袋宝体验金入账】
+            	$str .= self::STARTSTR.'您的账户已注册成功。已向您口袋宝账户赠送'.($memo['money'] / 100).'元体验金，可免费领取'.$memo['profits_time'].'天利息收益，投资还能延长收益期限，活动详情请查看活动中心。';
+            	break;
             default:
                 break;
         }
         if ($str){
-            $this->InsertDate($user_id,$type,$str,$now);
+        	$status = self::SEND_WAIT;
+        	if ($nowsend) {
+        		$user = User::findOne($user_id);
+        		$result = MessageHelper::sendSMS($user->username, $str);
+        		$status = $result ? self::SEND_SUCCESS : self::SEND_FAIL;
+        	}
+            $this->InsertDate($user_id,$type,$str,$now,$status);
         }
 
         return true;

@@ -42,3 +42,25 @@ prestr:'acct_name=常昊宇&app_request=3&busi_partner=101001&card_no=6214850211
 prestr2:'acct_name=常昊宇&app_request=3&busi_partner=101001&card_no=6214850211097651&dt_order=20141215113553&id_no=430103198702112519&info_order=用户13958069593购买羽毛球3桶&money_order=0.1&name_goods=羽毛球&no_order=201412151003&notify_url=http://10.10.110.246/llpay/notify_url.php&oid_partner=201408071000001543&sign_type=MD5&url_return=http://10.10.110.246/llpay/return_url.php&user_id=changhaoyu&valid_order=30'
 签名原串:acct_name=常昊宇&app_request=3&busi_partner=101001&card_no=6214850211097651&dt_order=20141215113553&id_no=430103198702112519&info_order=用户13958069593购买羽毛球3桶&money_order=0.1&name_goods=羽毛球&no_order=201412151003&notify_url=http://10.10.110.246/llpay/notify_url.php&oid_partner=201408071000001543&sign_type=MD5&url_return=http://10.10.110.246/llpay/return_url.php&user_id=changhaoyu&valid_order=30&key=201408071000001543test_20140812
 签名:5ef02404366c8338a168868d0a87154e
+para_sort:array (
+  'acct_name' => '常昊宇',
+  'app_request' => '3',
+  'busi_partner' => '101001',
+  'card_no' => '6214850211097651',
+  'dt_order' => '20141215113553',
+  'id_no' => '430103198702112519',
+  'info_order' => '用户13958069593购买羽毛球3桶',
+  'money_order' => '0.1',
+  'name_goods' => '羽毛球',
+  'no_order' => '201412151003',
+  'notify_url' => 'http://10.10.110.246/llpay/notify_url.php',
+  'oid_partner' => '201408071000001543',
+  'sign_type' => 'MD5',
+  'url_return' => 'http://10.10.110.246/llpay/return_url.php',
+  'user_id' => 'changhaoyu',
+  'valid_order' => '30',
+)
+prestr:'acct_name=常昊宇&app_request=3&busi_partner=101001&card_no=6214850211097651&dt_order=20141215113553&id_no=430103198702112519&info_order=用户13958069593购买羽毛球3桶&money_order=0.1&name_goods=羽毛球&no_order=201412151003&notify_url=http://10.10.110.246/llpay/notify_url.php&oid_partner=201408071000001543&sign_type=MD5&url_return=http://10.10.110.246/llpay/return_url.php&user_id=changhaoyu&valid_order=30'
+prestr2:'acct_name=常昊宇&app_request=3&busi_partner=101001&card_no=6214850211097651&dt_order=20141215113553&id_no=430103198702112519&info_order=用户13958069593购买羽毛球3桶&money_order=0.1&name_goods=羽毛球&no_order=201412151003&notify_url=http://10.10.110.246/llpay/notify_url.php&oid_partner=201408071000001543&sign_type=MD5&url_return=http://10.10.110.246/llpay/return_url.php&user_id=changhaoyu&valid_order=30'
+签名原串:acct_name=常昊宇&app_request=3&busi_partner=101001&card_no=6214850211097651&dt_order=20141215113553&id_no=430103198702112519&info_order=用户13958069593购买羽毛球3桶&money_order=0.1&name_goods=羽毛球&no_order=201412151003&notify_url=http://10.10.110.246/llpay/notify_url.php&oid_partner=201408071000001543&sign_type=MD5&url_return=http://10.10.110.246/llpay/return_url.php&user_id=changhaoyu&valid_order=30&key=201408071000001543test_20140812
+签名:5ef02404366c8338a168868d0a87154e

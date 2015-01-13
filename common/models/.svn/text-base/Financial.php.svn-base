@@ -33,13 +33,22 @@ class Financial extends \yii\db\ActiveRecord
         self::STATUS_COMPLETED => '完成还款',
         self::STATUS_INVALID => '作废',
     ];
-//放款开始时间 范围
+    //current_date 日期函数 获取日期格式如2015-01-10
     const HAS_EXPIRED = "0 AND (UNIX_TIMESTAMP(current_date)-86400*1)";
     const TODAY = "UNIX_TIMESTAMP(current_date) AND UNIX_TIMESTAMP(current_date)";
     const IN_THREE_DAYS = "UNIX_TIMESTAMP(current_date) AND (UNIX_TIMESTAMP(current_date)+86400*3)";
     const WITHIN_A_WEEK = "UNIX_TIMESTAMP(current_date) AND (UNIX_TIMESTAMP(current_date)+86400*7)";
     const WITHIN_A_MONTH = "UNIX_TIMESTAMP(current_date) AND (UNIX_TIMESTAMP(current_date)+86400*30)";
+    //放款时间 范围
     public static $loan_time_ranger = [
+        self::HAS_EXPIRED => '已过期',
+        self::TODAY => '今日到期',
+        self::IN_THREE_DAYS => '三天内',
+        self::WITHIN_A_WEEK => '一周内',
+        self::WITHIN_A_MONTH => '一个月内',
+    ];
+    //还款时间 范围
+    public static $borrower_repayment_time_ranger = [
         self::HAS_EXPIRED => '已过期',
         self::TODAY => '今日到期',
         self::IN_THREE_DAYS => '三天内',

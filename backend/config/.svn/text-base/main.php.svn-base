@@ -17,6 +17,15 @@ return [
     'bootstrap' => ['log'],
     'modules' => [],
     'components' => [
+    	// frontend的url配置，使用方法：Yii::$app->urlManagerFrontend->createUrl('app/pay-notify')，绝对地址则用createAbsoluteUrl
+// 	    'urlManagerFrontend' => [
+// 	    	'class' => 'yii\web\UrlManager',
+// 	    	'enablePrettyUrl' => true,
+// 		    'showScriptName' => false,
+// 		    'rules' => [
+// 		    	'<controller:\w+>/<action:\w+>' => '<controller>/<action>',
+// 		    ],
+// 	    ],
 	    'view' => [
 	    	'class' => 'backend\components\View',
 	    ],

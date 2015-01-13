@@ -110,8 +110,11 @@ class HttpRequest
 
         //设置代理服务器, fiddle 抓包用的到
         // curl_setopt ($ch, CURLOPT_PROXY, "127.0.0.1:8888");
+
         curl_setopt ($ch, CURLOPT_SSL_VERIFYPEER, 0);
-        $ret = curl_exec($ch);
+        $httpResp = curl_exec($ch);
+
+        Yii::info("httpResp=".var_export($httpResp,true));
 
         $httpCode = curl_getinfo($ch, CURLINFO_HTTP_CODE);
         $curl_getinfo = curl_getinfo($ch);
@@ -120,7 +123,7 @@ class HttpRequest
         curl_close($ch);
         return array(
             'code' => $this->code,
-            'resp' => $ret,
+            'resp' => $httpResp,
             'curl_getinfo' => $curl_getinfo
         );
     }

@@ -2,9 +2,10 @@
 
 namespace common\services;
 
-use common\models\Order;
 use Yii;
 use yii\base\Object;
+use yii\web\IdentityInterface;
+use yii\helpers\Url;
 use common\exceptions\InvestException;
 use common\exceptions\PayException;
 use common\helpers\TimeHelper;
@@ -14,7 +15,7 @@ use common\models\UserBankCard;
 use common\models\UserPayOrder;
 use common\models\UserWithdraw;
 use common\api\HttpRequest;
-use yii\web\IdentityInterface;
+use common\models\Order;
 
 
 require_once Yii::getAlias('@common') . '/api/umpay/common.php';
@@ -190,6 +191,7 @@ class PayService extends Object
         $map->put('media_id',$phone_no);
         $map->put('card_type','0');
         $map->put('busi_no','1');
+        $payParams = $map->H_table;
 
         self::sendRequest($map, $httpResp, $httpRespMap);
 
@@ -214,7 +216,8 @@ class PayService extends Object
             'code' => $code == '0000' ? '0' : $code,
             'message' => $httpRespMap->get('ret_msg'),
             'status' => $status,
-            'bindResult' => $bindResult
+            'bindResult' => $bindResult,
+            'payParams' => $payParams
         ];
     }
 
@@ -266,11 +269,15 @@ class PayService extends Object
             " on u.id = ubc.user_id where u.username =\"{$phone_no}\"";
 
         $result = $db->createCommand($sql)->queryOne();
-        // $bankInfo = UserBankCard::getBankInfo($result['bank_id']);
         $bankInfo = BankConfig::findOne([
         	'bank_id' => $result['bank_id'],
         	'third_platform' => BankConfig::PLATFORM_UMPAY,
         ]);
+
+        if (empty($bankInfo))
+        {
+            PayException::throwCodeExt();
+        }
 
         $map = self::serviceMap("transfer_direct_req");
         $map->put('notify_url', "http://api.koudailc.com/app/pay-notify");
@@ -290,6 +297,8 @@ class PayService extends Object
         $map->put('bank_brhname', "上海市徐汇支行");
         $map->put('purpose', "提现");
 
+        // 记录提现请求的参数
+        $withdraw_params = json_encode($map->H_table);
         Yii::info("map original=".var_export($map,true), PayService::LOG_CATEGORY);
 
         self::sendRequest($map, $httpResp, $httpRespMap);
@@ -301,11 +310,12 @@ class PayService extends Object
         $db = Yii::$app->db;
 
         $db->createCommand()->update(UserWithdraw::tableName(),[
+            "withdraw_params" => $withdraw_params,
             "result" => json_encode($withdrawResult),
             "status" => $withdrawResult['trade_state'],
             "updated_at" => time(),
         ],[
-            "id" => $order_id
+            "order_id" => $order_id
         ])->execute();
 
         return [
@@ -320,7 +330,7 @@ class PayService extends Object
      */
     public function withdrawQuery($order_id)
     {
-        $withdraw = UserWithdraw::findOne($order_id);
+        $withdraw = UserWithdraw::findOne(['order_id' => $order_id]);
         $map = self::serviceMap("transfer_query");
         $map->put('order_id', $order_id);
         $map->put('mer_date', date('Ymd', $withdraw->review_time));

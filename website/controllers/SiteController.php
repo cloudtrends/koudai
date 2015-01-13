@@ -36,6 +36,33 @@ class SiteController extends BaseController
 		]);
 	}
 
+    //错误提示页
+    public function actionError()
+    {
+        $title = '提示';
+        return  $this->render('prompt/error', [
+            'title' => $title,
+        ]);
+    }
+
+    //登录成功提示页
+    public function actionRegSuccess()
+    {
+        $title = '注册成功';
+        return  $this->render('prompt/reg-success', [
+            'title' => $title,
+        ]);
+    }
+
+    //购买成功提示页
+    public function actionBuySuccess()
+    {
+        $title = '购买成功';
+        return  $this->render('prompt/buy-success', [
+            'title' => $title,
+        ]);
+    }
+
 //        列表页
         public function actionList()
 	{
@@ -74,13 +101,37 @@ class SiteController extends BaseController
                         'id'=>$id,
 		]);
 	}
+    //我的投资
+    public function actionMyInvest(){
+		$title = '口袋理财-我的投资';
+		return  $this->render('my-invest', [
+			'title' => $title,
+                        
+		]);
+	}
 
+    /**
+     * 列表页分页
+     * @return string
+     * @param type pages        数据总条目数
+     * @param type cur          当前页
+     * @param type pageSize     每页显示条目数
+     * @param type methodName   调用JS的方法名
+     * @param type hiddenNumber 是否隐藏分页数 1-隐藏
+     */
+    public function actionAjaxpages(){
+        $pages = !empty($_POST['pages']) ? $_POST['pages'] : '';
+        $cur = !empty($_POST['cur']) ? $_POST['cur'] : 1;
+        $pageSize = !empty($_POST['pageSize']) ? $_POST['pageSize'] : 10;
+        $MethodName = !empty($_POST['methodName']) ? $_POST['methodName'] : '';
+        $type = !empty($_POST['hiddenNumber']) ? $_POST['hiddenNumber'] : '';
 
-
-        public function actionAjax(){
-            $page_info = self::paging($_POST['pages'],$_POST['cur']);
-            return json_encode(self::page_show($_POST['url'],$page_info));
+        if (empty($MethodName) || empty($pages)){
+            return '';
         }
+        $page_info = self::paging($pages,$cur,$pageSize);
+        return json_encode(self::page_show($page_info,$MethodName,$type));
+    }
 
 
     /**
@@ -99,7 +150,7 @@ class SiteController extends BaseController
      * @param type $data_count    数据总条目数
      * @param type $currentPage   当前页
      */
-    public static function paging( $data_count, $currentPage=1, $page_size=9){
+    public static function paging( $data_count, $currentPage=1, $page_size=10){
         $finalPage = intval($data_count/$page_size);
         if($data_count % $page_size !=0){
             $finalPage = intval($data_count/$page_size+1);
@@ -120,7 +171,6 @@ class SiteController extends BaseController
     /**
      * 页面显示分页的组件
      * @author Johnnylin
-     * @param type $request_uri URL地址
      * @param type $page_info   分页数据内容* @return Array(
      *      'final'=>$finalPage,   最后页
      *      'prev'=>$previousPage, 前一页
@@ -133,9 +183,9 @@ class SiteController extends BaseController
      * @param type $start_num   显示页数的数量
      * @return string
      */
-    public static function page_show($request_uri = '' , $page_info = array(),$show_num = 10,$start_num = 5 ){
+    public static function page_show($page_info = array(),$MethodName = '' , $type = '' ,$show_num = 10,$start_num = 5 ){
         $html = '';
-        if (empty($page_info) || empty($request_uri)){
+        if (empty($page_info) || empty($MethodName)){
             return $html;
         }
 
@@ -150,31 +200,34 @@ class SiteController extends BaseController
 
         }
 
-        /** 我是怎么想的？! */
-        if ($page_info['final'] <= $show_num){
-            for($i=1;$i <= $page_info['final'];$i++){
-                if ($page_info['cur'] == $i){
-                    $html .= '<li class="active"><a href="javascript:search(\'page\',\''.$i.'\')" data-page="'.intval($i-1).'">'.$i.'</a></li>';
-                }else{
-                    $html .= '<li ><a href="javascript:search(\'page\',\''.$i.'\')" data-page="'.intval($i-1).'">'.$i.'</a></li>';
+        if (empty($type)){
+            /** 我是怎么想的？! */
+            if ($page_info['final'] <= $show_num){
+                for($i=1;$i <= $page_info['final'];$i++){
+                    if ($page_info['cur'] == $i){
+                        $html .= '<li class="active"><a href="javascript:search(\'page\',\''.$i.'\')" data-page="'.intval($i-1).'">'.$i.'</a></li>';
+                    }else{
+                        $html .= '<li ><a href="javascript:search(\'page\',\''.$i.'\')" data-page="'.intval($i-1).'">'.$i.'</a></li>';
+                    }
                 }
-            }
-        }else{
-            $page = empty($page_info['cur']) ? 1 : $page_info['cur'];
-            if (intval($page_info['final'] - $page + 1) >= $show_num){
-                $page = ($page_info['cur'] - $start_num ) > 0 ? ($page_info['cur'] - $start_num )  : 1 ;
             }else{
-                $page = $page_info['final'] - $show_num + 1 ;
-            }
-
-            for ($i = $page ; $i < ( $page + $show_num ) ; $i++){
-                if ($page_info['cur'] == $i){
-                    $html .= '<li class="active"><a href="javascript:search(\'page\',\''.$i.'\')" data-page="'.intval($i-1).'">'.$i.'</a></li>';
+                $page = empty($page_info['cur']) ? 1 : $page_info['cur'];
+                if (intval($page_info['final'] - $page + 1) >= $show_num){
+                    $page = ($page_info['cur'] - $start_num ) > 0 ? ($page_info['cur'] - $start_num )  : 1 ;
                 }else{
-                    $html .= '<li ><a href="javascript:search(\'page\',\''.$i.'\')" data-page="'.intval($i-1).'">'.$i.'</a></li>';
+                    $page = $page_info['final'] - $show_num + 1 ;
+                }
+
+                for ($i = $page ; $i < ( $page + $show_num ) ; $i++){
+                    if ($page_info['cur'] == $i){
+                        $html .= '<li class="active"><a href="javascript:search(\'page\',\''.$i.'\')" data-page="'.intval($i-1).'">'.$i.'</a></li>';
+                    }else{
+                        $html .= '<li ><a href="javascript:search(\'page\',\''.$i.'\')" data-page="'.intval($i-1).'">'.$i.'</a></li>';
+                    }
                 }
             }
         }
+
 
         if ($page_info['cur'] == $page_info['final']){
             $html .= '<li class="next disabled"><span>»</span></li>';
@@ -185,4 +238,5 @@ class SiteController extends BaseController
 
         return $html;
     }
+
 }

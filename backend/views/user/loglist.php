@@ -41,10 +41,10 @@ $this->showsubmenu('登陆日志');
 			<td>
 				<?php 
 					$source = unserialize($value->source);
-					echo '终端版本:' . ($source['clientType'] == 'unknow' ? '未知' : $source['clientType']) .
-						 '，app版本:' . ($source['appVersion'] == 'unknow' ? '未知' : $source['appVersion']) .
-						 '，设备名称:' . ($source['deviceName'] == 'unknow' ? '未知' : $source['deviceName']) .
-						 '，设备os版本:' . ($source['osVersion'] == 'unknow' ? '未知' : $source['osVersion']);
+					echo '终端版本:' . ($source['clientType'] == '' ? '未知' : $source['clientType']) .
+						 '，app版本:' . ($source['appVersion'] == '' ? '未知' : $source['appVersion']) .
+						 '，设备名称:' . ($source['deviceName'] == '' ? '未知' : $source['deviceName']) .
+						 '，设备os版本:' . ($source['osVersion'] == '' ? '未知' : $source['osVersion']);
 				?>
 			</td>
 			<td><?php echo date('Y-m-d H:i:s', $value->created_at); ?></td>

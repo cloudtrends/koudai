@@ -75,11 +75,14 @@ $menu['user'] = array(
 
 $menu['content'] = array(
 	'menu_content_begin'			=> array('通用内容', 'groupbegin'),
-	'menu_content_manager'		=> array('文章管理', Url::to(['article/list'])),
-	'menu_contenttype_manager'	=> array('栏目管理', Url::to(['article-type/list'])),
-	'menu_msg_moblie_push_manager' => array('消息推送', Url::to(['msg-push/add'])),
-	'menu_activity_manager'		=> array('活动管理', Url::to(['activity/list'])),
-	'menu_content_end'			=> array('通用内容', 'groupend'),
+	'menu_content_manager'			=> array('文章管理', Url::to(['article/list'])),
+	'menu_contenttype_manager'		=> array('栏目管理', Url::to(['article-type/list'])),
+	'menu_msg_moblie_push_manager' 	=> array('消息推送', Url::to(['msg-push/add'])),
+	'menu_activity_manager'			=> array('活动管理', Url::to(['activity/list'])),
+	'menu_content_end'				=> array('通用内容', 'groupend'),
+	'menu_attachment_begin'			=> array('附件管理', 'groupbegin'),
+	'menu_attachment_add'			=> array('添加附件', Url::to(['attachment/add'])),
+	'menu_attachment_end'			=> array('附件管理', 'groupend'),
 );
 
 $menu['app_config'] = array(

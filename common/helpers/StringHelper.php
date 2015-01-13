@@ -113,4 +113,50 @@ class StringHelper extends \yii\helpers\StringHelper
             return str_replace('=','',base64_encode($result));
         }
     }
+
+    // 删除银行卡中的空格
+    public static function trimBankCard($bank_card)
+    {
+        $bank_card = str_replace(" ",'',$bank_card);
+        if(preg_match('/^[0-9]{10,24}$/',$bank_card))
+        {
+            return $bank_card;
+        }
+        return false;
+    }
+
+    /**
+     * 输入的月份数变成天数
+     * @param string $bank_name 银行名称
+     * @param integer $sml 单笔限额
+     * @param integer $dml 单日限额
+     * @param integer $dtl 单日笔数限额
+     */
+    public static function getBankAmountRestrict($bank_name,$sml,$dml,$dtl)
+    {
+
+        $sml_desc = self::getAmountDesc($sml);
+        $dml_desc = self::getAmountDesc($dml);
+        return "{$bank_name}限额:单笔{$sml_desc},单日{$dml_desc}";
+    }
+
+    public static function getAmountDesc($amount)
+    {
+        $one_thousand = 100000;
+        $ten_thousand = 10 * $one_thousand;
+        // 大于1万
+        if( $amount > $ten_thousand )
+        {
+            $amount_desc = intval($amount / $ten_thousand) . "万";
+        }
+        else if ( $amount > $one_thousand )
+        {
+            $amount_desc = intval($amount / $one_thousand) . "千";
+        }
+        else
+        {
+            $amount_desc = intval($amount / 100). "元";
+        }
+        return $amount_desc;
+    }
 }
